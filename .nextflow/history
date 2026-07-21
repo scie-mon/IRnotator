@@ -1,0 +1,1 @@
+2026-07-21 14:22:11	1.7s	dreamy_fourier	OK	804e701dcac60e69e1d8246db5403c14	7efb6547-f06f-4d49-b1ed-4a3f655f1601	nextflow run main.nf -profile local
