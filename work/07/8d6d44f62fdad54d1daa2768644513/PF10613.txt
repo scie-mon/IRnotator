@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  PF10613.hmm
+# target sequence database:        proteins.faa
+# per-seq hits tabular output:     PF10613.tbl
+# sequence reporting threshold:    E-value <= 1e-05
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       Lig_chan-Glu_bd  [M=115]
+Accession:   PF10613.12
+Description: Ligated ion channel L-glutamate- and glycine-binding site
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    4.8e-07   18.1   0.0    9.7e-07   17.2   0.0    1.6  1  LOC116915405  
+      9e-06   14.0   0.0    1.6e-05   13.2   0.0    1.4  1  LOC116916078  
+
+
+Domain annotation for each sequence (and alignments):
+>> LOC116915405  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.2   0.0   4.8e-07   9.7e-07       7     111 ..      36     138 ..      30     142 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 17.2 bits;  conditional E-value: 4.8e-07
+                      --.BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEES CS
+  Lig_chan-Glu_bd   7 tileePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtk 100
+                       +++ Py +l  + + +gn + +G      ++lakkl+f+++++ v  ++   +k   +  +  ++   dk++d  v  lt t+eR++ vdF+ 
+     LOC116915405  36 VYHNPPYDVL--TLKPDGNYSHKGSGPTWQNWLAKKLNFTFSYRYVILNQTTIEKYGASAIEFGLRLTADKEVDAFVNGLTSTPERKQKVDFSY 127
+                      4667788663..46778888889999999999*****99988777665555555544444554579999************************8 PP
+
+                      ESEEE-EEEEE CS
+  Lig_chan-Glu_bd 101 pfmelgisili 111
+                         ++ +++++
+     LOC116915405 128 FIWTEPYAMVV 138
+                      87777777766 PP
+
+>> LOC116916078  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.2   0.0   7.9e-06   1.6e-05      21     113 ..      51     143 ..      34     145 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 13.2 bits;  conditional E-value: 7.9e-06
+                      ---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-....----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEE CS
+  Lig_chan-Glu_bd  21 elegneryeGfcidLlkelakklgfkYelklvkdg....kyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgisil 110
+                       ++gn + +G    L k+l +kl+f+ +++  +++    kyG+ +        +++  +dk++d     l  t+eR++++d +    ++ ++++
+     LOC116916078  51 GKDGNYTNHGISPILCKWLTDKLNFTISYYYIPNKytnaKYGAVS----DAAVILNLFVDKEIDGSTMGLIATPERKKMIDLAYFMWTEPFNMI 140
+                      4577888899999999*********97777766541111555554....455788999***********************9877767777777 PP
+
+                      EES CS
+  Lig_chan-Glu_bd 111 ikk 113
+                      + k
+     LOC116916078 141 VPK 143
+                      666 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (115 nodes)
+Target sequences:                          4  (1855 residues searched)
+Passed MSV filter:                         4  (1); expected 0.1 (0.02)
+Passed bias filter:                        4  (1); expected 0.1 (0.02)
+Passed Vit filter:                         3  (0.75); expected 0.0 (0.001)
+Passed Fwd filter:                         2  (0.5); expected 0.0 (1e-05)
+Initial search space (Z):                  4  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 101.00
+//
+[ok]

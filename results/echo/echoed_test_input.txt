@@ -1,2 +1,0 @@
-hello nextflow
-Processed: test_input.txt

@@ -1,1 +1,10 @@
 2026-07-21 14:22:11	1.7s	dreamy_fourier	OK	804e701dcac60e69e1d8246db5403c14	7efb6547-f06f-4d49-b1ed-4a3f655f1601	nextflow run main.nf -profile local
+2026-07-22 08:50:28	-	admiring_celsius	-	c26c5cc48ede7a9cf316708dca7813e7	6f4ce5a8-2d0f-4e02-8c8f-92842ffa233f	nextflow run main.nf -profile docker
+2026-07-22 08:52:49	5.4s	hungry_mirzakhani	OK	c26c5cc48ede7a9cf316708dca7813e7	bde03622-950e-488e-83e1-752cadcef2e7	nextflow run main.nf -profile docker
+2026-07-22 09:11:29	-	amazing_newton	-	b51f991d712623e94e9c275cc3415f65	9d01ca1e-3e69-461c-b916-56f4795f6064	nextflow run main.nf -profile docker
+2026-07-22 09:13:08	4m 39s	shrivelled_legentil	OK	68ae6015fe5615c8ed0d491975ebebad	15ab9277-58c1-4365-92fa-c873d57a4a48	nextflow run main.nf -profile docker
+2026-07-22 09:30:17	31.3s	pensive_escher	OK	68ae6015fe5615c8ed0d491975ebebad	8c5d90dd-8430-4ce6-b4dc-1c43f5cd0c02	nextflow run main.nf -profile docker
+2026-07-22 09:31:29	1.6s	furious_curie	ERR	68ae6015fe5615c8ed0d491975ebebad	25955997-c1aa-474c-b887-28aaf3cd2e8e	nextflow run main.nf --deeptmhmm_mode cloud
+2026-07-22 09:32:21	35.3s	serene_lattes	OK	68ae6015fe5615c8ed0d491975ebebad	168bb7fd-c09c-4598-bfb3-a41318a16a1a	nextflow run main.nf -profile docker --deeptmhmm_mode cloud
+2026-07-22 09:33:58	18.1s	agitated_brazil	OK	68ae6015fe5615c8ed0d491975ebebad	dfb1cd1e-5f6e-4391-bd27-439d716a4d7c	nextflow run main.nf -profile docker --deeptmhmm_mode local_gpu
+2026-07-22 10:57:28	31.9s	silly_brown	OK	956955debbc5d9dce2e3c0df7412d8fa	89ad2a79-8815-4e08-afc3-88432eadfba4	nextflow run main.nf -profile docker

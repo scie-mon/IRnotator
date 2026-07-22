@@ -1,0 +1,153 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  PF00060.hmm
+# target sequence database:        proteins.faa
+# per-seq hits tabular output:     PF00060.tbl
+# sequence reporting threshold:    E-value <= 1e-05
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       Lig_chan  [M=149]
+Accession:   PF00060.29
+Description: Ligand-gated ion channel
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    4.7e-22   66.6   0.4    8.1e-22   65.8   0.4    1.4  1  LOC116915400     
+    9.7e-22   65.6   0.9    1.5e-21   64.9   0.9    1.3  1  LOC116916078     
+    1.2e-21   65.3   1.0    1.7e-21   64.8   1.0    1.2  1  LOC116915405     
+      3e-17   51.0   0.3    4.4e-17   50.4   0.3    1.3  1  LOC116915407_X1  
+
+
+Domain annotation for each sequence (and alignments):
+>> LOC116915400  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   65.8   0.4   8.1e-22   8.1e-22       4     149 .]     160     444 ..     157     444 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 65.8 bits;  conditional E-value: 8.1e-22
+                   HHHHHHHHHHHHHHHHHHCH....HCXXXXXXXXXXXXXX..XXXHHTTTCHHH..HHHHHCTTSSSSBXXSSHHHHHHHHHHHHHHHHHHHHHHHH CS
+                   xxxxxxxxxxxxxxxxxxxx....xxxxxxxxxxxxxxxx..xxxxxxxxxxxx..xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+      Lig_chan   4 vWlsvlvalilvsivlflve....rfspyewrepeeaaet..veneftlsnslw..fslgalvqqGcdesprsvsgRivvavWwffvlillssYtAn 92 
+                   vWl++ ++++++ +v+ l++    ++   ++r+p ++++   +   f  + s++  +++ ++++qG+++++  +s  i+v++W++++++l+ sY + 
+  LOC116915400 160 VWLLIGITVVVMVVVMSLFSgsyvWLFVNDFRNPVAQNTReeRMAVFWQWPSIYsvYIINIMTNQGGNIAVSRFSFQILVGTWLLVAMVLVNSYSGT 256
+                   666665555555555544432222444555555543322212333333344443227899************************************* PP
+
+                   HHHHHHSSSSXXSSSSCCHHH.TGS........................................................................ CS
+                   xxxxxxxxxxxxxxxxxxxxx.xxx........................................................................ RF
+      Lig_chan  93 LaafltvermqtpiksledLa.kqt........................................................................ 116
+                    +++ltv +m+++i+++edLa + +                                                                        
+  LOC116915400 257 VVSYLTVPKMKPSIHTFEDLAaNPDvgiilkvdtdigqkileaesgalkilgdqarsepdrlftdpvkinarlvtglyaypylqifakffvsdqfkk 353
+                   *********************5555************************************************************************ PP
+
+                   .......................................................SSXSXSSXXXTTXTT....XTHHHHHHHHHHHHHHH CS
+                   .......................................................xxxxxxxxxxxxxxxx...xxxxxxxxxxxxxxxxx RF
+      Lig_chan 117 .......................................................kaeCsseksaekssse...LslsnvagiFlilligl 149
+                                                                           ++C  +++ +++ +    ++l+++ g+Flil++g+
+  LOC116915400 354 dgkcrfqmskplsltgfwsmafqkgskltsifndvlievwetglpshwsneviprAPQCFAKEKPRANLAGqnpIRLTDLMGAFLILAVGV 444
+                   ******************************************************86688777766655433456**************995 PP
+
+>> LOC116916078  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   64.9   0.9   1.5e-21   1.5e-21       4     149 .]     161     445 ..     157     445 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 64.9 bits;  conditional E-value: 1.5e-21
+                   HHHHHHHHHHHHHHHHHHCHHCXXXXXXXXXXXXXX.....XXXHH.TTTCHHHHHHHHCTTSS.SSBXXSSHHHHHHHHHHHHHHHHHHHHHHHHH CS
+                   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.....xxxxx.xxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+      Lig_chan   4 vWlsvlvalilvsivlflverfspyewrepeeaaet.....venef.tlsnslwfslgalvqqG.cdesprsvsgRivvavWwffvlillssYtAnL 93 
+                   vWl+++++++ v +++ l++++  + +++ +++++      +++ f  +s    +++ ++++qG +    r +s+ +++++W++++ +l+ sY   +
+  LOC116916078 161 VWLLIFITMLAVVVFMSLFSKLHLQFYSNGSRHNSPvssqeMTTIFgRISVYSMYIVNTMTNQGnSVPGARFFSSQMLIGMWLLIATVLVNSYSSTI 257
+                   566666666666666666666554444433222221332223333313455567999*******778899*************************** PP
+
+                   HHHHHSSSSXXSSSSCCHHH.TGS......................................................................... CS
+                   xxxxxxxxxxxxxxxxxxxx.xxx......................................................................... RF
+      Lig_chan  94 aafltvermqtpiksledLa.kqt......................................................................... 116
+                    ++ltv rm++pi+++edLa +q+                                                                         
+  LOC116916078 258 ISYLTVPRMKPPINTFEDLAaSQDvslvlladnvigqhildaksgvlkilsghiqnnrgqvlrniqtisealetgnyafpflktfclnfiasqfkke 354
+                   ********************7777************************************************************************* PP
+
+                   .......................................................SSXSXSSXXXTTXTT....XTHHHHHHHHHHHHHHH CS
+                   .......................................................xxxxxxxxxxxxxxxx...xxxxxxxxxxxxxxxxx RF
+      Lig_chan 117 .......................................................kaeCsseksaekssse...LslsnvagiFlilligl 149
+                                                                           ++C  + + +++s++   ++l+++ g+Flil+ig+
+  LOC116916078 355 gkcrfqdtdplpfqpgfwslplpknsrftpmfhyalvelwetglpqywvknalprAPKCFAKIKFKQNSARqvpIQLNDLTGAFLILGIGV 445
+                   ******************************************************86689877655544444488***************95 PP
+
+>> LOC116915405  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   64.8   1.0   1.7e-21   1.7e-21       4     148 ..     158     438 ..     155     439 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 64.8 bits;  conditional E-value: 1.7e-21
+                   HHHHHHHHHHHHHHHHHHCHHCX.XXXXXXXXXX.XXX..XXXHHTTTCHHHHHHHHCTTSSSSBXXSSHHHHHHHHHHHHHHHHHHHHHHHHHHHH CS
+                   xxxxxxxxxxxxxxxxxxxxxxx.xxxxxxxxxx.xxx..xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+      Lig_chan   4 vWlsvlvalilvsivlflverfs.pyewrepeea.aet..veneftlsnslwfslgalvqqGcdesprsvsgRivvavWwffvlillssYtAnLaaf 96 
+                   vWl++l++++ v +++ ++++fs + ++ e++++  +t  ++ ++  s+ + ++l ++++qG++ +   +s Ri+v+vW++++ +l+ sY + ++++
+  LOC116915405 158 VWLLILITMLAVVCFMSFFSKFSlKMDVAEHRQEsGQTqiRTLSQYASSYFVYVLNIITNQGGNVNGIRLSFRILVGVWLLIATVLVNSYSGTIVSY 254
+                   8****888888888887777777245555555554444445555566778999******************************************** PP
+
+                   HHSSSSXXSSSSCCHHH.TGS............................................................................ CS
+                   xxxxxxxxxxxxxxxxx.xxx............................................................................ RF
+      Lig_chan  97 ltvermqtpiksledLa.kqt............................................................................ 116
+                   ltv +++++i+++edLa +++                                                                            
+  LOC116915405 255 LTVPKIKPSINTFEDLAlSKDveliikkdvvigqqilsaksgtfkilgdrtrnnperlltdqteidnllakgghafpwivsfckffiagqlkkdgtc 351
+                   *****************66669*************************************************************************** PP
+
+                   ....................................................SSXSXSSXXXTTXTT....XTHHHHHHHHHHHHHH CS
+                   ....................................................xxxxxxxxxxxxxxxx...xxxxxxxxxxxxxxxx RF
+      Lig_chan 117 ....................................................kaeCsseksaekssse...LslsnvagiFlillig 148
+                                                                        ++C  + + +++ ++   ++l+++  +F i++ig
+  LOC116915405 352 rfemtdpvpfqtaffsivlqknskftrafndalmlmwesgqitfwvtndiprAPKCFAKINPRTTLTRqvpIQLKDLMSAFFIFAIG 438
+                   **************************************************9866788777766665445779**********99998 PP
+
+>> LOC116915407_X1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   50.4   0.3   4.4e-17   4.4e-17       4     149 .]     140     420 ..     137     420 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 50.4 bits;  conditional E-value: 4.4e-17
+                      HHHHHHHHHHHHHHHHHHCHHCXXXXXXXXXXX.XXXXXXHHTT.TCHHHHHHHHCTTSS.SSBXXSSHHHHHHHHHHHHHHHHHHHHHHHHHH CS
+                      xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.xxxxxxxxxx.xxxxxxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+         Lig_chan   4 vWlsvlvalilvsivlflverfspyewrepeea.aetveneftl.snslwfslgalvqqG.cdesprsvsgRivvavWwffvlillssYtAnLa 94 
+                      vWl++++++i v +++  ++ +     ++ ++a  +++++ f + ++    +l+ +++qG      r +s R++ +vW++++ +l+  Y +   
+  LOC116915407_X1 140 VWLLIFITMIAVVLLMSSLSVIHLNVTDNGTPAiPRHRKTAFDYaIDYTMHMLSLITNQGaYIAGARFMSLRVLLGVWVLMATVLVNVYSGTVI 233
+                      8999988888887777777777666666665556666777776525778889********555668999************************* PP
+
+                      HHHHSSSSXXSSSSCCHHH.TGS....................................................................... CS
+                      xxxxxxxxxxxxxxxxxxx.xxx....................................................................... RF
+         Lig_chan  95 afltvermqtpiksledLa.kqt....................................................................... 116
+                      ++ltv r+++pi+++edLa +++                                                                       
+  LOC116915407_X1 234 SYLTVPRTKPPINTFEDLAaNRDvgiilrteaiitqyileaktgalktigdqarrhadrfwtdqeklsrrlatgryaypwiqtfcqffivnqfk 327
+                      *******************5555*********************************************************************** PP
+
+                      .........................................................SSXSXSSXXXTTXTT....XTHHHHHHHHHHHHHHH CS
+                      .........................................................xxxxxxxxxxxxxxxx...xxxxxxxxxxxxxxxxx RF
+         Lig_chan 117 .........................................................kaeCsseksaekssse...LslsnvagiFlilligl 149
+                                                                                +eC  +++ ++ s++   ++l ++ g+F i++ig+
+  LOC116915407_X1 328 kdgacrfrmtdplpfqsaffslalqkdskftpafnkalmelwesglfpywvrnvspqAPECFAKTKPRTISARkmpIRLADLIGAFFIFGIGF 420
+                      ********************************************************76689888877776555578**************995 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (149 nodes)
+Target sequences:                          4  (1855 residues searched)
+Passed MSV filter:                         4  (1); expected 0.1 (0.02)
+Passed bias filter:                        4  (1); expected 0.1 (0.02)
+Passed Vit filter:                         4  (1); expected 0.0 (0.001)
+Passed Fwd filter:                         4  (1); expected 0.0 (1e-05)
+Initial search space (Z):                  4  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 68.47
+//
+[ok]
