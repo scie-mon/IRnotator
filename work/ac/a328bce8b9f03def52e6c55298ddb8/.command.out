@@ -1,20 +1,0 @@
-Running DeepTMHMM on 2 sequences...
-Step 1/4 | Loading transformer model...
-
-Step 2/4 | Generating embeddings for sequences...
-Generating embeddings:   0% 0/2 [00:00<?, ?seq/s]Generating embeddings:  50% 1/2 [00:00<00:00,  8.95seq/s]Generating embeddings: 100% 2/2 [00:00<00:00,  9.30seq/s]Generating embeddings: 100% 2/2 [00:00<00:00,  9.24seq/s]
-
-Step 3/4 | Predicting topologies for sequences in batches of 1...
-Topology prediction:   0% 0/2 [00:00<?, ?seq/s]Topology prediction:  50% 1/2 [00:00<00:00,  2.40seq/s]Topology prediction: 100% 2/2 [00:00<00:00,  2.34seq/s]Topology prediction: 100% 2/2 [00:00<00:00,  2.35seq/s]
-
-Step 4/4 | Generating output...
-Running DeepTMHMM on 2 sequences...
-Step 1/4 | Loading transformer model...
-
-Step 2/4 | Generating embeddings for sequences...
-Generating embeddings:   0% 0/2 [00:00<?, ?seq/s]Generating embeddings:  50% 1/2 [00:00<00:00,  8.95seq/s]Generating embeddings: 100% 2/2 [00:00<00:00,  9.30seq/s]Generating embeddings: 100% 2/2 [00:00<00:00,  9.24seq/s]
-
-Step 3/4 | Predicting topologies for sequences in batches of 1...
-Topology prediction:   0% 0/2 [00:00<?, ?seq/s]Topology prediction:  50% 1/2 [00:00<00:00,  2.40seq/s]Topology prediction: 100% 2/2 [00:00<00:00,  2.34seq/s]Topology prediction: 100% 2/2 [00:00<00:00,  2.35seq/s]
-
-Step 4/4 | Generating output...

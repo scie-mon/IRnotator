@@ -7,7 +7,7 @@ process DEEPTMHMM_TOPOLOGY {
     path proteins_faa
 
     output:
-    path "biolib_results"
+    path "biolib_results", emit: results
 
     script:
     def cmd

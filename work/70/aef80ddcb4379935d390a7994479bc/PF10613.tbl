@@ -1,15 +1,14 @@
 #                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
 # target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
 #------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
-LOC116915400         -          Lig_chan             PF00060.29   5.9e-22   66.6   0.4     1e-21   65.8   0.4   1.4   1   0   0   1   1   1   1 -
-LOC116915405         -          Lig_chan             PF00060.29   1.5e-21   65.3   1.0   2.1e-21   64.8   1.0   1.2   1   0   0   1   1   1   1 -
+LOC116915405         -          Lig_chan-Glu_bd      PF10613.12     6e-07   18.1   0.0   1.2e-06   17.2   0.0   1.6   1   0   0   1   1   1   1 -
 #
 # Program:         hmmsearch
 # Version:         3.2.1 (June 2018)
 # Pipeline mode:   SEARCH
-# Query file:      PF00060.hmm
+# Query file:      PF10613.hmm
 # Target file:     proteins.faa
-# Option settings: hmmsearch --tblout PF00060.tbl -E 1e-5 PF00060.hmm proteins.faa 
-# Current dir:     /home/primeline/Data/IRnotator/work/6c/0b48a97463757848f05922bc81575d
-# Date:            Wed Jul 22 13:14:17 2026
+# Option settings: hmmsearch --tblout PF10613.tbl -E 1e-5 PF10613.hmm proteins.faa 
+# Current dir:     /home/primeline/Data/IRnotator/work/70/aef80ddcb4379935d390a7994479bc
+# Date:            Wed Jul 22 12:58:57 2026
 # [ok]
