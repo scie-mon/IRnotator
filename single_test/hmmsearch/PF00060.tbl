@@ -1,0 +1,14 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+LOC116915400         -          Lig_chan             PF00060.29   1.2e-22   66.6   0.4     2e-22   65.8   0.4   1.4   1   0   0   1   1   1   1 -
+#
+# Program:         hmmsearch
+# Version:         3.2.1 (June 2018)
+# Pipeline mode:   SEARCH
+# Query file:      PF00060.hmm
+# Target file:     test.faa
+# Option settings: hmmsearch --tblout PF00060.tbl -E 1e-5 PF00060.hmm test.faa 
+# Current dir:     /home/primeline/Data/IRnotator/work/a3/319d4b323831014609d6cd29bd67f9
+# Date:            Wed Jul 29 15:25:51 2026
+# [ok]

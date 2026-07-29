@@ -1,0 +1,2 @@
+protein_id	feature_order	n_tmhelix	has_signal	has_unknown_features
+LOC116915405	signal,outside,tmhelix,inside,tmhelix,outside,tmhelix,inside,signal,outside,tmhelix,inside,tmhelix,outside,tmhelix,inside	6	true	false

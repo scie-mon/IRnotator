@@ -1,30 +1,40 @@
 process DEEPTMHMM_TOPOLOGY {
     tag "${proteins_faa.baseName}"
-
+    debug true
+    maxForks 1
     publishDir "${params.outdir}/deeptmhmm", mode: 'copy'
 
     input:
     path proteins_faa
+    path deeptmhmm_dir, stageAs: 'deeptmhmm'
 
     output:
-    path "biolib_results", emit: results
+    tuple val(proteins_faa.baseName), path("${proteins_faa.baseName}/"), emit: results
 
     script:
-    def cmd
-    if( params.deeptmhmm_mode == 'local' ) {
-        cmd = "biolib run --local '${params.deeptmhmm_model}' --fasta ${proteins_faa}"
-    }
-    else if( params.deeptmhmm_mode == 'local_gpu' ) {
-        cmd = "export BIOLIB_DOCKER_RUNTIME=nvidia && biolib run --local '${params.deeptmhmm_model}' --fasta ${proteins_faa}"
-    }
-    else if( params.deeptmhmm_mode == 'cloud' ) {
-        cmd = "biolib run '${params.deeptmhmm_model}' --fasta ${proteins_faa}"
+    if (params.deeptmhmm_mode == 'container') {
+        """
+        rm -rf deeptmhmm_tmp ${proteins_faa.baseName}
+        cp ${proteins_faa} input.faa
+
+        FASTA_PATH=\$(readlink -f input.faa)
+        TMP_OUT=\$(pwd)/deeptmhmm_tmp
+        FINAL_OUT=\$(pwd)/${proteins_faa.baseName}
+
+        cd deeptmhmm
+        python predict.py \\
+            --fasta "\${FASTA_PATH}" \\
+            --output-dir "\${TMP_OUT}"
+
+        cd ..
+        mkdir -p "\${FINAL_OUT}"
+        mv deeptmhmm_tmp/* "\${FINAL_OUT}/"
+        rmdir deeptmhmm_tmp
+        """
     }
     else {
-        throw new IllegalArgumentException("Unsupported --deeptmhmm_mode: ${params.deeptmhmm_mode}")
+        throw new IllegalArgumentException(
+            "Unsupported --deeptmhmm_mode: ${params.deeptmhmm_mode}. Use 'container' for local per-sequence execution."
+        )
     }
-
-    """
-    ${cmd}
-    """
 }
