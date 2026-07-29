@@ -10,3 +10,4 @@
 2026-07-22 10:57:28	31.9s	silly_brown	OK	956955debbc5d9dce2e3c0df7412d8fa	89ad2a79-8815-4e08-afc3-88432eadfba4	nextflow run main.nf -profile docker
 2026-07-22 14:58:56	36.1s	goofy_chandrasekhar	OK	6609aae032aa04fcc06e91ce97ab358e	6052aec6-f26f-46a6-a772-e23dea826171	nextflow run main.nf -profile docker
 2026-07-22 15:14:16	27.8s	agitated_plateau	OK	6609aae032aa04fcc06e91ce97ab358e	f23bfeb2-4607-4061-a7d8-5f139ab8760f	nextflow run main.nf -profile docker
+2026-07-28 14:47:53	1m 43s	mad_einstein	OK	6609aae032aa04fcc06e91ce97ab358e	91ad4f81-e22d-4cce-870d-5285762d2ad7	nextflow run main.nf -profile docker --deeptmhmm_mode local_gpu

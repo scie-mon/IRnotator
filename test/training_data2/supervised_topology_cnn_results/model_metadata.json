@@ -1,0 +1,28 @@
+{
+  "alphabet": [
+    "P",
+    "S",
+    "O",
+    "M",
+    "I",
+    "X"
+  ],
+  "pad_char": "X",
+  "pad_idx": 5,
+  "max_len": 624,
+  "embed_dim": 16,
+  "channels": 64,
+  "kernel_sizes": [
+    3,
+    5,
+    7
+  ],
+  "dropout": 0.25,
+  "decision_threshold": 0.8204148411750793,
+  "label_definition": {
+    "0": "pass",
+    "1": "false_positive"
+  },
+  "device_used_for_training": "cuda",
+  "cropping_rule": "remove leading S, then leading O, then trailing I until last char is not I"
+}

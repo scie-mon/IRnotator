@@ -1,0 +1,2 @@
+n_sequences_used,n_pass,n_false_positive,max_cropped_len,cv_average_precision,chosen_threshold,tn,fp,fn,tp,device_used_for_training
+2952,2933,19,624,0.20908208804263795,0.8204148411750793,2932,1,17,2,cuda
