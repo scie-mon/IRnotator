@@ -1,7 +1,7 @@
 process PREPARE_MANUAL_REVIEW {
     tag "prepare_manual_review"
 
-    publishDir "${params.outdir}y", mode: 'copy'
+    publishDir "${params.outdir}", mode: 'copy'
 
     input:
     path deeptmhmm_dirs
