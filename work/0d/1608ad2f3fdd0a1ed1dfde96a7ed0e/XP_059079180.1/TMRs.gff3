@@ -1,0 +1,10 @@
+##gff-version 3
+# XP_059079180.1 Length: 504
+# XP_059079180.1 Number of predicted TMRs: 3
+XP_059079180.1	outside	1	221				
+XP_059079180.1	TMhelix	222	245				
+XP_059079180.1	inside	246	284				
+XP_059079180.1	TMhelix	285	305				
+XP_059079180.1	outside	306	473				
+XP_059079180.1	TMhelix	474	494				
+XP_059079180.1	inside	495	504				

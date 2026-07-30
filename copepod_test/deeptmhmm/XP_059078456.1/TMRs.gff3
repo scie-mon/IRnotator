@@ -1,0 +1,11 @@
+##gff-version 3
+# XP_059078456.1 Length: 1001
+# XP_059078456.1 Number of predicted TMRs: 3
+XP_059078456.1	signal	1	26				
+XP_059078456.1	outside	27	573				
+XP_059078456.1	TMhelix	574	595				
+XP_059078456.1	inside	596	643				
+XP_059078456.1	TMhelix	644	660				
+XP_059078456.1	outside	661	862				
+XP_059078456.1	TMhelix	863	887				
+XP_059078456.1	inside	888	1001				

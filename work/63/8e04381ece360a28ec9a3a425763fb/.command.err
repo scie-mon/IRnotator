@@ -1,0 +1,2 @@
+Generating embeddings:   0%|          | 0/1 [00:00<?, ?seq/s]Generating embeddings: 100%|██████████| 1/1 [00:03<00:00,  3.69s/seq]Generating embeddings: 100%|██████████| 1/1 [00:03<00:00,  3.70s/seq]
+Topology prediction:   0%|          | 0/1 [00:00<?, ?seq/s]Topology prediction: 100%|██████████| 1/1 [00:06<00:00,  6.22s/seq]Topology prediction: 100%|██████████| 1/1 [00:06<00:00,  6.22s/seq]

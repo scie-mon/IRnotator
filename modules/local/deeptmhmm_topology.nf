@@ -1,6 +1,5 @@
 process DEEPTMHMM_TOPOLOGY {
     tag "${proteins_faa.baseName}"
-    debug true
     maxForks 1
     publishDir "${params.outdir}/deeptmhmm", mode: 'copy'
 

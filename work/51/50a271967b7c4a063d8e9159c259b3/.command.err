@@ -1,0 +1,1 @@
+No 'hardcoded' column in scores TSV. Columns: ['protein_id', 'hardcoded_call', 'hardcoded_reason']

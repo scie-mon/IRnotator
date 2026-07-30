@@ -1,0 +1,1679 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  PF10613.hmm
+# target sequence database:        copepod.faa
+# per-seq hits tabular output:     PF10613.tbl
+# sequence reporting threshold:    E-value <= 1e-05
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       Lig_chan-Glu_bd  [M=115]
+Accession:   PF10613.12
+Description: Ligated ion channel L-glutamate- and glycine-binding site
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+    1.3e-42  144.9   0.0    2.3e-42  144.0   0.0    1.4  1  XP_059083805.1  glutamate receptor ionotropic, kainate 2-like
+    2.5e-40  137.4   0.0    4.8e-40  136.5   0.0    1.5  1  XP_059087878.1  glutamate receptor ionotropic, kainate 1-like
+    2.6e-39  134.2   0.3    5.4e-39  133.1   0.3    1.6  1  XP_059083829.1  glutamate receptor ionotropic, kainate 2-like
+      3e-39  134.0   0.3    6.3e-39  132.9   0.3    1.6  1  XP_059083828.1  glutamate receptor ionotropic, kainate 2-like
+      3e-39  134.0   0.3    6.3e-39  132.9   0.3    1.6  1  XP_059083827.1  glutamate receptor ionotropic, kainate 2-like
+    5.2e-39  133.2   0.0    1.2e-38  132.0   0.0    1.6  1  XP_059099441.1  glutamate receptor 1-like [Tigriopus californ
+    8.1e-39  132.6   0.0    1.6e-38  131.6   0.0    1.5  1  XP_059097759.1  glutamate receptor ionotropic, kainate 2-like
+    8.2e-36  122.9   0.1    9.3e-35  119.5   0.0    2.3  2  XP_059082523.1  glutamate receptor ionotropic, kainate 2-like
+      1e-33  116.1   0.0    2.3e-33  115.0   0.0    1.6  1  XP_059097644.1  glutamate receptor ionotropic, kainate 2-like
+      1e-33  116.1   0.0    2.3e-33  115.0   0.0    1.6  1  XP_059097643.1  glutamate receptor ionotropic, kainate 2-like
+    1.4e-33  115.7   0.0    2.8e-33  114.7   0.0    1.5  1  XP_059095945.1  ionotropic receptor 25a-like [Tigriopus calif
+    6.1e-33  113.6   0.0      1e-32  112.9   0.0    1.3  1  XP_059078411.1  glutamate receptor ionotropic, kainate 3-like
+    3.4e-31  108.0   0.0    6.3e-31  107.1   0.0    1.5  1  XP_059080319.1  glutamate receptor ionotropic, kainate glr-3-
+    1.3e-29  102.9   0.0    1.9e-27   95.9   0.0    2.6  2  XP_059080364.1  glutamate [NMDA] receptor subunit 1-like isof
+    1.3e-29  102.9   0.0    1.9e-27   95.9   0.0    2.6  2  XP_059080362.1  glutamate [NMDA] receptor subunit 1-like isof
+    1.5e-28   99.5   0.1    4.8e-28   97.9   0.0    2.0  1  XP_059088886.1  ionotropic receptor 25a-like [Tigriopus calif
+    3.2e-28   98.4   0.0    9.1e-28   97.0   0.0    1.8  1  XP_059088574.1  glutamate receptor ionotropic, kainate 2-like
+    4.6e-28   97.9   0.0    1.6e-27   96.2   0.0    2.0  1  XP_059093676.1  ionotropic receptor 25a-like [Tigriopus calif
+    1.2e-26   93.4   0.0    2.1e-26   92.6   0.0    1.3  1  XP_059095174.1  glutamate receptor ionotropic, NMDA 2B-like i
+    1.2e-26   93.3   0.0    2.2e-26   92.5   0.0    1.3  1  XP_059095158.1  glutamate receptor ionotropic, NMDA 2B-like i
+    1.2e-26   93.3   0.0    2.2e-26   92.5   0.0    1.3  1  XP_059095167.1  glutamate receptor ionotropic, NMDA 2B-like i
+    7.9e-26   90.7   0.0    3.1e-25   88.8   0.0    2.0  1  XP_059085084.1  glutamate receptor ionotropic, NMDA 2B-like [
+    1.4e-25   89.9   0.0    4.2e-25   88.4   0.0    1.9  1  XP_059089141.1  glutamate receptor ionotropic, NMDA 2A-like [
+    1.9e-24   86.2   0.0    2.7e-24   85.7   0.0    1.2  1  XP_059095193.1  glutamate receptor 1-like [Tigriopus californ
+    1.3e-23   83.6   0.0    4.7e-23   81.8   0.0    2.0  1  XP_059083446.1  glutamate receptor ionotropic, kainate 2-like
+    3.2e-23   82.3   0.1    6.1e-23   81.4   0.1    1.5  1  XP_059085628.1  glutamate receptor 2-like [Tigriopus californ
+    5.9e-22   78.2   0.0    9.7e-22   77.5   0.0    1.3  1  XP_059086883.1  glutamate receptor ionotropic, kainate 2-like
+    3.1e-20   72.7   0.0    5.1e-20   72.0   0.0    1.3  1  XP_059079834.1  probable glutamate receptor [Tigriopus califo
+    3.5e-20   72.5   0.0    5.8e-20   71.8   0.0    1.3  1  XP_059079771.1  probable glutamate receptor [Tigriopus califo
+    3.9e-20   72.4   0.0      7e-20   71.5   0.0    1.4  1  XP_059084920.1  glutamate receptor-like [Tigriopus californic
+    5.3e-20   71.9   0.0    1.1e-19   70.9   0.0    1.4  1  XP_059095430.1  probable glutamate receptor [Tigriopus califo
+    1.1e-19   70.9   0.0    1.9e-19   70.1   0.0    1.4  1  XP_059085839.1  glutamate receptor ionotropic, kainate 5-like
+    2.5e-19   69.7   0.0    3.8e-19   69.2   0.0    1.3  1  XP_059080425.1  glutamate receptor ionotropic, delta-2-like i
+    3.9e-19   69.1   0.0    6.7e-19   68.4   0.0    1.3  1  XP_059080424.1  probable glutamate receptor isoform X1 [Tigri
+    1.9e-18   66.9   0.0    3.4e-18   66.1   0.0    1.4  1  XP_059094370.1  glutamate receptor ionotropic, kainate glr-3-
+    2.2e-17   63.5   0.0    4.1e-17   62.6   0.0    1.5  1  XP_059084632.1  glutamate receptor ionotropic, kainate 2-like
+      3e-17   63.1   0.0      6e-17   62.1   0.0    1.5  1  XP_059092450.1  glutamate receptor ionotropic, kainate 2-like
+    5.7e-17   62.1   0.0    1.3e-16   61.0   0.0    1.6  1  XP_059096791.1  glutamate receptor ionotropic, delta-2-like [
+    1.6e-16   60.7   0.0      3e-16   59.8   0.0    1.4  1  XP_059086884.1  glutamate receptor-like [Tigriopus californic
+    2.7e-16   60.0   0.0    5.5e-16   59.0   0.0    1.5  1  XP_059079838.1  glutamate receptor ionotropic, delta-2-like [
+    2.7e-16   60.0   0.0    5.4e-16   59.0   0.0    1.5  1  XP_059086902.1  ionotropic receptor 25a-like [Tigriopus calif
+    3.3e-16   59.7   0.1    6.6e-16   58.7   0.1    1.5  1  XP_059095569.1  probable glutamate receptor [Tigriopus califo
+    5.7e-16   58.9   0.0      1e-15   58.1   0.0    1.4  1  XP_059083359.1  glutamate receptor U1-like [Tigriopus califor
+    1.9e-15   57.3   0.0    3.8e-15   56.3   0.0    1.5  1  XP_059082976.1  glutamate receptor ionotropic, kainate glr-3-
+    1.9e-15   57.2   0.0    4.2e-15   56.1   0.0    1.6  1  XP_059078456.1  glutamate receptor ionotropic, kainate 2-like
+    2.1e-14   53.9   0.0    4.5e-14   52.8   0.0    1.6  1  XP_059097828.1  glutamate receptor ionotropic, kainate 1-like
+    2.3e-14   53.8   0.0    4.1e-14   52.9   0.0    1.4  1  XP_059088023.1  glutamate receptor ionotropic, NMDA 2D-like i
+      4e-14   53.0   0.0      8e-14   52.0   0.0    1.5  1  XP_059089661.1  probable glutamate receptor [Tigriopus califo
+    4.3e-14   52.9   0.0    8.1e-14   52.0   0.0    1.4  1  XP_059096592.1  probable glutamate receptor [Tigriopus califo
+    6.4e-14   52.3   0.0    1.9e-13   50.8   0.0    1.7  1  XP_059087836.1  glutamate receptor ionotropic, kainate 1-like
+      1e-13   51.7   0.0    2.2e-13   50.6   0.0    1.6  1  XP_059081679.1  glutamate receptor ionotropic, kainate glr-3-
+    1.4e-13   51.2   0.0    2.9e-13   50.2   0.0    1.6  1  XP_059081677.1  glutamate receptor ionotropic, kainate glr-3-
+    1.4e-13   51.2   0.0    2.9e-13   50.2   0.0    1.6  1  XP_059081678.1  glutamate receptor ionotropic, kainate glr-3-
+      2e-13   50.7   0.0    5.4e-13   49.3   0.0    1.7  1  XP_059095937.1  glutamate receptor ionotropic, NMDA 1-like [T
+    2.4e-13   50.4   0.0    6.2e-13   49.2   0.0    1.7  1  XP_059095118.1  glutamate receptor ionotropic, delta-2-like [
+    5.8e-13   49.2   0.0    1.1e-12   48.4   0.0    1.5  1  XP_059082646.1  ionotropic receptor 93a-like [Tigriopus calif
+    8.2e-13   48.7   0.0    1.4e-12   48.0   0.0    1.4  1  XP_059096595.1  glutamate receptor ionotropic, kainate glr-3-
+    1.2e-12   48.3   0.0    2.9e-12   47.0   0.0    1.6  1  XP_059096594.1  glutamate receptor ionotropic, kainate 5-like
+    1.2e-12   48.2   0.0    2.2e-12   47.4   0.0    1.4  1  XP_059096479.1  glutamate receptor ionotropic, kainate 2-like
+    2.5e-12   47.2   0.0    4.7e-12   46.3   0.0    1.4  1  XP_059096591.1  probable glutamate receptor isoform X2 [Tigri
+    4.6e-12   46.3   0.1    1.3e-11   44.9   0.0    1.8  1  XP_059079839.1  glutamate receptor ionotropic, delta-2-like [
+    5.5e-12   46.1   0.0    9.2e-12   45.4   0.0    1.4  1  XP_059096256.1  probable glutamate receptor [Tigriopus califo
+    6.3e-12   45.9   0.0    1.1e-11   45.1   0.0    1.4  1  XP_059091028.1  glutamate receptor ionotropic, kainate glr-3-
+    1.3e-11   44.9   0.0    2.7e-11   43.9   0.0    1.5  1  XP_059084726.1  ionotropic receptor 21a-like [Tigriopus calif
+    1.8e-11   44.4   0.0    3.7e-11   43.4   0.0    1.4  1  XP_059088024.1  uncharacterized protein LOC131884310 isoform 
+    3.9e-11   43.3   0.0    6.9e-11   42.5   0.0    1.3  1  XP_059098032.1  glutamate receptor U1-like isoform X2 [Tigrio
+    4.1e-11   43.3   0.0    2.2e-10   40.9   0.0    2.2  1  XP_059082828.1  glutamate receptor ionotropic, delta-2-like [
+    4.4e-11   43.2   0.0    7.7e-11   42.4   0.0    1.3  1  XP_059098031.1  glutamate receptor U1-like isoform X1 [Tigrio
+    5.5e-11   42.9   0.0    1.1e-10   41.9   0.0    1.4  1  XP_059095737.1  probable glutamate receptor [Tigriopus califo
+    6.1e-11   42.7   0.0    1.2e-10   41.8   0.0    1.4  1  XP_059088977.1  uncharacterized protein LOC131885068 [Tigriop
+    1.1e-10   41.9   0.0    2.1e-10   41.0   0.0    1.4  1  XP_059093173.1  glutamate receptor ionotropic, delta-2-like [
+    3.6e-10   40.2   0.0    6.6e-10   39.4   0.0    1.3  1  XP_059085070.1  glutamate receptor ionotropic, delta-2-like [
+    9.3e-10   38.9   0.0    1.5e-09   38.2   0.0    1.3  1  XP_059087838.1  uncharacterized protein LOC131884170 isoform 
+    1.2e-09   38.5   0.0    2.6e-09   37.5   0.0    1.6  1  XP_059088083.1  uncharacterized protein LOC131884353 isoform 
+    1.2e-09   38.5   0.0    2.2e-09   37.7   0.0    1.4  1  XP_059081296.1  glutamate receptor ionotropic, kainate glr-3-
+    1.4e-09   38.3   0.0      3e-09   37.3   0.0    1.6  1  XP_059088081.1  uncharacterized protein LOC131884353 isoform 
+    1.5e-09   38.3   0.0    2.9e-09   37.3   0.0    1.4  1  XP_059096679.1  glutamate receptor ionotropic, kainate 4-like
+      2e-09   37.8   0.0    4.8e-09   36.6   0.0    1.6  1  XP_059087837.1  glutamate receptor ionotropic, kainate glr-3-
+    6.7e-09   36.1   0.0    1.4e-08   35.1   0.0    1.5  1  XP_059097411.1  glutamate receptor 1-like [Tigriopus californ
+    7.2e-09   36.0   0.0    1.8e-08   34.8   0.0    1.6  1  XP_059097263.1  glutamate receptor ionotropic, NMDA 1-like [T
+    8.3e-09   35.8   0.0    1.6e-08   34.9   0.0    1.4  1  XP_059095839.1  uncharacterized protein LOC131890503 [Tigriop
+    5.4e-08   33.2   0.0    1.3e-07   32.0   0.0    1.6  1  XP_059098288.1  uncharacterized protein LOC131892430 [Tigriop
+    5.8e-08   33.1   0.0    1.6e-07   31.7   0.0    1.7  1  XP_059096463.1  glutamate receptor ionotropic, delta-1-like [
+    9.3e-08   32.5   0.0    9.2e-07   29.2   0.0    2.2  2  XP_059099240.1  glutamate receptor ionotropic, NMDA 1-like [T
+    1.1e-07   32.2   0.0    3.2e-07   30.7   0.0    1.8  1  XP_059079334.1  glutamate receptor ionotropic, kainate 3-like
+    1.2e-07   32.1   0.2    3.2e-07   30.7   0.0    1.8  1  XP_059080573.1  uncharacterized protein LOC131878572 [Tigriop
+    1.4e-07   31.9   0.0    3.2e-07   30.7   0.0    1.5  1  XP_059096106.1  uncharacterized protein LOC131890717, partial
+    1.8e-07   31.5   0.1    4.7e-07   30.2   0.0    1.7  1  XP_059079333.1  glutamate receptor ionotropic, kainate 3-like
+    1.9e-07   31.4   0.0    3.9e-07   30.5   0.0    1.5  1  XP_059078473.1  ionotropic receptor 21a-like [Tigriopus calif
+      2e-07   31.4   0.0      6e-07   29.8   0.0    1.7  1  XP_059081344.1  uncharacterized protein LOC131879131 [Tigriop
+    2.3e-07   31.2   0.0    4.1e-07   30.4   0.0    1.4  1  XP_059079180.1  uncharacterized protein LOC131877509 [Tigriop
+    3.9e-07   30.5   0.0    6.6e-07   29.7   0.0    1.4  1  XP_059090680.1  glutamate receptor 2-like [Tigriopus californ
+      8e-07   29.4   0.0    5.3e-06   26.8   0.0    2.2  1  XP_059097354.1  glutamate receptor ionotropic, delta-1-like [
+    1.1e-06   29.0   0.0    2.3e-06   28.0   0.0    1.5  1  XP_059098639.1  glutamate receptor ionotropic, kainate 5-like
+    3.8e-06   27.3   0.0    7.9e-06   26.2   0.0    1.5  1  XP_059095533.1  uncharacterized protein LOC131890241 [Tigriop
+    6.8e-06   26.4   0.0    1.3e-05   25.5   0.0    1.4  1  XP_059099218.1  glutamate receptor ionotropic, delta-2-like [
+      8e-06   26.2   0.0    1.7e-05   25.1   0.0    1.6  1  XP_059097430.1  uncharacterized protein LOC131891785 [Tigriop
+
+
+Domain annotation for each sequence (and alignments):
+>> XP_059083805.1  glutamate receptor ionotropic, kainate 2-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  144.0   0.0     1e-44   2.3e-42       1     114 [.     491     605 ..     491     606 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 144.0 bits;  conditional E-value: 1e-44
+                      -EEEEE--.BTTTBEE.S..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHH CS
+  Lig_chan-Glu_bd   1 ktlkvvtileePyvml.keeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeRe 93 
+                      ktl+v+til ePy+m+ +++  l+gne++eG+ +dL+++++k+lgf+Y+++lv+dgk+Gs++++t++wnG++gel+++kadlav+dltit+eRe
+   XP_059083805.1 491 KTLVVTTILAEPYTMYkENSAVLSGNEQFEGYSVDLVDAISKILGFNYSFRLVEDGKHGSYNKDTGTWNGMVGELLSQKADLAVGDLTITYERE 584
+                      6899***********97788899*********************************************************************** PP
+
+                      TTSEEESESEEE-EEEEEESX CS
+  Lig_chan-Glu_bd  94 evvdFtkpfmelgisilikkp 114
+                      + vdFt+pfm+lg++il+ kp
+   XP_059083805.1 585 QGVDFTMPFMNLGVTILFTKP 605
+                      ******************998 PP
+
+>> XP_059087878.1  glutamate receptor ionotropic, kainate 1-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  136.5   0.0   2.2e-42   4.8e-40       3     114 ..     634     743 ..     632     744 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 136.5 bits;  conditional E-value: 2.2e-42
+                      EEEE--.BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTS CS
+  Lig_chan-Glu_bd   3 lkvvtileePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevv 96 
+                      l+vvt +e+Pyvm   +++l+gn+ ++Gf+idLlk++++ +gfk++l+ v+d+ yG ++++t ewnG++++l dk+adlava++ti+++Re+v+
+   XP_059087878.1 634 LTVVTREERPYVM--INKSLKGNDAFDGFAIDLLKAISDVVGFKFRLYTVPDNLYGVYNHETAEWNGIVRQLTDKRADLAVASMTINYARETVI 725
+                      6899*********..5699*************************************************************************** PP
+
+                      EEESESEEE-EEEEEESX CS
+  Lig_chan-Glu_bd  97 dFtkpfmelgisilikkp 114
+                      dFtkpfm+lgisil+k p
+   XP_059087878.1 726 DFTKPFMNLGISILFKAP 743
+                      ****************98 PP
+
+>> XP_059083829.1  glutamate receptor ionotropic, kainate 2-like isoform X3 [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  133.1   0.3   2.4e-41   5.4e-39       1     114 [.     416     536 ..     416     537 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 133.1 bits;  conditional E-value: 2.4e-41
+                      -EEEEE--.BTTTBEE.......S..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B CS
+  Lig_chan-Glu_bd   1 ktlkvvtileePyvml.......keeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadlt 87 
+                      ktl+++t  ++P++m+       +  e+++ +e+yeG++idL+kelak l+fkY++++v dgkyG+ ++kt+ewnG+i+el d+kad+av dl+
+   XP_059083829.1 416 KTLRITTSDTTPFIMKkaldvpkEALERMSFEEKYEGYVIDLVKELAKALKFKYKFHMVMDGKYGNVDPKTGEWNGMIRELQDQKADMAVIDLS 509
+                      689************9999987555566666788************************************************************ PP
+
+                      --HHHHTTSEEESESEEE-EEEEEESX CS
+  Lig_chan-Glu_bd  88 itaeReevvdFtkpfmelgisilikkp 114
+                      it eR+++vdFt+pfm++g+ il+kk+
+   XP_059083829.1 510 ITLERQSAVDFTMPFMNTGVGILYKKK 536
+                      *************************97 PP
+
+>> XP_059083828.1  glutamate receptor ionotropic, kainate 2-like isoform X2 [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  132.9   0.3   2.8e-41   6.3e-39       1     114 [.     416     536 ..     416     537 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 132.9 bits;  conditional E-value: 2.8e-41
+                      -EEEEE--.BTTTBEE.......S..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B CS
+  Lig_chan-Glu_bd   1 ktlkvvtileePyvml.......keeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadlt 87 
+                      ktl+++t  ++P++m+       +  e+++ +e+yeG++idL+kelak l+fkY++++v dgkyG+ ++kt+ewnG+i+el d+kad+av dl+
+   XP_059083828.1 416 KTLRITTSDTTPFIMKkaldvpkEALERMSFEEKYEGYVIDLVKELAKALKFKYKFHMVMDGKYGNVDPKTGEWNGMIRELQDQKADMAVIDLS 509
+                      689************9999987555566666788************************************************************ PP
+
+                      --HHHHTTSEEESESEEE-EEEEEESX CS
+  Lig_chan-Glu_bd  88 itaeReevvdFtkpfmelgisilikkp 114
+                      it eR+++vdFt+pfm++g+ il+kk+
+   XP_059083828.1 510 ITLERQSAVDFTMPFMNTGVGILYKKK 536
+                      *************************97 PP
+
+>> XP_059083827.1  glutamate receptor ionotropic, kainate 2-like isoform X1 [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  132.9   0.3   2.8e-41   6.3e-39       1     114 [.     416     536 ..     416     537 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 132.9 bits;  conditional E-value: 2.8e-41
+                      -EEEEE--.BTTTBEE.......S..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B CS
+  Lig_chan-Glu_bd   1 ktlkvvtileePyvml.......keeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadlt 87 
+                      ktl+++t  ++P++m+       +  e+++ +e+yeG++idL+kelak l+fkY++++v dgkyG+ ++kt+ewnG+i+el d+kad+av dl+
+   XP_059083827.1 416 KTLRITTSDTTPFIMKkaldvpkEALERMSFEEKYEGYVIDLVKELAKALKFKYKFHMVMDGKYGNVDPKTGEWNGMIRELQDQKADMAVIDLS 509
+                      689************9999987555566666788************************************************************ PP
+
+                      --HHHHTTSEEESESEEE-EEEEEESX CS
+  Lig_chan-Glu_bd  88 itaeReevvdFtkpfmelgisilikkp 114
+                      it eR+++vdFt+pfm++g+ il+kk+
+   XP_059083827.1 510 ITLERQSAVDFTMPFMNTGVGILYKKK 536
+                      *************************97 PP
+
+>> XP_059099441.1  glutamate receptor 1-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  132.0   0.0   5.4e-41   1.2e-38       1     114 [.     450     568 ..     450     569 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 132.0 bits;  conditional E-value: 5.4e-41
+                      -EEEEE--.BTTTBEE....S..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETT.TTEB-HHHHHHHTTS-SEE-SS-B-- CS
+  Lig_chan-Glu_bd   1 ktlkvvtileePyvml....keeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkek.tkewnGligelidkkadlavadltit 89 
+                      kt++++ti eePy+m+    + e  l+gn+r+eG+c dL + ++k  ++++e++ vkdgkyGs++++  + wnG+igel++k+ad+a+a+lti+
+   XP_059099441.1 450 KTYIMTTIIEEPYIMVkqnvHGEPLLTGNDRFEGYCKDLADLISKAANVHFEIHPVKDGKYGSPDPTaPGGWNGMIGELVRKEADIAIAPLTIN 543
+                      58899**********977655566799**************************************995579*********************** PP
+
+                      HHHHTTSEEESESEEE-EEEEEESX CS
+  Lig_chan-Glu_bd  90 aeReevvdFtkpfmelgisilikkp 114
+                      ++Re+v dFtkpfm+lgisi+ikkp
+   XP_059099441.1 544 SQRERVADFTKPFMSLGISIMIKKP 568
+                      ***********************98 PP
+
+>> XP_059097759.1  glutamate receptor ionotropic, kainate 2-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  131.6   0.0   7.1e-41   1.6e-38       2     114 ..     410     525 ..     409     526 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 131.6 bits;  conditional E-value: 7.1e-41
+                      EEEEE--.BTTTBEE...S..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHH CS
+  Lig_chan-Glu_bd   2 tlkvvtileePyvml...keeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeR 92 
+                      tl+v+t  e+P+v+    k+  e  gn+r+eGfc+dLl+++a+ +gf+Y ++l +d++yG+ + +t+ewnGl++el+ ++adla++++ti+ +R
+   XP_059097759.1 410 TLRVMTRIEQPFVTFtkiKDGAEPIGNDRFEGFCVDLLEHIAELVGFNYVIELIPDNNYGALDLSTGEWNGLVRELMYDNADLAMGAMTINFAR 503
+                      689*********999888899999********************************************************************** PP
+
+                      HTTSEEESESEEE-EEEEEESX CS
+  Lig_chan-Glu_bd  93 eevvdFtkpfmelgisilikkp 114
+                      e v+dFtkpfm+lgisil+k p
+   XP_059097759.1 504 EAVIDFTKPFMNLGISILYKIP 525
+                      *******************977 PP
+
+>> XP_059082523.1  glutamate receptor ionotropic, kainate 2-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.5   0.0       3.4   7.6e+02      22      46 ..     303     327 ..     290     333 .. 0.77
+   2 !  119.5   0.0   4.2e-37   9.3e-35       3     113 ..     428     538 ..     426     540 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 0.5 bits;  conditional E-value: 3.4
+                      --GGGGEESHHHHHHHHHHHHHT-E CS
+  Lig_chan-Glu_bd  22 legneryeGfcidLlkelakklgfk 46 
+                       ++++ ++Gf++d l  ++k l+++
+   XP_059082523.1 303 EDEQDYFHGFLLDALMLFSKALRLS 327
+                      344477*********9999998875 PP
+
+  == domain 2  score: 119.5 bits;  conditional E-value: 4.2e-37
+                      EEEE--.BTTTBEE...S..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHH CS
+  Lig_chan-Glu_bd   3 lkvvtileePyvml...keeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeRe 93 
+                      l+++t+l++Py+m+   ++ ++  gn+ryeGf+idL +++++++gf+Y++k+++   yGs + ++ +wnG+i++l+d++ad+a+adl+i++eRe
+   XP_059082523.1 428 LTITTVLSSPYIMEkldSKAKQRLGNDRYEGFIIDLADQISSIVGFNYTIKVTN--GYGSVNAEG-QWNGMIKDLLDETADMAMADLSISYERE 518
+                      789***********99878889999*************************9976..5****9988.**************************** PP
+
+                      TTSEEESESEEE-EEEEEES CS
+  Lig_chan-Glu_bd  94 evvdFtkpfmelgisilikk 113
+                      +vvdFt+pf++lgis+l+ k
+   XP_059082523.1 519 QVVDFTMPFLDLGISLLYVK 538
+                      ****************9976 PP
+
+>> XP_059097644.1  glutamate receptor ionotropic, kainate 2-like isoform X2 [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  115.0   0.0     1e-35   2.3e-33       1     114 [.     431     548 ..     431     549 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 115.0 bits;  conditional E-value: 1e-35
+                      -EEEEE--.BTTTBEE.S..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHH....TTS-SEE-SS-B-- CS
+  Lig_chan-Glu_bd   1 ktlkvvtileePyvml.keeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligeli....dkkadlavadltit 89 
+                      kt++v+ i++ Py+ml +e+++l gn+r+eGf+idL++e+ak l+f+ ++klv+dg+yGs +e++ +w+G+i+e++    ++ ad+avadl++t
+   XP_059097644.1 431 KTFVVTLIQNPPYTMLkEETRKLVGNDRFEGFAIDLMSEIAKVLRFNVTFKLVDDGRYGSVDEHG-NWDGMIQEVLigaeNGGADFAVADLSVT 523
+                      68999**********9778899***************************************9998.********985555668*********** PP
+
+                      HHHHTTSEEESESEEE-EEEEEESX CS
+  Lig_chan-Glu_bd  90 aeReevvdFtkpfmelgisilikkp 114
+                      + R+++vdF++p+m+lgisi++ kp
+   XP_059097644.1 524 SVRAQAVDFSMPWMNLGISIIFIKP 548
+                      *********************9887 PP
+
+>> XP_059097643.1  glutamate receptor ionotropic, kainate 2-like isoform X1 [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  115.0   0.0     1e-35   2.3e-33       1     114 [.     431     548 ..     431     549 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 115.0 bits;  conditional E-value: 1e-35
+                      -EEEEE--.BTTTBEE.S..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHH....TTS-SEE-SS-B-- CS
+  Lig_chan-Glu_bd   1 ktlkvvtileePyvml.keeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligeli....dkkadlavadltit 89 
+                      kt++v+ i++ Py+ml +e+++l gn+r+eGf+idL++e+ak l+f+ ++klv+dg+yGs +e++ +w+G+i+e++    ++ ad+avadl++t
+   XP_059097643.1 431 KTFVVTLIQNPPYTMLkEETRKLVGNDRFEGFAIDLMSEIAKVLRFNVTFKLVDDGRYGSVDEHG-NWDGMIQEVLigaeNGGADFAVADLSVT 523
+                      68999**********9778899***************************************9998.********985555668*********** PP
+
+                      HHHHTTSEEESESEEE-EEEEEESX CS
+  Lig_chan-Glu_bd  90 aeReevvdFtkpfmelgisilikkp 114
+                      + R+++vdF++p+m+lgisi++ kp
+   XP_059097643.1 524 SVRAQAVDFSMPWMNLGISIIFIKP 548
+                      *********************9887 PP
+
+>> XP_059095945.1  ionotropic receptor 25a-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  114.7   0.0   1.3e-35   2.8e-33       2     115 .]     406     513 ..     405     513 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 114.7 bits;  conditional E-value: 1.3e-35
+                      EEEEE--.BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTT CS
+  Lig_chan-Glu_bd   2 tlkvvtileePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReev 95 
+                      +l+vv +++ P+v         g+ ++ G+cidL++el++ +gf++el++++d kyG+++e+  +wnG+++el+dkkad+a+++l+++aeRe+v
+   XP_059095945.1 406 VLRVVVVHQPPFVE------RVGDGEFIGYCIDLINELKQLMGFEFELYEAPDAKYGRMDEEM-NWNGMVKELVDKKADVALGALSVMAERENV 492
+                      579999******99......567789*********************************9998.****************************** PP
+
+                      SEEESESEEE.-EEEEEESXX CS
+  Lig_chan-Glu_bd  96 vdFtkpfmel.gisilikkpe 115
+                      +dFt p+++l gi+il+kkp+
+   XP_059095945.1 493 IDFTVPYYDLvGITILMKKPK 513
+                      *********99********95 PP
+
+>> XP_059078411.1  glutamate receptor ionotropic, kainate 3-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  112.9   0.0   4.5e-35     1e-32       2     114 ..      27     140 ..      26     141 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 112.9 bits;  conditional E-value: 4.5e-35
+                      EEEEE--.BTTTBEE..S..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHH CS
+  Lig_chan-Glu_bd   2 tlkvvtileePyvml..keeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeRe 93 
+                      t++v++i+  P++++   ++++l+gn++y+Gf+ dLl+el +++gf+Y++ l++d++yG + +++ +wnGl+g++ d+kad++ adlt+t++R+
+   XP_059078411.1  27 TFRVASIMAPPFLQQqdGDSTQLRGNDQYKGFIKDLLDELGRMMGFQYTIVLSEDNRYGVPLDNG-QWNGLVGMVQDNKADFVAADLTVTSQRH 119
+                      789**********9977778999**************************************8777.**************************** PP
+
+                      TTSEEESESEEE-EEEEEESX CS
+  Lig_chan-Glu_bd  94 evvdFtkpfmelgisilikkp 114
+                       ++dF+ pfm+  i+i++kk+
+   XP_059078411.1 120 DALDFSRPFMTAPITIVTKKS 140
+                      ******************996 PP
+
+>> XP_059080319.1  glutamate receptor ionotropic, kainate glr-3-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  107.1   0.0   2.8e-33   6.3e-31       3     113 ..      28     132 ..      26     134 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 107.1 bits;  conditional E-value: 2.8e-33
+                      EEEE--.BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTS CS
+  Lig_chan-Glu_bd   3 lkvvtileePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevv 96 
+                      lkv ++l++P++        ++  +yeGf+ dL+++la+kl+f+Ye+  ++d+kyG+k+++t++w+G++g+ id++ad++vadlt t+eR +v+
+   XP_059080319.1  28 LKVGSVLTKPFLH------ETSPGEYEGFVKDLMNALADKLSFTYEIVFANDDKYGHKSPETGKWTGMVGMAIDGDADVIVADLTQTKERDTVL 115
+                      6788999999999......334468********************************************************************* PP
+
+                      EEESESEEE-EEEEEES CS
+  Lig_chan-Glu_bd  97 dFtkpfmelgisilikk 113
+                      dF++pfm+++++il+kk
+   XP_059080319.1 116 DFSTPFMTSSLTILTKK 132
+                      ***************98 PP
+
+>> XP_059080364.1  glutamate [NMDA] receptor subunit 1-like isoform X2 [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.1   0.0      0.26        58       2      70 ..     464     533 ..     463     550 .. 0.70
+   2 !   95.9   0.0   8.5e-30   1.9e-27      22     113 ..     621     715 ..     607     717 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 4.1 bits;  conditional E-value: 0.26
+                      EEEEE--.BTTTBEES..S---GGGGEESH.HHHHHHHHHHHHT-EEEEEE-TT-----BETTTT..EB-HH CS
+  Lig_chan-Glu_bd   2 tlkvvtileePyvmlkeeeelegneryeGf.cidLlkelakklgfkYelklvkdgkyGskkektk..ewnGl 70 
+                      +lkvvti e+P+v + ++ +++++e ++    ++  ++ +++ +f+ ++++ +d   Gs +++++  + nG+
+   XP_059080364.1 464 HLKVVTIFEKPFVYT-RKLNVSSTEVFHNLrQMETANSYSSSNSFSNNFNK-QDVASGSSSNNNNnnHGNGM 533
+                      689**********95.44555555555444267888888888888888866.56677776665441155666 PP
+
+  == domain 2  score: 95.9 bits;  conditional E-value: 8.5e-30
+                      --GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTT....EB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEE CS
+  Lig_chan-Glu_bd  22 legneryeGfcidLlkelakklgfkYelklvkdgkyGskkektk....ewnGligelidkkadlavadltitaeReevvdFtkpfmelgisili 111
+                      +e+   ++G+cidLl+ l+++ +f+++l+l++d+ yG+ ++++     ew+Gl+gel+ ++ad++va+lti++eR++v++F+kpf+++gi+il 
+   XP_059080364.1 621 TEEMYCCRGYCIDLLHLLSSHSNFTFSLHLAQDE-YGTLERNNLtgkqEWTGLMGELVGERADMIVAPLTINPERAQVIEFSKPFKYQGITILQ 713
+                      3333569***********************9995.**998875444559********************************************9 PP
+
+                      ES CS
+  Lig_chan-Glu_bd 112 kk 113
+                      k+
+   XP_059080364.1 714 KR 715
+                      87 PP
+
+>> XP_059080362.1  glutamate [NMDA] receptor subunit 1-like isoform X1 [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.1   0.0      0.26        58       2      70 ..     466     535 ..     465     552 .. 0.70
+   2 !   95.9   0.0   8.5e-30   1.9e-27      22     113 ..     623     717 ..     609     719 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 4.1 bits;  conditional E-value: 0.26
+                      EEEEE--.BTTTBEES..S---GGGGEESH.HHHHHHHHHHHHT-EEEEEE-TT-----BETTTT..EB-HH CS
+  Lig_chan-Glu_bd   2 tlkvvtileePyvmlkeeeelegneryeGf.cidLlkelakklgfkYelklvkdgkyGskkektk..ewnGl 70 
+                      +lkvvti e+P+v + ++ +++++e ++    ++  ++ +++ +f+ ++++ +d   Gs +++++  + nG+
+   XP_059080362.1 466 HLKVVTIFEKPFVYT-RKLNVSSTEVFHNLrQMETANSYSSSNSFSNNFNK-QDVASGSSSNNNNnnHGNGM 535
+                      689**********95.44555555555444267888888888888888866.56677776665441155666 PP
+
+  == domain 2  score: 95.9 bits;  conditional E-value: 8.5e-30
+                      --GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTT....EB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEE CS
+  Lig_chan-Glu_bd  22 legneryeGfcidLlkelakklgfkYelklvkdgkyGskkektk....ewnGligelidkkadlavadltitaeReevvdFtkpfmelgisili 111
+                      +e+   ++G+cidLl+ l+++ +f+++l+l++d+ yG+ ++++     ew+Gl+gel+ ++ad++va+lti++eR++v++F+kpf+++gi+il 
+   XP_059080362.1 623 TEEMYCCRGYCIDLLHLLSSHSNFTFSLHLAQDE-YGTLERNNLtgkqEWTGLMGELVGERADMIVAPLTINPERAQVIEFSKPFKYQGITILQ 715
+                      3333569***********************9995.**998875444559********************************************9 PP
+
+                      ES CS
+  Lig_chan-Glu_bd 112 kk 113
+                      k+
+   XP_059080362.1 716 KR 717
+                      87 PP
+
+>> XP_059088886.1  ionotropic receptor 25a-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   97.9   0.0   2.2e-30   4.8e-28       9     114 ..     365     480 ..     357     481 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 97.9 bits;  conditional E-value: 2.2e-30
+                      .BTTTBEE......S..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT--....---BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHH CS
+  Lig_chan-Glu_bd   9 leePyvml......keeeelegneryeGfcidLlkelakklgfkYelklvkdgk....yGskkektkewnGligelidkkadlavadltitaeR 92 
+                         P++ +      +  ++++gn  yeG+c+dLlk++++kl+f+Ye+ ++kd++    yG+k++++  w+G+ig+l +++ dl+vadlt+t+eR
+   XP_059088886.1 365 VAVPWLYEkmgrdgSPMKDTNGNIIYEGYCMDLLKKISEKLSFEYEVVISKDQSpgiaYGKKDDNG-DWSGMIGDLARGDTDLIVADLTMTSER 457
+                      5566666555554444567778888*************************9986333377776665.*************************** PP
+
+                      HTTSEEESESEEE.-EEEEEESX CS
+  Lig_chan-Glu_bd  93 eevvdFtkpfmel.gisilikkp 114
+                      eev+dF +p+ ++ gisi+i+k+
+   XP_059088886.1 458 EEVIDFVSPYFDQaGISIVIRKR 480
+                      *********99888******985 PP
+
+>> XP_059088574.1  glutamate receptor ionotropic, kainate 2-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   97.0   0.0   4.1e-30   9.1e-28      20     114 ..     400     494 ..     373     495 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 97.0 bits;  conditional E-value: 4.1e-30
+                      S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE.-EEEEEE CS
+  Lig_chan-Glu_bd  20 eelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmel.gisilik 112
+                      +e++ n+ ++G+ci+Ll+elak++gf+Ye+  ++ + yG+k++++ +w+G++g+li++++d+ va lt+t eReev+dF  p+ ++ gisil++
+   XP_059088574.1 400 DETKPNRGLRGYCIELLEELAKRMGFDYEIVPSNRNAYGAKQPNG-TWTGIVGDLISGEIDISVATLTMTTEREEVIDFVAPYFDQsGISILLR 492
+                      45556677*********************************9998.************************************99887******9 PP
+
+                      SX CS
+  Lig_chan-Glu_bd 113 kp 114
+                      k+
+   XP_059088574.1 493 KK 494
+                      97 PP
+
+>> XP_059093676.1  ionotropic receptor 25a-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   96.2   0.0   7.3e-30   1.6e-27       3     114 ..     369     488 ..     367     489 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 96.2 bits;  conditional E-value: 7.3e-30
+                      EEEE--.BTTTBEE......S..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-..----BETTTTEB-HHHHHHHTTS-SEE-SS-B- CS
+  Lig_chan-Glu_bd   3 lkvvtileePyvml......keeeelegneryeGfcidLlkelakklgfkYelklvkdg..kyGskkektkewnGligelidkkadlavadlti 88 
+                      +++ t+ ++P+  +      +  ++  g+ ++ G+c+d++++l+kk++f+Yel l +dg  +yG+k++++ +wnG++g+l+++++d+ava +t+
+   XP_059093676.1 369 FRIGTVPTTPWAYIkmdengRVIKDAAGRPSLGGYCVDMVEKLSKKMHFDYELILPTDGsnSYGQKDKSG-NWNGVVGDLVNGEIDIAVAGMTM 461
+                      56777778888666555333333445555669************************9963369**98887.*********************** PP
+
+                      -HHHHTTSEEESESEEE.-EEEEEESX CS
+  Lig_chan-Glu_bd  89 taeReevvdFtkpfmel.gisilikkp 114
+                      t+eReev+dF  p+ ++ gisi+i+kp
+   XP_059093676.1 462 TSEREEVIDFVAPYFDQsGISIIIRKP 488
+                      *************99887*******98 PP
+
+>> XP_059095174.1  glutamate receptor ionotropic, NMDA 2B-like isoform X3 [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   92.6   0.0   9.3e-29   2.1e-26      26     114 ..     423     509 ..     407     510 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 92.6 bits;  conditional E-value: 9.3e-29
+                      GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEESX CS
+  Lig_chan-Glu_bd  26 eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgisilikkp 114
+                      + ++GfcidLl++l++ l+f+Y+l + +d+++G  ++   +wnGl+ +l++kk+d+++++l ++++Re +vdFt pfme+g+si++ k+
+   XP_059095174.1 423 QCCSGFCIDLLEKLSDDLQFEYNLVQGTDNRWGVLENG--TWNGLMASLVEKKVDMVLTSLKVNSDREAAVDFTVPFMETGTSIVVAKR 509
+                      4499*******************************665..5*******************************************99875 PP
+
+>> XP_059095158.1  glutamate receptor ionotropic, NMDA 2B-like isoform X1 [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   92.5   0.0   9.9e-29   2.2e-26      26     114 ..     470     556 ..     454     557 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 92.5 bits;  conditional E-value: 9.9e-29
+                      GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEESX CS
+  Lig_chan-Glu_bd  26 eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgisilikkp 114
+                      + ++GfcidLl++l++ l+f+Y+l + +d+++G  ++   +wnGl+ +l++kk+d+++++l ++++Re +vdFt pfme+g+si++ k+
+   XP_059095158.1 470 QCCSGFCIDLLEKLSDDLQFEYNLVQGTDNRWGVLENG--TWNGLMASLVEKKVDMVLTSLKVNSDREAAVDFTVPFMETGTSIVVAKR 556
+                      4499*******************************665..5*******************************************99875 PP
+
+>> XP_059095167.1  glutamate receptor ionotropic, NMDA 2B-like isoform X2 [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   92.5   0.0   9.9e-29   2.2e-26      26     114 ..     469     555 ..     453     556 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 92.5 bits;  conditional E-value: 9.9e-29
+                      GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEESX CS
+  Lig_chan-Glu_bd  26 eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgisilikkp 114
+                      + ++GfcidLl++l++ l+f+Y+l + +d+++G  ++   +wnGl+ +l++kk+d+++++l ++++Re +vdFt pfme+g+si++ k+
+   XP_059095167.1 469 QCCSGFCIDLLEKLSDDLQFEYNLVQGTDNRWGVLENG--TWNGLMASLVEKKVDMVLTSLKVNSDREAAVDFTVPFMETGTSIVVAKR 555
+                      4499*******************************665..5*******************************************99875 PP
+
+>> XP_059085084.1  glutamate receptor ionotropic, NMDA 2B-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   88.8   0.0   1.4e-27   3.1e-25      20     114 ..     561     654 ..     547     655 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 88.8 bits;  conditional E-value: 1.4e-27
+                      S---GG.GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEE CS
+  Lig_chan-Glu_bd  20 eelegn.eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgisilik 112
+                       ++++  + ++G cidLl+++++ lgf+Y+l+ v+d+++G+ ++  ++wnGl++el++kk dl++++l ++aeRe +vdFt pf+e gi+il+ 
+   XP_059085084.1 561 GNMSSVgKCCSGLCIDLLRKFEDDLGFTYDLTRVADTRWGTLEN--GKWNGLMRELVEKKTDLVLSALKVSAEREAAVDFTIPFLEAGIAILVA 652
+                      4455553569*******************************955..47********************************************98 PP
+
+                      SX CS
+  Lig_chan-Glu_bd 113 kp 114
+                      k+
+   XP_059085084.1 653 KR 654
+                      85 PP
+
+>> XP_059089141.1  glutamate receptor ionotropic, NMDA 2A-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   88.4   0.0   1.9e-27   4.2e-25      21     114 ..     572     665 ..     524     666 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 88.4 bits;  conditional E-value: 1.9e-27
+                      ---GG..GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEE CS
+  Lig_chan-Glu_bd  21 elegn..eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgisilik 112
+                      +++++  + ++Gfc+dLl ++a+ l+f++++  v+dg++G   +  ++wnGl+ eli+++ d+++++l i++ Re+v+dF+ pf+++gi+il+ 
+   XP_059089141.1 572 KVNSTmfQCCSGFCVDLLLKFAHDLSFDFHMVRVRDGNWGGVAN--GKWNGLVAELINHETDIVMTSLKINSGREKVIDFSVPFLDTGITILVA 663
+                      3333333459*******************************955..47********************************************98 PP
+
+                      SX CS
+  Lig_chan-Glu_bd 113 kp 114
+                      k+
+   XP_059089141.1 664 KR 665
+                      85 PP
+
+>> XP_059095193.1  glutamate receptor 1-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   85.7   0.0   1.2e-26   2.7e-24      10     114 ..     162     258 ..     153     259 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 85.7 bits;  conditional E-value: 1.2e-26
+                      BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESE CS
+  Lig_chan-Glu_bd  10 eePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfm 103
+                        P+v       +++n ++ G  +d++++++++++f+Yel +++dg+yG++++++  w+G +g+li+++ad+ +a ltit++R++v+dF+ p m
+   XP_059095193.1 162 YWPFVF------KRENGSFGGISLDVIHNFQQTMNFTYELVESPDGTYGTRQNQS--WTGFVGQLINGSADVCIATLTITHSRRKVIDFSIPIM 247
+                      557777......356678*********************************7766..************************************* PP
+
+                      EE-EEEEEESX CS
+  Lig_chan-Glu_bd 104 elgisilikkp 114
+                       + +s+ i +p
+   XP_059095193.1 248 WTDLSVFIANP 258
+                      **999988765 PP
+
+>> XP_059083446.1  glutamate receptor ionotropic, kainate 2-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   81.8   0.0   2.1e-25   4.7e-23       1      93 [.     429     521 ..     429     538 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 81.8 bits;  conditional E-value: 2.1e-25
+                      -EEEEE--.BTTTBEE.S..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHH CS
+  Lig_chan-Glu_bd   1 ktlkvvtileePyvml.keeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeRe 93 
+                      ktl+++t+ + Py m+ +++++l+gn+ +eG++idL+ke+a++l+f+Y++k v+d+kyG+++++t+ewnG++gel+++   la+++l + +++ 
+   XP_059083446.1 429 KTLIITTLYSPPYSMYrDSTKRLTGNDVFEGYAIDLIKEIAEILRFNYTFKWVDDQKYGKRNQETGEWNGMMGELLAQ-FLLALCALNVPERKP 521
+                      6899***********9888999*****************************************************986.457888887765554 PP
+
+>> XP_059085628.1  glutamate receptor 2-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   81.4   0.1   2.8e-25   6.1e-23       2     114 ..     121     238 ..     120     239 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 81.4 bits;  conditional E-value: 2.8e-25
+                      EEEEE--.BTTTBEE.....S..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--H CS
+  Lig_chan-Glu_bd   2 tlkvvtileePyvml.....keeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltita 90 
+                      ++k++t+ + Py++      k++  + +n  + G++ d++ +l+++l+f++ +++ +dg+yG  +++ k+w+G++g+l +k++d+av+d+t+t 
+   XP_059085628.1 121 EFKIATLYSPPYITAmipinKSSYGVPENYALTGMLADVFANLKEILNFTFVVTKPQDGHYGVVNNDRKTWTGMVGMLQNKDIDMAVTDFTVTV 214
+                      58999*******98778877666777788889************************************************************** PP
+
+                      HHHTTSEEESESEEE-EEEEEESX CS
+  Lig_chan-Glu_bd  91 eReevvdFtkpfmelgisilikkp 114
+                      eR+ v+ Ft+p  +   s+ ik+p
+   XP_059085628.1 215 ERSLVISFTEPITQIYHSLFIKNP 238
+                      **************9999999987 PP
+
+>> XP_059086883.1  glutamate receptor ionotropic, kainate 2-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   77.5   0.0   4.4e-24   9.7e-22       3     111 ..     187     294 ..     185     298 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 77.5 bits;  conditional E-value: 4.4e-24
+                      EEEE--.BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTS CS
+  Lig_chan-Glu_bd   3 lkvvtileePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevv 96 
+                      l+ + i++eP+vm++ + + eg  +++G  id +++l+++lgf+Y++  + dg++G  + ++ +wnG++g+l++++ d+ +++l+it++R+ev+
+   XP_059086883.1 187 LRTTVIQSEPFVMIHGDPSSEGFLNVSGLFIDTFRALQDRLGFSYHVVSTIDGNWGGLDAEG-RWNGMVGMLVRNESDVCISSLSITQQRNEVI 279
+                      6678899*******99999999999*********************************9998.******************************* PP
+
+                      EEESESEEE-EEEEE CS
+  Lig_chan-Glu_bd  97 dFtkpfmelgisili 111
+                      d++++ ++  ++++ 
+   XP_059086883.1 280 DYSQTIIQDVFTVVA 294
+                      *****9999888876 PP
+
+>> XP_059079834.1  probable glutamate receptor [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   72.0   0.0   2.3e-22   5.1e-20      26     110 ..      69     152 ..      53     157 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 72.0 bits;  conditional E-value: 2.3e-22
+                      GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEE CS
+  Lig_chan-Glu_bd  26 eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgisil 110
+                      ++++G+ +d+l+ la+ ++f+  ++  +dg +Gsk++++ +wnG++gel +++ d+ ++ l+it++R++v+dFt p ++  +++ 
+   XP_059079834.1  69 SNVSGYFVDVLDILADLMHFQVVYQRPPDGLWGSKNDDG-TWNGMVGELTNNQSDISIGGLSITEDRSQVIDFTYPLIDDDVTLN 152
+                      6799*******************************9988.*************************************99988765 PP
+
+>> XP_059079771.1  probable glutamate receptor [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   71.8   0.0   2.6e-22   5.8e-20      26     110 ..     116     199 ..     100     204 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 71.8 bits;  conditional E-value: 2.6e-22
+                      GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEE CS
+  Lig_chan-Glu_bd  26 eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgisil 110
+                      ++++G+ +d+l+ la+ ++f+  ++  +dg +Gsk++++ +wnG++gel +++ d+ ++ l+it++R++v+dFt p ++  +++ 
+   XP_059079771.1 116 SNVSGYFVDVLDILADLMHFQVVYQRPPDGLWGSKNDDG-TWNGMVGELTNNQSDISIGGLSITEDRSQVIDFTYPLIDDDVTLN 199
+                      6799*******************************9988.*************************************99988765 PP
+
+>> XP_059084920.1  glutamate receptor-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   71.5   0.0   3.1e-22     7e-20       2     114 ..     202     319 ..     201     320 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 71.5 bits;  conditional E-value: 3.1e-22
+                      EEEEE--.BTTTBEE.....S..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--H CS
+  Lig_chan-Glu_bd   2 tlkvvtileePyvml.....keeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltita 90 
+                      ++k++++ + Py++       +++ +  + ++ G+  d++ +l+++l+f++++++ +dg++G+   +++ w+G+ig+l +k++d+a+ad+t+t+
+   XP_059084920.1 202 QFKIASMVSPPYITSmipitVSNSGIPMDYSLGGMFADVFFNLQEILNFTFQVTQPPDGEWGAILGESQGWSGMIGMLQNKEIDMAIADFTVTK 295
+                      68999999****987677643333344446699************************************************************* PP
+
+                      HHHTTSEEESESEEE-EEEEEESX CS
+  Lig_chan-Glu_bd  91 eReevvdFtkpfmelgisilikkp 114
+                      eR++vv F++p  +   s+ ik+p
+   XP_059084920.1 296 ERSSVVSFAEPIAQIYHSLFIKNP 319
+                      **************9999999987 PP
+
+>> XP_059095430.1  probable glutamate receptor [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   70.9   0.0   4.9e-22   1.1e-19      26     108 ..     208     289 ..     189     296 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 70.9 bits;  conditional E-value: 4.9e-22
+                      GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EE CS
+  Lig_chan-Glu_bd  26 eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgis 108
+                      +r  G+  dL+ el+++++fk  + + +dgk+G  ++++ +wnG+ig+l++++ad+a++++ti+++R++vvd++ p m+ +++
+   XP_059095430.1 208 SRPTGMFPDLFYELQNIMKFKIIVVHPPDGKWGGITKNG-SWNGMIGQLVRGEADMAMSEFTINEDRQKVVDYSIPLMDDSVH 289
+                      66789******************************8877.**************************************99765 PP
+
+>> XP_059085839.1  glutamate receptor ionotropic, kainate 5-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   70.1   0.0   8.8e-22   1.9e-19       2     114 ..     196     313 ..     195     314 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 70.1 bits;  conditional E-value: 8.8e-22
+                      EEEEE--.BTTTBEE.....S..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--H CS
+  Lig_chan-Glu_bd   2 tlkvvtileePyvml.....keeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltita 90 
+                      ++k++t+ + Py++      ++++   g+  + G+  d++ +l+++++f++ +++ +d+++G+ ++++ +w+G++g+l +k++d+a++d+t+t 
+   XP_059085839.1 196 EFKIATLYSPPYLTAkipinQSDSGAPGSYAMAGMFADVFLNLKEIMNFTFVVTKPEDEQWGAVNSDGITWSGMVGMLQNKEIDMAITDFTVTV 289
+                      58999*******9988877655666667778*************************************************************** PP
+
+                      HHHTTSEEESESEEE-EEEEEESX CS
+  Lig_chan-Glu_bd  91 eReevvdFtkpfmelgisilikkp 114
+                      eR+ v+ F++p  +   s+ ik+p
+   XP_059085839.1 290 ERSLVITFAEPITQIYHSLFIKNP 313
+                      **************9999999987 PP
+
+>> XP_059080425.1  glutamate receptor ionotropic, delta-2-like isoform X2 [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   69.2   0.0   1.7e-21   3.8e-19      27     109 ..     112     193 ..      95     199 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 69.2 bits;  conditional E-value: 1.7e-21
+                      GEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEE CS
+  Lig_chan-Glu_bd  27 ryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgisi 109
+                      +++G+ +d+l+ la+ ++f+  +++ +dg++Gsk++++ +wnG++g+l ++k d+ ++ l+it++R +v+dFt+  ++  +++
+   XP_059080425.1 112 DVNGYFVDVLNILADLMHFQVVYQKPPDGRWGSKNDDG-TWNGMVGDLTNNKSDISIGGLSITEDRFQVIDFTHSLIDDDVTL 193
+                      589*******************************9988.***********************************999988876 PP
+
+>> XP_059080424.1  probable glutamate receptor isoform X1 [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   68.4   0.0     3e-21   6.7e-19      27     109 ..     112     193 ..      96     199 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 68.4 bits;  conditional E-value: 3e-21
+                      GEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEE CS
+  Lig_chan-Glu_bd  27 ryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgisi 109
+                      +++G+ +d+l+ la+ ++f+  +++ +dg++Gsk++++ +wnG++g+l ++k d+ ++ l+it++R +v+dFt+  ++  +++
+   XP_059080424.1 112 DVNGYFVDVLNILADLMHFQVVYQKPPDGRWGSKNDDG-TWNGMVGDLTNNKSDISIGGLSITEDRFQVIDFTHSLIDDDVTL 193
+                      589*******************************9988.***********************************999988876 PP
+
+>> XP_059094370.1  glutamate receptor ionotropic, kainate glr-3-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   66.1   0.0   1.5e-20   3.4e-18       3     114 ..     192     302 ..     190     303 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 66.1 bits;  conditional E-value: 1.5e-20
+                      EEEE--.BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTS CS
+  Lig_chan-Glu_bd   3 lkvvtileePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevv 96 
+                      +k++++ ++Py+ l+ +++  +n +++G+  d++  l+++l+f+Y++ + +d+++G+ ++++  +nG++g+l ++++dla +++t+t+eR++vv
+   XP_059094370.1 192 IKIAALPSRPYLDLDCHNTSLNNCTISGMYADVFFVLRDILNFTYQFVQPPDDTWGTSDSEG-AYNGMLGQLQRQEIDLAPTSFTVTKERSRVV 284
+                      78899999*****988888888899*********************************9998.******************************* PP
+
+                      EEESESEEE-EEEEEESX CS
+  Lig_chan-Glu_bd  97 dFtkpfmelgisilikkp 114
+                      dF+ p  ++  ++ + kp
+   XP_059094370.1 285 DFAFPITDMHHRFFVPKP 302
+                      *****9998877776665 PP
+
+>> XP_059084632.1  glutamate receptor ionotropic, kainate 2-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   62.6   0.0   1.8e-19   4.1e-17       3     113 ..      62     175 ..      60     177 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 62.6 bits;  conditional E-value: 1.8e-19
+                      EEEE--.BTTTBEE.S..S---GG.GG.EESHHHHHHHHHHHHHT-EEEEEE-TT.-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHH CS
+  Lig_chan-Glu_bd   3 lkvvtileePyvml.keeeelegn.er.yeGfcidLlkelakklgfkYelklvkd.gkyGskkektkewnGligelidkkadlavadltitaeR 92 
+                      ++v++ ++ Py  + +e    ++n ++ + G   d+l+el+ +l+f+  ++++kd gk+G+ ++++  wnG+++++++++a++av+++ +t eR
+   XP_059084632.1  62 ITVTSETSLPYSLViHEPALATNNvDEiLFGVYPDILRELQVILNFTLCFQHNKDsGKWGTLDHNG-LWNGMVRMILEQEAEMAVSNFAMTLER 154
+                      678889999**7774333334444455799*********************9998569****8887.*************************** PP
+
+                      HTTSEEESESEEE-EEEEEES CS
+  Lig_chan-Glu_bd  93 eevvdFtkpfmelgisilikk 113
+                      + vvdF+ +f +   ++ +++
+   XP_059084632.1 155 SDVVDFSITFDSDVSKLFVQR 175
+                      **********98877766665 PP
+
+>> XP_059092450.1  glutamate receptor ionotropic, kainate 2-like isoform X2 [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   62.1   0.0   2.7e-19     6e-17      26     114 ..      89     178 ..      73     179 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 62.1 bits;  conditional E-value: 2.7e-19
+                      GGEESHHHHHHHHHHHHHT-EEEEEE.-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEESX CS
+  Lig_chan-Glu_bd  26 eryeGfcidLlkelakklgfkYelkl.vkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgisilikkp 114
+                       + +G+ ++++k+l++ l+f+++ ++ v+d++yGs+ +++ + nGlig++ ++ ad+avadltit++R+++v+F  p +e   ++li++p
+   XP_059092450.1  89 LQAQGYNFEIFKQLQEWLNFTFSAYIpVNDTSYGSMMSDNISFNGLIGQVQQGVADIAVADLTITEDRRKAVEFIYPVKEIYKALLIQRP 178
+                      5689******************9986589************************************************9998888888765 PP
+
+>> XP_059096791.1  glutamate receptor ionotropic, delta-2-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   61.0   0.0   5.9e-19   1.3e-16      11     102 ..      16     103 ..       6     110 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 61.0 bits;  conditional E-value: 5.9e-19
+                      TTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESES CS
+  Lig_chan-Glu_bd  11 ePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpf 102
+                       P++    +++ ++   ++G + ++l++ +++l+f++++ + +dgk+Gs ++++ ewnG+ig++ +k++d+a++++ +++eR+++ +F+ p 
+   XP_059096791.1  16 PPWLE---RTNHSDPMGFSGITWEILQRTSDILDFTFTFVQPEDGKWGSIDQSG-EWNGMIGMIQRKEIDFAIGPFGMNPERARACEFSVPI 103
+                      56666...345555577*********************************9988.**********************************996 PP
+
+>> XP_059086884.1  glutamate receptor-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   59.8   0.0   1.4e-18     3e-16      19     104 ..     189     273 ..     175     282 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 59.8 bits;  conditional E-value: 1.4e-18
+                      .S---GG.GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEE CS
+  Lig_chan-Glu_bd  19 eeelegn.eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfme 104
+                      +++ e n ++++ + i +++ l+++l+f++e +++++g +Gsk++ t  wnG++g+l +++ad+++ +l+it++R++v+dF++p + 
+   XP_059086884.1 189 NSSSEANtDSVSRYFIRVFQILQQNLNFSFEPHINTQGAWGSKESGT--WNGIVGMLHRNEADIGMQSLSITKDRNKVIDFSTPLIF 273
+                      3344444488999******************************6655..***********************************765 PP
+
+>> XP_059079838.1  glutamate receptor ionotropic, delta-2-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   59.0   0.0   2.5e-18   5.5e-16      23     108 ..     194     278 ..     180     283 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 59.0 bits;  conditional E-value: 2.5e-18
+                      -GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EE CS
+  Lig_chan-Glu_bd  23 egneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgis 108
+                      +g ++  Gf id+lk l+++++f+Ye+ +++d kyG++ +++ +w+ l+g+l ++++++ va+l + +eR+e+vdF +   +l + 
+   XP_059079838.1 194 SGPKNAYGFSIDVLKVLQENMKFQYEFVEESDAKYGERLPNG-TWTSLLGKLQRQEIHFSVAALGVVHERNEIVDFVSLSTRLQYI 278
+                      5668899*******************************9988.*********************************8765555555 PP
+
+>> XP_059086902.1  ionotropic receptor 25a-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   59.0   0.0   2.4e-18   5.4e-16       9     102 ..      14     103 ..       6     111 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 59.0 bits;  conditional E-value: 2.4e-18
+                      .BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESES CS
+  Lig_chan-Glu_bd   9 leePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpf 102
+                      +  P++    +++ ++   ++G + ++l ++a++l+f++++ + +dgk+Gs ++ + +wnG++g++ +k++d+a++++ + +eR+ + dF+ p 
+   XP_059086902.1  14 MWPPWLE---RTNHSDPMGFRGITWEILLQIADILEFDFTFVQPEDGKWGSVDDAG-TWNGMMGMIQRKEIDFAIGPFGMIPERAVACDFSVPI 103
+                      5567766...445556677*********************************9888.**********************************996 PP
+
+>> XP_059095569.1  probable glutamate receptor [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   58.7   0.1     3e-18   6.6e-16      23     114 ..     220     310 ..     207     311 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 58.7 bits;  conditional E-value: 3e-18
+                      -GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEESX CS
+  Lig_chan-Glu_bd  23 egneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgisilikkp 114
+                      ++n +++G ++d+lk +akk +f+ ++  + dg++Gs + ++  w+G +g+l++k++d+a+adl++t++R+e+v Ft+  +    ++ +k p
+   XP_059095569.1 220 DENGELSGIMVDVLKIMAKKSNFSTNMLNTFDGTFGSLNANG-IWSGNMGMLVNKTIDFAIADLSVTSQRSEAVSFTTGILIAANKLFMKVP 310
+                      566789********************************8887.***********************************99888888777765 PP
+
+>> XP_059083359.1  glutamate receptor U1-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   58.1   0.0   4.5e-18     1e-15      33     104 ..       2      72 ..       1      80 [. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 58.1 bits;  conditional E-value: 4.5e-18
+                      HHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEE CS
+  Lig_chan-Glu_bd  33 idLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfme 104
+                       d+l +l+++++f++++   +dgk+G  + ++ +wnG++g++ +k++d+a++++ ++aeR+ev+dF+ p  +
+   XP_059083359.1   2 WDVLLQLSRSMNFTFSIIRPPDGKWGVLEANG-SWNGMVGMVSRKEVDFALGPFGMSAERSEVIDFSFPLRQ 72 
+                      69999***********************8877.**********************************99765 PP
+
+>> XP_059082976.1  glutamate receptor ionotropic, kainate glr-3-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   56.3   0.0   1.7e-17   3.8e-15       6      99 ..     207     298 ..     203     313 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 56.3 bits;  conditional E-value: 1.7e-17
+                      E--.BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEE CS
+  Lig_chan-Glu_bd   6 vtileePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFt 99 
+                       t++++P +++  e+ +++++ ++G + dL +el+ +++f+Y+l+  +dg++G + +++  w+G+ig+l ++++d+   d+ ++++R++v+dF 
+   XP_059082976.1 207 STLENRPVITY-FETGCSNSSCFKGVLADLWHELQAIMNFTYKLTTPEDGEWGVELSEG-VWSGIIGQLANDEVDISPVDMLVSSARNKVIDFL 298
+                      56777887774.3456666688*********************************8888.*********************************5 PP
+
+>> XP_059078456.1  glutamate receptor ionotropic, kainate 2-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   56.1   0.0   1.9e-17   4.2e-15      15     114 ..     449     545 ..     435     546 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 56.1 bits;  conditional E-value: 1.9e-17
+                      EES..S---GG.GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-E CS
+  Lig_chan-Glu_bd  15 mlkeeeelegn.eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgi 107
+                       l+ +++++gn   +eG +idL+++lak l+f+Y+l+ ++  ++G+k++   +w+Gli++l d++ad+++a+l    + + ++ F+ p  ++ +
+   XP_059078456.1 449 LLNVRRDVKGNvLGFEGLLIDLINKLAKDLNFNYTLRFSS--ELGRKRNG--NWTGLIKKLTDREADVGLAALPQARKYSPAIAFSPPIATSHL 538
+                      44466889999778***********************987..68*99664..6***************************************** PP
+
+                      EEEEESX CS
+  Lig_chan-Glu_bd 108 silikkp 114
+                      +++i++p
+   XP_059078456.1 539 TLMIQRP 545
+                      ****987 PP
+
+>> XP_059097828.1  glutamate receptor ionotropic, kainate 1-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   52.8   0.0     2e-16   4.5e-14      25     109 ..     230     314 ..     201     320 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 52.8 bits;  conditional E-value: 2e-16
+                      G.GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEE CS
+  Lig_chan-Glu_bd  25 n.eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgisi 109
+                      +  +y+Gf ++Llk+++k+l+++Ye+   +dg++G+  +++ +wnG++   +++++d++++d  +t++R  v+d+t  f +  +++
+   XP_059097828.1 230 TyMNYSGFEVELLKAIQKSLQVNYEYLNPTDGEWGNTLNNG-SWNGMVDLALRGEVDFMMGDNMMTYSRFLVLDYTVGFGSDYMTF 314
+                      3356*********************************8877.************************************98877765 PP
+
+>> XP_059088023.1  glutamate receptor ionotropic, NMDA 2D-like isoform X1 [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   52.9   0.0   1.8e-16   4.1e-14      22     106 ..     314     397 ..     287     406 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 52.9 bits;  conditional E-value: 1.8e-16
+                      --GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE- CS
+  Lig_chan-Glu_bd  22 legneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelg 106
+                      +++ ++y G+ idLl+  a+ l+f+Y+l   +dg++G+ + ++ +w+Gl+ e   +++d++++d+ i + R +v d t pf    
+   XP_059088023.1 314 TNKYRNYWGYEIDLLEFTARVLNFQYTLVNPADGNWGHIEMDG-TWSGLVAEAAMGSVDFVICDMFIVYGRVQVFDATIPFDLDF 397
+                      333367*********************************9988.*************************************7655 PP
+
+>> XP_059089661.1  probable glutamate receptor [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   52.0   0.0   3.6e-16     8e-14      23     112 ..     219     306 ..     182     308 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 52.0 bits;  conditional E-value: 3.6e-16
+                      -GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEE CS
+  Lig_chan-Glu_bd  23 egneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgisilik 112
+                       +n +++G   + +  l+++l+f+Y++ + kd+++G  k+  ++w+G++  l++++ad++++++t++  R+ v+d+ +p  ++ + +++k
+   XP_059089661.1 219 LDNMEMSGIFWETFLVLESSLNFTYDMFVRKDRRWGVLKD--GQWDGMVSTLVKEEADFILGSVTLNLMRSAVIDYLSPLAHETYGVIVK 306
+                      3556799999999999**********************55..47************************************9999998887 PP
+
+>> XP_059096592.1  probable glutamate receptor [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   52.0   0.0   3.6e-16   8.1e-14      25     112 ..     221     308 ..     207     310 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 52.0 bits;  conditional E-value: 3.6e-16
+                      GGGEESHHHHH.HHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEE CS
+  Lig_chan-Glu_bd  25 neryeGfcidL.lkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgisilik 112
+                      +++++G+   + l+ l ++++f+ +l++ kd+k+Gsk++++ +w+G+  +li+++ad+++a+lti+++R ev dF  p  ++ + i i+
+   XP_059096592.1 221 HSKVRGYFKTIfLDILGSQMNFSTSLYVRKDRKWGSKTRSG-QWTGIFSSLIKREADIGMAALTINPSRFEVADFLIPLGTETYGIFIR 308
+                      4678999888736778899******************8888.************************************99999988876 PP
+
+>> XP_059087836.1  glutamate receptor ionotropic, kainate 1-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   50.8   0.0   8.4e-16   1.9e-13      27     114 ..     112     198 ..      97     199 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 50.8 bits;  conditional E-value: 8.4e-16
+                      GEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEESX CS
+  Lig_chan-Glu_bd  27 ryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgisilikkp 114
+                      +++G++  ++++l++ l+f+ +l  ++d++yG+  + t + +G++g++ ++++d+++a ++it +R +v+d  +p   + +++l+k+p
+   XP_059087836.1 112 TFQGYLGSIVQQLQHALNFSSTLVPSSDNRYGALINGT-TFDGIVGMIQHGEIDFGIAGISITRDRLQVIDILEPCWVTVYKLLLKRP 198
+                      59********************************9988.**************************************99999999987 PP
+
+>> XP_059081679.1  glutamate receptor ionotropic, kainate glr-3-like isoform X2 [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   50.6   0.0   9.7e-16   2.2e-13      43     114 ..       1      71 [.       1      72 [. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 50.6 bits;  conditional E-value: 9.7e-16
+                      HT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEESX CS
+  Lig_chan-Glu_bd  43 lgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgisilikkp 114
+                      ++f++ l+  +d+ +G+k +++ +wnG+ig+l ++++d+a a++t+ta R+evvdF  p  e+  ++ +k+p
+   XP_059081679.1   1 MNFTFLLNPPPDRAWGTKLPDG-KWNGMIGQLHRREIDIAPAEFTVTALRSEVVDFNVPITESHQKLFVKNP 71 
+                      589***************9999.*************************************999988888876 PP
+
+>> XP_059081677.1  glutamate receptor ionotropic, kainate glr-3-like isoform X1 [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   50.2   0.0   1.3e-15   2.9e-13      43     114 ..       1      71 [.       1      72 [. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 50.2 bits;  conditional E-value: 1.3e-15
+                      HT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEESX CS
+  Lig_chan-Glu_bd  43 lgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgisilikkp 114
+                      ++f++ l+  +d+ +G+k +++ +wnG+ig+l ++++d+a a++t+ta R+evvdF  p  e+  ++ +k+p
+   XP_059081677.1   1 MNFTFLLNPPPDRAWGTKLPDG-KWNGMIGQLHRREIDIAPAEFTVTALRSEVVDFNVPITESHQKLFVKNP 71 
+                      589***************9999.*************************************999988888876 PP
+
+>> XP_059081678.1  glutamate receptor ionotropic, kainate glr-3-like isoform X1 [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   50.2   0.0   1.3e-15   2.9e-13      43     114 ..       1      71 [.       1      72 [. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 50.2 bits;  conditional E-value: 1.3e-15
+                      HT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEESX CS
+  Lig_chan-Glu_bd  43 lgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgisilikkp 114
+                      ++f++ l+  +d+ +G+k +++ +wnG+ig+l ++++d+a a++t+ta R+evvdF  p  e+  ++ +k+p
+   XP_059081678.1   1 MNFTFLLNPPPDRAWGTKLPDG-KWNGMIGQLHRREIDIAPAEFTVTALRSEVVDFNVPITESHQKLFVKNP 71 
+                      589***************9999.*************************************999988888876 PP
+
+>> XP_059095937.1  glutamate receptor ionotropic, NMDA 1-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   49.3   0.0   2.4e-15   5.4e-13      23     113 ..     276     365 ..     264     367 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 49.3 bits;  conditional E-value: 2.4e-15
+                      -GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEES CS
+  Lig_chan-Glu_bd  23 egneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgisilikk 113
+                      +++++  Gfc ++++ l+k+++f+Ye+k  + + +G+ +e++ ew+Gl g ++++++d++   + +++eR+  ++F+     +   +++kk
+   XP_059095937.1 276 DKSDQATGFCSEIIRLLSKSMNFTYEYKTPPRNVFGTFSESK-EWTGLAGLVVRNEVDFTANLVPMSYERADEMNFSRGITLEQSVFVYKK 365
+                      345889********************************8888.**********************************98887777777776 PP
+
+>> XP_059095118.1  glutamate receptor ionotropic, delta-2-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   49.2   0.0   2.8e-15   6.2e-13       3     113 ..      85     206 ..      83     208 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 49.2 bits;  conditional E-value: 2.8e-15
+                      EEEE--.BTTTBEE.....S..S---GGGG..........EESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SE CS
+  Lig_chan-Glu_bd   3 lkvvtileePyvml.....keeeelegner..........yeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadl 81 
+                      lk+    +ePyv+      +   + +  +            +G  idL+  l+++l+f+ e +   ++++G + +++ + +G+i+ li+++ dl
+   XP_059095118.1  85 LKILIEIQEPYVIFektseE---KFQTPSGswmvpvahsvPKGLFIDLIVMLSRELNFEIEWTTPIERNFGVPFPNG-TSTGMIRILIQGETDL 174
+                      56666668888887543321...2222121333444445569*******************************9988.9*************** PP
+
+                      E-SS-B--HHHHTTSEEESESEEE-EEEEEES CS
+  Lig_chan-Glu_bd  82 avadltitaeReevvdFtkpfmelgisilikk 113
+                       va++t t  R  vvd+  p  ++   il+k+
+   XP_059095118.1 175 SVAPFTATLPRFDVVDYLIPLGYETRVILVKR 206
+                      ********************999999999886 PP
+
+>> XP_059082646.1  ionotropic receptor 93a-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   48.4   0.0   4.8e-15   1.1e-12       2     115 .]     396     508 ..     395     508 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 48.4 bits;  conditional E-value: 4.8e-15
+                      EEEEE--.BTTTBEES..S---GG.GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTT.S-SEE-SS-B--HHHH CS
+  Lig_chan-Glu_bd   2 tlkvvtileePyvmlkeeeelegn.eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidk.kadlavadltitaeRe 93 
+                      t+ v++++  P+++lk  ++ +g+  +  G ++ +++e+ kkl+f+Y ++  +  +  +   + ++ nGl+ +++++ +  ++ a++t+t+eR+
+   XP_059082646.1 396 TVSVTSVHYPPWTILK--TDDNGEiVESTGLVFAMIDEIGKKLNFTYVVTNPSIPTTQTIMLE-SSFNGLVDQIVRDpNLFMGAASFTVTKERQ 486
+                      7899**********65..5556666889********************998776665555555.59*********9858899************ PP
+
+                      TTSEEESESEEE-EEEEEESXX CS
+  Lig_chan-Glu_bd  94 evvdFtkpfmelgisilikkpe 115
+                      e v+F+ pf  + +++++++p+
+   XP_059082646.1 487 ELVEFSRPFDLQAYTFMFRRPQ 508
+                      ******************9985 PP
+
+>> XP_059096595.1  glutamate receptor ionotropic, kainate glr-3-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   48.0   0.0   6.3e-15   1.4e-12      26     113 ..     216     301 ..     185     303 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 48.0 bits;  conditional E-value: 6.3e-15
+                      GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEES CS
+  Lig_chan-Glu_bd  26 eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgisilikk 113
+                      +++ G   d++  +ak+l+f+ ++ + +d ++G+k + t  w+G++  l++++ad++ a+lt+t++R e+vd+  p  ++ ++i ik+
+   XP_059096595.1 216 DQVTGSFKDVMVIMAKELNFSVSYFQRRDLNWGNKVNGT--WSGMVSTLLKGEADFIGASLTLTPTRFEAVDYLLPIGRETYAIFIKT 301
+                      5688999***************************97755..************************************99999999986 PP
+
+>> XP_059096594.1  glutamate receptor ionotropic, kainate 5-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   47.0   0.0   1.3e-14   2.9e-12      26     111 ..     214     298 ..     207     301 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 47.0 bits;  conditional E-value: 1.3e-14
+                      GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEE CS
+  Lig_chan-Glu_bd  26 eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgisili 111
+                      ++++G   d+l+ l ++++f+ + ++  dg++G++ +++ +w+G+i +l +++ d+a +++t+ a+R+++vdF  p  ++ +++ +
+   XP_059096594.1 214 DQIQGLYHDVLELLMRNMNFTVSRYKRVDGHWGTMMKNK-SWTGIISSLRKDEFDFAATSVTLLASRSKAVDFLFPLGSETFALFL 298
+                      7899*******************************7766.*********************************9998877766655 PP
+
+>> XP_059096479.1  glutamate receptor ionotropic, kainate 2-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   47.4   0.0   9.9e-15   2.2e-12       3     113 ..     196     315 ..     194     317 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 47.4 bits;  conditional E-value: 9.9e-15
+                      EEEE--.BTTTBEE...........S..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS CS
+  Lig_chan-Glu_bd   3 lkvvtileePyvml...........keeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavad 85 
+                      l+v    ++Py+m            ++    +  +   G+  ++l++l ++l+f+Y+     d+++G+  + t   +G+i++l +++adl+ ++
+   XP_059096479.1 196 LRVLFEDQNPYIMFhnytippalpgQTMYCFDRFNASYGMFKEILNALGTELNFTYKACRRFDEQWGTWINGT--TTGMINSLQKNEADLIGTS 287
+                      67888889999998888888877633333334447799******************************97766..9****************** PP
+
+                      -B--HHHHTTSEEESESEEE-EEEEEES CS
+  Lig_chan-Glu_bd  86 ltitaeReevvdFtkpfmelgisilikk 113
+                      +t+++eR +vvd+ +p  ++ ++i i +
+   XP_059096479.1 288 VTLNPERYHVVDYLHPLGTETYAIYIGN 315
+                      ****************999998887765 PP
+
+>> XP_059096591.1  probable glutamate receptor isoform X2 [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   46.3   0.0   2.1e-14   4.7e-12      27     112 ..     192     277 ..     177     279 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 46.3 bits;  conditional E-value: 2.1e-14
+                      GEESHHHHH.HHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEE CS
+  Lig_chan-Glu_bd  27 ryeGfcidL.lkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgisilik 112
+                      ++ G+   + l+ l  +++f+ +l++ kd+++Gsk+ ++ ew+G+i ++ +++ad++++++ti+++R ev +F  p  ++ ++i i+
+   XP_059096591.1 192 QVWGYYKTIfLDILGPQMNFSTSLHVRKDRNWGSKTGTG-EWTGMIASVAKHEADMGMTAMTINPSRFEVANFLIPLGTETYAIFIR 277
+                      56677666526678889******************8877.************************************99999999887 PP
+
+>> XP_059079839.1  glutamate receptor ionotropic, delta-2-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.9   0.0   5.8e-14   1.3e-11       8     111 ..     135     238 ..     128     242 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 44.9 bits;  conditional E-value: 5.8e-14
+                      -.BTTTBEES..S---GG.GGEESHHHHHHHHHHHHHT-EEEEEE-TT---.--BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEE CS
+  Lig_chan-Glu_bd   8 ileePyvmlkeeeelegn.eryeGfcidLlkelakklgfkYelklvkdgky.GskkektkewnGligelidkkadlavadltitaeReevvdFt 99 
+                      +   P+++  + ++ +gn    eG  ++L+k++ k+++ k +++  +dg++ G+ k+ +++ +G++g+l  ++adl+ a++  +aeR +++dF+
+   XP_059079839.1 135 VIYPPFFN--QVQDSNGNgLFQEGIEMELVKTITKSINAKLKVRTPTDGEFwGRDKDGDGKFDGMVGDLQFDRADLGFAQVFAKAERLSIMDFS 226
+                      55789999..5677888845589**************************98577777789********************************** PP
+
+                      SESEEE-EEEEE CS
+  Lig_chan-Glu_bd 100 kpfmelgisili 111
+                        + +   ++l+
+   XP_059079839.1 227 LEYDYDYDAFLV 238
+                      999776555555 PP
+
+>> XP_059096256.1  probable glutamate receptor [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   45.4   0.0   4.2e-14   9.2e-12       3     114 ..     198     299 ..     196     300 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 45.4 bits;  conditional E-value: 4.2e-14
+                      EEEE--.BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTS CS
+  Lig_chan-Glu_bd   3 lkvvtileePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevv 96 
+                      l+v   + +P++        e+n ++ G ++++ ++l + l+++ ++++   ++yG++ +++ +w Glig + ++++d+av d++it+ R++vv
+   XP_059096256.1 198 LRVGYATAKPFIF-------EENGNLTGIVYEIAETLFSALNISARYEE--HESYGTHLDNG-TWLGLIGAVNRGEVDMAVQDMSITHLRSKVV 281
+                      6777778899998.......4566799************9999877655..568***97776.******************************* PP
+
+                      EEESESEEE-EEEEEESX CS
+  Lig_chan-Glu_bd  97 dFtkpfmelgisilikkp 114
+                      dF     e++ +i + +p
+   XP_059096256.1 282 DFGIGMFESSARIFVMRP 299
+                      **9998888888877665 PP
+
+>> XP_059091028.1  glutamate receptor ionotropic, kainate glr-3-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   45.1   0.0   5.1e-14   1.1e-11       3     108 ..     193     296 ..     191     303 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 45.1 bits;  conditional E-value: 5.1e-14
+                      EEEE--.BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-.TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTT CS
+  Lig_chan-Glu_bd   3 lkvvtileePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklv.kdgkyGskkektkewnGligelidkkadlavadltitaeReev 95 
+                      +k+    ++Pyv     e+ +g+ +++G+ ++++ +l++ ++f+  l+l  + +++G k++++ +w+G+ig++ ++++d+a  ++t t+ R+ev
+   XP_059091028.1 193 FKISGASSSPYVK--VLEKPNGEVEMSGMYLEIFYSLEEVMNFTHILNLPtPREEWGIKNSDG-SWTGIIGQIQRGDIDFAPISFTRTKLRSEV 283
+                      67888899***99..5588999999**********************9962677899998888.****************************** PP
+
+                      SEEESESEEE-EE CS
+  Lig_chan-Glu_bd  96 vdFtkpfmelgis 108
+                      vdF+ p  +   +
+   XP_059091028.1 284 VDFALPIAQFHHR 296
+                      *****99876655 PP
+
+>> XP_059084726.1  ionotropic receptor 21a-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   43.9   0.0   1.2e-13   2.7e-11       3     104 ..     209     302 ..     207     312 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 43.9 bits;  conditional E-value: 1.2e-13
+                      EEEE--.BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTS CS
+  Lig_chan-Glu_bd   3 lkvvtileePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevv 96 
+                      ++ +t++ +P+++    ++ +g  +y+G  + L + la+k++f+ ++   +dg +G+ +++t  w+Glig+ + +  +  ++ + +++eRe v+
+   XP_059084726.1 209 YTLATLEYSPFII----KRPDG--TYSGLEFLLTEYLARKYNFRMKVVNPPDGAWGKLENET--WSGLIGHALYGLSNWSMSGIAVNPEREDVI 294
+                      5677888999999....34444..69********************************8877..****************************** PP
+
+                      EEESESEE CS
+  Lig_chan-Glu_bd  97 dFtkpfme 104
+                      dFt+ ++ 
+   XP_059084726.1 295 DFTHHYVP 302
+                      ****9975 PP
+
+>> XP_059088024.1  uncharacterized protein LOC131884310 isoform X2 [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   43.4   0.0   1.7e-13   3.7e-11      22      94 ..     314     385 ..     287     391 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 43.4 bits;  conditional E-value: 1.7e-13
+                      --GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHT CS
+  Lig_chan-Glu_bd  22 legneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeRee 94 
+                      +++ ++y G+ idLl+  a+ l+f+Y+l   +dg++G+ + ++ +w+Gl+ e   +++d++++d+ i + R +
+   XP_059088024.1 314 TNKYRNYWGYEIDLLEFTARVLNFQYTLVNPADGNWGHIEMDG-TWSGLVAEAAMGSVDFVICDMFIVYGRVQ 385
+                      333367*********************************9988.***********************999876 PP
+
+>> XP_059098032.1  glutamate receptor U1-like isoform X2 [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.5   0.0   3.1e-13   6.9e-11       7      94 ..     164     243 ..     158     251 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 42.5 bits;  conditional E-value: 3.1e-13
+                      --.BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHT CS
+  Lig_chan-Glu_bd   7 tileePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeRee 94 
+                       i   Py+       l++n++ +Gfc+++ + l+++l fk el  + dg+yGs ++  ++wnGl++ lid+++d++ + l + ++R++
+   XP_059098032.1 164 YISAPPYFF------LDENDQPNGFCYEIWQILSENLAFKMELVPSFDGNYGSLEN--GSWNGLMKLLIDGDIDFTGSLLALGEHRAQ 243
+                      567788988......88999**********************************55..47***************9999988888875 PP
+
+>> XP_059082828.1  glutamate receptor ionotropic, delta-2-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.9   0.0   9.8e-13   2.2e-10       4     105 ..     196     296 ..     193     306 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 40.9 bits;  conditional E-value: 9.8e-13
+                      EEE--.BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT--.---BETTTTEB-HHHHHHHTTS-SEE-SS-B--.HHHHTT CS
+  Lig_chan-Glu_bd   4 kvvtileePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgk.yGskkektkewnGligelidkkadlavadltit.aeReev 95 
+                      + ++++ +P++++  + + +gn++y+G  + ++++ a+klgf+Y ++  +dg+ +G+ ++ + + +Glig+l  ++ad++ adl  + +e+   
+   XP_059082828.1 196 RATAFHYAPFTIV--SVDEKGNRSYSGLEVAIFQTTAEKLGFSYVIEPPTDGEmWGRFTPPN-HFSGLIGDLQYERADIGWADLYPRlYEKTGL 286
+                      55778889**994..57889999*************************99987369998888.*********************986479999* PP
+
+                      SEEESESEEE CS
+  Lig_chan-Glu_bd  96 vdFtkpfmel 105
+                      +dFt  +   
+   XP_059082828.1 287 IDFTDAYDVD 296
+                      ****999765 PP
+
+>> XP_059098031.1  glutamate receptor U1-like isoform X1 [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.4   0.0   3.5e-13   7.7e-11       7      94 ..     164     243 ..     158     251 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 42.4 bits;  conditional E-value: 3.5e-13
+                      --.BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHT CS
+  Lig_chan-Glu_bd   7 tileePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeRee 94 
+                       i   Py+       l++n++ +Gfc+++ + l+++l fk el  + dg+yGs ++  ++wnGl++ lid+++d++ + l + ++R++
+   XP_059098031.1 164 YISAPPYFF------LDENDQPNGFCYEIWQILSENLAFKMELVPSFDGNYGSLEN--GSWNGLMKLLIDGDIDFTGSLLALGEHRAQ 243
+                      567788988......88999**********************************55..47***************9999988888875 PP
+
+>> XP_059095737.1  probable glutamate receptor [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.9   0.0     5e-13   1.1e-10      22      99 ..     192     269 ..     178     274 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 41.9 bits;  conditional E-value: 5e-13
+                      --GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEE CS
+  Lig_chan-Glu_bd  22 legneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFt 99 
+                      +e n +  G++idL +  ak+++f+Y+  +++++++G +++ +k+ +G++g++i++k+d+ ++    +++R + vdF+
+   XP_059095737.1 192 IEANGTSYGYLIDLTSYCAKMFNFTYRSIVEPNNDWGMQSQFGKNLSGVLGNVIQNKVDMSLSLWVWNENRDRWVDFS 269
+                      44566679*********************************************************************8 PP
+
+>> XP_059088977.1  uncharacterized protein LOC131885068 [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.8   0.0   5.5e-13   1.2e-10      23     107 ..     229     312 ..     213     319 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 41.8 bits;  conditional E-value: 5.5e-13
+                      -GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-E CS
+  Lig_chan-Glu_bd  23 egneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgi 107
+                      e+ ++  Gf  +Ll  l+k ++f++e+ + + + +G+++e + ew+Gl g l+++++d+    + +t+eR   ++F+     +  
+   XP_059088977.1 229 EDPTKATGFSAELLMILSKGMNFTFEYIQPERNVFGTNTEAE-EWTGLAGLLVRNEVDISANLVPMTYERTDDMNFSRGITMEQS 312
+                      4447899*******************************9988.**********************************98766555 PP
+
+>> XP_059093173.1  glutamate receptor ionotropic, delta-2-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.0   0.0   9.5e-13   2.1e-10      20     112 ..      43     134 ..      22     136 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 41.0 bits;  conditional E-value: 9.5e-13
+                      S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEE CS
+  Lig_chan-Glu_bd  20 eelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgisilik 112
+                       + ++n +++Gf  d+lk+ ++ lg+++e+  + dg++Gs  e++ ++nG++g++ ++++d+a+ +++ t++R+++ d+     ++  +il++
+   XP_059093173.1  43 FKRHSNGSISGFYADVLKAAQTYLGVHFEYIPSVDGHWGSLLENG-SYNGMVGMVERREVDMALPEISYTYDRSSISDYPFALNKERQQILVQ 134
+                      345667789********************************8887.********************************998888888888776 PP
+
+>> XP_059085070.1  glutamate receptor ionotropic, delta-2-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.4   0.0     3e-12   6.6e-10      24     101 ..     196     273 ..     189     284 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 39.4 bits;  conditional E-value: 3e-12
+                      GG.GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESE CS
+  Lig_chan-Glu_bd  24 gn.eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkp 101
+                      g+  +y G    +lkelak l+f+ ++++ +d ++   ++++ +  G+ g l++k++d++ +++ i +eR+e +dFt +
+   XP_059085070.1 196 GSlVDYTGLGPTILKELAKALNFQVTFEEPPDCTWQGTHPNG-SSYGMFGFLVRKEVDITGSPMVIVPERQEQIDFTLR 273
+                      55467999999*********************9997777777.999*******************************76 PP
+
+>> XP_059087838.1  uncharacterized protein LOC131884170 isoform X2 [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.2   0.0   6.9e-12   1.5e-09      26     113 ..      93     175 ..      81     177 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 38.2 bits;  conditional E-value: 6.9e-12
+                      GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEES CS
+  Lig_chan-Glu_bd  26 eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgisilikk 113
+                       +++G+  ++l+ l++ l+f+++l  ++   y +++ ++     +i  l++++ad+av+d++itaeR+e vdF     e+ ++++++k
+   XP_059087838.1  93 GQVKGYFGQILTLLSTDLNFTFSLLDQNTLYYPHRSGRN-----VIHALLEDDADIAVGDVSITAERSELVDFLDSLWEHQFRFVYRK 175
+                      4699********************999999999998888.....******************************99999999999887 PP
+
+>> XP_059088083.1  uncharacterized protein LOC131884353 isoform X2 [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.5   0.0   1.2e-11   2.6e-09       2     110 ..     144     243 ..     143     248 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 37.5 bits;  conditional E-value: 1.2e-11
+                      EEEEE--.BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTT CS
+  Lig_chan-Glu_bd   2 tlkvvtileePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReev 95 
+                      +++v  i  +Py++ +      ++ ++ G  idLl+ +a+k++fk ++   +++++G+  +   +w G +g++ ++   l+++ ++it++R ++
+   XP_059088083.1 144 QINVSVIGVTPYIIFD-----AQTGHLGGIDIDLLRIVAQKFQFKPNI--RPEKTWGAVIDG--KWIGTVGSVQQGASSLGIGHVSITSDRYQI 228
+                      6788889999**9943.....3335799***********987776655..67899****664..6***************************** PP
+
+                      SEEESESEEE-EEEE CS
+  Lig_chan-Glu_bd  96 vdFtkpfmelgisil 110
+                      +d+t+p +   ++ l
+   XP_059088083.1 229 IDYTEPTYFVEYAQL 243
+                      *****9776665555 PP
+
+>> XP_059081296.1  glutamate receptor ionotropic, kainate glr-3-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.7   0.0     1e-11   2.2e-09      23     114 ..     169     257 ..     155     258 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 37.7 bits;  conditional E-value: 1e-11
+                      -GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEESX CS
+  Lig_chan-Glu_bd  23 egneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgisilikkp 114
+                      eg + + G  +d+++ l+++lgf+++++l+  +++G   +++ +w G +g++ +k+  ++v+ lti+++  ++vdF++  ++l + ++  kp
+   XP_059081296.1 169 EGPHGVYGVDMDIVQILSETLGFHFKVQLE--KQWGVLLPNG-TWIGTLGSVQEKSSMIGVGHLTIQYDYFQAVDFSHHLYNLDVLLVAPKP 257
+                      5667789999*****************996..689***9988.***************************************9999888877 PP
+
+>> XP_059088081.1  uncharacterized protein LOC131884353 isoform X1 [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.3   0.0   1.4e-11     3e-09       2     110 ..     206     305 ..     205     310 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 37.3 bits;  conditional E-value: 1.4e-11
+                      EEEEE--.BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTT CS
+  Lig_chan-Glu_bd   2 tlkvvtileePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReev 95 
+                      +++v  i  +Py++ +      ++ ++ G  idLl+ +a+k++fk ++   +++++G+  +   +w G +g++ ++   l+++ ++it++R ++
+   XP_059088081.1 206 QINVSVIGVTPYIIFD-----AQTGHLGGIDIDLLRIVAQKFQFKPNI--RPEKTWGAVIDG--KWIGTVGSVQQGASSLGIGHVSITSDRYQI 290
+                      6788889999**9943.....3335799***********987776655..67899****664..6***************************** PP
+
+                      SEEESESEEE-EEEE CS
+  Lig_chan-Glu_bd  96 vdFtkpfmelgisil 110
+                      +d+t+p +   ++ l
+   XP_059088081.1 291 IDYTEPTYFVEYAQL 305
+                      *****9776665555 PP
+
+>> XP_059096679.1  glutamate receptor ionotropic, kainate 4-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.3   0.0   1.3e-11   2.9e-09      28     114 ..      12      98 ..       3      99 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 37.3 bits;  conditional E-value: 1.3e-11
+                      EESHHHHHHHHHHHHHT-EEEEEE-T.T-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEESX CS
+  Lig_chan-Glu_bd  28 yeGfcidLlkelakklgfkYelklvk.dgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgisilikkp 114
+                        G ++dL+++la +l+++ ++   +  g +G++ +++ +w+G++g+li++k+d ++  l  +++R+ ++d t+  +++  ++ i++p
+   XP_059096679.1  12 EGGIMFDLMETLAARLNVSVNYVRPDiVGVWGKRLPNG-TWTGMVGDLIAGKVDSIIPGLIRNHDRHLAMDLTMAVVTTQANMFIRNP 98 
+                      34899***********9998875543247899998877.******************************************9999987 PP
+
+>> XP_059087837.1  glutamate receptor ionotropic, kainate glr-3-like isoform X1 [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.6   0.0   2.2e-11   4.8e-09      26     113 ..      93     175 ..      82     177 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 36.6 bits;  conditional E-value: 2.2e-11
+                      GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEES CS
+  Lig_chan-Glu_bd  26 eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgisilikk 113
+                       +++G+  ++l+ l++ l+f+++l  ++   y +++ ++     +i  l++++ad+av+d++itaeR+e vdF     e+ ++++++k
+   XP_059087837.1  93 GQVKGYFGQILTLLSTDLNFTFSLLDQNTLYYPHRSGRN-----VIHALLEDDADIAVGDVSITAERSELVDFLDSLWEHQFRFVYRK 175
+                      4699********************999999999998888.....******************************99999999999887 PP
+
+>> XP_059097411.1  glutamate receptor 1-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.1   0.0   6.5e-11   1.4e-08      28     109 ..      27     106 ..      15     112 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 35.1 bits;  conditional E-value: 6.5e-11
+                      EESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEE CS
+  Lig_chan-Glu_bd  28 yeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgisi 109
+                      + G  +d+++ +a+ ++f+Y+++   ++++G + +++k+wnGlig++ +++  ++v+ + + ++  ++vd+  p     + +
+   XP_059097411.1  27 VGGVSLDVFNIMANAMQFNYTFRT--ENSWGGRIPNSKQWNGLIGSVRNQTSTIGVGLVFVDYNYYQAVDYLDPLWFYPVGL 106
+                      67999*****************87..56899999*************************************99976655555 PP
+
+>> XP_059097263.1  glutamate receptor ionotropic, NMDA 1-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.8   0.0   7.9e-11   1.8e-08      12      99 ..     188     269 ..     178     275 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 34.8 bits;  conditional E-value: 7.9e-11
+                      TTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEE CS
+  Lig_chan-Glu_bd  12 PyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFt 99 
+                      Py++       e n +  G +id+ ++la+ ++f+ +  +++ +++G +++  k+ +G++g++i++k+dl ++    + eR++vvdF+
+   XP_059097263.1 188 PYTI------FEPNGTSYGHLIDMTHHLARLFNFTLRSIKEPKNDWGLQSQYLKNITGVLGNVIQGKVDLSLSLWIWNLERSSVVDFS 269
+                      5555......34455678**********************************99******************99999**********9 PP
+
+>> XP_059095839.1  uncharacterized protein LOC131890503 [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.9   0.0   7.3e-11   1.6e-08      12     100 ..     192     274 ..     183     285 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 34.9 bits;  conditional E-value: 7.3e-11
+                      TTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEES CS
+  Lig_chan-Glu_bd  12 PyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtk 100
+                      Py+m       e++ +  G+++dL ++ a++++f+ +  +++++++G +++ +k+ +G++g++i++k+++ ++    + +R++ +dF+ 
+   XP_059095839.1 192 PYTM------FESDGHSYGYLVDLANSCANMFNFTLRSIVEPNDDWGMQSQFGKNFSGVLGNVIQGKVHMSLSLWVWNVDRSQLLDFSI 274
+                      7777......34445679*********************************************************************95 PP
+
+>> XP_059098288.1  uncharacterized protein LOC131892430 [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.0   0.0     6e-10   1.3e-07       9      71 ..     192     251 ..     184     256 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 32.0 bits;  conditional E-value: 6e-10
+                      .BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHH CS
+  Lig_chan-Glu_bd   9 leePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGli 71 
+                      + +Py     +++ +g+++++Gf  d++ +l+++++f+ el + +dg++G+  +++  w+G+ 
+   XP_059098288.1 192 NWAPYAL--IHTHENGTKEFSGFFADIVGSLSEIMNFTLELMEPPDGSWGHLLPDG-GWSGMA 251
+                      4589999..457889999**********************************9998.9****6 PP
+
+>> XP_059096463.1  glutamate receptor ionotropic, delta-1-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.7   0.0     7e-10   1.6e-07       9     112 ..     223     315 ..     216     318 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 31.7 bits;  conditional E-value: 7e-10
+                      .BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESES CS
+  Lig_chan-Glu_bd   9 leePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpf 102
+                      +++Py+ + e +  + + +  G  id+lk ++++++f+ +++ ++         k+ +w+ +i+ l  +k d +  d+ i++eR++vvdFt+p 
+   XP_059096463.1 223 ESKPYCFIPEGS-NSTHLQPYGIFIDMLKLFSTEFNFTIKFERAP---------KS-SWTEMIRLLTLNKFDGTGVDVAINKERAQVVDFTSPI 305
+                      689999975443.33445678*************99999998765.........34.8***********************************9 PP
+
+                      EEE-EEEEEE CS
+  Lig_chan-Glu_bd 103 melgisilik 112
+                        + ++++ +
+   XP_059096463.1 306 FWSDYRLVSQ 315
+                      8777776665 PP
+
+>> XP_059099240.1  glutamate receptor ionotropic, NMDA 1-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.2   0.0   4.2e-09   9.2e-07      28     114 ..     189     277 ..     168     278 .. 0.90
+   2 ?    0.3   0.0       3.9   8.6e+02      60      86 ..     321     347 ..     310     354 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 29.2 bits;  conditional E-value: 4.2e-09
+                      EESHHHHHHHHHHHHHT-EEEEEE-TT--.---BETT.TTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEESX CS
+  Lig_chan-Glu_bd  28 yeGfcidLlkelakklgfkYelklvkdgk.yGskkek.tkewnGligelidkkadlavadltitaeReevvdFtkpfmelgisilikkp 114
+                       +Gf + +   +++ +g++ e++  +dg  +G++++  +++++Gl+ge ++++ad++ a+l   ++R +++ Ft  +++    +l+ kp
+   XP_059099240.1 189 HRGFEYRIAAGVSSAVGLSLEVYAPEDGAwWGHETPPgSGNYTGLLGEFVTGSADIGWANLFYDHQRTRYMSFTDWYLSDQACFLVPKP 277
+                      689************************98469999884579**************************************9999999887 PP
+
+  == domain 2  score: 0.3 bits;  conditional E-value: 3.9
+                      BETTTTEB-HHHHHHHTTS-SEE-SS- CS
+  Lig_chan-Glu_bd  60 kkektkewnGligelidkkadlavadl 86 
+                       + ++++w  li +++ k+ dl+va +
+   XP_059099240.1 321 ASARNSSWGMLILSIVFKQSDLTVARI 347
+                      45667799999*************987 PP
+
+>> XP_059079334.1  glutamate receptor ionotropic, kainate 3-like isoform X2 [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.7   0.0   1.5e-09   3.2e-07      28     108 ..      68     146 ..      56     153 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 30.7 bits;  conditional E-value: 1.5e-09
+                      EESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EE CS
+  Lig_chan-Glu_bd  28 yeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgis 108
+                      + G ++d+++ +a+k++f+Y++k   +  +G++  +++ewnGlig++ +++  ++v+ + + ++ +++vd+  + +   i 
+   XP_059079334.1  68 VGGTALDVFNIMAEKYHFNYTIKT--EFAWGQPIGENGEWNGLIGNVKNGTSAFGVGIIFMDYDYSKAVDYLDTLVFYPII 146
+                      678999****************87..679*****************************************98776665555 PP
+
+>> XP_059080573.1  uncharacterized protein LOC131878572 [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.7   0.0   1.4e-09   3.2e-07       3      96 ..     172     260 ..     170     265 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 30.7 bits;  conditional E-value: 1.4e-09
+                      EEEE--.BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTS CS
+  Lig_chan-Glu_bd   3 lkvvtileePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevv 96 
+                      ++v++ + +P+  +    +  + e+ +Gf +dLlk+l+++++f+Y+l+ ++ +  G   +++ +  Gl+g + +++ d++ + + ++++R++ +
+   XP_059080573.1 172 FNVIMAEWRPFQYI----QGYDVENAQGFSMDLLKTLQSSMNFSYTLNGSEYQIQGDVFKNG-SIYGLLGLVAQGQYDFGATVFVMSEDRSKHL 260
+                      67778888888773....334446789******************************97777.*************************999865 PP
+
+>> XP_059096106.1  uncharacterized protein LOC131890717, partial [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.7   0.0   1.4e-09   3.2e-07      23      99 ..     192     268 ..     178     279 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 30.7 bits;  conditional E-value: 1.4e-09
+                      -GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEE CS
+  Lig_chan-Glu_bd  23 egneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFt 99 
+                      +++ +  G++id+ ++l+ +++f+ +  ++++ ++G ++e +k+ +G++g++i++++d+ ++   ++++R+  vd+ 
+   XP_059096106.1 192 DSDGTTYGYLIDMTHHLSGMFNFTLNSIKEPNYDWGLQSEFHKNFSGVLGNVIQGHMDVSLSIWFLNYQRSLLVDYC 268
+                      4445679********************************************************************96 PP
+
+>> XP_059079333.1  glutamate receptor ionotropic, kainate 3-like isoform X1 [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.2   0.0   2.1e-09   4.7e-07      28     108 ..     181     259 ..     170     266 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 30.2 bits;  conditional E-value: 2.1e-09
+                      EESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EE CS
+  Lig_chan-Glu_bd  28 yeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgis 108
+                      + G ++d+++ +a+k++f+Y++k   +  +G++  +++ewnGlig++ +++  ++v+ + + ++ +++vd+  + +   i 
+   XP_059079333.1 181 VGGTALDVFNIMAEKYHFNYTIKT--EFAWGQPIGENGEWNGLIGNVKNGTSAFGVGIIFMDYDYSKAVDYLDTLVFYPII 259
+                      678999****************87..679*****************************************98776665555 PP
+
+>> XP_059078473.1  ionotropic receptor 21a-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.5   0.0   1.8e-09   3.9e-07      26     111 ..     196     283 ..     177     287 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 30.5 bits;  conditional E-value: 1.8e-09
+                      GGEESHHHHHHHHHHHHHT-EEEEEE-TT-.----BETT.TTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEE CS
+  Lig_chan-Glu_bd  26 eryeGfcidLlkelakklgfkYelklvkdg.kyGskkek.tkewnGligelidkkadlavadltitaeReevvdFtkpfmelgisili 111
+                       +  G+ + + k l + +g+k ++   +dg ++G + +  +++ +Gl+ge++ ++ad+a a+l  +  R +++dFt  +    + +l+
+   XP_059078473.1 196 GEHGGYEYRIAKGLVDAIGLKLTIFTPTDGeRWGFEVPPkSGNFSGLLGEIMGGNADMAWANLFTEVYRMSFMDFTDWYNMDEVCFLV 283
+                      34679******************99888862689887652679**********************************99888777766 PP
+
+>> XP_059081344.1  uncharacterized protein LOC131879131 [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.8   0.0   2.7e-09     6e-07       7      99 ..     204     301 ..     199     309 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 29.8 bits;  conditional E-value: 2.7e-09
+                      --.BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTT.....EB-HHHHHHHTTS-SEE-SS-B--HHHHTT CS
+  Lig_chan-Glu_bd   7 tileePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektk.....ewnGligelidkkadlavadltitaeReev 95 
+                      ++  +Py++lk+ ++  +n + +Gf++d  + + + ++f+   ++ kd ++G    ++      +w G +g++i++k dl +++   + eR+  
+   XP_059081344.1 204 ALSWSPYLNLKDCDQQGDNCSSSGFLVDYANLIGRLFNFTVVSTQDKDLNWGVVPISGPfnssgTWGGTMGDVINGKFDLSLSQWIWNIERQDL 297
+                      55678****998888888899*******************************8754332333449***************************** PP
+
+                      SEEE CS
+  Lig_chan-Glu_bd  96 vdFt 99 
+                      +dF 
+   XP_059081344.1 298 LDFV 301
+                      ***6 PP
+
+>> XP_059079180.1  uncharacterized protein LOC131877509 [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.4   0.0   1.8e-09   4.1e-07       8     103 ..     109     196 ..     102     204 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 30.4 bits;  conditional E-value: 1.8e-09
+                      -.BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESE CS
+  Lig_chan-Glu_bd   8 ileePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkp 101
+                      +   P++        +++ +++G   dL++ l +++g+++++  ++  k+ +   ++++  G + e+ +++ dl++++ltit eR +++dFt  
+   XP_059079180.1 109 LYIWPFLS------QDEDGSMSGADWDLINGLLEHYGMTFNMVRST--KLSTTLLENGTTYGYLYEIQNRRYDLGIGQLTITRERGRYLDFTRD 194
+                      55556665......23334689999**************9997765..566666677789********************************87 PP
+
+                      SE CS
+  Lig_chan-Glu_bd 102 fm 103
+                        
+   XP_059079180.1 195 MF 196
+                      55 PP
+
+>> XP_059090680.1  glutamate receptor 2-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.7   0.0     3e-09   6.6e-07       2     103 ..     205     298 ..     204     310 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 29.7 bits;  conditional E-value: 3e-09
+                      EEEEE--.BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--.HHHHT CS
+  Lig_chan-Glu_bd   2 tlkvvtileePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltit.aeRee 94 
+                      +l+v+++  +P+v+       +g +++ G   ++l+ + +k+gf+Y+++   +g++G++++kt+ w+G+ g++ ++  +l+v+++  t ++R++
+   XP_059090680.1 205 QLNVTSFGVTPFVI------FNG-RSVIGVDPQILTIIGEKFGFTYRITW--GGDFGARNPKTGLWSGVTGQVATGAFQLGVGAIIATdSDRNT 289
+                      56778888888888......344.457899999**************988..567***************************997665389*** PP
+
+                      TSEEESESE CS
+  Lig_chan-Glu_bd  95 vvdFtkpfm 103
+                      +vdF +  +
+   XP_059090680.1 290 AVDFLQDIY 298
+                      ****87665 PP
+
+>> XP_059097354.1  glutamate receptor ionotropic, delta-1-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.8   0.0   2.4e-08   5.3e-06      28     100 ..     156     227 ..     146     239 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 26.8 bits;  conditional E-value: 2.4e-08
+                      EESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEES CS
+  Lig_chan-Glu_bd  28 yeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtk 100
+                       +G  + L+++lak+l+f++++  v+ +   +  +++ +  G+i ++ ++ ad+a+++l +t++R ++vd++ 
+   XP_059097354.1 156 SRGIDLSLVQALAKNLKFSFKFLPVALSINPKTLPNG-TTVGIIPDVQNGVADIAICQLALTHNRYQMVDYAP 227
+                      5788899***************999987666665555.99******************************975 PP
+
+>> XP_059098639.1  glutamate receptor ionotropic, kainate 5-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.0   0.0     1e-08   2.3e-06      27     111 ..     212     295 ..     201     299 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 28.0 bits;  conditional E-value: 1e-08
+                      GEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETT.TTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEE CS
+  Lig_chan-Glu_bd  27 ryeGfcidLlkelakklgfkYelklvkdgkyGskkek.tkewnGligelidkkadlavadltitaeReevvdFtkpfmelgisili 111
+                      +++G  +dL++ l++ +gf+Y++  ++   +Gs  ++ +++w G++g++ +++  +++++  + a R  +vd++   ++  ++++ 
+   XP_059098639.1 212 SVHGVDVDLIQILSEAFGFTYRIITEP--VMGSLIPNsNNQWLGVVGSVKNGTSTIGIGNPALDAGRYLAVDYSVMMYTIDTNFIA 295
+                      478999*****************8877..689998875679*********************************988887776665 PP
+
+>> XP_059095533.1  uncharacterized protein LOC131890241 [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.2   0.0   3.6e-08   7.9e-06      15     100 ..      51     130 ..      39     143 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 26.2 bits;  conditional E-value: 3.6e-08
+                      EES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEES CS
+  Lig_chan-Glu_bd  15 mlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtk 100
+                      +       + n +  G +id+ ++l+ +++f+ +  +++ +++G ++e +++ +G++g++i++++dl ++    + +R+   dF  
+   XP_059095533.1  51 T------YRANGTTFGHLIDMTHHLSGMFNFTLRSVKEPHDDWGLQSEFGRNFSGVLGNVIQGQVDLSLSLWIWNLQRSISTDFCI 130
+                      4......34555678******************************************************99999999999999976 PP
+
+>> XP_059099218.1  glutamate receptor ionotropic, delta-2-like [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.5   0.0     6e-08   1.3e-05      32     113 ..      68     151 ..      59     153 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 25.5 bits;  conditional E-value: 6e-08
+                      HHHHHHHHHHHHT-EEEEEE-T..T-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEES CS
+  Lig_chan-Glu_bd  32 cidLlkelakklgfkYelklvk..dgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgisilikk 113
+                        d+++ la+++gf+ +++ ++  + +    ++ +++w G++g++ +++a+l+ + l +  e +++vdF     +  ++i+  k
+   XP_059099218.1  68 EADVIQILAQHYGFHVNFEFEAagGAEKVIDENGNEKWIGIVGKVQNGSAQLGAGVLFMDFEYSNAVDFNGVLHQVMVKIMSPK 151
+                      5799*******98875555544004444444555779*********************************99999999999776 PP
+
+>> XP_059097430.1  uncharacterized protein LOC131891785 [Tigriopus californicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.1   0.0   7.9e-08   1.7e-05      27     104 ..     149     225 ..     133     236 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 25.1 bits;  conditional E-value: 7.9e-08
+                      GEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEE CS
+  Lig_chan-Glu_bd  27 ryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfme 104
+                       + G  + L++ l+k+l+f+Y l   + +  G+  +++ +  G++ ++ ++ adla+++lt+t+eR ++ dF+    e
+   XP_059097430.1 149 GLTGTDVTLFNVLSKNLQFSYMLLPPALSVNGRVLKNG-SLMGILPDVQSGVADLALCQLTLTNERYHMADFAPVLSE 225
+                      56788899***************999999999997766.*********************************866555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (115 nodes)
+Target sequences:                      21516  (12587456 residues searched)
+Passed MSV filter:                       535  (0.0248652); expected 430.3 (0.02)
+Passed bias filter:                      493  (0.0229132); expected 430.3 (0.02)
+Passed Vit filter:                       132  (0.00613497); expected 21.5 (0.001)
+Passed Fwd filter:                       109  (0.005066); expected 0.2 (1e-05)
+Initial search space (Z):              21516  [actual number of targets]
+Domain search space  (domZ):              97  [number of targets reported over threshold]
+# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.06
+# Mc/sec: 23540.02
+//
+[ok]

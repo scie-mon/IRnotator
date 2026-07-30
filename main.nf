@@ -1,18 +1,22 @@
 nextflow.enable.dsl=2
 
-include { HMMSEARCH_IR }              from './modules/local/hmmsearch_ir'
-include { COLLECT_HMM_HITS }          from './modules/local/collect_hmm_hits'
-include { EXTRACT_FASTA_BY_ID }       from './modules/local/extract_fasta_by_id'
-include { SPLIT_FASTA_BY_SEQID }      from './modules/local/split_fasta_by_seqid'
-include { DEEPTMHMM_TOPOLOGY }        from './modules/local/deeptmhmm_topology'
-include { PARSE_DEEPTMHMM_FEATURES }  from './modules/local/parse_deeptmhmm_features'
-include { HARDCODED_CLASSIFIER }      from './modules/local/hardcoded_classifier'
-include { SEED_DECISIONS }            from './modules/local/seed_decisions'
+include { HMMSEARCH_IR }               from './modules/local/hmmsearch_ir'
+include { COLLECT_HMM_HITS }           from './modules/local/collect_hmm_hits'
+include { EXTRACT_FASTA_BY_ID }        from './modules/local/extract_fasta_by_id'
+include { SPLIT_FASTA_BY_SEQID }       from './modules/local/split_fasta_by_seqid'
+include { DEEPTMHMM_TOPOLOGY }         from './modules/local/deeptmhmm_topology'
+include { COLLECT_DEEPTMHMM_SUMMARY }  from './modules/local/collect_deeptmhmm_summary'
+include { PARSE_DEEPTMHMM_FEATURES }   from './modules/local/parse_deeptmhmm_features'
+include { HARDCODED_CLASSIFIER }       from './modules/local/hardcoded_classifier'
+include { SEED_DECISIONS }             from './modules/local/seed_decisions'
+include { PREPARE_MANUAL_REVIEW }      from './modules/local/prepare_manual_review'
 
 params.proteins_faa  = params.proteins_faa ?: 'test/proteins.faa'
 params.hmm_dir       = params.hmm_dir ?: 'test/hmms'
 params.outdir        = params.outdir ?: 'results'
 params.deeptmhmm_dir = params.deeptmhmm_dir ?: null
+params.manual_review = params.manual_review ?: true
+params.reviewer_html = params.reviewer_html ?: "${projectDir}/assets/reviewer/topology-reviewer.html"
 
 workflow {
     proteins_ch = Channel.fromPath(params.proteins_faa, checkIfExists: true)
@@ -35,10 +39,22 @@ workflow {
         deeptmhmm_dir_ch
     )
 
-    parsed_res = PARSE_DEEPTMHMM_FEATURES(
+    summary_res = COLLECT_DEEPTMHMM_SUMMARY(
         deeptmhmm_res.results.collect()
     )
 
+    parsed_res = PARSE_DEEPTMHMM_FEATURES(
+        summary_res.summary_dir
+    )
+
     hardcoded_res = HARDCODED_CLASSIFIER(parsed_res.features)
-    SEED_DECISIONS(parsed_res.features, hardcoded_res.scores)
+    seed_res = SEED_DECISIONS(parsed_res.features, hardcoded_res.scores)
+
+    if (params.manual_review) {
+        PREPARE_MANUAL_REVIEW(
+            deeptmhmm_res.results.map { id, dir -> dir }.collect(),
+            hardcoded_res.scores,
+            file(params.reviewer_html)
+        )
+    }
 }
