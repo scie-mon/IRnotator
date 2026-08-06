@@ -1,0 +1,1809 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  PF10613.hmm
+# target sequence database:        Ceriodaphnia.faa
+# per-seq hits tabular output:     PF10613.tbl
+# sequence reporting threshold:    E-value <= 1e-05
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       Lig_chan-Glu_bd  [M=115]
+Accession:   PF10613.12
+Description: Ligated ion channel L-glutamate- and glycine-binding site
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                            Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                            -----------
+    1.3e-48  162.7   0.2    7.1e-24   83.0   0.0    2.4  2  gnl|WGS:ZZZZ|Ceriodaphnia_006874-P1  glutamate receptor ionotropic, k
+    5.8e-45  150.9   0.0    1.1e-44  150.0   0.0    1.5  1  gnl|WGS:ZZZZ|Ceriodaphnia_002319-P1  glutamate receptor ionotropic, k
+    1.5e-43  146.3   0.2    9.6e-43  143.8   0.1    2.2  2  gnl|WGS:ZZZZ|Ceriodaphnia_007722-P1  glutamate receptor ionotropic, k
+    1.3e-42  143.3   0.1    2.5e-42  142.4   0.1    1.5  1  gnl|WGS:ZZZZ|Ceriodaphnia_007712-P1  glutamate receptor 1-like
+    1.5e-42  143.1   0.1    3.5e-42  142.0   0.0    1.7  1  gnl|WGS:ZZZZ|Ceriodaphnia_003317-P1  glutamate receptor ionotropic, k
+    2.2e-42  142.6   0.0    3.9e-42  141.8   0.0    1.4  1  gnl|WGS:ZZZZ|Ceriodaphnia_002320-P1  glutamate receptor ionotropic, k
+    3.2e-37  126.0   0.2    1.1e-36  124.2   0.2    2.0  1  gnl|WGS:ZZZZ|Ceriodaphnia_008419-P1  ionotropic receptor 25a
+    3.2e-35  119.5   0.0    2.1e-34  116.9   0.0    2.3  1  gnl|WGS:ZZZZ|Ceriodaphnia_010594-P1  glutamate ionotropic receptor NM
+    4.4e-30  103.0   0.0    7.2e-30  102.3   0.0    1.3  1  gnl|WGS:ZZZZ|Ceriodaphnia_007542-P1  putative glutamate receptor
+    8.1e-30  102.1   0.0    1.3e-29  101.4   0.0    1.3  1  gnl|WGS:ZZZZ|Ceriodaphnia_005425-P1  putative glutamate receptor
+    1.9e-28   97.6   0.0    3.9e-28   96.7   0.0    1.5  1  gnl|WGS:ZZZZ|Ceriodaphnia_009123-P1  glutamate ionotropic receptor NM
+    5.8e-26   89.7   0.0    9.8e-26   88.9   0.0    1.4  1  gnl|WGS:ZZZZ|Ceriodaphnia_004050-P1  glutamate receptor ionotropic, d
+    5.8e-26   89.7   0.0    8.6e-26   89.1   0.0    1.3  1  gnl|WGS:ZZZZ|Ceriodaphnia_002419-P1  glutamate receptor ionotropic, k
+    1.6e-25   88.3   0.0    2.6e-25   87.6   0.0    1.3  1  gnl|WGS:ZZZZ|Ceriodaphnia_002408-P1  putative glutamate receptor
+    3.4e-25   87.2   0.0    5.5e-25   86.5   0.0    1.3  1  gnl|WGS:ZZZZ|Ceriodaphnia_003211-P1  glutamate receptor ionotropic, d
+    4.3e-25   86.9   0.0    7.7e-25   86.0   0.0    1.4  1  gnl|WGS:ZZZZ|Ceriodaphnia_002431-P1  glutamate receptor ionotropic, k
+    6.3e-25   86.3   0.0      1e-24   85.7   0.0    1.3  1  gnl|WGS:ZZZZ|Ceriodaphnia_004051-P1  glutamate receptor 1-like
+    1.3e-23   82.1   0.0    7.3e-22   76.5   0.0    2.3  2  gnl|WGS:ZZZZ|Ceriodaphnia_010139-P1  uncharacterized protein Ceriodap
+    1.9e-23   81.6   0.0    3.1e-23   80.9   0.0    1.3  1  gnl|WGS:ZZZZ|Ceriodaphnia_001860-P1  glutamate receptor ionotropic, d
+    4.2e-23   80.5   0.0    7.3e-23   79.7   0.0    1.4  1  gnl|WGS:ZZZZ|Ceriodaphnia_004052-P1  glutamate receptor ionotropic, d
+    7.7e-22   76.4   0.0    1.3e-21   75.7   0.0    1.4  1  gnl|WGS:ZZZZ|Ceriodaphnia_006717-P1  glutamate receptor ionotropic, k
+    1.4e-21   75.5   0.0    2.3e-21   74.8   0.0    1.4  1  gnl|WGS:ZZZZ|Ceriodaphnia_004054-P1  putative glutamate receptor
+    1.4e-21   75.5   0.1      3e-21   74.5   0.0    1.6  1  gnl|WGS:ZZZZ|Ceriodaphnia_006704-P1  glutamate receptor ionotropic, d
+    9.7e-21   72.8   0.0    1.6e-20   72.1   0.0    1.4  1  gnl|WGS:ZZZZ|Ceriodaphnia_003894-P1  glutamate receptor ionotropic, d
+    8.9e-19   66.5   0.0    1.5e-18   65.8   0.0    1.4  1  gnl|WGS:ZZZZ|Ceriodaphnia_003901-P1  glutamate receptor ionotropic, d
+    9.1e-18   63.3   0.0    1.5e-17   62.6   0.0    1.4  1  gnl|WGS:ZZZZ|Ceriodaphnia_009455-P1  glutamate [NMDA] receptor subuni
+    7.8e-17   60.2   0.0    1.4e-16   59.5   0.0    1.4  1  gnl|WGS:ZZZZ|Ceriodaphnia_009865-P1  glutamate receptor ionotropic, d
+    1.5e-15   56.1   0.0    2.6e-15   55.4   0.0    1.4  1  gnl|WGS:ZZZZ|Ceriodaphnia_002514-P1  glutamate receptor ionotropic, d
+      2e-15   55.7   0.0    3.4e-15   55.0   0.0    1.4  1  gnl|WGS:ZZZZ|Ceriodaphnia_001623-P1  putative glutamate receptor
+    2.4e-15   55.4   0.0      5e-15   54.4   0.0    1.5  1  gnl|WGS:ZZZZ|Ceriodaphnia_007720-P1  ionotropic receptor 93a-like
+    1.4e-14   53.0   0.0    2.4e-14   52.2   0.0    1.3  1  gnl|WGS:ZZZZ|Ceriodaphnia_000810-P1  glutamate receptor 1-like
+    3.5e-14   51.7   0.0    6.3e-14   50.9   0.0    1.4  1  gnl|WGS:ZZZZ|Ceriodaphnia_008587-P1  glutamate receptor ionotropic, d
+    9.7e-11   40.6   0.0    1.7e-10   39.8   0.0    1.4  1  gnl|WGS:ZZZZ|Ceriodaphnia_001836-P1  ionotropic receptor 40a-like
+    1.7e-10   39.8   0.0    2.7e-10   39.2   0.0    1.3  1  gnl|WGS:ZZZZ|Ceriodaphnia_001301-P1  glutamate receptor ionotropic, k
+    2.6e-10   39.2   0.0    6.5e-10   37.9   0.0    1.7  1  gnl|WGS:ZZZZ|Ceriodaphnia_008584-P1  glutamate receptor ionotropic, k
+      1e-09   37.3   0.0    2.1e-09   36.3   0.0    1.6  1  gnl|WGS:ZZZZ|Ceriodaphnia_002117-P1  glutamate receptor ionotropic, k
+      1e-09   37.3   0.0    3.2e-08   32.5   0.0    2.4  2  gnl|WGS:ZZZZ|Ceriodaphnia_008955-P1  glutamate receptor ionotropic, N
+    1.1e-09   37.2   0.0    2.1e-09   36.3   0.0    1.4  1  gnl|WGS:ZZZZ|Ceriodaphnia_009505-P1  putative glutamate receptor
+    1.5e-09   36.8   0.0    3.2e-09   35.7   0.0    1.6  1  gnl|WGS:ZZZZ|Ceriodaphnia_008956-P1  glutamate [NMDA] receptor subuni
+    2.1e-09   36.3   0.0      4e-09   35.4   0.0    1.5  1  gnl|WGS:ZZZZ|Ceriodaphnia_004922-P1  glutamate receptor ionotropic, k
+    2.1e-09   36.3   0.0    4.3e-09   35.3   0.0    1.5  1  gnl|WGS:ZZZZ|Ceriodaphnia_009504-P1  putative glutamate receptor
+    2.2e-09   36.2   0.0    7.4e-09   34.5   0.0    1.9  1  gnl|WGS:ZZZZ|Ceriodaphnia_009397-P1  glutamate receptor ionotropic, d
+    2.9e-09   35.8   0.0    5.6e-09   34.9   0.0    1.5  1  gnl|WGS:ZZZZ|Ceriodaphnia_004925-P1  glutamate receptor U1-like
+    3.9e-09   35.4   0.0    7.7e-09   34.5   0.0    1.5  1  gnl|WGS:ZZZZ|Ceriodaphnia_001300-P1  glutamate receptor ionotropic, d
+      7e-09   34.6   0.0    1.5e-08   33.6   0.0    1.6  1  gnl|WGS:ZZZZ|Ceriodaphnia_004656-P1  ionotropic receptor 93a-like
+      8e-09   34.4   0.0    1.5e-08   33.6   0.0    1.5  1  gnl|WGS:ZZZZ|Ceriodaphnia_004655-P1  ionotropic receptor 93a-like
+    9.4e-09   34.2   0.0      2e-08   33.2   0.0    1.6  1  gnl|WGS:ZZZZ|Ceriodaphnia_002166-P1  ionotropic receptor 21a-like
+    9.4e-09   34.2   0.0    1.8e-08   33.3   0.0    1.4  1  gnl|WGS:ZZZZ|Ceriodaphnia_009513-P1  glutamate receptor ionotropic, k
+      1e-08   34.1   0.0    1.7e-08   33.4   0.0    1.4  1  gnl|WGS:ZZZZ|Ceriodaphnia_007049-P1  glutamate receptor ionotropic, d
+    1.2e-08   33.9   0.0    2.9e-08   32.6   0.0    1.6  1  gnl|WGS:ZZZZ|Ceriodaphnia_008954-P1  glutamate receptor ionotropic, N
+    1.3e-08   33.7   0.0    2.8e-08   32.7   0.0    1.5  1  gnl|WGS:ZZZZ|Ceriodaphnia_003491-P1  glutamate receptor ionotropic, d
+    1.9e-08   33.2   0.1    3.8e-08   32.2   0.1    1.5  1  gnl|WGS:ZZZZ|Ceriodaphnia_001299-P1  glutamate receptor ionotropic, d
+    4.6e-08   32.0   0.0    7.5e-08   31.3   0.0    1.3  1  gnl|WGS:ZZZZ|Ceriodaphnia_010112-P1  glutamate receptor ionotropic, k
+    5.4e-08   31.8   0.0    1.1e-07   30.8   0.0    1.5  1  gnl|WGS:ZZZZ|Ceriodaphnia_008184-P1  ionotropic receptor 93a-like
+      1e-07   30.9   0.0    2.1e-07   29.8   0.0    1.4  1  gnl|WGS:ZZZZ|Ceriodaphnia_004918-P1  putative glutamate receptor
+    1.1e-07   30.8   0.0    4.4e-07   28.8   0.0    1.9  1  gnl|WGS:ZZZZ|Ceriodaphnia_004668-P1  glutamate [NMDA] receptor subuni
+    1.3e-07   30.5   0.0    2.8e-07   29.5   0.0    1.5  1  gnl|WGS:ZZZZ|Ceriodaphnia_004919-P1  putative glutamate receptor
+    1.3e-07   30.5   0.0    2.2e-07   29.8   0.0    1.3  1  gnl|WGS:ZZZZ|Ceriodaphnia_002364-P1  glutamate [NMDA] receptor subuni
+    1.6e-07   30.3   0.0    5.2e-07   28.6   0.0    1.9  1  gnl|WGS:ZZZZ|Ceriodaphnia_009866-P1  glutamate [NMDA] receptor subuni
+    1.7e-07   30.2   0.0    2.7e-07   29.5   0.0    1.3  1  gnl|WGS:ZZZZ|Ceriodaphnia_010111-P1  glutamate [NMDA] receptor subuni
+    2.1e-07   29.9   0.0    4.6e-07   28.8   0.0    1.6  1  gnl|WGS:ZZZZ|Ceriodaphnia_007973-P1  glutamate receptor ionotropic, d
+    2.1e-07   29.8   0.0    5.5e-07   28.5   0.0    1.7  1  gnl|WGS:ZZZZ|Ceriodaphnia_004920-P1  putative glutamate receptor
+    2.3e-07   29.7   0.0    4.7e-07   28.7   0.0    1.4  1  gnl|WGS:ZZZZ|Ceriodaphnia_003900-P1  glutamate receptor ionotropic, k
+    2.5e-07   29.6   0.0    4.8e-07   28.7   0.0    1.5  1  gnl|WGS:ZZZZ|Ceriodaphnia_004492-P1  ionotropic receptor 21a-like
+    2.6e-07   29.6   0.0    6.3e-07   28.3   0.0    1.7  1  gnl|WGS:ZZZZ|Ceriodaphnia_005525-P1  ionotropic receptor 93a-like
+    3.1e-07   29.3   0.0    6.2e-07   28.3   0.0    1.5  1  gnl|WGS:ZZZZ|Ceriodaphnia_000240-P1  glutamate receptor ionotropic, d
+    3.5e-07   29.1   0.0    6.8e-07   28.2   0.0    1.4  1  gnl|WGS:ZZZZ|Ceriodaphnia_007991-P1  glutamate receptor ionotropic, k
+    3.7e-07   29.0   0.0    7.2e-07   28.1   0.0    1.4  1  gnl|WGS:ZZZZ|Ceriodaphnia_002720-P1  glutamate receptor ionotropic, d
+    4.1e-07   28.9   0.0    6.3e-07   28.3   0.0    1.3  1  gnl|WGS:ZZZZ|Ceriodaphnia_007048-P1  glutamate receptor ionotropic, d
+    6.7e-07   28.2   0.0    1.2e-06   27.4   0.0    1.4  1  gnl|WGS:ZZZZ|Ceriodaphnia_007432-P1  glutamate receptor 1-like
+    7.5e-07   28.1   0.0    1.3e-06   27.3   0.0    1.4  1  gnl|WGS:ZZZZ|Ceriodaphnia_009502-P1  putative glutamate receptor
+    7.8e-07   28.0   0.0    1.6e-06   27.0   0.0    1.6  1  gnl|WGS:ZZZZ|Ceriodaphnia_007047-P1  glutamate receptor ionotropic, d
+    8.4e-07   27.9   0.0    2.5e-06   26.4   0.0    1.8  1  gnl|WGS:ZZZZ|Ceriodaphnia_000100-P1  glutamate [NMDA] receptor subuni
+    8.5e-07   27.9   0.0    1.6e-06   27.0   0.0    1.4  1  gnl|WGS:ZZZZ|Ceriodaphnia_004916-P1  glutamate receptor ionotropic, d
+    8.9e-07   27.8   0.0    1.7e-06   27.0   0.0    1.4  1  gnl|WGS:ZZZZ|Ceriodaphnia_009501-P1  ionotropic receptor 93a-like
+      1e-06   27.6   0.0    1.8e-06   26.8   0.0    1.4  1  gnl|WGS:ZZZZ|Ceriodaphnia_007424-P1  ionotropic receptor 21a-like
+    1.2e-06   27.4   0.0    2.2e-06   26.6   0.0    1.4  1  gnl|WGS:ZZZZ|Ceriodaphnia_007045-P1  glutamate receptor ionotropic, d
+    1.3e-06   27.3   0.0    2.6e-06   26.3   0.0    1.5  1  gnl|WGS:ZZZZ|Ceriodaphnia_010541-P1  glutamate [NMDA] receptor subuni
+      3e-06   26.1   0.0    5.5e-06   25.3   0.0    1.4  1  gnl|WGS:ZZZZ|Ceriodaphnia_004923-P1  glutamate [NMDA] receptor subuni
+    3.2e-06   26.1   0.0    5.5e-06   25.3   0.0    1.4  1  gnl|WGS:ZZZZ|Ceriodaphnia_007426-P1  glutamate receptor ionotropic, d
+    3.2e-06   26.0   0.0    5.9e-06   25.2   0.0    1.5  1  gnl|WGS:ZZZZ|Ceriodaphnia_008260-P1  ionotropic receptor 93a-like
+    3.6e-06   25.9   0.0    7.4e-06   24.9   0.0    1.5  1  gnl|WGS:ZZZZ|Ceriodaphnia_002731-P1  glutamate receptor ionotropic, k
+    4.7e-06   25.5   0.0    1.2e-05   24.2   0.0    1.7  1  gnl|WGS:ZZZZ|Ceriodaphnia_004636-P1  glutamate receptor ionotropic, k
+    4.9e-06   25.4   0.0    9.4e-06   24.5   0.0    1.4  1  gnl|WGS:ZZZZ|Ceriodaphnia_004926-P1  putative glutamate receptor
+    5.5e-06   25.3   0.0      2e-05   23.5   0.0    1.9  1  gnl|WGS:ZZZZ|Ceriodaphnia_006941-P1  glutamate receptor ionotropic, d
+    6.4e-06   25.1   0.0    1.2e-05   24.2   0.0    1.4  1  gnl|WGS:ZZZZ|Ceriodaphnia_008440-P1  glutamate receptor ionotropic, k
+    7.8e-06   24.8   0.0    1.4e-05   24.0   0.0    1.3  1  gnl|WGS:ZZZZ|Ceriodaphnia_007425-P1  glutamate receptor ionotropic, d
+
+
+Domain annotation for each sequence (and alignments):
+>> gnl|WGS:ZZZZ|Ceriodaphnia_006874-P1  glutamate receptor ionotropic, kainate 2-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   83.0   0.0   8.1e-26   7.1e-24       1     112 [.      22     130 ..      22     133 .. 0.92
+   2 !   77.5   0.0   3.9e-24   3.4e-22       2     114 ..     373     482 ..     372     483 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 83.0 bits;  conditional E-value: 8.1e-26
+                                          -EEEEE--.BTTTBEES..S---GG.GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHH CS
+                      Lig_chan-Glu_bd   1 ktlkvvtileePyvmlkeeeelegn.eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGlige 73 
+                                          k+lk+vt   +Pyv ++  ++ +g+ +r+ Gf+ +++k+la+k++f+Y++++ +dg yG+  +++  wnG++++
+  gnl|WGS:ZZZZ|Ceriodaphnia_006874-P1  22 KHLKIVTAAFAPYVFIE--HDEHGKiSRVYGFVDEIVKWLASKYNFTYTYYEPQDGFYGAFVNNS--WNGMVRM 91 
+                                          57899**********55..555666699*********************************7766..******* PP
+
+                                          HHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEE CS
+                      Lig_chan-Glu_bd  74 lidkkadlavadltitaeReevvdFtkpfmelgisilik 112
+                                          +id+++d+   +lt t++R +v+dF   f e  i+ li 
+  gnl|WGS:ZZZZ|Ceriodaphnia_006874-P1  92 IIDNEVDMLAFPLTPTYARTRVIDFLVHFAEDPITALIP 130
+                                          **********************************99986 PP
+
+  == domain 2  score: 77.5 bits;  conditional E-value: 3.9e-24
+                                          EEEEE--.BTTTBEES..S---GG.GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHH CS
+                      Lig_chan-Glu_bd   2 tlkvvtileePyvmlkeeeelegn.eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligel 74 
+                                          +l+v+t   +Py+    +++ +gn ++++G + +++ +l++k++f++++ + +dg +G+  +  ++wnG++g+ 
+  gnl|WGS:ZZZZ|Ceriodaphnia_006874-P1 373 HLIVATADLNPYMY--LHHDENGNiDSVDGIVNEMMIWLSEKYHFTFKYVEPPDGYFGALVN--GSWNGMVGMT 442
+                                          78999*******99..45778899899*********************************66..46******** PP
+
+                                          HTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEESX CS
+                      Lig_chan-Glu_bd  75 idkkadlavadltitaeReevvdFtkpfmelgisilikkp 114
+                                          ++k++dl+ ++lt t++R+ v+dFt+ f +  +s +i  p
+  gnl|WGS:ZZZZ|Ceriodaphnia_006874-P1 443 VKKEVDLIATQLTTTYARSLVIDFTTSFSKDPMSAIIPAP 482
+                                          ********************************99998766 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_002319-P1  glutamate receptor ionotropic, kainate 2-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  150.0   0.0   1.3e-46   1.1e-44       2     114 ..     460     572 ..     459     573 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 150.0 bits;  conditional E-value: 1.3e-46
+                                          EEEEE--.BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHH CS
+                      Lig_chan-Glu_bd   2 tlkvvtileePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligeli 75 
+                                          tl+v+t +e Pyvm+++e++l+gn+ryeGfcidLlk++a ++gf+Y ++lv+d+kyG+ +++t+ewnG++++++
+  gnl|WGS:ZZZZ|Ceriodaphnia_002319-P1 460 TLIVMTNEEMPYVMVRSERNLTGNDRYEGFCIDLLKAIAGMVGFNYVIELVPDKKYGALDPDTGEWNGIVRQIL 533
+                                          6899********************************************************************** PP
+
+                                          TTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEESX CS
+                      Lig_chan-Glu_bd  76 dkkadlavadltitaeReevvdFtkpfmelgisilikkp 114
+                                          +kkadlav+++ti+++Re v+dFtkpfm+lgisil+k p
+  gnl|WGS:ZZZZ|Ceriodaphnia_002319-P1 534 EKKADLAVGSMTINYAREMVIDFTKPFMNLGISILFKVP 572
+                                          ************************************987 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_007722-P1  glutamate receptor ionotropic, kainate 2-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.4   0.0       5.9   5.2e+02      66      87 ..     221     242 ..     200     259 .. 0.77
+   2 !  143.8   0.1   1.1e-44   9.6e-43       1     115 []     422     537 ..     422     537 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: -0.4 bits;  conditional E-value: 5.9
+                                          EB-HHHHHHHTTS-SEE-SS-B CS
+                      Lig_chan-Glu_bd  66 ewnGligelidkkadlavadlt 87 
+                                          +  Gl+ el+++  ++a++ l 
+  gnl|WGS:ZZZZ|Ceriodaphnia_007722-P1 221 SQLGLVSELLNQAQQVAMTTLA 242
+                                          4569***********9999886 PP
+
+  == domain 2  score: 143.8 bits;  conditional E-value: 1.1e-44
+                                          -EEEEE--.BTTTBEE.S..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHH CS
+                      Lig_chan-Glu_bd   1 ktlkvvtileePyvml.keeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGlige 73 
+                                          ktl+v til++Py+m+ +++++l+gn+ryeGf++d+++e++++++f+Y +klv+dgkyG+ ++ t+ewnG+i+e
+  gnl|WGS:ZZZZ|Ceriodaphnia_007722-P1 422 KTLIVSTILSNPYFMIkESNQTLTGNDRYEGFVFDIIHEISEMYNFTYIFKLVDDGKYGALNKVTGEWNGMIRE 495
+                                          6899***********97788999*************************************************** PP
+
+                                          HHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEESXX CS
+                      Lig_chan-Glu_bd  74 lidkkadlavadltitaeReevvdFtkpfmelgisilikkpe 115
+                                          l+d+kadla++dl+i+++Re++vdFt+pf+++gisil+kkp+
+  gnl|WGS:ZZZZ|Ceriodaphnia_007722-P1 496 LLDGKADLALGDLSISYDRESAVDFTMPFLNTGISILYKKPQ 537
+                                          ****************************************96 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_007712-P1  glutamate receptor 1-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  142.4   0.1   2.9e-44   2.5e-42       2     114 ..     455     571 ..     454     572 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 142.4 bits;  conditional E-value: 2.9e-44
+                                          EEEEE--.BTTTBEE...S..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETT.TTEB-HHH CS
+                      Lig_chan-Glu_bd   2 tlkvvtileePyvml...keeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkek.tkewnGli 71 
+                                          t++v+t++eePy+m+   +  eel+gn+r+eG+c d+++ +a klg++Yel++vkd+kyG+++++ t+ w+G+i
+  gnl|WGS:ZZZZ|Ceriodaphnia_007712-P1 455 TYIVTTYMEEPYMMMrktEGGEELTGNDRFEGYCKDMMDLIAAKLGIQYELRKVKDHKYGNENPNvTGGWDGII 528
+                                          899***********988777899****************************************997889***** PP
+
+                                          HHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEESX CS
+                      Lig_chan-Glu_bd  72 gelidkkadlavadltitaeReevvdFtkpfmelgisilikkp 114
+                                          gel++++adlava+lti++ Re+vvdF+kpfm+lgisi+ikkp
+  gnl|WGS:ZZZZ|Ceriodaphnia_007712-P1 529 GELVRREADLAVAALTINSGRERVVDFSKPFMDLGISIMIKKP 571
+                                          *****************************************98 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_003317-P1  glutamate receptor ionotropic, kainate 2-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  142.0   0.0     4e-44   3.5e-42       1     115 []     418     533 ..     418     533 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 142.0 bits;  conditional E-value: 4e-44
+                                          -EEEEE--.BTTTBEE.S..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHH CS
+                      Lig_chan-Glu_bd   1 ktlkvvtileePyvml.keeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGlige 73 
+                                          ktl+v + l++Py+ml +++e l+gner+eGf++d+++e++k lgf+Y l+lv+d++yGs+++ tkewnG+i+e
+  gnl|WGS:ZZZZ|Ceriodaphnia_003317-P1 418 KTLIVSSKLSDPYFMLkESSEMLTGNERFEGFVVDVIDEVSKLLGFNYVLRLVADSNYGSYNPVTKEWNGIIRE 491
+                                          68999***********7778999*************************************************** PP
+
+                                          HHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEESXX CS
+                      Lig_chan-Glu_bd  74 lidkkadlavadltitaeReevvdFtkpfmelgisilikkpe 115
+                                          l+d+kadl++adl+it+eRe++vdF+ pfm++gisil+kkp+
+  gnl|WGS:ZZZZ|Ceriodaphnia_003317-P1 492 LLDQKADLGIADLSITYEREQAVDFSLPFMNTGISILYKKPQ 533
+                                          ****************************************96 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_002320-P1  glutamate receptor ionotropic, kainate 2-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  141.8   0.0   4.5e-44   3.9e-42       2     114 ..     429     541 ..     428     542 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 141.8 bits;  conditional E-value: 4.5e-44
+                                          EEEEE--.BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHH CS
+                      Lig_chan-Glu_bd   2 tlkvvtileePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligeli 75 
+                                          tl+v+t le Pyv l++  +l+ neryeGfc++L+ke+a+k+gf+Y+++l+++ kyG ++++t+ewnG+++el+
+  gnl|WGS:ZZZZ|Ceriodaphnia_002320-P1 429 TLVVTTNLEVPYVLLASGYNLTANERYEGFCVELIKEVAQKVGFNYTIRLAPEAKYGIYNPQTGEWNGIVRELM 502
+                                          6899********************************************************************** PP
+
+                                          TTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEESX CS
+                      Lig_chan-Glu_bd  76 dkkadlavadltitaeReevvdFtkpfmelgisilikkp 114
+                                          d+kadla++++ti+++Re+v+dFtkpfm+lgisi++k p
+  gnl|WGS:ZZZZ|Ceriodaphnia_002320-P1 503 DRKADLAIGSMTINYARESVIDFTKPFMNLGISIMFKVP 541
+                                          *************************************88 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_008419-P1  ionotropic receptor 25a
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  124.2   0.2   1.3e-38   1.1e-36       3     115 .]     418     527 ..     416     527 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 124.2 bits;  conditional E-value: 1.3e-38
+                                          EEEE--.BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHT CS
+                      Lig_chan-Glu_bd   3 lkvvtileePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelid 76 
+                                          +k++ + ++P++m   +++ +g+ ++ G+c+dL+k+++ ++gf+Yel++v+dgkyG++++k  +wnG+i+el++
+  gnl|WGS:ZZZZ|Ceriodaphnia_008419-P1 418 FKIAVVVQAPFIM---KRKGNGTVEFYGYCVDLIKDIQAIMGFEYELYEVPDGKYGNMDSKM-NWNGMIKELME 487
+                                          7899999******...567889999*********************************9998.*********** PP
+
+                                          TS-SEE-SS-B--HHHHTTSEEESESEEE.-EEEEEESXX CS
+                      Lig_chan-Glu_bd  77 kkadlavadltitaeReevvdFtkpfmel.gisilikkpe 115
+                                          k+ad+++++l ++aeRe+v+dFt p+++l gisil+ kp+
+  gnl|WGS:ZZZZ|Ceriodaphnia_008419-P1 488 KRADIGLGALAVMAERENVIDFTVPYYDLvGISILMAKPQ 527
+                                          ****************************99*******996 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_010594-P1  glutamate ionotropic receptor NMDA type subunit 1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  116.9   0.0   2.4e-36   2.1e-34      12     114 ..     442     547 ..     408     548 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 116.9 bits;  conditional E-value: 2.4e-36
+                                          TTBEES..S---GG.GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTT....EB-HHHHHHHTTS-S CS
+                      Lig_chan-Glu_bd  12 Pyvmlkeeeelegn.eryeGfcidLlkelakklgfkYelklvkdgkyGskkektk....ewnGligelidkkad 80 
+                                          P+++  ++ e++++   ++G+cidLlkela+k +f+Y+l+l++dg++Gs  +k++    ewnGligel++++ad
+  gnl|WGS:ZZZZ|Ceriodaphnia_010594-P1 442 PWFN--NTAETTDRfYCCRGYCIDLLKELARKNNFTYSLALSPDGQFGSFGPKNGtgkkEWNGLIGELVNDRAD 513
+                                          4444..45555555477********************************99987656669************** PP
+
+                                          EE-SS-B--HHHHTTSEEESESEEE-EEEEEESX CS
+                      Lig_chan-Glu_bd  81 lavadltitaeReevvdFtkpfmelgisilikkp 114
+                                          ++va+lti++eR++v++F+kpf+++gi+il kk+
+  gnl|WGS:ZZZZ|Ceriodaphnia_010594-P1 514 MIVAPLTINPERAQVIEFSKPFKYQGITILEKKQ 547
+                                          *******************************996 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_007542-P1  putative glutamate receptor
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  102.3   0.0   8.2e-32   7.2e-30       2     113 ..     218     327 ..     217     329 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 102.3 bits;  conditional E-value: 8.2e-32
+                                          EEEEE--.BTTTBEES..S---GG.GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHH CS
+                      Lig_chan-Glu_bd   2 tlkvvtileePyvmlkeeeelegn.eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligel 74 
+                                          +l+ +++++ P+v+   e+  +g+ + y+G+c++++++l+++++f+Ye++  +d++yG++  ++ +wnG++g++
+  gnl|WGS:ZZZZ|Ceriodaphnia_007542-P1 218 KLRLASLERPPFVIF--ERYSNGTiSGYKGYCYEIIHALKTMYNFTYEVEWPEDNTYGKELANG-RWNGMVGMV 288
+                                          67889999******4..4667788788*********************************8877.********* PP
+
+                                          HTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEES CS
+                      Lig_chan-Glu_bd  75 idkkadlavadltitaeReevvdFtkpfmelgisilikk 113
+                                          +d++ad++v+++++t++R++v+dF+ pf+e   +ili  
+  gnl|WGS:ZZZZ|Ceriodaphnia_007542-P1 289 VDQRADIGVGPFSVTHSRARVIDFSVPFYEDPAAILIPP 327
+                                          ***********************************9865 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_005425-P1  putative glutamate receptor
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  101.4   0.0   1.5e-31   1.3e-29       2     113 ..     218     327 ..     217     329 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 101.4 bits;  conditional E-value: 1.5e-31
+                                          EEEEE--.BTTTBEES..S---GG.GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHH CS
+                      Lig_chan-Glu_bd   2 tlkvvtileePyvmlkeeeelegn.eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligel 74 
+                                          +l+ +++++ P+v+   e+  +g+ + y G+c++++++l+++++f+Ye++  +d++yG++  ++ +wnG++g++
+  gnl|WGS:ZZZZ|Ceriodaphnia_005425-P1 218 KLRLASLERPPFVIF--ERYSNGTiSGYTGYCYEIIHALKTMYNFTYEVEWPEDNTYGKELANG-RWNGMVGMV 288
+                                          67889999******4..4667788788*********************************8877.********* PP
+
+                                          HTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEES CS
+                      Lig_chan-Glu_bd  75 idkkadlavadltitaeReevvdFtkpfmelgisilikk 113
+                                          +d++ad++v+++++t++R++v+dF+ pf+e   +ili  
+  gnl|WGS:ZZZZ|Ceriodaphnia_005425-P1 289 VDQRADIGVGPFSVTHSRARVIDFSVPFYEDPAAILIPP 327
+                                          ***********************************9865 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_009123-P1  glutamate ionotropic receptor NMDA type subunit 2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   96.7   0.0   4.5e-30   3.9e-28      25     114 ..     583     672 ..     567     673 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 96.7 bits;  conditional E-value: 4.5e-30
+                                          G.GG.EESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTS CS
+                      Lig_chan-Glu_bd  25 n.er.yeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevv 96 
+                                          n ++ ++GfcidLl+++++ lgf+Yel+ v+d k+G++ +   +wnGl+g l ++++d+++++lt++aeRe+v 
+  gnl|WGS:ZZZZ|Ceriodaphnia_009123-P1 583 NvTQcCSGFCIDLLEKFKNDLGFTYELNRVDDPKFGTHVNG--RWNGLMGALANRRVDMVMTSLTVNAEREHVA 654
+                                          433349*******************************9654..6****************************** PP
+
+                                          EEESESEEE-EEEEEESX CS
+                      Lig_chan-Glu_bd  97 dFtkpfmelgisilikkp 114
+                                          dFt pfme+gi+il+ k+
+  gnl|WGS:ZZZZ|Ceriodaphnia_009123-P1 655 DFTIPFMETGIAILVAKR 672
+                                          **************9885 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_004050-P1  glutamate receptor ionotropic, delta-1-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   88.9   0.0   1.1e-27   9.8e-26       2     114 ..      35     143 ..      34     144 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 88.9 bits;  conditional E-value: 1.1e-27
+                                          EEEEE--.BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHH CS
+                      Lig_chan-Glu_bd   2 tlkvvtileePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligeli 75 
+                                          +l+++ti+++Pyv ++  ++ ++ +r+ Gf+ +++ ++akk++f++e+ +++dg yG+ ++  ++wnG++g+++
+  gnl|WGS:ZZZZ|Ceriodaphnia_004050-P1  35 HLVIATIHKDPYVLVE--HTGTKISRVTGFVPEIVAWMAKKYSFTFEFVESSDGAYGAVEN--GSWNGVVGMVV 104
+                                          6789**********43..34444489********************************955..47********* PP
+
+                                          TTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEESX CS
+                      Lig_chan-Glu_bd  76 dkkadlavadltitaeReevvdFtkpfmelgisilikkp 114
+                                          +++++++ adl+it+ R+ vvdFt pf e+ +s++i  p
+  gnl|WGS:ZZZZ|Ceriodaphnia_004050-P1 105 RGEVHMVAADLSITHPRSLVVDFTIPFSEEPMSLVIPYP 143
+                                          *********************************998766 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_002419-P1  glutamate receptor ionotropic, kainate glr-3-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   89.1   0.0   9.9e-28   8.6e-26       1     113 [.      96     208 ..      96     210 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 89.1 bits;  conditional E-value: 9.9e-28
+                                          -EEEEE--.BTTTBEES..S---GG.GGEESHHHHHHHHHHHHHT-EEEEEE..-TT-----BETTTTEB-HHH CS
+                      Lig_chan-Glu_bd   1 ktlkvvtileePyvmlkeeeelegn.eryeGfcidLlkelakklgfkYelkl..vkdgkyGskkektkewnGli 71 
+                                          ktl+ +++++ P+v+   +++ +g+ + y+Gfc++++++l+++++f+Y+++     d++yG++ +++ +w+G++
+  gnl|WGS:ZZZZ|Ceriodaphnia_002419-P1  96 KTLRLTSLEQPPFVIF--KRHPNGTvSGYSGFCYEIIHALQEIYNFTYQVHSpaMGDRTYGKHLSNG-SWTGML 166
+                                          589999*********5..4777888788**********************9722579******8877.****** PP
+
+                                          HHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEES CS
+                      Lig_chan-Glu_bd  72 gelidkkadlavadltitaeReevvdFtkpfmelgisilikk 113
+                                          g ++++ +d++v+++++t++R+++vdF+ pf+e   +ili  
+  gnl|WGS:ZZZZ|Ceriodaphnia_002419-P1 167 GLVVNEMVDIGVSQFSVTHSRSKAVDFSVPFYEDPAAILIPP 208
+                                          **************************************9865 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_002408-P1  putative glutamate receptor
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   87.6   0.0     3e-27   2.6e-25       5     113 ..     220     327 ..     216     329 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 87.6 bits;  conditional E-value: 3e-27
+                                          EE--.BTTTBEES..S---GG.GGEESHHHHHHHHHHHHHT-EEEEEE.-TT-----BETTTTEB-HHHHHHHT CS
+                      Lig_chan-Glu_bd   5 vvtileePyvmlkeeeelegn.eryeGfcidLlkelakklgfkYelkl.vkdgkyGskkektkewnGligelid 76 
+                                           +++++ P+v+   +++ +g+ + y+Gfc++++++l+++++f+Y++    +d++yG+k +++ +w+G++g++++
+  gnl|WGS:ZZZZ|Ceriodaphnia_002408-P1 220 LTSLEQPPFVI--FQRNPNGTiKGYRGFCFEIIHALQEIYNFTYTVVSpISDSTYGRKLPNG-SWSGMLGMVVN 290
+                                          5788999****..45788999788********************9865279*******9988.*********** PP
+
+                                          TS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEES CS
+                      Lig_chan-Glu_bd  77 kkadlavadltitaeReevvdFtkpfmelgisilikk 113
+                                          + +d++  ++t+t++R++++dF+ pf+e   +ili  
+  gnl|WGS:ZZZZ|Ceriodaphnia_002408-P1 291 EVVDIGSNPFTVTHSRSKAIDFSVPFYEDPAAILIPP 327
+                                          *********************************9865 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_003211-P1  glutamate receptor ionotropic, delta-1-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   86.5   0.0   6.4e-27   5.5e-25       3     114 ..      36     143 ..      34     144 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 86.5 bits;  conditional E-value: 6.4e-27
+                                          EEEE--.BTTTBEES..S---GG.GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHH CS
+                      Lig_chan-Glu_bd   3 lkvvtileePyvmlkeeeelegn.eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligeli 75 
+                                          l+++ti+++Pyv l+   ++  n ++++Gf+ d+++++akk +f++e+ + +dg +G+ ++  ++wnG++g+++
+  gnl|WGS:ZZZZ|Ceriodaphnia_003211-P1  36 LVIATIHNNPYVLLE---HTGANiSQVNGFLPDVVEWMAKKHKFTFEYVEPPDGAFGAFEN--GSWNGVVGMVV 104
+                                          7899*********54...55556689*********************************55..47********* PP
+
+                                          TTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEESX CS
+                      Lig_chan-Glu_bd  76 dkkadlavadltitaeReevvdFtkpfmelgisilikkp 114
+                                          ++++++a+++l++t+ R+ +vdFt pf e+ +s+li  p
+  gnl|WGS:ZZZZ|Ceriodaphnia_003211-P1 105 RREVQMAMTALSVTYLRSLAVDFTIPFSEEPVSLLIPYP 143
+                                          **********************************99876 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_002431-P1  glutamate receptor ionotropic, kainate 3-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   86.0   0.0   8.9e-27   7.7e-25       1     113 [.     256     368 ..     256     370 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 86.0 bits;  conditional E-value: 8.9e-27
+                                          -EEEEE--.BTTTBEES..S---GG.GGEESHHHHHHHHHHHHHT-EEEEEE..-TT-----BETTTTEB-HHH CS
+                      Lig_chan-Glu_bd   1 ktlkvvtileePyvmlkeeeelegn.eryeGfcidLlkelakklgfkYelkl..vkdgkyGskkektkewnGli 71 
+                                          ktl+ +++++ P+v+   +++ +g+   y+Gfc++++++l+++++f+Y+++l   +d++yG++ +++ +w G++
+  gnl|WGS:ZZZZ|Ceriodaphnia_002431-P1 256 KTLRLTSLERPPFVIF--KRHPNGTvFGYSGFCYEIIHALQEIYNFTYQVHLplIDDRTYGKHLSNG-SWGGML 326
+                                          588999*********5..4677888677********************98852279*******8877.****** PP
+
+                                          HHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEES CS
+                      Lig_chan-Glu_bd  72 gelidkkadlavadltitaeReevvdFtkpfmelgisilikk 113
+                                          g ++++ +d++v+++++t++R+e+vdF+ pf+e   +ili  
+  gnl|WGS:ZZZZ|Ceriodaphnia_002431-P1 327 GLVVNEMVDIGVSPFSVTHSRSEAVDFSVPFYEDPAAILIPP 368
+                                          **************************************9865 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_004051-P1  glutamate receptor 1-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   85.7   0.0   1.2e-26     1e-24       2     114 ..      38     146 ..      37     147 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 85.7 bits;  conditional E-value: 1.2e-26
+                                          EEEEE--.BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHH CS
+                      Lig_chan-Glu_bd   2 tlkvvtileePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligeli 75 
+                                          +++++ti+++Pyv++k  ++ ++ +r+ Gf+ +++ ++a+k++f+Ye+ + +d+ yG+  +  ++wnG++g+++
+  gnl|WGS:ZZZZ|Ceriodaphnia_004051-P1  38 QFVIATIHHDPYVIIK--HNGTKIRRVTGFVPEIVAWMAEKYKFTYEYVEPSDDAYGAVVN--GSWNGMVGMVV 107
+                                          6889**********55..44555589*********************************65..46********* PP
+
+                                          TTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEESX CS
+                      Lig_chan-Glu_bd  76 dkkadlavadltitaeReevvdFtkpfmelgisilikkp 114
+                                          +++a+++ adl++t+ R+ vv Ft pf e+  sili  p
+  gnl|WGS:ZZZZ|Ceriodaphnia_004051-P1 108 RGEAQMVAADLSLTYPRSLVVGFTIPFTEEPQSILIPYP 146
+                                          ***********************************9876 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_010139-P1  uncharacterized protein Ceriodaphnia_010139
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.1   0.0      0.48        42       2      23 ..     610     635 ..     609     645 .. 0.69
+   2 !   76.5   0.0   8.3e-24   7.3e-22      26     112 ..     678     764 ..     667     767 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 3.1 bits;  conditional E-value: 0.48
+                                          EEEEE--.BTTTBEE....S..S--- CS
+                      Lig_chan-Glu_bd   2 tlkvvtileePyvml....keeeele 23 
+                                          +++v+ti + P+vm+    ke++e e
+  gnl|WGS:ZZZZ|Ceriodaphnia_010139-P1 610 VYRVATIFSPPFVMEtevfKEDDEEE 635
+                                          689***********866553333333 PP
+
+  == domain 2  score: 76.5 bits;  conditional E-value: 8.3e-24
+                                          GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEE CS
+                      Lig_chan-Glu_bd  26 eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFt 99 
+                                          + + G+ idL++++a+ l++k+++++v+dg+ G+k++ t++w+G++ +l ++ a+l  a+l++t++R+e++dF+
+  gnl|WGS:ZZZZ|Ceriodaphnia_010139-P1 678 TCCYGYSIDLMENVASDLDVKFQVYVVADGQCGAKRQVTGKWDGIVADLRSGAAHLSFAPLSVTSARSEAIDFS 751
+                                          4589********************************************************************** PP
+
+                                          SESEEE-EEEEEE CS
+                      Lig_chan-Glu_bd 100 kpfmelgisilik 112
+                                           p+ ++g+sil  
+  gnl|WGS:ZZZZ|Ceriodaphnia_010139-P1 752 IPYFYSGLSILEA 764
+                                          **********976 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_001860-P1  glutamate receptor ionotropic, delta-1-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   80.9   0.0   3.6e-25   3.1e-23       3     114 ..      61     168 ..      59     169 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 80.9 bits;  conditional E-value: 3.6e-25
+                                          EEEE--.BTTTBEES..S---GG.GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHH CS
+                      Lig_chan-Glu_bd   3 lkvvtileePyvmlkeeeelegn.eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligeli 75 
+                                          ++++ti+++Pyv l+   ++  n ++++Gf+ d+++++akk++f++e+ + +dg +G+  +   +wnG++g+++
+  gnl|WGS:ZZZZ|Ceriodaphnia_001860-P1  61 FVIATIHNNPYVLLE---HTGPNiSQVNGFLPDVVEWMAKKYKFTFEYIEPPDGAFGAFVNG--SWNGVVGMVV 129
+                                          7899*********54...45555689*********************************664..6********* PP
+
+                                          TTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEESX CS
+                      Lig_chan-Glu_bd  76 dkkadlavadltitaeReevvdFtkpfmelgisilikkp 114
+                                          ++++++a+++l++t+ R+ +vdFt  f e+ +s+li  p
+  gnl|WGS:ZZZZ|Ceriodaphnia_001860-P1 130 RREVQMAMTALSVTYLRSLAVDFTISFSEEPVSLLIPYP 168
+                                          **********************************99876 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_004052-P1  glutamate receptor ionotropic, delta-1-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   79.7   0.0   8.5e-25   7.3e-23       2     114 ..      36     144 ..      35     145 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 79.7 bits;  conditional E-value: 8.5e-25
+                                          EEEEE--.BTTTBEES..S---GG.GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHH CS
+                      Lig_chan-Glu_bd   2 tlkvvtileePyvmlkeeeelegn.eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligel 74 
+                                          +l++ ti  +Pyv+    e + gn +r++Gf+ +++ +la+k +f+Ye+++ +dg yG+  + t  w Gl+g++
+  gnl|WGS:ZZZZ|Ceriodaphnia_004052-P1  36 HLIIGTISITPYVN---IEYVGGNiSRVDGFVHQIVAWLAEKNNFTYEYREPADGAYGAFINGT--WVGLVGMV 104
+                                          678899999****9...457899999**********************************7766..******** PP
+
+                                          HTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEESX CS
+                      Lig_chan-Glu_bd  75 idkkadlavadltitaeReevvdFtkpfmelgisilikkp 114
+                                          ++++++++ ++l++t++R+ vvdFt pf +  +++li  p
+  gnl|WGS:ZZZZ|Ceriodaphnia_004052-P1 105 VRGEINMVATALSVTYSRSLVVDFTVPFSHDPMALLIPYP 144
+                                          *********************************9999766 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_006717-P1  glutamate receptor ionotropic, kainate glr-3-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   75.7   0.0   1.5e-23   1.3e-21       2     114 ..       9     118 ..       8     119 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 75.7 bits;  conditional E-value: 1.5e-23
+                                          EEEEE--.BTTTBEES..S---GG.GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHH CS
+                      Lig_chan-Glu_bd   2 tlkvvtileePyvmlkeeeelegn.eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligel 74 
+                                          +l+++t+  +Py+ +  +++ +gn  + eG + +++++l+ +++f+++l +  dg++G+  ++t  wnG+ig+ 
+  gnl|WGS:ZZZZ|Ceriodaphnia_006717-P1   9 HLQIATLDVRPYMSI--DRDDKGNiYHSEGLVSQIIHWLSIRFNFTFTLVVPLDGTFGALINNT--WNGMIGMA 78 
+                                          68999*******994..5778899899*********************************9888..******** PP
+
+                                          HTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEESX CS
+                      Lig_chan-Glu_bd  75 idkkadlavadltitaeReevvdFtkpfmelgisilikkp 114
+                                          +d++++l+ a++  + eR +v+dFt+pf++++i +li  p
+  gnl|WGS:ZZZZ|Ceriodaphnia_006717-P1  79 LDRQVQLIAAPIVPSFERVRVLDFTTPFYHESICCLIPAP 118
+                                          ***********************************99877 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_004054-P1  putative glutamate receptor
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   74.8   0.0   2.7e-23   2.3e-21       3     114 ..      37     144 ..      35     145 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 74.8 bits;  conditional E-value: 2.7e-23
+                                          EEEE--.BTTTBEES..S---GG.GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHH CS
+                      Lig_chan-Glu_bd   3 lkvvtileePyvmlkeeeelegn.eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligeli 75 
+                                          l + t + +Py+     e ++gn +r++Gf+ +++ ++a+k +f+Ye+ + +dg yG+  +   +w Gl+g+++
+  gnl|WGS:ZZZZ|Ceriodaphnia_004054-P1  37 LLIGTAHIAPYIL---IEYTRGNiSRVDGFVHQIVVWIAEKHHFTYEYVEPPDGAYGAFING--SWIGLVGMVV 105
+                                          556788889**99...457889989**********************************664..6********* PP
+
+                                          TTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEESX CS
+                      Lig_chan-Glu_bd  76 dkkadlavadltitaeReevvdFtkpfmelgisilikkp 114
+                                          +k+++++ a+l++t+ R+ v+d+t pf++  +++li  p
+  gnl|WGS:ZZZZ|Ceriodaphnia_004054-P1 106 RKEINMVAAALSVTYPRSLVIDYTIPFLDDPTALLIPYP 144
+                                          ******************************999998766 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_006704-P1  glutamate receptor ionotropic, delta-2-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   74.5   0.0   3.4e-23     3e-21       3     114 ..      45     154 ..      43     155 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 74.5 bits;  conditional E-value: 3.4e-23
+                                          EEEE--.BTTTBEES..S---GG.GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHH CS
+                      Lig_chan-Glu_bd   3 lkvvtileePyvmlkeeeelegn.eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligeli 75 
+                                          ++v++++  P+v     ++ +gn  + +Gf +++l++l + ++f+ ++++ +d+ yG++  ++ +w+G+i +++
+  gnl|WGS:ZZZZ|Ceriodaphnia_006704-P1  45 VRVASVEIPPFVEF--VRDENGNiVEGKGFSFEILNALMEAYNFSISIEVPTDNAYGTQLANG-SWSGMIAMIL 115
+                                          78999999***995..46778887889********************************8877.********** PP
+
+                                          TTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEESX CS
+                      Lig_chan-Glu_bd  76 dkkadlavadltitaeReevvdFtkpfmelgisilikkp 114
+                                          +++ d++v+++++ + R++v+dFt  ++e++ +i+i  p
+  gnl|WGS:ZZZZ|Ceriodaphnia_006704-P1 116 NNESDIGVGSFSVIHVRHQVIDFTVSYYEESSAIMIPAP 154
+                                          ***********************************9876 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_003894-P1  glutamate receptor ionotropic, delta-2-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   72.1   0.0   1.9e-22   1.6e-20       2     113 ..      26     133 ..      25     135 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 72.1 bits;  conditional E-value: 1.9e-22
+                                          EEEEE--.BTTTBEES..S---GG.GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHH CS
+                      Lig_chan-Glu_bd   2 tlkvvtileePyvmlkeeeelegn.eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligel 74 
+                                          +++++t++ +Py+++   +++  n ++++Gf+ ++++++ ++++f++e+ l +d  yG   +  ++wnG++g+l
+  gnl|WGS:ZZZZ|Ceriodaphnia_003894-P1  26 HFIIATMNANPYTIV---NRIGRNiSHVDGFVNQIVTWMGERCNFTFEYVLPPDLAYGGFVN--GSWNGMVGML 94 
+                                          6899********993...466666699*********************************66..46******** PP
+
+                                          HTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEES CS
+                      Lig_chan-Glu_bd  75 idkkadlavadltitaeReevvdFtkpfmelgisilikk 113
+                                          ++++a+++ +dl++t+ R+ v+dFt+  ++  + ++i  
+  gnl|WGS:ZZZZ|Ceriodaphnia_003894-P1  95 VRNEAHIIATDLSVTYPRSLVIDFTTQMVDDPLVMVIPY 133
+                                          ***************************999988888765 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_003901-P1  glutamate receptor ionotropic, delta-2-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   65.8   0.0   1.8e-20   1.5e-18      10     112 ..       3     101 ..       1     104 [. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 65.8 bits;  conditional E-value: 1.8e-20
+                                          BTTTBEES..S---GG.GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE CS
+                      Lig_chan-Glu_bd  10 eePyvmlkeeeelegn.eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadla 82 
+                                           +Py ++   + +  n ++++Gf+ ++++++ ++++f++e+ l +d  yG   +  ++wnG++g+l++++a+++
+  gnl|WGS:ZZZZ|Ceriodaphnia_003901-P1   3 ANPYAIV---NCIGRNiSHVDGFVNQIVTWMGERCNFTFEYVLPPDLAYGGFVN--GSWNGMVGMLVRHEAHII 71 
+                                          5788773...344455688*********************************66..46**************** PP
+
+                                          -SS-B--HHHHTTSEEESESEEE-EEEEEE CS
+                      Lig_chan-Glu_bd  83 vadltitaeReevvdFtkpfmelgisilik 112
+                                           adl++t+ R+ v+dFt+  ++  + ++i 
+  gnl|WGS:ZZZZ|Ceriodaphnia_003901-P1  72 AADLSVTYPRSLVIDFTTQTVDDPLVMVIP 101
+                                          ******************998888877776 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_009455-P1  glutamate [NMDA] receptor subunit 1-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   62.6   0.0   1.7e-19   1.5e-17      19      99 ..      56     135 ..      40     151 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 62.6 bits;  conditional E-value: 1.7e-19
+                                          .S---GG.GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HH CS
+                      Lig_chan-Glu_bd  19 eeelegn.eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitae 91 
+                                          +++ +gn + y+G+++++l +l+++l+f+++++ +k+++ G k++ t  wnG+ig l++++adla+ ++ i+ e
+  gnl|WGS:ZZZZ|Ceriodaphnia_009455-P1  56 TRDASGNiTAYNGYLYQMLLWLSQNLEFSFKIYPAKENTNGIKRNGT--WNGIIGTLLREEADLAMVPVAISLE 127
+                                          4678899888********************************96655..************************* PP
+
+                                          HHTTSEEE CS
+                      Lig_chan-Glu_bd  92 ReevvdFt 99 
+                                          R e+v+F 
+  gnl|WGS:ZZZZ|Ceriodaphnia_009455-P1 128 RYEAVEFC 135
+                                          *******7 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_009865-P1  glutamate receptor ionotropic, delta-2-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   59.5   0.0   1.6e-18   1.4e-16       2     111 ..      12     118 ..      11     122 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 59.5 bits;  conditional E-value: 1.6e-18
+                                          EEEEE--.BTTTBEES..S---GG.GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHH CS
+                      Lig_chan-Glu_bd   2 tlkvvtileePyvmlkeeeelegn.eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligel 74 
+                                          +++v t++  Py+    +++ +g+ ++++Gf+  +l  la+k++f+Ye+ + + g+ G+  ++t   nGlig+l
+  gnl|WGS:ZZZZ|Ceriodaphnia_009865-P1  12 HFIVGTVEMPPYIH--IHRDRDGKlREVDGFVNRILVFLASKFHFTYEYVEPSSGHTGHCFNDT--CNGLIGML 81 
+                                          78999********9..45778888788*********************************9888..******** PP
+
+                                          HTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEE CS
+                      Lig_chan-Glu_bd  75 idkkadlavadltitaeReevvdFtkpfmelgisili 111
+                                          i++++dl+ + l ++++R++ +dFt  f++   ++li
+  gnl|WGS:ZZZZ|Ceriodaphnia_009865-P1  82 IRGEIDLIATGLALSQSRSKLIDFTFQFQSDFENLLI 118
+                                          ****************************987766666 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_002514-P1  glutamate receptor ionotropic, delta-2-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   55.4   0.0     3e-17   2.6e-15       4      99 ..      18     110 ..      15     125 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 55.4 bits;  conditional E-value: 3e-17
+                                          EEE--.BTTTBEES..S---GG.GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHT CS
+                      Lig_chan-Glu_bd   4 kvvtileePyvmlkeeeelegn.eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelid 76 
+                                          +vv  +  P +    +++ +gn + ++G ++++l +l++kl+f++++  +k+++ G k++ t  wnG+ig l++
+  gnl|WGS:ZZZZ|Ceriodaphnia_002514-P1  18 RVVIGQFPPQIS--FTRDASGNiTGFNGHLYQMLLWLSQKLEFSFNIFPAKENTNGIKRNGT--WNGIIGTLLR 87 
+                                          555555555555..45678899788********************************96655..********** PP
+
+                                          TS-SEE-SS-B--HHHHTTSEEE CS
+                      Lig_chan-Glu_bd  77 kkadlavadltitaeReevvdFt 99 
+                                          ++adla+ ++ i+ eR e+v+F 
+  gnl|WGS:ZZZZ|Ceriodaphnia_002514-P1  88 EEADLALVPVAISLERYEAVNFC 110
+                                          **********************6 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_001623-P1  putative glutamate receptor
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   55.0   0.0   3.9e-17   3.4e-15       4     112 ..     200     305 ..     197     308 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 55.0 bits;  conditional E-value: 3.9e-17
+                                          EEE--.BTTTBEES..S---GG.GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHT CS
+                      Lig_chan-Glu_bd   4 kvvtileePyvmlkeeeelegn.eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelid 76 
+                                          +v+t +  P +    +++ +gn +   G++++ l +l++kl+f+Y++  vk+++ G k++ t  wnG+ig l++
+  gnl|WGS:ZZZZ|Ceriodaphnia_001623-P1 200 RVITGQFPPPIF--FTRDASGNiTGHLGYLYQQLLWLSEKLEFSYNILPVKENTNGVKRNGT--WNGIIGALLR 269
+                                          555555555444..2466788877799******************************96655..********** PP
+
+                                          TS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEE CS
+                      Lig_chan-Glu_bd  77 kkadlavadltitaeReevvdFtkpfmelgisilik 112
+                                          ++adl++ ++ i+ eR e+v+F        +si+++
+  gnl|WGS:ZZZZ|Ceriodaphnia_001623-P1 270 DEADLGLVPMAISLERYEAVEFCGNIGGDWTSIVVR 305
+                                          **********************87776666666665 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_007720-P1  ionotropic receptor 93a-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   54.4   0.0   5.7e-17     5e-15       2     114 ..     476     586 ..     475     587 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 54.4 bits;  conditional E-value: 5.7e-17
+                                          EEEEE--.BTTTBEES..S---GG.GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHH CS
+                      Lig_chan-Glu_bd   2 tlkvvtileePyvmlkeeeelegn.eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligel 74 
+                                          +++v+t++  P+ ++  e++ +g+  r  G +++L kel ++l+f+ ++ + +dgk+G++ + + +w+G+++++
+  gnl|WGS:ZZZZ|Ceriodaphnia_007720-P1 476 VINVTTVEFPPWQIY--ERDNKGKvVRHTGLVLELAKELGNRLNFSINIVEPADGKWGARLSFS-RWTGMVEQV 546
+                                          5789********994..4556666699*********************************8877.********* PP
+
+                                          HTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEESX CS
+                      Lig_chan-Glu_bd  75 idkkadlavadltitaeReevvdFtkpfmelgisilikkp 114
+                                           ++++ +a a +t+ta+R ++v+F++    + +++++ +p
+  gnl|WGS:ZZZZ|Ceriodaphnia_007720-P1 547 RTGSVAFAGAGFTVTADRMSAVNFSMSLDAQPYTFMFARP 586
+                                          *****************************99999999887 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_000810-P1  glutamate receptor 1-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   52.2   0.0   2.8e-16   2.4e-14       2      99 ..     139     233 ..     138     244 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 52.2 bits;  conditional E-value: 2.8e-16
+                                          EEEEE--.BTTTBEES..S---GG.GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHH CS
+                      Lig_chan-Glu_bd   2 tlkvvtileePyvmlkeeeelegn.eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligel 74 
+                                          +l+vv+ +  P +  +  ++ +g+ + y+Gf ++ l +l+ kl+f+Y+l  +++++ G k++ t  wnG+ig +
+  gnl|WGS:ZZZZ|Ceriodaphnia_000810-P1 139 ELRVVMANFPPIIFFS--RNESGHvTGYSGFSYQQLLWLSAKLKFTYKLFPASENTNGIKRNGT--WNGVIGTI 208
+                                          5778888777877743..555666588********************************96655..******** PP
+
+                                          HTTS-SEE-SS-B--HHHHTTSEEE CS
+                      Lig_chan-Glu_bd  75 idkkadlavadltitaeReevvdFt 99 
+                                           +++adlav ++ ++ eR ev++F 
+  gnl|WGS:ZZZZ|Ceriodaphnia_000810-P1 209 SRGEADLAVVPIALSLERYEVIEFC 233
+                                          ***********************95 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_008587-P1  glutamate receptor ionotropic, delta-1-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   50.9   0.0   7.2e-16   6.3e-14      33     113 ..      52     130 ..      28     132 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 50.9 bits;  conditional E-value: 7.2e-16
+                                          HHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE- CS
+                      Lig_chan-Glu_bd  33 idLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelg 106
+                                           d l+ la++l+f+ ++++ +d  +G  k+  ++w+G+ig+l++k+adl+ +   +t++R +++dFt p ++  
+  gnl|WGS:ZZZZ|Ceriodaphnia_008587-P1  52 RDTLNLLATRLNFTLNITHPPDFLFGGFKN--GKWDGIIGQLLNKEADLGASINAVTYARFTAIDFTVPVIYDI 123
+                                          58899***********************55..57************************************9999 PP
+
+                                          EEEEEES CS
+                      Lig_chan-Glu_bd 107 isilikk 113
+                                          + ili  
+  gnl|WGS:ZZZZ|Ceriodaphnia_008587-P1 124 TGILIAF 130
+                                          9998865 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_001836-P1  ionotropic receptor 40a-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.8   0.0     2e-12   1.7e-10       3     103 ..     204     306 ..     202     313 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 39.8 bits;  conditional E-value: 2e-12
+                                          EEEE--.BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEE.EEE-TT-----BETT..TTEB-HHHHH CS
+                      Lig_chan-Glu_bd   3 lkvvtileePyvmlkeeeelegneryeGfcidLlkelakklgfkYe.lklvkdgkyGskkek..tkewnGlige 73 
+                                          l+v+t++  P v + +e++ ++++++ G    L++ +a++l+f++  + +++ + +Gs + +  +++ +Gl+g 
+  gnl|WGS:ZZZZ|Ceriodaphnia_001836-P1 204 LRVATLNFPPVVFI-NERHQDNTTSIYGIEPALMEVMADNLNFTFGyFPVSPSEMWGSVSGEgeNRTATGLLGA 276
+                                          68889988888874.4555556688*******************972567789999*998773355899***** PP
+
+                                          HHTTS-SEE-SS-B--HHHHTTSEEESESE CS
+                      Lig_chan-Glu_bd  74 lidkkadlavadltitaeReevvdFtkpfm 103
+                                          l++k+ad+a+++l i ++R +++ F++ ++
+  gnl|WGS:ZZZZ|Ceriodaphnia_001836-P1 277 LMKKEADVALGNLYIDYTRLSIIGFSSYYK 306
+                                          **************************9875 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_001301-P1  glutamate receptor ionotropic, kainate 3-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.2   0.0   3.1e-12   2.7e-10       3     113 ..      42     147 ..      40     149 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 39.2 bits;  conditional E-value: 3.1e-12
+                                          EEEE--.BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHH.H CS
+                      Lig_chan-Glu_bd   3 lkvvtileePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligel.i 75 
+                                          ++v +++  P++m   +++++g+  y+Gfc d+l+++ ++++++ ++  v+ +++ ++     + + ++++l +
+  gnl|WGS:ZZZZ|Ceriodaphnia_001301-P1  42 INVSAFHYPPFFM--VTNATDGSVFYRGFCADILDWIIHNFKLSVTFVPVNPSEVAQQG----TTQAVVNQLvV 109
+                                          578888999****..5688999999***************9999999999988776663....45678887626 PP
+
+                                          TTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEES CS
+                      Lig_chan-Glu_bd  76 dkkadlavadltitaeReevvdFtkpfmelgisilikk 113
+                                          +k++d++  +lt + +R++ +dFt p +    +++++ 
+  gnl|WGS:ZZZZ|Ceriodaphnia_001301-P1 110 KKEVDMIPMPLTQSVTRARQMDFTIPVLIGNSRLMLRY 147
+                                          889***********************887777776665 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_008584-P1  glutamate receptor ionotropic, kainate 3-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.9   0.0   7.5e-12   6.5e-10      22     112 ..      54     144 ..      38     147 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 37.9 bits;  conditional E-value: 7.5e-12
+                                          --GG.GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHT CS
+                      Lig_chan-Glu_bd  22 legn.eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeRee 94 
+                                           +g+  ++ G    +l++l+++++f+Y++ +v+d+ +  +  + ++  Gli  ++++k d+++a++ ++++R +
+  gnl|WGS:ZZZZ|Ceriodaphnia_008584-P1  54 ATGHiVDLTGVSALILDWLKQRYHFNYSILQVNDSVLEPE-GTIGSLPGLISYVVNGKCDVIMAAIKVSHDRFR 126
+                                          4455456788888899******************977555.55569**************************** PP
+
+                                          TSEEESESEEE-EEEEEE CS
+                      Lig_chan-Glu_bd  95 vvdFtkpfmelgisilik 112
+                                           +dF +p+m+   ++li 
+  gnl|WGS:ZZZZ|Ceriodaphnia_008584-P1 127 HLDFVHPWMYARSAFLIP 144
+                                          *********998888775 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_002117-P1  glutamate receptor ionotropic, kainate 2-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.3   0.0   2.4e-11   2.1e-09      35     114 ..       1      76 [.       1      77 [. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 36.3 bits;  conditional E-value: 2.4e-11
+                                          HHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EE CS
+                      Lig_chan-Glu_bd  35 LlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgis 108
+                                          +l+ l+++++f+Ye+  v+++++        + +G i  lid+k d+ +ad+t+t++R  +vd+t p+    +s
+  gnl|WGS:ZZZZ|Ceriodaphnia_002117-P1   1 MLSYLSSRFNFTYEMVRVTENTMEPS---V-HGKGFISYLIDGKCDVLMADVTVTYKRLAMVDYTLPWTIGQVS 70 
+                                          67889**************9965333...3.668**********************************999999 PP
+
+                                          EEEESX CS
+                      Lig_chan-Glu_bd 109 ilikkp 114
+                                          ++i  p
+  gnl|WGS:ZZZZ|Ceriodaphnia_002117-P1  71 FIIPAP 76 
+                                          888665 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_008955-P1  glutamate receptor ionotropic, NMDA 1-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.5   0.0   3.7e-10   3.2e-08      29     111 ..      25     105 ..       3     109 .. 0.87
+   2 ?    2.2   0.0       0.9        78      12      44 ..     414     444 ..     403     454 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 32.5 bits;  conditional E-value: 3.7e-10
+                                          ESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESES CS
+                      Lig_chan-Glu_bd  29 eGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpf 102
+                                            + id+l++la++ +f+Y++ +++  + G +++  +   G i+ l d++ d++++d+ +t+ R +v+d+  p+
+  gnl|WGS:ZZZZ|Ceriodaphnia_008955-P1  25 ARMHIDILNWLARRNNFTYSILVTN--ETGLETPVVDGARGTINYLFDGSCDMVISDFYMTSGRYKVIDMPFPW 96 
+                                          55689****************8876..57999999889************************************ PP
+
+                                          EEE-EEEEE CS
+                      Lig_chan-Glu_bd 103 melgisili 111
+                                          ++  + +li
+  gnl|WGS:ZZZZ|Ceriodaphnia_008955-P1  97 VQRPLYFLI 105
+                                          999887776 PP
+
+  == domain 2  score: 2.2 bits;  conditional E-value: 0.9
+                                          TTBEES..S---GGGGEESHHHHHHHHHHHHHT CS
+                      Lig_chan-Glu_bd  12 PyvmlkeeeelegneryeGfcidLlkelakklg 44 
+                                           y+    +++ +  + y Gfc ++l +l ++ g
+  gnl|WGS:ZZZZ|Ceriodaphnia_008955-P1 414 CYMR--IRQQHSRATAYFGFCTEVLISLCNSKG 444
+                                          4544..3455566678********998877655 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_009505-P1  putative glutamate receptor
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.3   0.0   2.4e-11   2.1e-09      26     111 ..     206     295 ..     188     299 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 36.3 bits;  conditional E-value: 2.4e-11
+                                          GGEESHHHHHHHHHHHHHT-EEEE.EE-TT-----BETTTT...EB-HHHHHHHTTS-SEE-SS-B--HHHHTT CS
+                      Lig_chan-Glu_bd  26 eryeGfcidLlkelakklgfkYel.klvkdgkyGskkektk...ewnGligelidkkadlavadltitaeReev 95 
+                                           +++G    Ll+ la++l+f+Y++ + ++ + +G    +++   + +Glig+l +k++d a+++l i+++R  +
+  gnl|WGS:ZZZZ|Ceriodaphnia_009505-P1 206 GEIRGIEASLLEVLADRLNFTYDYvQASPKEMWGDIIYNEEgniTFTGLIGMLARKEVDAALGQLYISSTRWPF 279
+                                          6799******************962667888999865554333489**************************** PP
+
+                                          SEEESESEEE-EEEEE CS
+                      Lig_chan-Glu_bd  96 vdFtkpfmelgisili 111
+                                          + +t+ ++ +  s+l+
+  gnl|WGS:ZZZZ|Ceriodaphnia_009505-P1 280 IGYTSAYKFSYESFLV 295
+                                          ******9877777666 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_008956-P1  glutamate [NMDA] receptor subunit 1-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.7   0.0   3.7e-11   3.2e-09      26     112 ..      58     144 ..      37     147 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 35.7 bits;  conditional E-value: 3.7e-11
+                                          GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEE CS
+                      Lig_chan-Glu_bd  26 eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFt 99 
+                                           r   + id+l++la++ +f+Y++  +  ++   +k ++++++G +  l+dk+ d++++d+ +t++R + +d+ 
+  gnl|WGS:ZZZZ|Ceriodaphnia_008956-P1  58 PRTARMQIDILNWLARRNNFTYSVCGSGTNETTLEKYNNSNYKGAMSYLLDKTCDMVIGDFLMTNSRYRLIDMP 131
+                                          5566678********************9999999999999********************************** PP
+
+                                          SESEEE-EEEEEE CS
+                      Lig_chan-Glu_bd 100 kpfmelgisilik 112
+                                           p++++ + +li 
+  gnl|WGS:ZZZZ|Ceriodaphnia_008956-P1 132 YPWVQTAVYFLIP 144
+                                          ******9999875 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_004922-P1  glutamate receptor ionotropic, kainate glr-3-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.4   0.0   4.6e-11     4e-09      30     112 ..      62     145 ..      38     148 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 35.4 bits;  conditional E-value: 4.6e-11
+                                          SHHHH.HHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESES CS
+                      Lig_chan-Glu_bd  30 Gfcid.LlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpf 102
+                                          G + + Ll+ l+++l+f+Ye++  +d     + + +++w+G  g+l ++++d+ v+ +++t++++ ++d ++p 
+  gnl|WGS:ZZZZ|Ceriodaphnia_004922-P1  62 GLVEEiLLDVLSNHLNFSYEIRPPTDILTSGYLQPNGTWTGSAGQLHRGEVDMSVTTISLTSSKSLIMDVSHPV 135
+                                          5555526789****************86655555555************************************9 PP
+
+                                          EEE-EEEEEE CS
+                      Lig_chan-Glu_bd 103 melgisilik 112
+                                          +   + i+i 
+  gnl|WGS:ZZZZ|Ceriodaphnia_004922-P1 136 VMVDTGIIIP 145
+                                          9998888875 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_009504-P1  putative glutamate receptor
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.3   0.0     5e-11   4.3e-09      27     111 ..     222     309 ..     203     313 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 35.3 bits;  conditional E-value: 5e-11
+                                          GEESHHHHHHHHHHHHHT-EEEE.EE-TT-----BETTTT..EB-HHHHHHHTTS-SEE-SS-B--HHHHTTSE CS
+                      Lig_chan-Glu_bd  27 ryeGfcidLlkelakklgfkYel.klvkdgkyGskkektk..ewnGligelidkkadlavadltitaeReevvd 97 
+                                          ++ G    Ll+++a +l+f+Ye+ + ++++ +G+ +++++  + +Gl+g+l +k++d+++a+l i+ +R +v+ 
+  gnl|WGS:ZZZZ|Ceriodaphnia_009504-P1 222 QVTGIEPSLLETIAGRLKFSYEYvQASPNEMWGEINRSGDnvTITGLLGMLSRKEVDVVLAQLYISLTRWRVIG 295
+                                          67889999*************96267899999*999885523789***************************** PP
+
+                                          EESESEEE-EEEEE CS
+                      Lig_chan-Glu_bd  98 Ftkpfmelgisili 111
+                                          +t  ++ +  s+l+
+  gnl|WGS:ZZZZ|Ceriodaphnia_009504-P1 296 YTVVYKFSYESFLV 309
+                                          **999877666665 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_009397-P1  glutamate receptor ionotropic, delta-1-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.5   0.0   8.5e-11   7.4e-09      34     114 ..      36     114 ..      28     115 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 34.5 bits;  conditional E-value: 8.5e-11
+                                          HHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-E CS
+                      Lig_chan-Glu_bd  34 dLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgi 107
+                                           +++ l+++l+f+Y+l   ++  +G +++++ +w+Glig+l +k+ d++ a + i ++ + +vdF+ p  ++  
+  gnl|WGS:ZZZZ|Ceriodaphnia_009397-P1  36 KVVELLRSQLNFTYKLISLPE-AIGVRHSNG-SWSGLIGMLEKKELDVIAARVPILPSFRDAVDFSIPLGQNDW 107
+                                          5788999*********99986.6****8877.************************************999988 PP
+
+                                          EEEEESX CS
+                      Lig_chan-Glu_bd 108 silikkp 114
+                                            l k+p
+  gnl|WGS:ZZZZ|Ceriodaphnia_009397-P1 108 VTLQKQP 114
+                                          8888776 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_004925-P1  glutamate receptor U1-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.9   0.0   6.5e-11   5.6e-09      35     111 ..      67     143 ..      30     147 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 34.9 bits;  conditional E-value: 6.5e-11
+                                          HHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EE CS
+                      Lig_chan-Glu_bd  35 LlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgis 108
+                                          Ll+ l+++l+f+Ye++  kd     + + +++w+G  g+l ++++d+ v+ + +t++++ ++d ++p +     
+  gnl|WGS:ZZZZ|Ceriodaphnia_004925-P1  67 LLDVLSNHLNFSYEIRPPKDILTSGYLQPNGTWTGSAGQLQRGEVDMSVTTIALTSAKSFIMDISHPVVMVDSG 140
+                                          6789****************86655555555************************************9988777 PP
+
+                                          EEE CS
+                      Lig_chan-Glu_bd 109 ili 111
+                                          i+i
+  gnl|WGS:ZZZZ|Ceriodaphnia_004925-P1 141 III 143
+                                          776 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_001300-P1  glutamate receptor ionotropic, delta-2-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.5   0.0   8.8e-11   7.7e-09       3     112 ..      29     133 ..      27     136 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 34.5 bits;  conditional E-value: 8.8e-11
+                                          EEEE--.BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHH.H CS
+                      Lig_chan-Glu_bd   3 lkvvtileePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligel.i 75 
+                                          lkv +++  P++m+   +  +gn++y+G+ +d+l+ ++++l+++ ++  v+ +++ ++  +    + ++++l +
+  gnl|WGS:ZZZZ|Ceriodaphnia_001300-P1  29 LKVSAFHYPPFFMI--IRGANGNTTYSGYSVDILDGISHHLKYDMTFIPVDRSEVAKYGIT----QAIVNQLiV 96 
+                                          78999999*****5..47899********************99999988887776666443....478888625 PP
+
+                                          TTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEE CS
+                      Lig_chan-Glu_bd  76 dkkadlavadltitaeReevvdFtkpfmelgisilik 112
+                                          +k+++l+   l  t +R + +dFt p +    +++++
+  gnl|WGS:ZZZZ|Ceriodaphnia_001300-P1  97 SKEVELIPMMLIPTLQRVRQIDFTVPVLVGKNRLMLR 133
+                                          889***********************88776666665 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_004656-P1  ionotropic receptor 93a-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.6   0.0   1.7e-10   1.5e-08       4     111 ..     118     220 ..     115     224 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 33.6 bits;  conditional E-value: 1.7e-10
+                                          EEE--.BTTTBEES..S---GG.GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHT CS
+                      Lig_chan-Glu_bd   4 kvvtileePyvmlkeeeelegn.eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelid 76 
+                                          ++v+++  P ++   +++ +g+  +++G  + ++++l++ ++f+Yel   +d+ y  +++ +   +Gl+  +++
+  gnl|WGS:ZZZZ|Ceriodaphnia_004656-P1 118 RIVMLHIPPVLT--ITRNSSGHvIDISGLSVPVIQWLSRAVNFNYEL--MPDNIYSVEDNAS--GKGLMSYIVE 185
+                                          566665666655..335566665789*******************98..78**9*9987665..99******** PP
+
+                                          TS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEE CS
+                      Lig_chan-Glu_bd  77 kkadlavadltitaeReevvdFtkpfmelgisili 111
+                                          ++ad++++ + +t++R + ++F   ++   + +li
+  gnl|WGS:ZZZZ|Ceriodaphnia_004656-P1 186 GRADMILGGIAMTSSRFKNLNFPYSYVIGQFGFLI 220
+                                          **********************9999877776666 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_004655-P1  ionotropic receptor 93a-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.6   0.0   1.7e-10   1.5e-08       4     111 ..      45     147 ..      42     151 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 33.6 bits;  conditional E-value: 1.7e-10
+                                          EEE--.BTTTBEES..S---GG.GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHT CS
+                      Lig_chan-Glu_bd   4 kvvtileePyvmlkeeeelegn.eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelid 76 
+                                          ++v+++  P ++   +++ +g+  ++ G  + ++++l++ l+f+Yel   +d+ y  +++     +Gl+  +++
+  gnl|WGS:ZZZZ|Ceriodaphnia_004655-P1  45 RIVMLHLPPVLT--ITRNSSGHvIDIGGVSVPVIQWLSRALNFRYEL--MPDNIYSVEDNAA--GKGLMSYIVE 112
+                                          566665555555..3355566657899******************97..78****9997766..99******** PP
+
+                                          TS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEE CS
+                      Lig_chan-Glu_bd  77 kkadlavadltitaeReevvdFtkpfmelgisili 111
+                                          ++ad++++ + +ta+R + ++F  p++   + ++i
+  gnl|WGS:ZZZZ|Ceriodaphnia_004655-P1 113 GRADMILGGIVMTASRFKNLNFPFPYVIGQFGFVI 147
+                                          **************************876666555 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_002166-P1  ionotropic receptor 21a-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.2   0.0   2.2e-10     2e-08       2     110 ..     189     299 ..     188     304 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 33.2 bits;  conditional E-value: 2.2e-10
+                                          EEEEE--.BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-.----BETT..TTEB-HHHH CS
+                      Lig_chan-Glu_bd   2 tlkvvtileePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdg.kyGskkek..tkewnGlig 72 
+                                          +l+++t+   P v  +e+++ +g+ + +G    L++ +a++l+f++++ l +++  +G+   +  + + +Gl+g
+  gnl|WGS:ZZZZ|Ceriodaphnia_002166-P1 189 HLTIATLDFPPIVF-AEKNQNSGKVTASGIEPSLMNIIAERLDFNFNYILPANNeMWGTLIFDgdNVTVTGLLG 261
+                                          57788887788887.77888999999****************9999988876551679986552156899**** PP
+
+                                          HHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEE CS
+                      Lig_chan-Glu_bd  73 elidkkadlavadltitaeReevvdFtkpfmelgisil 110
+                                           l +++ad+a +dl ++++   +vdFt  f ++   +l
+  gnl|WGS:ZZZZ|Ceriodaphnia_002166-P1 262 LLNKNEADVAYGDLHMQQRLLPYVDFTLAFRNNYECFL 299
+                                          ******************************98765555 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_009513-P1  glutamate receptor ionotropic, kainate 2-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.3   0.0     2e-10   1.8e-08      34     112 ..      58     132 ..      52     135 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 33.3 bits;  conditional E-value: 2e-10
+                                          HHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-E CS
+                      Lig_chan-Glu_bd  34 dLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgi 107
+                                          ++++ l+ +++f+Ye+  v+++++        + +G +  l+d++ d+ +ad+  t++R ++vdFt p+++  +
+  gnl|WGS:ZZZZ|Ceriodaphnia_009513-P1  58 EMIDYLSARFKFTYEMVRVTENTMEPS---A-RGKGFVSYLLDGQCDFLMADVVATNRRLTMVDFTLPWVSDVV 127
+                                          7999****************9965333...3.568***********************************9999 PP
+
+                                          EEEEE CS
+                      Lig_chan-Glu_bd 108 silik 112
+                                          ++li 
+  gnl|WGS:ZZZZ|Ceriodaphnia_009513-P1 128 AFLIP 132
+                                          98875 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_007049-P1  glutamate receptor ionotropic, delta-1-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.4   0.0   1.9e-10   1.7e-08       3     110 ..      17     121 ..      15     126 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 33.4 bits;  conditional E-value: 1.9e-10
+                                          EEEE--.BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHT CS
+                      Lig_chan-Glu_bd   3 lkvvtileePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelid 76 
+                                          l++++i+e P + + ++ + ++  +y Gf  d ++ la++l+f++++ +v+ + + ++ +     n ++ +l++
+  gnl|WGS:ZZZZ|Ceriodaphnia_007049-P1  17 LTIAAIHEPPIFSIFRDPTNQSIVHYAGFPKDTFDLLANSLNFTFSFVEVPSSVVKEMGS---LDNAMLDQLLK 87 
+                                          6788999999888755555555589**************************986655544...4599******* PP
+
+                                          TS-SEE-SS-B--HHHHTTSEEESESEEE-EEEE CS
+                      Lig_chan-Glu_bd  77 kkadlavadltitaeReevvdFtkpfmelgisil 110
+                                          kkad+     t taeR    dFt p   l ++++
+  gnl|WGS:ZZZZ|Ceriodaphnia_007049-P1  88 KKADFNWRLTTPTAERLALTDFTVPITVLHFAFI 121
+                                          *************************988877665 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_008954-P1  glutamate receptor ionotropic, NMDA 1-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.6   0.0   3.3e-10   2.9e-08      28     111 ..      47     128 ..      26     131 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 32.6 bits;  conditional E-value: 3.3e-10
+                                          EESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESE CS
+                      Lig_chan-Glu_bd  28 yeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkp 101
+                                             + id+l++la++ +f+Y++ +++  + G +++  +   G i+ l d++ d++++d+ +t+ R +v+d+  p
+  gnl|WGS:ZZZZ|Ceriodaphnia_008954-P1  47 TARMHIDILNWLARRNNFTYSILVTN--ETGLETPVVDGARGTINYLFDGSCDMVISDFYMTSGRYKVIDMPFP 118
+                                          555789****************8876..57999999889*********************************** PP
+
+                                          SEEE-EEEEE CS
+                      Lig_chan-Glu_bd 102 fmelgisili 111
+                                          +++  + +li
+  gnl|WGS:ZZZZ|Ceriodaphnia_008954-P1 119 WVQRPLYFLI 128
+                                          *998887776 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_003491-P1  glutamate receptor ionotropic, delta-1-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.7   0.0   3.2e-10   2.8e-08       3     114 ..      42     146 ..      40     147 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 32.7 bits;  conditional E-value: 3.2e-10
+                                          EEEE--.BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHT CS
+                      Lig_chan-Glu_bd   3 lkvvtileePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelid 76 
+                                          ++v + +  Py +    ++++g+ +y G + +++ ++a+k+++k+e+  v+d+++ ++ + +    G ++++i+
+  gnl|WGS:ZZZZ|Ceriodaphnia_003491-P1  42 FRVSAHHFPPYQV---VTRVNGTVTYTGSTPNVIYWIAEKFNMKFEFIPVEDTEVAKYGSIQ---AG-LNQIIR 108
+                                          5677777889977...46899**9****************************9888875555...56.599*** PP
+
+                                          TS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEESX CS
+                      Lig_chan-Glu_bd  77 kkadlavadltitaeReevvdFtkpfmelgisilikkp 114
+                                          k++d+    l  t eR++++dF+ p   + +++++ kp
+  gnl|WGS:ZZZZ|Ceriodaphnia_003491-P1 109 KEVDISTLTLIPTIERAQYMDFSYPVSIEQFRLMVPKP 146
+                                          ***************************99999999887 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_001299-P1  glutamate receptor ionotropic, delta-2-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.2   0.1   4.4e-10   3.8e-08      10     114 ..      51     150 ..      43     151 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 32.2 bits;  conditional E-value: 4.4e-10
+                                          BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHH.HTTS-SEE CS
+                      Lig_chan-Glu_bd  10 eePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligel.idkkadla 82 
+                                            P++++  + e egn++y+G+ +d+l+++a++l+++ ++  v+++++ ++  +    + +i++l ++k+++++
+  gnl|WGS:ZZZZ|Ceriodaphnia_001299-P1  51 FPPFFVI--TPEREGNNTYSGYSVDILDAIAQHLKMSLTYIPVNQSEVTKYGIT----QAIINQLvVSKEVEMI 118
+                                          5799884..57899*******************999988887777766665333....468887626899**** PP
+
+                                          -SS-B--HHHHTTSEEESESEEE-EEEEEESX CS
+                      Lig_chan-Glu_bd  83 vadltitaeReevvdFtkpfmelgisilikkp 114
+                                             l  t++R   +dFt+p +   ++++i+ p
+  gnl|WGS:ZZZZ|Ceriodaphnia_001299-P1 119 PMVLVPTEKRFLLMDFTMPVLIGKYRLMIRYP 150
+                                          *******************9999999999876 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_010112-P1  glutamate receptor ionotropic, kainate 2-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.3   0.0   8.6e-10   7.5e-08      21     114 ..      56     145 ..      41     146 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 31.3 bits;  conditional E-value: 8.6e-10
+                                          ---GG.GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHH CS
+                      Lig_chan-Glu_bd  21 elegn.eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeRe 93 
+                                          + +g+  +++G++  +l +l+++++f+Y++ +v+d+ +   ++++ + +Gli  l++++ dl + +l  t++R 
+  gnl|WGS:ZZZZ|Ceriodaphnia_010112-P1  56 NSSGHiVKVDGMAALMLAWLSQNYNFTYSVLQVNDTAL---DPSG-NNKGLISYLLKGDCDLLI-SLAPTYSRV 124
+                                          4555657899*************************965...4444.668*************88.6******** PP
+
+                                          TTSEEESESEEE-EEEEEESX CS
+                      Lig_chan-Glu_bd  94 evvdFtkpfmelgisilikkp 114
+                                          + ++F++p ++  +s li kp
+  gnl|WGS:ZZZZ|Ceriodaphnia_010112-P1 125 SLLEFSHPTLYVPVSYLIPKP 145
+                                          *****************9998 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_008184-P1  ionotropic receptor 93a-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.8   0.0   1.3e-09   1.1e-07       3     115 .]      22     129 ..      20     129 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 30.8 bits;  conditional E-value: 1.3e-09
+                                          EEEE--.BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHT CS
+                      Lig_chan-Glu_bd   3 lkvvtileePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelid 76 
+                                          lk ++i+  P+ +l  ++  +gn +++G  ++L++ la kl+f++++  v ++ + sk  +t   +    ++i+
+  gnl|WGS:ZZZZ|Ceriodaphnia_008184-P1  22 LKLAAIHGPPFDVL--TRGPNGNYTVSGTSFQLFTMLAGKLNFTFSVIPVVEEALISKLGTT---EAAFYKVIN 90 
+                                          56778888999773..57889**************************999999777765555...7889***** PP
+
+                                          TS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEESXX CS
+                      Lig_chan-Glu_bd  77 kkadlavadltitaeReevvdFtkpfmelgisilikkpe 115
+                                          k+ad ++a + +t++R+e +dFt+p   + +++l+ kpe
+  gnl|WGS:ZZZZ|Ceriodaphnia_008184-P1  91 KEADGVLAVFVVTPDRKERMDFTHPLWIEQYTLLVPKPE 129
+                                          ********************************9999985 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_004918-P1  putative glutamate receptor
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.8   0.0   2.5e-09   2.1e-07      35     111 ..      69     144 ..      63     148 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 29.8 bits;  conditional E-value: 2.5e-09
+                                          HHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EE CS
+                      Lig_chan-Glu_bd  35 LlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgis 108
+                                          L++ l+++l+f+Ye+   +  + G   +++ +w+G  g+l ++++d+ v+   +t+++++vvd + p ++    
+  gnl|WGS:ZZZZ|Ceriodaphnia_004918-P1  69 LVDILSSHLNFTYEIFPPNILSSGFLLPNG-SWTGSTGQLQRREVDMCVTTTALTSDKRHVVDISFPVIYVEAG 141
+                                          678899********************9988.***********************************98888777 PP
+
+                                          EEE CS
+                      Lig_chan-Glu_bd 109 ili 111
+                                          i+i
+  gnl|WGS:ZZZZ|Ceriodaphnia_004918-P1 142 III 144
+                                          776 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_004668-P1  glutamate [NMDA] receptor subunit 1-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.8   0.0     5e-09   4.4e-07      22     114 ..      41     131 ..      30     132 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 28.8 bits;  conditional E-value: 5e-09
+                                          --GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTT CS
+                      Lig_chan-Glu_bd  22 legneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReev 95 
+                                          ++g  +++G +  ++  l ++++f+Y++ +   + +  ++++ +   Gli  +i+++ +l+v+++ +t+ R   
+  gnl|WGS:ZZZZ|Ceriodaphnia_004668-P1  41 ISGIVELSGVTSKIIAYLTDRYNFTYTIVQGV-KAMTVQSPS-SGGRGLIDYVIAGECELIVGPVILTPFRYAL 112
+                                          55566789999****************96543.334444444.478**************************** PP
+
+                                          SEEESESEEE-EEEEEESX CS
+                      Lig_chan-Glu_bd  96 vdFtkpfmelgisilikkp 114
+                                           d+t+p+ ++++ +li kp
+  gnl|WGS:ZZZZ|Ceriodaphnia_004668-P1 113 ADMTMPWTQTSMFLLIPKP 131
+                                          ***************9998 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_004919-P1  putative glutamate receptor
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.5   0.0   3.2e-09   2.8e-07      36     111 ..      70     145 ..      64     149 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 29.5 bits;  conditional E-value: 3.2e-09
+                                          HHHHHHHHT-EEEEEE-TT-.----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EE CS
+                      Lig_chan-Glu_bd  36 lkelakklgfkYelklvkdg.kyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgis 108
+                                          ++ l+++l+f+Ye++  +d  + G + +++ +w+Gl g+l ++++d+ v+ + +t +++++++ ++p      +
+  gnl|WGS:ZZZZ|Ceriodaphnia_004919-P1  70 VDILSNHLKFTYEINPPSDVfSPGFPLPNG-SWTGLAGQLQRREVDMCVSTIALTLAKRQIMEISSPVTFVDAA 142
+                                          67799***********99972568887776.***********************************98777777 PP
+
+                                          EEE CS
+                      Lig_chan-Glu_bd 109 ili 111
+                                          i+i
+  gnl|WGS:ZZZZ|Ceriodaphnia_004919-P1 143 III 145
+                                          766 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_002364-P1  glutamate [NMDA] receptor subunit 1-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.8   0.0   2.6e-09   2.2e-07      19     113 ..      13     104 ..       3     106 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 29.8 bits;  conditional E-value: 2.6e-09
+                                          .S---GG.GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HH CS
+                      Lig_chan-Glu_bd  19 eeelegn.eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitae 91 
+                                          +++ +g+ + ++G    +l++l+ +++f+Y++ +++ +++           Gl+  li+++ d++++++  t++
+  gnl|WGS:ZZZZ|Ceriodaphnia_002364-P1  13 KRNSSGHiTALNGLSSHMLTWLSPRYDFSYSILQTNSTSFEGSIG----TPGLVSYLISGQSDVILGAIGTTYA 82 
+                                          45666666789*********************9999888755544....46*********************** PP
+
+                                          HHTTSEEESESEEE-EEEEEES CS
+                      Lig_chan-Glu_bd  92 ReevvdFtkpfmelgisilikk 113
+                                          R   vdF++ +++++ +++i  
+  gnl|WGS:ZZZZ|Ceriodaphnia_002364-P1  83 RLVLVDFSQGYLYTSNAFMIPM 104
+                                          *************999988865 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_009866-P1  glutamate [NMDA] receptor subunit 1-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.6   0.0     6e-09   5.2e-07      27     111 ..      75     157 ..      49     161 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 28.6 bits;  conditional E-value: 6e-09
+                                          GEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEES CS
+                      Lig_chan-Glu_bd  27 ryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtk 100
+                                          r   + id+l++l+ + +f+Y++  ++d+++ ++ +++   +G +  l+dk+ d++++dl +t+ R + +d+  
+  gnl|WGS:ZZZZ|Ceriodaphnia_009866-P1  75 RTARMQIDILNWLSLRNNFTYSFLATNDTTLEKPVSNG--NKGAMSYLLDKTCDMVLSDLFMTSGRYKLMDMPY 146
+                                          5556789**********************999988777..89******************************** PP
+
+                                          ESEEE-EEEEE CS
+                      Lig_chan-Glu_bd 101 pfmelgisili 111
+                                          p+++  +++li
+  gnl|WGS:ZZZZ|Ceriodaphnia_009866-P1 147 PWIQGPLKFLI 157
+                                          **998888877 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_010111-P1  glutamate [NMDA] receptor subunit 1-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.5   0.0   3.1e-09   2.7e-07      21     114 ..      56     145 ..      39     146 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 29.5 bits;  conditional E-value: 3.1e-09
+                                          ---GG.GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHH CS
+                      Lig_chan-Glu_bd  21 elegn.eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeRe 93 
+                                          + +g+  +++G++  +l +l+++++f+Y++ +v+d+ +   ++++ + +Gli  l++++ d+ + +l  t+ R 
+  gnl|WGS:ZZZZ|Ceriodaphnia_010111-P1  56 NSTGHiVKVDGMAALMLAWLSQNYNFTYSVLQVNDTAL---DPSG-NHKGLISYLLKGDCDVLI-SLAPTYFRV 124
+                                          4555557899*************************954...5555.788************987.7******** PP
+
+                                          TTSEEESESEEE-EEEEEESX CS
+                      Lig_chan-Glu_bd  94 evvdFtkpfmelgisilikkp 114
+                                          + ++F++p ++  +s li kp
+  gnl|WGS:ZZZZ|Ceriodaphnia_010111-P1 125 SLLEFSHPALYVPVSYLIPKP 145
+                                          *****************9998 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_007973-P1  glutamate receptor ionotropic, delta-1-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.8   0.0   5.3e-09   4.6e-07      32     114 ..      58     137 ..      37     138 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 28.8 bits;  conditional E-value: 5.3e-09
+                                          HHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE CS
+                      Lig_chan-Glu_bd  32 cidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmel 105
+                                          +++ l+ l+k+++f+Y++ +v+d+++ ++++      G   ++ +++ dl+++++ +  +R++ +dF++ fm++
+  gnl|WGS:ZZZZ|Ceriodaphnia_007973-P1  58 AYQTLNVLSKRFNFTYSFLQVNDTRLEKESD---ALPGFRHHVANGRCDLVIGPILMILNRSSDLDFAEGFMYT 128
+                                          5677999****************98765544...579************************************* PP
+
+                                          -EEEEEESX CS
+                      Lig_chan-Glu_bd 106 gisilikkp 114
+                                          + ++li  p
+  gnl|WGS:ZZZZ|Ceriodaphnia_007973-P1 129 SAALLIPMP 137
+                                          *99999776 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_004920-P1  putative glutamate receptor
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.5   0.0   6.4e-09   5.5e-07      36     112 ..      69     145 ..      63     148 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 28.5 bits;  conditional E-value: 6.4e-09
+                                          HHHHHHHHT-EEEEEE-TT---.--BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EE CS
+                      Lig_chan-Glu_bd  36 lkelakklgfkYelklvkdgky.GskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgis 108
+                                          ++ l+++l+f+Y+++  +d    G +  ++++w+G  g+l ++++d+ v++  i + R++++d + p +    +
+  gnl|WGS:ZZZZ|Ceriodaphnia_004920-P1  69 VDILSSHLEFTYDIYPPSDVLSpGFP-LRNGSWTGSAGQLQRNEVDMCVTSTAIASPRRQIMDISYPVVIDAAA 141
+                                          677999************98662666.5566************************************9998888 PP
+
+                                          EEEE CS
+                      Lig_chan-Glu_bd 109 ilik 112
+                                          i+i 
+  gnl|WGS:ZZZZ|Ceriodaphnia_004920-P1 142 IIIP 145
+                                          8875 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_003900-P1  glutamate receptor ionotropic, kainate 5-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.7   0.0   5.4e-09   4.7e-07      35     105 ..     321     387 ..     315     396 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 28.7 bits;  conditional E-value: 5.4e-09
+                                          HHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE CS
+                      Lig_chan-Glu_bd  35 LlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmel 105
+                                          +l+ l+++++f+Y++   +++++           G+++ l dk+ d+ v dl  t+eR +++dFt pf + 
+  gnl|WGS:ZZZZ|Ceriodaphnia_003900-P1 321 MLDYLSTRFNFTYQMVRITENNLEPFG----GQRGILNYLWDKQCDFLVKDLVSTSERMKIIDFTLPFAYG 387
+                                          78999************9999765543....557**********************************875 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_004492-P1  ionotropic receptor 21a-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.7   0.0   5.5e-09   4.8e-07       4     111 ..     207     311 ..     204     315 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 28.7 bits;  conditional E-value: 5.5e-09
+                                          EEE--.BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-E..EEEEE-TT-----BETTTTEB-HHHHHHH CS
+                      Lig_chan-Glu_bd   4 kvvtileePyvmlkeeeelegneryeGfcidLlkelakklgfk..YelklvkdgkyGskkektkewnGligeli 75 
+                                          kv+t+   P ++    e ++++e++ G   +L++ + ++l+f+  ++    +d+k+G + +++ +w+Glige+ 
+  gnl|WGS:ZZZZ|Ceriodaphnia_004492-P1 207 KVTTFPLPPTTI----ECKQDKEQFCGRDPNLIRVIGEILHFQpiFSRPALTDSKWGDRLDNG-TWTGLIGEVS 275
+                                          555555555544....4455668899999**************777777889*******7776.********** PP
+
+                                          TTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEE CS
+                      Lig_chan-Glu_bd  76 dkkadlavadltitaeReevvdFtkpfmelgisili 111
+                                           ++  l+va++  t +  e vd + p+  +  ++l+
+  gnl|WGS:ZZZZ|Ceriodaphnia_004492-P1 276 VGETTLGVANVFTTLHYIEQVDVSYPYDISCSTFLT 311
+                                          ***************************877776666 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_005525-P1  ionotropic receptor 93a-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.3   0.0   7.3e-09   6.3e-07       4     113 ..      30     132 ..      27     134 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 28.3 bits;  conditional E-value: 7.3e-09
+                                          EEE--.BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTT CS
+                      Lig_chan-Glu_bd   4 kvvtileePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidk 77 
+                                          +v +  + P+ +   ++e +gn ++ G ++  + +lakkl+f++++  v++ ++ +  ++        +++i+ 
+  gnl|WGS:ZZZZ|Ceriodaphnia_005525-P1  30 VVSQSYTPPFEI--FSREPDGNYTLAGATVMTFMWLAKKLNFTFTVVPVEEARLAKLGTQA-----AFEKVINM 96 
+                                          667777889987..458999*******************************9998886665.....789***** PP
+
+                                          S-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEES CS
+                      Lig_chan-Glu_bd  78 kadlavadltitaeReevvdFtkpfmelgisilikk 113
+                                          +ad +++ + it++R++v+dFt p   + +++l+ +
+  gnl|WGS:ZZZZ|Ceriodaphnia_005525-P1  97 EADGILSGFVITPSRKKVMDFTYPIWIEPYTLLTPT 132
+                                          ************************999888888766 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_000240-P1  glutamate receptor ionotropic, delta-1-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.3   0.0   7.2e-09   6.2e-07      36     114 ..      63     136 ..      59     137 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 28.3 bits;  conditional E-value: 7.2e-09
+                                          HHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEE CS
+                      Lig_chan-Glu_bd  36 lkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgisi 109
+                                          ++ l+++++f+Ye+  v++  + s+  k     Gl   l++++ dl + d+t t++R ++vd t+p+++  +++
+  gnl|WGS:ZZZZ|Ceriodaphnia_000240-P1  63 IDYLSSRFNFTYEMVRVTEMLLQSP--K---GRGLFDYLLEQRSDLLLQDVTPTSQRMKIVDLTTPWIYAYMAF 131
+                                          78899***********998755443..4...58************************************99999 PP
+
+                                          EEESX CS
+                      Lig_chan-Glu_bd 110 likkp 114
+                                          li  p
+  gnl|WGS:ZZZZ|Ceriodaphnia_000240-P1 132 LIPVP 136
+                                          98765 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_007991-P1  glutamate receptor ionotropic, kainate 1-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.2   0.0   7.9e-09   6.8e-07      35     112 ..      32     105 ..      26     108 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 28.2 bits;  conditional E-value: 7.9e-09
+                                          HHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EE CS
+                      Lig_chan-Glu_bd  35 LlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgis 108
+                                          +++ l+ +++f+Ye+  v+++++   k    +  Gl + l d++ dl va +  +++R +v+d t p+ +  +s
+  gnl|WGS:ZZZZ|Ceriodaphnia_007991-P1  32 IIDYLSARFNFTYEMVRVTENTLDPSK----NRRGLFNYLWDGQCDLLVAGVVPSSQRLSVLDLTWPYTTDVVS 101
+                                          68899***************9775554....456***************************************9 PP
+
+                                          EEEE CS
+                      Lig_chan-Glu_bd 109 ilik 112
+                                          +li 
+  gnl|WGS:ZZZZ|Ceriodaphnia_007991-P1 102 FLIP 105
+                                          9985 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_002720-P1  glutamate receptor ionotropic, delta-2-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.1   0.0   8.3e-09   7.2e-07      35     114 ..      43     118 ..      39     119 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 28.1 bits;  conditional E-value: 8.3e-09
+                                          HHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EE CS
+                      Lig_chan-Glu_bd  35 LlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgis 108
+                                          +l+ l+++++f+Ye+  v+++++  + +      Gl   l +++ dl ++d+ it++R+ev+d t p+++   s
+  gnl|WGS:ZZZZ|Ceriodaphnia_002720-P1  43 ILEYLSSRFNFTYEMVRVTENRLDPPVN----GRGLFTYLWEGRCDLLLSDVLITSKRNEVLDLTWPWVSDVAS 112
+                                          68899***************98766644....56*************************************999 PP
+
+                                          EEEESX CS
+                      Lig_chan-Glu_bd 109 ilikkp 114
+                                          +li  p
+  gnl|WGS:ZZZZ|Ceriodaphnia_002720-P1 113 FLIPVP 118
+                                          998766 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_007048-P1  glutamate receptor ionotropic, delta-2-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.3   0.0   7.2e-09   6.3e-07       3     107 ..      27     128 ..      25     136 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 28.3 bits;  conditional E-value: 7.2e-09
+                                          EEEE--.BTTTBEES..S---GG.GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-H.HHHHH CS
+                      Lig_chan-Glu_bd   3 lkvvtileePyvmlkeeeelegn.eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnG.ligel 74 
+                                          lkv+ ++e P + +  ++ ++g+  ry Gf  d +++la+ l+f+Y++ +v+ +    + ++t++ +G li +l
+  gnl|WGS:ZZZZ|Ceriodaphnia_007048-P1  27 LKVAIYHEPPIFSII-KDPVNGSvIRYVGFPKDAFDTLATALNFTYSFVEVTPS----MVKNTGSIDGaLIDQL 95 
+                                          688888888877753.5667777799************************9875....6667778898799*** PP
+
+                                          HTTS-SEE-SS-B--HHHHTTSEEESESEEE-E CS
+                      Lig_chan-Glu_bd  75 idkkadlavadltitaeReevvdFtkpfmelgi 107
+                                           +k+ad+     + taeR   +dFt     l +
+  gnl|WGS:ZZZZ|Ceriodaphnia_007048-P1  96 AKKNADFNGRLTSPTAERLALIDFTVSITILNF 128
+                                          ********99999************98776655 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_007432-P1  glutamate receptor 1-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.4   0.0   1.4e-08   1.2e-06      35     112 ..      57     130 ..      47     133 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 27.4 bits;  conditional E-value: 1.4e-08
+                                          HHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EE CS
+                      Lig_chan-Glu_bd  35 LlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgis 108
+                                          +++ l+ +++f+Ye+  vk+ ++    e tk+  Gl + l d++ dl va++  +++R +v+d t p+ +  +s
+  gnl|WGS:ZZZZ|Ceriodaphnia_007432-P1  57 IIDYLSARFNFTYEMIRVKELTL----EPTKNGRGLFNYLWDGQCDLLVAAVVPSSQRLSVLDLTWPYTNDVVS 126
+                                          57899*************99754....3334679**************************************** PP
+
+                                          EEEE CS
+                      Lig_chan-Glu_bd 109 ilik 112
+                                          +li 
+  gnl|WGS:ZZZZ|Ceriodaphnia_007432-P1 127 FLIP 130
+                                          9985 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_009502-P1  putative glutamate receptor
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.3   0.0   1.5e-08   1.3e-06      30     111 ..     216     300 ..     194     304 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 27.3 bits;  conditional E-value: 1.5e-08
+                                          SHHHHHHHHHHHHHT-EEEEEE-T.T-----BETT..TTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEES CS
+                      Lig_chan-Glu_bd  30 GfcidLlkelakklgfkYelklvk.dgkyGskkek..tkewnGligelidkkadlavadltitaeReevvdFtk 100
+                                          G    L+++++++++f+Y++++++  + +G+   +  +k+ +Gl+g+l +k++d++v+++ i+  R  +v +t 
+  gnl|WGS:ZZZZ|Ceriodaphnia_009502-P1 216 GIEPSLIETMSSHFQFTYNYAQASsAEMWGEVIVSggKKTITGLLGMLARKEVDVVVSNFYINFVRWPYVSYTV 289
+                                          66778**************97765156789987773345799******************************** PP
+
+                                          ESEEE-EEEEE CS
+                      Lig_chan-Glu_bd 101 pfmelgisili 111
+                                           ++ +  s l+
+  gnl|WGS:ZZZZ|Ceriodaphnia_009502-P1 290 AYKISYESYLV 300
+                                          *9877666665 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_007047-P1  glutamate receptor ionotropic, delta-1-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.0   0.0   1.9e-08   1.6e-06       2     110 ..       5     110 ..       4     115 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 27.0 bits;  conditional E-value: 1.9e-08
+                                          EEEEE--.BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHH CS
+                      Lig_chan-Glu_bd   2 tlkvvtileePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligeli 75 
+                                          +lk+++++e P + + ++++  +  ry Gf  d+++ la++l+f++++ +v+ + + s  + +   + +i +l+
+  gnl|WGS:ZZZZ|Ceriodaphnia_007047-P1   5 HLKIAAYHEPPVFSIIRNSTNASAVRYVGFPKDVFDLLATSLNFTFSFVEVTPSMVKSIGSID---SAMIDQLL 75 
+                                          57899999999877654555555589************************9987655554434...78****** PP
+
+                                          TTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEE CS
+                      Lig_chan-Glu_bd  76 dkkadlavadltitaeReevvdFtkpfmelgisil 110
+                                          +k+ad+      +tae    vdFt     l +++l
+  gnl|WGS:ZZZZ|Ceriodaphnia_007047-P1  76 TKRADINWRFNPLTAEMLALVDFTASITVLRFALL 110
+                                          ********99999***********99887777666 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_000100-P1  glutamate [NMDA] receptor subunit 1-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.4   0.0   2.9e-08   2.5e-06      27     114 ..      67     149 ..      55     150 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 26.4 bits;  conditional E-value: 2.9e-08
+                                          GEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEES CS
+                      Lig_chan-Glu_bd  27 ryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtk 100
+                                          ++ G +  +l++l+++++f+Y++ +++d+++ +      + +Gli +l++++ +l v ++  t++R+ v++F++
+  gnl|WGS:ZZZZ|Ceriodaphnia_000100-P1  67 KVGGLAPLMLSWLSQRYQFTYSVLQSNDTSLDASG----SQKGLIYHLLSGNCQLLV-SVAATYSRAAVLEFSH 135
+                                          5667777799******************9776664....556*************88.5899************ PP
+
+                                          ESEEE-EEEEEESX CS
+                      Lig_chan-Glu_bd 101 pfmelgisilikkp 114
+                                          p ++  +s+li k+
+  gnl|WGS:ZZZZ|Ceriodaphnia_000100-P1 136 PNLYVPVSFLIPKR 149
+                                          *********99875 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_004916-P1  glutamate receptor ionotropic, delta-1-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.0   0.0   1.8e-08   1.6e-06      35     111 ..      64     140 ..      36     144 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 27.0 bits;  conditional E-value: 1.8e-08
+                                          HHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EE CS
+                      Lig_chan-Glu_bd  35 LlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgis 108
+                                          +l+ l+++l+f+Y+++  +d        ++++w+G  g+l ++++d+ v+    t++R+ v d + p      +
+  gnl|WGS:ZZZZ|Ceriodaphnia_004916-P1  64 ILDLLSEQLNFTYSIYPPTDIMSSGLMLSNGSWTGSTGQLQRQEVDMHVSTTAPTPARRLVTDTSYPVFFVDAA 137
+                                          67889***************87655556666**********************************998877777 PP
+
+                                          EEE CS
+                      Lig_chan-Glu_bd 109 ili 111
+                                          il+
+  gnl|WGS:ZZZZ|Ceriodaphnia_004916-P1 138 ILV 140
+                                          776 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_009501-P1  ionotropic receptor 93a-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.0   0.0   1.9e-08   1.7e-06      30     110 ..     217     300 ..     204     305 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 27.0 bits;  conditional E-value: 1.9e-08
+                                          SHHHHHHHHHHHHHT-EEEEEE.-TT-----BETT..TTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEES CS
+                      Lig_chan-Glu_bd  30 GfcidLlkelakklgfkYelkl.vkdgkyGskkek..tkewnGligelidkkadlavadltitaeReevvdFtk 100
+                                          G    L+++++++l+f+Y++ + ++ + +G+   +  +k+ +Gl g+l +k++d +v+++ i++ R  +v +t 
+  gnl|WGS:ZZZZ|Ceriodaphnia_009501-P1 217 GIEPSLIETMSSHLQFTYNYVQaSSAEMWGEVIVSggNKTITGLFGMLARKEVDAVVGNFYINYVRWPYVSYTV 290
+                                          666689************976515667889987763356899******************************** PP
+
+                                          ESEEE-EEEE CS
+                      Lig_chan-Glu_bd 101 pfmelgisil 110
+                                           ++ +  s l
+  gnl|WGS:ZZZZ|Ceriodaphnia_009501-P1 291 AYKINYESYL 300
+                                          *987766665 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_007424-P1  ionotropic receptor 21a-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.8   0.0   2.1e-08   1.8e-06      36     112 ..      83     155 ..      69     158 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 26.8 bits;  conditional E-value: 2.1e-08
+                                          HHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEE CS
+                      Lig_chan-Glu_bd  36 lkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgisi 109
+                                          ++ l+ +++f+Ye  +  ++++       ++  Gl + l dk+adl v+ +  t++R ++vd+t+pf  + i++
+  gnl|WGS:ZZZZ|Ceriodaphnia_007424-P1  83 VEYLSARFNFTYEWVHIIENRLEPT----EKERGLFNYLWDKEADLLVTGVRPTSSRLKIVDMTSPFALECIAF 152
+                                          56789999*****999998866444....3557************************************99999 PP
+
+                                          EEE CS
+                      Lig_chan-Glu_bd 110 lik 112
+                                          l++
+  gnl|WGS:ZZZZ|Ceriodaphnia_007424-P1 153 LFS 155
+                                          987 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_007045-P1  glutamate receptor ionotropic, delta-1-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.6   0.0   2.5e-08   2.2e-06       2     110 ..      27     132 ..      26     137 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 26.6 bits;  conditional E-value: 2.5e-08
+                                          EEEEE--.BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHH CS
+                      Lig_chan-Glu_bd   2 tlkvvtileePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligeli 75 
+                                          +lk+++++e P + + ++ + ++  ry Gf  d+++ la +l+f++++ +v+ + + s+ + +   + +i +l+
+  gnl|WGS:ZZZZ|Ceriodaphnia_007045-P1  27 HLKIAAYHEPPVFSIVRNPTNSSAVRYVGFPKDVFDLLAASLNFTFSFVEVTPSMVKSMGSID---SAMIDQLL 97 
+                                          57899999999888765556666699*************************998776665544...78****** PP
+
+                                          TTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEE CS
+                      Lig_chan-Glu_bd  76 dkkadlavadltitaeReevvdFtkpfmelgisil 110
+                                          +k+ad+      +tae    vdFt     l +++l
+  gnl|WGS:ZZZZ|Ceriodaphnia_007045-P1  98 TKRADINWRFNPLTAELLALVDFTVSITVLRFALL 132
+                                          ********999999**********99887777666 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_010541-P1  glutamate [NMDA] receptor subunit 1-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.3   0.0     3e-08   2.6e-06      18     110 ..      53     141 ..      40     146 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 26.3 bits;  conditional E-value: 3e-08
+                                          ..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HH CS
+                      Lig_chan-Glu_bd  18 eeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitae 91 
+                                          ++++ +gn +y+Gfc+d+++++a+++++k  + +++ +++ +    ++    li++++++++d++  +l   ++
+  gnl|WGS:ZZZZ|Ceriodaphnia_010541-P1  53 STKTPSGNYSYSGFCYDIVSWIAERFNMKLVFVQANMTEVAK----NGFPPTLIKQIVKEEVDIIPWALAPAPA 122
+                                          4678899******************99999888776554433....335567********************** PP
+
+                                          HHTTSEEESESEEE-EEEE CS
+                      Lig_chan-Glu_bd  92 ReevvdFtkpfmelgisil 110
+                                            e +dFt p   + + +l
+  gnl|WGS:ZZZZ|Ceriodaphnia_010541-P1 123 LLEQLDFTIPLRVEDFILL 141
+                                          **********987776666 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_004923-P1  glutamate [NMDA] receptor subunit 1-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.3   0.0   6.4e-08   5.5e-06      35     112 ..      49     126 ..      23     129 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 25.3 bits;  conditional E-value: 6.4e-08
+                                          HHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EE CS
+                      Lig_chan-Glu_bd  35 LlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgis 108
+                                          Ll+ la++l+f+Ye+   +d     +   +++w+G  g l ++++d+ ++   +t ++++++d + p ++   s
+  gnl|WGS:ZZZZ|Ceriodaphnia_004923-P1  49 LLEILADRLSFTYEILPPSDVMSSGYILPNGSWTGAAGLLERREVDFSIGTTALTVAKARIMDLSYPVLYDDAS 122
+                                          8999*************99987766667777******************************************* PP
+
+                                          EEEE CS
+                      Lig_chan-Glu_bd 109 ilik 112
+                                          i+i 
+  gnl|WGS:ZZZZ|Ceriodaphnia_004923-P1 123 IIIP 126
+                                          9986 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_007426-P1  glutamate receptor ionotropic, delta-2-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.3   0.0   6.3e-08   5.5e-06      35     112 ..      34     107 ..      19     110 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 25.3 bits;  conditional E-value: 6.3e-08
+                                          HHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EE CS
+                      Lig_chan-Glu_bd  35 LlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgis 108
+                                          L++ l+++++f+Y++ +v+++++  +k    + +Gl   l dk+ dl  +++  t++R ++vd t p  ++ ++
+  gnl|WGS:ZZZZ|Ceriodaphnia_007426-P1  34 LVNYLSNRFNFTYDMVKVAENSLEPPK----NGKGLFSYLWDKQCDLLATSVAPTHQRLRIVDLTIPISYEYFA 103
+                                          7899***************99665443....567**********************************999988 PP
+
+                                          EEEE CS
+                      Lig_chan-Glu_bd 109 ilik 112
+                                          +li 
+  gnl|WGS:ZZZZ|Ceriodaphnia_007426-P1 104 LLIP 107
+                                          8875 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_008260-P1  ionotropic receptor 93a-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.2   0.0   6.8e-08   5.9e-06       4     114 ..      11     116 ..       8     117 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 25.2 bits;  conditional E-value: 6.8e-08
+                                          EEE--.BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTT CS
+                      Lig_chan-Glu_bd   4 kvvtileePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidk 77 
+                                          k ++i+  P+ +l  ++  +gn ++ G  + +++ la kl+f+Y++  v ++++ sk  ++   +    ++i+k
+  gnl|WGS:ZZZZ|Ceriodaphnia_008260-P1  11 KLAAIHGPPFDVL--TRGPSGNYTLTGTSVKIFEMLAGKLNFTYTVVPVVEETLISKLGTN---EAAFYKVINK 79 
+                                          5677888899773..578899**************************99999887776666...77899***** PP
+
+                                          S-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEESX CS
+                      Lig_chan-Glu_bd  78 kadlavadltitaeReevvdFtkpfmelgisilikkp 114
+                                          ++d ++a +  t +R+e +dFt++   + +++l+ kp
+  gnl|WGS:ZZZZ|Ceriodaphnia_008260-P1  80 EVDGILAGFIETLDRKEKMDFTHTVWVEEYTLLVPKP 116
+                                          ***************************9999999988 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_002731-P1  glutamate receptor ionotropic, kainate 2-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.9   0.0   8.6e-08   7.4e-06      34     111 ..      46     120 ..      41     124 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 24.9 bits;  conditional E-value: 8.6e-08
+                                          HHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-E CS
+                      Lig_chan-Glu_bd  34 dLlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgi 107
+                                          ++l+ l+++++f+ e+  v+++++      + + +Gl++ l+d++ d+ v+++  t++R ++ d t p+ +  i
+  gnl|WGS:ZZZZ|Ceriodaphnia_002731-P1  46 EILEYLSSRFNFTHEMVRVTENSFEPS---SINSKGLVNYLLDGRCDFLVSEVLPTSRRLSMADLTLPWTSDMI 116
+                                          68999****************988555...44569************************************999 PP
+
+                                          EEEE CS
+                      Lig_chan-Glu_bd 108 sili 111
+                                          ++li
+  gnl|WGS:ZZZZ|Ceriodaphnia_002731-P1 117 AFLI 120
+                                          9987 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_004636-P1  glutamate receptor ionotropic, kainate glr-3-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.2   0.0   1.3e-07   1.2e-05       5     111 ..      49     152 ..      45     156 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 24.2 bits;  conditional E-value: 1.3e-07
+                                          EE--.BTTTBEES..S---GG.GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTT CS
+                      Lig_chan-Glu_bd   5 vvtileePyvmlkeeeelegn.eryeGfcidLlkelakklgfkYelklvkdgkyGskkektkewnGligelidk 77 
+                                          vvt  e P  + + +++ +g+  r+ G    +l++l+  ++f+Y++  +k     + ++k+ +  G     i++
+  gnl|WGS:ZZZZ|Ceriodaphnia_004636-P1  49 VVTASEFPVSV-SIQRNASGHlVRVTGVSPLILDWLSICYKFSYSILDTKA---TTIEDKGPNVRGHASYAIRG 118
+                                          66777777766.556777888799*********************976555...5566666688********** PP
+
+                                          S-SEE-SS-B--HHHHTTSEEESESEEE-EEEEE CS
+                      Lig_chan-Glu_bd  78 kadlavadltitaeReevvdFtkpfmelgisili 111
+                                          + d+++a++  ++eR +v+dF +p+++++ ++l+
+  gnl|WGS:ZZZZ|Ceriodaphnia_004636-P1 119 ECDIIMAAIMPSSERLQVLDFIHPWLYTSAAFLV 152
+                                          **************************99988887 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_004926-P1  putative glutamate receptor
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.5   0.0   1.1e-07   9.4e-06      35     112 ..      96     173 ..      72     176 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 24.5 bits;  conditional E-value: 1.1e-07
+                                          HHHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EE CS
+                      Lig_chan-Glu_bd  35 LlkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgis 108
+                                          Ll+ la++l+f+Ye+   +d     +   +++w+G  g l ++++d+ ++   +t ++ +++d + p ++   s
+  gnl|WGS:ZZZZ|Ceriodaphnia_004926-P1  96 LLDILADRLSFTYEILPPSDVMSSGYILPNGSWTGAAGLLERREVDFSIGTTALTVAKTRIMDLSYPVLYDDAS 169
+                                          8999*************99987766667777******************************************9 PP
+
+                                          EEEE CS
+                      Lig_chan-Glu_bd 109 ilik 112
+                                          i+i 
+  gnl|WGS:ZZZZ|Ceriodaphnia_004926-P1 170 IIIP 173
+                                          9986 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_006941-P1  glutamate receptor ionotropic, delta-1-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.5   0.0   2.3e-07     2e-05       4     114 ..      39     142 ..      37     143 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 23.5 bits;  conditional E-value: 2.3e-07
+                                          EEE--.BTTTBEES..S---GGGGEESHHHHHHHHHHHHHT-EEEEEE-TT-...----BETTTTEB-HHHHHH CS
+                      Lig_chan-Glu_bd   4 kvvtileePyvmlkeeeelegneryeGfcidLlkelakklgfkYelklvkdg...kyGskkektkewnGligel 74 
+                                          +v + +  Py +    ++++g+ +y G + ++++++a+k+++k++   v+++   k Gs        +  +++l
+  gnl|WGS:ZZZZ|Ceriodaphnia_006941-P1  39 RVSAHHFPPYQI---LTRVNGTFSYTGSTPNVIRWIAEKFNMKFDWVPVSESeeaKCGSV-------QAGLNQL 102
+                                          677777789988...468999999********************9887766500044444.......33369** PP
+
+                                          HTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEEEEESX CS
+                      Lig_chan-Glu_bd  75 idkkadlavadltitaeReevvdFtkpfmelgisilikkp 114
+                                          i+k++d+        ++R e++dFt p   + +++++ kp
+  gnl|WGS:ZZZZ|Ceriodaphnia_006941-P1 103 INKEVDISTLTTVPHYTRTEYMDFTYPVAIQAFHLMVPKP 142
+                                          ***********99****************99999999886 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_008440-P1  glutamate receptor ionotropic, kainate glr-3-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.2   0.0   1.4e-07   1.2e-05      13      98 ..      74     159 ..      62     172 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 24.2 bits;  conditional E-value: 1.4e-07
+                                          TBEES..S---GG.GGEESHHHHHHHHHHHHHT-EEEEEE-TT-----BETT..TTEB-HHHHHHHTTS-SEE- CS
+                      Lig_chan-Glu_bd  13 yvmlkeeeelegn.eryeGfcidLlkelakklgfkYelklvkdgkyGskkek..tkewnGligelidkkadlav 83 
+                                          ++m  +++++++n + y G  ++ +++l+k+l+f+Y++  v ++k+G+++    +++w+G  g+l++++ d+ v
+  gnl|WGS:ZZZZ|Ceriodaphnia_008440-P1  74 FLM--NHSAVDSNeAMYVGSWVNGIEWLSKRLKFTYHVIPV-GQKFGKPSFLngSGSWSGAAGRLLQGDFDVLV 144
+                                          555..77888888566*********************9887.689**9985511569***************** PP
+
+                                          SS-B--HHHHTTSEE CS
+                      Lig_chan-Glu_bd  84 adltitaeReevvdF 98 
+                                           + +++++ + v d+
+  gnl|WGS:ZZZZ|Ceriodaphnia_008440-P1 145 PPQSLNYAASVVFDY 159
+                                          999999988888887 PP
+
+>> gnl|WGS:ZZZZ|Ceriodaphnia_007425-P1  glutamate receptor ionotropic, delta-2-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.0   0.0   1.6e-07   1.4e-05      36     112 ..      38     110 ..      32     113 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 24.0 bits;  conditional E-value: 1.6e-07
+                                          HHHHHHHHT-EEEEEE-TT-----BETTTTEB-HHHHHHHTTS-SEE-SS-B--HHHHTTSEEESESEEE-EEE CS
+                      Lig_chan-Glu_bd  36 lkelakklgfkYelklvkdgkyGskkektkewnGligelidkkadlavadltitaeReevvdFtkpfmelgisi 109
+                                          ++ l+ +++f+Ye   v+++++   +    +  Gl + l dk+adl v+ +  t++R ++vd+t++f  + +++
+  gnl|WGS:ZZZZ|Ceriodaphnia_007425-P1  38 VEYLSARFNFTYEWIPVTENRLEPTE----KERGLFNYLWDKQADLLVTGVNPTSSRLRIVDMTSTFTFECYAF 107
+                                          577999************99764443....457**********************************9988888 PP
+
+                                          EEE CS
+                      Lig_chan-Glu_bd 110 lik 112
+                                          l++
+  gnl|WGS:ZZZZ|Ceriodaphnia_007425-P1 108 LFS 110
+                                          876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (115 nodes)
+Target sequences:                       7560  (4242460 residues searched)
+Passed MSV filter:                       268  (0.0354497); expected 151.2 (0.02)
+Passed bias filter:                      255  (0.0337302); expected 151.2 (0.02)
+Passed Vit filter:                       138  (0.018254); expected 7.6 (0.001)
+Passed Fwd filter:                       125  (0.0165344); expected 0.1 (1e-05)
+Initial search space (Z):               7560  [actual number of targets]
+Domain search space  (domZ):              87  [number of targets reported over threshold]
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.03
+# Mc/sec: 12826.40
+//
+[ok]

@@ -172,48 +172,105 @@
       autoAdvance: true
     };
 
-    // Edit only this block to remap accept/reject
     const decisionKeymap = {
-      ArrowUp: 'accept',
-      ArrowDown: 'reject'
+      ArrowUp: "accept",
+      ArrowDown: "reject"
     };
 
-    const seqIdEl = document.getElementById('seqId');
-    const progressEl = document.getElementById('progress');
-    const statusChipEl = document.getElementById('statusChip');
-    const imgEl = document.getElementById('plotImage');
-    const emptyEl = document.getElementById('emptyState');
+    const seqIdEl = document.getElementById("seqId");
+    const progressEl = document.getElementById("progress");
+    const statusChipEl = document.getElementById("statusChip");
+    const imgEl = document.getElementById("plotImage");
+    const emptyEl = document.getElementById("emptyState");
 
-    function itemKey(item, fallbackIndex) {
-      if (!item) return null;
-      const idx = Number.isInteger(fallbackIndex) ? fallbackIndex : state.items.indexOf(item);
-      return `${idx}::${item.id}::${item.image}`;
+    function internalId(item) {
+      return String(item?.seq_id || "").trim();
     }
 
-    function getDecision(item, fallbackIndex) {
-      const key = itemKey(item, fallbackIndex);
-      return key ? (state.decisions.get(key) || 'undecided') : 'undecided';
+    function displayId(item) {
+      return String(
+        item?.source_id ||
+        item?.source_header ||
+        item?.seq_id ||
+        ""
+      ).trim();
+    }
+
+    function itemKey(item) {
+      return internalId(item) || null;
+    }
+
+    function getDecision(item) {
+      const key = itemKey(item);
+      return key ? (state.decisions.get(key) || "undecided") : "undecided";
     }
 
     function normalizeSeed(seed) {
-      const s = (seed || 'undecided').toString().toLowerCase();
-      if (s === 'accept' || s === 'pass') return 'accept';
-      if (s === 'reject' || s === 'fail') return 'reject';
-      return 'undecided';
+      const value = String(seed || "undecided").toLowerCase();
+
+      if (value === "accept" || value === "pass") {
+        return "accept";
+      }
+      if (value === "reject" || value === "fail") {
+        return "reject";
+      }
+      return "undecided";
+    }
+
+    function validateManifest(items) {
+      const seenInternalIds = new Set();
+
+      items.forEach((item, index) => {
+        const seqId = internalId(item);
+
+        if (!seqId) {
+          throw new Error(`Manifest item ${index + 1} has no seq_id.`);
+        }
+        if (!item.image) {
+          throw new Error(`Manifest item ${index + 1} has no image path.`);
+        }
+        if (seenInternalIds.has(seqId)) {
+          throw new Error(`Duplicate manifest seq_id: ${seqId}`);
+        }
+
+        seenInternalIds.add(seqId);
+      });
     }
 
     async function loadManifest() {
       try {
-        const res = await fetch('./review-manifest.json');
-        const data = await res.json();
+        const response = await fetch("review-manifest.json");
+
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}`);
+        }
+
+        const data = await response.json();
         state.items = Array.isArray(data.items) ? data.items : [];
+
+        validateManifest(state.items);
+
+        state.index = 0;
         state.decisions = new Map();
-        state.items.forEach((item, idx) => {
-          state.decisions.set(itemKey(item, idx), normalizeSeed(item.seed));
+
+        state.items.forEach((item) => {
+          state.decisions.set(
+            itemKey(item),
+            normalizeSeed(item.seed)
+          );
         });
+
         render();
-      } catch (err) {
-        emptyEl.innerHTML = '<p><strong>Could not load review-manifest.json.</strong> Serve this directory locally.</p>';
+      } catch (error) {
+        console.error(error);
+
+        state.items = [];
+        state.decisions = new Map();
+
+        emptyEl.innerHTML =
+          "<p><strong>Could not load review-manifest.json.</strong> " +
+          "Serve this directory locally and verify the manifest schema.</p>";
+
         render();
       }
     }
@@ -222,31 +279,46 @@
       return state.items[state.index] || null;
     }
 
-    function setDecision(value) {
+    function setDecision(decision) {
       const item = currentItem();
-      if (!item) return;
-      state.decisions.set(itemKey(item, state.index), value);
+      const key = itemKey(item);
+
+      if (!key) {
+        return;
+      }
+
+      state.decisions.set(key, decision);
+
       if (state.autoAdvance && state.index < state.items.length - 1) {
         state.index += 1;
-        render();
-      } else {
-        renderMeta();
       }
+
+      render();
     }
 
     function next(step) {
-      if (!state.items.length) return;
-      state.index = Math.max(0, Math.min(state.items.length - 1, state.index + step));
+      if (!state.items.length) {
+        return;
+      }
+
+      state.index = Math.max(
+        0,
+        Math.min(state.items.length - 1, state.index + step)
+      );
+
       render();
     }
 
     function nextUndecided() {
-      if (!state.items.length) return;
-      for (let offset = 1; offset <= state.items.length; offset++) {
-        const idx = (state.index + offset) % state.items.length;
-        const item = state.items[idx];
-        if (getDecision(item, idx) === 'undecided') {
-          state.index = idx;
+      if (!state.items.length) {
+        return;
+      }
+
+      for (let offset = 1; offset <= state.items.length; offset += 1) {
+        const index = (state.index + offset) % state.items.length;
+
+        if (getDecision(state.items[index]) === "undecided") {
+          state.index = index;
           render();
           return;
         }
@@ -255,57 +327,113 @@
 
     function renderMeta() {
       const item = currentItem();
-      const status = item ? getDecision(item, state.index) : 'undecided';
-      seqIdEl.textContent = item ? item.id : 'No file loaded';
-      progressEl.textContent = state.items.length ? `${state.index + 1} / ${state.items.length}` : '0 / 0';
+      const status = item ? getDecision(item) : "undecided";
+
+      if (item) {
+        seqIdEl.textContent = displayId(item) || internalId(item);
+        seqIdEl.title =
+          item.source_header ||
+          item.source_id ||
+          internalId(item);
+      } else {
+        seqIdEl.textContent = "No file loaded";
+        seqIdEl.title = "";
+      }
+
+      progressEl.textContent = state.items.length
+        ? `${state.index + 1} / ${state.items.length}`
+        : "0 / 0";
+
       statusChipEl.textContent = status;
       statusChipEl.dataset.status = status;
     }
 
     function render() {
       renderMeta();
+
       const item = currentItem();
+
       if (!item) {
         imgEl.hidden = true;
         emptyEl.hidden = false;
         return;
       }
+
       imgEl.src = item.image;
+      imgEl.alt = `Topology plot: ${displayId(item) || internalId(item)}`;
       imgEl.hidden = false;
       emptyEl.hidden = true;
     }
 
+    function tsvField(value) {
+      return String(value ?? "")
+        .replace(/\t/g, " ")
+        .replace(/\r?\n/g, " ");
+    }
+
     function exportTSV() {
-      const lines = ['seq_id\tdecision\timage'];
-      state.items.forEach((item, index) => {
-        lines.push(`${item.id}\t${getDecision(item, index)}\t${item.image}`);
+      const lines = ["seq_id\tdecision\timage"];
+
+      state.items.forEach((item) => {
+        const seqId = internalId(item);
+
+        lines.push(
+          [
+            tsvField(seqId),
+            tsvField(getDecision(item)),
+            tsvField(item.image)
+          ].join("\t")
+        );
       });
-      const blob = new Blob([lines.join('\n') + '\n'], { type: 'text/tab-separated-values' });
+
+      const blob = new Blob(
+        [lines.join("\n") + "\n"],
+        { type: "text/tab-separated-values;charset=utf-8" }
+      );
+
       const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = 'review.tsv';
-      a.click();
+      const anchor = document.createElement("a");
+
+      anchor.href = url;
+      anchor.download = "review.tsv";
+      anchor.click();
+
       URL.revokeObjectURL(url);
     }
 
-    document.getElementById('prevBtn').addEventListener('click', () => next(-1));
-    document.getElementById('nextBtn').addEventListener('click', () => next(1));
-    document.getElementById('nextUndecidedBtn').addEventListener('click', nextUndecided);
-    document.getElementById('exportBtn').addEventListener('click', exportTSV);
+    document.getElementById("prevBtn").addEventListener("click", () => next(-1));
+    document.getElementById("nextBtn").addEventListener("click", () => next(1));
+    document
+      .getElementById("nextUndecidedBtn")
+      .addEventListener("click", nextUndecided);
+    document.getElementById("exportBtn").addEventListener("click", exportTSV);
 
-    document.addEventListener('keydown', (event) => {
+    document.addEventListener("keydown", (event) => {
       const tag = document.activeElement?.tagName;
-      if (tag === 'INPUT' || tag === 'TEXTAREA') return;
-      if (event.key === 'ArrowLeft') { event.preventDefault(); next(-1); }
-      else if (event.key === 'ArrowRight') { event.preventDefault(); next(1); }
-      else if (decisionKeymap[event.key]) {
+
+      if (tag === "INPUT" || tag === "TEXTAREA") {
+        return;
+      }
+
+      if (event.key === "ArrowLeft") {
+        event.preventDefault();
+        next(-1);
+      } else if (event.key === "ArrowRight") {
+        event.preventDefault();
+        next(1);
+      } else if (decisionKeymap[event.key]) {
         event.preventDefault();
         setDecision(decisionKeymap[event.key]);
+      } else if (event.key.toLowerCase() === "u") {
+        event.preventDefault();
+        setDecision("undecided");
+      } else if (event.key.toLowerCase() === "j") {
+        event.preventDefault();
+        nextUndecided();
+      } else if (event.key.toLowerCase() === "e") {
+        event.preventDefault();
+        exportTSV();
       }
-      else if (event.key.toLowerCase() === 'u') { event.preventDefault(); setDecision('undecided'); }
-      else if (event.key.toLowerCase() === 'j') { event.preventDefault(); nextUndecided(); }
-      else if (event.key.toLowerCase() === 'e') { event.preventDefault(); exportTSV(); }
     });
 
     loadManifest();

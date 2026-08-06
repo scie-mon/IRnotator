@@ -1,4 +1,0 @@
-/home/primeline/Data/IRnotator/work/ea/c31097cb77b2b3fc445154f7eed4eb/.command.sh: line 52: warning: here-document at line 4 delimited by end-of-file (wanted `PY')
-  File "<stdin>", line 1
-    from pathlib import Path
-IndentationError: unexpected indent

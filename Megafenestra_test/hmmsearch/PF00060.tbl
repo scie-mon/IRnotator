@@ -1,0 +1,43 @@
+#                                                                              --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name                       accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#               ------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+gnl|WGS:ZZZZ|Megafenestra_006052-P1 -          Lig_chan             PF00060.29   1.2e-57  193.0   0.3   1.8e-57  192.4   0.3   1.3   1   0   0   1   1   1   1 glutamate receptor 1-like
+gnl|WGS:ZZZZ|Megafenestra_007568-P1 -          Lig_chan             PF00060.29   1.7e-53  179.5   0.5   2.8e-53  178.8   0.5   1.3   1   0   0   1   1   1   1 glutamate receptor ionotropic, kainate 2-like
+gnl|WGS:ZZZZ|Megafenestra_004794-P1 -          Lig_chan             PF00060.29   1.9e-53  179.4   0.8   3.3e-53  178.6   0.8   1.4   1   0   0   1   1   1   1 glutamate receptor ionotropic, kainate 2-like
+gnl|WGS:ZZZZ|Megafenestra_005006-P1 -          Lig_chan             PF00060.29   1.2e-51  173.5   0.2     2e-51  172.8   0.2   1.4   1   0   0   1   1   1   1 kainate-type ionotropic glutamate receptor subunit 1D
+gnl|WGS:ZZZZ|Megafenestra_007569-P1 -          Lig_chan             PF00060.29   2.2e-51  172.7   0.3   3.7e-51  171.9   0.3   1.4   1   0   0   1   1   1   1 glutamate receptor ionotropic, kainate 2-like
+gnl|WGS:ZZZZ|Megafenestra_007149-P1 -          Lig_chan             PF00060.29   1.4e-44  150.6   0.0   2.2e-44  149.9   0.0   1.3   1   0   0   1   1   1   1 ionotropic receptor 25a
+gnl|WGS:ZZZZ|Megafenestra_000839-P1 -          Lig_chan             PF00060.29   2.4e-37  127.1   0.0   4.9e-37  126.1   0.0   1.5   1   0   0   1   1   1   1 glutamate [NMDA] receptor subunit 1-like
+gnl|WGS:ZZZZ|Megafenestra_002224-P1 -          Lig_chan             PF00060.29   2.3e-30  104.5   1.2   4.8e-30  103.4   0.1   1.9   2   0   0   2   2   2   1 ionotropic receptor 93a-like
+gnl|WGS:ZZZZ|Megafenestra_001059-P1 -          Lig_chan             PF00060.29   6.9e-26   89.9   0.1   1.3e-25   89.0   0.1   1.5   1   0   0   1   1   1   1 glutamate ionotropic receptor NMDA type subunit 2
+gnl|WGS:ZZZZ|Megafenestra_000899-P1 -          Lig_chan             PF00060.29   8.8e-23   79.9   0.0   1.4e-22   79.2   0.0   1.3   1   0   0   1   1   1   1 glutamate receptor ionotropic, NMDA 3A-like, partial
+gnl|WGS:ZZZZ|Megafenestra_004651-P1 -          Lig_chan             PF00060.29   3.8e-20   71.3   1.6   1.4e-19   69.5   1.6   2.1   1   0   0   1   1   1   1 uncharacterized protein Megafenestra_004651
+gnl|WGS:ZZZZ|Megafenestra_006528-P1 -          Lig_chan             PF00060.29   3.3e-17   61.8   0.7   7.1e-17   60.7   0.1   1.9   2   0   0   2   2   2   1 glutamate receptor ionotropic, NMDA 1-like
+gnl|WGS:ZZZZ|Megafenestra_001243-P1 -          Lig_chan             PF00060.29     4e-17   61.5   0.0   6.1e-17   60.9   0.0   1.3   1   0   0   1   1   1   1 glutamate receptor U1-like
+gnl|WGS:ZZZZ|Megafenestra_005789-P1 -          Lig_chan             PF00060.29   1.6e-16   59.5   0.1   2.3e-16   59.0   0.1   1.2   1   0   0   1   1   1   1 glutamate receptor ionotropic, delta-1-like
+gnl|WGS:ZZZZ|Megafenestra_002075-P1 -          Lig_chan             PF00060.29   2.3e-16   59.0   2.2   3.2e-16   58.5   2.2   1.2   1   0   0   1   1   1   1 glutamate receptor U1-like
+gnl|WGS:ZZZZ|Megafenestra_002076-P1 -          Lig_chan             PF00060.29     3e-15   55.4   1.7   4.4e-15   54.9   1.7   1.2   1   0   0   1   1   1   1 glutamate receptor U1-like
+gnl|WGS:ZZZZ|Megafenestra_003758-P1 -          Lig_chan             PF00060.29   3.4e-14   52.0   0.0   7.9e-14   50.8   0.0   1.6   1   1   0   1   1   1   1 putative glutamate receptor
+gnl|WGS:ZZZZ|Megafenestra_000952-P1 -          Lig_chan             PF00060.29   6.2e-14   51.1   0.0   9.8e-14   50.5   0.0   1.3   1   1   0   1   1   1   1 putative glutamate receptor
+gnl|WGS:ZZZZ|Megafenestra_003759-P1 -          Lig_chan             PF00060.29   2.2e-12   46.1   0.0   7.7e-12   44.3   0.0   1.8   1   1   0   1   1   1   1 glutamate receptor ionotropic, delta-2-like
+gnl|WGS:ZZZZ|Megafenestra_006201-P1 -          Lig_chan             PF00060.29   2.3e-12   46.0   2.4   4.5e-12   45.1   2.4   1.5   1   0   0   1   1   1   1 putative glutamate receptor
+gnl|WGS:ZZZZ|Megafenestra_001438-P1 -          Lig_chan             PF00060.29   2.7e-12   45.8   1.1   2.7e-12   45.8   1.1   1.9   2   0   0   2   2   2   1 glutamate receptor ionotropic, delta-2-like
+gnl|WGS:ZZZZ|Megafenestra_008060-P1 -          Lig_chan             PF00060.29   1.1e-11   43.8   0.1   2.1e-11   42.9   0.1   1.4   1   0   0   1   1   1   1 putative glutamate receptor
+gnl|WGS:ZZZZ|Megafenestra_002077-P1 -          Lig_chan             PF00060.29   1.6e-11   43.3   3.3   2.4e-11   42.8   3.3   1.2   1   0   0   1   1   1   1 LOW QUALITY PROTEIN: glutamate receptor U1-like
+gnl|WGS:ZZZZ|Megafenestra_005021-P1 -          Lig_chan             PF00060.29   1.3e-10   40.3   0.1   2.2e-10   39.6   0.1   1.3   1   0   0   1   1   1   1 glutamate receptor ionotropic, kainate glr-3-like
+gnl|WGS:ZZZZ|Megafenestra_006371-P1 -          Lig_chan             PF00060.29   8.1e-09   34.5   0.1   1.5e-08   33.7   0.1   1.5   1   0   0   1   1   1   1 glutamate receptor ionotropic, delta-1-like
+gnl|WGS:ZZZZ|Megafenestra_002349-P1 -          Lig_chan             PF00060.29     1e-08   34.2   1.1   1.7e-08   33.5   1.1   1.4   1   0   0   1   1   1   1 ionotropic receptor 21a-like
+gnl|WGS:ZZZZ|Megafenestra_006200-P1 -          Lig_chan             PF00060.29   1.3e-08   33.9   0.0   1.2e-07   30.7   0.0   2.3   1   1   0   1   1   1   1 ionotropic receptor 21a-like
+gnl|WGS:ZZZZ|Megafenestra_004399-P1 -          Lig_chan             PF00060.29   3.5e-08   32.5   0.0   4.3e-08   32.2   0.0   1.1   1   0   0   1   1   1   1 uncharacterized protein Megafenestra_004399
+gnl|WGS:ZZZZ|Megafenestra_006674-P1 -          Lig_chan             PF00060.29   4.5e-07   28.9   0.1   8.4e-07   28.0   0.1   1.4   1   0   0   1   1   1   1 ionotropic receptor 21a-like
+gnl|WGS:ZZZZ|Megafenestra_002620-P1 -          Lig_chan             PF00060.29   7.8e-06   24.9   0.5   6.4e-05   21.9   0.5   2.1   1   1   0   1   1   1   1 glutamate receptor ionotropic, delta-1-like
+#
+# Program:         hmmsearch
+# Version:         3.2.1 (June 2018)
+# Pipeline mode:   SEARCH
+# Query file:      PF00060.hmm
+# Target file:     Megafenestra.faa
+# Option settings: hmmsearch --tblout PF00060.tbl -E 1e-5 PF00060.hmm Megafenestra.faa 
+# Current dir:     /home/primeline/Data/IRnotator/work/64/fc42798e86ba2ecd259187230a60cb
+# Date:            Mon Aug  3 11:44:14 2026
+# [ok]

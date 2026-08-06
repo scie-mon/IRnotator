@@ -1,250 +1,270 @@
-Jul-30 14:16:26.098 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -resume -profile docker --deeptmhmm_mode container --deeptmhmm_dir /home/primeline/Downloads/DeepTMHMM-Academic-License-v1.0/DeepTMHMM-Academic-License-v1.0 --deeptmhmm_gpu false
-Jul-30 14:16:26.187 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 26.04.4
-Jul-30 14:16:26.201 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/primeline/.nextflow/plugins; core-plugins: nf-amazon@3.9.2,nf-azure@1.22.6,nf-cloudcache@0.6.0,nf-codecommit@0.5.3,nf-console@1.3.0,nf-google@1.27.3,nf-k8s@1.5.4,nf-seqera@0.21.0,nf-tower@1.28.1,nf-wave@1.21.0
-Jul-30 14:16:26.219 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Jul-30 14:16:26.219 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Jul-30 14:16:26.221 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.14.1 in 'deployment' mode
-Jul-30 14:16:26.232 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
-Jul-30 14:16:26.317 [main] DEBUG nextflow.plugin.PluginUpdater - Using plugin repository: HttpPluginRepository [registry]; url=https://registry.nextflow.io/api
-Jul-30 14:16:26.321 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Jul-30 14:16:26.339 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/primeline/Data/IRnotator/nextflow.config
-Jul-30 14:16:26.340 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/primeline/Data/IRnotator/nextflow.config
-Jul-30 14:16:26.342 [main] DEBUG nextflow.config.ConfigParserFactory - Using config parser v2
-Jul-30 14:16:26.365 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker`
-Jul-30 14:16:26.635 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [standard, docker, apptainer]
-Jul-30 14:16:26.666 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Jul-30 14:16:26.666 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-Jul-30 14:16:26.677 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/primeline/.nextflow/secrets/store.json
-Jul-30 14:16:26.679 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@6a2c717f] - activable => nextflow.secret.LocalSecretsProvider@6a2c717f
-Jul-30 14:16:26.688 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [sick_swanson] - revision: 187e66ba9b
-Jul-30 14:16:26.743 [main] DEBUG nextflow.Session - Session UUID: 2bcf77ce-6ec2-4e53-8469-bc8f7ae4b9af
-Jul-30 14:16:26.743 [main] DEBUG nextflow.Session - Run name: sick_swanson
-Jul-30 14:16:26.743 [main] DEBUG nextflow.Session - Executor pool size: 64
-Jul-30 14:16:26.749 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Jul-30 14:16:26.753 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=192; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Jul-30 14:16:26.768 [main] DEBUG nextflow.cli.CmdRun - 
+Jul-30 21:27:07.666 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -resume -profile docker --deeptmhmm_mode container --deeptmhmm_dir /home/primeline/Downloads/DeepTMHMM-Academic-License-v1.0/DeepTMHMM-Academic-License-v1.0 --deeptmhmm_gpu false
+Jul-30 21:27:07.760 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 26.04.4
+Jul-30 21:27:07.776 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/primeline/.nextflow/plugins; core-plugins: nf-amazon@3.9.2,nf-azure@1.22.6,nf-cloudcache@0.6.0,nf-codecommit@0.5.3,nf-console@1.3.0,nf-google@1.27.3,nf-k8s@1.5.4,nf-seqera@0.21.0,nf-tower@1.28.1,nf-wave@1.21.0
+Jul-30 21:27:07.794 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jul-30 21:27:07.795 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jul-30 21:27:07.797 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.14.1 in 'deployment' mode
+Jul-30 21:27:07.808 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Jul-30 21:27:07.892 [main] DEBUG nextflow.plugin.PluginUpdater - Using plugin repository: HttpPluginRepository [registry]; url=https://registry.nextflow.io/api
+Jul-30 21:27:07.896 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jul-30 21:27:07.914 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/primeline/Data/IRnotator/nextflow.config
+Jul-30 21:27:07.915 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/primeline/Data/IRnotator/nextflow.config
+Jul-30 21:27:07.917 [main] DEBUG nextflow.config.ConfigParserFactory - Using config parser v2
+Jul-30 21:27:07.939 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker`
+Jul-30 21:27:08.226 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [standard, docker, apptainer]
+Jul-30 21:27:08.258 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jul-30 21:27:08.258 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jul-30 21:27:08.269 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/primeline/.nextflow/secrets/store.json
+Jul-30 21:27:08.271 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@6a2c717f] - activable => nextflow.secret.LocalSecretsProvider@6a2c717f
+Jul-30 21:27:08.280 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [hopeful_northcutt] - revision: f7bce88e16
+Jul-30 21:27:08.335 [main] DEBUG nextflow.Session - Session UUID: 2bcf77ce-6ec2-4e53-8469-bc8f7ae4b9af
+Jul-30 21:27:08.336 [main] DEBUG nextflow.Session - Run name: hopeful_northcutt
+Jul-30 21:27:08.336 [main] DEBUG nextflow.Session - Executor pool size: 64
+Jul-30 21:27:08.342 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jul-30 21:27:08.346 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=192; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jul-30 21:27:08.360 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 26.04.4 build 12445
   Created: 17-06-2026 16:30 UTC (18:30 CEST)
   System: Linux 6.8.0-124-generic
   Runtime: Groovy 4.0.31 on OpenJDK 64-Bit Server VM 21.0.11+10-1-24.04.2-Ubuntu
   Encoding: UTF-8 (UTF-8)
-  Process: 3227740@primelineMZ33 [127.0.1.1]
-  CPUs: 64 - Mem: 503.5 GB (139 GB) - Swap: 0 (0)
-Jul-30 14:16:26.794 [main] DEBUG nextflow.Session - Work-dir: /home/primeline/Data/IRnotator/work [zfs]
-Jul-30 14:16:26.818 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Jul-30 14:16:26.825 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
-Jul-30 14:16:26.826 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
-Jul-30 14:16:26.845 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Jul-30 14:16:26.851 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 65; maxThreads: 1000
-Jul-30 14:16:26.914 [main] DEBUG nextflow.Session - Session start
-Jul-30 14:16:26.917 [main] DEBUG nextflow.script.ScriptLoaderFactory - Using script parser v2
-Jul-30 14:16:27.278 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Jul-30 14:16:27.364 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `manual_review` -- Initialise it to a default value eg. `params.manual_review = some_value`
-Jul-30 14:16:27.365 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `reviewer_html` -- Initialise it to a default value eg. `params.reviewer_html = some_value`
-Jul-30 14:16:27.443 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:HMMSEARCH_IR` matches process HMMSEARCH_IR
-Jul-30 14:16:27.445 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Jul-30 14:16:27.445 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jul-30 14:16:27.450 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Jul-30 14:16:27.455 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=64; memory=503.5 GB; capacity=64; pollInterval=100ms; dumpInterval=5m
-Jul-30 14:16:27.456 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
-Jul-30 14:16:27.481 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'HMMSEARCH_IR': maxForks=0; fair=false; array=0
-Jul-30 14:16:27.506 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Jul-30 14:16:27.506 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jul-30 14:16:27.507 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'COLLECT_HMM_HITS': maxForks=0; fair=false; array=0
-Jul-30 14:16:27.509 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Jul-30 14:16:27.509 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jul-30 14:16:27.510 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'EXTRACT_FASTA_BY_ID': maxForks=0; fair=false; array=0
-Jul-30 14:16:27.513 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Jul-30 14:16:27.513 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jul-30 14:16:27.514 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'SPLIT_FASTA_BY_SEQID': maxForks=0; fair=false; array=0
-Jul-30 14:16:27.519 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:DEEPTMHMM_TOPOLOGY` matches process DEEPTMHMM_TOPOLOGY
-Jul-30 14:16:27.520 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Jul-30 14:16:27.520 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jul-30 14:16:27.521 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'DEEPTMHMM_TOPOLOGY': maxForks=1; fair=false; array=0
-Jul-30 14:16:27.525 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Jul-30 14:16:27.526 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jul-30 14:16:27.526 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'COLLECT_DEEPTMHMM_SUMMARY': maxForks=0; fair=false; array=0
-Jul-30 14:16:27.528 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Jul-30 14:16:27.528 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jul-30 14:16:27.529 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'PARSE_DEEPTMHMM_FEATURES': maxForks=0; fair=false; array=0
-Jul-30 14:16:27.531 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Jul-30 14:16:27.531 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jul-30 14:16:27.531 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'HARDCODED_CLASSIFIER': maxForks=0; fair=false; array=0
-Jul-30 14:16:27.534 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Jul-30 14:16:27.534 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jul-30 14:16:27.534 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'SEED_DECISIONS': maxForks=0; fair=false; array=0
-Jul-30 14:16:27.541 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Jul-30 14:16:27.541 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jul-30 14:16:27.541 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'PREPARE_MANUAL_REVIEW': maxForks=0; fair=false; array=0
-Jul-30 14:16:27.543 [main] DEBUG nextflow.Session - Process names: PARSE_DEEPTMHMM_FEATURES, HMMSEARCH_IR, SEED_DECISIONS, EXTRACT_FASTA_BY_ID, COLLECT_DEEPTMHMM_SUMMARY, HARDCODED_CLASSIFIER, PREPARE_MANUAL_REVIEW, COLLECT_HMM_HITS, DEEPTMHMM_TOPOLOGY, SPLIT_FASTA_BY_SEQID
-Jul-30 14:16:27.545 [main] DEBUG nextflow.Session - Igniting dataflow network (13)
-Jul-30 14:16:27.548 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > HMMSEARCH_IR
-Jul-30 14:16:27.549 [PathVisitor-2] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: test/hmms/; pattern: *.hmm; options: [checkIfExists:true]
-Jul-30 14:16:27.549 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > COLLECT_HMM_HITS
-Jul-30 14:16:27.549 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > EXTRACT_FASTA_BY_ID
-Jul-30 14:16:27.549 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SPLIT_FASTA_BY_SEQID
-Jul-30 14:16:27.549 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > DEEPTMHMM_TOPOLOGY
-Jul-30 14:16:27.550 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > COLLECT_DEEPTMHMM_SUMMARY
-Jul-30 14:16:27.550 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PARSE_DEEPTMHMM_FEATURES
-Jul-30 14:16:27.550 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > HARDCODED_CLASSIFIER
-Jul-30 14:16:27.550 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SEED_DECISIONS
-Jul-30 14:16:27.551 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PREPARE_MANUAL_REVIEW
-Jul-30 14:16:27.551 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
-  _nf_script_60af0500d3998999: /home/primeline/Data/IRnotator/modules/local/hardcoded_classifier.nf
+  Process: 28668@primelineMZ33 [127.0.1.1]
+  CPUs: 64 - Mem: 503.5 GB (133.8 GB) - Swap: 0 (0)
+Jul-30 21:27:08.389 [main] DEBUG nextflow.Session - Work-dir: /home/primeline/Data/IRnotator/work [zfs]
+Jul-30 21:27:08.414 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jul-30 21:27:08.422 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Jul-30 21:27:08.423 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Jul-30 21:27:08.442 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jul-30 21:27:08.448 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 65; maxThreads: 1000
+Jul-30 21:27:08.511 [main] DEBUG nextflow.Session - Session start
+Jul-30 21:27:08.514 [main] DEBUG nextflow.script.ScriptLoaderFactory - Using script parser v2
+Jul-30 21:27:08.918 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jul-30 21:27:09.015 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `manual_review` -- Initialise it to a default value eg. `params.manual_review = some_value`
+Jul-30 21:27:09.016 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `reviewer_html` -- Initialise it to a default value eg. `params.reviewer_html = some_value`
+Jul-30 21:27:09.083 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:HMMSEARCH_IR` matches process HMMSEARCH_IR
+Jul-30 21:27:09.086 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jul-30 21:27:09.086 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-30 21:27:09.092 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jul-30 21:27:09.098 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=64; memory=503.5 GB; capacity=64; pollInterval=100ms; dumpInterval=5m
+Jul-30 21:27:09.100 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jul-30 21:27:09.126 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'HMMSEARCH_IR': maxForks=0; fair=false; array=0
+Jul-30 21:27:09.151 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jul-30 21:27:09.152 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-30 21:27:09.155 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'COLLECT_HMM_HITS': maxForks=0; fair=false; array=0
+Jul-30 21:27:09.158 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jul-30 21:27:09.158 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-30 21:27:09.159 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'EXTRACT_FASTA_BY_ID': maxForks=0; fair=false; array=0
+Jul-30 21:27:09.161 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jul-30 21:27:09.161 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-30 21:27:09.162 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'SPLIT_FASTA_BY_SEQID': maxForks=0; fair=false; array=0
+Jul-30 21:27:09.169 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:DEEPTMHMM_TOPOLOGY` matches process DEEPTMHMM_TOPOLOGY
+Jul-30 21:27:09.170 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jul-30 21:27:09.170 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-30 21:27:09.172 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'DEEPTMHMM_TOPOLOGY': maxForks=1; fair=false; array=0
+Jul-30 21:27:09.175 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jul-30 21:27:09.175 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-30 21:27:09.176 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'COLLECT_DEEPTMHMM_SUMMARY': maxForks=0; fair=false; array=0
+Jul-30 21:27:09.178 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jul-30 21:27:09.178 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-30 21:27:09.179 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'PARSE_DEEPTMHMM_FEATURES': maxForks=0; fair=false; array=0
+Jul-30 21:27:09.181 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jul-30 21:27:09.181 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-30 21:27:09.181 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'HARDCODED_CLASSIFIER': maxForks=0; fair=false; array=0
+Jul-30 21:27:09.184 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jul-30 21:27:09.184 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-30 21:27:09.184 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'SEED_DECISIONS': maxForks=0; fair=false; array=0
+Jul-30 21:27:09.191 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jul-30 21:27:09.191 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-30 21:27:09.192 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'PREPARE_MANUAL_REVIEW': maxForks=0; fair=false; array=0
+Jul-30 21:27:09.194 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jul-30 21:27:09.194 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-30 21:27:09.195 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'GATE_REVIEW_TSV': maxForks=0; fair=false; array=0
+Jul-30 21:27:09.197 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jul-30 21:27:09.197 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-30 21:27:09.197 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'APPLY_MANUAL_DECISIONS': maxForks=0; fair=false; array=0
+Jul-30 21:27:09.200 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jul-30 21:27:09.200 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-30 21:27:09.200 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'EXTRACT_PASSED_FASTA': maxForks=0; fair=false; array=0
+Jul-30 21:27:09.202 [main] DEBUG nextflow.Session - Process names: PARSE_DEEPTMHMM_FEATURES, EXTRACT_PASSED_FASTA, GATE_REVIEW_TSV, SEED_DECISIONS, COLLECT_DEEPTMHMM_SUMMARY, PREPARE_MANUAL_REVIEW, DEEPTMHMM_TOPOLOGY, SPLIT_FASTA_BY_SEQID, APPLY_MANUAL_DECISIONS, HMMSEARCH_IR, EXTRACT_FASTA_BY_ID, HARDCODED_CLASSIFIER, COLLECT_HMM_HITS
+Jul-30 21:27:09.204 [main] DEBUG nextflow.Session - Igniting dataflow network (16)
+Jul-30 21:27:09.208 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > HMMSEARCH_IR
+Jul-30 21:27:09.208 [PathVisitor-2] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: test/hmms/; pattern: *.hmm; options: [checkIfExists:true]
+Jul-30 21:27:09.208 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > COLLECT_HMM_HITS
+Jul-30 21:27:09.208 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > EXTRACT_FASTA_BY_ID
+Jul-30 21:27:09.208 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SPLIT_FASTA_BY_SEQID
+Jul-30 21:27:09.209 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > DEEPTMHMM_TOPOLOGY
+Jul-30 21:27:09.209 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > COLLECT_DEEPTMHMM_SUMMARY
+Jul-30 21:27:09.209 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PARSE_DEEPTMHMM_FEATURES
+Jul-30 21:27:09.210 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > HARDCODED_CLASSIFIER
+Jul-30 21:27:09.210 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SEED_DECISIONS
+Jul-30 21:27:09.210 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PREPARE_MANUAL_REVIEW
+Jul-30 21:27:09.210 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > GATE_REVIEW_TSV
+Jul-30 21:27:09.210 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > APPLY_MANUAL_DECISIONS
+Jul-30 21:27:09.211 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > EXTRACT_PASSED_FASTA
+Jul-30 21:27:09.211 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  _nf_script_8a2d39602ac06979: /home/primeline/Data/IRnotator/modules/local/apply_manual_decisions.nf
   _nf_script_e335948e3e12825d: /home/primeline/Data/IRnotator/modules/local/collect_deeptmhmm_summary.nf
-  _nf_script_4cb3096f8a60f286: /home/primeline/Data/IRnotator/modules/local/seed_decisions.nf
-  _nf_script_018f5de02a24053a: /home/primeline/Data/IRnotator/modules/local/split_fasta_by_seqid.nf
   _nf_script_18cb5ac85a180cc0: /home/primeline/Data/IRnotator/modules/local/parse_deeptmhmm_features.nf
-  _nf_script_5437c8f09c83acd0: /home/primeline/Data/IRnotator/modules/local/extract_fasta_by_id.nf
   _nf_script_3144af718c03d3cd: /home/primeline/Data/IRnotator/modules/local/collect_hmm_hits.nf
   _nf_script_a1c101a7efdefd6d: /home/primeline/Data/IRnotator/modules/local/prepare_manual_review.nf
-  Main: /home/primeline/Data/IRnotator/main.nf
+  _nf_script_7d3a587c0e0d41cf: /home/primeline/Data/IRnotator/modules/local/extract_passed_fasta.nf
+  _nf_script_81abce799d5c1287: /home/primeline/Data/IRnotator/modules/local/gate_review_tsv.nf
   _nf_script_dc7f7c7ca9572442: /home/primeline/Data/IRnotator/modules/local/hmmsearch_ir.nf
+  _nf_script_60af0500d3998999: /home/primeline/Data/IRnotator/modules/local/hardcoded_classifier.nf
+  _nf_script_4cb3096f8a60f286: /home/primeline/Data/IRnotator/modules/local/seed_decisions.nf
+  _nf_script_018f5de02a24053a: /home/primeline/Data/IRnotator/modules/local/split_fasta_by_seqid.nf
+  _nf_script_5437c8f09c83acd0: /home/primeline/Data/IRnotator/modules/local/extract_fasta_by_id.nf
+  Main: /home/primeline/Data/IRnotator/main.nf
   _nf_script_e9cb6a7e08ebe322: /home/primeline/Data/IRnotator/modules/local/deeptmhmm_topology.nf
-Jul-30 14:16:27.551 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
-Jul-30 14:16:27.551 [main] DEBUG nextflow.Session - Session await
-Jul-30 14:16:27.771 [Actor Thread 22] INFO  nextflow.processor.TaskProcessor - [77/93d54a] Cached process > HMMSEARCH_IR (PF00060)
-Jul-30 14:16:27.771 [Actor Thread 24] INFO  nextflow.processor.TaskProcessor - [29/6f1366] Cached process > HMMSEARCH_IR (PF10613)
-Jul-30 14:16:27.786 [Actor Thread 22] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=192; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Jul-30 14:16:27.797 [Actor Thread 33] INFO  nextflow.processor.TaskProcessor - [bf/aa4266] Cached process > COLLECT_HMM_HITS (collect_hmm_hits)
-Jul-30 14:16:27.804 [Actor Thread 37] INFO  nextflow.processor.TaskProcessor - [4d/411e8d] Cached process > EXTRACT_FASTA_BY_ID (copepod)
-Jul-30 14:16:27.816 [Actor Thread 43] INFO  nextflow.processor.TaskProcessor - [e1/c8fd77] Cached process > SPLIT_FASTA_BY_SEQID (split_fasta_by_seqid)
-Jul-30 14:16:27.840 [Actor Thread 21] INFO  nextflow.processor.TaskProcessor - [97/e539e2] Cached process > DEEPTMHMM_TOPOLOGY (XP_059085026.1)
-Jul-30 14:16:27.840 [Actor Thread 51] INFO  nextflow.processor.TaskProcessor - [b5/446d43] Cached process > DEEPTMHMM_TOPOLOGY (XP_059080362.1)
-Jul-30 14:16:27.840 [Actor Thread 53] INFO  nextflow.processor.TaskProcessor - [c4/817ad6] Cached process > DEEPTMHMM_TOPOLOGY (XP_059080319.1)
-Jul-30 14:16:27.840 [Actor Thread 22] INFO  nextflow.processor.TaskProcessor - [8d/e94401] Cached process > DEEPTMHMM_TOPOLOGY (XP_059084632.1)
-Jul-30 14:16:27.840 [Actor Thread 27] INFO  nextflow.processor.TaskProcessor - [ee/f412f0] Cached process > DEEPTMHMM_TOPOLOGY (XP_059084837.1)
-Jul-30 14:16:27.841 [Actor Thread 18] INFO  nextflow.processor.TaskProcessor - [94/54b6b9] Cached process > DEEPTMHMM_TOPOLOGY (XP_059085068.1)
-Jul-30 14:16:27.841 [Actor Thread 47] INFO  nextflow.processor.TaskProcessor - [c4/87c40a] Cached process > DEEPTMHMM_TOPOLOGY (XP_059080364.1)
-Jul-30 14:16:27.841 [Actor Thread 43] INFO  nextflow.processor.TaskProcessor - [a9/6acf5f] Cached process > DEEPTMHMM_TOPOLOGY (XP_059080573.1)
-Jul-30 14:16:27.842 [Actor Thread 56] INFO  nextflow.processor.TaskProcessor - [70/94aac2] Cached process > DEEPTMHMM_TOPOLOGY (XP_059078473.1)
-Jul-30 14:16:27.842 [Actor Thread 45] INFO  nextflow.processor.TaskProcessor - [9f/507875] Cached process > DEEPTMHMM_TOPOLOGY (XP_059080425.1)
-Jul-30 14:16:27.843 [Actor Thread 40] INFO  nextflow.processor.TaskProcessor - [65/280685] Cached process > DEEPTMHMM_TOPOLOGY (XP_059081678.1)
-Jul-30 14:16:27.843 [Actor Thread 52] INFO  nextflow.processor.TaskProcessor - [43/84fe75] Cached process > DEEPTMHMM_TOPOLOGY (XP_059078411.1)
-Jul-30 14:16:27.844 [Actor Thread 26] INFO  nextflow.processor.TaskProcessor - [b1/1bf747] Cached process > DEEPTMHMM_TOPOLOGY (XP_059084726.1)
-Jul-30 14:16:27.844 [Actor Thread 63] INFO  nextflow.processor.TaskProcessor - [5b/59dd90] Cached process > DEEPTMHMM_TOPOLOGY (XP_059079335.1)
-Jul-30 14:16:27.844 [Actor Thread 42] INFO  nextflow.processor.TaskProcessor - [f5/801c73] Cached process > DEEPTMHMM_TOPOLOGY (XP_059082519.1)
-Jul-30 14:16:27.852 [Actor Thread 54] INFO  nextflow.processor.TaskProcessor - [b7/fbee1f] Cached process > DEEPTMHMM_TOPOLOGY (XP_059078456.1)
-Jul-30 14:16:27.853 [Actor Thread 65] INFO  nextflow.processor.TaskProcessor - [a1/5bae72] Cached process > DEEPTMHMM_TOPOLOGY (XP_059079423.1)
-Jul-30 14:16:27.853 [Actor Thread 20] INFO  nextflow.processor.TaskProcessor - [e5/4d6e06] Cached process > DEEPTMHMM_TOPOLOGY (XP_059084920.1)
-Jul-30 14:16:27.853 [Actor Thread 62] INFO  nextflow.processor.TaskProcessor - [53/9fbd9a] Cached process > DEEPTMHMM_TOPOLOGY (XP_059079489.1)
-Jul-30 14:16:27.853 [Actor Thread 25] INFO  nextflow.processor.TaskProcessor - [eb/d7eb48] Cached process > DEEPTMHMM_TOPOLOGY (XP_059084838.1)
-Jul-30 14:16:27.854 [Actor Thread 24] INFO  nextflow.processor.TaskProcessor - [ba/29943d] Cached process > DEEPTMHMM_TOPOLOGY (XP_059084403.1)
-Jul-30 14:16:27.854 [Actor Thread 44] INFO  nextflow.processor.TaskProcessor - [3d/3ff42a] Cached process > DEEPTMHMM_TOPOLOGY (XP_059081344.1)
-Jul-30 14:16:27.854 [Actor Thread 33] INFO  nextflow.processor.TaskProcessor - [8a/ec1ea5] Cached process > DEEPTMHMM_TOPOLOGY (XP_059083829.1)
-Jul-30 14:16:27.854 [Actor Thread 57] INFO  nextflow.processor.TaskProcessor - [5f/e2c3c9] Cached process > DEEPTMHMM_TOPOLOGY (XP_059079834.1)
-Jul-30 14:16:27.854 [Actor Thread 61] INFO  nextflow.processor.TaskProcessor - [de/91846b] Cached process > DEEPTMHMM_TOPOLOGY (XP_059079334.1)
-Jul-30 14:16:27.854 [Actor Thread 8] INFO  nextflow.processor.TaskProcessor - [99/ec0bb9] Cached process > DEEPTMHMM_TOPOLOGY (XP_059086884.1)
-Jul-30 14:16:27.855 [Actor Thread 28] INFO  nextflow.processor.TaskProcessor - [f4/9f1875] Cached process > DEEPTMHMM_TOPOLOGY (XP_059084635.1)
-Jul-30 14:16:27.855 [Actor Thread 48] INFO  nextflow.processor.TaskProcessor - [32/afafde] Cached process > DEEPTMHMM_TOPOLOGY (XP_059079839.1)
-Jul-30 14:16:27.855 [Actor Thread 19] INFO  nextflow.processor.TaskProcessor - [c0/c04243] Cached process > DEEPTMHMM_TOPOLOGY (XP_059085028.1)
-Jul-30 14:16:27.855 [Actor Thread 59] INFO  nextflow.processor.TaskProcessor - [62/d65770] Cached process > DEEPTMHMM_TOPOLOGY (XP_059079333.1)
-Jul-30 14:16:27.855 [Actor Thread 49] INFO  nextflow.processor.TaskProcessor - [5e/b1e311] Cached process > DEEPTMHMM_TOPOLOGY (XP_059080424.1)
-Jul-30 14:16:27.857 [Actor Thread 64] INFO  nextflow.processor.TaskProcessor - [20/ae8d83] Cached process > DEEPTMHMM_TOPOLOGY (XP_059079771.1)
-Jul-30 14:16:27.857 [Actor Thread 55] INFO  nextflow.processor.TaskProcessor - [cf/c32990] Cached process > DEEPTMHMM_TOPOLOGY (XP_059079838.1)
-Jul-30 14:16:27.857 [Actor Thread 60] INFO  nextflow.processor.TaskProcessor - [f1/0a684c] Cached process > DEEPTMHMM_TOPOLOGY (XP_059082646.1)
-Jul-30 14:16:27.858 [Actor Thread 58] INFO  nextflow.processor.TaskProcessor - [0d/1608ad] Cached process > DEEPTMHMM_TOPOLOGY (XP_059079180.1)
-Jul-30 14:16:27.858 [Actor Thread 31] INFO  nextflow.processor.TaskProcessor - [b4/f48c26] Cached process > DEEPTMHMM_TOPOLOGY (XP_059082976.1)
-Jul-30 14:16:27.858 [Actor Thread 34] INFO  nextflow.processor.TaskProcessor - [29/accfda] Cached process > DEEPTMHMM_TOPOLOGY (XP_059083359.1)
-Jul-30 14:16:27.858 [Actor Thread 37] INFO  nextflow.processor.TaskProcessor - [5b/e9086c] Cached process > DEEPTMHMM_TOPOLOGY (XP_059081679.1)
-Jul-30 14:16:27.858 [Actor Thread 32] INFO  nextflow.processor.TaskProcessor - [c5/5268f4] Cached process > DEEPTMHMM_TOPOLOGY (XP_059083827.1)
-Jul-30 14:16:27.859 [Actor Thread 46] INFO  nextflow.processor.TaskProcessor - [c3/025f0e] Cached process > DEEPTMHMM_TOPOLOGY (XP_059081296.1)
-Jul-30 14:16:27.859 [Actor Thread 29] INFO  nextflow.processor.TaskProcessor - [7b/1ca05f] Cached process > DEEPTMHMM_TOPOLOGY (XP_059083805.1)
-Jul-30 14:16:27.859 [Actor Thread 13] INFO  nextflow.processor.TaskProcessor - [c8/7194ac] Cached process > DEEPTMHMM_TOPOLOGY (XP_059086902.1)
-Jul-30 14:16:27.860 [Actor Thread 1] INFO  nextflow.processor.TaskProcessor - [42/2edab4] Cached process > DEEPTMHMM_TOPOLOGY (XP_059088083.1)
-Jul-30 14:16:27.861 [Actor Thread 3] INFO  nextflow.processor.TaskProcessor - [fc/ad5de3] Cached process > DEEPTMHMM_TOPOLOGY (XP_059088024.1)
-Jul-30 14:16:27.861 [Actor Thread 4] INFO  nextflow.processor.TaskProcessor - [94/1c5da6] Cached process > DEEPTMHMM_TOPOLOGY (XP_059088023.1)
-Jul-30 14:16:27.861 [Actor Thread 66] INFO  nextflow.processor.TaskProcessor - [c9/bd2a54] Cached process > DEEPTMHMM_TOPOLOGY (XP_059088574.1)
-Jul-30 14:16:27.861 [Actor Thread 5] INFO  nextflow.processor.TaskProcessor - [93/b7bfa2] Cached process > DEEPTMHMM_TOPOLOGY (XP_059087878.1)
-Jul-30 14:16:27.862 [Actor Thread 39] INFO  nextflow.processor.TaskProcessor - [59/e3f70c] Cached process > DEEPTMHMM_TOPOLOGY (XP_059082565.1)
-Jul-30 14:16:27.862 [Actor Thread 30] INFO  nextflow.processor.TaskProcessor - [9b/f77c99] Cached process > DEEPTMHMM_TOPOLOGY (XP_059083828.1)
-Jul-30 14:16:27.862 [Actor Thread 16] INFO  nextflow.processor.TaskProcessor - [2f/4b7e89] Cached process > DEEPTMHMM_TOPOLOGY (XP_059085070.1)
-Jul-30 14:16:27.862 [Actor Thread 7] INFO  nextflow.processor.TaskProcessor - [29/f3d07e] Cached process > DEEPTMHMM_TOPOLOGY (XP_059087837.1)
-Jul-30 14:16:27.862 [Actor Thread 12] INFO  nextflow.processor.TaskProcessor - [c8/b85b98] Cached process > DEEPTMHMM_TOPOLOGY (XP_059086883.1)
-Jul-30 14:16:27.862 [Actor Thread 9] INFO  nextflow.processor.TaskProcessor - [00/9be9ac] Cached process > DEEPTMHMM_TOPOLOGY (XP_059087836.1)
-Jul-30 14:16:27.862 [Actor Thread 17] INFO  nextflow.processor.TaskProcessor - [6a/e5a2c1] Cached process > DEEPTMHMM_TOPOLOGY (XP_059085837.1)
-Jul-30 14:16:27.863 [Actor Thread 41] INFO  nextflow.processor.TaskProcessor - [1c/fbecf7] Cached process > DEEPTMHMM_TOPOLOGY (XP_059082523.1)
-Jul-30 14:16:27.863 [Actor Thread 36] INFO  nextflow.processor.TaskProcessor - [56/dd975d] Cached process > DEEPTMHMM_TOPOLOGY (XP_059083446.1)
-Jul-30 14:16:27.863 [Actor Thread 35] INFO  nextflow.processor.TaskProcessor - [21/5c5568] Cached process > DEEPTMHMM_TOPOLOGY (XP_059081677.1)
-Jul-30 14:16:27.863 [Actor Thread 38] INFO  nextflow.processor.TaskProcessor - [b0/ddf2e9] Cached process > DEEPTMHMM_TOPOLOGY (XP_059082828.1)
-Jul-30 14:16:27.864 [Actor Thread 6] INFO  nextflow.processor.TaskProcessor - [f6/2915eb] Cached process > DEEPTMHMM_TOPOLOGY (XP_059087838.1)
-Jul-30 14:16:27.865 [Actor Thread 47] INFO  nextflow.processor.TaskProcessor - [68/dcaf8e] Cached process > DEEPTMHMM_TOPOLOGY (XP_059091028.1)
-Jul-30 14:16:27.866 [Actor Thread 8] INFO  nextflow.processor.TaskProcessor - [8f/cd075b] Cached process > DEEPTMHMM_TOPOLOGY (XP_059091446.1)
-Jul-30 14:16:27.866 [Actor Thread 49] INFO  nextflow.processor.TaskProcessor - [a2/5337e9] Cached process > DEEPTMHMM_TOPOLOGY (XP_059092477.1)
-Jul-30 14:16:27.866 [Actor Thread 21] INFO  nextflow.processor.TaskProcessor - [58/85178d] Cached process > DEEPTMHMM_TOPOLOGY (XP_059088886.1)
-Jul-30 14:16:27.866 [Actor Thread 28] INFO  nextflow.processor.TaskProcessor - [8a/f05902] Cached process > DEEPTMHMM_TOPOLOGY (XP_059092450.1)
-Jul-30 14:16:27.866 [Actor Thread 14] INFO  nextflow.processor.TaskProcessor - [ca/636c5c] Cached process > DEEPTMHMM_TOPOLOGY (XP_059085084.1)
-Jul-30 14:16:27.866 [Actor Thread 68] INFO  nextflow.processor.TaskProcessor - [ba/56d683] Cached process > DEEPTMHMM_TOPOLOGY (XP_059088977.1)
-Jul-30 14:16:27.867 [Actor Thread 64] INFO  nextflow.processor.TaskProcessor - [9e/be9bdf] Cached process > DEEPTMHMM_TOPOLOGY (XP_059093173.1)
-Jul-30 14:16:27.867 [Actor Thread 10] INFO  nextflow.processor.TaskProcessor - [62/dbe35d] Cached process > DEEPTMHMM_TOPOLOGY (XP_059085838.1)
-Jul-30 14:16:27.867 [Actor Thread 40] INFO  nextflow.processor.TaskProcessor - [79/373d35] Cached process > DEEPTMHMM_TOPOLOGY (XP_059089661.1)
-Jul-30 14:16:27.868 [Actor Thread 24] INFO  nextflow.processor.TaskProcessor - [25/e26d17] Cached process > DEEPTMHMM_TOPOLOGY (XP_059091071.1)
-Jul-30 14:16:27.868 [Actor Thread 15] INFO  nextflow.processor.TaskProcessor - [13/0e2225] Cached process > DEEPTMHMM_TOPOLOGY (XP_059085628.1)
-Jul-30 14:16:27.868 [Actor Thread 55] INFO  nextflow.processor.TaskProcessor - [28/9a5aae] Cached process > DEEPTMHMM_TOPOLOGY (XP_059093676.1)
-Jul-30 14:16:27.868 [Actor Thread 56] INFO  nextflow.processor.TaskProcessor - [1a/e050f9] Cached process > DEEPTMHMM_TOPOLOGY (XP_059090680.1)
-Jul-30 14:16:27.868 [Actor Thread 11] INFO  nextflow.processor.TaskProcessor - [d5/876cd6] Cached process > DEEPTMHMM_TOPOLOGY (XP_059085839.1)
-Jul-30 14:16:27.868 [Actor Thread 26] INFO  nextflow.processor.TaskProcessor - [62/b229e9] Cached process > DEEPTMHMM_TOPOLOGY (XP_059089141.1)
-Jul-30 14:16:27.869 [Actor Thread 2] INFO  nextflow.processor.TaskProcessor - [27/2d17c0] Cached process > DEEPTMHMM_TOPOLOGY (XP_059088081.1)
-Jul-30 14:16:27.869 [Actor Thread 18] INFO  nextflow.processor.TaskProcessor - [00/90ab7b] Cached process > DEEPTMHMM_TOPOLOGY (XP_059093916.1)
-Jul-30 14:16:27.869 [Actor Thread 13] INFO  nextflow.processor.TaskProcessor - [05/458958] Cached process > DEEPTMHMM_TOPOLOGY (XP_059095167.1)
-Jul-30 14:16:27.870 [Actor Thread 29] INFO  nextflow.processor.TaskProcessor - [b4/2b233a] Cached process > DEEPTMHMM_TOPOLOGY (XP_059095193.1)
-Jul-30 14:16:27.870 [Actor Thread 3] INFO  nextflow.processor.TaskProcessor - [11/3e2ef7] Cached process > DEEPTMHMM_TOPOLOGY (XP_059095430.1)
-Jul-30 14:16:27.870 [Actor Thread 46] INFO  nextflow.processor.TaskProcessor - [8d/351ad8] Cached process > DEEPTMHMM_TOPOLOGY (XP_059095533.1)
-Jul-30 14:16:27.870 [Actor Thread 51] INFO  nextflow.processor.TaskProcessor - [09/909f59] Cached process > DEEPTMHMM_TOPOLOGY (XP_059095174.1)
-Jul-30 14:16:27.870 [Actor Thread 53] INFO  nextflow.processor.TaskProcessor - [54/e1af3f] Cached process > DEEPTMHMM_TOPOLOGY (XP_059095158.1)
-Jul-30 14:16:27.870 [Actor Thread 27] INFO  nextflow.processor.TaskProcessor - [1f/01ba00] Cached process > DEEPTMHMM_TOPOLOGY (XP_059095118.1)
-Jul-30 14:16:27.871 [Actor Thread 32] INFO  nextflow.processor.TaskProcessor - [fe/bf9f74] Cached process > DEEPTMHMM_TOPOLOGY (XP_059095760.1)
-Jul-30 14:16:27.871 [Actor Thread 22] INFO  nextflow.processor.TaskProcessor - [02/96e345] Cached process > DEEPTMHMM_TOPOLOGY (XP_059095737.1)
-Jul-30 14:16:27.871 [Actor Thread 66] INFO  nextflow.processor.TaskProcessor - [71/b8a52f] Cached process > DEEPTMHMM_TOPOLOGY (XP_059095569.1)
-Jul-30 14:16:27.871 [Actor Thread 67] INFO  nextflow.processor.TaskProcessor - [57/69957f] Cached process > DEEPTMHMM_TOPOLOGY (XP_059094370.1)
-Jul-30 14:16:27.871 [Actor Thread 37] INFO  nextflow.processor.TaskProcessor - [ba/7d0a7a] Cached process > DEEPTMHMM_TOPOLOGY (XP_059095937.1)
-Jul-30 14:16:27.872 [Actor Thread 7] INFO  nextflow.processor.TaskProcessor - [c1/7c1041] Cached process > DEEPTMHMM_TOPOLOGY (XP_059095839.1)
-Jul-30 14:16:27.872 [Actor Thread 58] INFO  nextflow.processor.TaskProcessor - [ad/89d868] Cached process > DEEPTMHMM_TOPOLOGY (XP_059096256.1)
-Jul-30 14:16:27.872 [Actor Thread 34] INFO  nextflow.processor.TaskProcessor - [a4/77715b] Cached process > DEEPTMHMM_TOPOLOGY (XP_059095945.1)
-Jul-30 14:16:27.872 [Actor Thread 31] INFO  nextflow.processor.TaskProcessor - [8b/e5a704] Cached process > DEEPTMHMM_TOPOLOGY (XP_059096106.1)
-Jul-30 14:16:27.873 [Actor Thread 43] INFO  nextflow.processor.TaskProcessor - [55/df2d3c] Cached process > DEEPTMHMM_TOPOLOGY (XP_059096370.1)
-Jul-30 14:16:27.873 [Actor Thread 59] INFO  nextflow.processor.TaskProcessor - [3b/c7cfb8] Cached process > DEEPTMHMM_TOPOLOGY (XP_059096371.1)
-Jul-30 14:16:27.873 [Actor Thread 5] INFO  nextflow.processor.TaskProcessor - [c4/03ed29] Cached process > DEEPTMHMM_TOPOLOGY (XP_059096372.1)
-Jul-30 14:16:27.874 [Actor Thread 19] INFO  nextflow.processor.TaskProcessor - [22/52e017] Cached process > DEEPTMHMM_TOPOLOGY (XP_059096479.1)
-Jul-30 14:16:27.874 [Actor Thread 8] INFO  nextflow.processor.TaskProcessor - [2b/6d7b9c] Cached process > DEEPTMHMM_TOPOLOGY (XP_059096463.1)
-Jul-30 14:16:27.875 [Actor Thread 57] INFO  nextflow.processor.TaskProcessor - [55/2e684c] Cached process > DEEPTMHMM_TOPOLOGY (XP_059096592.1)
-Jul-30 14:16:27.875 [Actor Thread 25] INFO  nextflow.processor.TaskProcessor - [ed/8d934d] Cached process > DEEPTMHMM_TOPOLOGY (XP_059096679.1)
-Jul-30 14:16:27.875 [Actor Thread 61] INFO  nextflow.processor.TaskProcessor - [52/61a83a] Cached process > DEEPTMHMM_TOPOLOGY (XP_059096591.1)
-Jul-30 14:16:27.875 [Actor Thread 48] INFO  nextflow.processor.TaskProcessor - [ce/691d12] Cached process > DEEPTMHMM_TOPOLOGY (XP_059096595.1)
-Jul-30 14:16:27.876 [Actor Thread 33] INFO  nextflow.processor.TaskProcessor - [3d/c23880] Cached process > DEEPTMHMM_TOPOLOGY (XP_059096594.1)
-Jul-30 14:16:27.876 [Actor Thread 56] INFO  nextflow.processor.TaskProcessor - [29/30b77e] Cached process > DEEPTMHMM_TOPOLOGY (XP_059097263.1)
-Jul-30 14:16:27.877 [Actor Thread 65] INFO  nextflow.processor.TaskProcessor - [79/ec1346] Cached process > DEEPTMHMM_TOPOLOGY (XP_059097411.1)
-Jul-30 14:16:27.877 [Actor Thread 20] INFO  nextflow.processor.TaskProcessor - [f9/ebf69b] Cached process > DEEPTMHMM_TOPOLOGY (XP_059097354.1)
-Jul-30 14:16:27.878 [Actor Thread 32] INFO  nextflow.processor.TaskProcessor - [34/43816b] Cached process > DEEPTMHMM_TOPOLOGY (XP_059097426.1)
-Jul-30 14:16:27.879 [Actor Thread 63] INFO  nextflow.processor.TaskProcessor - [93/6004ed] Cached process > DEEPTMHMM_TOPOLOGY (XP_059097759.1)
-Jul-30 14:16:27.879 [Actor Thread 70] INFO  nextflow.processor.TaskProcessor - [a5/4f6254] Cached process > DEEPTMHMM_TOPOLOGY (XP_059096791.1)
-Jul-30 14:16:27.879 [Actor Thread 42] INFO  nextflow.processor.TaskProcessor - [2d/ef8ecd] Cached process > DEEPTMHMM_TOPOLOGY (XP_059097643.1)
-Jul-30 14:16:27.879 [Actor Thread 71] INFO  nextflow.processor.TaskProcessor - [79/cc0f72] Cached process > DEEPTMHMM_TOPOLOGY (XP_059097430.1)
-Jul-30 14:16:27.879 [Actor Thread 43] INFO  nextflow.processor.TaskProcessor - [c6/c8e6a2] Cached process > DEEPTMHMM_TOPOLOGY (XP_059098031.1)
-Jul-30 14:16:27.880 [Actor Thread 54] INFO  nextflow.processor.TaskProcessor - [b3/302c42] Cached process > DEEPTMHMM_TOPOLOGY (XP_059098288.1)
-Jul-30 14:16:27.880 [Actor Thread 45] INFO  nextflow.processor.TaskProcessor - [77/bfe849] Cached process > DEEPTMHMM_TOPOLOGY (XP_059098032.1)
-Jul-30 14:16:27.880 [Actor Thread 52] INFO  nextflow.processor.TaskProcessor - [a7/022568] Cached process > DEEPTMHMM_TOPOLOGY (XP_059097828.1)
-Jul-30 14:16:27.880 [Actor Thread 72] INFO  nextflow.processor.TaskProcessor - [3e/2706e4] Cached process > DEEPTMHMM_TOPOLOGY (XP_059097644.1)
-Jul-30 14:16:27.881 [Actor Thread 34] INFO  nextflow.processor.TaskProcessor - [f2/0ce2c4] Cached process > DEEPTMHMM_TOPOLOGY (XP_059099218.1)
-Jul-30 14:16:27.881 [Actor Thread 7] INFO  nextflow.processor.TaskProcessor - [62/e00546] Cached process > DEEPTMHMM_TOPOLOGY (XP_059099180.1)
-Jul-30 14:16:27.881 [Actor Thread 59] INFO  nextflow.processor.TaskProcessor - [0a/5ac82f] Cached process > DEEPTMHMM_TOPOLOGY (XP_059098080.1)
-Jul-30 14:16:27.882 [Actor Thread 37] INFO  nextflow.processor.TaskProcessor - [f3/a79c5e] Cached process > DEEPTMHMM_TOPOLOGY (XP_059098639.1)
-Jul-30 14:16:27.883 [Actor Thread 67] INFO  nextflow.processor.TaskProcessor - [b8/341071] Cached process > DEEPTMHMM_TOPOLOGY (XP_059099441.1)
-Jul-30 14:16:27.884 [Actor Thread 60] INFO  nextflow.processor.TaskProcessor - [a4/02d710] Cached process > DEEPTMHMM_TOPOLOGY (XP_059099240.1)
-Jul-30 14:16:27.924 [Actor Thread 19] INFO  nextflow.processor.TaskProcessor - [9b/bd5f3a] Cached process > COLLECT_DEEPTMHMM_SUMMARY (deeptmhmm_summary)
-Jul-30 14:16:27.938 [Actor Thread 25] INFO  nextflow.processor.TaskProcessor - [62/6564a8] Cached process > PARSE_DEEPTMHMM_FEATURES (parse_deeptmhmm)
-Jul-30 14:16:27.949 [Actor Thread 5] INFO  nextflow.processor.TaskProcessor - [af/c2cd00] Cached process > HARDCODED_CLASSIFIER (hardcoded_classifier)
-Jul-30 14:16:27.958 [Actor Thread 5] INFO  nextflow.processor.TaskProcessor - [26/674839] Cached process > SEED_DECISIONS (seed_decisions)
-Jul-30 14:16:28.010 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Jul-30 14:16:28.012 [Task submitter] INFO  nextflow.Session - [5c/fa9a3c] Submitted process > PREPARE_MANUAL_REVIEW (prepare_manual_review)
-Jul-30 14:16:28.192 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 132; name: PREPARE_MANUAL_REVIEW (prepare_manual_review); status: COMPLETED; exit: 0; error: -; workDir: /home/primeline/Data/IRnotator/work/5c/fa9a3c5bb84794a4f66a6aa0d78a9b]
-Jul-30 14:16:28.193 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=192; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Jul-30 14:16:28.199 [main] DEBUG nextflow.Session - Session await > all processes finished
-Jul-30 14:16:28.290 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
-Jul-30 14:16:28.290 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Jul-30 14:16:28.294 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
-Jul-30 14:16:28.295 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
-Jul-30 14:16:28.306 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=1; failedCount=0; ignoredCount=0; cachedCount=131; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=6.1s; failedDuration=0ms; cachedDuration=5h 7m 58s;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=48; peakMemory=200 GB; ]
-Jul-30 14:16:28.365 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
-Jul-30 14:16:28.383 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
-Jul-30 14:16:28.384 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+Jul-30 21:27:09.211 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jul-30 21:27:09.211 [main] DEBUG nextflow.Session - Session await
+Jul-30 21:27:09.424 [Actor Thread 27] INFO  nextflow.processor.TaskProcessor - [29/6f1366] Cached process > HMMSEARCH_IR (PF10613)
+Jul-30 21:27:09.424 [Actor Thread 25] INFO  nextflow.processor.TaskProcessor - [77/93d54a] Cached process > HMMSEARCH_IR (PF00060)
+Jul-30 21:27:09.439 [Actor Thread 27] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=192; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jul-30 21:27:09.451 [Actor Thread 36] INFO  nextflow.processor.TaskProcessor - [bf/aa4266] Cached process > COLLECT_HMM_HITS (collect_hmm_hits)
+Jul-30 21:27:09.459 [Actor Thread 40] INFO  nextflow.processor.TaskProcessor - [4d/411e8d] Cached process > EXTRACT_FASTA_BY_ID (copepod)
+Jul-30 21:27:09.470 [Actor Thread 47] INFO  nextflow.processor.TaskProcessor - [e1/c8fd77] Cached process > SPLIT_FASTA_BY_SEQID (split_fasta_by_seqid)
+Jul-30 21:27:09.499 [Actor Thread 25] INFO  nextflow.processor.TaskProcessor - [c5/5268f4] Cached process > DEEPTMHMM_TOPOLOGY (XP_059083827.1)
+Jul-30 21:27:09.499 [Actor Thread 63] INFO  nextflow.processor.TaskProcessor - [5b/59dd90] Cached process > DEEPTMHMM_TOPOLOGY (XP_059079335.1)
+Jul-30 21:27:09.499 [Actor Thread 40] INFO  nextflow.processor.TaskProcessor - [29/accfda] Cached process > DEEPTMHMM_TOPOLOGY (XP_059083359.1)
+Jul-30 21:27:09.499 [Actor Thread 49] INFO  nextflow.processor.TaskProcessor - [c4/817ad6] Cached process > DEEPTMHMM_TOPOLOGY (XP_059080319.1)
+Jul-30 21:27:09.499 [Actor Thread 43] INFO  nextflow.processor.TaskProcessor - [a9/6acf5f] Cached process > DEEPTMHMM_TOPOLOGY (XP_059080573.1)
+Jul-30 21:27:09.499 [Actor Thread 44] INFO  nextflow.processor.TaskProcessor - [65/280685] Cached process > DEEPTMHMM_TOPOLOGY (XP_059081678.1)
+Jul-30 21:27:09.499 [Actor Thread 51] INFO  nextflow.processor.TaskProcessor - [32/afafde] Cached process > DEEPTMHMM_TOPOLOGY (XP_059079839.1)
+Jul-30 21:27:09.499 [Actor Thread 55] INFO  nextflow.processor.TaskProcessor - [5f/e2c3c9] Cached process > DEEPTMHMM_TOPOLOGY (XP_059079834.1)
+Jul-30 21:27:09.499 [Actor Thread 53] INFO  nextflow.processor.TaskProcessor - [cf/c32990] Cached process > DEEPTMHMM_TOPOLOGY (XP_059079838.1)
+Jul-30 21:27:09.499 [Actor Thread 47] INFO  nextflow.processor.TaskProcessor - [b5/446d43] Cached process > DEEPTMHMM_TOPOLOGY (XP_059080362.1)
+Jul-30 21:27:09.500 [Actor Thread 32] INFO  nextflow.processor.TaskProcessor - [b4/f48c26] Cached process > DEEPTMHMM_TOPOLOGY (XP_059082976.1)
+Jul-30 21:27:09.500 [Actor Thread 45] INFO  nextflow.processor.TaskProcessor - [3d/3ff42a] Cached process > DEEPTMHMM_TOPOLOGY (XP_059081344.1)
+Jul-30 21:27:09.500 [Actor Thread 50] INFO  nextflow.processor.TaskProcessor - [c4/87c40a] Cached process > DEEPTMHMM_TOPOLOGY (XP_059080364.1)
+Jul-30 21:27:09.500 [Actor Thread 56] INFO  nextflow.processor.TaskProcessor - [43/84fe75] Cached process > DEEPTMHMM_TOPOLOGY (XP_059078411.1)
+Jul-30 21:27:09.500 [Actor Thread 62] INFO  nextflow.processor.TaskProcessor - [62/d65770] Cached process > DEEPTMHMM_TOPOLOGY (XP_059079333.1)
+Jul-30 21:27:09.501 [Actor Thread 59] INFO  nextflow.processor.TaskProcessor - [70/94aac2] Cached process > DEEPTMHMM_TOPOLOGY (XP_059078473.1)
+Jul-30 21:27:09.501 [Actor Thread 52] INFO  nextflow.processor.TaskProcessor - [53/9fbd9a] Cached process > DEEPTMHMM_TOPOLOGY (XP_059079489.1)
+Jul-30 21:27:09.501 [Actor Thread 46] INFO  nextflow.processor.TaskProcessor - [21/5c5568] Cached process > DEEPTMHMM_TOPOLOGY (XP_059081677.1)
+Jul-30 21:27:09.501 [Actor Thread 60] INFO  nextflow.processor.TaskProcessor - [0d/1608ad] Cached process > DEEPTMHMM_TOPOLOGY (XP_059079180.1)
+Jul-30 21:27:09.501 [Actor Thread 61] INFO  nextflow.processor.TaskProcessor - [a1/5bae72] Cached process > DEEPTMHMM_TOPOLOGY (XP_059079423.1)
+Jul-30 21:27:09.502 [Actor Thread 41] INFO  nextflow.processor.TaskProcessor - [59/e3f70c] Cached process > DEEPTMHMM_TOPOLOGY (XP_059082565.1)
+Jul-30 21:27:09.502 [Actor Thread 38] INFO  nextflow.processor.TaskProcessor - [9f/507875] Cached process > DEEPTMHMM_TOPOLOGY (XP_059080425.1)
+Jul-30 21:27:09.503 [Actor Thread 58] INFO  nextflow.processor.TaskProcessor - [b7/fbee1f] Cached process > DEEPTMHMM_TOPOLOGY (XP_059078456.1)
+Jul-30 21:27:09.504 [Actor Thread 36] INFO  nextflow.processor.TaskProcessor - [f1/0a684c] Cached process > DEEPTMHMM_TOPOLOGY (XP_059082646.1)
+Jul-30 21:27:09.504 [Actor Thread 65] INFO  nextflow.processor.TaskProcessor - [c3/025f0e] Cached process > DEEPTMHMM_TOPOLOGY (XP_059081296.1)
+Jul-30 21:27:09.504 [Actor Thread 37] INFO  nextflow.processor.TaskProcessor - [1c/fbecf7] Cached process > DEEPTMHMM_TOPOLOGY (XP_059082523.1)
+Jul-30 21:27:09.505 [Actor Thread 57] INFO  nextflow.processor.TaskProcessor - [20/ae8d83] Cached process > DEEPTMHMM_TOPOLOGY (XP_059079771.1)
+Jul-30 21:27:09.505 [Actor Thread 13] INFO  nextflow.processor.TaskProcessor - [99/ec0bb9] Cached process > DEEPTMHMM_TOPOLOGY (XP_059086884.1)
+Jul-30 21:27:09.506 [Actor Thread 42] INFO  nextflow.processor.TaskProcessor - [5b/e9086c] Cached process > DEEPTMHMM_TOPOLOGY (XP_059081679.1)
+Jul-30 21:27:09.506 [Actor Thread 23] INFO  nextflow.processor.TaskProcessor - [7b/1ca05f] Cached process > DEEPTMHMM_TOPOLOGY (XP_059083805.1)
+Jul-30 21:27:09.506 [Actor Thread 30] INFO  nextflow.processor.TaskProcessor - [8d/e94401] Cached process > DEEPTMHMM_TOPOLOGY (XP_059084632.1)
+Jul-30 21:27:09.506 [Actor Thread 21] INFO  nextflow.processor.TaskProcessor - [2f/4b7e89] Cached process > DEEPTMHMM_TOPOLOGY (XP_059085070.1)
+Jul-30 21:27:09.506 [Actor Thread 7] INFO  nextflow.processor.TaskProcessor - [29/f3d07e] Cached process > DEEPTMHMM_TOPOLOGY (XP_059087837.1)
+Jul-30 21:27:09.507 [Actor Thread 34] INFO  nextflow.processor.TaskProcessor - [f5/801c73] Cached process > DEEPTMHMM_TOPOLOGY (XP_059082519.1)
+Jul-30 21:27:09.507 [Actor Thread 48] INFO  nextflow.processor.TaskProcessor - [5e/b1e311] Cached process > DEEPTMHMM_TOPOLOGY (XP_059080424.1)
+Jul-30 21:27:09.507 [Actor Thread 64] INFO  nextflow.processor.TaskProcessor - [de/91846b] Cached process > DEEPTMHMM_TOPOLOGY (XP_059079334.1)
+Jul-30 21:27:09.507 [Actor Thread 10] INFO  nextflow.processor.TaskProcessor - [d5/876cd6] Cached process > DEEPTMHMM_TOPOLOGY (XP_059085839.1)
+Jul-30 21:27:09.507 [Actor Thread 28] INFO  nextflow.processor.TaskProcessor - [f4/9f1875] Cached process > DEEPTMHMM_TOPOLOGY (XP_059084635.1)
+Jul-30 21:27:09.507 [Actor Thread 22] INFO  nextflow.processor.TaskProcessor - [eb/d7eb48] Cached process > DEEPTMHMM_TOPOLOGY (XP_059084838.1)
+Jul-30 21:27:09.508 [Actor Thread 27] INFO  nextflow.processor.TaskProcessor - [9b/f77c99] Cached process > DEEPTMHMM_TOPOLOGY (XP_059083828.1)
+Jul-30 21:27:09.508 [Actor Thread 11] INFO  nextflow.processor.TaskProcessor - [c8/b85b98] Cached process > DEEPTMHMM_TOPOLOGY (XP_059086883.1)
+Jul-30 21:27:09.508 [Actor Thread 39] INFO  nextflow.processor.TaskProcessor - [b0/ddf2e9] Cached process > DEEPTMHMM_TOPOLOGY (XP_059082828.1)
+Jul-30 21:27:09.508 [Actor Thread 18] INFO  nextflow.processor.TaskProcessor - [94/54b6b9] Cached process > DEEPTMHMM_TOPOLOGY (XP_059085068.1)
+Jul-30 21:27:09.508 [Actor Thread 3] INFO  nextflow.processor.TaskProcessor - [fc/ad5de3] Cached process > DEEPTMHMM_TOPOLOGY (XP_059088024.1)
+Jul-30 21:27:09.508 [Actor Thread 14] INFO  nextflow.processor.TaskProcessor - [62/dbe35d] Cached process > DEEPTMHMM_TOPOLOGY (XP_059085838.1)
+Jul-30 21:27:09.509 [Actor Thread 16] INFO  nextflow.processor.TaskProcessor - [ca/636c5c] Cached process > DEEPTMHMM_TOPOLOGY (XP_059085084.1)
+Jul-30 21:27:09.509 [Actor Thread 8] INFO  nextflow.processor.TaskProcessor - [c0/c04243] Cached process > DEEPTMHMM_TOPOLOGY (XP_059085028.1)
+Jul-30 21:27:09.510 [Actor Thread 35] INFO  nextflow.processor.TaskProcessor - [e5/4d6e06] Cached process > DEEPTMHMM_TOPOLOGY (XP_059084920.1)
+Jul-30 21:27:09.510 [Actor Thread 29] INFO  nextflow.processor.TaskProcessor - [8a/ec1ea5] Cached process > DEEPTMHMM_TOPOLOGY (XP_059083829.1)
+Jul-30 21:27:09.510 [Actor Thread 31] INFO  nextflow.processor.TaskProcessor - [ba/29943d] Cached process > DEEPTMHMM_TOPOLOGY (XP_059084403.1)
+Jul-30 21:27:09.511 [Actor Thread 26] INFO  nextflow.processor.TaskProcessor - [b1/1bf747] Cached process > DEEPTMHMM_TOPOLOGY (XP_059084726.1)
+Jul-30 21:27:09.511 [Actor Thread 66] INFO  nextflow.processor.TaskProcessor - [c9/bd2a54] Cached process > DEEPTMHMM_TOPOLOGY (XP_059088574.1)
+Jul-30 21:27:09.511 [Actor Thread 19] INFO  nextflow.processor.TaskProcessor - [13/0e2225] Cached process > DEEPTMHMM_TOPOLOGY (XP_059085628.1)
+Jul-30 21:27:09.511 [Actor Thread 4] INFO  nextflow.processor.TaskProcessor - [94/1c5da6] Cached process > DEEPTMHMM_TOPOLOGY (XP_059088023.1)
+Jul-30 21:27:09.511 [Actor Thread 1] INFO  nextflow.processor.TaskProcessor - [42/2edab4] Cached process > DEEPTMHMM_TOPOLOGY (XP_059088083.1)
+Jul-30 21:27:09.511 [Actor Thread 33] INFO  nextflow.processor.TaskProcessor - [56/dd975d] Cached process > DEEPTMHMM_TOPOLOGY (XP_059083446.1)
+Jul-30 21:27:09.512 [Actor Thread 2] INFO  nextflow.processor.TaskProcessor - [27/2d17c0] Cached process > DEEPTMHMM_TOPOLOGY (XP_059088081.1)
+Jul-30 21:27:09.512 [Actor Thread 5] INFO  nextflow.processor.TaskProcessor - [93/b7bfa2] Cached process > DEEPTMHMM_TOPOLOGY (XP_059087878.1)
+Jul-30 21:27:09.512 [Actor Thread 15] INFO  nextflow.processor.TaskProcessor - [6a/e5a2c1] Cached process > DEEPTMHMM_TOPOLOGY (XP_059085837.1)
+Jul-30 21:27:09.512 [Actor Thread 20] INFO  nextflow.processor.TaskProcessor - [97/e539e2] Cached process > DEEPTMHMM_TOPOLOGY (XP_059085026.1)
+Jul-30 21:27:09.513 [Actor Thread 41] INFO  nextflow.processor.TaskProcessor - [62/b229e9] Cached process > DEEPTMHMM_TOPOLOGY (XP_059089141.1)
+Jul-30 21:27:09.513 [Actor Thread 36] INFO  nextflow.processor.TaskProcessor - [79/373d35] Cached process > DEEPTMHMM_TOPOLOGY (XP_059089661.1)
+Jul-30 21:27:09.513 [Actor Thread 67] INFO  nextflow.processor.TaskProcessor - [68/dcaf8e] Cached process > DEEPTMHMM_TOPOLOGY (XP_059091028.1)
+Jul-30 21:27:09.513 [Actor Thread 12] INFO  nextflow.processor.TaskProcessor - [00/9be9ac] Cached process > DEEPTMHMM_TOPOLOGY (XP_059087836.1)
+Jul-30 21:27:09.513 [Actor Thread 24] INFO  nextflow.processor.TaskProcessor - [ee/f412f0] Cached process > DEEPTMHMM_TOPOLOGY (XP_059084837.1)
+Jul-30 21:27:09.513 [Actor Thread 9] INFO  nextflow.processor.TaskProcessor - [c8/7194ac] Cached process > DEEPTMHMM_TOPOLOGY (XP_059086902.1)
+Jul-30 21:27:09.513 [Actor Thread 38] INFO  nextflow.processor.TaskProcessor - [ba/56d683] Cached process > DEEPTMHMM_TOPOLOGY (XP_059088977.1)
+Jul-30 21:27:09.513 [Actor Thread 68] INFO  nextflow.processor.TaskProcessor - [1a/e050f9] Cached process > DEEPTMHMM_TOPOLOGY (XP_059090680.1)
+Jul-30 21:27:09.513 [Actor Thread 6] INFO  nextflow.processor.TaskProcessor - [f6/2915eb] Cached process > DEEPTMHMM_TOPOLOGY (XP_059087838.1)
+Jul-30 21:27:09.513 [Actor Thread 60] INFO  nextflow.processor.TaskProcessor - [25/e26d17] Cached process > DEEPTMHMM_TOPOLOGY (XP_059091071.1)
+Jul-30 21:27:09.513 [Actor Thread 25] INFO  nextflow.processor.TaskProcessor - [58/85178d] Cached process > DEEPTMHMM_TOPOLOGY (XP_059088886.1)
+Jul-30 21:27:09.514 [Actor Thread 46] INFO  nextflow.processor.TaskProcessor - [8f/cd075b] Cached process > DEEPTMHMM_TOPOLOGY (XP_059091446.1)
+Jul-30 21:27:09.514 [Actor Thread 30] INFO  nextflow.processor.TaskProcessor - [8a/f05902] Cached process > DEEPTMHMM_TOPOLOGY (XP_059092450.1)
+Jul-30 21:27:09.514 [Actor Thread 59] INFO  nextflow.processor.TaskProcessor - [00/90ab7b] Cached process > DEEPTMHMM_TOPOLOGY (XP_059093916.1)
+Jul-30 21:27:09.515 [Actor Thread 21] INFO  nextflow.processor.TaskProcessor - [a2/5337e9] Cached process > DEEPTMHMM_TOPOLOGY (XP_059092477.1)
+Jul-30 21:27:09.516 [Actor Thread 52] INFO  nextflow.processor.TaskProcessor - [28/9a5aae] Cached process > DEEPTMHMM_TOPOLOGY (XP_059093676.1)
+Jul-30 21:27:09.516 [Actor Thread 62] INFO  nextflow.processor.TaskProcessor - [1f/01ba00] Cached process > DEEPTMHMM_TOPOLOGY (XP_059095118.1)
+Jul-30 21:27:09.516 [Actor Thread 16] INFO  nextflow.processor.TaskProcessor - [54/e1af3f] Cached process > DEEPTMHMM_TOPOLOGY (XP_059095158.1)
+Jul-30 21:27:09.516 [Actor Thread 48] INFO  nextflow.processor.TaskProcessor - [9e/be9bdf] Cached process > DEEPTMHMM_TOPOLOGY (XP_059093173.1)
+Jul-30 21:27:09.516 [Actor Thread 37] INFO  nextflow.processor.TaskProcessor - [57/69957f] Cached process > DEEPTMHMM_TOPOLOGY (XP_059094370.1)
+Jul-30 21:27:09.516 [Actor Thread 61] INFO  nextflow.processor.TaskProcessor - [05/458958] Cached process > DEEPTMHMM_TOPOLOGY (XP_059095167.1)
+Jul-30 21:27:09.518 [Actor Thread 50] INFO  nextflow.processor.TaskProcessor - [71/b8a52f] Cached process > DEEPTMHMM_TOPOLOGY (XP_059095569.1)
+Jul-30 21:27:09.518 [Actor Thread 45] INFO  nextflow.processor.TaskProcessor - [09/909f59] Cached process > DEEPTMHMM_TOPOLOGY (XP_059095174.1)
+Jul-30 21:27:09.518 [Actor Thread 69] INFO  nextflow.processor.TaskProcessor - [11/3e2ef7] Cached process > DEEPTMHMM_TOPOLOGY (XP_059095430.1)
+Jul-30 21:27:09.518 [Actor Thread 55] INFO  nextflow.processor.TaskProcessor - [02/96e345] Cached process > DEEPTMHMM_TOPOLOGY (XP_059095737.1)
+Jul-30 21:27:09.519 [Actor Thread 56] INFO  nextflow.processor.TaskProcessor - [8d/351ad8] Cached process > DEEPTMHMM_TOPOLOGY (XP_059095533.1)
+Jul-30 21:27:09.519 [Actor Thread 40] INFO  nextflow.processor.TaskProcessor - [a4/77715b] Cached process > DEEPTMHMM_TOPOLOGY (XP_059095945.1)
+Jul-30 21:27:09.519 [Actor Thread 53] INFO  nextflow.processor.TaskProcessor - [fe/bf9f74] Cached process > DEEPTMHMM_TOPOLOGY (XP_059095760.1)
+Jul-30 21:27:09.519 [Actor Thread 70] INFO  nextflow.processor.TaskProcessor - [b4/2b233a] Cached process > DEEPTMHMM_TOPOLOGY (XP_059095193.1)
+Jul-30 21:27:09.519 [Actor Thread 67] INFO  nextflow.processor.TaskProcessor - [55/df2d3c] Cached process > DEEPTMHMM_TOPOLOGY (XP_059096370.1)
+Jul-30 21:27:09.519 [Actor Thread 43] INFO  nextflow.processor.TaskProcessor - [c1/7c1041] Cached process > DEEPTMHMM_TOPOLOGY (XP_059095839.1)
+Jul-30 21:27:09.519 [Actor Thread 32] INFO  nextflow.processor.TaskProcessor - [8b/e5a704] Cached process > DEEPTMHMM_TOPOLOGY (XP_059096106.1)
+Jul-30 21:27:09.519 [Actor Thread 49] INFO  nextflow.processor.TaskProcessor - [ba/7d0a7a] Cached process > DEEPTMHMM_TOPOLOGY (XP_059095937.1)
+Jul-30 21:27:09.520 [Actor Thread 12] INFO  nextflow.processor.TaskProcessor - [ad/89d868] Cached process > DEEPTMHMM_TOPOLOGY (XP_059096256.1)
+Jul-30 21:27:09.520 [Actor Thread 36] INFO  nextflow.processor.TaskProcessor - [3b/c7cfb8] Cached process > DEEPTMHMM_TOPOLOGY (XP_059096371.1)
+Jul-30 21:27:09.521 [Actor Thread 5] INFO  nextflow.processor.TaskProcessor - [52/61a83a] Cached process > DEEPTMHMM_TOPOLOGY (XP_059096591.1)
+Jul-30 21:27:09.521 [Actor Thread 15] INFO  nextflow.processor.TaskProcessor - [22/52e017] Cached process > DEEPTMHMM_TOPOLOGY (XP_059096479.1)
+Jul-30 21:27:09.521 [Actor Thread 41] INFO  nextflow.processor.TaskProcessor - [c4/03ed29] Cached process > DEEPTMHMM_TOPOLOGY (XP_059096372.1)
+Jul-30 21:27:09.521 [Actor Thread 44] INFO  nextflow.processor.TaskProcessor - [2b/6d7b9c] Cached process > DEEPTMHMM_TOPOLOGY (XP_059096463.1)
+Jul-30 21:27:09.522 [Actor Thread 33] INFO  nextflow.processor.TaskProcessor - [3d/c23880] Cached process > DEEPTMHMM_TOPOLOGY (XP_059096594.1)
+Jul-30 21:27:09.522 [Actor Thread 2] INFO  nextflow.processor.TaskProcessor - [55/2e684c] Cached process > DEEPTMHMM_TOPOLOGY (XP_059096592.1)
+Jul-30 21:27:09.522 [Actor Thread 1] INFO  nextflow.processor.TaskProcessor - [ce/691d12] Cached process > DEEPTMHMM_TOPOLOGY (XP_059096595.1)
+Jul-30 21:27:09.522 [Actor Thread 4] INFO  nextflow.processor.TaskProcessor - [ed/8d934d] Cached process > DEEPTMHMM_TOPOLOGY (XP_059096679.1)
+Jul-30 21:27:09.522 [Actor Thread 47] INFO  nextflow.processor.TaskProcessor - [a5/4f6254] Cached process > DEEPTMHMM_TOPOLOGY (XP_059096791.1)
+Jul-30 21:27:09.523 [Actor Thread 66] INFO  nextflow.processor.TaskProcessor - [29/30b77e] Cached process > DEEPTMHMM_TOPOLOGY (XP_059097263.1)
+Jul-30 21:27:09.524 [Actor Thread 51] INFO  nextflow.processor.TaskProcessor - [34/43816b] Cached process > DEEPTMHMM_TOPOLOGY (XP_059097426.1)
+Jul-30 21:27:09.524 [Actor Thread 35] INFO  nextflow.processor.TaskProcessor - [79/cc0f72] Cached process > DEEPTMHMM_TOPOLOGY (XP_059097430.1)
+Jul-30 21:27:09.524 [Actor Thread 19] INFO  nextflow.processor.TaskProcessor - [f9/ebf69b] Cached process > DEEPTMHMM_TOPOLOGY (XP_059097354.1)
+Jul-30 21:27:09.525 [Actor Thread 31] INFO  nextflow.processor.TaskProcessor - [79/ec1346] Cached process > DEEPTMHMM_TOPOLOGY (XP_059097411.1)
+Jul-30 21:27:09.525 [Actor Thread 8] INFO  nextflow.processor.TaskProcessor - [2d/ef8ecd] Cached process > DEEPTMHMM_TOPOLOGY (XP_059097643.1)
+Jul-30 21:27:09.526 [Actor Thread 11] INFO  nextflow.processor.TaskProcessor - [c6/c8e6a2] Cached process > DEEPTMHMM_TOPOLOGY (XP_059098031.1)
+Jul-30 21:27:09.526 [Actor Thread 27] INFO  nextflow.processor.TaskProcessor - [0a/5ac82f] Cached process > DEEPTMHMM_TOPOLOGY (XP_059098080.1)
+Jul-30 21:27:09.526 [Actor Thread 14] INFO  nextflow.processor.TaskProcessor - [3e/2706e4] Cached process > DEEPTMHMM_TOPOLOGY (XP_059097644.1)
+Jul-30 21:27:09.526 [Actor Thread 26] INFO  nextflow.processor.TaskProcessor - [93/6004ed] Cached process > DEEPTMHMM_TOPOLOGY (XP_059097759.1)
+Jul-30 21:27:09.526 [Actor Thread 39] INFO  nextflow.processor.TaskProcessor - [77/bfe849] Cached process > DEEPTMHMM_TOPOLOGY (XP_059098032.1)
+Jul-30 21:27:09.527 [Actor Thread 10] INFO  nextflow.processor.TaskProcessor - [f3/a79c5e] Cached process > DEEPTMHMM_TOPOLOGY (XP_059098639.1)
+Jul-30 21:27:09.527 [Actor Thread 18] INFO  nextflow.processor.TaskProcessor - [b3/302c42] Cached process > DEEPTMHMM_TOPOLOGY (XP_059098288.1)
+Jul-30 21:27:09.527 [Actor Thread 3] INFO  nextflow.processor.TaskProcessor - [62/e00546] Cached process > DEEPTMHMM_TOPOLOGY (XP_059099180.1)
+Jul-30 21:27:09.528 [Actor Thread 34] INFO  nextflow.processor.TaskProcessor - [b8/341071] Cached process > DEEPTMHMM_TOPOLOGY (XP_059099441.1)
+Jul-30 21:27:09.528 [Actor Thread 1] INFO  nextflow.processor.TaskProcessor - [f2/0ce2c4] Cached process > DEEPTMHMM_TOPOLOGY (XP_059099218.1)
+Jul-30 21:27:09.531 [Actor Thread 28] INFO  nextflow.processor.TaskProcessor - [a4/02d710] Cached process > DEEPTMHMM_TOPOLOGY (XP_059099240.1)
+Jul-30 21:27:09.531 [Actor Thread 20] INFO  nextflow.processor.TaskProcessor - [a7/022568] Cached process > DEEPTMHMM_TOPOLOGY (XP_059097828.1)
+Jul-30 21:27:09.573 [Actor Thread 27] INFO  nextflow.processor.TaskProcessor - [9b/bd5f3a] Cached process > COLLECT_DEEPTMHMM_SUMMARY (deeptmhmm_summary)
+Jul-30 21:27:09.588 [Actor Thread 26] INFO  nextflow.processor.TaskProcessor - [62/6564a8] Cached process > PARSE_DEEPTMHMM_FEATURES (parse_deeptmhmm)
+Jul-30 21:27:09.596 [Actor Thread 27] INFO  nextflow.processor.TaskProcessor - [af/c2cd00] Cached process > HARDCODED_CLASSIFIER (hardcoded_classifier)
+Jul-30 21:27:09.605 [Actor Thread 27] INFO  nextflow.processor.TaskProcessor - [05/b75550] Cached process > SEED_DECISIONS (seed_decisions)
+Jul-30 21:27:09.615 [Actor Thread 10] INFO  nextflow.processor.TaskProcessor - [2e/77f303] Cached process > PREPARE_MANUAL_REVIEW (prepare_manual_review)
+Jul-30 21:27:09.620 [Actor Thread 27] INFO  nextflow.processor.TaskProcessor - [df/6b3712] Cached process > GATE_REVIEW_TSV (gate_review_tsv)
+Jul-30 21:27:09.653 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-30 21:27:09.655 [Task submitter] INFO  nextflow.Session - [fc/18085c] Submitted process > APPLY_MANUAL_DECISIONS (apply_manual_decisions)
+Jul-30 21:27:09.694 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 134; name: APPLY_MANUAL_DECISIONS (apply_manual_decisions); status: COMPLETED; exit: 0; error: -; workDir: /home/primeline/Data/IRnotator/work/fc/18085c30acb76eb14831d9391a994b]
+Jul-30 21:27:09.695 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=192; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jul-30 21:27:09.710 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-30 21:27:09.711 [Task submitter] INFO  nextflow.Session - [0b/615413] Submitted process > EXTRACT_PASSED_FASTA (extract_passed_fasta)
+Jul-30 21:27:09.746 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 135; name: EXTRACT_PASSED_FASTA (extract_passed_fasta); status: COMPLETED; exit: 0; error: -; workDir: /home/primeline/Data/IRnotator/work/0b/615413476fe21ae3784b08a68fea3f]
+Jul-30 21:27:09.748 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jul-30 21:27:09.846 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jul-30 21:27:09.846 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jul-30 21:27:09.850 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Jul-30 21:27:09.851 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+Jul-30 21:27:09.860 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=2; failedCount=0; ignoredCount=0; cachedCount=133; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=192ms; failedDuration=0ms; cachedDuration=5h 8m 3s;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=48; peakMemory=200 GB; ]
+Jul-30 21:27:09.958 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jul-30 21:27:09.978 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Jul-30 21:27:09.979 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

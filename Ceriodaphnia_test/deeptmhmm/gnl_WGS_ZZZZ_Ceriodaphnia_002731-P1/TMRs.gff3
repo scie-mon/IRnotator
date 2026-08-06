@@ -1,0 +1,10 @@
+##gff-version 3
+# gnl|WGS:ZZZZ|Ceriodaphnia_002731-P1 Length: 462
+# gnl|WGS:ZZZZ|Ceriodaphnia_002731-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_002731-P1	outside	1	137				
+gnl|WGS:ZZZZ|Ceriodaphnia_002731-P1	TMhelix	138	158				
+gnl|WGS:ZZZZ|Ceriodaphnia_002731-P1	inside	159	227				
+gnl|WGS:ZZZZ|Ceriodaphnia_002731-P1	TMhelix	228	248				
+gnl|WGS:ZZZZ|Ceriodaphnia_002731-P1	outside	249	422				
+gnl|WGS:ZZZZ|Ceriodaphnia_002731-P1	TMhelix	423	443				
+gnl|WGS:ZZZZ|Ceriodaphnia_002731-P1	inside	444	462				

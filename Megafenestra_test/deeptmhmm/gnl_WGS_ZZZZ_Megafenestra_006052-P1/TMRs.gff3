@@ -1,0 +1,11 @@
+##gff-version 3
+# gnl|WGS:ZZZZ|Megafenestra_006052-P1 Length: 921
+# gnl|WGS:ZZZZ|Megafenestra_006052-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Megafenestra_006052-P1	signal	1	30				
+gnl|WGS:ZZZZ|Megafenestra_006052-P1	outside	31	585				
+gnl|WGS:ZZZZ|Megafenestra_006052-P1	TMhelix	586	604				
+gnl|WGS:ZZZZ|Megafenestra_006052-P1	inside	605	672				
+gnl|WGS:ZZZZ|Megafenestra_006052-P1	TMhelix	673	693				
+gnl|WGS:ZZZZ|Megafenestra_006052-P1	outside	694	858				
+gnl|WGS:ZZZZ|Megafenestra_006052-P1	TMhelix	859	879				
+gnl|WGS:ZZZZ|Megafenestra_006052-P1	inside	880	921				

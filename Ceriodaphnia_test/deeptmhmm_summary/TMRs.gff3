@@ -1,0 +1,1518 @@
+##gff-version 3
+# gnl|WGS:ZZZZ|Ceriodaphnia_002364-P1 Length: 412
+# gnl|WGS:ZZZZ|Ceriodaphnia_002364-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_002364-P1	outside	1	119				
+gnl|WGS:ZZZZ|Ceriodaphnia_002364-P1	TMhelix	120	140				
+gnl|WGS:ZZZZ|Ceriodaphnia_002364-P1	inside	141	185				
+gnl|WGS:ZZZZ|Ceriodaphnia_002364-P1	TMhelix	186	206				
+gnl|WGS:ZZZZ|Ceriodaphnia_002364-P1	outside	207	384				
+gnl|WGS:ZZZZ|Ceriodaphnia_002364-P1	TMhelix	385	405				
+gnl|WGS:ZZZZ|Ceriodaphnia_002364-P1	inside	406	412				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_000240-P1 Length: 481
+# gnl|WGS:ZZZZ|Ceriodaphnia_000240-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_000240-P1	signal	1	27				
+gnl|WGS:ZZZZ|Ceriodaphnia_000240-P1	outside	28	153				
+gnl|WGS:ZZZZ|Ceriodaphnia_000240-P1	TMhelix	154	174				
+gnl|WGS:ZZZZ|Ceriodaphnia_000240-P1	inside	175	226				
+gnl|WGS:ZZZZ|Ceriodaphnia_000240-P1	TMhelix	227	247				
+gnl|WGS:ZZZZ|Ceriodaphnia_000240-P1	outside	248	431				
+gnl|WGS:ZZZZ|Ceriodaphnia_000240-P1	TMhelix	432	452				
+gnl|WGS:ZZZZ|Ceriodaphnia_000240-P1	inside	453	481				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_002419-P1 Length: 525
+# gnl|WGS:ZZZZ|Ceriodaphnia_002419-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_002419-P1	outside	1	223				
+gnl|WGS:ZZZZ|Ceriodaphnia_002419-P1	TMhelix	224	244				
+gnl|WGS:ZZZZ|Ceriodaphnia_002419-P1	inside	245	296				
+gnl|WGS:ZZZZ|Ceriodaphnia_002419-P1	TMhelix	297	318				
+gnl|WGS:ZZZZ|Ceriodaphnia_002419-P1	outside	319	491				
+gnl|WGS:ZZZZ|Ceriodaphnia_002419-P1	TMhelix	492	514				
+gnl|WGS:ZZZZ|Ceriodaphnia_002419-P1	inside	515	525				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_003491-P1 Length: 473
+# gnl|WGS:ZZZZ|Ceriodaphnia_003491-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_003491-P1	signal	1	31				
+gnl|WGS:ZZZZ|Ceriodaphnia_003491-P1	outside	32	160				
+gnl|WGS:ZZZZ|Ceriodaphnia_003491-P1	TMhelix	161	181				
+gnl|WGS:ZZZZ|Ceriodaphnia_003491-P1	inside	182	235				
+gnl|WGS:ZZZZ|Ceriodaphnia_003491-P1	TMhelix	236	252				
+gnl|WGS:ZZZZ|Ceriodaphnia_003491-P1	outside	253	433				
+gnl|WGS:ZZZZ|Ceriodaphnia_003491-P1	TMhelix	434	455				
+gnl|WGS:ZZZZ|Ceriodaphnia_003491-P1	inside	456	473				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_004051-P1 Length: 463
+# gnl|WGS:ZZZZ|Ceriodaphnia_004051-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_004051-P1	signal	1	24				
+gnl|WGS:ZZZZ|Ceriodaphnia_004051-P1	outside	25	160				
+gnl|WGS:ZZZZ|Ceriodaphnia_004051-P1	TMhelix	161	181				
+gnl|WGS:ZZZZ|Ceriodaphnia_004051-P1	inside	182	225				
+gnl|WGS:ZZZZ|Ceriodaphnia_004051-P1	TMhelix	226	247				
+gnl|WGS:ZZZZ|Ceriodaphnia_004051-P1	outside	248	425				
+gnl|WGS:ZZZZ|Ceriodaphnia_004051-P1	TMhelix	426	446				
+gnl|WGS:ZZZZ|Ceriodaphnia_004051-P1	inside	447	463				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_000816-P1 Length: 409
+# gnl|WGS:ZZZZ|Ceriodaphnia_000816-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_000816-P1	outside	1	124				
+gnl|WGS:ZZZZ|Ceriodaphnia_000816-P1	TMhelix	125	143				
+gnl|WGS:ZZZZ|Ceriodaphnia_000816-P1	inside	144	181				
+gnl|WGS:ZZZZ|Ceriodaphnia_000816-P1	TMhelix	182	194				
+gnl|WGS:ZZZZ|Ceriodaphnia_000816-P1	outside	195	380				
+gnl|WGS:ZZZZ|Ceriodaphnia_000816-P1	TMhelix	381	401				
+gnl|WGS:ZZZZ|Ceriodaphnia_000816-P1	inside	402	409				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_000251-P1 Length: 478
+# gnl|WGS:ZZZZ|Ceriodaphnia_000251-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_000251-P1	signal	1	21				
+gnl|WGS:ZZZZ|Ceriodaphnia_000251-P1	outside	22	149				
+gnl|WGS:ZZZZ|Ceriodaphnia_000251-P1	TMhelix	150	170				
+gnl|WGS:ZZZZ|Ceriodaphnia_000251-P1	inside	171	237				
+gnl|WGS:ZZZZ|Ceriodaphnia_000251-P1	TMhelix	238	259				
+gnl|WGS:ZZZZ|Ceriodaphnia_000251-P1	outside	260	443				
+gnl|WGS:ZZZZ|Ceriodaphnia_000251-P1	TMhelix	444	464				
+gnl|WGS:ZZZZ|Ceriodaphnia_000251-P1	inside	465	478				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_002703-P1 Length: 420
+# gnl|WGS:ZZZZ|Ceriodaphnia_002703-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_002703-P1	outside	1	93				
+gnl|WGS:ZZZZ|Ceriodaphnia_002703-P1	TMhelix	94	112				
+gnl|WGS:ZZZZ|Ceriodaphnia_002703-P1	inside	113	152				
+gnl|WGS:ZZZZ|Ceriodaphnia_002703-P1	TMhelix	153	170				
+gnl|WGS:ZZZZ|Ceriodaphnia_002703-P1	outside	171	351				
+gnl|WGS:ZZZZ|Ceriodaphnia_002703-P1	TMhelix	352	372				
+gnl|WGS:ZZZZ|Ceriodaphnia_002703-P1	inside	373	420				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_002408-P1 Length: 747
+# gnl|WGS:ZZZZ|Ceriodaphnia_002408-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_002408-P1	signal	1	14				
+gnl|WGS:ZZZZ|Ceriodaphnia_002408-P1	outside	15	342				
+gnl|WGS:ZZZZ|Ceriodaphnia_002408-P1	TMhelix	343	365				
+gnl|WGS:ZZZZ|Ceriodaphnia_002408-P1	inside	366	413				
+gnl|WGS:ZZZZ|Ceriodaphnia_002408-P1	TMhelix	414	435				
+gnl|WGS:ZZZZ|Ceriodaphnia_002408-P1	outside	436	606				
+gnl|WGS:ZZZZ|Ceriodaphnia_002408-P1	TMhelix	607	632				
+gnl|WGS:ZZZZ|Ceriodaphnia_002408-P1	inside	633	747				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_001836-P1 Length: 621
+# gnl|WGS:ZZZZ|Ceriodaphnia_001836-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_001836-P1	signal	1	23				
+gnl|WGS:ZZZZ|Ceriodaphnia_001836-P1	outside	24	333				
+gnl|WGS:ZZZZ|Ceriodaphnia_001836-P1	TMhelix	334	352				
+gnl|WGS:ZZZZ|Ceriodaphnia_001836-P1	inside	353	395				
+gnl|WGS:ZZZZ|Ceriodaphnia_001836-P1	TMhelix	396	411				
+gnl|WGS:ZZZZ|Ceriodaphnia_001836-P1	outside	412	580				
+gnl|WGS:ZZZZ|Ceriodaphnia_001836-P1	TMhelix	581	601				
+gnl|WGS:ZZZZ|Ceriodaphnia_001836-P1	inside	602	621				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_001844-P1 Length: 437
+# gnl|WGS:ZZZZ|Ceriodaphnia_001844-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_001844-P1	outside	1	126				
+gnl|WGS:ZZZZ|Ceriodaphnia_001844-P1	TMhelix	127	147				
+gnl|WGS:ZZZZ|Ceriodaphnia_001844-P1	inside	148	194				
+gnl|WGS:ZZZZ|Ceriodaphnia_001844-P1	TMhelix	195	216				
+gnl|WGS:ZZZZ|Ceriodaphnia_001844-P1	outside	217	395				
+gnl|WGS:ZZZZ|Ceriodaphnia_001844-P1	TMhelix	396	416				
+gnl|WGS:ZZZZ|Ceriodaphnia_001844-P1	inside	417	437				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_004668-P1 Length: 450
+# gnl|WGS:ZZZZ|Ceriodaphnia_004668-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_004668-P1	signal	1	10				
+gnl|WGS:ZZZZ|Ceriodaphnia_004668-P1	outside	11	145				
+gnl|WGS:ZZZZ|Ceriodaphnia_004668-P1	TMhelix	146	166				
+gnl|WGS:ZZZZ|Ceriodaphnia_004668-P1	inside	167	221				
+gnl|WGS:ZZZZ|Ceriodaphnia_004668-P1	TMhelix	222	242				
+gnl|WGS:ZZZZ|Ceriodaphnia_004668-P1	outside	243	422				
+gnl|WGS:ZZZZ|Ceriodaphnia_004668-P1	TMhelix	423	443				
+gnl|WGS:ZZZZ|Ceriodaphnia_004668-P1	inside	444	450				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_003503-P1 Length: 452
+# gnl|WGS:ZZZZ|Ceriodaphnia_003503-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_003503-P1	signal	1	19				
+gnl|WGS:ZZZZ|Ceriodaphnia_003503-P1	outside	20	145				
+gnl|WGS:ZZZZ|Ceriodaphnia_003503-P1	TMhelix	146	164				
+gnl|WGS:ZZZZ|Ceriodaphnia_003503-P1	inside	165	209				
+gnl|WGS:ZZZZ|Ceriodaphnia_003503-P1	TMhelix	210	231				
+gnl|WGS:ZZZZ|Ceriodaphnia_003503-P1	outside	232	410				
+gnl|WGS:ZZZZ|Ceriodaphnia_003503-P1	TMhelix	411	431				
+gnl|WGS:ZZZZ|Ceriodaphnia_003503-P1	inside	432	452				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_004043-P1 Length: 448
+# gnl|WGS:ZZZZ|Ceriodaphnia_004043-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_004043-P1	signal	1	18				
+gnl|WGS:ZZZZ|Ceriodaphnia_004043-P1	outside	19	142				
+gnl|WGS:ZZZZ|Ceriodaphnia_004043-P1	TMhelix	143	163				
+gnl|WGS:ZZZZ|Ceriodaphnia_004043-P1	inside	164	214				
+gnl|WGS:ZZZZ|Ceriodaphnia_004043-P1	TMhelix	215	235				
+gnl|WGS:ZZZZ|Ceriodaphnia_004043-P1	outside	236	419				
+gnl|WGS:ZZZZ|Ceriodaphnia_004043-P1	TMhelix	420	440				
+gnl|WGS:ZZZZ|Ceriodaphnia_004043-P1	inside	441	448				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_004052-P1 Length: 452
+# gnl|WGS:ZZZZ|Ceriodaphnia_004052-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_004052-P1	signal	1	19				
+gnl|WGS:ZZZZ|Ceriodaphnia_004052-P1	outside	20	158				
+gnl|WGS:ZZZZ|Ceriodaphnia_004052-P1	TMhelix	159	179				
+gnl|WGS:ZZZZ|Ceriodaphnia_004052-P1	inside	180	223				
+gnl|WGS:ZZZZ|Ceriodaphnia_004052-P1	TMhelix	224	245				
+gnl|WGS:ZZZZ|Ceriodaphnia_004052-P1	outside	246	423				
+gnl|WGS:ZZZZ|Ceriodaphnia_004052-P1	TMhelix	424	444				
+gnl|WGS:ZZZZ|Ceriodaphnia_004052-P1	inside	445	452				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_002719-P1 Length: 454
+# gnl|WGS:ZZZZ|Ceriodaphnia_002719-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_002719-P1	signal	1	24				
+gnl|WGS:ZZZZ|Ceriodaphnia_002719-P1	outside	25	156				
+gnl|WGS:ZZZZ|Ceriodaphnia_002719-P1	TMhelix	157	177				
+gnl|WGS:ZZZZ|Ceriodaphnia_002719-P1	inside	178	230				
+gnl|WGS:ZZZZ|Ceriodaphnia_002719-P1	TMhelix	231	251				
+gnl|WGS:ZZZZ|Ceriodaphnia_002719-P1	outside	252	428				
+gnl|WGS:ZZZZ|Ceriodaphnia_002719-P1	TMhelix	429	449				
+gnl|WGS:ZZZZ|Ceriodaphnia_002719-P1	inside	450	454				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_002514-P1 Length: 428
+# gnl|WGS:ZZZZ|Ceriodaphnia_002514-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_002514-P1	outside	1	139				
+gnl|WGS:ZZZZ|Ceriodaphnia_002514-P1	TMhelix	140	160				
+gnl|WGS:ZZZZ|Ceriodaphnia_002514-P1	inside	161	203				
+gnl|WGS:ZZZZ|Ceriodaphnia_002514-P1	TMhelix	204	225				
+gnl|WGS:ZZZZ|Ceriodaphnia_002514-P1	outside	226	402				
+gnl|WGS:ZZZZ|Ceriodaphnia_002514-P1	TMhelix	403	423				
+gnl|WGS:ZZZZ|Ceriodaphnia_002514-P1	inside	424	428				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_000229-P1 Length: 471
+# gnl|WGS:ZZZZ|Ceriodaphnia_000229-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_000229-P1	signal	1	22				
+gnl|WGS:ZZZZ|Ceriodaphnia_000229-P1	outside	23	149				
+gnl|WGS:ZZZZ|Ceriodaphnia_000229-P1	TMhelix	150	170				
+gnl|WGS:ZZZZ|Ceriodaphnia_000229-P1	inside	171	227				
+gnl|WGS:ZZZZ|Ceriodaphnia_000229-P1	TMhelix	228	249				
+gnl|WGS:ZZZZ|Ceriodaphnia_000229-P1	outside	250	433				
+gnl|WGS:ZZZZ|Ceriodaphnia_000229-P1	TMhelix	434	454				
+gnl|WGS:ZZZZ|Ceriodaphnia_000229-P1	inside	455	471				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_004476-P1 Length: 442
+# gnl|WGS:ZZZZ|Ceriodaphnia_004476-P1 Number of predicted TMRs: 4
+gnl|WGS:ZZZZ|Ceriodaphnia_004476-P1	inside	1	36				
+gnl|WGS:ZZZZ|Ceriodaphnia_004476-P1	TMhelix	37	57				
+gnl|WGS:ZZZZ|Ceriodaphnia_004476-P1	outside	58	179				
+gnl|WGS:ZZZZ|Ceriodaphnia_004476-P1	TMhelix	180	197				
+gnl|WGS:ZZZZ|Ceriodaphnia_004476-P1	inside	198	335				
+gnl|WGS:ZZZZ|Ceriodaphnia_004476-P1	TMhelix	336	354				
+gnl|WGS:ZZZZ|Ceriodaphnia_004476-P1	outside	355	395				
+gnl|WGS:ZZZZ|Ceriodaphnia_004476-P1	TMhelix	396	416				
+gnl|WGS:ZZZZ|Ceriodaphnia_004476-P1	inside	417	442				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_002731-P1 Length: 462
+# gnl|WGS:ZZZZ|Ceriodaphnia_002731-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_002731-P1	outside	1	137				
+gnl|WGS:ZZZZ|Ceriodaphnia_002731-P1	TMhelix	138	158				
+gnl|WGS:ZZZZ|Ceriodaphnia_002731-P1	inside	159	227				
+gnl|WGS:ZZZZ|Ceriodaphnia_002731-P1	TMhelix	228	248				
+gnl|WGS:ZZZZ|Ceriodaphnia_002731-P1	outside	249	422				
+gnl|WGS:ZZZZ|Ceriodaphnia_002731-P1	TMhelix	423	443				
+gnl|WGS:ZZZZ|Ceriodaphnia_002731-P1	inside	444	462				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_004655-P1 Length: 478
+# gnl|WGS:ZZZZ|Ceriodaphnia_004655-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_004655-P1	signal	1	24				
+gnl|WGS:ZZZZ|Ceriodaphnia_004655-P1	outside	25	164				
+gnl|WGS:ZZZZ|Ceriodaphnia_004655-P1	TMhelix	165	185				
+gnl|WGS:ZZZZ|Ceriodaphnia_004655-P1	inside	186	242				
+gnl|WGS:ZZZZ|Ceriodaphnia_004655-P1	TMhelix	243	264				
+gnl|WGS:ZZZZ|Ceriodaphnia_004655-P1	outside	265	438				
+gnl|WGS:ZZZZ|Ceriodaphnia_004655-P1	TMhelix	439	462				
+gnl|WGS:ZZZZ|Ceriodaphnia_004655-P1	inside	463	478				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_000100-P1 Length: 460
+# gnl|WGS:ZZZZ|Ceriodaphnia_000100-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_000100-P1	signal	1	34				
+gnl|WGS:ZZZZ|Ceriodaphnia_000100-P1	outside	35	163				
+gnl|WGS:ZZZZ|Ceriodaphnia_000100-P1	TMhelix	164	184				
+gnl|WGS:ZZZZ|Ceriodaphnia_000100-P1	inside	185	234				
+gnl|WGS:ZZZZ|Ceriodaphnia_000100-P1	TMhelix	235	248				
+gnl|WGS:ZZZZ|Ceriodaphnia_000100-P1	outside	249	427				
+gnl|WGS:ZZZZ|Ceriodaphnia_000100-P1	TMhelix	428	448				
+gnl|WGS:ZZZZ|Ceriodaphnia_000100-P1	inside	449	460				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_004918-P1 Length: 499
+# gnl|WGS:ZZZZ|Ceriodaphnia_004918-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_004918-P1	signal	1	33				
+gnl|WGS:ZZZZ|Ceriodaphnia_004918-P1	outside	34	162				
+gnl|WGS:ZZZZ|Ceriodaphnia_004918-P1	TMhelix	163	181				
+gnl|WGS:ZZZZ|Ceriodaphnia_004918-P1	inside	182	223				
+gnl|WGS:ZZZZ|Ceriodaphnia_004918-P1	TMhelix	224	244				
+gnl|WGS:ZZZZ|Ceriodaphnia_004918-P1	outside	245	426				
+gnl|WGS:ZZZZ|Ceriodaphnia_004918-P1	TMhelix	427	447				
+gnl|WGS:ZZZZ|Ceriodaphnia_004918-P1	inside	448	499				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_000901-P1 Length: 485
+# gnl|WGS:ZZZZ|Ceriodaphnia_000901-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_000901-P1	signal	1	17				
+gnl|WGS:ZZZZ|Ceriodaphnia_000901-P1	outside	18	145				
+gnl|WGS:ZZZZ|Ceriodaphnia_000901-P1	TMhelix	146	166				
+gnl|WGS:ZZZZ|Ceriodaphnia_000901-P1	inside	167	248				
+gnl|WGS:ZZZZ|Ceriodaphnia_000901-P1	TMhelix	249	269				
+gnl|WGS:ZZZZ|Ceriodaphnia_000901-P1	outside	270	450				
+gnl|WGS:ZZZZ|Ceriodaphnia_000901-P1	TMhelix	451	476				
+gnl|WGS:ZZZZ|Ceriodaphnia_000901-P1	inside	477	485				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_002696-P1 Length: 438
+# gnl|WGS:ZZZZ|Ceriodaphnia_002696-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_002696-P1	signal	1	14				
+gnl|WGS:ZZZZ|Ceriodaphnia_002696-P1	outside	15	147				
+gnl|WGS:ZZZZ|Ceriodaphnia_002696-P1	TMhelix	148	169				
+gnl|WGS:ZZZZ|Ceriodaphnia_002696-P1	inside	170	209				
+gnl|WGS:ZZZZ|Ceriodaphnia_002696-P1	TMhelix	210	230				
+gnl|WGS:ZZZZ|Ceriodaphnia_002696-P1	outside	231	404				
+gnl|WGS:ZZZZ|Ceriodaphnia_002696-P1	TMhelix	405	425				
+gnl|WGS:ZZZZ|Ceriodaphnia_002696-P1	inside	426	438				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_001860-P1 Length: 493
+# gnl|WGS:ZZZZ|Ceriodaphnia_001860-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_001860-P1	outside	1	182				
+gnl|WGS:ZZZZ|Ceriodaphnia_001860-P1	TMhelix	183	203				
+gnl|WGS:ZZZZ|Ceriodaphnia_001860-P1	inside	204	246				
+gnl|WGS:ZZZZ|Ceriodaphnia_001860-P1	TMhelix	247	260				
+gnl|WGS:ZZZZ|Ceriodaphnia_001860-P1	outside	261	443				
+gnl|WGS:ZZZZ|Ceriodaphnia_001860-P1	TMhelix	444	464				
+gnl|WGS:ZZZZ|Ceriodaphnia_001860-P1	inside	465	493				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_004054-P1 Length: 473
+# gnl|WGS:ZZZZ|Ceriodaphnia_004054-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_004054-P1	signal	1	18				
+gnl|WGS:ZZZZ|Ceriodaphnia_004054-P1	outside	19	159				
+gnl|WGS:ZZZZ|Ceriodaphnia_004054-P1	TMhelix	160	180				
+gnl|WGS:ZZZZ|Ceriodaphnia_004054-P1	inside	181	222				
+gnl|WGS:ZZZZ|Ceriodaphnia_004054-P1	TMhelix	223	236				
+gnl|WGS:ZZZZ|Ceriodaphnia_004054-P1	outside	237	417				
+gnl|WGS:ZZZZ|Ceriodaphnia_004054-P1	TMhelix	418	438				
+gnl|WGS:ZZZZ|Ceriodaphnia_004054-P1	inside	439	473				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_004916-P1 Length: 469
+# gnl|WGS:ZZZZ|Ceriodaphnia_004916-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_004916-P1	signal	1	22				
+gnl|WGS:ZZZZ|Ceriodaphnia_004916-P1	outside	23	157				
+gnl|WGS:ZZZZ|Ceriodaphnia_004916-P1	TMhelix	158	178				
+gnl|WGS:ZZZZ|Ceriodaphnia_004916-P1	inside	179	220				
+gnl|WGS:ZZZZ|Ceriodaphnia_004916-P1	TMhelix	221	241				
+gnl|WGS:ZZZZ|Ceriodaphnia_004916-P1	outside	242	421				
+gnl|WGS:ZZZZ|Ceriodaphnia_004916-P1	TMhelix	422	446				
+gnl|WGS:ZZZZ|Ceriodaphnia_004916-P1	inside	447	469				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_001300-P1 Length: 448
+# gnl|WGS:ZZZZ|Ceriodaphnia_001300-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_001300-P1	signal	1	10				
+gnl|WGS:ZZZZ|Ceriodaphnia_001300-P1	outside	11	149				
+gnl|WGS:ZZZZ|Ceriodaphnia_001300-P1	TMhelix	150	170				
+gnl|WGS:ZZZZ|Ceriodaphnia_001300-P1	inside	171	222				
+gnl|WGS:ZZZZ|Ceriodaphnia_001300-P1	TMhelix	223	243				
+gnl|WGS:ZZZZ|Ceriodaphnia_001300-P1	outside	244	422				
+gnl|WGS:ZZZZ|Ceriodaphnia_001300-P1	TMhelix	423	445				
+gnl|WGS:ZZZZ|Ceriodaphnia_001300-P1	inside	446	448				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_001299-P1 Length: 465
+# gnl|WGS:ZZZZ|Ceriodaphnia_001299-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_001299-P1	signal	1	19				
+gnl|WGS:ZZZZ|Ceriodaphnia_001299-P1	outside	20	164				
+gnl|WGS:ZZZZ|Ceriodaphnia_001299-P1	TMhelix	165	185				
+gnl|WGS:ZZZZ|Ceriodaphnia_001299-P1	inside	186	239				
+gnl|WGS:ZZZZ|Ceriodaphnia_001299-P1	TMhelix	240	260				
+gnl|WGS:ZZZZ|Ceriodaphnia_001299-P1	outside	261	441				
+gnl|WGS:ZZZZ|Ceriodaphnia_001299-P1	TMhelix	442	462				
+gnl|WGS:ZZZZ|Ceriodaphnia_001299-P1	inside	463	465				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_002702-P1 Length: 435
+# gnl|WGS:ZZZZ|Ceriodaphnia_002702-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_002702-P1	signal	1	11				
+gnl|WGS:ZZZZ|Ceriodaphnia_002702-P1	outside	12	144				
+gnl|WGS:ZZZZ|Ceriodaphnia_002702-P1	TMhelix	145	166				
+gnl|WGS:ZZZZ|Ceriodaphnia_002702-P1	inside	167	206				
+gnl|WGS:ZZZZ|Ceriodaphnia_002702-P1	TMhelix	207	227				
+gnl|WGS:ZZZZ|Ceriodaphnia_002702-P1	outside	228	401				
+gnl|WGS:ZZZZ|Ceriodaphnia_002702-P1	TMhelix	402	422				
+gnl|WGS:ZZZZ|Ceriodaphnia_002702-P1	inside	423	435				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_004656-P1 Length: 550
+# gnl|WGS:ZZZZ|Ceriodaphnia_004656-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_004656-P1	signal	1	12				
+gnl|WGS:ZZZZ|Ceriodaphnia_004656-P1	outside	13	237				
+gnl|WGS:ZZZZ|Ceriodaphnia_004656-P1	TMhelix	238	258				
+gnl|WGS:ZZZZ|Ceriodaphnia_004656-P1	inside	259	315				
+gnl|WGS:ZZZZ|Ceriodaphnia_004656-P1	TMhelix	316	337				
+gnl|WGS:ZZZZ|Ceriodaphnia_004656-P1	outside	338	509				
+gnl|WGS:ZZZZ|Ceriodaphnia_004656-P1	TMhelix	510	528				
+gnl|WGS:ZZZZ|Ceriodaphnia_004656-P1	inside	529	550				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_001623-P1 Length: 616
+# gnl|WGS:ZZZZ|Ceriodaphnia_001623-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_001623-P1	signal	1	16				
+gnl|WGS:ZZZZ|Ceriodaphnia_001623-P1	outside	17	321				
+gnl|WGS:ZZZZ|Ceriodaphnia_001623-P1	TMhelix	322	346				
+gnl|WGS:ZZZZ|Ceriodaphnia_001623-P1	inside	347	387				
+gnl|WGS:ZZZZ|Ceriodaphnia_001623-P1	TMhelix	388	409				
+gnl|WGS:ZZZZ|Ceriodaphnia_001623-P1	outside	410	586				
+gnl|WGS:ZZZZ|Ceriodaphnia_001623-P1	TMhelix	587	607				
+gnl|WGS:ZZZZ|Ceriodaphnia_001623-P1	inside	608	616				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_002166-P1 Length: 616
+# gnl|WGS:ZZZZ|Ceriodaphnia_002166-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_002166-P1	outside	1	318				
+gnl|WGS:ZZZZ|Ceriodaphnia_002166-P1	TMhelix	319	339				
+gnl|WGS:ZZZZ|Ceriodaphnia_002166-P1	inside	340	381				
+gnl|WGS:ZZZZ|Ceriodaphnia_002166-P1	TMhelix	382	399				
+gnl|WGS:ZZZZ|Ceriodaphnia_002166-P1	outside	400	573				
+gnl|WGS:ZZZZ|Ceriodaphnia_002166-P1	TMhelix	574	594				
+gnl|WGS:ZZZZ|Ceriodaphnia_002166-P1	inside	595	616				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_002349-P1 Length: 444
+# gnl|WGS:ZZZZ|Ceriodaphnia_002349-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_002349-P1	outside	1	133				
+gnl|WGS:ZZZZ|Ceriodaphnia_002349-P1	TMhelix	134	154				
+gnl|WGS:ZZZZ|Ceriodaphnia_002349-P1	inside	155	211				
+gnl|WGS:ZZZZ|Ceriodaphnia_002349-P1	TMhelix	212	225				
+gnl|WGS:ZZZZ|Ceriodaphnia_002349-P1	outside	226	407				
+gnl|WGS:ZZZZ|Ceriodaphnia_002349-P1	TMhelix	408	428				
+gnl|WGS:ZZZZ|Ceriodaphnia_002349-P1	inside	429	444				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_002720-P1 Length: 462
+# gnl|WGS:ZZZZ|Ceriodaphnia_002720-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_002720-P1	signal	1	10				
+gnl|WGS:ZZZZ|Ceriodaphnia_002720-P1	outside	11	132				
+gnl|WGS:ZZZZ|Ceriodaphnia_002720-P1	TMhelix	133	153				
+gnl|WGS:ZZZZ|Ceriodaphnia_002720-P1	inside	154	214				
+gnl|WGS:ZZZZ|Ceriodaphnia_002720-P1	TMhelix	215	235				
+gnl|WGS:ZZZZ|Ceriodaphnia_002720-P1	outside	236	417				
+gnl|WGS:ZZZZ|Ceriodaphnia_002720-P1	TMhelix	418	438				
+gnl|WGS:ZZZZ|Ceriodaphnia_002720-P1	inside	439	462				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_004920-P1 Length: 478
+# gnl|WGS:ZZZZ|Ceriodaphnia_004920-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_004920-P1	signal	1	28				
+gnl|WGS:ZZZZ|Ceriodaphnia_004920-P1	outside	29	160				
+gnl|WGS:ZZZZ|Ceriodaphnia_004920-P1	TMhelix	161	181				
+gnl|WGS:ZZZZ|Ceriodaphnia_004920-P1	inside	182	222				
+gnl|WGS:ZZZZ|Ceriodaphnia_004920-P1	TMhelix	223	235				
+gnl|WGS:ZZZZ|Ceriodaphnia_004920-P1	outside	236	419				
+gnl|WGS:ZZZZ|Ceriodaphnia_004920-P1	TMhelix	420	440				
+gnl|WGS:ZZZZ|Ceriodaphnia_004920-P1	inside	441	478				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_003901-P1 Length: 341
+# gnl|WGS:ZZZZ|Ceriodaphnia_003901-P1 Number of predicted TMRs: 2
+gnl|WGS:ZZZZ|Ceriodaphnia_003901-P1	outside	1	117				
+gnl|WGS:ZZZZ|Ceriodaphnia_003901-P1	TMhelix	118	138				
+gnl|WGS:ZZZZ|Ceriodaphnia_003901-P1	inside	139	181				
+gnl|WGS:ZZZZ|Ceriodaphnia_003901-P1	TMhelix	182	195				
+gnl|WGS:ZZZZ|Ceriodaphnia_003901-P1	outside	196	341				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_004636-P1 Length: 420
+# gnl|WGS:ZZZZ|Ceriodaphnia_004636-P1 Number of predicted TMRs: 2
+gnl|WGS:ZZZZ|Ceriodaphnia_004636-P1	outside	1	170				
+gnl|WGS:ZZZZ|Ceriodaphnia_004636-P1	TMhelix	171	191				
+gnl|WGS:ZZZZ|Ceriodaphnia_004636-P1	inside	192	248				
+gnl|WGS:ZZZZ|Ceriodaphnia_004636-P1	TMhelix	249	270				
+gnl|WGS:ZZZZ|Ceriodaphnia_004636-P1	outside	271	420				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_003900-P1 Length: 711
+# gnl|WGS:ZZZZ|Ceriodaphnia_003900-P1 Number of predicted TMRs: 8
+gnl|WGS:ZZZZ|Ceriodaphnia_003900-P1	inside	1	38				
+gnl|WGS:ZZZZ|Ceriodaphnia_003900-P1	TMhelix	39	59				
+gnl|WGS:ZZZZ|Ceriodaphnia_003900-P1	outside	60	76				
+gnl|WGS:ZZZZ|Ceriodaphnia_003900-P1	TMhelix	77	95				
+gnl|WGS:ZZZZ|Ceriodaphnia_003900-P1	inside	96	107				
+gnl|WGS:ZZZZ|Ceriodaphnia_003900-P1	TMhelix	108	128				
+gnl|WGS:ZZZZ|Ceriodaphnia_003900-P1	outside	129	151				
+gnl|WGS:ZZZZ|Ceriodaphnia_003900-P1	TMhelix	152	161				
+gnl|WGS:ZZZZ|Ceriodaphnia_003900-P1	inside	162	162				
+gnl|WGS:ZZZZ|Ceriodaphnia_003900-P1	TMhelix	163	173				
+gnl|WGS:ZZZZ|Ceriodaphnia_003900-P1	outside	174	411				
+gnl|WGS:ZZZZ|Ceriodaphnia_003900-P1	TMhelix	412	432				
+gnl|WGS:ZZZZ|Ceriodaphnia_003900-P1	inside	433	479				
+gnl|WGS:ZZZZ|Ceriodaphnia_003900-P1	TMhelix	480	501				
+gnl|WGS:ZZZZ|Ceriodaphnia_003900-P1	outside	502	676				
+gnl|WGS:ZZZZ|Ceriodaphnia_003900-P1	TMhelix	677	697				
+gnl|WGS:ZZZZ|Ceriodaphnia_003900-P1	inside	698	711				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_004050-P1 Length: 436
+# gnl|WGS:ZZZZ|Ceriodaphnia_004050-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_004050-P1	signal	1	23				
+gnl|WGS:ZZZZ|Ceriodaphnia_004050-P1	outside	24	157				
+gnl|WGS:ZZZZ|Ceriodaphnia_004050-P1	TMhelix	158	178				
+gnl|WGS:ZZZZ|Ceriodaphnia_004050-P1	inside	179	222				
+gnl|WGS:ZZZZ|Ceriodaphnia_004050-P1	TMhelix	223	244				
+gnl|WGS:ZZZZ|Ceriodaphnia_004050-P1	outside	245	421				
+gnl|WGS:ZZZZ|Ceriodaphnia_004050-P1	TMhelix	422	434				
+gnl|WGS:ZZZZ|Ceriodaphnia_004050-P1	inside	435	436				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_000810-P1 Length: 562
+# gnl|WGS:ZZZZ|Ceriodaphnia_000810-P1 Number of predicted TMRs: 4
+gnl|WGS:ZZZZ|Ceriodaphnia_000810-P1	inside	1	3				
+gnl|WGS:ZZZZ|Ceriodaphnia_000810-P1	TMhelix	4	24				
+gnl|WGS:ZZZZ|Ceriodaphnia_000810-P1	outside	25	262				
+gnl|WGS:ZZZZ|Ceriodaphnia_000810-P1	TMhelix	263	283				
+gnl|WGS:ZZZZ|Ceriodaphnia_000810-P1	inside	284	331				
+gnl|WGS:ZZZZ|Ceriodaphnia_000810-P1	TMhelix	332	353				
+gnl|WGS:ZZZZ|Ceriodaphnia_000810-P1	outside	354	530				
+gnl|WGS:ZZZZ|Ceriodaphnia_000810-P1	TMhelix	531	550				
+gnl|WGS:ZZZZ|Ceriodaphnia_000810-P1	inside	551	562				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_001301-P1 Length: 461
+# gnl|WGS:ZZZZ|Ceriodaphnia_001301-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_001301-P1	signal	1	20				
+gnl|WGS:ZZZZ|Ceriodaphnia_001301-P1	outside	21	163				
+gnl|WGS:ZZZZ|Ceriodaphnia_001301-P1	TMhelix	164	184				
+gnl|WGS:ZZZZ|Ceriodaphnia_001301-P1	inside	185	233				
+gnl|WGS:ZZZZ|Ceriodaphnia_001301-P1	TMhelix	234	254				
+gnl|WGS:ZZZZ|Ceriodaphnia_001301-P1	outside	255	434				
+gnl|WGS:ZZZZ|Ceriodaphnia_001301-P1	TMhelix	435	452				
+gnl|WGS:ZZZZ|Ceriodaphnia_001301-P1	inside	453	461				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_003227-P1 Length: 468
+# gnl|WGS:ZZZZ|Ceriodaphnia_003227-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_003227-P1	signal	1	18				
+gnl|WGS:ZZZZ|Ceriodaphnia_003227-P1	outside	19	150				
+gnl|WGS:ZZZZ|Ceriodaphnia_003227-P1	TMhelix	151	173				
+gnl|WGS:ZZZZ|Ceriodaphnia_003227-P1	inside	174	235				
+gnl|WGS:ZZZZ|Ceriodaphnia_003227-P1	TMhelix	236	257				
+gnl|WGS:ZZZZ|Ceriodaphnia_003227-P1	outside	258	437				
+gnl|WGS:ZZZZ|Ceriodaphnia_003227-P1	TMhelix	438	458				
+gnl|WGS:ZZZZ|Ceriodaphnia_003227-P1	inside	459	468				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_002348-P1 Length: 714
+# gnl|WGS:ZZZZ|Ceriodaphnia_002348-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_002348-P1	outside	1	389				
+gnl|WGS:ZZZZ|Ceriodaphnia_002348-P1	TMhelix	390	412				
+gnl|WGS:ZZZZ|Ceriodaphnia_002348-P1	inside	413	484				
+gnl|WGS:ZZZZ|Ceriodaphnia_002348-P1	TMhelix	485	506				
+gnl|WGS:ZZZZ|Ceriodaphnia_002348-P1	outside	507	685				
+gnl|WGS:ZZZZ|Ceriodaphnia_002348-P1	TMhelix	686	706				
+gnl|WGS:ZZZZ|Ceriodaphnia_002348-P1	inside	707	714				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_003211-P1 Length: 467
+# gnl|WGS:ZZZZ|Ceriodaphnia_003211-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_003211-P1	signal	1	22				
+gnl|WGS:ZZZZ|Ceriodaphnia_003211-P1	outside	23	157				
+gnl|WGS:ZZZZ|Ceriodaphnia_003211-P1	TMhelix	158	178				
+gnl|WGS:ZZZZ|Ceriodaphnia_003211-P1	inside	179	221				
+gnl|WGS:ZZZZ|Ceriodaphnia_003211-P1	TMhelix	222	243				
+gnl|WGS:ZZZZ|Ceriodaphnia_003211-P1	outside	244	423				
+gnl|WGS:ZZZZ|Ceriodaphnia_003211-P1	TMhelix	424	444				
+gnl|WGS:ZZZZ|Ceriodaphnia_003211-P1	inside	445	467				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_003888-P1 Length: 505
+# gnl|WGS:ZZZZ|Ceriodaphnia_003888-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_003888-P1	signal	1	60				
+gnl|WGS:ZZZZ|Ceriodaphnia_003888-P1	outside	61	199				
+gnl|WGS:ZZZZ|Ceriodaphnia_003888-P1	TMhelix	200	220				
+gnl|WGS:ZZZZ|Ceriodaphnia_003888-P1	inside	221	281				
+gnl|WGS:ZZZZ|Ceriodaphnia_003888-P1	TMhelix	282	303				
+gnl|WGS:ZZZZ|Ceriodaphnia_003888-P1	outside	304	482				
+gnl|WGS:ZZZZ|Ceriodaphnia_003888-P1	TMhelix	483	503				
+gnl|WGS:ZZZZ|Ceriodaphnia_003888-P1	inside	504	505				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_003894-P1 Length: 450
+# gnl|WGS:ZZZZ|Ceriodaphnia_003894-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_003894-P1	signal	1	12				
+gnl|WGS:ZZZZ|Ceriodaphnia_003894-P1	outside	13	148				
+gnl|WGS:ZZZZ|Ceriodaphnia_003894-P1	TMhelix	149	169				
+gnl|WGS:ZZZZ|Ceriodaphnia_003894-P1	inside	170	212				
+gnl|WGS:ZZZZ|Ceriodaphnia_003894-P1	TMhelix	213	226				
+gnl|WGS:ZZZZ|Ceriodaphnia_003894-P1	outside	227	406				
+gnl|WGS:ZZZZ|Ceriodaphnia_003894-P1	TMhelix	407	427				
+gnl|WGS:ZZZZ|Ceriodaphnia_003894-P1	inside	428	450				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_002320-P1 Length: 930
+# gnl|WGS:ZZZZ|Ceriodaphnia_002320-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_002320-P1	signal	1	38				
+gnl|WGS:ZZZZ|Ceriodaphnia_002320-P1	outside	39	558				
+gnl|WGS:ZZZZ|Ceriodaphnia_002320-P1	TMhelix	559	578				
+gnl|WGS:ZZZZ|Ceriodaphnia_002320-P1	inside	579	634				
+gnl|WGS:ZZZZ|Ceriodaphnia_002320-P1	TMhelix	635	655				
+gnl|WGS:ZZZZ|Ceriodaphnia_002320-P1	outside	656	819				
+gnl|WGS:ZZZZ|Ceriodaphnia_002320-P1	TMhelix	820	840				
+gnl|WGS:ZZZZ|Ceriodaphnia_002320-P1	inside	841	930				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_004924-P1 Length: 495
+# gnl|WGS:ZZZZ|Ceriodaphnia_004924-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_004924-P1	signal	1	35				
+gnl|WGS:ZZZZ|Ceriodaphnia_004924-P1	outside	36	174				
+gnl|WGS:ZZZZ|Ceriodaphnia_004924-P1	TMhelix	175	193				
+gnl|WGS:ZZZZ|Ceriodaphnia_004924-P1	inside	194	234				
+gnl|WGS:ZZZZ|Ceriodaphnia_004924-P1	TMhelix	235	255				
+gnl|WGS:ZZZZ|Ceriodaphnia_004924-P1	outside	256	438				
+gnl|WGS:ZZZZ|Ceriodaphnia_004924-P1	TMhelix	439	459				
+gnl|WGS:ZZZZ|Ceriodaphnia_004924-P1	inside	460	495				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_003313-P1 Length: 429
+# gnl|WGS:ZZZZ|Ceriodaphnia_003313-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_003313-P1	outside	1	120				
+gnl|WGS:ZZZZ|Ceriodaphnia_003313-P1	TMhelix	121	141				
+gnl|WGS:ZZZZ|Ceriodaphnia_003313-P1	inside	142	210				
+gnl|WGS:ZZZZ|Ceriodaphnia_003313-P1	TMhelix	211	224				
+gnl|WGS:ZZZZ|Ceriodaphnia_003313-P1	outside	225	411				
+gnl|WGS:ZZZZ|Ceriodaphnia_003313-P1	TMhelix	412	428				
+gnl|WGS:ZZZZ|Ceriodaphnia_003313-P1	inside	429	429				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_003886-P1 Length: 637
+# gnl|WGS:ZZZZ|Ceriodaphnia_003886-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_003886-P1	signal	1	20				
+gnl|WGS:ZZZZ|Ceriodaphnia_003886-P1	outside	21	335				
+gnl|WGS:ZZZZ|Ceriodaphnia_003886-P1	TMhelix	336	356				
+gnl|WGS:ZZZZ|Ceriodaphnia_003886-P1	inside	357	403				
+gnl|WGS:ZZZZ|Ceriodaphnia_003886-P1	TMhelix	404	415				
+gnl|WGS:ZZZZ|Ceriodaphnia_003886-P1	outside	416	592				
+gnl|WGS:ZZZZ|Ceriodaphnia_003886-P1	TMhelix	593	613				
+gnl|WGS:ZZZZ|Ceriodaphnia_003886-P1	inside	614	637				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_003259-P1 Length: 235
+# gnl|WGS:ZZZZ|Ceriodaphnia_003259-P1 Number of predicted TMRs: 2
+gnl|WGS:ZZZZ|Ceriodaphnia_003259-P1	inside	1	13				
+gnl|WGS:ZZZZ|Ceriodaphnia_003259-P1	TMhelix	14	27				
+gnl|WGS:ZZZZ|Ceriodaphnia_003259-P1	outside	28	206				
+gnl|WGS:ZZZZ|Ceriodaphnia_003259-P1	TMhelix	207	227				
+gnl|WGS:ZZZZ|Ceriodaphnia_003259-P1	inside	228	235				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_002694-P1 Length: 471
+# gnl|WGS:ZZZZ|Ceriodaphnia_002694-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_002694-P1	signal	1	23				
+gnl|WGS:ZZZZ|Ceriodaphnia_002694-P1	outside	24	155				
+gnl|WGS:ZZZZ|Ceriodaphnia_002694-P1	TMhelix	156	179				
+gnl|WGS:ZZZZ|Ceriodaphnia_002694-P1	inside	180	244				
+gnl|WGS:ZZZZ|Ceriodaphnia_002694-P1	TMhelix	245	266				
+gnl|WGS:ZZZZ|Ceriodaphnia_002694-P1	outside	267	447				
+gnl|WGS:ZZZZ|Ceriodaphnia_002694-P1	TMhelix	448	468				
+gnl|WGS:ZZZZ|Ceriodaphnia_002694-P1	inside	469	471				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_003317-P1 Length: 896
+# gnl|WGS:ZZZZ|Ceriodaphnia_003317-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_003317-P1	signal	1	23				
+gnl|WGS:ZZZZ|Ceriodaphnia_003317-P1	outside	24	549				
+gnl|WGS:ZZZZ|Ceriodaphnia_003317-P1	TMhelix	550	569				
+gnl|WGS:ZZZZ|Ceriodaphnia_003317-P1	inside	570	625				
+gnl|WGS:ZZZZ|Ceriodaphnia_003317-P1	TMhelix	626	646				
+gnl|WGS:ZZZZ|Ceriodaphnia_003317-P1	outside	647	822				
+gnl|WGS:ZZZZ|Ceriodaphnia_003317-P1	TMhelix	823	843				
+gnl|WGS:ZZZZ|Ceriodaphnia_003317-P1	inside	844	896				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_004042-P1 Length: 452
+# gnl|WGS:ZZZZ|Ceriodaphnia_004042-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_004042-P1	signal	1	19				
+gnl|WGS:ZZZZ|Ceriodaphnia_004042-P1	outside	20	143				
+gnl|WGS:ZZZZ|Ceriodaphnia_004042-P1	TMhelix	144	164				
+gnl|WGS:ZZZZ|Ceriodaphnia_004042-P1	inside	165	218				
+gnl|WGS:ZZZZ|Ceriodaphnia_004042-P1	TMhelix	219	239				
+gnl|WGS:ZZZZ|Ceriodaphnia_004042-P1	outside	240	415				
+gnl|WGS:ZZZZ|Ceriodaphnia_004042-P1	TMhelix	416	436				
+gnl|WGS:ZZZZ|Ceriodaphnia_004042-P1	inside	437	452				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_002117-P1 Length: 376
+# gnl|WGS:ZZZZ|Ceriodaphnia_002117-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_002117-P1	outside	1	90				
+gnl|WGS:ZZZZ|Ceriodaphnia_002117-P1	TMhelix	91	109				
+gnl|WGS:ZZZZ|Ceriodaphnia_002117-P1	inside	110	150				
+gnl|WGS:ZZZZ|Ceriodaphnia_002117-P1	TMhelix	151	166				
+gnl|WGS:ZZZZ|Ceriodaphnia_002117-P1	outside	167	344				
+gnl|WGS:ZZZZ|Ceriodaphnia_002117-P1	TMhelix	345	365				
+gnl|WGS:ZZZZ|Ceriodaphnia_002117-P1	inside	366	376				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_004071-P1 Length: 502
+# gnl|WGS:ZZZZ|Ceriodaphnia_004071-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_004071-P1	signal	1	10				
+gnl|WGS:ZZZZ|Ceriodaphnia_004071-P1	outside	11	139				
+gnl|WGS:ZZZZ|Ceriodaphnia_004071-P1	TMhelix	140	160				
+gnl|WGS:ZZZZ|Ceriodaphnia_004071-P1	inside	161	228				
+gnl|WGS:ZZZZ|Ceriodaphnia_004071-P1	TMhelix	229	242				
+gnl|WGS:ZZZZ|Ceriodaphnia_004071-P1	outside	243	424				
+gnl|WGS:ZZZZ|Ceriodaphnia_004071-P1	TMhelix	425	449				
+gnl|WGS:ZZZZ|Ceriodaphnia_004071-P1	inside	450	502				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_002431-P1 Length: 686
+# gnl|WGS:ZZZZ|Ceriodaphnia_002431-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_002431-P1	outside	1	383				
+gnl|WGS:ZZZZ|Ceriodaphnia_002431-P1	TMhelix	384	405				
+gnl|WGS:ZZZZ|Ceriodaphnia_002431-P1	inside	406	457				
+gnl|WGS:ZZZZ|Ceriodaphnia_002431-P1	TMhelix	458	479				
+gnl|WGS:ZZZZ|Ceriodaphnia_002431-P1	outside	480	650				
+gnl|WGS:ZZZZ|Ceriodaphnia_002431-P1	TMhelix	651	675				
+gnl|WGS:ZZZZ|Ceriodaphnia_002431-P1	inside	676	686				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_004041-P1 Length: 440
+# gnl|WGS:ZZZZ|Ceriodaphnia_004041-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_004041-P1	outside	1	136				
+gnl|WGS:ZZZZ|Ceriodaphnia_004041-P1	TMhelix	137	157				
+gnl|WGS:ZZZZ|Ceriodaphnia_004041-P1	inside	158	211				
+gnl|WGS:ZZZZ|Ceriodaphnia_004041-P1	TMhelix	212	232				
+gnl|WGS:ZZZZ|Ceriodaphnia_004041-P1	outside	233	411				
+gnl|WGS:ZZZZ|Ceriodaphnia_004041-P1	TMhelix	412	432				
+gnl|WGS:ZZZZ|Ceriodaphnia_004041-P1	inside	433	440				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_004669-P1 Length: 481
+# gnl|WGS:ZZZZ|Ceriodaphnia_004669-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_004669-P1	signal	1	18				
+gnl|WGS:ZZZZ|Ceriodaphnia_004669-P1	outside	19	145				
+gnl|WGS:ZZZZ|Ceriodaphnia_004669-P1	TMhelix	146	166				
+gnl|WGS:ZZZZ|Ceriodaphnia_004669-P1	inside	167	240				
+gnl|WGS:ZZZZ|Ceriodaphnia_004669-P1	TMhelix	241	262				
+gnl|WGS:ZZZZ|Ceriodaphnia_004669-P1	outside	263	443				
+gnl|WGS:ZZZZ|Ceriodaphnia_004669-P1	TMhelix	444	464				
+gnl|WGS:ZZZZ|Ceriodaphnia_004669-P1	inside	465	481				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_004927-P1 Length: 493
+# gnl|WGS:ZZZZ|Ceriodaphnia_004927-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_004927-P1	signal	1	12				
+gnl|WGS:ZZZZ|Ceriodaphnia_004927-P1	outside	13	153				
+gnl|WGS:ZZZZ|Ceriodaphnia_004927-P1	TMhelix	154	174				
+gnl|WGS:ZZZZ|Ceriodaphnia_004927-P1	inside	175	215				
+gnl|WGS:ZZZZ|Ceriodaphnia_004927-P1	TMhelix	216	236				
+gnl|WGS:ZZZZ|Ceriodaphnia_004927-P1	outside	237	415				
+gnl|WGS:ZZZZ|Ceriodaphnia_004927-P1	TMhelix	416	440				
+gnl|WGS:ZZZZ|Ceriodaphnia_004927-P1	inside	441	493				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_004925-P1 Length: 458
+# gnl|WGS:ZZZZ|Ceriodaphnia_004925-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_004925-P1	signal	1	26				
+gnl|WGS:ZZZZ|Ceriodaphnia_004925-P1	outside	27	161				
+gnl|WGS:ZZZZ|Ceriodaphnia_004925-P1	TMhelix	162	180				
+gnl|WGS:ZZZZ|Ceriodaphnia_004925-P1	inside	181	223				
+gnl|WGS:ZZZZ|Ceriodaphnia_004925-P1	TMhelix	224	244				
+gnl|WGS:ZZZZ|Ceriodaphnia_004925-P1	outside	245	422				
+gnl|WGS:ZZZZ|Ceriodaphnia_004925-P1	TMhelix	423	443				
+gnl|WGS:ZZZZ|Ceriodaphnia_004925-P1	inside	444	458				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_002319-P1 Length: 1002
+# gnl|WGS:ZZZZ|Ceriodaphnia_002319-P1 Number of predicted TMRs: 4
+gnl|WGS:ZZZZ|Ceriodaphnia_002319-P1	inside	1	51				
+gnl|WGS:ZZZZ|Ceriodaphnia_002319-P1	TMhelix	52	63				
+gnl|WGS:ZZZZ|Ceriodaphnia_002319-P1	outside	64	587				
+gnl|WGS:ZZZZ|Ceriodaphnia_002319-P1	TMhelix	588	609				
+gnl|WGS:ZZZZ|Ceriodaphnia_002319-P1	inside	610	706				
+gnl|WGS:ZZZZ|Ceriodaphnia_002319-P1	TMhelix	707	727				
+gnl|WGS:ZZZZ|Ceriodaphnia_002319-P1	outside	728	892				
+gnl|WGS:ZZZZ|Ceriodaphnia_002319-P1	TMhelix	893	913				
+gnl|WGS:ZZZZ|Ceriodaphnia_002319-P1	inside	914	1002				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_004926-P1 Length: 508
+# gnl|WGS:ZZZZ|Ceriodaphnia_004926-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_004926-P1	outside	1	188				
+gnl|WGS:ZZZZ|Ceriodaphnia_004926-P1	TMhelix	189	209				
+gnl|WGS:ZZZZ|Ceriodaphnia_004926-P1	inside	210	260				
+gnl|WGS:ZZZZ|Ceriodaphnia_004926-P1	TMhelix	261	281				
+gnl|WGS:ZZZZ|Ceriodaphnia_004926-P1	outside	282	462				
+gnl|WGS:ZZZZ|Ceriodaphnia_004926-P1	TMhelix	463	483				
+gnl|WGS:ZZZZ|Ceriodaphnia_004926-P1	inside	484	508				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_004980-P1 Length: 480
+# gnl|WGS:ZZZZ|Ceriodaphnia_004980-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_004980-P1	signal	1	39				
+gnl|WGS:ZZZZ|Ceriodaphnia_004980-P1	outside	40	171				
+gnl|WGS:ZZZZ|Ceriodaphnia_004980-P1	TMhelix	172	192				
+gnl|WGS:ZZZZ|Ceriodaphnia_004980-P1	inside	193	242				
+gnl|WGS:ZZZZ|Ceriodaphnia_004980-P1	TMhelix	243	264				
+gnl|WGS:ZZZZ|Ceriodaphnia_004980-P1	outside	265	443				
+gnl|WGS:ZZZZ|Ceriodaphnia_004980-P1	TMhelix	444	468				
+gnl|WGS:ZZZZ|Ceriodaphnia_004980-P1	inside	469	480				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_004923-P1 Length: 496
+# gnl|WGS:ZZZZ|Ceriodaphnia_004923-P1 Number of predicted TMRs: 4
+gnl|WGS:ZZZZ|Ceriodaphnia_004923-P1	outside	1	143				
+gnl|WGS:ZZZZ|Ceriodaphnia_004923-P1	TMhelix	144	153				
+gnl|WGS:ZZZZ|Ceriodaphnia_004923-P1	inside	154	169				
+gnl|WGS:ZZZZ|Ceriodaphnia_004923-P1	TMhelix	170	183				
+gnl|WGS:ZZZZ|Ceriodaphnia_004923-P1	outside	184	367				
+gnl|WGS:ZZZZ|Ceriodaphnia_004923-P1	TMhelix	368	378				
+gnl|WGS:ZZZZ|Ceriodaphnia_004923-P1	inside	379	422				
+gnl|WGS:ZZZZ|Ceriodaphnia_004923-P1	TMhelix	423	432				
+gnl|WGS:ZZZZ|Ceriodaphnia_004923-P1	outside	433	496				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_004919-P1 Length: 494
+# gnl|WGS:ZZZZ|Ceriodaphnia_004919-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_004919-P1	signal	1	33				
+gnl|WGS:ZZZZ|Ceriodaphnia_004919-P1	outside	34	163				
+gnl|WGS:ZZZZ|Ceriodaphnia_004919-P1	TMhelix	164	182				
+gnl|WGS:ZZZZ|Ceriodaphnia_004919-P1	inside	183	223				
+gnl|WGS:ZZZZ|Ceriodaphnia_004919-P1	TMhelix	224	242				
+gnl|WGS:ZZZZ|Ceriodaphnia_004919-P1	outside	243	422				
+gnl|WGS:ZZZZ|Ceriodaphnia_004919-P1	TMhelix	423	446				
+gnl|WGS:ZZZZ|Ceriodaphnia_004919-P1	inside	447	494				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_004479-P1 Length: 457
+# gnl|WGS:ZZZZ|Ceriodaphnia_004479-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_004479-P1	signal	1	15				
+gnl|WGS:ZZZZ|Ceriodaphnia_004479-P1	outside	16	143				
+gnl|WGS:ZZZZ|Ceriodaphnia_004479-P1	TMhelix	144	167				
+gnl|WGS:ZZZZ|Ceriodaphnia_004479-P1	inside	168	229				
+gnl|WGS:ZZZZ|Ceriodaphnia_004479-P1	TMhelix	230	251				
+gnl|WGS:ZZZZ|Ceriodaphnia_004479-P1	outside	252	428				
+gnl|WGS:ZZZZ|Ceriodaphnia_004479-P1	TMhelix	429	449				
+gnl|WGS:ZZZZ|Ceriodaphnia_004479-P1	inside	450	457				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_005039-P1 Length: 468
+# gnl|WGS:ZZZZ|Ceriodaphnia_005039-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_005039-P1	signal	1	27				
+gnl|WGS:ZZZZ|Ceriodaphnia_005039-P1	outside	28	164				
+gnl|WGS:ZZZZ|Ceriodaphnia_005039-P1	TMhelix	165	185				
+gnl|WGS:ZZZZ|Ceriodaphnia_005039-P1	inside	186	228				
+gnl|WGS:ZZZZ|Ceriodaphnia_005039-P1	TMhelix	229	249				
+gnl|WGS:ZZZZ|Ceriodaphnia_005039-P1	outside	250	423				
+gnl|WGS:ZZZZ|Ceriodaphnia_005039-P1	TMhelix	424	444				
+gnl|WGS:ZZZZ|Ceriodaphnia_005039-P1	inside	445	468				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_005074-P1 Length: 465
+# gnl|WGS:ZZZZ|Ceriodaphnia_005074-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_005074-P1	signal	1	34				
+gnl|WGS:ZZZZ|Ceriodaphnia_005074-P1	outside	35	164				
+gnl|WGS:ZZZZ|Ceriodaphnia_005074-P1	TMhelix	165	185				
+gnl|WGS:ZZZZ|Ceriodaphnia_005074-P1	inside	186	226				
+gnl|WGS:ZZZZ|Ceriodaphnia_005074-P1	TMhelix	227	247				
+gnl|WGS:ZZZZ|Ceriodaphnia_005074-P1	outside	248	433				
+gnl|WGS:ZZZZ|Ceriodaphnia_005074-P1	TMhelix	434	457				
+gnl|WGS:ZZZZ|Ceriodaphnia_005074-P1	inside	458	465				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_006704-P1 Length: 474
+# gnl|WGS:ZZZZ|Ceriodaphnia_006704-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_006704-P1	signal	1	23				
+gnl|WGS:ZZZZ|Ceriodaphnia_006704-P1	outside	24	168				
+gnl|WGS:ZZZZ|Ceriodaphnia_006704-P1	TMhelix	169	189				
+gnl|WGS:ZZZZ|Ceriodaphnia_006704-P1	inside	190	232				
+gnl|WGS:ZZZZ|Ceriodaphnia_006704-P1	TMhelix	233	246				
+gnl|WGS:ZZZZ|Ceriodaphnia_006704-P1	outside	247	426				
+gnl|WGS:ZZZZ|Ceriodaphnia_006704-P1	TMhelix	427	447				
+gnl|WGS:ZZZZ|Ceriodaphnia_006704-P1	inside	448	474				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_004657-P1 Length: 344
+# gnl|WGS:ZZZZ|Ceriodaphnia_004657-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_004657-P1	outside	1	42				
+gnl|WGS:ZZZZ|Ceriodaphnia_004657-P1	TMhelix	43	63				
+gnl|WGS:ZZZZ|Ceriodaphnia_004657-P1	inside	64	122				
+gnl|WGS:ZZZZ|Ceriodaphnia_004657-P1	TMhelix	123	144				
+gnl|WGS:ZZZZ|Ceriodaphnia_004657-P1	outside	145	318				
+gnl|WGS:ZZZZ|Ceriodaphnia_004657-P1	TMhelix	319	339				
+gnl|WGS:ZZZZ|Ceriodaphnia_004657-P1	inside	340	344				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_004922-P1 Length: 462
+# gnl|WGS:ZZZZ|Ceriodaphnia_004922-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_004922-P1	signal	1	31				
+gnl|WGS:ZZZZ|Ceriodaphnia_004922-P1	outside	32	160				
+gnl|WGS:ZZZZ|Ceriodaphnia_004922-P1	TMhelix	161	181				
+gnl|WGS:ZZZZ|Ceriodaphnia_004922-P1	inside	182	224				
+gnl|WGS:ZZZZ|Ceriodaphnia_004922-P1	TMhelix	225	237				
+gnl|WGS:ZZZZ|Ceriodaphnia_004922-P1	outside	238	423				
+gnl|WGS:ZZZZ|Ceriodaphnia_004922-P1	TMhelix	424	444				
+gnl|WGS:ZZZZ|Ceriodaphnia_004922-P1	inside	445	462				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_005056-P1 Length: 491
+# gnl|WGS:ZZZZ|Ceriodaphnia_005056-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_005056-P1	signal	1	23				
+gnl|WGS:ZZZZ|Ceriodaphnia_005056-P1	outside	24	156				
+gnl|WGS:ZZZZ|Ceriodaphnia_005056-P1	TMhelix	157	178				
+gnl|WGS:ZZZZ|Ceriodaphnia_005056-P1	inside	179	230				
+gnl|WGS:ZZZZ|Ceriodaphnia_005056-P1	TMhelix	231	252				
+gnl|WGS:ZZZZ|Ceriodaphnia_005056-P1	outside	253	440				
+gnl|WGS:ZZZZ|Ceriodaphnia_005056-P1	TMhelix	441	461				
+gnl|WGS:ZZZZ|Ceriodaphnia_005056-P1	inside	462	491				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_006717-P1 Length: 447
+# gnl|WGS:ZZZZ|Ceriodaphnia_006717-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_006717-P1	outside	1	133				
+gnl|WGS:ZZZZ|Ceriodaphnia_006717-P1	TMhelix	134	154				
+gnl|WGS:ZZZZ|Ceriodaphnia_006717-P1	inside	155	208				
+gnl|WGS:ZZZZ|Ceriodaphnia_006717-P1	TMhelix	209	230				
+gnl|WGS:ZZZZ|Ceriodaphnia_006717-P1	outside	231	414				
+gnl|WGS:ZZZZ|Ceriodaphnia_006717-P1	TMhelix	415	435				
+gnl|WGS:ZZZZ|Ceriodaphnia_006717-P1	inside	436	447				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_004917-P1 Length: 399
+# gnl|WGS:ZZZZ|Ceriodaphnia_004917-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_004917-P1	outside	1	107				
+gnl|WGS:ZZZZ|Ceriodaphnia_004917-P1	TMhelix	108	127				
+gnl|WGS:ZZZZ|Ceriodaphnia_004917-P1	inside	128	169				
+gnl|WGS:ZZZZ|Ceriodaphnia_004917-P1	TMhelix	170	183				
+gnl|WGS:ZZZZ|Ceriodaphnia_004917-P1	outside	184	368				
+gnl|WGS:ZZZZ|Ceriodaphnia_004917-P1	TMhelix	369	389				
+gnl|WGS:ZZZZ|Ceriodaphnia_004917-P1	inside	390	399				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_004492-P1 Length: 626
+# gnl|WGS:ZZZZ|Ceriodaphnia_004492-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_004492-P1	signal	1	20				
+gnl|WGS:ZZZZ|Ceriodaphnia_004492-P1	outside	21	328				
+gnl|WGS:ZZZZ|Ceriodaphnia_004492-P1	TMhelix	329	353				
+gnl|WGS:ZZZZ|Ceriodaphnia_004492-P1	inside	354	393				
+gnl|WGS:ZZZZ|Ceriodaphnia_004492-P1	TMhelix	394	414				
+gnl|WGS:ZZZZ|Ceriodaphnia_004492-P1	outside	415	595				
+gnl|WGS:ZZZZ|Ceriodaphnia_004492-P1	TMhelix	596	616				
+gnl|WGS:ZZZZ|Ceriodaphnia_004492-P1	inside	617	626				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_005425-P1 Length: 642
+# gnl|WGS:ZZZZ|Ceriodaphnia_005425-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_005425-P1	signal	1	21				
+gnl|WGS:ZZZZ|Ceriodaphnia_005425-P1	outside	22	342				
+gnl|WGS:ZZZZ|Ceriodaphnia_005425-P1	TMhelix	343	364				
+gnl|WGS:ZZZZ|Ceriodaphnia_005425-P1	inside	365	421				
+gnl|WGS:ZZZZ|Ceriodaphnia_005425-P1	TMhelix	422	443				
+gnl|WGS:ZZZZ|Ceriodaphnia_005425-P1	outside	444	616				
+gnl|WGS:ZZZZ|Ceriodaphnia_005425-P1	TMhelix	617	639				
+gnl|WGS:ZZZZ|Ceriodaphnia_005425-P1	inside	640	642				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_005525-P1 Length: 468
+# gnl|WGS:ZZZZ|Ceriodaphnia_005525-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_005525-P1	signal	1	21				
+gnl|WGS:ZZZZ|Ceriodaphnia_005525-P1	outside	22	147				
+gnl|WGS:ZZZZ|Ceriodaphnia_005525-P1	TMhelix	148	168				
+gnl|WGS:ZZZZ|Ceriodaphnia_005525-P1	inside	169	232				
+gnl|WGS:ZZZZ|Ceriodaphnia_005525-P1	TMhelix	233	254				
+gnl|WGS:ZZZZ|Ceriodaphnia_005525-P1	outside	255	428				
+gnl|WGS:ZZZZ|Ceriodaphnia_005525-P1	TMhelix	429	453				
+gnl|WGS:ZZZZ|Ceriodaphnia_005525-P1	inside	454	468				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_006637-P1 Length: 447
+# gnl|WGS:ZZZZ|Ceriodaphnia_006637-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_006637-P1	outside	1	132				
+gnl|WGS:ZZZZ|Ceriodaphnia_006637-P1	TMhelix	133	155				
+gnl|WGS:ZZZZ|Ceriodaphnia_006637-P1	inside	156	218				
+gnl|WGS:ZZZZ|Ceriodaphnia_006637-P1	TMhelix	219	239				
+gnl|WGS:ZZZZ|Ceriodaphnia_006637-P1	outside	240	416				
+gnl|WGS:ZZZZ|Ceriodaphnia_006637-P1	TMhelix	417	437				
+gnl|WGS:ZZZZ|Ceriodaphnia_006637-P1	inside	438	447				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_006874-P1 Length: 806
+# gnl|WGS:ZZZZ|Ceriodaphnia_006874-P1 Number of predicted TMRs: 5
+gnl|WGS:ZZZZ|Ceriodaphnia_006874-P1	outside	1	162				
+gnl|WGS:ZZZZ|Ceriodaphnia_006874-P1	TMhelix	163	172				
+gnl|WGS:ZZZZ|Ceriodaphnia_006874-P1	inside	173	173				
+gnl|WGS:ZZZZ|Ceriodaphnia_006874-P1	TMhelix	174	183				
+gnl|WGS:ZZZZ|Ceriodaphnia_006874-P1	outside	184	497				
+gnl|WGS:ZZZZ|Ceriodaphnia_006874-P1	TMhelix	498	518				
+gnl|WGS:ZZZZ|Ceriodaphnia_006874-P1	inside	519	568				
+gnl|WGS:ZZZZ|Ceriodaphnia_006874-P1	TMhelix	569	585				
+gnl|WGS:ZZZZ|Ceriodaphnia_006874-P1	outside	586	764				
+gnl|WGS:ZZZZ|Ceriodaphnia_006874-P1	TMhelix	765	785				
+gnl|WGS:ZZZZ|Ceriodaphnia_006874-P1	inside	786	806				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_006938-P1 Length: 543
+# gnl|WGS:ZZZZ|Ceriodaphnia_006938-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_006938-P1	signal	1	21				
+gnl|WGS:ZZZZ|Ceriodaphnia_006938-P1	outside	22	151				
+gnl|WGS:ZZZZ|Ceriodaphnia_006938-P1	TMhelix	152	172				
+gnl|WGS:ZZZZ|Ceriodaphnia_006938-P1	inside	173	231				
+gnl|WGS:ZZZZ|Ceriodaphnia_006938-P1	TMhelix	232	253				
+gnl|WGS:ZZZZ|Ceriodaphnia_006938-P1	outside	254	437				
+gnl|WGS:ZZZZ|Ceriodaphnia_006938-P1	TMhelix	438	458				
+gnl|WGS:ZZZZ|Ceriodaphnia_006938-P1	inside	459	543				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_006937-P1 Length: 484
+# gnl|WGS:ZZZZ|Ceriodaphnia_006937-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_006937-P1	signal	1	21				
+gnl|WGS:ZZZZ|Ceriodaphnia_006937-P1	outside	22	155				
+gnl|WGS:ZZZZ|Ceriodaphnia_006937-P1	TMhelix	156	176				
+gnl|WGS:ZZZZ|Ceriodaphnia_006937-P1	inside	177	231				
+gnl|WGS:ZZZZ|Ceriodaphnia_006937-P1	TMhelix	232	253				
+gnl|WGS:ZZZZ|Ceriodaphnia_006937-P1	outside	254	441				
+gnl|WGS:ZZZZ|Ceriodaphnia_006937-P1	TMhelix	442	462				
+gnl|WGS:ZZZZ|Ceriodaphnia_006937-P1	inside	463	484				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_006941-P1 Length: 454
+# gnl|WGS:ZZZZ|Ceriodaphnia_006941-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_006941-P1	signal	1	28				
+gnl|WGS:ZZZZ|Ceriodaphnia_006941-P1	outside	29	156				
+gnl|WGS:ZZZZ|Ceriodaphnia_006941-P1	TMhelix	157	180				
+gnl|WGS:ZZZZ|Ceriodaphnia_006941-P1	inside	181	229				
+gnl|WGS:ZZZZ|Ceriodaphnia_006941-P1	TMhelix	230	250				
+gnl|WGS:ZZZZ|Ceriodaphnia_006941-P1	outside	251	430				
+gnl|WGS:ZZZZ|Ceriodaphnia_006941-P1	TMhelix	431	451				
+gnl|WGS:ZZZZ|Ceriodaphnia_006941-P1	inside	452	454				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_007045-P1 Length: 438
+# gnl|WGS:ZZZZ|Ceriodaphnia_007045-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_007045-P1	signal	1	17				
+gnl|WGS:ZZZZ|Ceriodaphnia_007045-P1	outside	18	151				
+gnl|WGS:ZZZZ|Ceriodaphnia_007045-P1	TMhelix	152	174				
+gnl|WGS:ZZZZ|Ceriodaphnia_007045-P1	inside	175	217				
+gnl|WGS:ZZZZ|Ceriodaphnia_007045-P1	TMhelix	218	238				
+gnl|WGS:ZZZZ|Ceriodaphnia_007045-P1	outside	239	412				
+gnl|WGS:ZZZZ|Ceriodaphnia_007045-P1	TMhelix	413	437				
+gnl|WGS:ZZZZ|Ceriodaphnia_007045-P1	inside	438	438				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_007047-P1 Length: 410
+# gnl|WGS:ZZZZ|Ceriodaphnia_007047-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_007047-P1	outside	1	128				
+gnl|WGS:ZZZZ|Ceriodaphnia_007047-P1	TMhelix	129	149				
+gnl|WGS:ZZZZ|Ceriodaphnia_007047-P1	inside	150	178				
+gnl|WGS:ZZZZ|Ceriodaphnia_007047-P1	TMhelix	179	200				
+gnl|WGS:ZZZZ|Ceriodaphnia_007047-P1	outside	201	373				
+gnl|WGS:ZZZZ|Ceriodaphnia_007047-P1	TMhelix	374	398				
+gnl|WGS:ZZZZ|Ceriodaphnia_007047-P1	inside	399	410				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_007046-P1 Length: 458
+# gnl|WGS:ZZZZ|Ceriodaphnia_007046-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_007046-P1	signal	1	15				
+gnl|WGS:ZZZZ|Ceriodaphnia_007046-P1	outside	16	155				
+gnl|WGS:ZZZZ|Ceriodaphnia_007046-P1	TMhelix	156	174				
+gnl|WGS:ZZZZ|Ceriodaphnia_007046-P1	inside	175	220				
+gnl|WGS:ZZZZ|Ceriodaphnia_007046-P1	TMhelix	221	236				
+gnl|WGS:ZZZZ|Ceriodaphnia_007046-P1	outside	237	415				
+gnl|WGS:ZZZZ|Ceriodaphnia_007046-P1	TMhelix	416	436				
+gnl|WGS:ZZZZ|Ceriodaphnia_007046-P1	inside	437	458				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_007082-P1 Length: 400
+# gnl|WGS:ZZZZ|Ceriodaphnia_007082-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_007082-P1	outside	1	141				
+gnl|WGS:ZZZZ|Ceriodaphnia_007082-P1	TMhelix	142	161				
+gnl|WGS:ZZZZ|Ceriodaphnia_007082-P1	inside	162	186				
+gnl|WGS:ZZZZ|Ceriodaphnia_007082-P1	TMhelix	187	202				
+gnl|WGS:ZZZZ|Ceriodaphnia_007082-P1	outside	203	361				
+gnl|WGS:ZZZZ|Ceriodaphnia_007082-P1	TMhelix	362	382				
+gnl|WGS:ZZZZ|Ceriodaphnia_007082-P1	inside	383	400				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_007048-P1 Length: 422
+# gnl|WGS:ZZZZ|Ceriodaphnia_007048-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_007048-P1	signal	1	18				
+gnl|WGS:ZZZZ|Ceriodaphnia_007048-P1	outside	19	149				
+gnl|WGS:ZZZZ|Ceriodaphnia_007048-P1	TMhelix	150	170				
+gnl|WGS:ZZZZ|Ceriodaphnia_007048-P1	inside	171	196				
+gnl|WGS:ZZZZ|Ceriodaphnia_007048-P1	TMhelix	197	218				
+gnl|WGS:ZZZZ|Ceriodaphnia_007048-P1	outside	219	391				
+gnl|WGS:ZZZZ|Ceriodaphnia_007048-P1	TMhelix	392	416				
+gnl|WGS:ZZZZ|Ceriodaphnia_007048-P1	inside	417	422				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_007049-P1 Length: 446
+# gnl|WGS:ZZZZ|Ceriodaphnia_007049-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_007049-P1	outside	1	139				
+gnl|WGS:ZZZZ|Ceriodaphnia_007049-P1	TMhelix	140	160				
+gnl|WGS:ZZZZ|Ceriodaphnia_007049-P1	inside	161	205				
+gnl|WGS:ZZZZ|Ceriodaphnia_007049-P1	TMhelix	206	227				
+gnl|WGS:ZZZZ|Ceriodaphnia_007049-P1	outside	228	401				
+gnl|WGS:ZZZZ|Ceriodaphnia_007049-P1	TMhelix	402	422				
+gnl|WGS:ZZZZ|Ceriodaphnia_007049-P1	inside	423	446				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_007424-P1 Length: 482
+# gnl|WGS:ZZZZ|Ceriodaphnia_007424-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_007424-P1	outside	1	171				
+gnl|WGS:ZZZZ|Ceriodaphnia_007424-P1	TMhelix	172	192				
+gnl|WGS:ZZZZ|Ceriodaphnia_007424-P1	inside	193	249				
+gnl|WGS:ZZZZ|Ceriodaphnia_007424-P1	TMhelix	250	271				
+gnl|WGS:ZZZZ|Ceriodaphnia_007424-P1	outside	272	450				
+gnl|WGS:ZZZZ|Ceriodaphnia_007424-P1	TMhelix	451	478				
+gnl|WGS:ZZZZ|Ceriodaphnia_007424-P1	inside	479	482				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_007425-P1 Length: 449
+# gnl|WGS:ZZZZ|Ceriodaphnia_007425-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_007425-P1	outside	1	126				
+gnl|WGS:ZZZZ|Ceriodaphnia_007425-P1	TMhelix	127	147				
+gnl|WGS:ZZZZ|Ceriodaphnia_007425-P1	inside	148	205				
+gnl|WGS:ZZZZ|Ceriodaphnia_007425-P1	TMhelix	206	227				
+gnl|WGS:ZZZZ|Ceriodaphnia_007425-P1	outside	228	406				
+gnl|WGS:ZZZZ|Ceriodaphnia_007425-P1	TMhelix	407	427				
+gnl|WGS:ZZZZ|Ceriodaphnia_007425-P1	inside	428	449				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_007542-P1 Length: 630
+# gnl|WGS:ZZZZ|Ceriodaphnia_007542-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_007542-P1	signal	1	21				
+gnl|WGS:ZZZZ|Ceriodaphnia_007542-P1	outside	22	342				
+gnl|WGS:ZZZZ|Ceriodaphnia_007542-P1	TMhelix	343	364				
+gnl|WGS:ZZZZ|Ceriodaphnia_007542-P1	inside	365	409				
+gnl|WGS:ZZZZ|Ceriodaphnia_007542-P1	TMhelix	410	431				
+gnl|WGS:ZZZZ|Ceriodaphnia_007542-P1	outside	432	603				
+gnl|WGS:ZZZZ|Ceriodaphnia_007542-P1	TMhelix	604	627				
+gnl|WGS:ZZZZ|Ceriodaphnia_007542-P1	inside	628	630				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_007426-P1 Length: 421
+# gnl|WGS:ZZZZ|Ceriodaphnia_007426-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_007426-P1	outside	1	123				
+gnl|WGS:ZZZZ|Ceriodaphnia_007426-P1	TMhelix	124	144				
+gnl|WGS:ZZZZ|Ceriodaphnia_007426-P1	inside	145	188				
+gnl|WGS:ZZZZ|Ceriodaphnia_007426-P1	TMhelix	189	209				
+gnl|WGS:ZZZZ|Ceriodaphnia_007426-P1	outside	210	387				
+gnl|WGS:ZZZZ|Ceriodaphnia_007426-P1	TMhelix	388	408				
+gnl|WGS:ZZZZ|Ceriodaphnia_007426-P1	inside	409	421				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_007712-P1 Length: 928
+# gnl|WGS:ZZZZ|Ceriodaphnia_007712-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_007712-P1	signal	1	31				
+gnl|WGS:ZZZZ|Ceriodaphnia_007712-P1	outside	32	588				
+gnl|WGS:ZZZZ|Ceriodaphnia_007712-P1	TMhelix	589	607				
+gnl|WGS:ZZZZ|Ceriodaphnia_007712-P1	inside	608	679				
+gnl|WGS:ZZZZ|Ceriodaphnia_007712-P1	TMhelix	680	700				
+gnl|WGS:ZZZZ|Ceriodaphnia_007712-P1	outside	701	865				
+gnl|WGS:ZZZZ|Ceriodaphnia_007712-P1	TMhelix	866	886				
+gnl|WGS:ZZZZ|Ceriodaphnia_007712-P1	inside	887	928				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_007432-P1 Length: 511
+# gnl|WGS:ZZZZ|Ceriodaphnia_007432-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_007432-P1	signal	1	24				
+gnl|WGS:ZZZZ|Ceriodaphnia_007432-P1	outside	25	146				
+gnl|WGS:ZZZZ|Ceriodaphnia_007432-P1	TMhelix	147	167				
+gnl|WGS:ZZZZ|Ceriodaphnia_007432-P1	inside	168	203				
+gnl|WGS:ZZZZ|Ceriodaphnia_007432-P1	TMhelix	204	225				
+gnl|WGS:ZZZZ|Ceriodaphnia_007432-P1	outside	226	401				
+gnl|WGS:ZZZZ|Ceriodaphnia_007432-P1	TMhelix	402	422				
+gnl|WGS:ZZZZ|Ceriodaphnia_007432-P1	inside	423	511				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_007720-P1 Length: 903
+# gnl|WGS:ZZZZ|Ceriodaphnia_007720-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_007720-P1	signal	1	18				
+gnl|WGS:ZZZZ|Ceriodaphnia_007720-P1	outside	19	600				
+gnl|WGS:ZZZZ|Ceriodaphnia_007720-P1	TMhelix	601	621				
+gnl|WGS:ZZZZ|Ceriodaphnia_007720-P1	inside	622	669				
+gnl|WGS:ZZZZ|Ceriodaphnia_007720-P1	TMhelix	670	690				
+gnl|WGS:ZZZZ|Ceriodaphnia_007720-P1	outside	691	861				
+gnl|WGS:ZZZZ|Ceriodaphnia_007720-P1	TMhelix	862	882				
+gnl|WGS:ZZZZ|Ceriodaphnia_007720-P1	inside	883	903				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_007722-P1 Length: 891
+# gnl|WGS:ZZZZ|Ceriodaphnia_007722-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_007722-P1	outside	1	551				
+gnl|WGS:ZZZZ|Ceriodaphnia_007722-P1	TMhelix	552	572				
+gnl|WGS:ZZZZ|Ceriodaphnia_007722-P1	inside	573	629				
+gnl|WGS:ZZZZ|Ceriodaphnia_007722-P1	TMhelix	630	650				
+gnl|WGS:ZZZZ|Ceriodaphnia_007722-P1	outside	651	818				
+gnl|WGS:ZZZZ|Ceriodaphnia_007722-P1	TMhelix	819	839				
+gnl|WGS:ZZZZ|Ceriodaphnia_007722-P1	inside	840	891				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_007833-P1 Length: 488
+# gnl|WGS:ZZZZ|Ceriodaphnia_007833-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_007833-P1	signal	1	21				
+gnl|WGS:ZZZZ|Ceriodaphnia_007833-P1	outside	22	150				
+gnl|WGS:ZZZZ|Ceriodaphnia_007833-P1	TMhelix	151	171				
+gnl|WGS:ZZZZ|Ceriodaphnia_007833-P1	inside	172	240				
+gnl|WGS:ZZZZ|Ceriodaphnia_007833-P1	TMhelix	241	261				
+gnl|WGS:ZZZZ|Ceriodaphnia_007833-P1	outside	262	444				
+gnl|WGS:ZZZZ|Ceriodaphnia_007833-P1	TMhelix	445	465				
+gnl|WGS:ZZZZ|Ceriodaphnia_007833-P1	inside	466	488				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_007931-P1 Length: 475
+# gnl|WGS:ZZZZ|Ceriodaphnia_007931-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_007931-P1	signal	1	22				
+gnl|WGS:ZZZZ|Ceriodaphnia_007931-P1	outside	23	150				
+gnl|WGS:ZZZZ|Ceriodaphnia_007931-P1	TMhelix	151	171				
+gnl|WGS:ZZZZ|Ceriodaphnia_007931-P1	inside	172	231				
+gnl|WGS:ZZZZ|Ceriodaphnia_007931-P1	TMhelix	232	253				
+gnl|WGS:ZZZZ|Ceriodaphnia_007931-P1	outside	254	438				
+gnl|WGS:ZZZZ|Ceriodaphnia_007931-P1	TMhelix	439	459				
+gnl|WGS:ZZZZ|Ceriodaphnia_007931-P1	inside	460	475				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_007936-P1 Length: 519
+# gnl|WGS:ZZZZ|Ceriodaphnia_007936-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_007936-P1	signal	1	22				
+gnl|WGS:ZZZZ|Ceriodaphnia_007936-P1	outside	23	152				
+gnl|WGS:ZZZZ|Ceriodaphnia_007936-P1	TMhelix	153	173				
+gnl|WGS:ZZZZ|Ceriodaphnia_007936-P1	inside	174	252				
+gnl|WGS:ZZZZ|Ceriodaphnia_007936-P1	TMhelix	253	268				
+gnl|WGS:ZZZZ|Ceriodaphnia_007936-P1	outside	269	455				
+gnl|WGS:ZZZZ|Ceriodaphnia_007936-P1	TMhelix	456	476				
+gnl|WGS:ZZZZ|Ceriodaphnia_007936-P1	inside	477	519				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_007937-P1 Length: 487
+# gnl|WGS:ZZZZ|Ceriodaphnia_007937-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_007937-P1	signal	1	13				
+gnl|WGS:ZZZZ|Ceriodaphnia_007937-P1	outside	14	143				
+gnl|WGS:ZZZZ|Ceriodaphnia_007937-P1	TMhelix	144	164				
+gnl|WGS:ZZZZ|Ceriodaphnia_007937-P1	inside	165	245				
+gnl|WGS:ZZZZ|Ceriodaphnia_007937-P1	TMhelix	246	267				
+gnl|WGS:ZZZZ|Ceriodaphnia_007937-P1	outside	268	448				
+gnl|WGS:ZZZZ|Ceriodaphnia_007937-P1	TMhelix	449	473				
+gnl|WGS:ZZZZ|Ceriodaphnia_007937-P1	inside	474	487				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_007973-P1 Length: 463
+# gnl|WGS:ZZZZ|Ceriodaphnia_007973-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_007973-P1	signal	1	19				
+gnl|WGS:ZZZZ|Ceriodaphnia_007973-P1	outside	20	151				
+gnl|WGS:ZZZZ|Ceriodaphnia_007973-P1	TMhelix	152	172				
+gnl|WGS:ZZZZ|Ceriodaphnia_007973-P1	inside	173	232				
+gnl|WGS:ZZZZ|Ceriodaphnia_007973-P1	TMhelix	233	254				
+gnl|WGS:ZZZZ|Ceriodaphnia_007973-P1	outside	255	430				
+gnl|WGS:ZZZZ|Ceriodaphnia_007973-P1	TMhelix	431	451				
+gnl|WGS:ZZZZ|Ceriodaphnia_007973-P1	inside	452	463				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_008173-P1 Length: 498
+# gnl|WGS:ZZZZ|Ceriodaphnia_008173-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_008173-P1	outside	1	190				
+gnl|WGS:ZZZZ|Ceriodaphnia_008173-P1	TMhelix	191	211				
+gnl|WGS:ZZZZ|Ceriodaphnia_008173-P1	inside	212	248				
+gnl|WGS:ZZZZ|Ceriodaphnia_008173-P1	TMhelix	249	270				
+gnl|WGS:ZZZZ|Ceriodaphnia_008173-P1	outside	271	447				
+gnl|WGS:ZZZZ|Ceriodaphnia_008173-P1	TMhelix	448	468				
+gnl|WGS:ZZZZ|Ceriodaphnia_008173-P1	inside	469	498				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_008184-P1 Length: 408
+# gnl|WGS:ZZZZ|Ceriodaphnia_008184-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_008184-P1	signal	1	11				
+gnl|WGS:ZZZZ|Ceriodaphnia_008184-P1	outside	12	142				
+gnl|WGS:ZZZZ|Ceriodaphnia_008184-P1	TMhelix	143	163				
+gnl|WGS:ZZZZ|Ceriodaphnia_008184-P1	inside	164	203				
+gnl|WGS:ZZZZ|Ceriodaphnia_008184-P1	TMhelix	204	225				
+gnl|WGS:ZZZZ|Ceriodaphnia_008184-P1	outside	226	380				
+gnl|WGS:ZZZZ|Ceriodaphnia_008184-P1	TMhelix	381	401				
+gnl|WGS:ZZZZ|Ceriodaphnia_008184-P1	inside	402	408				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_007991-P1 Length: 532
+# gnl|WGS:ZZZZ|Ceriodaphnia_007991-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_007991-P1	outside	1	121				
+gnl|WGS:ZZZZ|Ceriodaphnia_007991-P1	TMhelix	122	146				
+gnl|WGS:ZZZZ|Ceriodaphnia_007991-P1	inside	147	201				
+gnl|WGS:ZZZZ|Ceriodaphnia_007991-P1	TMhelix	202	223				
+gnl|WGS:ZZZZ|Ceriodaphnia_007991-P1	outside	224	403				
+gnl|WGS:ZZZZ|Ceriodaphnia_007991-P1	TMhelix	404	426				
+gnl|WGS:ZZZZ|Ceriodaphnia_007991-P1	inside	427	532				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_008260-P1 Length: 460
+# gnl|WGS:ZZZZ|Ceriodaphnia_008260-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_008260-P1	outside	1	130				
+gnl|WGS:ZZZZ|Ceriodaphnia_008260-P1	TMhelix	131	151				
+gnl|WGS:ZZZZ|Ceriodaphnia_008260-P1	inside	152	217				
+gnl|WGS:ZZZZ|Ceriodaphnia_008260-P1	TMhelix	218	239				
+gnl|WGS:ZZZZ|Ceriodaphnia_008260-P1	outside	240	414				
+gnl|WGS:ZZZZ|Ceriodaphnia_008260-P1	TMhelix	415	439				
+gnl|WGS:ZZZZ|Ceriodaphnia_008260-P1	inside	440	460				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_008584-P1 Length: 470
+# gnl|WGS:ZZZZ|Ceriodaphnia_008584-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_008584-P1	signal	1	27				
+gnl|WGS:ZZZZ|Ceriodaphnia_008584-P1	outside	28	161				
+gnl|WGS:ZZZZ|Ceriodaphnia_008584-P1	TMhelix	162	182				
+gnl|WGS:ZZZZ|Ceriodaphnia_008584-P1	inside	183	232				
+gnl|WGS:ZZZZ|Ceriodaphnia_008584-P1	TMhelix	233	254				
+gnl|WGS:ZZZZ|Ceriodaphnia_008584-P1	outside	255	437				
+gnl|WGS:ZZZZ|Ceriodaphnia_008584-P1	TMhelix	438	458				
+gnl|WGS:ZZZZ|Ceriodaphnia_008584-P1	inside	459	470				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_008419-P1 Length: 942
+# gnl|WGS:ZZZZ|Ceriodaphnia_008419-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_008419-P1	signal	1	18				
+gnl|WGS:ZZZZ|Ceriodaphnia_008419-P1	outside	19	540				
+gnl|WGS:ZZZZ|Ceriodaphnia_008419-P1	TMhelix	541	561				
+gnl|WGS:ZZZZ|Ceriodaphnia_008419-P1	inside	562	615				
+gnl|WGS:ZZZZ|Ceriodaphnia_008419-P1	TMhelix	616	642				
+gnl|WGS:ZZZZ|Ceriodaphnia_008419-P1	outside	643	839				
+gnl|WGS:ZZZZ|Ceriodaphnia_008419-P1	TMhelix	840	860				
+gnl|WGS:ZZZZ|Ceriodaphnia_008419-P1	inside	861	942				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_008440-P1 Length: 488
+# gnl|WGS:ZZZZ|Ceriodaphnia_008440-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_008440-P1	signal	1	57				
+gnl|WGS:ZZZZ|Ceriodaphnia_008440-P1	outside	58	189				
+gnl|WGS:ZZZZ|Ceriodaphnia_008440-P1	TMhelix	190	210				
+gnl|WGS:ZZZZ|Ceriodaphnia_008440-P1	inside	211	254				
+gnl|WGS:ZZZZ|Ceriodaphnia_008440-P1	TMhelix	255	275				
+gnl|WGS:ZZZZ|Ceriodaphnia_008440-P1	outside	276	449				
+gnl|WGS:ZZZZ|Ceriodaphnia_008440-P1	TMhelix	450	470				
+gnl|WGS:ZZZZ|Ceriodaphnia_008440-P1	inside	471	488				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_008954-P1 Length: 415
+# gnl|WGS:ZZZZ|Ceriodaphnia_008954-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_008954-P1	outside	1	145				
+gnl|WGS:ZZZZ|Ceriodaphnia_008954-P1	TMhelix	146	166				
+gnl|WGS:ZZZZ|Ceriodaphnia_008954-P1	inside	167	214				
+gnl|WGS:ZZZZ|Ceriodaphnia_008954-P1	TMhelix	215	236				
+gnl|WGS:ZZZZ|Ceriodaphnia_008954-P1	outside	237	395				
+gnl|WGS:ZZZZ|Ceriodaphnia_008954-P1	TMhelix	396	408				
+gnl|WGS:ZZZZ|Ceriodaphnia_008954-P1	inside	409	415				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_008587-P1 Length: 436
+# gnl|WGS:ZZZZ|Ceriodaphnia_008587-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_008587-P1	signal	1	18				
+gnl|WGS:ZZZZ|Ceriodaphnia_008587-P1	outside	19	144				
+gnl|WGS:ZZZZ|Ceriodaphnia_008587-P1	TMhelix	145	165				
+gnl|WGS:ZZZZ|Ceriodaphnia_008587-P1	inside	166	202				
+gnl|WGS:ZZZZ|Ceriodaphnia_008587-P1	TMhelix	203	223				
+gnl|WGS:ZZZZ|Ceriodaphnia_008587-P1	outside	224	401				
+gnl|WGS:ZZZZ|Ceriodaphnia_008587-P1	TMhelix	402	422				
+gnl|WGS:ZZZZ|Ceriodaphnia_008587-P1	inside	423	436				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_008955-P1 Length: 456
+# gnl|WGS:ZZZZ|Ceriodaphnia_008955-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_008955-P1	outside	1	123				
+gnl|WGS:ZZZZ|Ceriodaphnia_008955-P1	TMhelix	124	143				
+gnl|WGS:ZZZZ|Ceriodaphnia_008955-P1	inside	144	192				
+gnl|WGS:ZZZZ|Ceriodaphnia_008955-P1	TMhelix	193	205				
+gnl|WGS:ZZZZ|Ceriodaphnia_008955-P1	outside	206	389				
+gnl|WGS:ZZZZ|Ceriodaphnia_008955-P1	TMhelix	390	410				
+gnl|WGS:ZZZZ|Ceriodaphnia_008955-P1	inside	411	456				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_008957-P1 Length: 439
+# gnl|WGS:ZZZZ|Ceriodaphnia_008957-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_008957-P1	outside	1	138				
+gnl|WGS:ZZZZ|Ceriodaphnia_008957-P1	TMhelix	139	159				
+gnl|WGS:ZZZZ|Ceriodaphnia_008957-P1	inside	160	208				
+gnl|WGS:ZZZZ|Ceriodaphnia_008957-P1	TMhelix	209	222				
+gnl|WGS:ZZZZ|Ceriodaphnia_008957-P1	outside	223	403				
+gnl|WGS:ZZZZ|Ceriodaphnia_008957-P1	TMhelix	404	424				
+gnl|WGS:ZZZZ|Ceriodaphnia_008957-P1	inside	425	439				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_008956-P1 Length: 460
+# gnl|WGS:ZZZZ|Ceriodaphnia_008956-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_008956-P1	signal	1	21				
+gnl|WGS:ZZZZ|Ceriodaphnia_008956-P1	outside	22	160				
+gnl|WGS:ZZZZ|Ceriodaphnia_008956-P1	TMhelix	161	181				
+gnl|WGS:ZZZZ|Ceriodaphnia_008956-P1	inside	182	230				
+gnl|WGS:ZZZZ|Ceriodaphnia_008956-P1	TMhelix	231	244				
+gnl|WGS:ZZZZ|Ceriodaphnia_008956-P1	outside	245	428				
+gnl|WGS:ZZZZ|Ceriodaphnia_008956-P1	TMhelix	429	449				
+gnl|WGS:ZZZZ|Ceriodaphnia_008956-P1	inside	450	460				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_009106-P1 Length: 292
+# gnl|WGS:ZZZZ|Ceriodaphnia_009106-P1 Number of predicted TMRs: 2
+gnl|WGS:ZZZZ|Ceriodaphnia_009106-P1	outside	1	62				
+gnl|WGS:ZZZZ|Ceriodaphnia_009106-P1	TMhelix	63	83				
+gnl|WGS:ZZZZ|Ceriodaphnia_009106-P1	inside	84	124				
+gnl|WGS:ZZZZ|Ceriodaphnia_009106-P1	TMhelix	125	146				
+gnl|WGS:ZZZZ|Ceriodaphnia_009106-P1	outside	147	292				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_009123-P1 Length: 1062
+# gnl|WGS:ZZZZ|Ceriodaphnia_009123-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_009123-P1	signal	1	27				
+gnl|WGS:ZZZZ|Ceriodaphnia_009123-P1	outside	28	687				
+gnl|WGS:ZZZZ|Ceriodaphnia_009123-P1	TMhelix	688	708				
+gnl|WGS:ZZZZ|Ceriodaphnia_009123-P1	inside	709	757				
+gnl|WGS:ZZZZ|Ceriodaphnia_009123-P1	TMhelix	758	778				
+gnl|WGS:ZZZZ|Ceriodaphnia_009123-P1	outside	779	944				
+gnl|WGS:ZZZZ|Ceriodaphnia_009123-P1	TMhelix	945	965				
+gnl|WGS:ZZZZ|Ceriodaphnia_009123-P1	inside	966	1062				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_009039-P1 Length: 459
+# gnl|WGS:ZZZZ|Ceriodaphnia_009039-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_009039-P1	signal	1	15				
+gnl|WGS:ZZZZ|Ceriodaphnia_009039-P1	outside	16	149				
+gnl|WGS:ZZZZ|Ceriodaphnia_009039-P1	TMhelix	150	170				
+gnl|WGS:ZZZZ|Ceriodaphnia_009039-P1	inside	171	230				
+gnl|WGS:ZZZZ|Ceriodaphnia_009039-P1	TMhelix	231	252				
+gnl|WGS:ZZZZ|Ceriodaphnia_009039-P1	outside	253	425				
+gnl|WGS:ZZZZ|Ceriodaphnia_009039-P1	TMhelix	426	451				
+gnl|WGS:ZZZZ|Ceriodaphnia_009039-P1	inside	452	459				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_009397-P1 Length: 493
+# gnl|WGS:ZZZZ|Ceriodaphnia_009397-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_009397-P1	outside	1	128				
+gnl|WGS:ZZZZ|Ceriodaphnia_009397-P1	TMhelix	129	149				
+gnl|WGS:ZZZZ|Ceriodaphnia_009397-P1	inside	150	194				
+gnl|WGS:ZZZZ|Ceriodaphnia_009397-P1	TMhelix	195	215				
+gnl|WGS:ZZZZ|Ceriodaphnia_009397-P1	outside	216	395				
+gnl|WGS:ZZZZ|Ceriodaphnia_009397-P1	TMhelix	396	421				
+gnl|WGS:ZZZZ|Ceriodaphnia_009397-P1	inside	422	493				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_009455-P1 Length: 453
+# gnl|WGS:ZZZZ|Ceriodaphnia_009455-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_009455-P1	signal	1	24				
+gnl|WGS:ZZZZ|Ceriodaphnia_009455-P1	outside	25	164				
+gnl|WGS:ZZZZ|Ceriodaphnia_009455-P1	TMhelix	165	185				
+gnl|WGS:ZZZZ|Ceriodaphnia_009455-P1	inside	186	228				
+gnl|WGS:ZZZZ|Ceriodaphnia_009455-P1	TMhelix	229	250				
+gnl|WGS:ZZZZ|Ceriodaphnia_009455-P1	outside	251	427				
+gnl|WGS:ZZZZ|Ceriodaphnia_009455-P1	TMhelix	428	448				
+gnl|WGS:ZZZZ|Ceriodaphnia_009455-P1	inside	449	453				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_009493-P1 Length: 380
+# gnl|WGS:ZZZZ|Ceriodaphnia_009493-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_009493-P1	outside	1	77				
+gnl|WGS:ZZZZ|Ceriodaphnia_009493-P1	TMhelix	78	98				
+gnl|WGS:ZZZZ|Ceriodaphnia_009493-P1	inside	99	150				
+gnl|WGS:ZZZZ|Ceriodaphnia_009493-P1	TMhelix	151	164				
+gnl|WGS:ZZZZ|Ceriodaphnia_009493-P1	outside	165	347				
+gnl|WGS:ZZZZ|Ceriodaphnia_009493-P1	TMhelix	348	372				
+gnl|WGS:ZZZZ|Ceriodaphnia_009493-P1	inside	373	380				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_010535-P1 Length: 294
+# gnl|WGS:ZZZZ|Ceriodaphnia_010535-P1 Number of predicted TMRs: 2
+gnl|WGS:ZZZZ|Ceriodaphnia_010535-P1	outside	1	74				
+gnl|WGS:ZZZZ|Ceriodaphnia_010535-P1	TMhelix	75	97				
+gnl|WGS:ZZZZ|Ceriodaphnia_010535-P1	inside	98	142				
+gnl|WGS:ZZZZ|Ceriodaphnia_010535-P1	TMhelix	143	164				
+gnl|WGS:ZZZZ|Ceriodaphnia_010535-P1	outside	165	294				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_010447-P1 Length: 508
+# gnl|WGS:ZZZZ|Ceriodaphnia_010447-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_010447-P1	outside	1	197				
+gnl|WGS:ZZZZ|Ceriodaphnia_010447-P1	TMhelix	198	218				
+gnl|WGS:ZZZZ|Ceriodaphnia_010447-P1	inside	219	281				
+gnl|WGS:ZZZZ|Ceriodaphnia_010447-P1	TMhelix	282	295				
+gnl|WGS:ZZZZ|Ceriodaphnia_010447-P1	outside	296	481				
+gnl|WGS:ZZZZ|Ceriodaphnia_010447-P1	TMhelix	482	502				
+gnl|WGS:ZZZZ|Ceriodaphnia_010447-P1	inside	503	508				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_009674-P1 Length: 404
+# gnl|WGS:ZZZZ|Ceriodaphnia_009674-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_009674-P1	outside	1	116				
+gnl|WGS:ZZZZ|Ceriodaphnia_009674-P1	TMhelix	117	137				
+gnl|WGS:ZZZZ|Ceriodaphnia_009674-P1	inside	138	163				
+gnl|WGS:ZZZZ|Ceriodaphnia_009674-P1	TMhelix	164	185				
+gnl|WGS:ZZZZ|Ceriodaphnia_009674-P1	outside	186	356				
+gnl|WGS:ZZZZ|Ceriodaphnia_009674-P1	TMhelix	357	381				
+gnl|WGS:ZZZZ|Ceriodaphnia_009674-P1	inside	382	404				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_010112-P1 Length: 455
+# gnl|WGS:ZZZZ|Ceriodaphnia_010112-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_010112-P1	signal	1	27				
+gnl|WGS:ZZZZ|Ceriodaphnia_010112-P1	outside	28	159				
+gnl|WGS:ZZZZ|Ceriodaphnia_010112-P1	TMhelix	160	180				
+gnl|WGS:ZZZZ|Ceriodaphnia_010112-P1	inside	181	226				
+gnl|WGS:ZZZZ|Ceriodaphnia_010112-P1	TMhelix	227	248				
+gnl|WGS:ZZZZ|Ceriodaphnia_010112-P1	outside	249	423				
+gnl|WGS:ZZZZ|Ceriodaphnia_010112-P1	TMhelix	424	444				
+gnl|WGS:ZZZZ|Ceriodaphnia_010112-P1	inside	445	455				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_010446-P1 Length: 465
+# gnl|WGS:ZZZZ|Ceriodaphnia_010446-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_010446-P1	outside	1	148				
+gnl|WGS:ZZZZ|Ceriodaphnia_010446-P1	TMhelix	149	171				
+gnl|WGS:ZZZZ|Ceriodaphnia_010446-P1	inside	172	232				
+gnl|WGS:ZZZZ|Ceriodaphnia_010446-P1	TMhelix	233	254				
+gnl|WGS:ZZZZ|Ceriodaphnia_010446-P1	outside	255	435				
+gnl|WGS:ZZZZ|Ceriodaphnia_010446-P1	TMhelix	436	456				
+gnl|WGS:ZZZZ|Ceriodaphnia_010446-P1	inside	457	465				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_010111-P1 Length: 451
+# gnl|WGS:ZZZZ|Ceriodaphnia_010111-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_010111-P1	signal	1	28				
+gnl|WGS:ZZZZ|Ceriodaphnia_010111-P1	outside	29	160				
+gnl|WGS:ZZZZ|Ceriodaphnia_010111-P1	TMhelix	161	181				
+gnl|WGS:ZZZZ|Ceriodaphnia_010111-P1	inside	182	227				
+gnl|WGS:ZZZZ|Ceriodaphnia_010111-P1	TMhelix	228	243				
+gnl|WGS:ZZZZ|Ceriodaphnia_010111-P1	outside	244	420				
+gnl|WGS:ZZZZ|Ceriodaphnia_010111-P1	TMhelix	421	441				
+gnl|WGS:ZZZZ|Ceriodaphnia_010111-P1	inside	442	451				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_009505-P1 Length: 611
+# gnl|WGS:ZZZZ|Ceriodaphnia_009505-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_009505-P1	signal	1	21				
+gnl|WGS:ZZZZ|Ceriodaphnia_009505-P1	outside	22	312				
+gnl|WGS:ZZZZ|Ceriodaphnia_009505-P1	TMhelix	313	333				
+gnl|WGS:ZZZZ|Ceriodaphnia_009505-P1	inside	334	380				
+gnl|WGS:ZZZZ|Ceriodaphnia_009505-P1	TMhelix	381	391				
+gnl|WGS:ZZZZ|Ceriodaphnia_009505-P1	outside	392	564				
+gnl|WGS:ZZZZ|Ceriodaphnia_009505-P1	TMhelix	565	585				
+gnl|WGS:ZZZZ|Ceriodaphnia_009505-P1	inside	586	611				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_009513-P1 Length: 590
+# gnl|WGS:ZZZZ|Ceriodaphnia_009513-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_009513-P1	signal	1	26				
+gnl|WGS:ZZZZ|Ceriodaphnia_009513-P1	outside	27	148				
+gnl|WGS:ZZZZ|Ceriodaphnia_009513-P1	TMhelix	149	169				
+gnl|WGS:ZZZZ|Ceriodaphnia_009513-P1	inside	170	239				
+gnl|WGS:ZZZZ|Ceriodaphnia_009513-P1	TMhelix	240	261				
+gnl|WGS:ZZZZ|Ceriodaphnia_009513-P1	outside	262	431				
+gnl|WGS:ZZZZ|Ceriodaphnia_009513-P1	TMhelix	432	452				
+gnl|WGS:ZZZZ|Ceriodaphnia_009513-P1	inside	453	590				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_009501-P1 Length: 612
+# gnl|WGS:ZZZZ|Ceriodaphnia_009501-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_009501-P1	signal	1	19				
+gnl|WGS:ZZZZ|Ceriodaphnia_009501-P1	outside	20	318				
+gnl|WGS:ZZZZ|Ceriodaphnia_009501-P1	TMhelix	319	341				
+gnl|WGS:ZZZZ|Ceriodaphnia_009501-P1	inside	342	379				
+gnl|WGS:ZZZZ|Ceriodaphnia_009501-P1	TMhelix	380	401				
+gnl|WGS:ZZZZ|Ceriodaphnia_009501-P1	outside	402	569				
+gnl|WGS:ZZZZ|Ceriodaphnia_009501-P1	TMhelix	570	590				
+gnl|WGS:ZZZZ|Ceriodaphnia_009501-P1	inside	591	612				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_009500-P1 Length: 563
+# gnl|WGS:ZZZZ|Ceriodaphnia_009500-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_009500-P1	signal	1	15				
+gnl|WGS:ZZZZ|Ceriodaphnia_009500-P1	outside	16	304				
+gnl|WGS:ZZZZ|Ceriodaphnia_009500-P1	TMhelix	305	325				
+gnl|WGS:ZZZZ|Ceriodaphnia_009500-P1	inside	326	357				
+gnl|WGS:ZZZZ|Ceriodaphnia_009500-P1	TMhelix	358	380				
+gnl|WGS:ZZZZ|Ceriodaphnia_009500-P1	outside	381	538				
+gnl|WGS:ZZZZ|Ceriodaphnia_009500-P1	TMhelix	539	559				
+gnl|WGS:ZZZZ|Ceriodaphnia_009500-P1	inside	560	563				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_010139-P1 Length: 1413
+# gnl|WGS:ZZZZ|Ceriodaphnia_010139-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_010139-P1	signal	1	15				
+gnl|WGS:ZZZZ|Ceriodaphnia_010139-P1	outside	16	781				
+gnl|WGS:ZZZZ|Ceriodaphnia_010139-P1	TMhelix	782	802				
+gnl|WGS:ZZZZ|Ceriodaphnia_010139-P1	inside	803	850				
+gnl|WGS:ZZZZ|Ceriodaphnia_010139-P1	TMhelix	851	874				
+gnl|WGS:ZZZZ|Ceriodaphnia_010139-P1	outside	875	1030				
+gnl|WGS:ZZZZ|Ceriodaphnia_010139-P1	TMhelix	1031	1051				
+gnl|WGS:ZZZZ|Ceriodaphnia_010139-P1	inside	1052	1413				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_009866-P1 Length: 760
+# gnl|WGS:ZZZZ|Ceriodaphnia_009866-P1 Number of predicted TMRs: 6
+gnl|WGS:ZZZZ|Ceriodaphnia_009866-P1	signal	1	31				
+gnl|WGS:ZZZZ|Ceriodaphnia_009866-P1	outside	32	174				
+gnl|WGS:ZZZZ|Ceriodaphnia_009866-P1	TMhelix	175	195				
+gnl|WGS:ZZZZ|Ceriodaphnia_009866-P1	inside	196	246				
+gnl|WGS:ZZZZ|Ceriodaphnia_009866-P1	TMhelix	247	268				
+gnl|WGS:ZZZZ|Ceriodaphnia_009866-P1	outside	269	443				
+gnl|WGS:ZZZZ|Ceriodaphnia_009866-P1	TMhelix	444	464				
+gnl|WGS:ZZZZ|Ceriodaphnia_009866-P1	inside	465	636				
+gnl|WGS:ZZZZ|Ceriodaphnia_009866-P1	TMhelix	637	657				
+gnl|WGS:ZZZZ|Ceriodaphnia_009866-P1	outside	658	668				
+gnl|WGS:ZZZZ|Ceriodaphnia_009866-P1	TMhelix	669	691				
+gnl|WGS:ZZZZ|Ceriodaphnia_009866-P1	inside	692	706				
+gnl|WGS:ZZZZ|Ceriodaphnia_009866-P1	TMhelix	707	729				
+gnl|WGS:ZZZZ|Ceriodaphnia_009866-P1	outside	730	760				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_009532-P1 Length: 409
+# gnl|WGS:ZZZZ|Ceriodaphnia_009532-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_009532-P1	outside	1	144				
+gnl|WGS:ZZZZ|Ceriodaphnia_009532-P1	TMhelix	145	154				
+gnl|WGS:ZZZZ|Ceriodaphnia_009532-P1	inside	155	178				
+gnl|WGS:ZZZZ|Ceriodaphnia_009532-P1	TMhelix	179	192				
+gnl|WGS:ZZZZ|Ceriodaphnia_009532-P1	outside	193	373				
+gnl|WGS:ZZZZ|Ceriodaphnia_009532-P1	TMhelix	374	394				
+gnl|WGS:ZZZZ|Ceriodaphnia_009532-P1	inside	395	409				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_009504-P1 Length: 615
+# gnl|WGS:ZZZZ|Ceriodaphnia_009504-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_009504-P1	signal	1	20				
+gnl|WGS:ZZZZ|Ceriodaphnia_009504-P1	outside	21	326				
+gnl|WGS:ZZZZ|Ceriodaphnia_009504-P1	TMhelix	327	347				
+gnl|WGS:ZZZZ|Ceriodaphnia_009504-P1	inside	348	393				
+gnl|WGS:ZZZZ|Ceriodaphnia_009504-P1	TMhelix	394	406				
+gnl|WGS:ZZZZ|Ceriodaphnia_009504-P1	outside	407	578				
+gnl|WGS:ZZZZ|Ceriodaphnia_009504-P1	TMhelix	579	599				
+gnl|WGS:ZZZZ|Ceriodaphnia_009504-P1	inside	600	615				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_009676-P1 Length: 481
+# gnl|WGS:ZZZZ|Ceriodaphnia_009676-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_009676-P1	signal	1	18				
+gnl|WGS:ZZZZ|Ceriodaphnia_009676-P1	outside	19	152				
+gnl|WGS:ZZZZ|Ceriodaphnia_009676-P1	TMhelix	153	175				
+gnl|WGS:ZZZZ|Ceriodaphnia_009676-P1	inside	176	233				
+gnl|WGS:ZZZZ|Ceriodaphnia_009676-P1	TMhelix	234	255				
+gnl|WGS:ZZZZ|Ceriodaphnia_009676-P1	outside	256	430				
+gnl|WGS:ZZZZ|Ceriodaphnia_009676-P1	TMhelix	431	451				
+gnl|WGS:ZZZZ|Ceriodaphnia_009676-P1	inside	452	481				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_009502-P1 Length: 602
+# gnl|WGS:ZZZZ|Ceriodaphnia_009502-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_009502-P1	signal	1	19				
+gnl|WGS:ZZZZ|Ceriodaphnia_009502-P1	outside	20	317				
+gnl|WGS:ZZZZ|Ceriodaphnia_009502-P1	TMhelix	318	340				
+gnl|WGS:ZZZZ|Ceriodaphnia_009502-P1	inside	341	378				
+gnl|WGS:ZZZZ|Ceriodaphnia_009502-P1	TMhelix	379	400				
+gnl|WGS:ZZZZ|Ceriodaphnia_009502-P1	outside	401	567				
+gnl|WGS:ZZZZ|Ceriodaphnia_009502-P1	TMhelix	568	588				
+gnl|WGS:ZZZZ|Ceriodaphnia_009502-P1	inside	589	602				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_009865-P1 Length: 488
+# gnl|WGS:ZZZZ|Ceriodaphnia_009865-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_009865-P1	outside	1	135				
+gnl|WGS:ZZZZ|Ceriodaphnia_009865-P1	TMhelix	136	156				
+gnl|WGS:ZZZZ|Ceriodaphnia_009865-P1	inside	157	211				
+gnl|WGS:ZZZZ|Ceriodaphnia_009865-P1	TMhelix	212	232				
+gnl|WGS:ZZZZ|Ceriodaphnia_009865-P1	outside	233	413				
+gnl|WGS:ZZZZ|Ceriodaphnia_009865-P1	TMhelix	414	434				
+gnl|WGS:ZZZZ|Ceriodaphnia_009865-P1	inside	435	488				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_010541-P1 Length: 474
+# gnl|WGS:ZZZZ|Ceriodaphnia_010541-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_010541-P1	signal	1	25				
+gnl|WGS:ZZZZ|Ceriodaphnia_010541-P1	outside	26	159				
+gnl|WGS:ZZZZ|Ceriodaphnia_010541-P1	TMhelix	160	180				
+gnl|WGS:ZZZZ|Ceriodaphnia_010541-P1	inside	181	228				
+gnl|WGS:ZZZZ|Ceriodaphnia_010541-P1	TMhelix	229	249				
+gnl|WGS:ZZZZ|Ceriodaphnia_010541-P1	outside	250	428				
+gnl|WGS:ZZZZ|Ceriodaphnia_010541-P1	TMhelix	429	449				
+gnl|WGS:ZZZZ|Ceriodaphnia_010541-P1	inside	450	474				
+//
+# gnl|WGS:ZZZZ|Ceriodaphnia_010594-P1 Length: 982
+# gnl|WGS:ZZZZ|Ceriodaphnia_010594-P1 Number of predicted TMRs: 3
+gnl|WGS:ZZZZ|Ceriodaphnia_010594-P1	signal	1	22				
+gnl|WGS:ZZZZ|Ceriodaphnia_010594-P1	outside	23	562				
+gnl|WGS:ZZZZ|Ceriodaphnia_010594-P1	TMhelix	563	583				
+gnl|WGS:ZZZZ|Ceriodaphnia_010594-P1	inside	584	630				
+gnl|WGS:ZZZZ|Ceriodaphnia_010594-P1	TMhelix	631	651				
+gnl|WGS:ZZZZ|Ceriodaphnia_010594-P1	outside	652	817				
+gnl|WGS:ZZZZ|Ceriodaphnia_010594-P1	TMhelix	818	840				
+gnl|WGS:ZZZZ|Ceriodaphnia_010594-P1	inside	841	982				
