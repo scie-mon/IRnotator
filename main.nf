@@ -32,7 +32,8 @@ params.outdir        = params.outdir ?: 'results'
 params.deeptmhmm_dir = params.deeptmhmm_dir ?: null
 params.run_deeptmhmm = params.run_deeptmhmm == null ? true : params.run_deeptmhmm
 params.deeptmhmm_salvage_paths = params.deeptmhmm_salvage_paths ?: []
-params.manual_review = params.manual_review ?: true
+params.manual_review = params.manual_review == null ? true : params.manual_review
+params.review_tsv    = params.review_tsv ?: null
 
 workflow {
     def has_proteins = params.proteins_faa as boolean
@@ -54,6 +55,7 @@ workflow {
             params.proteins_faa,
             checkIfExists: true
         )
+
         normalize_res = NORMALIZE_PROTEINS(
             proteins_input_ch,
             normalizer_script_ch
@@ -64,10 +66,12 @@ workflow {
             params.genome_fasta,
             checkIfExists: true
         )
+
         gff_input_ch = Channel.fromPath(
             params.annot_gff,
             checkIfExists: true
         )
+
         normalize_res = NORMALIZE_GENOME_GFF(
             genome_input_ch,
             gff_input_ch,
@@ -79,10 +83,12 @@ workflow {
             params.proteins_faa,
             checkIfExists: true
         )
+
         gff_input_ch = Channel.fromPath(
             params.annot_gff,
             checkIfExists: true
         )
+
         normalize_res = NORMALIZE_PROTEINS_GFF(
             proteins_input_ch,
             gff_input_ch,
@@ -106,18 +112,29 @@ workflow {
         registry_tsv
     }
 
-    hmms_ch = Channel.fromPath("${params.hmm_dir}/*.hmm", checkIfExists: true)
+    hmms_ch = Channel.fromPath(
+        "${params.hmm_dir}/*.hmm",
+        checkIfExists: true
+    )
+
     hmm_input_ch = hmms_ch.combine(normalized_proteins_ch)
 
     hmm_res     = HMMSEARCH_IR(hmm_input_ch)
     hmm_tbls_ch = hmm_res.tbl
 
     hmm_ids_ch     = COLLECT_HMM_HITS(hmm_tbls_ch.collect())
-    hmm_hit_faa_ch = EXTRACT_FASTA_BY_ID(hmm_ids_ch, normalized_proteins_ch)
+    hmm_hit_faa_ch = EXTRACT_FASTA_BY_ID(
+        hmm_ids_ch,
+        normalized_proteins_ch
+    )
 
     def salvage_paths = params.deeptmhmm_salvage_paths instanceof Collection \
         ? params.deeptmhmm_salvage_paths.collect { it.toString() } \
-        : params.deeptmhmm_salvage_paths.toString().split(',').collect { it.trim() }.findAll { it }
+        : params.deeptmhmm_salvage_paths
+            .toString()
+            .split(',')
+            .collect { it.trim() }
+            .findAll { it }
 
     initial_deeptmhmm_res = INITIALIZE_DEEPTMHMM_RESULTS(
         hmm_hit_faa_ch,
@@ -125,15 +142,26 @@ workflow {
     )
 
     initial_manifest_ch = initial_deeptmhmm_res.manifest.map { manifest_tsv ->
-        def rows = manifest_tsv.toFile().readLines().drop(1).findAll { it }.collect {
-            it.split('\t', -1)
-        }
+        def rows = manifest_tsv
+            .toFile()
+            .readLines()
+            .drop(1)
+            .findAll { it }
+            .collect { it.split('\t', -1) }
+
         def salvaged = rows.count { fields -> fields[3] == 'salvaged' }
-        log.info "DeepTMHMM candidates: ${rows.size()}; salvaged: ${salvaged}; queued for new prediction: ${rows.size() - salvaged}"
+
+        log.info(
+            "DeepTMHMM candidates: ${rows.size()}; " +
+            "salvaged: ${salvaged}; " +
+            "queued for new prediction: ${rows.size() - salvaged}"
+        )
+
         manifest_tsv
     }
 
     def generated_results_ch
+
     if (params.run_deeptmhmm) {
         if (!params.deeptmhmm_dir) {
             throw new IllegalArgumentException(
@@ -141,15 +169,18 @@ workflow {
             )
         }
 
-        def unresolved_deeptmhmm_faa_ch = initial_deeptmhmm_res.unresolved_fasta.flatten()
+        def unresolved_deeptmhmm_faa_ch = initial_deeptmhmm_res
+            .unresolved_fasta
+            .flatten()
 
         deeptmhmm_res = DEEPTMHMM_TOPOLOGY(
             unresolved_deeptmhmm_faa_ch,
             Channel.value(file(params.deeptmhmm_dir))
         )
-        generated_results_ch = deeptmhmm_res.results \
-            .map { sequence_id, result_dir -> result_dir } \
-            .collect() \
+
+        generated_results_ch = deeptmhmm_res.results
+            .map { sequence_id, result_dir -> result_dir }
+            .collect()
             .ifEmpty { [] }
     }
     else {
@@ -161,7 +192,9 @@ workflow {
         generated_results_ch
     )
 
-    ASSERT_COMPLETE_DEEPTMHMM_RESULTS(final_deeptmhmm_res.unresolved_fasta)
+    ASSERT_COMPLETE_DEEPTMHMM_RESULTS(
+        final_deeptmhmm_res.unresolved_fasta
+    )
 
     final_deeptmhmm_dirs_ch = final_deeptmhmm_res.result_dirs.flatten()
 
@@ -190,26 +223,53 @@ workflow {
             file("${projectDir}/assets/reviewer/topology-reviewer.html")
         )
 
-        review_tsv_path = file(
-            "${params.outdir}/manual_review/review.tsv"
-        ).toAbsolutePath().toString()
+        def review_file = params.review_tsv \
+            ? file(params.review_tsv as String) \
+            : file("${params.outdir}/manual_review/review.tsv")
 
-        gate_res = GATE_REVIEW_TSV(
-            review_tsv_path,
-            prepare_res.review_dir
-        )
+        if (params.review_tsv && !review_file.exists()) {
+            throw new IllegalArgumentException(
+                "Manual review TSV not found: ${review_file.toAbsolutePath()}"
+            )
+        }
 
-        decisions_ch = APPLY_MANUAL_DECISIONS(
-            seed_res.decisions,
-            gate_res.review_tsv
-        ).decisions
+        if (review_file.exists()) {
+            gate_res = GATE_REVIEW_TSV(
+                review_file.toAbsolutePath().toString(),
+                prepare_res.review_dir
+            )
+
+            decisions_ch = APPLY_MANUAL_DECISIONS(
+                seed_res.decisions,
+                gate_res.review_tsv
+            ).decisions
+
+            EXTRACT_PASSED_FASTA(
+                decisions_ch,
+                hmm_hit_faa_ch
+            )
+        }
+        else {
+            log.info """
+            Manual review package ready:
+              ${params.outdir}/manual_review
+
+            Next steps:
+              1. cd ${params.outdir}/manual_review
+              2. python3 -m http.server 8000
+              3. Open http://localhost:8000/topology-reviewer.html
+              4. Export review.tsv into this directory
+              5. Re-run the same Nextflow command with -resume
+
+            Optional:
+              --review_tsv /absolute/path/to/review.tsv
+            """.stripIndent()
+        }
     }
     else {
-        decisions_ch = seed_res.decisions
+        EXTRACT_PASSED_FASTA(
+            seed_res.decisions,
+            hmm_hit_faa_ch
+        )
     }
-
-    passed_res = EXTRACT_PASSED_FASTA(
-        decisions_ch,
-        hmm_hit_faa_ch
-    )
 }

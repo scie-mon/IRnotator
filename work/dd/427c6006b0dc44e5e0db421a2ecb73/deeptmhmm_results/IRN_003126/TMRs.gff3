@@ -1,0 +1,11 @@
+##gff-version 3
+# IRN_003126 Length: 453
+# IRN_003126 Number of predicted TMRs: 3
+IRN_003126	signal	1	23				
+IRN_003126	outside	24	145				
+IRN_003126	TMhelix	146	166				
+IRN_003126	inside	167	220				
+IRN_003126	TMhelix	221	242				
+IRN_003126	outside	243	424				
+IRN_003126	TMhelix	425	450				
+IRN_003126	inside	451	453				
