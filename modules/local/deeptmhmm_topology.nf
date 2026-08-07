@@ -1,7 +1,6 @@
 process DEEPTMHMM_TOPOLOGY {
     tag "${proteins_faa.baseName}"
     maxForks 1
-    publishDir "${params.outdir}/deeptmhmm", mode: 'copy'
 
     input:
     path proteins_faa

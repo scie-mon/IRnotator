@@ -1,0 +1,9 @@
+##gff-version 3
+# IRN_001580 Length: 440
+# IRN_001580 Number of predicted TMRs: 2
+IRN_001580	signal	1	19				
+IRN_001580	outside	20	159				
+IRN_001580	TMhelix	160	180				
+IRN_001580	inside	181	231				
+IRN_001580	TMhelix	232	252				
+IRN_001580	outside	253	440				

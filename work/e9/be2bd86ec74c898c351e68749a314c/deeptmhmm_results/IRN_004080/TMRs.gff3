@@ -1,0 +1,10 @@
+##gff-version 3
+# IRN_004080 Length: 420
+# IRN_004080 Number of predicted TMRs: 3
+IRN_004080	outside	1	121				
+IRN_004080	TMhelix	122	142				
+IRN_004080	inside	143	196				
+IRN_004080	TMhelix	197	217				
+IRN_004080	outside	218	395				
+IRN_004080	TMhelix	396	416				
+IRN_004080	inside	417	420				

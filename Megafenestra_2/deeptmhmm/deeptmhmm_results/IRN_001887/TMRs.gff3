@@ -1,0 +1,8 @@
+##gff-version 3
+# IRN_001887 Length: 409
+# IRN_001887 Number of predicted TMRs: 2
+IRN_001887	outside	1	137				
+IRN_001887	TMhelix	138	158				
+IRN_001887	inside	159	209				
+IRN_001887	TMhelix	210	231				
+IRN_001887	outside	232	409				

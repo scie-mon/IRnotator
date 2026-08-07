@@ -1,0 +1,8 @@
+##gff-version 3
+# gnl|WGS:ZZZZ|Megafenestra_007136-P1 Length: 389
+# gnl|WGS:ZZZZ|Megafenestra_007136-P1 Number of predicted TMRs: 2
+gnl|WGS:ZZZZ|Megafenestra_007136-P1	outside	1	333				
+gnl|WGS:ZZZZ|Megafenestra_007136-P1	TMhelix	334	354				
+gnl|WGS:ZZZZ|Megafenestra_007136-P1	inside	355	378				
+gnl|WGS:ZZZZ|Megafenestra_007136-P1	TMhelix	379	388				
+gnl|WGS:ZZZZ|Megafenestra_007136-P1	outside	389	389				

@@ -1,0 +1,8 @@
+##gff-version 3
+# IRN_009014 Length: 261
+# IRN_009014 Number of predicted TMRs: 2
+IRN_009014	outside	1	132				
+IRN_009014	TMhelix	133	142				
+IRN_009014	inside	143	156				
+IRN_009014	TMhelix	157	178				
+IRN_009014	outside	179	261				

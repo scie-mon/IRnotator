@@ -7,8 +7,10 @@ include { NORMALIZE_PROTEINS_GFF }     from './modules/local/normalize_input'
 include { HMMSEARCH_IR }               from './modules/local/hmmsearch_ir'
 include { COLLECT_HMM_HITS }           from './modules/local/collect_hmm_hits'
 include { EXTRACT_FASTA_BY_ID }        from './modules/local/extract_fasta_by_id'
-include { SPLIT_FASTA_BY_SEQID }       from './modules/local/split_fasta_by_seqid'
 include { DEEPTMHMM_TOPOLOGY }         from './modules/local/deeptmhmm_topology'
+include { INITIALIZE_DEEPTMHMM_RESULTS } from './modules/local/initialize_deeptmhmm_results'
+include { FINALIZE_DEEPTMHMM_RESULTS } from './modules/local/finalize_deeptmhmm_results'
+include { ASSERT_COMPLETE_DEEPTMHMM_RESULTS } from './modules/local/finalize_deeptmhmm_results'
 include { COLLECT_DEEPTMHMM_SUMMARY }  from './modules/local/collect_deeptmhmm_summary'
 include { PARSE_DEEPTMHMM_FEATURES }   from './modules/local/parse_deeptmhmm_features'
 include { HARDCODED_CLASSIFIER }       from './modules/local/hardcoded_classifier'
@@ -28,6 +30,8 @@ params.allow_internal_stops  = params.allow_internal_stops ?: false
 params.hmm_dir       = params.hmm_dir ?: 'test/hmms'
 params.outdir        = params.outdir ?: 'results'
 params.deeptmhmm_dir = params.deeptmhmm_dir ?: null
+params.run_deeptmhmm = params.run_deeptmhmm == null ? true : params.run_deeptmhmm
+params.deeptmhmm_salvage_paths = params.deeptmhmm_salvage_paths ?: []
 params.manual_review = params.manual_review ?: true
 
 workflow {
@@ -50,7 +54,6 @@ workflow {
             params.proteins_faa,
             checkIfExists: true
         )
-
         normalize_res = NORMALIZE_PROTEINS(
             proteins_input_ch,
             normalizer_script_ch
@@ -65,7 +68,6 @@ workflow {
             params.annot_gff,
             checkIfExists: true
         )
-
         normalize_res = NORMALIZE_GENOME_GFF(
             genome_input_ch,
             gff_input_ch,
@@ -81,7 +83,6 @@ workflow {
             params.annot_gff,
             checkIfExists: true
         )
-
         normalize_res = NORMALIZE_PROTEINS_GFF(
             proteins_input_ch,
             gff_input_ch,
@@ -97,12 +98,6 @@ workflow {
         )
     }
 
-    /*
-     * Canonical identity boundary:
-     * normalized_proteins.faa has only IRN_* identifiers.
-     * All downstream analysis uses IRN_* exclusively.
-     * sequence_registry.tsv retains source provenance and output naming metadata.
-     */
     normalized_proteins_ch = normalize_res.normalized.map { proteins_faa, registry_tsv ->
         proteins_faa
     }
@@ -111,9 +106,7 @@ workflow {
         registry_tsv
     }
 
-    hmms_ch          = Channel.fromPath("${params.hmm_dir}/*.hmm", checkIfExists: true)
-    deeptmhmm_dir_ch = Channel.value(file(params.deeptmhmm_dir))
-
+    hmms_ch = Channel.fromPath("${params.hmm_dir}/*.hmm", checkIfExists: true)
     hmm_input_ch = hmms_ch.combine(normalized_proteins_ch)
 
     hmm_res     = HMMSEARCH_IR(hmm_input_ch)
@@ -122,16 +115,59 @@ workflow {
     hmm_ids_ch     = COLLECT_HMM_HITS(hmm_tbls_ch.collect())
     hmm_hit_faa_ch = EXTRACT_FASTA_BY_ID(hmm_ids_ch, normalized_proteins_ch)
 
-    split_res         = SPLIT_FASTA_BY_SEQID(hmm_hit_faa_ch)
-    single_seq_faa_ch = split_res.fasta_files.flatten()
+    def salvage_paths = params.deeptmhmm_salvage_paths instanceof Collection \
+        ? params.deeptmhmm_salvage_paths.collect { it.toString() } \
+        : params.deeptmhmm_salvage_paths.toString().split(',').collect { it.trim() }.findAll { it }
 
-    deeptmhmm_res = DEEPTMHMM_TOPOLOGY(
-        single_seq_faa_ch,
-        deeptmhmm_dir_ch
+    initial_deeptmhmm_res = INITIALIZE_DEEPTMHMM_RESULTS(
+        hmm_hit_faa_ch,
+        Channel.value(salvage_paths)
     )
 
+    initial_manifest_ch = initial_deeptmhmm_res.manifest.map { manifest_tsv ->
+        def rows = manifest_tsv.toFile().readLines().drop(1).findAll { it }.collect {
+            it.split('\t', -1)
+        }
+        def salvaged = rows.count { fields -> fields[3] == 'salvaged' }
+        log.info "DeepTMHMM candidates: ${rows.size()}; salvaged: ${salvaged}; queued for new prediction: ${rows.size() - salvaged}"
+        manifest_tsv
+    }
+
+    def generated_results_ch
+    if (params.run_deeptmhmm) {
+        if (!params.deeptmhmm_dir) {
+            throw new IllegalArgumentException(
+                'Missing --deeptmhmm_dir while --run_deeptmhmm is enabled.'
+            )
+        }
+
+        def unresolved_deeptmhmm_faa_ch = initial_deeptmhmm_res.unresolved_fasta.flatten()
+
+        deeptmhmm_res = DEEPTMHMM_TOPOLOGY(
+            unresolved_deeptmhmm_faa_ch,
+            Channel.value(file(params.deeptmhmm_dir))
+        )
+        generated_results_ch = deeptmhmm_res.results \
+            .map { sequence_id, result_dir -> result_dir } \
+            .collect() \
+            .ifEmpty { [] }
+    }
+    else {
+        generated_results_ch = Channel.value([])
+    }
+
+    final_deeptmhmm_res = FINALIZE_DEEPTMHMM_RESULTS(
+        initial_manifest_ch,
+        generated_results_ch
+    )
+
+    ASSERT_COMPLETE_DEEPTMHMM_RESULTS(final_deeptmhmm_res.unresolved_fasta)
+
+    final_deeptmhmm_dirs_ch = final_deeptmhmm_res.result_dirs.flatten()
+
     summary_res = COLLECT_DEEPTMHMM_SUMMARY(
-        deeptmhmm_res.results.collect()
+        final_deeptmhmm_res.manifest,
+        final_deeptmhmm_res.results_dir
     )
 
     parsed_res = PARSE_DEEPTMHMM_FEATURES(
@@ -148,7 +184,7 @@ workflow {
 
     if (params.manual_review) {
         prepare_res = PREPARE_MANUAL_REVIEW(
-            deeptmhmm_res.results.collect(),
+            final_deeptmhmm_dirs_ch.collect(),
             hardcoded_res.scores,
             sequence_registry_ch,
             file("${projectDir}/assets/reviewer/topology-reviewer.html")
@@ -176,7 +212,4 @@ workflow {
         decisions_ch,
         hmm_hit_faa_ch
     )
-
-    // Future: join passed_res.fasta to sequence_registry_ch,
-    // assign final_output_id, and create final FASTA/GFF/report outputs.
 }

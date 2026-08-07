@@ -1,0 +1,364 @@
+{
+  "items": [
+    {
+      "seq_id": "IRN_000545",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_002455-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_002455-P1 ionotropic receptor 21a-like",
+      "image": "plots/IRN_000545.png",
+      "seed": "accept",
+      "reason": "matches_strict_topology"
+    },
+    {
+      "seq_id": "IRN_001296",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_008032-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_008032-P1 ionotropic receptor 93a-like, partial",
+      "image": "plots/IRN_001296.png",
+      "seed": "reject",
+      "reason": "wrong_feature_count"
+    },
+    {
+      "seq_id": "IRN_001305",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_008045-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_008045-P1 ionotropic receptor 25a",
+      "image": "plots/IRN_001305.png",
+      "seed": "accept",
+      "reason": "matches_strict_topology"
+    },
+    {
+      "seq_id": "IRN_001580",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_008380-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_008380-P1 glutamate receptor ionotropic, delta-2-like",
+      "image": "plots/IRN_001580.png",
+      "seed": "reject",
+      "reason": "wrong_feature_count"
+    },
+    {
+      "seq_id": "IRN_001670",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_008481-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_008481-P1 glutamate receptor ionotropic, kainate 2-like",
+      "image": "plots/IRN_001670.png",
+      "seed": "accept",
+      "reason": "matches_strict_topology"
+    },
+    {
+      "seq_id": "IRN_001677",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_008489-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_008489-P1 glutamate receptor ionotropic, kainate 2-like",
+      "image": "plots/IRN_001677.png",
+      "seed": "reject",
+      "reason": "wrong_feature_count"
+    },
+    {
+      "seq_id": "IRN_001887",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_008744-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_008744-P1 glutamate receptor ionotropic, kainate glr-3-like, partial",
+      "image": "plots/IRN_001887.png",
+      "seed": "reject",
+      "reason": "wrong_feature_count"
+    },
+    {
+      "seq_id": "IRN_002115",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_009001-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_009001-P1 putative glutamate receptor",
+      "image": "plots/IRN_002115.png",
+      "seed": "accept",
+      "reason": "matches_strict_topology"
+    },
+    {
+      "seq_id": "IRN_002126",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_009013-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_009013-P1 glutamate receptor ionotropic, delta-1-like",
+      "image": "plots/IRN_002126.png",
+      "seed": "accept",
+      "reason": "matches_strict_topology"
+    },
+    {
+      "seq_id": "IRN_002268",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_009180-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_009180-P1 glutamate receptor ionotropic, delta-1-like",
+      "image": "plots/IRN_002268.png",
+      "seed": "accept",
+      "reason": "matches_strict_topology"
+    },
+    {
+      "seq_id": "IRN_002340",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_009261-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_009261-P1 putative glutamate receptor",
+      "image": "plots/IRN_002340.png",
+      "seed": "reject",
+      "reason": "wrong_feature_count"
+    },
+    {
+      "seq_id": "IRN_003126",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_000163-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_000163-P1 ionotropic receptor 21a-like",
+      "image": "plots/IRN_003126.png",
+      "seed": "accept",
+      "reason": "matches_strict_topology"
+    },
+    {
+      "seq_id": "IRN_003979",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_001204-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_001204-P1 glutamate [NMDA] receptor subunit 1-like",
+      "image": "plots/IRN_003979.png",
+      "seed": "accept",
+      "reason": "matches_strict_topology"
+    },
+    {
+      "seq_id": "IRN_004020",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_001250-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_001250-P1 putative glutamate receptor",
+      "image": "plots/IRN_004020.png",
+      "seed": "accept",
+      "reason": "matches_strict_topology"
+    },
+    {
+      "seq_id": "IRN_004033",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_001267-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_001267-P1 glutamate receptor ionotropic, NMDA 3A-like, partial",
+      "image": "plots/IRN_004033.png",
+      "seed": "accept",
+      "reason": "matches_strict_topology"
+    },
+    {
+      "seq_id": "IRN_004080",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_001324-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_001324-P1 putative glutamate receptor",
+      "image": "plots/IRN_004080.png",
+      "seed": "accept",
+      "reason": "matches_strict_topology"
+    },
+    {
+      "seq_id": "IRN_004179",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_001436-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_001436-P1 glutamate ionotropic receptor NMDA type subunit 2",
+      "image": "plots/IRN_004179.png",
+      "seed": "accept",
+      "reason": "matches_strict_topology"
+    },
+    {
+      "seq_id": "IRN_004342",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_001623-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_001623-P1 glutamate receptor U1-like",
+      "image": "plots/IRN_004342.png",
+      "seed": "accept",
+      "reason": "matches_strict_topology"
+    },
+    {
+      "seq_id": "IRN_004513",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_001819-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_001819-P1 glutamate receptor ionotropic, delta-2-like",
+      "image": "plots/IRN_004513.png",
+      "seed": "accept",
+      "reason": "matches_strict_topology"
+    },
+    {
+      "seq_id": "IRN_005086",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_002507-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_002507-P1 glutamate receptor U1-like",
+      "image": "plots/IRN_005086.png",
+      "seed": "accept",
+      "reason": "matches_strict_topology"
+    },
+    {
+      "seq_id": "IRN_005087",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_002508-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_002508-P1 glutamate receptor U1-like",
+      "image": "plots/IRN_005087.png",
+      "seed": "accept",
+      "reason": "matches_strict_topology"
+    },
+    {
+      "seq_id": "IRN_005088",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_002509-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_002509-P1 glutamate receptor U1-like",
+      "image": "plots/IRN_005088.png",
+      "seed": "accept",
+      "reason": "matches_strict_topology"
+    },
+    {
+      "seq_id": "IRN_005219",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_002661-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_002661-P1 ionotropic receptor 93a-like",
+      "image": "plots/IRN_005219.png",
+      "seed": "accept",
+      "reason": "matches_strict_topology"
+    },
+    {
+      "seq_id": "IRN_005576",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_003066-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_003066-P1 glutamate receptor ionotropic, delta-1-like",
+      "image": "plots/IRN_005576.png",
+      "seed": "accept",
+      "reason": "matches_strict_topology"
+    },
+    {
+      "seq_id": "IRN_006177",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_003773-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_003773-P1 glutamate receptor ionotropic, delta-2-like",
+      "image": "plots/IRN_006177.png",
+      "seed": "reject",
+      "reason": "wrong_feature_count"
+    },
+    {
+      "seq_id": "IRN_006587",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_004258-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_004258-P1 putative glutamate receptor",
+      "image": "plots/IRN_006587.png",
+      "seed": "accept",
+      "reason": "matches_strict_topology"
+    },
+    {
+      "seq_id": "IRN_006588",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_004259-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_004259-P1 glutamate receptor ionotropic, delta-2-like",
+      "image": "plots/IRN_006588.png",
+      "seed": "accept",
+      "reason": "matches_strict_topology"
+    },
+    {
+      "seq_id": "IRN_006600",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_004272-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_004272-P1 glutamate [NMDA] receptor subunit 1-like",
+      "image": "plots/IRN_006600.png",
+      "seed": "accept",
+      "reason": "matches_strict_topology"
+    },
+    {
+      "seq_id": "IRN_007164",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_004927-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_004927-P1 ionotropic receptor 93a-like",
+      "image": "plots/IRN_007164.png",
+      "seed": "accept",
+      "reason": "matches_strict_topology"
+    },
+    {
+      "seq_id": "IRN_007517",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_005342-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_005342-P1 glutamate receptor ionotropic, kainate 2-like",
+      "image": "plots/IRN_007517.png",
+      "seed": "accept",
+      "reason": "matches_strict_topology"
+    },
+    {
+      "seq_id": "IRN_007656",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_005503-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_005503-P1 glutamate receptor ionotropic, delta-1-like",
+      "image": "plots/IRN_007656.png",
+      "seed": "accept",
+      "reason": "matches_strict_topology"
+    },
+    {
+      "seq_id": "IRN_007657",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_005504-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_005504-P1 glutamate receptor ionotropic, delta-1-like",
+      "image": "plots/IRN_007657.png",
+      "seed": "accept",
+      "reason": "matches_strict_topology"
+    },
+    {
+      "seq_id": "IRN_007710",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_005572-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_005572-P1 kainate-type ionotropic glutamate receptor subunit 1D",
+      "image": "plots/IRN_007710.png",
+      "seed": "accept",
+      "reason": "matches_strict_topology"
+    },
+    {
+      "seq_id": "IRN_007719",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_005583-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_005583-P1 glutamate receptor ionotropic, kainate 3-like",
+      "image": "plots/IRN_007719.png",
+      "seed": "accept",
+      "reason": "matches_strict_topology"
+    },
+    {
+      "seq_id": "IRN_007724",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_005588-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_005588-P1 glutamate receptor ionotropic, kainate glr-3-like",
+      "image": "plots/IRN_007724.png",
+      "seed": "accept",
+      "reason": "matches_strict_topology"
+    },
+    {
+      "seq_id": "IRN_007872",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_005765-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_005765-P1 glutamate receptor ionotropic, delta-2-like",
+      "image": "plots/IRN_007872.png",
+      "seed": "accept",
+      "reason": "matches_strict_topology"
+    },
+    {
+      "seq_id": "IRN_008403",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_006389-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_006389-P1 glutamate receptor ionotropic, delta-1-like",
+      "image": "plots/IRN_008403.png",
+      "seed": "accept",
+      "reason": "matches_strict_topology"
+    },
+    {
+      "seq_id": "IRN_008638",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_006665-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_006665-P1 glutamate receptor 1-like",
+      "image": "plots/IRN_008638.png",
+      "seed": "accept",
+      "reason": "matches_strict_topology"
+    },
+    {
+      "seq_id": "IRN_008770",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_006823-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_006823-P1 ionotropic receptor 21a-like",
+      "image": "plots/IRN_008770.png",
+      "seed": "accept",
+      "reason": "matches_strict_topology"
+    },
+    {
+      "seq_id": "IRN_008771",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_006824-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_006824-P1 putative glutamate receptor",
+      "image": "plots/IRN_008771.png",
+      "seed": "accept",
+      "reason": "matches_strict_topology"
+    },
+    {
+      "seq_id": "IRN_008772",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_006825-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_006825-P1 putative glutamate receptor",
+      "image": "plots/IRN_008772.png",
+      "seed": "accept",
+      "reason": "matches_strict_topology"
+    },
+    {
+      "seq_id": "IRN_008919",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_007004-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_007004-P1 glutamate receptor ionotropic, delta-1-like",
+      "image": "plots/IRN_008919.png",
+      "seed": "reject",
+      "reason": "wrong_feature_count"
+    },
+    {
+      "seq_id": "IRN_009014",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_007125-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_007125-P1 uncharacterized protein Megafenestra_007125",
+      "image": "plots/IRN_009014.png",
+      "seed": "reject",
+      "reason": "wrong_feature_count"
+    },
+    {
+      "seq_id": "IRN_009061",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_007181-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_007181-P1 glutamate receptor ionotropic, NMDA 1-like",
+      "image": "plots/IRN_009061.png",
+      "seed": "accept",
+      "reason": "matches_strict_topology"
+    },
+    {
+      "seq_id": "IRN_009191",
+      "source_id": "gnl|WGS:ZZZZ|Megafenestra_007333-P1",
+      "source_header": "gnl|WGS:ZZZZ|Megafenestra_007333-P1 ionotropic receptor 21a-like",
+      "image": "plots/IRN_009191.png",
+      "seed": "accept",
+      "reason": "matches_strict_topology"
+    }
+  ]
+}

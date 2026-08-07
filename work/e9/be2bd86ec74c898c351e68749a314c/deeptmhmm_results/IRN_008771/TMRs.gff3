@@ -1,0 +1,11 @@
+##gff-version 3
+# IRN_008771 Length: 603
+# IRN_008771 Number of predicted TMRs: 3
+IRN_008771	signal	1	16				
+IRN_008771	outside	17	318				
+IRN_008771	TMhelix	319	344				
+IRN_008771	inside	345	384				
+IRN_008771	TMhelix	385	406				
+IRN_008771	outside	407	574				
+IRN_008771	TMhelix	575	595				
+IRN_008771	inside	596	603				

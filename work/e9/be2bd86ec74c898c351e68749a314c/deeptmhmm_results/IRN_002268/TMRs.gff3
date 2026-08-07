@@ -1,0 +1,10 @@
+##gff-version 3
+# IRN_002268 Length: 433
+# IRN_002268 Number of predicted TMRs: 3
+IRN_002268	outside	1	132				
+IRN_002268	TMhelix	133	153				
+IRN_002268	inside	154	202				
+IRN_002268	TMhelix	203	224				
+IRN_002268	outside	225	406				
+IRN_002268	TMhelix	407	427				
+IRN_002268	inside	428	433				
