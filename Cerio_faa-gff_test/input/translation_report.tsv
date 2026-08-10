@@ -1,0 +1,8 @@
+transcript_id	status	reason	raw_cds_length	translated_cds_length	trailing_nt_ignored	internal_stops_replaced
+rna-Ceriodaphnia_002191-R1	translated_with_warning	trailing incomplete codon ignored and/or internal stops replaced with X	801	801	0	1
+rna-Ceriodaphnia_002192-R1	translated_with_warning	trailing incomplete codon ignored and/or internal stops replaced with X	660	660	0	1
+rna-Ceriodaphnia_002193-R1	translated_with_warning	trailing incomplete codon ignored and/or internal stops replaced with X	660	660	0	1
+rna-Ceriodaphnia_003210-R1	translated_with_warning	trailing incomplete codon ignored and/or internal stops replaced with X	2086	2085	1	0
+rna-Ceriodaphnia_006375-R1	translated_with_warning	trailing incomplete codon ignored and/or internal stops replaced with X	1530	1530	0	1
+rna-Ceriodaphnia_007029-R1	translated_with_warning	trailing incomplete codon ignored and/or internal stops replaced with X	1097	1095	2	6
+rna-Ceriodaphnia_008966-R1	translated_with_warning	trailing incomplete codon ignored and/or internal stops replaced with X	1007	1005	2	4

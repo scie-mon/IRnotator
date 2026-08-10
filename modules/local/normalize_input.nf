@@ -34,6 +34,7 @@ process NORMALIZE_GENOME_GFF {
 
     output:
     tuple path("normalized_proteins.faa"), path("sequence_registry.tsv"), emit: normalized
+    path "translation_report.tsv", emit: translation_report
 
     script:
     """
@@ -42,9 +43,9 @@ process NORMALIZE_GENOME_GFF {
         --annot-gff ${annot_gff} \
         --out-faa normalized_proteins.faa \
         --registry sequence_registry.tsv \
+        --translation-report translation_report.tsv \
         --gff-protein-attribute '${params.gff_protein_attribute}' \
-        --translation-table ${params.translation_table} \
-        ${params.allow_internal_stops ? '--allow-internal-stops' : ''}
+        --translation-table ${params.translation_table}
     """
 }
 

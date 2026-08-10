@@ -11,7 +11,6 @@ from urllib.parse import unquote
 
 from Bio.Seq import Seq
 
-
 REGISTRY_COLUMNS = [
     "internal_id",
     "source_id",
@@ -29,6 +28,16 @@ REGISTRY_COLUMNS = [
     "final_output_id",
 ]
 
+TRANSLATION_REPORT_COLUMNS = [
+    "transcript_id",
+    "status",
+    "reason",
+    "raw_cds_length",
+    "translated_cds_length",
+    "trailing_nt_ignored",
+    "internal_stops_replaced",
+]
+
 
 def fail(message: str) -> None:
     raise SystemExit(f"ERROR: {message}")
@@ -43,6 +52,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--annot-gff")
     parser.add_argument("--out-faa", required=True)
     parser.add_argument("--registry", required=True)
+    parser.add_argument(
+        "--translation-report",
+        default="translation_report.tsv",
+        help="TSV recording translated-with-warning and skipped GFF transcripts.",
+    )
     parser.add_argument("--gff-protein-attribute", default="protein_id")
     parser.add_argument("--translation-table", type=int, default=1)
     parser.add_argument("--allow-internal-stops", action="store_true")
@@ -113,19 +127,15 @@ def header_id(header: str) -> str:
 
 def parse_attributes(raw_attributes: str) -> dict[str, list[str]]:
     attributes = {}
-
     for item in raw_attributes.split(";"):
         if not item:
             continue
         if "=" not in item:
             fail(f"invalid GFF3 attribute without '=': {item!r}")
-
         key, value = item.split("=", 1)
         if not key:
             fail(f"empty GFF3 attribute key in {raw_attributes!r}")
-
         attributes[unquote(key)] = [unquote(x) for x in value.split(",")]
-
     return attributes
 
 
@@ -137,7 +147,6 @@ def parse_gff3(path: Path):
     with path.open() as handle:
         for line_number, raw_line in enumerate(handle, start=1):
             line = raw_line.rstrip("\n\r")
-
             if not line:
                 continue
             if line == "##gff-version 3":
@@ -151,7 +160,6 @@ def parse_gff3(path: Path):
                 fail(f"expected 9 GFF3 columns at {path}:{line_number}")
 
             contig, _, feature_type, start, end, _, strand, phase, raw_attributes = fields
-
             try:
                 start_int = int(start)
                 end_int = int(end)
@@ -174,19 +182,15 @@ def parse_gff3(path: Path):
 
             if feature_type != "CDS":
                 continue
-
             if len(parents) != 1:
-                fail(
-                    f"CDS at {path}:{line_number} must have exactly one Parent attribute"
-                )
+                fail(f"CDS at {path}:{line_number} must have exactly one Parent attribute")
             if phase not in ("0", "1", "2"):
                 fail(
                     f"CDS at {path}:{line_number} must have phase 0, 1, or 2; "
                     f"got {phase!r}"
                 )
 
-            transcript_id = parents[0]
-            cds_by_transcript[transcript_id].append(
+            cds_by_transcript[parents[0]].append(
                 {
                     "contig": contig,
                     "start": start_int,
@@ -201,31 +205,26 @@ def parse_gff3(path: Path):
         fail(f"{path} is not strict GFF3: missing '##gff-version 3'")
     if not cds_by_transcript:
         fail(f"no CDS features found in {path}")
-
     return cds_by_transcript, transcript_gene
 
 
 def read_genome(path: Path) -> dict[str, str]:
     genome = {}
-
     for header, sequence in read_fasta(path):
         contig = header_id(header)
         if contig in genome:
             fail(f"duplicate genome contig ID {contig!r} in {path}")
         genome[contig] = sequence
-
     return genome
 
 
-def transcript_metadata(transcript_id: str, cds_rows: list[dict], transcript_gene: dict):
+def transcript_metadata(transcript_id: str, cds_rows: list[dict], transcript_gene: dict) -> dict:
     contigs = {row["contig"] for row in cds_rows}
     strands = {row["strand"] for row in cds_rows}
-
     if len(contigs) != 1:
-        fail(f"CDS for transcript {transcript_id!r} spans multiple contigs")
+        raise ValueError(f"CDS spans multiple contigs: {sorted(contigs)}")
     if len(strands) != 1:
-        fail(f"CDS for transcript {transcript_id!r} has inconsistent strands")
-
+        raise ValueError(f"CDS has inconsistent strands: {sorted(strands)}")
     return {
         "contig": next(iter(contigs)),
         "start": str(min(row["start"] for row in cds_rows)),
@@ -241,14 +240,12 @@ def translate_cds(
     cds_rows: list[dict],
     genome: dict[str, str],
     translation_table: int,
-    allow_internal_stops: bool,
-) -> tuple[str, bool]:
+) -> tuple[str, dict]:
     metadata = transcript_metadata(transcript_id, cds_rows, {})
     contig = metadata["contig"]
     strand = metadata["strand"]
-
     if contig not in genome:
-        fail(f"transcript {transcript_id!r} references missing genome contig {contig!r}")
+        raise ValueError(f"references missing genome contig {contig!r}")
 
     ordered_rows = sorted(
         cds_rows,
@@ -259,40 +256,37 @@ def translate_cds(
     parts = []
     for row in ordered_rows:
         fragment = genome[contig][row["start"] - 1 : row["end"]]
-
-        if len(fragment) != row["end"] - row["start"] + 1:
-            fail(f"CDS coordinates exceed contig bounds for {transcript_id!r}")
-
+        expected_length = row["end"] - row["start"] + 1
+        if len(fragment) != expected_length:
+            raise ValueError("CDS coordinates exceed contig bounds")
         coding_fragment = str(Seq(fragment).reverse_complement()) if strand == "-" else fragment
-        parts.append(coding_fragment[row["phase"] :])
+        parts.append(coding_fragment)
 
     cds_sequence = "".join(parts)
-
-    if len(cds_sequence) % 3 != 0:
-        fail(
-            f"translated CDS length is not divisible by 3 for transcript "
-            f"{transcript_id!r}"
-        )
+    raw_length = len(cds_sequence)
+    trailing_nt_ignored = raw_length % 3
+    translated_cds = cds_sequence[: raw_length - trailing_nt_ignored] if trailing_nt_ignored else cds_sequence
+    if not translated_cds:
+        raise ValueError("empty CDS after removing incomplete trailing codon")
 
     try:
-        protein = str(Seq(cds_sequence).translate(table=translation_table))
+        protein = str(Seq(translated_cds).translate(table=translation_table, cds=False))
     except Exception as exc:
-        fail(f"translation failed for transcript {transcript_id!r}: {exc}")
+        raise ValueError(f"translation failed: {exc}") from exc
 
     if protein.endswith("*"):
         protein = protein[:-1]
-
-    has_internal_stop = "*" in protein
-    if has_internal_stop and not allow_internal_stops:
-        fail(f"internal stop codon in transcript {transcript_id!r}")
-
-    if has_internal_stop:
-        protein = protein.replace("*", "X")
-
+    internal_stops_replaced = protein.count("*")
+    protein = protein.replace("*", "X")
     if not protein:
-        fail(f"empty translated protein for transcript {transcript_id!r}")
+        raise ValueError("empty translated protein")
 
-    return protein, has_internal_stop
+    return protein, {
+        "raw_cds_length": raw_length,
+        "translated_cds_length": len(translated_cds),
+        "trailing_nt_ignored": trailing_nt_ignored,
+        "internal_stops_replaced": internal_stops_replaced,
+    }
 
 
 def registry_row(
@@ -305,7 +299,6 @@ def registry_row(
     genomic: dict | None = None,
 ) -> dict:
     genomic = genomic or {}
-
     return {
         "internal_id": internal_id,
         "source_id": source_id,
@@ -342,121 +335,132 @@ def write_outputs(records: list[tuple[dict, str]], out_faa: Path, registry: Path
         writer.writerows(row for row, _ in records)
 
 
+def write_translation_report(rows: list[dict], path: Path) -> None:
+    with path.open("w", newline="") as handle:
+        writer = csv.DictWriter(
+            handle,
+            fieldnames=TRANSLATION_REPORT_COLUMNS,
+            delimiter="\t",
+            lineterminator="\n",
+        )
+        writer.writeheader()
+        writer.writerows(rows)
+
+
 def main() -> None:
     args = parse_args()
     mode = select_mode(args)
-
     out_faa = Path(args.out_faa)
     registry = Path(args.registry)
+    translation_report = Path(args.translation_report)
     records = []
+    report_rows = []
 
     if mode == "protein_fasta":
         for index, (header, sequence) in enumerate(read_fasta(Path(args.proteins_faa)), start=1):
             internal_id = f"{args.id_prefix}_{index:06d}"
-            records.append(
-                (
-                    registry_row(
-                        internal_id=internal_id,
-                        source_id=header_id(header),
-                        source_header=header,
-                        source_type="protein_fasta",
-                        sequence=sequence,
-                        has_internal_stop=False,
-                    ),
-                    sequence,
-                )
-            )
+            records.append((
+                registry_row(
+                    internal_id=internal_id,
+                    source_id=header_id(header),
+                    source_header=header,
+                    source_type="protein_fasta",
+                    sequence=sequence,
+                    has_internal_stop=False,
+                ),
+                sequence,
+            ))
 
     else:
         cds_by_transcript, transcript_gene = parse_gff3(Path(args.annot_gff))
 
         if mode == "genome_gff":
             genome = read_genome(Path(args.genome_fasta))
-
-            for index, transcript_id in enumerate(sorted(cds_by_transcript), start=1):
+            output_index = 0
+            for transcript_id in sorted(cds_by_transcript):
                 cds_rows = cds_by_transcript[transcript_id]
-                protein, has_internal_stop = translate_cds(
-                    transcript_id,
-                    cds_rows,
-                    genome,
-                    args.translation_table,
-                    args.allow_internal_stops,
-                )
-                internal_id = f"{args.id_prefix}_{index:06d}"
-                genomic = transcript_metadata(
-                    transcript_id,
-                    cds_rows,
-                    transcript_gene,
-                )
-                records.append(
-                    (
-                        registry_row(
-                            internal_id=internal_id,
-                            source_id=transcript_id,
-                            source_header=transcript_id,
-                            source_type="genome_gff",
-                            sequence=protein,
-                            has_internal_stop=has_internal_stop,
-                            genomic=genomic,
-                        ),
-                        protein,
+                try:
+                    genomic = transcript_metadata(transcript_id, cds_rows, transcript_gene)
+                    protein, translation_qc = translate_cds(
+                        transcript_id, cds_rows, genome, args.translation_table
                     )
-                )
+                except Exception as exc:
+                    report_rows.append({
+                        "transcript_id": transcript_id,
+                        "status": "skipped",
+                        "reason": str(exc),
+                        "raw_cds_length": "",
+                        "translated_cds_length": "",
+                        "trailing_nt_ignored": "",
+                        "internal_stops_replaced": "",
+                    })
+                    print(f"WARNING: skipping {transcript_id}: {exc}", file=sys.stderr)
+                    continue
+
+                output_index += 1
+                internal_id = f"{args.id_prefix}_{output_index:06d}"
+                records.append((
+                    registry_row(
+                        internal_id=internal_id,
+                        source_id=transcript_id,
+                        source_header=transcript_id,
+                        source_type="genome_gff",
+                        sequence=protein,
+                        has_internal_stop=translation_qc["internal_stops_replaced"] > 0,
+                        genomic=genomic,
+                    ),
+                    protein,
+                ))
+
+                if translation_qc["trailing_nt_ignored"] or translation_qc["internal_stops_replaced"]:
+                    report_rows.append({
+                        "transcript_id": transcript_id,
+                        "status": "translated_with_warning",
+                        "reason": "trailing incomplete codon ignored and/or internal stops replaced with X",
+                        **translation_qc,
+                    })
 
         else:
             attribute_to_transcripts = defaultdict(set)
-
             for transcript_id, cds_rows in cds_by_transcript.items():
                 values = set()
                 for cds_row in cds_rows:
-                    values.update(
-                        cds_row["attributes"].get(args.gff_protein_attribute, [])
-                    )
-
+                    values.update(cds_row["attributes"].get(args.gff_protein_attribute, []))
                 if len(values) != 1:
                     fail(
                         f"transcript {transcript_id!r} must have exactly one "
                         f"{args.gff_protein_attribute!r} value across CDS features"
                     )
-
                 attribute_to_transcripts[next(iter(values))].add(transcript_id)
 
-            for index, (header, sequence) in enumerate(
-                read_fasta(Path(args.proteins_faa)),
-                start=1,
-            ):
+            for index, (header, sequence) in enumerate(read_fasta(Path(args.proteins_faa)), start=1):
                 source_id = header_id(header)
                 matches = attribute_to_transcripts.get(source_id, set())
-
                 if len(matches) != 1:
                     fail(
                         f"FASTA source_id {source_id!r} has {len(matches)} GFF3 matches "
                         f"using attribute {args.gff_protein_attribute!r}"
                     )
-
                 transcript_id = next(iter(matches))
                 internal_id = f"{args.id_prefix}_{index:06d}"
                 genomic = transcript_metadata(
-                    transcript_id,
-                    cds_by_transcript[transcript_id],
-                    transcript_gene,
+                    transcript_id, cds_by_transcript[transcript_id], transcript_gene
                 )
-                records.append(
-                    (
-                        registry_row(
-                            internal_id=internal_id,
-                            source_id=source_id,
-                            source_header=header,
-                            source_type="protein_gff",
-                            sequence=sequence,
-                            has_internal_stop=False,
-                            genomic=genomic,
-                        ),
-                        sequence,
-                    )
-                )
+                records.append((
+                    registry_row(
+                        internal_id=internal_id,
+                        source_id=source_id,
+                        source_header=header,
+                        source_type="protein_gff",
+                        sequence=sequence,
+                        has_internal_stop=False,
+                        genomic=genomic,
+                    ),
+                    sequence,
+                ))
 
     write_outputs(records, out_faa, registry)
+    write_translation_report(report_rows, translation_report)
 
 
 if __name__ == "__main__":
