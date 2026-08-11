@@ -1,0 +1,2 @@
+test/multi_gff/annotations/*.gff
+test/multi_gff/genome/*.fna

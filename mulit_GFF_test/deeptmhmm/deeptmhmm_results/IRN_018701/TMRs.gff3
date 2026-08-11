@@ -1,0 +1,10 @@
+##gff-version 3
+# maker-CM058174.1-exonerate_protein2genome-gene-0.10-mRNA-1 Length: 416
+# maker-CM058174.1-exonerate_protein2genome-gene-0.10-mRNA-1 Number of predicted TMRs: 3
+maker-CM058174.1-exonerate_protein2genome-gene-0.10-mRNA-1	outside	1	124				
+maker-CM058174.1-exonerate_protein2genome-gene-0.10-mRNA-1	TMhelix	125	146				
+maker-CM058174.1-exonerate_protein2genome-gene-0.10-mRNA-1	inside	147	191				
+maker-CM058174.1-exonerate_protein2genome-gene-0.10-mRNA-1	TMhelix	192	212				
+maker-CM058174.1-exonerate_protein2genome-gene-0.10-mRNA-1	outside	213	387				
+maker-CM058174.1-exonerate_protein2genome-gene-0.10-mRNA-1	TMhelix	388	408				
+maker-CM058174.1-exonerate_protein2genome-gene-0.10-mRNA-1	inside	409	416				

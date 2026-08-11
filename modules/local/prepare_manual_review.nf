@@ -138,7 +138,7 @@ process PREPARE_MANUAL_REVIEW {
                 f"in the registry: {internal_id!r}"
             )
 
-        candidates = list(directory.rglob("plot.png"))
+        candidates = list(directory.rglob("*.png"))
         if len(candidates) != 1:
             fail(
                 f"expected exactly one plot.png for {internal_id!r}; "

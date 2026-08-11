@@ -1,0 +1,19 @@
+##gff-version 3
+# maker-CM058173.1-snap-gene-1.11-mRNA-1 Length: 939
+# maker-CM058173.1-snap-gene-1.11-mRNA-1 Number of predicted TMRs: 7
+maker-CM058173.1-snap-gene-1.11-mRNA-1	signal	1	24				
+maker-CM058173.1-snap-gene-1.11-mRNA-1	outside	25	161				
+maker-CM058173.1-snap-gene-1.11-mRNA-1	TMhelix	162	182				
+maker-CM058173.1-snap-gene-1.11-mRNA-1	inside	183	242				
+maker-CM058173.1-snap-gene-1.11-mRNA-1	TMhelix	243	256				
+maker-CM058173.1-snap-gene-1.11-mRNA-1	outside	257	440				
+maker-CM058173.1-snap-gene-1.11-mRNA-1	TMhelix	441	450				
+maker-CM058173.1-snap-gene-1.11-mRNA-1	inside	451	451				
+maker-CM058173.1-snap-gene-1.11-mRNA-1	TMhelix	452	461				
+maker-CM058173.1-snap-gene-1.11-mRNA-1	outside	462	608				
+maker-CM058173.1-snap-gene-1.11-mRNA-1	TMhelix	609	627				
+maker-CM058173.1-snap-gene-1.11-mRNA-1	inside	628	691				
+maker-CM058173.1-snap-gene-1.11-mRNA-1	TMhelix	692	705				
+maker-CM058173.1-snap-gene-1.11-mRNA-1	outside	706	892				
+maker-CM058173.1-snap-gene-1.11-mRNA-1	TMhelix	893	913				
+maker-CM058173.1-snap-gene-1.11-mRNA-1	inside	914	939				

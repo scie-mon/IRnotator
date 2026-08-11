@@ -21,56 +21,36 @@ process NORMALIZE_PROTEINS {
 }
 
 
-process NORMALIZE_GENOME_GFF {
-    tag "normalize: ${genome_fasta.baseName}"
+process NORMALIZE_MULTI_GENOME_GFF {
+    tag "normalize-multi-genome-gff"
+
     container params.normalizer_container
 
     publishDir "${params.outdir}/input", mode: 'copy'
 
     input:
-    path genome_fasta
-    path annot_gff
+    path genome_fastas
+    path annotation_gffs
     path normalizer_script
+    path multi_normalizer_script
 
     output:
-    tuple path("normalized_proteins.faa"), path("sequence_registry.tsv"), emit: normalized
+    tuple path("normalized_proteins.faa"),
+          path("sequence_registry.tsv"),
+          emit: normalized
     path "translation_report.tsv", emit: translation_report
 
     script:
     """
-    python normalize_input.py \
-        --genome-fasta ${genome_fasta} \
-        --annot-gff ${annot_gff} \
+    python ${multi_normalizer_script} \
+        --genome-fasta ${genome_fastas.join(' ')} \
+        --annot-gff ${annotation_gffs.join(' ')} \
+        --normalizer ${normalizer_script} \
         --out-faa normalized_proteins.faa \
-        --registry sequence_registry.tsv \
-        --translation-report translation_report.tsv \
+        --out-registry sequence_registry.tsv \
+        --out-report translation_report.tsv \
         --gff-protein-attribute '${params.gff_protein_attribute}' \
-        --translation-table ${params.translation_table}
-    """
-}
-
-
-process NORMALIZE_PROTEINS_GFF {
-    tag "normalize: ${proteins_faa.baseName}"
-    container params.normalizer_container
-
-    publishDir "${params.outdir}/input", mode: 'copy'
-
-    input:
-    path proteins_faa
-    path annot_gff
-    path normalizer_script
-
-    output:
-    tuple path("normalized_proteins.faa"), path("sequence_registry.tsv"), emit: normalized
-
-    script:
-    """
-    python normalize_input.py \
-        --proteins-faa ${proteins_faa} \
-        --annot-gff ${annot_gff} \
-        --out-faa normalized_proteins.faa \
-        --registry sequence_registry.tsv \
-        --gff-protein-attribute '${params.gff_protein_attribute}'
+        --translation-table ${params.translation_table} \
+        ${params.allow_internal_stops ? '--allow-internal-stops' : ''}
     """
 }

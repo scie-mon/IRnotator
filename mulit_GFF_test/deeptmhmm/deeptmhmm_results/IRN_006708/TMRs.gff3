@@ -1,0 +1,11 @@
+##gff-version 3
+# g16013.t1 Length: 487
+# g16013.t1 Number of predicted TMRs: 3
+g16013.t1	signal	1	21				
+g16013.t1	outside	22	150				
+g16013.t1	TMhelix	151	171				
+g16013.t1	inside	172	229				
+g16013.t1	TMhelix	230	250				
+g16013.t1	outside	251	438				
+g16013.t1	TMhelix	439	459				
+g16013.t1	inside	460	487				

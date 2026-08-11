@@ -1,0 +1,11 @@
+##gff-version 3
+# maker-CM058171.1-augustus-gene-1.1083-mRNA-1 Length: 453
+# maker-CM058171.1-augustus-gene-1.1083-mRNA-1 Number of predicted TMRs: 3
+maker-CM058171.1-augustus-gene-1.1083-mRNA-1	signal	1	17				
+maker-CM058171.1-augustus-gene-1.1083-mRNA-1	outside	18	160				
+maker-CM058171.1-augustus-gene-1.1083-mRNA-1	TMhelix	161	181				
+maker-CM058171.1-augustus-gene-1.1083-mRNA-1	inside	182	223				
+maker-CM058171.1-augustus-gene-1.1083-mRNA-1	TMhelix	224	244				
+maker-CM058171.1-augustus-gene-1.1083-mRNA-1	outside	245	423				
+maker-CM058171.1-augustus-gene-1.1083-mRNA-1	TMhelix	424	443				
+maker-CM058171.1-augustus-gene-1.1083-mRNA-1	inside	444	453				

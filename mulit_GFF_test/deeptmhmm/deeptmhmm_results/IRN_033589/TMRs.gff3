@@ -1,0 +1,8 @@
+##gff-version 3
+# KAK4006045.1 Length: 397
+# KAK4006045.1 Number of predicted TMRs: 2
+KAK4006045.1	outside	1	134				
+KAK4006045.1	TMhelix	135	155				
+KAK4006045.1	inside	156	200				
+KAK4006045.1	TMhelix	201	221				
+KAK4006045.1	outside	222	397				
