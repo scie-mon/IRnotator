@@ -1,0 +1,27 @@
+##gff-version 3
+# maker-CM058177.1-snap-gene-1.1097-mRNA-1 Length: 1372
+# maker-CM058177.1-snap-gene-1.1097-mRNA-1 Number of predicted TMRs: 11
+maker-CM058177.1-snap-gene-1.1097-mRNA-1	signal	1	23				
+maker-CM058177.1-snap-gene-1.1097-mRNA-1	outside	24	148				
+maker-CM058177.1-snap-gene-1.1097-mRNA-1	TMhelix	149	169				
+maker-CM058177.1-snap-gene-1.1097-mRNA-1	inside	170	210				
+maker-CM058177.1-snap-gene-1.1097-mRNA-1	TMhelix	211	232				
+maker-CM058177.1-snap-gene-1.1097-mRNA-1	outside	233	409				
+maker-CM058177.1-snap-gene-1.1097-mRNA-1	TMhelix	410	423				
+maker-CM058177.1-snap-gene-1.1097-mRNA-1	inside	424	424				
+maker-CM058177.1-snap-gene-1.1097-mRNA-1	TMhelix	425	436				
+maker-CM058177.1-snap-gene-1.1097-mRNA-1	outside	437	576				
+maker-CM058177.1-snap-gene-1.1097-mRNA-1	TMhelix	577	597				
+maker-CM058177.1-snap-gene-1.1097-mRNA-1	inside	598	658				
+maker-CM058177.1-snap-gene-1.1097-mRNA-1	TMhelix	659	680				
+maker-CM058177.1-snap-gene-1.1097-mRNA-1	outside	681	862				
+maker-CM058177.1-snap-gene-1.1097-mRNA-1	TMhelix	863	877				
+maker-CM058177.1-snap-gene-1.1097-mRNA-1	inside	878	909				
+maker-CM058177.1-snap-gene-1.1097-mRNA-1	TMhelix	910	919				
+maker-CM058177.1-snap-gene-1.1097-mRNA-1	outside	920	1050				
+maker-CM058177.1-snap-gene-1.1097-mRNA-1	TMhelix	1051	1071				
+maker-CM058177.1-snap-gene-1.1097-mRNA-1	inside	1072	1133				
+maker-CM058177.1-snap-gene-1.1097-mRNA-1	TMhelix	1134	1155				
+maker-CM058177.1-snap-gene-1.1097-mRNA-1	outside	1156	1337				
+maker-CM058177.1-snap-gene-1.1097-mRNA-1	TMhelix	1338	1360				
+maker-CM058177.1-snap-gene-1.1097-mRNA-1	inside	1361	1372				

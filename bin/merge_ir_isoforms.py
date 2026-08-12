@@ -5,8 +5,6 @@ import argparse
 import csv
 import re
 import sys
-from collections import defaultdict
-from datetime import datetime
 from pathlib import Path
 from urllib.parse import unquote
 
@@ -30,7 +28,7 @@ def read_tsv(path: Path) -> list[dict[str, str]]:
 
 
 def span(model: dict) -> tuple[int, int]:
-    return min(x["start"] for x in model["cds"]), max(x["end"] for x in model["cds"])
+    return min(item["start"] for item in model["cds"]), max(item["end"] for item in model["cds"])
 
 
 def overlap(a: tuple[int, int], b: tuple[int, int]) -> float:
@@ -52,21 +50,28 @@ def parse_gffs(paths: list[Path]) -> dict[tuple[str, str], dict]:
                 if len(fields) != 9 or fields[2] != "CDS":
                     continue
                 contig, source, _, start, end, score, strand, phase, raw = fields
-                a = attrs(raw)
-                parents = [x for x in a.get("Parent", "").split(",") if x]
+                parsed = attrs(raw)
+                parents = [item for item in parsed.get("Parent", "").split(",") if item]
                 if len(parents) != 1:
                     raise ValueError(f"{path}:{line_number}: CDS must have one Parent")
-                start, end = int(start), int(end)
                 key = (track, parents[0])
                 model = models.setdefault(key, {
-                    "track": track, "source": source, "transcript_id": parents[0],
-                    "contig": contig, "strand": strand, "cds": [],
+                    "track": track,
+                    "source": source,
+                    "transcript_id": parents[0],
+                    "contig": contig,
+                    "strand": strand,
+                    "cds": [],
                 })
                 if (model["contig"], model["strand"]) != (contig, strand):
                     raise ValueError(f"inconsistent CDS location for {key}")
                 model["cds"].append({
-                    "contig": contig, "start": start, "end": end,
-                    "score": score, "strand": strand, "phase": phase, "attrs": a,
+                    "start": int(start),
+                    "end": int(end),
+                    "score": score,
+                    "strand": strand,
+                    "phase": phase,
+                    "attrs": parsed,
                 })
     return models
 
@@ -99,8 +104,123 @@ def source_attributes(models: list[dict]) -> str:
         for segment in model["cds"]:
             for key, value in segment["attrs"].items():
                 if key != "translation":
-                    values.add(f"{key}={value}".replace(";", "%3B").replace("=", "%3D").replace(",", "%2C"))
+                    values.add(
+                        f"{key}={value}"
+                        .replace(";", "%3B")
+                        .replace("=", "%3D")
+                        .replace(",", "%2C")
+                    )
     return "%2C".join(sorted(values))
+
+
+def candidates_from_registry(
+    registry: list[dict[str, str]],
+    decision_by_id: dict[str, dict[str, str]],
+    models: dict[tuple[str, str], dict],
+    mode: str,
+) -> list[dict]:
+    candidates = []
+    for row in registry:
+        internal_id = row["internal_id"].strip()
+        decision = decision_by_id.get(internal_id)
+        if decision is None:
+            continue
+        final_decision = decision["final_decision"].strip().lower()
+        if final_decision not in {"accept", "reject", "review"}:
+            raise ValueError(f"invalid final_decision for {internal_id}: {final_decision!r}")
+        if mode == "filtered" and final_decision != "accept":
+            continue
+        key = (row["annotation_track"], row["source_id"])
+        if key not in models:
+            raise ValueError(f"no GFF CDS model for {internal_id}: {key}")
+        candidate = dict(models[key])
+        candidate.update(
+            internal_id=internal_id,
+            topology_class=decision["topology_class"].strip(),
+            final_decision=final_decision,
+            registry=row,
+        )
+        candidates.append(candidate)
+    return candidates
+
+
+def select_models(candidates: list[dict], threshold: float, mode: str) -> list[list[dict]]:
+    initial_groups = clusters(candidates, threshold)
+    if mode == "unfiltered":
+        return [[candidates[index] for index in group] for group in initial_groups]
+
+    selected = []
+    for group in initial_groups:
+        strict = [candidates[index] for index in group if candidates[index]["topology_class"] == "strict"]
+        selected.extend(strict if strict else [candidates[index] for index in group])
+
+    if not selected:
+        return []
+    return [[selected[index] for index in group] for group in clusters(selected, threshold)]
+
+
+def write_outputs(groups: list[list[dict]], out_gff: Path, out_audit: Path) -> None:
+    audit = []
+    with out_gff.open("w") as out:
+        out.write("##gff-version 3\n")
+        for models_out in groups:
+            first = models_out[0]
+            contig, strand = first["contig"], first["strand"]
+            gene_start = min(span(model)[0] for model in models_out)
+            gene_end = max(span(model)[1] for model in models_out)
+            gene_id = f"{contig}_{gene_start}-{gene_end}{'f' if strand == '+' else 'r'}"
+            source_attr = source_attributes(models_out)
+            out.write(
+                f"{contig}\tMerged\tgene\t{gene_start}\t{gene_end}\t.\t{strand}\t.\t"
+                f"ID={gene_id};Name={gene_id};source_attributes={source_attr}\n"
+            )
+            ordered = sorted(models_out, key=lambda model: (*span(model), model["internal_id"]))
+            multiple = len(ordered) > 1
+            for iso_index, model in enumerate(ordered, 1):
+                start, end = span(model)
+                label = f"{gene_id}_X{iso_index}" if multiple else gene_id
+                mrna_id = f"{label}-{start}-{end}-{model['internal_id']}"
+                source = model["source"] or model["track"]
+                out.write(
+                    f"{contig}\t{source}\tmRNA\t{start}\t{end}\t.\t{strand}\t.\t"
+                    f"ID={mrna_id};Parent={gene_id};tm={model['topology_class']};"
+                    f"decision={model['final_decision']};source={source};"
+                    f"source_attributes={source_attr};Name={label} mRNA;"
+                    f"internal_id={model['internal_id']};annotation_track={model['track']}\n"
+                )
+                for segment in sorted(model["cds"], key=lambda item: item["start"]):
+                    translation = segment["attrs"].get("translation", "")
+                    extra = f";translation={translation}" if translation else ""
+                    out.write(
+                        f"{contig}\t{source}\tCDS\t{segment['start']}\t{segment['end']}\t.\t"
+                        f"{strand}\t{segment['phase']}\tID={mrna_id}.CDS;Parent={mrna_id};"
+                        f"Name={label} CDS{extra};source_attributes={source_attr};"
+                        f"internal_id={model['internal_id']}\n"
+                    )
+                audit.append({
+                    "merged_gene_id": gene_id,
+                    "merged_isoform_id": mrna_id,
+                    "internal_id": model["internal_id"],
+                    "final_decision": model["final_decision"],
+                    "annotation_track": model["track"],
+                    "source_id": model["registry"]["source_id"],
+                    "transcript_id": model["registry"].get("transcript_id", ""),
+                    "topology_class": model["topology_class"],
+                    "contig": contig,
+                    "start": start,
+                    "end": end,
+                    "strand": strand,
+                })
+
+    fields = [
+        "merged_gene_id", "merged_isoform_id", "internal_id", "final_decision",
+        "annotation_track", "source_id", "transcript_id", "topology_class",
+        "contig", "start", "end", "strand",
+    ]
+    with out_audit.open("w", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fields, delimiter="\t", lineterminator="\n")
+        writer.writeheader()
+        writer.writerows(audit)
 
 
 def main() -> None:
@@ -109,77 +229,21 @@ def main() -> None:
     parser.add_argument("--registry", required=True)
     parser.add_argument("--decisions", required=True)
     parser.add_argument("--overlap-fraction", type=float, default=0.60)
+    parser.add_argument("--mode", choices=("unfiltered", "filtered"), default="filtered")
     parser.add_argument("--out-gff", required=True)
     parser.add_argument("--out-audit", required=True)
     args = parser.parse_args()
+
     if not 0 <= args.overlap_fraction <= 1:
         raise ValueError("--overlap-fraction must be between 0 and 1")
 
     registry = read_tsv(Path(args.registry))
     decisions = read_tsv(Path(args.decisions))
-    decision_by_id = {x["protein_id"].strip(): x for x in decisions}
-    models = parse_gffs([Path(x) for x in args.gff])
-    candidates = []
-    for row in registry:
-        decision = decision_by_id.get(row["internal_id"].strip())
-        if not decision or decision["final_decision"].strip().lower() != "accept":
-            continue
-        key = (row["annotation_track"], row["source_id"])
-        if key not in models:
-            raise ValueError(f"no GFF CDS model for {row['internal_id']}: {key}")
-        candidate = dict(models[key])
-        candidate.update(internal_id=row["internal_id"].strip(), topology_class=decision["topology_class"].strip(), registry=row)
-        candidates.append(candidate)
-
-    initial_groups = clusters(candidates, args.overlap_fraction)
-    selected = []
-    for group in initial_groups:
-        strict = [candidates[i] for i in group if candidates[i]["topology_class"] == "strict"]
-        selected.extend(strict if strict else [candidates[i] for i in group])
-
-    # Recluster after removing relaxed isoforms. This prevents a discarded
-    # relaxed candidate from bridging disjoint strict candidates.
-    final_groups = clusters(selected, args.overlap_fraction) if selected else []
-    timestamp = int(datetime.utcnow().timestamp())
-    audit = []
-    with Path(args.out_gff).open("w") as out:
-        out.write("##gff-version 3\n")
-        for group in final_groups:
-            models_out = [selected[i] for i in group]
-            first = models_out[0]
-            contig, strand = first["contig"], first["strand"]
-            gene_start = min(span(x)[0] for x in models_out)
-            gene_end = max(span(x)[1] for x in models_out)
-            gene_id = f"{contig}_{gene_start}-{gene_end}{'f' if strand == '+' else 'r'}"
-            source_attr = source_attributes(models_out)
-            out.write(f"{contig}\tMerged\tgene\t{gene_start}\t{gene_end}\t.\t{strand}\t.\tID={gene_id};Name={gene_id};source_attributes={source_attr}\n")
-            ordered = sorted(models_out, key=lambda x: span(x)[0])
-            multiple = len(ordered) > 1
-            for iso_index, model in enumerate(ordered):
-                start, end = span(model)
-                label = f"{gene_id}_X{iso_index + 1}" if multiple else gene_id
-                mrna_id = f"{label}-{start}-{end}-{timestamp + iso_index}"
-                source = model["source"] or model["track"]
-                out.write(f"{contig}\t{source}\tmRNA\t{start}\t{end}\t.\t{strand}\t.\tID={mrna_id};Parent={gene_id};tm={model['topology_class']};source={source};source_attributes={source_attr};Name={label} mRNA;internal_id={model['internal_id']};annotation_track={model['track']}\n")
-                for segment in sorted(model["cds"], key=lambda x: x["start"]):
-                    translation = segment["attrs"].get("translation", "")
-                    extra = f";translation={translation}" if translation else ""
-                    # Preserve the original merge_isoforms naming exactly.
-                    out.write(f"{contig}\t{source}\tCDS\t{segment['start']}\t{segment['end']}\t.\t{strand}\t{segment['phase']}\tID={mrna_id}.CDS;Parent={mrna_id};Name={label} CDS{extra};source_attributes={source_attr};internal_id={model['internal_id']}\n")
-                audit.append({
-                    "merged_gene_id": gene_id, "merged_isoform_id": mrna_id,
-                    "internal_id": model["internal_id"], "annotation_track": model["track"],
-                    "source_id": model["registry"]["source_id"],
-                    "transcript_id": model["registry"].get("transcript_id", ""),
-                    "topology_class": model["topology_class"], "contig": contig,
-                    "start": start, "end": end, "strand": strand,
-                })
-
-    fields = ["merged_gene_id", "merged_isoform_id", "internal_id", "annotation_track", "source_id", "transcript_id", "topology_class", "contig", "start", "end", "strand"]
-    with Path(args.out_audit).open("w", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fields, delimiter="\t", lineterminator="\n")
-        writer.writeheader()
-        writer.writerows(audit)
+    decision_by_id = {row["protein_id"].strip(): row for row in decisions}
+    models = parse_gffs([Path(path) for path in args.gff])
+    candidates = candidates_from_registry(registry, decision_by_id, models, args.mode)
+    groups = select_models(candidates, args.overlap_fraction, args.mode)
+    write_outputs(groups, Path(args.out_gff), Path(args.out_audit))
 
 
 if __name__ == "__main__":

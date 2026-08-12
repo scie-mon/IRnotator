@@ -1,0 +1,21 @@
+##gff-version 3
+# g9424.t2 Length: 2599
+# g9424.t2 Number of predicted TMRs: 8
+g9424.t2	signal	1	28				
+g9424.t2	outside	29	583				
+g9424.t2	TMhelix	584	602				
+g9424.t2	inside	603	631				
+g9424.t2	TMhelix	632	641				
+g9424.t2	outside	642	700				
+g9424.t2	TMhelix	701	719				
+g9424.t2	inside	720	794				
+g9424.t2	TMhelix	795	816				
+g9424.t2	outside	817	981				
+g9424.t2	TMhelix	982	1005				
+g9424.t2	inside	1006	1045				
+g9424.t2	TMhelix	1046	1066				
+g9424.t2	outside	1067	1842				
+g9424.t2	TMhelix	1843	1852				
+g9424.t2	inside	1853	1853				
+g9424.t2	TMhelix	1854	1864				
+g9424.t2	outside	1865	2599				

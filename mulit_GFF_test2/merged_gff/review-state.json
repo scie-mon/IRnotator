@@ -1,0 +1,11 @@
+{
+  "mode": "advance",
+  "merged_dir": "/home/primeline/Data/IRnotator/mulit_GFF_test2/merged_gff",
+  "unfiltered_gff": "/home/primeline/Data/IRnotator/mulit_GFF_test2/merged_gff/merged.unfiltered.gff3",
+  "review_tsv": "/home/primeline/Data/IRnotator/mulit_GFF_test2/manual_review/review.tsv",
+  "existing_max_revision": 1,
+  "reviewer_context_kind": "previous_revision",
+  "reviewer_gff": "/home/primeline/Data/IRnotator/mulit_GFF_test2/merged_gff/merged.rev1.gff3",
+  "revision_to_write": 2,
+  "target_filtered_gff": "/home/primeline/Data/IRnotator/mulit_GFF_test2/merged_gff/merged.rev2.gff3"
+}

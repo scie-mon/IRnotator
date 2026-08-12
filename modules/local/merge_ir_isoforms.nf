@@ -1,26 +1,32 @@
 process MERGE_IR_ISOFORMS {
-    tag "merge_ir_isoforms"
+    tag "${merge_mode}:${gff_name}"
 
-    publishDir "${params.outdir}/final", mode: 'copy'
+    publishDir "${params.outdir}/merged_gff", mode: 'copy', overwrite: false
 
     input:
     path annotation_gffs
     path sequence_registry
     path decisions
     path merger_script
+    val merge_mode
+    val gff_name
+    val audit_name
 
     output:
-    path "merged_IR.gff3", emit: merged_gff
-    path "merged_isoform_audit.tsv", emit: audit
+    path "${gff_name}", emit: merged_gff
+    path "${audit_name}", emit: audit
 
     script:
     """
-    python ${merger_script} \
-        --gff ${annotation_gffs.join(' ')} \
-        --registry ${sequence_registry} \
-        --decisions ${decisions} \
-        --overlap-fraction ${params.isoform_overlap_fraction} \
-        --out-gff merged_IR.gff3 \
-        --out-audit merged_isoform_audit.tsv
+    set -euo pipefail
+
+    python3 ${merger_script} \\
+        --gff ${annotation_gffs.join(' ')} \\
+        --registry ${sequence_registry} \\
+        --decisions ${decisions} \\
+        --overlap-fraction ${params.isoform_overlap_fraction} \\
+        --mode ${merge_mode} \\
+        --out-gff ${gff_name} \\
+        --out-audit ${audit_name}
     """
 }
