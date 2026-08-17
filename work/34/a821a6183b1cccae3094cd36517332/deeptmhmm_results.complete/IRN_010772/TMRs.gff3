@@ -1,0 +1,10 @@
+##gff-version 3
+# g2897.t1 Length: 500
+# g2897.t1 Number of predicted TMRs: 3
+g2897.t1	outside	1	130				
+g2897.t1	TMhelix	131	151				
+g2897.t1	inside	152	196				
+g2897.t1	TMhelix	197	217				
+g2897.t1	outside	218	402				
+g2897.t1	TMhelix	403	423				
+g2897.t1	inside	424	500				

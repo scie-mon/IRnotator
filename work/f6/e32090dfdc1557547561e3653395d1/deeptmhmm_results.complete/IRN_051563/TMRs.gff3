@@ -1,0 +1,17 @@
+##gff-version 3
+# maker-CM058178.1-snap-gene-1.728-mRNA-1 Length: 890
+# maker-CM058178.1-snap-gene-1.728-mRNA-1 Number of predicted TMRs: 6
+maker-CM058178.1-snap-gene-1.728-mRNA-1	signal	1	42				
+maker-CM058178.1-snap-gene-1.728-mRNA-1	outside	43	175				
+maker-CM058178.1-snap-gene-1.728-mRNA-1	TMhelix	176	196				
+maker-CM058178.1-snap-gene-1.728-mRNA-1	inside	197	250				
+maker-CM058178.1-snap-gene-1.728-mRNA-1	TMhelix	251	272				
+maker-CM058178.1-snap-gene-1.728-mRNA-1	outside	273	454				
+maker-CM058178.1-snap-gene-1.728-mRNA-1	TMhelix	455	480				
+maker-CM058178.1-snap-gene-1.728-mRNA-1	inside	481	565				
+maker-CM058178.1-snap-gene-1.728-mRNA-1	TMhelix	566	575				
+maker-CM058178.1-snap-gene-1.728-mRNA-1	outside	576	717				
+maker-CM058178.1-snap-gene-1.728-mRNA-1	TMhelix	718	737				
+maker-CM058178.1-snap-gene-1.728-mRNA-1	inside	738	753				
+maker-CM058178.1-snap-gene-1.728-mRNA-1	TMhelix	754	775				
+maker-CM058178.1-snap-gene-1.728-mRNA-1	outside	776	890				

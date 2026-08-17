@@ -1,0 +1,11 @@
+##gff-version 3
+# g15182.t1 Length: 623
+# g15182.t1 Number of predicted TMRs: 3
+g15182.t1	signal	1	21				
+g15182.t1	outside	22	328				
+g15182.t1	TMhelix	329	352				
+g15182.t1	inside	353	397				
+g15182.t1	TMhelix	398	419				
+g15182.t1	outside	420	586				
+g15182.t1	TMhelix	587	607				
+g15182.t1	inside	608	623				

@@ -1,0 +1,10 @@
+##gff-version 3
+# g8060.t1 Length: 478
+# g8060.t1 Number of predicted TMRs: 3
+g8060.t1	outside	1	172				
+g8060.t1	TMhelix	173	193				
+g8060.t1	inside	194	238				
+g8060.t1	TMhelix	239	255				
+g8060.t1	outside	256	441				
+g8060.t1	TMhelix	442	462				
+g8060.t1	inside	463	478				

@@ -1,0 +1,11 @@
+##gff-version 3
+# maker-CM058176.1-snap-gene-0.867-mRNA-1 Length: 476
+# maker-CM058176.1-snap-gene-0.867-mRNA-1 Number of predicted TMRs: 3
+maker-CM058176.1-snap-gene-0.867-mRNA-1	signal	1	37				
+maker-CM058176.1-snap-gene-0.867-mRNA-1	outside	38	171				
+maker-CM058176.1-snap-gene-0.867-mRNA-1	TMhelix	172	192				
+maker-CM058176.1-snap-gene-0.867-mRNA-1	inside	193	239				
+maker-CM058176.1-snap-gene-0.867-mRNA-1	TMhelix	240	260				
+maker-CM058176.1-snap-gene-0.867-mRNA-1	outside	261	440				
+maker-CM058176.1-snap-gene-0.867-mRNA-1	TMhelix	441	461				
+maker-CM058176.1-snap-gene-0.867-mRNA-1	inside	462	476				

@@ -1,0 +1,10 @@
+##gff-version 3
+# maker-CM058179.1-augustus-gene-1.812-mRNA-1 Length: 598
+# maker-CM058179.1-augustus-gene-1.812-mRNA-1 Number of predicted TMRs: 3
+maker-CM058179.1-augustus-gene-1.812-mRNA-1	outside	1	307				
+maker-CM058179.1-augustus-gene-1.812-mRNA-1	TMhelix	308	328				
+maker-CM058179.1-augustus-gene-1.812-mRNA-1	inside	329	369				
+maker-CM058179.1-augustus-gene-1.812-mRNA-1	TMhelix	370	391				
+maker-CM058179.1-augustus-gene-1.812-mRNA-1	outside	392	563				
+maker-CM058179.1-augustus-gene-1.812-mRNA-1	TMhelix	564	584				
+maker-CM058179.1-augustus-gene-1.812-mRNA-1	inside	585	598				

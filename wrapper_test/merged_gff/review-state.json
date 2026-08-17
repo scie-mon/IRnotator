@@ -1,0 +1,11 @@
+{
+  "mode": "advance",
+  "merged_dir": "/home/primeline/Data/IRnotator/wrapper_test/merged_gff",
+  "unfiltered_gff": "/home/primeline/Data/IRnotator/wrapper_test/merged_gff/merged.unfiltered.gff3",
+  "review_tsv": "/home/primeline/Data/IRnotator/wrapper_test/manual_review/review.tsv",
+  "existing_max_revision": 0,
+  "reviewer_context_kind": "previous_revision",
+  "reviewer_gff": "/home/primeline/Data/IRnotator/wrapper_test/merged_gff/merged.rev0.gff3",
+  "revision_to_write": 1,
+  "target_filtered_gff": "/home/primeline/Data/IRnotator/wrapper_test/merged_gff/merged.rev1.gff3"
+}

@@ -1,0 +1,10 @@
+##gff-version 3
+# maker-CM058179.1-exonerate_est2genome-gene-0.0-mRNA-1 Length: 378
+# maker-CM058179.1-exonerate_est2genome-gene-0.0-mRNA-1 Number of predicted TMRs: 3
+maker-CM058179.1-exonerate_est2genome-gene-0.0-mRNA-1	outside	1	87				
+maker-CM058179.1-exonerate_est2genome-gene-0.0-mRNA-1	TMhelix	88	105				
+maker-CM058179.1-exonerate_est2genome-gene-0.0-mRNA-1	inside	106	149				
+maker-CM058179.1-exonerate_est2genome-gene-0.0-mRNA-1	TMhelix	150	171				
+maker-CM058179.1-exonerate_est2genome-gene-0.0-mRNA-1	outside	172	343				
+maker-CM058179.1-exonerate_est2genome-gene-0.0-mRNA-1	TMhelix	344	364				
+maker-CM058179.1-exonerate_est2genome-gene-0.0-mRNA-1	inside	365	378				

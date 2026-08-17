@@ -1,0 +1,11 @@
+##gff-version 3
+# KAK4023780.1 Length: 501
+# KAK4023780.1 Number of predicted TMRs: 3
+KAK4023780.1	signal	1	52				
+KAK4023780.1	outside	53	205				
+KAK4023780.1	TMhelix	206	226				
+KAK4023780.1	inside	227	271				
+KAK4023780.1	TMhelix	272	292				
+KAK4023780.1	outside	293	471				
+KAK4023780.1	TMhelix	472	491				
+KAK4023780.1	inside	492	501				

@@ -1,0 +1,14 @@
+##gff-version 3
+# g2094.t1 Length: 1013
+# g2094.t1 Number of predicted TMRs: 5
+g2094.t1	outside	1	514				
+g2094.t1	TMhelix	515	524				
+g2094.t1	inside	525	525				
+g2094.t1	TMhelix	526	536				
+g2094.t1	outside	537	601				
+g2094.t1	TMhelix	602	622				
+g2094.t1	inside	623	715				
+g2094.t1	TMhelix	716	736				
+g2094.t1	outside	737	901				
+g2094.t1	TMhelix	902	922				
+g2094.t1	inside	923	1013				

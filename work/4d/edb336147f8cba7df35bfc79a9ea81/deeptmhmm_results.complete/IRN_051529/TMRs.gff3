@@ -1,0 +1,11 @@
+##gff-version 3
+# maker-CM058172.1-snap-gene-1.809-mRNA-1 Length: 474
+# maker-CM058172.1-snap-gene-1.809-mRNA-1 Number of predicted TMRs: 3
+maker-CM058172.1-snap-gene-1.809-mRNA-1	signal	1	21				
+maker-CM058172.1-snap-gene-1.809-mRNA-1	outside	22	160				
+maker-CM058172.1-snap-gene-1.809-mRNA-1	TMhelix	161	181				
+maker-CM058172.1-snap-gene-1.809-mRNA-1	inside	182	238				
+maker-CM058172.1-snap-gene-1.809-mRNA-1	TMhelix	239	252				
+maker-CM058172.1-snap-gene-1.809-mRNA-1	outside	253	435				
+maker-CM058172.1-snap-gene-1.809-mRNA-1	TMhelix	436	456				
+maker-CM058172.1-snap-gene-1.809-mRNA-1	inside	457	474				

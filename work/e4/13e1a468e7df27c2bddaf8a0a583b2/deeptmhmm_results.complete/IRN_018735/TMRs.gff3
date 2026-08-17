@@ -1,0 +1,10 @@
+##gff-version 3
+# maker-CM058179.1-exonerate_protein2genome-gene-0.26-mRNA-1 Length: 493
+# maker-CM058179.1-exonerate_protein2genome-gene-0.26-mRNA-1 Number of predicted TMRs: 3
+maker-CM058179.1-exonerate_protein2genome-gene-0.26-mRNA-1	outside	1	209				
+maker-CM058179.1-exonerate_protein2genome-gene-0.26-mRNA-1	TMhelix	210	230				
+maker-CM058179.1-exonerate_protein2genome-gene-0.26-mRNA-1	inside	231	273				
+maker-CM058179.1-exonerate_protein2genome-gene-0.26-mRNA-1	TMhelix	274	295				
+maker-CM058179.1-exonerate_protein2genome-gene-0.26-mRNA-1	outside	296	463				
+maker-CM058179.1-exonerate_protein2genome-gene-0.26-mRNA-1	TMhelix	464	487				
+maker-CM058179.1-exonerate_protein2genome-gene-0.26-mRNA-1	inside	488	493				

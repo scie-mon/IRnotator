@@ -1,0 +1,11 @@
+##gff-version 3
+# maker-CM058175.1-exonerate_protein2genome-gene-0.27-mRNA-1 Length: 463
+# maker-CM058175.1-exonerate_protein2genome-gene-0.27-mRNA-1 Number of predicted TMRs: 3
+maker-CM058175.1-exonerate_protein2genome-gene-0.27-mRNA-1	signal	1	21				
+maker-CM058175.1-exonerate_protein2genome-gene-0.27-mRNA-1	outside	22	159				
+maker-CM058175.1-exonerate_protein2genome-gene-0.27-mRNA-1	TMhelix	160	180				
+maker-CM058175.1-exonerate_protein2genome-gene-0.27-mRNA-1	inside	181	227				
+maker-CM058175.1-exonerate_protein2genome-gene-0.27-mRNA-1	TMhelix	228	249				
+maker-CM058175.1-exonerate_protein2genome-gene-0.27-mRNA-1	outside	250	426				
+maker-CM058175.1-exonerate_protein2genome-gene-0.27-mRNA-1	TMhelix	427	447				
+maker-CM058175.1-exonerate_protein2genome-gene-0.27-mRNA-1	inside	448	463				

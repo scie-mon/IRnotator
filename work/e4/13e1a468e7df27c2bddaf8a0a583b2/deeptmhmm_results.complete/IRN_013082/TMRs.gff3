@@ -1,0 +1,10 @@
+##gff-version 3
+# g4971.t2 Length: 425
+# g4971.t2 Number of predicted TMRs: 3
+g4971.t2	outside	1	136				
+g4971.t2	TMhelix	137	157				
+g4971.t2	inside	158	200				
+g4971.t2	TMhelix	201	222				
+g4971.t2	outside	223	399				
+g4971.t2	TMhelix	400	420				
+g4971.t2	inside	421	425				

@@ -1,0 +1,6 @@
+
+[2026-08-17T13:17:23.847026+00:00] nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker --outdir wrapper_test
+[2026-08-17T13:18:04.814583+00:00] exit status: 0
+
+[2026-08-17T13:18:55.139847+00:00] nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker --outdir wrapper_test -resume
+[2026-08-17T13:19:09.709139+00:00] exit status: 0

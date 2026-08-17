@@ -1,1 +1,0 @@
-/home/primeline/Data/IRnotator/bin/merge_ir_isoforms.py

@@ -1,0 +1,11 @@
+##gff-version 3
+# maker-CM058178.1-exonerate_protein2genome-gene-0.6-mRNA-1 Length: 467
+# maker-CM058178.1-exonerate_protein2genome-gene-0.6-mRNA-1 Number of predicted TMRs: 3
+maker-CM058178.1-exonerate_protein2genome-gene-0.6-mRNA-1	signal	1	16				
+maker-CM058178.1-exonerate_protein2genome-gene-0.6-mRNA-1	outside	17	154				
+maker-CM058178.1-exonerate_protein2genome-gene-0.6-mRNA-1	TMhelix	155	175				
+maker-CM058178.1-exonerate_protein2genome-gene-0.6-mRNA-1	inside	176	225				
+maker-CM058178.1-exonerate_protein2genome-gene-0.6-mRNA-1	TMhelix	226	242				
+maker-CM058178.1-exonerate_protein2genome-gene-0.6-mRNA-1	outside	243	421				
+maker-CM058178.1-exonerate_protein2genome-gene-0.6-mRNA-1	TMhelix	422	442				
+maker-CM058178.1-exonerate_protein2genome-gene-0.6-mRNA-1	inside	443	467				

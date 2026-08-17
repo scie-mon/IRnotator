@@ -1,0 +1,10 @@
+##gff-version 3
+# g6908.t1 Length: 577
+# g6908.t1 Number of predicted TMRs: 3
+g6908.t1	outside	1	290				
+g6908.t1	TMhelix	291	311				
+g6908.t1	inside	312	354				
+g6908.t1	TMhelix	355	377				
+g6908.t1	outside	378	544				
+g6908.t1	TMhelix	545	565				
+g6908.t1	inside	566	577				
