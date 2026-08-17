@@ -28,6 +28,10 @@ EOF
         unresolved_deeptmhmm.faa \\
         deeptmhmm_reuse_summary.tsv
 
+    python ${projectDir}/bin/sync_deeptmhmm_dump.py \\
+        deeptmhmm_results \\
+        ${projectDir}/deeptmhmm_dump
+
     if grep -q '^>' unresolved_deeptmhmm.faa; then
         echo "WARNING: DeepTMHMM results are incomplete." >&2
         echo "Unresolved sequences were written to:" >&2
