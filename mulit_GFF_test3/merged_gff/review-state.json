@@ -1,0 +1,11 @@
+{
+  "mode": "bootstrap",
+  "merged_dir": "/home/primeline/Data/IRnotator/mulit_GFF_test3/merged_gff",
+  "unfiltered_gff": "/home/primeline/Data/IRnotator/mulit_GFF_test3/merged_gff/merged.unfiltered.gff3",
+  "review_tsv": null,
+  "existing_max_revision": null,
+  "reviewer_context_kind": "current_unfiltered",
+  "reviewer_gff": "/home/primeline/Data/IRnotator/mulit_GFF_test3/merged_gff/merged.unfiltered.gff3",
+  "revision_to_write": 0,
+  "target_filtered_gff": "/home/primeline/Data/IRnotator/mulit_GFF_test3/merged_gff/merged.rev0.gff3"
+}

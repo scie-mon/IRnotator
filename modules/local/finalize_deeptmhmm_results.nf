@@ -7,11 +7,11 @@ process FINALIZE_DEEPTMHMM_RESULTS {
     path generated_results
 
     output:
-    path 'deeptmhmm_results.tsv', emit: manifest
-    path 'deeptmhmm_reuse_summary.tsv', emit: summary
-    path 'deeptmhmm_results', emit: results_dir
-    path 'deeptmhmm_results/*', emit: result_dirs
+    path 'deeptmhmm_results.complete.tsv', emit: manifest, optional: true
+    path 'deeptmhmm_results.complete', emit: results_dir, optional: true
+    path 'deeptmhmm_results.complete/*', emit: result_dirs, optional: true
     path 'unresolved_deeptmhmm.faa', emit: unresolved_fasta
+    path 'deeptmhmm_reuse_summary.tsv', emit: summary
 
     script:
     def generated_paths = generated_results.collect { it.toString() }.join('\n')
@@ -27,19 +27,15 @@ EOF
         deeptmhmm_results \\
         unresolved_deeptmhmm.faa \\
         deeptmhmm_reuse_summary.tsv
-    """
-}
 
-process ASSERT_COMPLETE_DEEPTMHMM_RESULTS {
-    tag 'assert_complete_deeptmhmm_results'
-    input:
-    path unresolved_fasta
-    script:
-    """
-    if grep -q '^>' ${unresolved_fasta}; then
-        echo 'DeepTMHMM results are missing for one or more sequences:' >&2
-        cat ${unresolved_fasta} >&2
-        exit 1
+    if grep -q '^>' unresolved_deeptmhmm.faa; then
+        echo "WARNING: DeepTMHMM results are incomplete." >&2
+        echo "Unresolved sequences were written to:" >&2
+        echo "  ${params.outdir}/deeptmhmm/unresolved_deeptmhmm.faa" >&2
+        echo "Add completed results under --deeptmhmm_salvage_paths and rerun with -resume." >&2
+    else
+        mv deeptmhmm_results.tsv deeptmhmm_results.complete.tsv
+        mv deeptmhmm_results deeptmhmm_results.complete
     fi
     """
 }

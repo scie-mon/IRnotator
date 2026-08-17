@@ -1,0 +1,11 @@
+##gff-version 3
+# maker-CM058173.1-exonerate_protein2genome-gene-0.29-mRNA-1 Length: 476
+# maker-CM058173.1-exonerate_protein2genome-gene-0.29-mRNA-1 Number of predicted TMRs: 3
+maker-CM058173.1-exonerate_protein2genome-gene-0.29-mRNA-1	signal	1	28				
+maker-CM058173.1-exonerate_protein2genome-gene-0.29-mRNA-1	outside	29	164				
+maker-CM058173.1-exonerate_protein2genome-gene-0.29-mRNA-1	TMhelix	165	185				
+maker-CM058173.1-exonerate_protein2genome-gene-0.29-mRNA-1	inside	186	237				
+maker-CM058173.1-exonerate_protein2genome-gene-0.29-mRNA-1	TMhelix	238	258				
+maker-CM058173.1-exonerate_protein2genome-gene-0.29-mRNA-1	outside	259	435				
+maker-CM058173.1-exonerate_protein2genome-gene-0.29-mRNA-1	TMhelix	436	454				
+maker-CM058173.1-exonerate_protein2genome-gene-0.29-mRNA-1	inside	455	476				

@@ -6,9 +6,9 @@ include { HMMSEARCH_IR } from './modules/local/hmmsearch_ir'
 include { COLLECT_HMM_HITS } from './modules/local/collect_hmm_hits'
 include { EXTRACT_FASTA_BY_ID } from './modules/local/extract_fasta_by_id'
 include { DEEPTMHMM_TOPOLOGY } from './modules/local/deeptmhmm_topology'
+include { DEEPTMHMM_TOPOLOGY_BIOLIB } from './modules/local/deeptmhmm_topology_biolib'
 include { INITIALIZE_DEEPTMHMM_RESULTS } from './modules/local/initialize_deeptmhmm_results'
 include { FINALIZE_DEEPTMHMM_RESULTS } from './modules/local/finalize_deeptmhmm_results'
-include { ASSERT_COMPLETE_DEEPTMHMM_RESULTS } from './modules/local/finalize_deeptmhmm_results'
 include { COLLECT_DEEPTMHMM_SUMMARY } from './modules/local/collect_deeptmhmm_summary'
 include { PARSE_DEEPTMHMM_FEATURES } from './modules/local/parse_deeptmhmm_features'
 include { HARDCODED_CLASSIFIER } from './modules/local/hardcoded_classifier'
@@ -29,6 +29,8 @@ params.allow_internal_stops = params.allow_internal_stops ?: false
 params.isoform_overlap_fraction = params.isoform_overlap_fraction ?: 0.60
 params.hmm_dir = params.hmm_dir ?: 'test/hmms'
 params.outdir = params.outdir ?: 'results'
+params.deeptmhmm_mode = params.deeptmhmm_mode ?: 'container'
+params.deeptmhmm_model = params.deeptmhmm_model ?: 'DTU/DeepTMHMM:1.0.24'
 params.deeptmhmm_dir = params.deeptmhmm_dir ?: null
 params.run_deeptmhmm = params.run_deeptmhmm == null ? true : params.run_deeptmhmm
 params.deeptmhmm_salvage_paths = params.deeptmhmm_salvage_paths ?: []
@@ -67,6 +69,7 @@ workflow {
     multi_normalizer_script_ch = Channel.value(file("${projectDir}/bin/multi_normalize.py"))
     merger_script_ch = Channel.value(file("${projectDir}/bin/merge_ir_isoforms.py"))
     renderer_script_ch = Channel.value(file("${projectDir}/bin/render_gene_cds.py"))
+    biolib_runner_ch = Channel.value(file("${projectDir}/bin/deeptmhmm_runner.py"))
 
     annotation_gffs_ch = null
     if (has_proteins && !has_genome) {
@@ -86,15 +89,20 @@ workflow {
 
     def generated_results_ch
     if (params.run_deeptmhmm) {
-        if (!params.deeptmhmm_dir) throw new IllegalArgumentException('Missing deeptmhmm_dir while run_deeptmhmm is enabled.')
-        deeptmhmm_res = DEEPTMHMM_TOPOLOGY(initial_deeptmhmm_res.unresolved_fasta.flatten(), Channel.value(file(params.deeptmhmm_dir)))
+        if (params.deeptmhmm_mode == 'container') {
+            if (!params.deeptmhmm_dir) throw new IllegalArgumentException('Missing deeptmhmm_dir for --deeptmhmm_mode container.')
+            deeptmhmm_res = DEEPTMHMM_TOPOLOGY(initial_deeptmhmm_res.unresolved_fasta.flatten(), Channel.value(file(params.deeptmhmm_dir)))
+        } else if (params.deeptmhmm_mode == 'biolib') {
+            deeptmhmm_res = DEEPTMHMM_TOPOLOGY_BIOLIB(initial_deeptmhmm_res.unresolved_fasta.flatten(), biolib_runner_ch)
+        } else {
+            throw new IllegalArgumentException("Unsupported --deeptmhmm_mode: ${params.deeptmhmm_mode}. Use 'container' or 'biolib'.")
+        }
         generated_results_ch = deeptmhmm_res.results.map { sequence_id, result_dir -> result_dir }.collect().ifEmpty { [] }
     } else {
         generated_results_ch = Channel.value([])
     }
 
     final_deeptmhmm_res = FINALIZE_DEEPTMHMM_RESULTS(initial_deeptmhmm_res.manifest, generated_results_ch)
-    ASSERT_COMPLETE_DEEPTMHMM_RESULTS(final_deeptmhmm_res.unresolved_fasta)
     final_deeptmhmm_dirs_ch = final_deeptmhmm_res.result_dirs.flatten()
     summary_res = COLLECT_DEEPTMHMM_SUMMARY(final_deeptmhmm_res.manifest, final_deeptmhmm_res.results_dir)
     parsed_res = PARSE_DEEPTMHMM_FEATURES(summary_res.summary_dir)
@@ -117,7 +125,6 @@ workflow {
             no_review_sentinel.getParent().toFile().mkdirs()
             no_review_sentinel.toFile().text = ''
         }
-
         applied_review_tsv_ch = Channel.value(no_review_sentinel)
     }
 

@@ -1,5 +1,6 @@
 process INITIALIZE_DEEPTMHMM_RESULTS {
     tag 'initialize_deeptmhmm_results'
+    cache false
 
     input:
     path hmm_hit_faa

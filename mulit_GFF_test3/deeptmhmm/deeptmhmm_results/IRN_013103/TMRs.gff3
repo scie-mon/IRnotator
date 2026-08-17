@@ -1,0 +1,11 @@
+##gff-version 3
+# g4988.t3 Length: 479
+# g4988.t3 Number of predicted TMRs: 3
+g4988.t3	signal	1	24				
+g4988.t3	outside	25	160				
+g4988.t3	TMhelix	161	181				
+g4988.t3	inside	182	242				
+g4988.t3	TMhelix	243	264				
+g4988.t3	outside	265	440				
+g4988.t3	TMhelix	441	461				
+g4988.t3	inside	462	479				

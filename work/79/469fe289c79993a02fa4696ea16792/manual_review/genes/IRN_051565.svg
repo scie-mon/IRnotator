@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="448" viewBox="0 0 1200 448">
+<style>text{font-family:Arial,sans-serif;fill:#222}.title{font-size:16px;font-weight:bold}.sub{font-size:11px;fill:#555}.meta{font-size:11px}.tick{font-size:10px;fill:#555}</style>
+<text x="110" y="20" class="title">CM058179.1_8124966-8128196f</text>
+<text x="110" y="37" class="sub">CM058179.1 · 8,124,966–8,128,196 · + strand</text>
+<line x1="124.28" y1="52" x2="124.28" y2="438" stroke="#cccccc"/>
+<text x="124.28" y="47" text-anchor="middle" class="tick">8,125,000</text>
+<line x1="177.17" y1="52" x2="177.17" y2="438" stroke="#e8e8e8"/>
+<line x1="230.06" y1="52" x2="230.06" y2="438" stroke="#e8e8e8"/>
+<line x1="282.95" y1="52" x2="282.95" y2="438" stroke="#e8e8e8"/>
+<line x1="335.84" y1="52" x2="335.84" y2="438" stroke="#e8e8e8"/>
+<line x1="388.73" y1="52" x2="388.73" y2="438" stroke="#cccccc"/>
+<text x="388.73" y="47" text-anchor="middle" class="tick">8,126,000</text>
+<line x1="441.61" y1="52" x2="441.61" y2="438" stroke="#e8e8e8"/>
+<line x1="494.50" y1="52" x2="494.50" y2="438" stroke="#e8e8e8"/>
+<line x1="547.39" y1="52" x2="547.39" y2="438" stroke="#e8e8e8"/>
+<line x1="600.28" y1="52" x2="600.28" y2="438" stroke="#e8e8e8"/>
+<line x1="653.17" y1="52" x2="653.17" y2="438" stroke="#cccccc"/>
+<text x="653.17" y="47" text-anchor="middle" class="tick">8,127,000</text>
+<line x1="706.06" y1="52" x2="706.06" y2="438" stroke="#e8e8e8"/>
+<line x1="758.95" y1="52" x2="758.95" y2="438" stroke="#e8e8e8"/>
+<line x1="811.84" y1="52" x2="811.84" y2="438" stroke="#e8e8e8"/>
+<line x1="864.73" y1="52" x2="864.73" y2="438" stroke="#e8e8e8"/>
+<line x1="917.62" y1="52" x2="917.62" y2="438" stroke="#cccccc"/>
+<text x="917.62" y="47" text-anchor="middle" class="tick">8,128,000</text>
+<line x1="970.50" y1="52" x2="970.50" y2="438" stroke="#e8e8e8"/>
+<text x="102" y="100" text-anchor="end" class="meta">gene</text>
+<text x="983" y="100" class="meta">3,231 bp</text>
+<polygon points="115.29,90.00 955.71,90.00 969.71,96.00 955.71,102.00 115.29,102.00" fill="#303030" stroke="#303030" stroke-width="1"/>
+<text x="102" y="153" text-anchor="end" class="meta">IRN_051565 CURRENT</text>
+<text x="983" y="153" class="meta">1,401 bp · 467 aa · accept · signal</text>
+<line x1="144.64" y1="148.00" x2="171.88" y2="148.00" stroke="#176b37" stroke-width="2.4"/>
+<line x1="195.15" y1="148.00" x2="552.42" y2="148.00" stroke="#176b37" stroke-width="2.4"/>
+<line x1="557.71" y1="148.00" x2="577.54" y2="148.00" stroke="#176b37" stroke-width="2.4"/>
+<line x1="619.59" y1="148.00" x2="641.27" y2="148.00" stroke="#176b37" stroke-width="2.4"/>
+<line x1="692.31" y1="148.00" x2="709.50" y2="148.00" stroke="#176b37" stroke-width="2.4"/>
+<line x1="821.09" y1="148.00" x2="841.19" y2="148.00" stroke="#176b37" stroke-width="2.4"/>
+<line x1="880.59" y1="148.00" x2="901.22" y2="148.00" stroke="#176b37" stroke-width="2.4"/>
+<polygon points="115.29,138.00 134.86,138.00 144.64,148.00 134.86,158.00 115.29,158.00" fill="#31a354" stroke="#176b37" stroke-width="2.4"/>
+<polygon points="171.88,138.00 187.39,138.00 195.15,148.00 187.39,158.00 171.88,158.00" fill="#31a354" stroke="#176b37" stroke-width="2.4"/>
+<polygon points="552.42,138.00 552.71,138.00 557.71,148.00 552.71,158.00 552.42,158.00" fill="#31a354" stroke="#176b37" stroke-width="2.4"/>
+<polygon points="577.54,138.00 605.59,138.00 619.59,148.00 605.59,158.00 577.54,158.00" fill="#31a354" stroke="#176b37" stroke-width="2.4"/>
+<polygon points="641.27,138.00 678.31,138.00 692.31,148.00 678.31,158.00 641.27,158.00" fill="#31a354" stroke="#176b37" stroke-width="2.4"/>
+<polygon points="709.50,138.00 807.09,138.00 821.09,148.00 807.09,158.00 709.50,158.00" fill="#31a354" stroke="#176b37" stroke-width="2.4"/>
+<polygon points="841.19,138.00 867.46,138.00 880.59,148.00 867.46,158.00 841.19,158.00" fill="#31a354" stroke="#176b37" stroke-width="2.4"/>
+<polygon points="901.22,138.00 955.71,138.00 969.71,148.00 955.71,158.00 901.22,158.00" fill="#31a354" stroke="#176b37" stroke-width="2.4"/>
+<text x="102" y="200" text-anchor="end" class="meta">IRN_018736</text>
+<text x="983" y="200" class="meta">1,152 bp · 384 aa · reject · no signal</text>
+<line x1="235.35" y1="195.00" x2="577.54" y2="195.00" stroke="#f8c491" stroke-width="1"/>
+<line x1="619.59" y1="195.00" x2="641.27" y2="195.00" stroke="#f8c491" stroke-width="1"/>
+<line x1="692.31" y1="195.00" x2="709.50" y2="195.00" stroke="#f8c491" stroke-width="1"/>
+<line x1="767.15" y1="195.00" x2="786.98" y2="195.00" stroke="#f8c491" stroke-width="1"/>
+<line x1="821.09" y1="195.00" x2="841.19" y2="195.00" stroke="#f8c491" stroke-width="1"/>
+<line x1="880.59" y1="195.00" x2="901.22" y2="195.00" stroke="#f8c491" stroke-width="1"/>
+<line x1="911.53" y1="195.00" x2="919.47" y2="195.00" stroke="#f8c491" stroke-width="1"/>
+<polygon points="215.51,185.00 228.74,185.00 235.35,195.00 228.74,205.00 215.51,205.00" fill="#f4bcba" stroke="#f8c491" stroke-width="1"/>
+<polygon points="577.54,185.00 605.59,185.00 619.59,195.00 605.59,205.00 577.54,205.00" fill="#f4bcba" stroke="#f8c491" stroke-width="1"/>
+<polygon points="641.27,185.00 678.31,185.00 692.31,195.00 678.31,205.00 641.27,205.00" fill="#f4bcba" stroke="#f8c491" stroke-width="1"/>
+<polygon points="709.50,185.00 753.15,185.00 767.15,195.00 753.15,205.00 709.50,205.00" fill="#f4bcba" stroke="#f8c491" stroke-width="1"/>
+<polygon points="786.98,185.00 809.72,185.00 821.09,195.00 809.72,205.00 786.98,205.00" fill="#f4bcba" stroke="#f8c491" stroke-width="1"/>
+<polygon points="841.19,185.00 867.46,185.00 880.59,195.00 867.46,205.00 841.19,205.00" fill="#f4bcba" stroke="#f8c491" stroke-width="1"/>
+<polygon points="901.22,185.00 906.53,185.00 911.53,195.00 906.53,205.00 901.22,205.00" fill="#f4bcba" stroke="#f8c491" stroke-width="1"/>
+<polygon points="919.47,185.00 955.71,185.00 969.71,195.00 955.71,205.00 919.47,205.00" fill="#f4bcba" stroke="#f8c491" stroke-width="1"/>
+<text x="102" y="247" text-anchor="end" class="meta">IRN_045533</text>
+<text x="983" y="247" class="meta">867 bp · 289 aa · reject · no signal</text>
+<line x1="619.59" y1="242.00" x2="641.27" y2="242.00" stroke="#f8c491" stroke-width="1"/>
+<line x1="692.31" y1="242.00" x2="709.50" y2="242.00" stroke="#f8c491" stroke-width="1"/>
+<line x1="821.09" y1="242.00" x2="841.19" y2="242.00" stroke="#f8c491" stroke-width="1"/>
+<polygon points="593.41,232.00 610.86,232.00 619.59,242.00 610.86,252.00 593.41,252.00" fill="#f4bcba" stroke="#f8c491" stroke-width="1"/>
+<polygon points="641.27,232.00 678.31,232.00 692.31,242.00 678.31,252.00 641.27,252.00" fill="#f4bcba" stroke="#f8c491" stroke-width="1"/>
+<polygon points="709.50,232.00 807.09,232.00 821.09,242.00 807.09,252.00 709.50,252.00" fill="#f4bcba" stroke="#f8c491" stroke-width="1"/>
+<polygon points="841.19,232.00 868.16,232.00 881.65,242.00 868.16,252.00 841.19,252.00" fill="#f4bcba" stroke="#f8c491" stroke-width="1"/>
+<text x="102" y="294" text-anchor="end" class="meta">IRN_006067</text>
+<text x="983" y="294" class="meta">873 bp · 291 aa · reject · no signal</text>
+<line x1="619.59" y1="289.00" x2="641.27" y2="289.00" stroke="#f8c491" stroke-width="1"/>
+<line x1="692.31" y1="289.00" x2="709.50" y2="289.00" stroke="#f8c491" stroke-width="1"/>
+<line x1="755.25" y1="289.00" x2="841.19" y2="289.00" stroke="#f8c491" stroke-width="1"/>
+<line x1="880.59" y1="289.00" x2="901.22" y2="289.00" stroke="#f8c491" stroke-width="1"/>
+<polygon points="593.41,279.00 610.86,279.00 619.59,289.00 610.86,299.00 593.41,299.00" fill="#f4bcba" stroke="#f8c491" stroke-width="1"/>
+<polygon points="641.27,279.00 678.31,279.00 692.31,289.00 678.31,299.00 641.27,299.00" fill="#f4bcba" stroke="#f8c491" stroke-width="1"/>
+<polygon points="709.50,279.00 741.25,279.00 755.25,289.00 741.25,299.00 709.50,299.00" fill="#f4bcba" stroke="#f8c491" stroke-width="1"/>
+<polygon points="841.19,279.00 867.46,279.00 880.59,289.00 867.46,299.00 841.19,299.00" fill="#f4bcba" stroke="#f8c491" stroke-width="1"/>
+<polygon points="901.22,279.00 955.71,279.00 969.71,289.00 955.71,299.00 901.22,299.00" fill="#f4bcba" stroke="#f8c491" stroke-width="1"/>
+<text x="102" y="341" text-anchor="end" class="meta">IRN_006068</text>
+<text x="983" y="341" class="meta">1,035 bp · 345 aa · reject · no signal</text>
+<line x1="619.59" y1="336.00" x2="641.27" y2="336.00" stroke="#f8c491" stroke-width="1"/>
+<line x1="692.31" y1="336.00" x2="709.50" y2="336.00" stroke="#f8c491" stroke-width="1"/>
+<line x1="768.20" y1="336.00" x2="791.21" y2="336.00" stroke="#f8c491" stroke-width="1"/>
+<line x1="821.09" y1="336.00" x2="841.19" y2="336.00" stroke="#f8c491" stroke-width="1"/>
+<line x1="880.59" y1="336.00" x2="901.22" y2="336.00" stroke="#f8c491" stroke-width="1"/>
+<polygon points="593.41,326.00 610.86,326.00 619.59,336.00 610.86,346.00 593.41,346.00" fill="#f4bcba" stroke="#f8c491" stroke-width="1"/>
+<polygon points="641.27,326.00 678.31,326.00 692.31,336.00 678.31,346.00 641.27,346.00" fill="#f4bcba" stroke="#f8c491" stroke-width="1"/>
+<polygon points="709.50,326.00 754.20,326.00 768.20,336.00 754.20,346.00 709.50,346.00" fill="#f4bcba" stroke="#f8c491" stroke-width="1"/>
+<polygon points="791.21,326.00 811.13,326.00 821.09,336.00 811.13,346.00 791.21,346.00" fill="#f4bcba" stroke="#f8c491" stroke-width="1"/>
+<polygon points="841.19,326.00 867.46,326.00 880.59,336.00 867.46,346.00 841.19,346.00" fill="#f4bcba" stroke="#f8c491" stroke-width="1"/>
+<polygon points="901.22,326.00 955.71,326.00 969.71,336.00 955.71,346.00 901.22,346.00" fill="#f4bcba" stroke="#f8c491" stroke-width="1"/>
+<text x="102" y="388" text-anchor="end" class="meta">IRN_045534</text>
+<text x="983" y="388" class="meta">1,122 bp · 374 aa · reject · no signal</text>
+<line x1="619.59" y1="383.00" x2="641.27" y2="383.00" stroke="#f8c491" stroke-width="1"/>
+<line x1="692.31" y1="383.00" x2="709.50" y2="383.00" stroke="#f8c491" stroke-width="1"/>
+<line x1="821.09" y1="383.00" x2="841.19" y2="383.00" stroke="#f8c491" stroke-width="1"/>
+<line x1="880.59" y1="383.00" x2="901.22" y2="383.00" stroke="#f8c491" stroke-width="1"/>
+<polygon points="593.41,373.00 610.86,373.00 619.59,383.00 610.86,393.00 593.41,393.00" fill="#f4bcba" stroke="#f8c491" stroke-width="1"/>
+<polygon points="641.27,373.00 678.31,373.00 692.31,383.00 678.31,393.00 641.27,393.00" fill="#f4bcba" stroke="#f8c491" stroke-width="1"/>
+<polygon points="709.50,373.00 807.09,373.00 821.09,383.00 807.09,393.00 709.50,393.00" fill="#f4bcba" stroke="#f8c491" stroke-width="1"/>
+<polygon points="841.19,373.00 867.46,373.00 880.59,383.00 867.46,393.00 841.19,393.00" fill="#f4bcba" stroke="#f8c491" stroke-width="1"/>
+<polygon points="901.22,373.00 955.71,373.00 969.71,383.00 955.71,393.00 901.22,393.00" fill="#f4bcba" stroke="#f8c491" stroke-width="1"/>
+<text x="110" y="440" class="sub">Orange CDS outlines indicate has_signal=FALSE.</text>
+</svg>

@@ -1,0 +1,8 @@
+##gff-version 3
+# g6399.t1 Length: 295
+# g6399.t1 Number of predicted TMRs: 2
+g6399.t1	inside	1	63				
+g6399.t1	TMhelix	64	77				
+g6399.t1	outside	78	261				
+g6399.t1	TMhelix	262	284				
+g6399.t1	inside	285	295				

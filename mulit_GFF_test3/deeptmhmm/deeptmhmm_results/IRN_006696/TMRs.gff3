@@ -1,0 +1,11 @@
+##gff-version 3
+# g16002.t2 Length: 474
+# g16002.t2 Number of predicted TMRs: 3
+g16002.t2	signal	1	18				
+g16002.t2	outside	19	149				
+g16002.t2	TMhelix	150	170				
+g16002.t2	inside	171	238				
+g16002.t2	TMhelix	239	252				
+g16002.t2	outside	253	437				
+g16002.t2	TMhelix	438	458				
+g16002.t2	inside	459	474				
