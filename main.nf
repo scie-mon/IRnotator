@@ -72,11 +72,13 @@ workflow {
     biolib_runner_ch = Channel.value(file("${projectDir}/bin/deeptmhmm_runner.py"))
 
     annotation_gffs_ch = null
+    duplicate_provenance_ch = null
     if (has_proteins && !has_genome) {
         normalize_res = NORMALIZE_PROTEINS(Channel.fromPath(params.proteins_faa, checkIfExists: true), normalizer_script_ch)
     } else {
         annotation_gffs_ch = Channel.fromPath(params.annot_gff, checkIfExists: true).collect()
         normalize_res = NORMALIZE_MULTI_GENOME_GFF(Channel.fromPath(params.genome_fasta, checkIfExists: true).collect(), annotation_gffs_ch, normalizer_script_ch, multi_normalizer_script_ch)
+        duplicate_provenance_ch = normalize_res.duplicate_provenance
     }
 
     normalized_proteins_ch = normalize_res.normalized.map { proteins_faa, registry_tsv -> proteins_faa }
@@ -133,7 +135,7 @@ workflow {
     if (has_genome) {
         def reviewer_gff_ch
         if (review_state.mode == 'bootstrap') {
-            unfiltered_res = MERGE_UNFILTERED(annotation_gffs_ch, sequence_registry_ch, effective_decisions_ch, merger_script_ch, Channel.value('unfiltered'), Channel.value('merged.unfiltered.gff3'), Channel.value('merged.unfiltered.audit.tsv'))
+            unfiltered_res = MERGE_UNFILTERED(annotation_gffs_ch, sequence_registry_ch, effective_decisions_ch, duplicate_provenance_ch, merger_script_ch, Channel.value('unfiltered'), Channel.value('merged.unfiltered.gff3'), Channel.value('merged.unfiltered.audit.tsv'))
             reviewer_gff_ch = unfiltered_res.merged_gff
         } else {
             reviewer_gff_ch = Channel.fromPath(review_state.reviewer_gff.toString(), checkIfExists: true)
@@ -142,7 +144,7 @@ workflow {
         if (review_state.mode in ['bootstrap', 'advance']) {
             def filtered_name = file(review_state.target_filtered_gff.toString()).getFileName().toString()
             def audit_name = filtered_name.replace('.gff3', '.audit.tsv')
-            MERGE_FILTERED(annotation_gffs_ch, sequence_registry_ch, effective_decisions_ch, merger_script_ch, Channel.value('filtered'), Channel.value(filtered_name), Channel.value(audit_name))
+            MERGE_FILTERED(annotation_gffs_ch, sequence_registry_ch, effective_decisions_ch, duplicate_provenance_ch, merger_script_ch, Channel.value('filtered'), Channel.value(filtered_name), Channel.value(audit_name))
         }
 
         def reviewer_revision = review_state.mode == 'bootstrap' ? -1 : review_state.existing_max_revision

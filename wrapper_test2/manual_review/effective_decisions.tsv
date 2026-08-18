@@ -18,7 +18,7 @@ IRN_002216	accept	accept	strict
 IRN_002217	accept	accept	strict	
 IRN_003465	accept	accept	strict	
 IRN_003466	accept	accept	strict	
-IRN_003685	accept	reject	strict	
+IRN_003685	accept	accept	strict	
 IRN_003720	accept	accept	strict	
 IRN_003721	reject	reject	fail	
 IRN_005416	reject	reject	fail	
@@ -135,7 +135,7 @@ IRN_018696	accept	accept	strict
 IRN_018697	accept	reject	strict	
 IRN_018698	accept	reject	relaxed	
 IRN_018699	accept	reject	relaxed	
-IRN_018700	accept	reject	strict	
+IRN_018700	accept	accept	strict	
 IRN_018701	accept	accept	strict	
 IRN_018702	accept	reject	relaxed	
 IRN_018703	accept	accept	strict	

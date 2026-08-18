@@ -1,15 +1,12 @@
 
-[2026-08-18T09:40:33.182675+00:00] nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker
-[2026-08-18T09:41:06.579303+00:00] exit status: 0
+[2026-08-18T11:38:59.292665+00:00] nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker
+[2026-08-18T11:39:33.321809+00:00] exit status: 0
 
-[2026-08-18T09:47:52.997664+00:00] nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker -resume
-[2026-08-18T09:48:02.964987+00:00] exit status: 0
+[2026-08-18T11:41:31.474606+00:00] nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker -resume
+[2026-08-18T11:41:41.470796+00:00] exit status: 0
 
-[2026-08-18T09:48:32.623773+00:00] nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker -resume
-[2026-08-18T09:48:42.174917+00:00] exit status: 0
+[2026-08-18T11:42:08.578462+00:00] nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker -resume
+[2026-08-18T11:42:17.971677+00:00] exit status: 0
 
-[2026-08-18T11:12:25.941354+00:00] nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker
-[2026-08-18T11:12:49.903935+00:00] exit status: 0
-
-[2026-08-18T11:16:48.311182+00:00] nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker -resume
-[2026-08-18T11:16:57.952791+00:00] exit status: 0
+[2026-08-18T11:43:13.621991+00:00] nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker -resume
+[2026-08-18T11:43:23.004465+00:00] exit status: 0

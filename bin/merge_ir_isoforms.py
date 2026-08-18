@@ -5,8 +5,9 @@ import argparse
 import csv
 import re
 import sys
+from collections import defaultdict
 from pathlib import Path
-from urllib.parse import unquote
+from urllib.parse import quote, unquote
 
 
 def attrs(text: str) -> dict[str, str]:
@@ -113,10 +114,66 @@ def source_attributes(models: list[dict]) -> str:
     return "%2C".join(sorted(values))
 
 
+def provenance_value(row: dict[str, str], *names: str) -> str:
+    for name in names:
+        value = row.get(name, "").strip()
+        if value:
+            return value
+    return ""
+
+
+def read_duplicate_provenance(path: Path) -> dict[str, list[dict[str, str]]]:
+    rows = read_tsv(path)
+    if not rows:
+        return {}
+    fields = set(rows[0])
+    if "canonical_internal_id" not in fields:
+        raise ValueError("duplicate provenance is missing required column: canonical_internal_id")
+
+    grouped: dict[str, list[dict[str, str]]] = defaultdict(list)
+    for line_number, row in enumerate(rows, 2):
+        canonical_id = row["canonical_internal_id"].strip()
+        if not canonical_id:
+            raise ValueError(f"duplicate provenance row {line_number} has an empty canonical_internal_id")
+        if not provenance_value(row, "annotation_track", "member_annotation_track", "duplicate_annotation_track"):
+            raise ValueError(f"duplicate provenance row {line_number} has no member annotation track")
+        if not provenance_value(row, "source_id", "member_source_id", "duplicate_source_id"):
+            raise ValueError(f"duplicate provenance row {line_number} has no member source ID")
+        grouped[canonical_id].append(row)
+    return grouped
+
+
+def canonical_member(row: dict[str, str]) -> tuple[str, str, str]:
+    return (
+        row["annotation_track"].strip(),
+        row["source_id"].strip(),
+        row.get("transcript_id", "").strip(),
+    )
+
+
+def provenance_members(candidate: dict, provenance_by_id: dict[str, list[dict[str, str]]]) -> list[tuple[str, str, str]]:
+    members = {canonical_member(candidate["registry"])}
+    for row in provenance_by_id.get(candidate["internal_id"], []):
+        members.add((
+            provenance_value(row, "annotation_track", "member_annotation_track", "duplicate_annotation_track"),
+            provenance_value(row, "source_id", "member_source_id", "duplicate_source_id"),
+            provenance_value(row, "transcript_id", "member_transcript_id", "duplicate_transcript_id"),
+        ))
+    return sorted(members)
+
+
+def gff_duplicate_members(members: list[tuple[str, str, str]]) -> str:
+    return ",".join(
+        quote(":".join(member), safe="._:-|")
+        for member in members
+    )
+
+
 def candidates_from_registry(
     registry: list[dict[str, str]],
     decision_by_id: dict[str, dict[str, str]],
     models: dict[tuple[str, str], dict],
+    provenance_by_id: dict[str, list[dict[str, str]]],
     mode: str,
 ) -> list[dict]:
     candidates = []
@@ -134,11 +191,13 @@ def candidates_from_registry(
         if key not in models:
             raise ValueError(f"no GFF CDS model for {internal_id}: {key}")
         candidate = dict(models[key])
+        members = provenance_members({"internal_id": internal_id, "registry": row}, provenance_by_id)
         candidate.update(
             internal_id=internal_id,
             topology_class=decision["topology_class"].strip(),
             final_decision=final_decision,
             registry=row,
+            duplicate_members=members,
         )
         candidates.append(candidate)
     return candidates
@@ -174,6 +233,7 @@ def write_outputs(groups: list[list[dict]], out_gff: Path, out_audit: Path) -> N
                 f"{contig}\tMerged\tgene\t{gene_start}\t{gene_end}\t.\t{strand}\t.\t"
                 f"ID={gene_id};Name={gene_id};source_attributes={source_attr}\n"
             )
+
             ordered = sorted(models_out, key=lambda model: (*span(model), model["internal_id"]))
             multiple = len(ordered) > 1
             for iso_index, model in enumerate(ordered, 1):
@@ -181,13 +241,17 @@ def write_outputs(groups: list[list[dict]], out_gff: Path, out_audit: Path) -> N
                 label = f"{gene_id}_X{iso_index}" if multiple else gene_id
                 mrna_id = f"{label}-{start}-{end}-{model['internal_id']}"
                 source = model["source"] or model["track"]
+                duplicate_members = gff_duplicate_members(model["duplicate_members"])
+                duplicate_count = len(model["duplicate_members"])
                 out.write(
                     f"{contig}\t{source}\tmRNA\t{start}\t{end}\t.\t{strand}\t.\t"
                     f"ID={mrna_id};Parent={gene_id};tm={model['topology_class']};"
                     f"decision={model['final_decision']};source={source};"
                     f"source_attributes={source_attr};Name={label} mRNA;"
-                    f"internal_id={model['internal_id']};annotation_track={model['track']}\n"
+                    f"internal_id={model['internal_id']};annotation_track={model['track']};"
+                    f"duplicate_member_count={duplicate_count};duplicate_members={duplicate_members}\n"
                 )
+
                 for segment in sorted(model["cds"], key=lambda item: item["start"]):
                     translation = segment["attrs"].get("translation", "")
                     extra = f";translation={translation}" if translation else ""
@@ -195,8 +259,10 @@ def write_outputs(groups: list[list[dict]], out_gff: Path, out_audit: Path) -> N
                         f"{contig}\t{source}\tCDS\t{segment['start']}\t{segment['end']}\t.\t"
                         f"{strand}\t{segment['phase']}\tID={mrna_id}.CDS;Parent={mrna_id};"
                         f"Name={label} CDS{extra};source_attributes={source_attr};"
-                        f"internal_id={model['internal_id']}\n"
+                        f"internal_id={model['internal_id']};duplicate_member_count={duplicate_count};"
+                        f"duplicate_members={duplicate_members}\n"
                     )
+
                 audit.append({
                     "merged_gene_id": gene_id,
                     "merged_isoform_id": mrna_id,
@@ -206,6 +272,8 @@ def write_outputs(groups: list[list[dict]], out_gff: Path, out_audit: Path) -> N
                     "source_id": model["registry"]["source_id"],
                     "transcript_id": model["registry"].get("transcript_id", ""),
                     "topology_class": model["topology_class"],
+                    "duplicate_member_count": duplicate_count,
+                    "duplicate_members": ",".join(":".join(member) for member in model["duplicate_members"]),
                     "contig": contig,
                     "start": start,
                     "end": end,
@@ -215,7 +283,7 @@ def write_outputs(groups: list[list[dict]], out_gff: Path, out_audit: Path) -> N
     fields = [
         "merged_gene_id", "merged_isoform_id", "internal_id", "final_decision",
         "annotation_track", "source_id", "transcript_id", "topology_class",
-        "contig", "start", "end", "strand",
+        "duplicate_member_count", "duplicate_members", "contig", "start", "end", "strand",
     ]
     with out_audit.open("w", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=fields, delimiter="\t", lineterminator="\n")
@@ -228,6 +296,7 @@ def main() -> None:
     parser.add_argument("--gff", nargs="+", required=True)
     parser.add_argument("--registry", required=True)
     parser.add_argument("--decisions", required=True)
+    parser.add_argument("--duplicate-provenance", required=True)
     parser.add_argument("--overlap-fraction", type=float, default=0.60)
     parser.add_argument("--mode", choices=("unfiltered", "filtered"), default="filtered")
     parser.add_argument("--out-gff", required=True)
@@ -240,8 +309,9 @@ def main() -> None:
     registry = read_tsv(Path(args.registry))
     decisions = read_tsv(Path(args.decisions))
     decision_by_id = {row["protein_id"].strip(): row for row in decisions}
+    provenance_by_id = read_duplicate_provenance(Path(args.duplicate_provenance))
     models = parse_gffs([Path(path) for path in args.gff])
-    candidates = candidates_from_registry(registry, decision_by_id, models, args.mode)
+    candidates = candidates_from_registry(registry, decision_by_id, models, provenance_by_id, args.mode)
     groups = select_models(candidates, args.overlap_fraction, args.mode)
     write_outputs(groups, Path(args.out_gff), Path(args.out_audit))
 

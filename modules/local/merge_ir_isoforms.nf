@@ -7,6 +7,7 @@ process MERGE_IR_ISOFORMS {
     path annotation_gffs
     path sequence_registry
     path decisions
+    path duplicate_provenance
     path merger_script
     val merge_mode
     val gff_name
@@ -24,6 +25,7 @@ process MERGE_IR_ISOFORMS {
         --gff ${annotation_gffs.join(' ')} \\
         --registry ${sequence_registry} \\
         --decisions ${decisions} \\
+        --duplicate-provenance ${duplicate_provenance} \\
         --overlap-fraction ${params.isoform_overlap_fraction} \\
         --mode ${merge_mode} \\
         --out-gff ${gff_name} \\
