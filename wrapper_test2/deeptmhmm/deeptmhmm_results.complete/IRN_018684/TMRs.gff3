@@ -1,10 +1,10 @@
 ##gff-version 3
-# g2897.t1 Length: 500
-# g2897.t1 Number of predicted TMRs: 3
-g2897.t1	outside	1	130				
-g2897.t1	TMhelix	131	151				
-g2897.t1	inside	152	196				
-g2897.t1	TMhelix	197	217				
-g2897.t1	outside	218	402				
-g2897.t1	TMhelix	403	423				
-g2897.t1	inside	424	500				
+# maker-CM058173.1-exonerate_protein2genome-gene-0.40-mRNA-1 Length: 375
+# maker-CM058173.1-exonerate_protein2genome-gene-0.40-mRNA-1 Number of predicted TMRs: 3
+maker-CM058173.1-exonerate_protein2genome-gene-0.40-mRNA-1	outside	1	77				
+maker-CM058173.1-exonerate_protein2genome-gene-0.40-mRNA-1	TMhelix	78	98				
+maker-CM058173.1-exonerate_protein2genome-gene-0.40-mRNA-1	inside	99	147				
+maker-CM058173.1-exonerate_protein2genome-gene-0.40-mRNA-1	TMhelix	148	168				
+maker-CM058173.1-exonerate_protein2genome-gene-0.40-mRNA-1	outside	169	343				
+maker-CM058173.1-exonerate_protein2genome-gene-0.40-mRNA-1	TMhelix	344	364				
+maker-CM058173.1-exonerate_protein2genome-gene-0.40-mRNA-1	inside	365	375				

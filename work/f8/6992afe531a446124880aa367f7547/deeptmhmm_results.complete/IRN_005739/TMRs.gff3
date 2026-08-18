@@ -1,0 +1,8 @@
+##gff-version 3
+# g15152.t1 Length: 335
+# g15152.t1 Number of predicted TMRs: 2
+g15152.t1	inside	1	91				
+g15152.t1	TMhelix	92	107				
+g15152.t1	outside	108	294				
+g15152.t1	TMhelix	295	315				
+g15152.t1	inside	316	335				

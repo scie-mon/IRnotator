@@ -15,12 +15,11 @@ REGISTRY_COLUMNS = [
     "internal_id", "source_id", "source_header", "safe_id", "source_type",
     "sequence_sha256", "has_internal_stop", "contig", "start", "end",
     "strand", "gene_id", "transcript_id", "final_output_id", "annotation_track",
+    "cds_signature", "duplicate_member_count", "duplicate_members",
 ]
-
 TRANSLATION_REPORT_COLUMNS = [
-    "transcript_id", "status", "reason", "raw_cds_length",
-    "translated_cds_length", "trailing_nt_ignored", "internal_stops_replaced",
-    "annotation_track",
+    "transcript_id", "status", "reason", "raw_cds_length", "translated_cds_length",
+    "trailing_nt_ignored", "internal_stops_replaced", "annotation_track",
 ]
 
 
@@ -29,9 +28,7 @@ def fail(message: str) -> None:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(
-        description="Normalize IRnotator inputs into internal-ID proteins and registry."
-    )
+    parser = argparse.ArgumentParser(description="Normalize IRnotator inputs into internal-ID proteins and registry.")
     parser.add_argument("--proteins-faa")
     parser.add_argument("--genome-fasta")
     parser.add_argument("--annot-gff")
@@ -48,59 +45,53 @@ def parse_args() -> argparse.Namespace:
 
 
 def select_mode(args: argparse.Namespace) -> str:
-    proteins = bool(args.proteins_faa)
-    genome = bool(args.genome_fasta)
-    gff = bool(args.annot_gff)
-    if proteins and not genome and not gff:
+    if args.proteins_faa and not args.genome_fasta and not args.annot_gff:
         return "protein_fasta"
-    if not proteins and genome and gff:
+    if not args.proteins_faa and args.genome_fasta and args.annot_gff:
         return "genome_gff"
-    if proteins and not genome and gff:
+    if args.proteins_faa and not args.genome_fasta and args.annot_gff:
         return "protein_gff"
-    fail(
-        "provide exactly one valid input combination: (1) --proteins-faa; "
-        "(2) --genome-fasta plus --annot-gff; or (3) --proteins-faa plus --annot-gff"
-    )
+    fail("provide proteins FASTA; genome FASTA plus GFF; or proteins FASTA plus GFF")
 
 
 def read_fasta(path: Path):
     header = None
-    sequence_parts: list[str] = []
+    chunks: list[str] = []
     with path.open() as handle:
-        for line_number, raw_line in enumerate(handle, start=1):
-            line = raw_line.rstrip("\n\r")
+        for line_number, raw in enumerate(handle, 1):
+            line = raw.rstrip("\r\n")
             if line.startswith(">"):
                 if header is not None:
-                    sequence = "".join(sequence_parts).replace(" ", "").replace("\t", "")
+                    sequence = "".join(chunks).replace(" ", "").replace("\t", "").upper()
                     if not sequence:
-                        fail(f"empty FASTA sequence for header {header!r} in {path}")
-                    yield header, sequence.upper()
+                        fail(f"empty FASTA sequence for {header!r} in {path}")
+                    yield header, sequence
                 header = line[1:]
                 if not header:
                     fail(f"empty FASTA header at {path}:{line_number}")
-                sequence_parts = []
+                chunks = []
             elif line.strip():
                 if header is None:
                     fail(f"FASTA sequence before first header at {path}:{line_number}")
-                sequence_parts.append(line.strip())
+                chunks.append(line.strip())
     if header is None:
         fail(f"no FASTA records found in {path}")
-    sequence = "".join(sequence_parts).replace(" ", "").replace("\t", "")
+    sequence = "".join(chunks).replace(" ", "").replace("\t", "").upper()
     if not sequence:
-        fail(f"empty FASTA sequence for header {header!r} in {path}")
-    yield header, sequence.upper()
+        fail(f"empty FASTA sequence for {header!r} in {path}")
+    yield header, sequence
 
 
 def header_id(header: str) -> str:
-    source_id = header.split(maxsplit=1)[0]
-    if not source_id:
+    value = header.split(maxsplit=1)[0]
+    if not value:
         fail(f"cannot derive source_id from FASTA header {header!r}")
-    return source_id
+    return value
 
 
-def parse_attributes(raw_attributes: str) -> dict[str, list[str]]:
-    attributes: dict[str, list[str]] = {}
-    for item in raw_attributes.split(";"):
+def parse_attributes(raw: str) -> dict[str, list[str]]:
+    result: dict[str, list[str]] = {}
+    for item in raw.split(";"):
         if not item:
             continue
         if "=" not in item:
@@ -108,188 +99,100 @@ def parse_attributes(raw_attributes: str) -> dict[str, list[str]]:
         key, value = item.split("=", 1)
         if not key:
             raise ValueError("empty GFF3 attribute key")
-        attributes[unquote(key)] = [unquote(x) for x in value.split(",")]
-    return attributes
+        result[unquote(key)] = [unquote(part) for part in value.split(",")]
+    return result
 
 
 def parse_gff3(path: Path):
-    """Parse only records relevant to protein translation.
-
-    Non-CDS records are ignored except mRNA/transcript records, which are used
-    opportunistically to retain gene IDs.  Malformed CDS records are associated
-    with their parent transcript where possible and reported as skipped later.
-    """
-    cds_by_transcript: dict[str, list[dict]] = defaultdict(list)
-    transcript_gene: dict[str, str] = {}
-    invalid_transcripts: dict[str, str] = {}
-
-    def mark_invalid(transcript_id: str, reason: str) -> None:
-        invalid_transcripts.setdefault(transcript_id, reason)
-
+    cds_by_tx: dict[str, list[dict]] = defaultdict(list)
+    tx_gene: dict[str, str] = {}
+    invalid: dict[str, str] = {}
     with path.open() as handle:
-        for line_number, raw_line in enumerate(handle, start=1):
-            line = raw_line.rstrip("\n\r")
-            if not line or line.startswith("#"):
+        for line_number, raw in enumerate(handle, 1):
+            if not raw.strip() or raw.startswith("#"):
                 continue
-            fields = line.split("\t")
+            fields = raw.rstrip("\r\n").split("\t")
             if len(fields) != 9:
-                # Irrelevant malformed rows must not stop normalization. A CDS
-                # cannot be identified reliably without nine columns.
                 continue
-
-            contig, _, feature_type, start, end, _, strand, phase, raw_attributes = fields
-            if feature_type not in {"CDS", "mRNA", "transcript"}:
+            contig, _, kind, start, end, _, strand, phase, raw_attrs = fields
+            if kind not in {"CDS", "mRNA", "transcript"}:
                 continue
-
             try:
-                attributes = parse_attributes(raw_attributes)
+                attributes = parse_attributes(raw_attrs)
             except ValueError as exc:
-                if feature_type == "CDS":
-                    mark_invalid(f"line:{line_number}", str(exc))
+                if kind == "CDS":
+                    invalid.setdefault(f"line:{line_number}", str(exc))
                 continue
-
             feature_id = attributes.get("ID", [None])[0]
             parents = attributes.get("Parent", [])
-            if feature_type in {"mRNA", "transcript"}:
+            if kind in {"mRNA", "transcript"}:
                 if feature_id:
-                    transcript_gene[feature_id] = parents[0] if parents else ""
+                    tx_gene[feature_id] = parents[0] if parents else ""
                 continue
-
             transcript_id = parents[0] if len(parents) == 1 and parents[0] else f"line:{line_number}"
-            if len(parents) != 1 or not parents[0]:
-                mark_invalid(transcript_id, "CDS must have exactly one non-empty Parent attribute")
-                continue
             try:
-                start_int = int(start)
-                end_int = int(end)
-            except ValueError:
-                mark_invalid(transcript_id, "CDS has non-numeric coordinates")
+                start_i, end_i = int(start), int(end)
+                if start_i < 1 or end_i < start_i or strand not in {"+", "-"} or phase not in {"0", "1", "2"}:
+                    raise ValueError("invalid CDS coordinates, strand, or phase")
+            except ValueError as exc:
+                invalid.setdefault(transcript_id, str(exc))
                 continue
-            if start_int < 1 or end_int < start_int:
-                mark_invalid(transcript_id, "CDS has an invalid genomic interval")
+            if len(parents) != 1 or not parents[0]:
+                invalid.setdefault(transcript_id, "CDS must have exactly one non-empty Parent attribute")
                 continue
-            if strand not in {"+", "-"}:
-                mark_invalid(transcript_id, f"CDS has invalid strand {strand!r}")
-                continue
-            if phase not in {"0", "1", "2"}:
-                mark_invalid(transcript_id, f"CDS has invalid phase {phase!r}")
-                continue
-            cds_by_transcript[transcript_id].append({
-                "contig": contig,
-                "start": start_int,
-                "end": end_int,
-                "strand": strand,
-                "phase": int(phase),
-                "attributes": attributes,
-            })
-
-    return cds_by_transcript, transcript_gene, invalid_transcripts
+            cds_by_tx[transcript_id].append({"contig": contig, "start": start_i, "end": end_i, "strand": strand, "phase": int(phase), "attributes": attributes})
+    return cds_by_tx, tx_gene, invalid
 
 
 def read_genome(path: Path) -> dict[str, str]:
     genome: dict[str, str] = {}
     for header, sequence in read_fasta(path):
-        contig = header_id(header)
-        if contig in genome:
-            fail(f"duplicate genome contig ID {contig!r} in {path}")
-        genome[contig] = sequence
+        key = header_id(header)
+        if key in genome:
+            fail(f"duplicate genome contig ID {key!r}")
+        genome[key] = sequence
     return genome
 
 
-def transcript_metadata(transcript_id: str, cds_rows: list[dict], transcript_gene: dict) -> dict:
-    contigs = {row["contig"] for row in cds_rows}
-    strands = {row["strand"] for row in cds_rows}
-    if len(contigs) != 1:
-        raise ValueError(f"CDS spans multiple contigs: {sorted(contigs)}")
-    if len(strands) != 1:
-        raise ValueError(f"CDS has inconsistent strands: {sorted(strands)}")
-    return {
-        "contig": next(iter(contigs)),
-        "start": str(min(row["start"] for row in cds_rows)),
-        "end": str(max(row["end"] for row in cds_rows)),
-        "strand": next(iter(strands)),
-        "gene_id": transcript_gene.get(transcript_id, ""),
-        "transcript_id": transcript_id,
-    }
+def genomic_metadata(transcript_id: str, cds: list[dict], tx_gene: dict[str, str]) -> dict[str, str]:
+    contigs = {row["contig"] for row in cds}
+    strands = {row["strand"] for row in cds}
+    if len(contigs) != 1 or len(strands) != 1:
+        raise ValueError("CDS spans multiple contigs or strands")
+    ordered = sorted(cds, key=lambda row: (row["start"], row["end"], row["phase"]))
+    signature = f"{next(iter(contigs))}|{next(iter(strands))}|" + ",".join(f"{row['start']}-{row['end']}-{row['phase']}" for row in ordered)
+    return {"contig": next(iter(contigs)), "start": str(min(row["start"] for row in cds)), "end": str(max(row["end"] for row in cds)), "strand": next(iter(strands)), "gene_id": tx_gene.get(transcript_id, ""), "transcript_id": transcript_id, "cds_signature": signature}
 
 
-def translate_cds(cds_rows: list[dict], genome: dict[str, str], translation_table: int) -> tuple[str, dict]:
-    contig = cds_rows[0]["contig"]
-    strand = cds_rows[0]["strand"]
+def translate(cds: list[dict], genome: dict[str, str], table: int) -> tuple[str, dict]:
+    contig, strand = cds[0]["contig"], cds[0]["strand"]
     if contig not in genome:
         raise ValueError(f"references missing genome contig {contig!r}")
-    ordered_rows = sorted(cds_rows, key=lambda row: row["start"], reverse=(strand == "-"))
-    parts: list[str] = []
-    for row in ordered_rows:
+    ordered = sorted(cds, key=lambda row: row["start"], reverse=(strand == "-"))
+    fragments = []
+    for row in ordered:
         fragment = genome[contig][row["start"] - 1:row["end"]]
         if len(fragment) != row["end"] - row["start"] + 1:
             raise ValueError("CDS coordinates exceed contig bounds")
-        parts.append(str(Seq(fragment).reverse_complement()) if strand == "-" else fragment)
-    cds_sequence = "".join(parts)
-    raw_length = len(cds_sequence)
-    trailing_nt_ignored = raw_length % 3
-    translated_cds = cds_sequence[:raw_length - trailing_nt_ignored] if trailing_nt_ignored else cds_sequence
-    if not translated_cds:
+        fragments.append(str(Seq(fragment).reverse_complement()) if strand == "-" else fragment)
+    coding = "".join(fragments)
+    trailing = len(coding) % 3
+    coding = coding[:-trailing] if trailing else coding
+    if not coding:
         raise ValueError("empty CDS after removing incomplete trailing codon")
-    protein = str(Seq(translated_cds).translate(table=translation_table, cds=False))
+    protein = str(Seq(coding).translate(table=table, cds=False))
     if protein.endswith("*"):
         protein = protein[:-1]
-    internal_stops_replaced = protein.count("*")
+    stops = protein.count("*")
     protein = protein.replace("*", "X")
     if not protein:
         raise ValueError("empty translated protein")
-    return protein, {
-        "raw_cds_length": raw_length,
-        "translated_cds_length": len(translated_cds),
-        "trailing_nt_ignored": trailing_nt_ignored,
-        "internal_stops_replaced": internal_stops_replaced,
-    }
+    return protein, {"raw_cds_length": len("".join(fragments)), "translated_cds_length": len(coding), "trailing_nt_ignored": trailing, "internal_stops_replaced": stops}
 
 
-def registry_row(internal_id: str, source_id: str, source_header: str, source_type: str,
-                 sequence: str, has_internal_stop: bool, annotation_track: str,
-                 genomic: dict | None = None) -> dict:
+def make_row(internal_id: str, source_id: str, source_header: str, source_type: str, sequence: str, track: str, genomic: dict[str, str] | None = None, has_stops: bool = False) -> dict[str, str]:
     genomic = genomic or {}
-    return {
-        "internal_id": internal_id, "source_id": source_id, "source_header": source_header,
-        "safe_id": internal_id, "source_type": source_type,
-        "sequence_sha256": hashlib.sha256(sequence.encode()).hexdigest(),
-        "has_internal_stop": str(has_internal_stop).lower(),
-        "contig": genomic.get("contig", ""), "start": genomic.get("start", ""),
-        "end": genomic.get("end", ""), "strand": genomic.get("strand", ""),
-        "gene_id": genomic.get("gene_id", ""), "transcript_id": genomic.get("transcript_id", ""),
-        "final_output_id": "", "annotation_track": annotation_track,
-    }
-
-
-def write_outputs(records: list[tuple[dict, str]], out_faa: Path, registry: Path) -> None:
-    with out_faa.open("w") as fasta_handle:
-        for row, sequence in records:
-            fasta_handle.write(f">{row['internal_id']}\n")
-            for start in range(0, len(sequence), 60):
-                fasta_handle.write(f"{sequence[start:start + 60]}\n")
-    with registry.open("w", newline="") as registry_handle:
-        writer = csv.DictWriter(registry_handle, fieldnames=REGISTRY_COLUMNS, delimiter="\t", lineterminator="\n")
-        writer.writeheader()
-        writer.writerows(row for row, _ in records)
-
-
-def write_translation_report(rows: list[dict], path: Path) -> None:
-    with path.open("w", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=TRANSLATION_REPORT_COLUMNS, delimiter="\t", lineterminator="\n")
-        writer.writeheader()
-        writer.writerows(rows)
-
-
-def report_row(transcript_id: str, status: str, reason: str, annotation_track: str, **qc) -> dict:
-    return {
-        "transcript_id": transcript_id, "status": status, "reason": reason,
-        "raw_cds_length": qc.get("raw_cds_length", ""),
-        "translated_cds_length": qc.get("translated_cds_length", ""),
-        "trailing_nt_ignored": qc.get("trailing_nt_ignored", ""),
-        "internal_stops_replaced": qc.get("internal_stops_replaced", ""),
-        "annotation_track": annotation_track,
-    }
+    return {"internal_id": internal_id, "source_id": source_id, "source_header": source_header, "safe_id": internal_id, "source_type": source_type, "sequence_sha256": hashlib.sha256(sequence.encode()).hexdigest(), "has_internal_stop": str(has_stops).lower(), "contig": genomic.get("contig", ""), "start": genomic.get("start", ""), "end": genomic.get("end", ""), "strand": genomic.get("strand", ""), "gene_id": genomic.get("gene_id", ""), "transcript_id": genomic.get("transcript_id", ""), "final_output_id": "", "annotation_track": track, "cds_signature": genomic.get("cds_signature", ""), "duplicate_member_count": "1", "duplicate_members": ""}
 
 
 def main() -> None:
@@ -297,55 +200,55 @@ def main() -> None:
     if args.start_index < 1:
         fail("--start-index must be >= 1")
     mode = select_mode(args)
-    records: list[tuple[dict, str]] = []
-    report_rows: list[dict] = []
-
+    records: list[tuple[dict[str, str], str]] = []
+    reports: list[dict[str, str]] = []
     if mode == "protein_fasta":
-        for index, (header, sequence) in enumerate(read_fasta(Path(args.proteins_faa)), start=args.start_index):
-            internal_id = f"{args.id_prefix}_{index:06d}"
-            records.append((registry_row(internal_id, header_id(header), header, "protein_fasta", sequence, False, args.annotation_track), sequence))
+        for index, (header, sequence) in enumerate(read_fasta(Path(args.proteins_faa)), args.start_index):
+            records.append((make_row(f"{args.id_prefix}_{index:06d}", header_id(header), header, mode, sequence, args.annotation_track), sequence))
     else:
-        cds_by_transcript, transcript_gene, invalid_transcripts = parse_gff3(Path(args.annot_gff))
+        cds_by_tx, tx_gene, invalid = parse_gff3(Path(args.annot_gff))
         if mode == "genome_gff":
             genome = read_genome(Path(args.genome_fasta))
-            output_index = args.start_index - 1
-            for transcript_id, reason in sorted(invalid_transcripts.items()):
-                report_rows.append(report_row(transcript_id, "skipped", reason, args.annotation_track))
-            for transcript_id in sorted(cds_by_transcript):
-                if transcript_id in invalid_transcripts:
+            index = args.start_index - 1
+            for transcript_id, reason in sorted(invalid.items()):
+                reports.append({"transcript_id": transcript_id, "status": "skipped", "reason": reason, "raw_cds_length": "", "translated_cds_length": "", "trailing_nt_ignored": "", "internal_stops_replaced": "", "annotation_track": args.annotation_track})
+            for transcript_id in sorted(cds_by_tx):
+                if transcript_id in invalid:
                     continue
                 try:
-                    cds_rows = cds_by_transcript[transcript_id]
-                    genomic = transcript_metadata(transcript_id, cds_rows, transcript_gene)
-                    protein, qc = translate_cds(cds_rows, genome, args.translation_table)
-                except Exception as exc:
-                    message = str(exc)
-                    report_rows.append(report_row(transcript_id, "skipped", message, args.annotation_track))
-                    print(f"WARNING: skipping {transcript_id}: {message}", file=sys.stderr)
+                    genomic = genomic_metadata(transcript_id, cds_by_tx[transcript_id], tx_gene)
+                    protein, qc = translate(cds_by_tx[transcript_id], genome, args.translation_table)
+                except ValueError as exc:
+                    print(f"WARNING: skipping {transcript_id}: {exc}", file=sys.stderr)
                     continue
-                output_index += 1
-                internal_id = f"{args.id_prefix}_{output_index:06d}"
-                records.append((registry_row(internal_id, transcript_id, transcript_id, "genome_gff", protein, qc["internal_stops_replaced"] > 0, args.annotation_track, genomic), protein))
+                index += 1
+                records.append((make_row(f"{args.id_prefix}_{index:06d}", transcript_id, transcript_id, mode, protein, args.annotation_track, genomic, qc["internal_stops_replaced"] > 0), protein))
                 if qc["trailing_nt_ignored"] or qc["internal_stops_replaced"]:
-                    report_rows.append(report_row(transcript_id, "translated_with_warning", "trailing incomplete codon ignored and/or internal stops replaced with X", args.annotation_track, **qc))
+                    reports.append({"transcript_id": transcript_id, "status": "translated_with_warning", "reason": "trailing incomplete codon ignored and/or internal stops replaced with X", "annotation_track": args.annotation_track, **{key: str(value) for key, value in qc.items()}})
         else:
-            attribute_to_transcripts: dict[str, set[str]] = defaultdict(set)
-            for transcript_id, cds_rows in cds_by_transcript.items():
-                values = {value for row in cds_rows for value in row["attributes"].get(args.gff_protein_attribute, [])}
+            attributes: dict[str, set[str]] = defaultdict(set)
+            for transcript_id, cds in cds_by_tx.items():
+                values = {value for row in cds for value in row["attributes"].get(args.gff_protein_attribute, [])}
                 if len(values) == 1:
-                    attribute_to_transcripts[next(iter(values))].add(transcript_id)
-            for index, (header, sequence) in enumerate(read_fasta(Path(args.proteins_faa)), start=args.start_index):
+                    attributes[next(iter(values))].add(transcript_id)
+            for index, (header, sequence) in enumerate(read_fasta(Path(args.proteins_faa)), args.start_index):
                 source_id = header_id(header)
-                matches = attribute_to_transcripts.get(source_id, set())
+                matches = attributes.get(source_id, set())
                 if len(matches) != 1:
                     fail(f"FASTA source_id {source_id!r} has {len(matches)} GFF matches using {args.gff_protein_attribute!r}")
                 transcript_id = next(iter(matches))
-                genomic = transcript_metadata(transcript_id, cds_by_transcript[transcript_id], transcript_gene)
-                internal_id = f"{args.id_prefix}_{index:06d}"
-                records.append((registry_row(internal_id, source_id, header, "protein_gff", sequence, False, args.annotation_track, genomic), sequence))
-
-    write_outputs(records, Path(args.out_faa), Path(args.registry))
-    write_translation_report(report_rows, Path(args.translation_report))
+                records.append((make_row(f"{args.id_prefix}_{index:06d}", source_id, header, mode, sequence, args.annotation_track, genomic_metadata(transcript_id, cds_by_tx[transcript_id], tx_gene)), sequence))
+    with Path(args.out_faa).open("w") as fasta:
+        for row, sequence in records:
+            fasta.write(f">{row['internal_id']}\n")
+            for offset in range(0, len(sequence), 60):
+                fasta.write(sequence[offset:offset + 60] + "\n")
+    with Path(args.registry).open("w", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=REGISTRY_COLUMNS, delimiter="\t", lineterminator="\n")
+        writer.writeheader(); writer.writerows(row for row, _ in records)
+    with Path(args.translation_report).open("w", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=TRANSLATION_REPORT_COLUMNS, delimiter="\t", lineterminator="\n")
+        writer.writeheader(); writer.writerows({field: row.get(field, "") for field in TRANSLATION_REPORT_COLUMNS} for row in reports)
 
 
 if __name__ == "__main__":

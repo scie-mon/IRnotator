@@ -10,9 +10,9 @@
     "-profile",
     "docker"
   ],
-  "started_at": "2026-08-18T07:41:23.344424+00:00",
-  "rounds_completed": 3,
+  "started_at": "2026-08-18T11:12:25.941075+00:00",
+  "rounds_completed": 1,
   "current_reviewer_revision": 2,
   "current_manifest": "/home/primeline/Data/IRnotator/wrapper_test2/manual_review/review-manifest.json",
-  "last_round_completed_at": "2026-08-18T07:55:55.293233+00:00"
+  "last_round_completed_at": "2026-08-18T11:16:57.952873+00:00"
 }

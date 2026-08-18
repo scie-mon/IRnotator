@@ -39,6 +39,7 @@ process NORMALIZE_MULTI_GENOME_GFF {
           path("sequence_registry.tsv"),
           emit: normalized
     path "translation_report.tsv", emit: translation_report
+    path "duplicate_provenance.tsv", emit: duplicate_provenance
 
     script:
     """
@@ -49,6 +50,7 @@ process NORMALIZE_MULTI_GENOME_GFF {
         --out-faa normalized_proteins.faa \
         --out-registry sequence_registry.tsv \
         --out-report translation_report.tsv \
+        --out-duplicate-provenance duplicate_provenance.tsv \
         --gff-protein-attribute '${params.gff_protein_attribute}' \
         --translation-table ${params.translation_table} \
         ${params.allow_internal_stops ? '--allow-internal-stops' : ''}

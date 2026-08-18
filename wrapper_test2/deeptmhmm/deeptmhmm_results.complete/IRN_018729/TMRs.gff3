@@ -1,11 +1,19 @@
 ##gff-version 3
-# g15151.t1 Length: 453
-# g15151.t1 Number of predicted TMRs: 3
-g15151.t1	signal	1	19				
-g15151.t1	outside	20	150				
-g15151.t1	TMhelix	151	171				
-g15151.t1	inside	172	215				
-g15151.t1	TMhelix	216	237				
-g15151.t1	outside	238	412				
-g15151.t1	TMhelix	413	435				
-g15151.t1	inside	436	453				
+# maker-CM058180.1-snap-gene-1.913-mRNA-1 Length: 996
+# maker-CM058180.1-snap-gene-1.913-mRNA-1 Number of predicted TMRs: 7
+maker-CM058180.1-snap-gene-1.913-mRNA-1	signal	1	27				
+maker-CM058180.1-snap-gene-1.913-mRNA-1	outside	28	163				
+maker-CM058180.1-snap-gene-1.913-mRNA-1	TMhelix	164	184				
+maker-CM058180.1-snap-gene-1.913-mRNA-1	inside	185	250				
+maker-CM058180.1-snap-gene-1.913-mRNA-1	TMhelix	251	272				
+maker-CM058180.1-snap-gene-1.913-mRNA-1	outside	273	457				
+maker-CM058180.1-snap-gene-1.913-mRNA-1	TMhelix	458	478				
+maker-CM058180.1-snap-gene-1.913-mRNA-1	inside	479	538				
+maker-CM058180.1-snap-gene-1.913-mRNA-1	TMhelix	539	549				
+maker-CM058180.1-snap-gene-1.913-mRNA-1	outside	550	692				
+maker-CM058180.1-snap-gene-1.913-mRNA-1	TMhelix	693	713				
+maker-CM058180.1-snap-gene-1.913-mRNA-1	inside	714	771				
+maker-CM058180.1-snap-gene-1.913-mRNA-1	TMhelix	772	793				
+maker-CM058180.1-snap-gene-1.913-mRNA-1	outside	794	980				
+maker-CM058180.1-snap-gene-1.913-mRNA-1	TMhelix	981	995				
+maker-CM058180.1-snap-gene-1.913-mRNA-1	inside	996	996				

@@ -1,10 +1,22 @@
 ##gff-version 3
-# maker-CM058179.1-exonerate_est2genome-gene-0.0-mRNA-1 Length: 378
-# maker-CM058179.1-exonerate_est2genome-gene-0.0-mRNA-1 Number of predicted TMRs: 3
-maker-CM058179.1-exonerate_est2genome-gene-0.0-mRNA-1	outside	1	87				
-maker-CM058179.1-exonerate_est2genome-gene-0.0-mRNA-1	TMhelix	88	105				
-maker-CM058179.1-exonerate_est2genome-gene-0.0-mRNA-1	inside	106	149				
-maker-CM058179.1-exonerate_est2genome-gene-0.0-mRNA-1	TMhelix	150	171				
-maker-CM058179.1-exonerate_est2genome-gene-0.0-mRNA-1	outside	172	343				
-maker-CM058179.1-exonerate_est2genome-gene-0.0-mRNA-1	TMhelix	344	364				
-maker-CM058179.1-exonerate_est2genome-gene-0.0-mRNA-1	inside	365	378				
+# maker-CM058179.1-snap-gene-1.803-mRNA-1 Length: 1552
+# maker-CM058179.1-snap-gene-1.803-mRNA-1 Number of predicted TMRs: 9
+maker-CM058179.1-snap-gene-1.803-mRNA-1	outside	1	357				
+maker-CM058179.1-snap-gene-1.803-mRNA-1	TMhelix	358	381				
+maker-CM058179.1-snap-gene-1.803-mRNA-1	inside	382	426				
+maker-CM058179.1-snap-gene-1.803-mRNA-1	TMhelix	427	448				
+maker-CM058179.1-snap-gene-1.803-mRNA-1	outside	449	613				
+maker-CM058179.1-snap-gene-1.803-mRNA-1	TMhelix	614	625				
+maker-CM058179.1-snap-gene-1.803-mRNA-1	inside	626	626				
+maker-CM058179.1-snap-gene-1.803-mRNA-1	TMhelix	627	636				
+maker-CM058179.1-snap-gene-1.803-mRNA-1	outside	637	925				
+maker-CM058179.1-snap-gene-1.803-mRNA-1	TMhelix	926	949				
+maker-CM058179.1-snap-gene-1.803-mRNA-1	inside	950	993				
+maker-CM058179.1-snap-gene-1.803-mRNA-1	TMhelix	994	1014				
+maker-CM058179.1-snap-gene-1.803-mRNA-1	outside	1015	1179				
+maker-CM058179.1-snap-gene-1.803-mRNA-1	TMhelix	1180	1191				
+maker-CM058179.1-snap-gene-1.803-mRNA-1	inside	1192	1192				
+maker-CM058179.1-snap-gene-1.803-mRNA-1	TMhelix	1193	1202				
+maker-CM058179.1-snap-gene-1.803-mRNA-1	outside	1203	1524				
+maker-CM058179.1-snap-gene-1.803-mRNA-1	TMhelix	1525	1539				
+maker-CM058179.1-snap-gene-1.803-mRNA-1	inside	1540	1552				

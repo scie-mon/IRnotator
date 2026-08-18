@@ -1,11 +1,11 @@
 ##gff-version 3
-# g2469.t1 Length: 473
-# g2469.t1 Number of predicted TMRs: 3
-g2469.t1	signal	1	19				
-g2469.t1	outside	20	158				
-g2469.t1	TMhelix	159	179				
-g2469.t1	inside	180	236				
-g2469.t1	TMhelix	237	250				
-g2469.t1	outside	251	433				
-g2469.t1	TMhelix	434	454				
-g2469.t1	inside	455	473				
+# maker-CM058173.1-exonerate_protein2genome-gene-0.29-mRNA-1 Length: 476
+# maker-CM058173.1-exonerate_protein2genome-gene-0.29-mRNA-1 Number of predicted TMRs: 3
+maker-CM058173.1-exonerate_protein2genome-gene-0.29-mRNA-1	signal	1	28				
+maker-CM058173.1-exonerate_protein2genome-gene-0.29-mRNA-1	outside	29	164				
+maker-CM058173.1-exonerate_protein2genome-gene-0.29-mRNA-1	TMhelix	165	185				
+maker-CM058173.1-exonerate_protein2genome-gene-0.29-mRNA-1	inside	186	237				
+maker-CM058173.1-exonerate_protein2genome-gene-0.29-mRNA-1	TMhelix	238	258				
+maker-CM058173.1-exonerate_protein2genome-gene-0.29-mRNA-1	outside	259	435				
+maker-CM058173.1-exonerate_protein2genome-gene-0.29-mRNA-1	TMhelix	436	454				
+maker-CM058173.1-exonerate_protein2genome-gene-0.29-mRNA-1	inside	455	476				

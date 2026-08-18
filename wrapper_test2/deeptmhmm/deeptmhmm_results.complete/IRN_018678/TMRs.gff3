@@ -1,11 +1,10 @@
 ##gff-version 3
-# g312.t1 Length: 944
-# g312.t1 Number of predicted TMRs: 3
-g312.t1	signal	1	18				
-g312.t1	outside	19	540				
-g312.t1	TMhelix	541	561				
-g312.t1	inside	562	615				
-g312.t1	TMhelix	616	642				
-g312.t1	outside	643	840				
-g312.t1	TMhelix	841	861				
-g312.t1	inside	862	944				
+# maker-CM058172.1-exonerate_protein2genome-gene-0.29-mRNA-1 Length: 811
+# maker-CM058172.1-exonerate_protein2genome-gene-0.29-mRNA-1 Number of predicted TMRs: 3
+maker-CM058172.1-exonerate_protein2genome-gene-0.29-mRNA-1	outside	1	390				
+maker-CM058172.1-exonerate_protein2genome-gene-0.29-mRNA-1	TMhelix	391	410				
+maker-CM058172.1-exonerate_protein2genome-gene-0.29-mRNA-1	inside	411	513				
+maker-CM058172.1-exonerate_protein2genome-gene-0.29-mRNA-1	TMhelix	514	534				
+maker-CM058172.1-exonerate_protein2genome-gene-0.29-mRNA-1	outside	535	699				
+maker-CM058172.1-exonerate_protein2genome-gene-0.29-mRNA-1	TMhelix	700	720				
+maker-CM058172.1-exonerate_protein2genome-gene-0.29-mRNA-1	inside	721	811				

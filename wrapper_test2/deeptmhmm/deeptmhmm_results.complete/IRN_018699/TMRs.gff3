@@ -1,11 +1,10 @@
 ##gff-version 3
-# g4992.t1 Length: 469
-# g4992.t1 Number of predicted TMRs: 3
-g4992.t1	signal	1	25				
-g4992.t1	outside	26	167				
-g4992.t1	TMhelix	168	188				
-g4992.t1	inside	189	232				
-g4992.t1	TMhelix	233	254				
-g4992.t1	outside	255	429				
-g4992.t1	TMhelix	430	450				
-g4992.t1	inside	451	469				
+# maker-CM058179.1-exonerate_protein2genome-gene-0.31-mRNA-1 Length: 383
+# maker-CM058179.1-exonerate_protein2genome-gene-0.31-mRNA-1 Number of predicted TMRs: 3
+maker-CM058179.1-exonerate_protein2genome-gene-0.31-mRNA-1	outside	1	76				
+maker-CM058179.1-exonerate_protein2genome-gene-0.31-mRNA-1	TMhelix	77	97				
+maker-CM058179.1-exonerate_protein2genome-gene-0.31-mRNA-1	inside	98	154				
+maker-CM058179.1-exonerate_protein2genome-gene-0.31-mRNA-1	TMhelix	155	171				
+maker-CM058179.1-exonerate_protein2genome-gene-0.31-mRNA-1	outside	172	354				
+maker-CM058179.1-exonerate_protein2genome-gene-0.31-mRNA-1	TMhelix	355	375				
+maker-CM058179.1-exonerate_protein2genome-gene-0.31-mRNA-1	inside	376	383				

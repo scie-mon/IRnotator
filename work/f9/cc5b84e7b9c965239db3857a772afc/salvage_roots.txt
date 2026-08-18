@@ -1,0 +1,2 @@
+/home/primeline/Data/IRnotator/deeptmhmm_dump
+/home/primeline/Data/maker/metagenome/12_Dmagna_LRV

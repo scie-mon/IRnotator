@@ -1,10 +1,11 @@
 ##gff-version 3
-# g4521.t1 Length: 581
-# g4521.t1 Number of predicted TMRs: 3
-g4521.t1	outside	1	230				
-g4521.t1	TMhelix	231	252				
-g4521.t1	inside	253	312				
-g4521.t1	TMhelix	313	334				
-g4521.t1	outside	335	504				
-g4521.t1	TMhelix	505	525				
-g4521.t1	inside	526	581				
+# KAK4008308.1 Length: 989
+# KAK4008308.1 Number of predicted TMRs: 3
+KAK4008308.1	signal	1	23				
+KAK4008308.1	outside	24	565				
+KAK4008308.1	TMhelix	566	586				
+KAK4008308.1	inside	587	633				
+KAK4008308.1	TMhelix	634	654				
+KAK4008308.1	outside	655	820				
+KAK4008308.1	TMhelix	821	843				
+KAK4008308.1	inside	844	989				

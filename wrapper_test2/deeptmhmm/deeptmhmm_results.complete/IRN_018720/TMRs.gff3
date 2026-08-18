@@ -1,11 +1,12 @@
 ##gff-version 3
-# g11984.t1 Length: 447
-# g11984.t1 Number of predicted TMRs: 3
-g11984.t1	signal	1	21				
-g11984.t1	outside	22	151				
-g11984.t1	TMhelix	152	172				
-g11984.t1	inside	173	212				
-g11984.t1	TMhelix	213	225				
-g11984.t1	outside	226	412				
-g11984.t1	TMhelix	413	433				
-g11984.t1	inside	434	447				
+# maker-CM058177.1-snap-gene-1.1099-mRNA-1 Length: 958
+# maker-CM058177.1-snap-gene-1.1099-mRNA-1 Number of predicted TMRs: 4
+maker-CM058177.1-snap-gene-1.1099-mRNA-1	inside	1	60				
+maker-CM058177.1-snap-gene-1.1099-mRNA-1	TMhelix	61	70				
+maker-CM058177.1-snap-gene-1.1099-mRNA-1	outside	71	602				
+maker-CM058177.1-snap-gene-1.1099-mRNA-1	TMhelix	603	624				
+maker-CM058177.1-snap-gene-1.1099-mRNA-1	inside	625	692				
+maker-CM058177.1-snap-gene-1.1099-mRNA-1	TMhelix	693	713				
+maker-CM058177.1-snap-gene-1.1099-mRNA-1	outside	714	888				
+maker-CM058177.1-snap-gene-1.1099-mRNA-1	TMhelix	889	909				
+maker-CM058177.1-snap-gene-1.1099-mRNA-1	inside	910	958				

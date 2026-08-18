@@ -1,0 +1,10 @@
+##gff-version 3
+# g2096.t1 Length: 955
+# g2096.t1 Number of predicted TMRs: 3
+g2096.t1	outside	1	578				
+g2096.t1	TMhelix	579	598				
+g2096.t1	inside	599	654				
+g2096.t1	TMhelix	655	675				
+g2096.t1	outside	676	839				
+g2096.t1	TMhelix	840	860				
+g2096.t1	inside	861	955				

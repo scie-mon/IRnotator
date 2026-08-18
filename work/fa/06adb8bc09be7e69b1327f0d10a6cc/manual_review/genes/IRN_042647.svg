@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260">
+<style>text{font-family:Arial,sans-serif;fill:#222}.title{font-size:16px;font-weight:bold}.sub{font-size:11px;fill:#555}.meta{font-size:11px}.tick{font-size:10px;fill:#555}</style>
+<text x="110" y="20" class="title">CM058179.1_6228336-6230527f</text>
+<text x="110" y="37" class="sub">CM058179.1 · 6,228,336–6,230,527 · + strand</text>
+<line x1="142.55" y1="52" x2="142.55" y2="250" stroke="#e8e8e8"/>
+<line x1="181.31" y1="52" x2="181.31" y2="250" stroke="#cccccc"/>
+<text x="181.31" y="47" text-anchor="middle" class="tick">6,228,500</text>
+<line x1="220.06" y1="52" x2="220.06" y2="250" stroke="#e8e8e8"/>
+<line x1="258.82" y1="52" x2="258.82" y2="250" stroke="#e8e8e8"/>
+<line x1="297.57" y1="52" x2="297.57" y2="250" stroke="#e8e8e8"/>
+<line x1="336.33" y1="52" x2="336.33" y2="250" stroke="#e8e8e8"/>
+<line x1="375.08" y1="52" x2="375.08" y2="250" stroke="#cccccc"/>
+<text x="375.08" y="47" text-anchor="middle" class="tick">6,229,000</text>
+<line x1="413.84" y1="52" x2="413.84" y2="250" stroke="#e8e8e8"/>
+<line x1="452.59" y1="52" x2="452.59" y2="250" stroke="#e8e8e8"/>
+<line x1="491.34" y1="52" x2="491.34" y2="250" stroke="#e8e8e8"/>
+<line x1="530.10" y1="52" x2="530.10" y2="250" stroke="#e8e8e8"/>
+<line x1="568.85" y1="52" x2="568.85" y2="250" stroke="#cccccc"/>
+<text x="568.85" y="47" text-anchor="middle" class="tick">6,229,500</text>
+<line x1="607.61" y1="52" x2="607.61" y2="250" stroke="#e8e8e8"/>
+<line x1="646.36" y1="52" x2="646.36" y2="250" stroke="#e8e8e8"/>
+<line x1="685.12" y1="52" x2="685.12" y2="250" stroke="#e8e8e8"/>
+<line x1="723.87" y1="52" x2="723.87" y2="250" stroke="#e8e8e8"/>
+<line x1="762.63" y1="52" x2="762.63" y2="250" stroke="#cccccc"/>
+<text x="762.63" y="47" text-anchor="middle" class="tick">6,230,000</text>
+<line x1="801.38" y1="52" x2="801.38" y2="250" stroke="#e8e8e8"/>
+<line x1="840.13" y1="52" x2="840.13" y2="250" stroke="#e8e8e8"/>
+<line x1="878.89" y1="52" x2="878.89" y2="250" stroke="#e8e8e8"/>
+<line x1="917.64" y1="52" x2="917.64" y2="250" stroke="#e8e8e8"/>
+<line x1="956.40" y1="52" x2="956.40" y2="250" stroke="#cccccc"/>
+<text x="956.40" y="47" text-anchor="middle" class="tick">6,230,500</text>
+<text x="102" y="100" text-anchor="end" class="meta">gene</text>
+<text x="983" y="100" class="meta">2,192 bp</text>
+<polygon points="117.75,90.00 953.25,90.00 967.25,96.00 953.25,102.00 117.75,102.00" fill="#303030" stroke="#303030" stroke-width="1"/>
+<text x="102" y="153" text-anchor="end" class="meta">IRN_005774</text>
+<text x="983" y="153" class="meta">1,869 bp · 623 aa · accept · signal</text>
+<polygon points="117.75,138.00 828.07,138.00 842.07,148.00 828.07,158.00 117.75,158.00" fill="#bde2c8" stroke="#86b297" stroke-width="1"/>
+<text x="102" y="200" text-anchor="end" class="meta">IRN_042647 CURRENT</text>
+<text x="983" y="200" class="meta">2,067 bp · 689 aa · reject · signal</text>
+<line x1="822.31" y1="195.00" x2="870.75" y2="195.00" stroke="#9f1b17" stroke-width="2.4"/>
+<polygon points="117.75,185.00 808.31,185.00 822.31,195.00 808.31,205.00 117.75,205.00" fill="#de2d26" stroke="#9f1b17" stroke-width="2.4"/>
+<polygon points="870.75,185.00 953.25,185.00 967.25,195.00 953.25,205.00 870.75,205.00" fill="#de2d26" stroke="#9f1b17" stroke-width="2.4"/>
+<text x="110" y="252" class="sub">Orange CDS outlines indicate has_signal=FALSE.</text>
+</svg>

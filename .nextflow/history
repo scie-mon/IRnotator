@@ -158,3 +158,8 @@
 2026-08-18 09:51:15	13.5s	mad_goldberg	OK	33b585f2a112634c9aa2de6a6f2f4d9f	6d2ec686-5de3-45b2-af51-e60599469924	nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker -resume
 2026-08-18 09:53:23	12.6s	cheesy_murdock	OK	33b585f2a112634c9aa2de6a6f2f4d9f	6d2ec686-5de3-45b2-af51-e60599469924	nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker -resume
 2026-08-18 09:55:41	13.9s	fabulous_plateau	OK	33b585f2a112634c9aa2de6a6f2f4d9f	6d2ec686-5de3-45b2-af51-e60599469924	nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker -resume
+2026-08-18 11:40:34	32.2s	hungry_kare	OK	33b585f2a112634c9aa2de6a6f2f4d9f	f8d8924a-f38a-441e-bfa4-1dc2da3e86dd	nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker
+2026-08-18 11:47:54	8.6s	hungry_montalcini	OK	33b585f2a112634c9aa2de6a6f2f4d9f	f8d8924a-f38a-441e-bfa4-1dc2da3e86dd	nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker -resume
+2026-08-18 11:48:34	7.8s	ecstatic_bose	OK	33b585f2a112634c9aa2de6a6f2f4d9f	f8d8924a-f38a-441e-bfa4-1dc2da3e86dd	nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker -resume
+2026-08-18 13:12:27	22.5s	adoring_colden	OK	33b585f2a112634c9aa2de6a6f2f4d9f	09dba48a-f8f2-4374-99dd-ec2f59bfade3	nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker
+2026-08-18 13:16:49	8.6s	disturbed_meitner	OK	33b585f2a112634c9aa2de6a6f2f4d9f	09dba48a-f8f2-4374-99dd-ec2f59bfade3	nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker -resume

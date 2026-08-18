@@ -1,0 +1,407 @@
+#!/bin/bash
+### ---
+### name: 'PREPARE_MANUAL_REVIEW (prepare_manual_review:2:3)'
+### container: 'quay.io/biocontainers/biopython:1.84'
+### outputs:
+### - 'manual_review'
+### - 'manual_review/review-manifest.json'
+### - 'manual_review/topology-reviewer.html'
+### ...
+set -e
+set -u
+NXF_DEBUG=${NXF_DEBUG:=0}; [[ $NXF_DEBUG > 1 ]] && set -x
+NXF_ENTRY=${1:-nxf_main}
+
+nxf_container_env() {
+cat << EOF
+export PATH="\$PATH:/home/primeline/Data/IRnotator/bin"
+EOF
+}
+
+nxf_sleep() {
+  sleep $1 2>/dev/null || sleep 1;
+}
+
+nxf_date() {
+    local s n
+    read s n < <(date '+%s %N')
+    if [[ $n =~ ^[0-9]+$ ]]; then
+        n=$(printf '%09d' "$((10#$n))")
+        echo "$((s * 1000 + 10#${n:0:3}))"
+    else
+        echo "$((s * 1000))"
+    fi
+}
+
+nxf_env() {
+    echo '============= task environment ============='
+    env | sort | sed "s/\(.*\)AWS\(.*\)=\(.\{6\}\).*/\1AWS\2=\3xxxxxxxxxxxxx/"
+    echo '============= task output =================='
+}
+
+nxf_kill() {
+    declare -a children
+    while read P PP;do
+        children[$PP]+=" $P"
+    done < <(ps -e -o pid= -o ppid=)
+
+    kill_all() {
+        [[ $1 != $$ ]] && kill $1 2>/dev/null || true
+        for i in ${children[$1]:=}; do kill_all $i; done
+    }
+
+    kill_all $1
+}
+
+nxf_mktemp() {
+    local base=${1:-/tmp}
+    mkdir -p "$base"
+    if [[ $(uname) = Darwin ]]; then mktemp -d $base/nxf.XXXXXXXXXX
+    else TMPDIR="$base" mktemp -d -t nxf.XXXXXXXXXX
+    fi
+}
+
+nxf_fs_copy() {
+  local source=$1
+  local target=$2
+  local basedir=$(dirname $1)
+  mkdir -p $target/$basedir
+  cp -fRL $source $target/$basedir
+}
+
+nxf_fs_move() {
+  local source=$1
+  local target=$2
+  local basedir=$(dirname $1)
+  mkdir -p $target/$basedir
+  mv -f $source $target/$basedir
+}
+
+nxf_fs_rsync() {
+  local source=$1
+  local target=$2
+  mkdir -p $target
+  rsync -rRl $source $target
+}
+
+nxf_fs_rclone() {
+  rclone copyto $1 $2/$1
+}
+
+nxf_fs_fcp() {
+  fcp $1 $2/$1
+}
+
+on_exit() {
+    local last_err=$?
+    local exit_status=${nxf_main_ret:=0}
+    [[ ${exit_status} -eq 0 && ${nxf_unstage_ret:=0} -ne 0 ]] && exit_status=${nxf_unstage_ret:=0}
+    [[ ${exit_status} -eq 0 && ${last_err} -ne 0 ]] && exit_status=${last_err}
+    printf -- $exit_status > /home/primeline/Data/IRnotator/work/fa/06adb8bc09be7e69b1327f0d10a6cc/.exitcode
+    set +u
+    docker rm $NXF_BOXID &>/dev/null || true
+    exit $exit_status
+}
+
+on_term() {
+    set +e
+    docker stop $NXF_BOXID
+}
+
+nxf_launch() {
+    docker run -i --cpu-shares 1024 --memory 4096m -e "NXF_TASK_WORKDIR" -v /home/primeline/Data/IRnotator:/home/primeline/Data/IRnotator -w "$NXF_TASK_WORKDIR" -u $(id -u):$(id -g) --name $NXF_BOXID quay.io/biocontainers/biopython:1.84 /bin/bash -c "eval $(nxf_container_env); /bin/bash -ue /home/primeline/Data/IRnotator/work/fa/06adb8bc09be7e69b1327f0d10a6cc/.command.sh"
+}
+
+nxf_stage() {
+    true
+    # stage input files
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_013102 IRN_013102
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_009880 IRN_009880
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_013101 IRN_013101
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_036342 IRN_036342
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_036344 IRN_036344
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_009883 IRN_009883
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_014672 IRN_014672
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_013103 IRN_013103
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_002214 IRN_002214
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_044096 IRN_044096
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_002215 IRN_002215
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_002216 IRN_002216
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_025453 IRN_025453
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_027879 IRN_027879
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_032095 IRN_032095
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_043688 IRN_043688
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_002217 IRN_002217
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_006822 IRN_006822
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_006823 IRN_006823
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_023144 IRN_023144
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_006147 IRN_006147
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_006145 IRN_006145
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_006146 IRN_006146
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_013109 IRN_013109
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_013108 IRN_013108
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_043691 IRN_043691
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_043690 IRN_043690
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_028181 IRN_028181
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_010772 IRN_010772
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_042688 IRN_042688
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_025902 IRN_025902
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018012 IRN_018012
+    ln -s /home/primeline/Data/IRnotator/wrapper_test2/merged_gff/merged.rev2.gff3 merged.rev2.gff3
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_006709 IRN_006709
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_030384 IRN_030384
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_005739 IRN_005739
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_036482 IRN_036482
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_006708 IRN_006708
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_022758 IRN_022758
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_030383 IRN_030383
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_005737 IRN_005737
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_025904 IRN_025904
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_005738 IRN_005738
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_036483 IRN_036483
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_006834 IRN_006834
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_005740 IRN_005740
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_003685 IRN_003685
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_010403 IRN_010403
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_010408 IRN_010408
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018703 IRN_018703
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018702 IRN_018702
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018705 IRN_018705
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_016521 IRN_016521
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_016522 IRN_016522
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_017733 IRN_017733
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018701 IRN_018701
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018700 IRN_018700
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_007815 IRN_007815
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_030368 IRN_030368
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_005750 IRN_005750
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_042102 IRN_042102
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_027881 IRN_027881
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_012210 IRN_012210
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018677 IRN_018677
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018676 IRN_018676
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018679 IRN_018679
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_043756 IRN_043756
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018678 IRN_018678
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018675 IRN_018675
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_000471 IRN_000471
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_006695 IRN_006695
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_006696 IRN_006696
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_006572 IRN_006572
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_006693 IRN_006693
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_006694 IRN_006694
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_029576 IRN_029576
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_006691 IRN_006691
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_006571 IRN_006571
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_006692 IRN_006692
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018688 IRN_018688
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018687 IRN_018687
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_043888 IRN_043888
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018689 IRN_018689
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_043887 IRN_043887
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018684 IRN_018684
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018683 IRN_018683
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018686 IRN_018686
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018685 IRN_018685
+    ln -s /home/primeline/Data/IRnotator/work/86/95a6e0ca0ada2d56a77408293b49db/review.tsv review.tsv
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018680 IRN_018680
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_012580 IRN_012580
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_005803 IRN_005803
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018682 IRN_018682
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_001333 IRN_001333
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_006902 IRN_006902
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_001332 IRN_001332
+    ln -s /home/primeline/Data/IRnotator/work/9e/045bca1fd9e6634479166434f302fa/hardcoded_scores.tsv hardcoded_scores.tsv
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_012579 IRN_012579
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_042647 IRN_042647
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_010297 IRN_010297
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_032083 IRN_032083
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_034264 IRN_034264
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_042646 IRN_042646
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_011021 IRN_011021
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_042648 IRN_042648
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018699 IRN_018699
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018698 IRN_018698
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018695 IRN_018695
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018694 IRN_018694
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018697 IRN_018697
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018696 IRN_018696
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018691 IRN_018691
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018690 IRN_018690
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_006903 IRN_006903
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018693 IRN_018693
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_006904 IRN_006904
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018692 IRN_018692
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_030338 IRN_030338
+    ln -s /home/primeline/Data/IRnotator/work/5e/865e2c9c970dee301c094772563e98/deeptmhmm_features.tsv deeptmhmm_features.tsv
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_043869 IRN_043869
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_014782 IRN_014782
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_009752 IRN_009752
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_030326 IRN_030326
+    ln -s /home/primeline/Data/IRnotator/bin/render_gene_cds.py render_gene_cds.py
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_043870 IRN_043870
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_007570 IRN_007570
+    ln -s /home/primeline/Data/IRnotator/work/0b/c3563b4ba18f815c3a9c219073d504/decision.tsv decision.tsv
+    ln -s /home/primeline/Data/IRnotator/assets/reviewer/topology-reviewer.html topology-reviewer.html
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_019725 IRN_019725
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_016454 IRN_016454
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_042621 IRN_042621
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_019601 IRN_019601
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_013061 IRN_013061
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_016450 IRN_016450
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_019720 IRN_019720
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_013062 IRN_013062
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_030636 IRN_030636
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_015377 IRN_015377
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_016461 IRN_016461
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_039685 IRN_039685
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_002185 IRN_002185
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_034309 IRN_034309
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_032161 IRN_032161
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_032160 IRN_032160
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_036521 IRN_036521
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_036520 IRN_036520
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_012435 IRN_012435
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_012556 IRN_012556
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_036522 IRN_036522
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_038942 IRN_038942
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_043019 IRN_043019
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_013082 IRN_013082
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_013081 IRN_013081
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_015386 IRN_015386
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_032162 IRN_032162
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_003721 IRN_003721
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_003720 IRN_003720
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_029316 IRN_029316
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_002073 IRN_002073
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_002075 IRN_002075
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_044112 IRN_044112
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_043020 IRN_043020
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_044111 IRN_044111
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_033807 IRN_033807
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_039907 IRN_039907
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_002072 IRN_002072
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_044238 IRN_044238
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_046536 IRN_046536
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_013094 IRN_013094
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_000215 IRN_000215
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_000216 IRN_000216
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_000217 IRN_000217
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_013096 IRN_013096
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_000218 IRN_000218
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_013095 IRN_013095
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_006569 IRN_006569
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_006568 IRN_006568
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_006687 IRN_006687
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_008983 IRN_008983
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018714 IRN_018714
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018713 IRN_018713
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018716 IRN_018716
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018958 IRN_018958
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_013264 IRN_013264
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018715 IRN_018715
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018710 IRN_018710
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018712 IRN_018712
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018954 IRN_018954
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018711 IRN_018711
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018953 IRN_018953
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018037 IRN_018037
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018036 IRN_018036
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_005768 IRN_005768
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_005769 IRN_005769
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_003466 IRN_003466
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_003465 IRN_003465
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018709 IRN_018709
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018708 IRN_018708
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018725 IRN_018725
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018724 IRN_018724
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_030390 IRN_030390
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018727 IRN_018727
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018726 IRN_018726
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018721 IRN_018721
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_019932 IRN_019932
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018720 IRN_018720
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_019933 IRN_019933
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018723 IRN_018723
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018722 IRN_018722
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_030397 IRN_030397
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_002019 IRN_002019
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_030393 IRN_030393
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_030391 IRN_030391
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_030392 IRN_030392
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_005416 IRN_005416
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_005417 IRN_005417
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_005775 IRN_005775
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_005773 IRN_005773
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_006620 IRN_006620
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_005774 IRN_005774
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_006621 IRN_006621
+    ln -s /home/primeline/Data/IRnotator/work/6a/2602361e7ccd642bddcec30997a1d8/sequence_registry.tsv sequence_registry.tsv
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_006068 IRN_006068
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_006860 IRN_006860
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_002020 IRN_002020
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_006067 IRN_006067
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018718 IRN_018718
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018717 IRN_018717
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_010559 IRN_010559
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_043132 IRN_043132
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018719 IRN_018719
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_043131 IRN_043131
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018732 IRN_018732
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018731 IRN_018731
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018733 IRN_018733
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018730 IRN_018730
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_045081 IRN_045081
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_006871 IRN_006871
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018729 IRN_018729
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018728 IRN_018728
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_015238 IRN_015238
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_036279 IRN_036279
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_012764 IRN_012764
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018068 IRN_018068
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_013052 IRN_013052
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_018066 IRN_018066
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_013051 IRN_013051
+    ln -s /home/primeline/Data/IRnotator/work/a9/43dae84e9fb8638dacb696ec8e36ef/deeptmhmm_results.complete/IRN_029506 IRN_029506
+}
+
+nxf_unstage_outputs() {
+    true
+}
+
+nxf_unstage_controls() {
+    true
+}
+
+nxf_unstage() {
+    if [[ ${nxf_main_ret:=0} == 0 ]]; then
+        (set -e -o pipefail; (nxf_unstage_outputs | tee -a .command.out) 3>&1 1>&2 2>&3 | tee -a .command.err)
+        nxf_unstage_ret=$?
+    fi
+    nxf_unstage_controls
+}
+
+nxf_main() {
+    trap on_exit EXIT
+    trap on_term TERM INT USR2
+    trap '' USR1
+
+    [[ "${NXF_CHDIR:-}" ]] && cd "$NXF_CHDIR"
+    export NXF_BOXID="nxf-$(dd bs=18 count=1 if=/dev/urandom 2>/dev/null | base64 | tr +/ 0A | tr -d '\r\n')"
+    NXF_SCRATCH=''
+    [[ $NXF_DEBUG > 0 ]] && nxf_env
+    touch /home/primeline/Data/IRnotator/work/fa/06adb8bc09be7e69b1327f0d10a6cc/.command.begin
+    set +u
+    set -u
+    [[ $NXF_SCRATCH ]] && cd $NXF_SCRATCH
+    export NXF_TASK_WORKDIR="$PWD"
+    nxf_stage
+
+    set +e
+    (set -o pipefail; (nxf_launch | tee .command.out) 3>&1 1>&2 2>&3 | tee .command.err) &
+    pid=$!
+    wait $pid || nxf_main_ret=$?
+    nxf_unstage
+}
+
+$NXF_ENTRY

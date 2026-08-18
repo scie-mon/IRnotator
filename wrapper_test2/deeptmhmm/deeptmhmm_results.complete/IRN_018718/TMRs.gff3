@@ -1,11 +1,11 @@
 ##gff-version 3
-# g11959.t1 Length: 454
-# g11959.t1 Number of predicted TMRs: 3
-g11959.t1	signal	1	21				
-g11959.t1	outside	22	154				
-g11959.t1	TMhelix	155	177				
-g11959.t1	inside	178	215				
-g11959.t1	TMhelix	216	236				
-g11959.t1	outside	237	415				
-g11959.t1	TMhelix	416	440				
-g11959.t1	inside	441	454				
+# maker-CM058177.1-augustus-gene-1.0-mRNA-1 Length: 639
+# maker-CM058177.1-augustus-gene-1.0-mRNA-1 Number of predicted TMRs: 3
+maker-CM058177.1-augustus-gene-1.0-mRNA-1	signal	1	25				
+maker-CM058177.1-augustus-gene-1.0-mRNA-1	outside	26	358				
+maker-CM058177.1-augustus-gene-1.0-mRNA-1	TMhelix	359	377				
+maker-CM058177.1-augustus-gene-1.0-mRNA-1	inside	378	420				
+maker-CM058177.1-augustus-gene-1.0-mRNA-1	TMhelix	421	442				
+maker-CM058177.1-augustus-gene-1.0-mRNA-1	outside	443	616				
+maker-CM058177.1-augustus-gene-1.0-mRNA-1	TMhelix	617	635				
+maker-CM058177.1-augustus-gene-1.0-mRNA-1	inside	636	639				
