@@ -233,6 +233,6 @@ IRN_051573           -          Lig_chan-Glu_bd      PF10613.12   5.1e-06   28.1
 # Query file:      PF10613.hmm
 # Target file:     normalized_proteins.faa
 # Option settings: hmmsearch --tblout PF10613.tbl -E 1e-5 PF10613.hmm normalized_proteins.faa 
-# Current dir:     /home/primeline/Data/IRnotator/work/e9/607ef3230a535adb4d7c4144366e54
-# Date:            Mon Aug 17 13:17:40 2026
+# Current dir:     /home/primeline/Data/IRnotator/work/d3/72694561f3661a1ad3a2752f1bb154
+# Date:            Mon Aug 17 13:58:00 2026
 # [ok]

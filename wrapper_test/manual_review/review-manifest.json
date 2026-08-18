@@ -1,5 +1,5 @@
 {
-  "reviewer_revision": 0,
+  "reviewer_revision": 1,
   "items": [
     {
       "seq_id": "IRN_009752",
@@ -595,8 +595,8 @@
     },
     {
       "seq_id": "IRN_012435",
-      "gene_id": "CM058173.1_3011776-3016237f",
-      "transcript_id": "CM058173.1_3011776-3016237f_X1-3011776-3014958-IRN_012435",
+      "gene_id": "CM058173.1_3011776-3014958f",
+      "transcript_id": "CM058173.1_3011776-3014958f_X1-3011776-3014958-IRN_012435",
       "contig": "CM058173.1",
       "start": 3011776,
       "end": 3014958,
@@ -611,8 +611,8 @@
     },
     {
       "seq_id": "IRN_018687",
-      "gene_id": "CM058173.1_3011776-3016237f",
-      "transcript_id": "CM058173.1_3011776-3016237f_X2-3011776-3014958-IRN_018687",
+      "gene_id": "CM058173.1_3011776-3014958f",
+      "transcript_id": "CM058173.1_3011776-3014958f_X2-3011776-3014958-IRN_018687",
       "contig": "CM058173.1",
       "start": 3011776,
       "end": 3014958,
@@ -627,8 +627,8 @@
     },
     {
       "seq_id": "IRN_051530",
-      "gene_id": "CM058173.1_3011776-3016237f",
-      "transcript_id": "CM058173.1_3011776-3016237f_X3-3011776-3014958-IRN_051530",
+      "gene_id": "CM058173.1_3011776-3014958f",
+      "transcript_id": "CM058173.1_3011776-3014958f_X3-3011776-3014958-IRN_051530",
       "contig": "CM058173.1",
       "start": 3011776,
       "end": 3014958,
@@ -640,22 +640,6 @@
       "topology_image": "plots/IRN_051530.png",
       "gene_image": "genes/IRN_051530.svg",
       "review_order": 40
-    },
-    {
-      "seq_id": "IRN_030489",
-      "gene_id": "CM058173.1_3011776-3016237f",
-      "transcript_id": "CM058173.1_3011776-3016237f_X4-3011776-3016237-IRN_030489",
-      "contig": "CM058173.1",
-      "start": 3011776,
-      "end": 3016237,
-      "strand": "+",
-      "seed": "reject",
-      "source_id": "rna-Dmagna011405-T1",
-      "source_header": "rna-Dmagna011405-T1",
-      "reason": "matches_strict_topology",
-      "topology_image": "plots/IRN_030489.png",
-      "gene_image": "genes/IRN_030489.svg",
-      "review_order": 41
     },
     {
       "seq_id": "IRN_012556",
@@ -671,7 +655,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_012556.png",
       "gene_image": "genes/IRN_012556.svg",
-      "review_order": 42
+      "review_order": 41
     },
     {
       "seq_id": "IRN_018688",
@@ -687,7 +671,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018688.png",
       "gene_image": "genes/IRN_018688.svg",
-      "review_order": 43
+      "review_order": 42
     },
     {
       "seq_id": "IRN_030707",
@@ -703,7 +687,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_030707.png",
       "gene_image": "genes/IRN_030707.svg",
-      "review_order": 44
+      "review_order": 43
     },
     {
       "seq_id": "IRN_051531",
@@ -719,7 +703,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_051531.png",
       "gene_image": "genes/IRN_051531.svg",
-      "review_order": 45
+      "review_order": 44
     },
     {
       "seq_id": "IRN_030779",
@@ -735,7 +719,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_030779.png",
       "gene_image": "genes/IRN_030779.svg",
-      "review_order": 46
+      "review_order": 45
     },
     {
       "seq_id": "IRN_012764",
@@ -751,7 +735,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_012764.png",
       "gene_image": "genes/IRN_012764.svg",
-      "review_order": 47
+      "review_order": 46
     },
     {
       "seq_id": "IRN_018695",
@@ -767,7 +751,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018695.png",
       "gene_image": "genes/IRN_018695.svg",
-      "review_order": 48
+      "review_order": 47
     },
     {
       "seq_id": "IRN_031157",
@@ -783,7 +767,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_031157.png",
       "gene_image": "genes/IRN_031157.svg",
-      "review_order": 49
+      "review_order": 48
     },
     {
       "seq_id": "IRN_051538",
@@ -799,7 +783,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_051538.png",
       "gene_image": "genes/IRN_051538.svg",
-      "review_order": 50
+      "review_order": 49
     },
     {
       "seq_id": "IRN_013051",
@@ -815,7 +799,7 @@
       "reason": "matches_relaxed_topology",
       "topology_image": "plots/IRN_013051.png",
       "gene_image": "genes/IRN_013051.svg",
-      "review_order": 51
+      "review_order": 50
     },
     {
       "seq_id": "IRN_018690",
@@ -831,7 +815,7 @@
       "reason": "matches_relaxed_topology",
       "topology_image": "plots/IRN_018690.png",
       "gene_image": "genes/IRN_018690.svg",
-      "review_order": 52
+      "review_order": 51
     },
     {
       "seq_id": "IRN_051533",
@@ -847,7 +831,7 @@
       "reason": "matches_relaxed_topology",
       "topology_image": "plots/IRN_051533.png",
       "gene_image": "genes/IRN_051533.svg",
-      "review_order": 53
+      "review_order": 52
     },
     {
       "seq_id": "IRN_013052",
@@ -863,7 +847,7 @@
       "reason": "matches_relaxed_topology",
       "topology_image": "plots/IRN_013052.png",
       "gene_image": "genes/IRN_013052.svg",
-      "review_order": 54
+      "review_order": 53
     },
     {
       "seq_id": "IRN_013061",
@@ -879,7 +863,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_013061.png",
       "gene_image": "genes/IRN_013061.svg",
-      "review_order": 55
+      "review_order": 54
     },
     {
       "seq_id": "IRN_013062",
@@ -895,7 +879,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_013062.png",
       "gene_image": "genes/IRN_013062.svg",
-      "review_order": 56
+      "review_order": 55
     },
     {
       "seq_id": "IRN_013081",
@@ -911,7 +895,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_013081.png",
       "gene_image": "genes/IRN_013081.svg",
-      "review_order": 57
+      "review_order": 56
     },
     {
       "seq_id": "IRN_018692",
@@ -927,7 +911,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018692.png",
       "gene_image": "genes/IRN_018692.svg",
-      "review_order": 58
+      "review_order": 57
     },
     {
       "seq_id": "IRN_051535",
@@ -943,28 +927,12 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_051535.png",
       "gene_image": "genes/IRN_051535.svg",
-      "review_order": 59
-    },
-    {
-      "seq_id": "IRN_013094",
-      "gene_id": "CM058173.1_7666491-7674057r",
-      "transcript_id": "CM058173.1_7666491-7674057r_X1-7666491-7673931-IRN_013094",
-      "contig": "CM058173.1",
-      "start": 7666491,
-      "end": 7673931,
-      "strand": "-",
-      "seed": "reject",
-      "source_id": "g4982.t1",
-      "source_header": "g4982.t1",
-      "reason": "matches_strict_topology",
-      "topology_image": "plots/IRN_013094.png",
-      "gene_image": "genes/IRN_013094.svg",
-      "review_order": 60
+      "review_order": 58
     },
     {
       "seq_id": "IRN_018697",
-      "gene_id": "CM058173.1_7666491-7674057r",
-      "transcript_id": "CM058173.1_7666491-7674057r_X2-7671810-7673931-IRN_018697",
+      "gene_id": "CM058173.1_7671810-7674057r",
+      "transcript_id": "CM058173.1_7671810-7674057r_X1-7671810-7673931-IRN_018697",
       "contig": "CM058173.1",
       "start": 7671810,
       "end": 7673931,
@@ -975,12 +943,12 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018697.png",
       "gene_image": "genes/IRN_018697.svg",
-      "review_order": 61
+      "review_order": 59
     },
     {
       "seq_id": "IRN_051540",
-      "gene_id": "CM058173.1_7666491-7674057r",
-      "transcript_id": "CM058173.1_7666491-7674057r_X3-7671810-7673931-IRN_051540",
+      "gene_id": "CM058173.1_7671810-7674057r",
+      "transcript_id": "CM058173.1_7671810-7674057r_X2-7671810-7673931-IRN_051540",
       "contig": "CM058173.1",
       "start": 7671810,
       "end": 7673931,
@@ -991,12 +959,12 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_051540.png",
       "gene_image": "genes/IRN_051540.svg",
-      "review_order": 62
+      "review_order": 60
     },
     {
       "seq_id": "IRN_031684",
-      "gene_id": "CM058173.1_7666491-7674057r",
-      "transcript_id": "CM058173.1_7666491-7674057r_X4-7671810-7674057-IRN_031684",
+      "gene_id": "CM058173.1_7671810-7674057r",
+      "transcript_id": "CM058173.1_7671810-7674057r_X3-7671810-7674057-IRN_031684",
       "contig": "CM058173.1",
       "start": 7671810,
       "end": 7674057,
@@ -1007,7 +975,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_031684.png",
       "gene_image": "genes/IRN_031684.svg",
-      "review_order": 63
+      "review_order": 61
     },
     {
       "seq_id": "IRN_013095",
@@ -1023,7 +991,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_013095.png",
       "gene_image": "genes/IRN_013095.svg",
-      "review_order": 64
+      "review_order": 62
     },
     {
       "seq_id": "IRN_018693",
@@ -1039,7 +1007,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018693.png",
       "gene_image": "genes/IRN_018693.svg",
-      "review_order": 65
+      "review_order": 63
     },
     {
       "seq_id": "IRN_031685",
@@ -1055,7 +1023,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_031685.png",
       "gene_image": "genes/IRN_031685.svg",
-      "review_order": 66
+      "review_order": 64
     },
     {
       "seq_id": "IRN_051536",
@@ -1071,7 +1039,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_051536.png",
       "gene_image": "genes/IRN_051536.svg",
-      "review_order": 67
+      "review_order": 65
     },
     {
       "seq_id": "IRN_013096",
@@ -1087,7 +1055,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_013096.png",
       "gene_image": "genes/IRN_013096.svg",
-      "review_order": 68
+      "review_order": 66
     },
     {
       "seq_id": "IRN_031693",
@@ -1103,7 +1071,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_031693.png",
       "gene_image": "genes/IRN_031693.svg",
-      "review_order": 69
+      "review_order": 67
     },
     {
       "seq_id": "IRN_013103",
@@ -1119,7 +1087,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_013103.png",
       "gene_image": "genes/IRN_013103.svg",
-      "review_order": 70
+      "review_order": 68
     },
     {
       "seq_id": "IRN_013109",
@@ -1135,7 +1103,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_013109.png",
       "gene_image": "genes/IRN_013109.svg",
-      "review_order": 71
+      "review_order": 69
     },
     {
       "seq_id": "IRN_013108",
@@ -1151,7 +1119,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_013108.png",
       "gene_image": "genes/IRN_013108.svg",
-      "review_order": 72
+      "review_order": 70
     },
     {
       "seq_id": "IRN_018699",
@@ -1167,7 +1135,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018699.png",
       "gene_image": "genes/IRN_018699.svg",
-      "review_order": 73
+      "review_order": 71
     },
     {
       "seq_id": "IRN_051541",
@@ -1183,7 +1151,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_051541.png",
       "gene_image": "genes/IRN_051541.svg",
-      "review_order": 74
+      "review_order": 72
     },
     {
       "seq_id": "IRN_031700",
@@ -1199,7 +1167,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_031700.png",
       "gene_image": "genes/IRN_031700.svg",
-      "review_order": 75
+      "review_order": 73
     },
     {
       "seq_id": "IRN_014782",
@@ -1215,7 +1183,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_014782.png",
       "gene_image": "genes/IRN_014782.svg",
-      "review_order": 76
+      "review_order": 74
     },
     {
       "seq_id": "IRN_051544",
@@ -1231,7 +1199,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_051544.png",
       "gene_image": "genes/IRN_051544.svg",
-      "review_order": 77
+      "review_order": 75
     },
     {
       "seq_id": "IRN_015238",
@@ -1247,7 +1215,7 @@
       "reason": "matches_relaxed_topology",
       "topology_image": "plots/IRN_015238.png",
       "gene_image": "genes/IRN_015238.svg",
-      "review_order": 78
+      "review_order": 76
     },
     {
       "seq_id": "IRN_018703",
@@ -1263,7 +1231,7 @@
       "reason": "matches_relaxed_topology",
       "topology_image": "plots/IRN_018703.png",
       "gene_image": "genes/IRN_018703.svg",
-      "review_order": 79
+      "review_order": 77
     },
     {
       "seq_id": "IRN_041817",
@@ -1279,7 +1247,7 @@
       "reason": "matches_relaxed_topology",
       "topology_image": "plots/IRN_041817.png",
       "gene_image": "genes/IRN_041817.svg",
-      "review_order": 80
+      "review_order": 78
     },
     {
       "seq_id": "IRN_051513",
@@ -1295,7 +1263,7 @@
       "reason": "matches_relaxed_topology",
       "topology_image": "plots/IRN_051513.png",
       "gene_image": "genes/IRN_051513.svg",
-      "review_order": 81
+      "review_order": 79
     },
     {
       "seq_id": "IRN_015377",
@@ -1311,7 +1279,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_015377.png",
       "gene_image": "genes/IRN_015377.svg",
-      "review_order": 82
+      "review_order": 80
     },
     {
       "seq_id": "IRN_018704",
@@ -1327,7 +1295,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018704.png",
       "gene_image": "genes/IRN_018704.svg",
-      "review_order": 83
+      "review_order": 81
     },
     {
       "seq_id": "IRN_042050",
@@ -1343,7 +1311,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_042050.png",
       "gene_image": "genes/IRN_042050.svg",
-      "review_order": 84
+      "review_order": 82
     },
     {
       "seq_id": "IRN_051514",
@@ -1359,7 +1327,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_051514.png",
       "gene_image": "genes/IRN_051514.svg",
-      "review_order": 85
+      "review_order": 83
     },
     {
       "seq_id": "IRN_015386",
@@ -1375,7 +1343,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_015386.png",
       "gene_image": "genes/IRN_015386.svg",
-      "review_order": 86
+      "review_order": 84
     },
     {
       "seq_id": "IRN_018702",
@@ -1391,7 +1359,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018702.png",
       "gene_image": "genes/IRN_018702.svg",
-      "review_order": 87
+      "review_order": 85
     },
     {
       "seq_id": "IRN_051545",
@@ -1407,12 +1375,12 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_051545.png",
       "gene_image": "genes/IRN_051545.svg",
-      "review_order": 88
+      "review_order": 86
     },
     {
       "seq_id": "IRN_016450",
-      "gene_id": "CM058175.1_1119668-1130567f",
-      "transcript_id": "CM058175.1_1119668-1130567f_X1-1119668-1122192-IRN_016450",
+      "gene_id": "CM058175.1_1119668-1122192f",
+      "transcript_id": "CM058175.1_1119668-1122192f_X1-1119668-1122192-IRN_016450",
       "contig": "CM058175.1",
       "start": 1119668,
       "end": 1122192,
@@ -1423,12 +1391,12 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_016450.png",
       "gene_image": "genes/IRN_016450.svg",
-      "review_order": 89
+      "review_order": 87
     },
     {
       "seq_id": "IRN_033492",
-      "gene_id": "CM058175.1_1119668-1130567f",
-      "transcript_id": "CM058175.1_1119668-1130567f_X2-1119668-1122192-IRN_033492",
+      "gene_id": "CM058175.1_1119668-1122192f",
+      "transcript_id": "CM058175.1_1119668-1122192f_X2-1119668-1122192-IRN_033492",
       "contig": "CM058175.1",
       "start": 1119668,
       "end": 1122192,
@@ -1439,28 +1407,12 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_033492.png",
       "gene_image": "genes/IRN_033492.svg",
-      "review_order": 90
-    },
-    {
-      "seq_id": "IRN_018705",
-      "gene_id": "CM058175.1_1119668-1130567f",
-      "transcript_id": "CM058175.1_1119668-1130567f_X3-1119668-1130567-IRN_018705",
-      "contig": "CM058175.1",
-      "start": 1119668,
-      "end": 1130567,
-      "strand": "+",
-      "seed": "reject",
-      "source_id": "maker-CM058175.1-exonerate_protein2genome-gene-0.0-mRNA-1",
-      "source_header": "maker-CM058175.1-exonerate_protein2genome-gene-0.0-mRNA-1",
-      "reason": "matches_strict_topology",
-      "topology_image": "plots/IRN_018705.png",
-      "gene_image": "genes/IRN_018705.svg",
-      "review_order": 91
+      "review_order": 88
     },
     {
       "seq_id": "IRN_016454",
-      "gene_id": "CM058175.1_1119668-1130567f",
-      "transcript_id": "CM058175.1_1119668-1130567f_X4-1128126-1130567-IRN_016454",
+      "gene_id": "CM058175.1_1128126-1130567f",
+      "transcript_id": "CM058175.1_1128126-1130567f-1128126-1130567-IRN_016454",
       "contig": "CM058175.1",
       "start": 1128126,
       "end": 1130567,
@@ -1471,7 +1423,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_016454.png",
       "gene_image": "genes/IRN_016454.svg",
-      "review_order": 92
+      "review_order": 89
     },
     {
       "seq_id": "IRN_016461",
@@ -1487,7 +1439,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_016461.png",
       "gene_image": "genes/IRN_016461.svg",
-      "review_order": 93
+      "review_order": 90
     },
     {
       "seq_id": "IRN_018711",
@@ -1503,7 +1455,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018711.png",
       "gene_image": "genes/IRN_018711.svg",
-      "review_order": 94
+      "review_order": 91
     },
     {
       "seq_id": "IRN_033505",
@@ -1519,7 +1471,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_033505.png",
       "gene_image": "genes/IRN_033505.svg",
-      "review_order": 95
+      "review_order": 92
     },
     {
       "seq_id": "IRN_051546",
@@ -1535,7 +1487,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_051546.png",
       "gene_image": "genes/IRN_051546.svg",
-      "review_order": 96
+      "review_order": 93
     },
     {
       "seq_id": "IRN_033506",
@@ -1551,7 +1503,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_033506.png",
       "gene_image": "genes/IRN_033506.svg",
-      "review_order": 97
+      "review_order": 94
     },
     {
       "seq_id": "IRN_033588",
@@ -1567,7 +1519,7 @@
       "reason": "matches_relaxed_topology",
       "topology_image": "plots/IRN_033588.png",
       "gene_image": "genes/IRN_033588.svg",
-      "review_order": 98
+      "review_order": 95
     },
     {
       "seq_id": "IRN_016521",
@@ -1583,7 +1535,7 @@
       "reason": "matches_relaxed_topology",
       "topology_image": "plots/IRN_016521.png",
       "gene_image": "genes/IRN_016521.svg",
-      "review_order": 99
+      "review_order": 96
     },
     {
       "seq_id": "IRN_018712",
@@ -1599,7 +1551,7 @@
       "reason": "matches_relaxed_topology",
       "topology_image": "plots/IRN_018712.png",
       "gene_image": "genes/IRN_018712.svg",
-      "review_order": 100
+      "review_order": 97
     },
     {
       "seq_id": "IRN_016522",
@@ -1615,7 +1567,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_016522.png",
       "gene_image": "genes/IRN_016522.svg",
-      "review_order": 101
+      "review_order": 98
     },
     {
       "seq_id": "IRN_017733",
@@ -1631,7 +1583,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_017733.png",
       "gene_image": "genes/IRN_017733.svg",
-      "review_order": 102
+      "review_order": 99
     },
     {
       "seq_id": "IRN_018709",
@@ -1647,7 +1599,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018709.png",
       "gene_image": "genes/IRN_018709.svg",
-      "review_order": 103
+      "review_order": 100
     },
     {
       "seq_id": "IRN_051548",
@@ -1663,7 +1615,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_051548.png",
       "gene_image": "genes/IRN_051548.svg",
-      "review_order": 104
+      "review_order": 101
     },
     {
       "seq_id": "IRN_018012",
@@ -1679,7 +1631,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018012.png",
       "gene_image": "genes/IRN_018012.svg",
-      "review_order": 105
+      "review_order": 102
     },
     {
       "seq_id": "IRN_018706",
@@ -1695,7 +1647,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018706.png",
       "gene_image": "genes/IRN_018706.svg",
-      "review_order": 106
+      "review_order": 103
     },
     {
       "seq_id": "IRN_051547",
@@ -1711,7 +1663,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_051547.png",
       "gene_image": "genes/IRN_051547.svg",
-      "review_order": 107
+      "review_order": 104
     },
     {
       "seq_id": "IRN_018710",
@@ -1727,7 +1679,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018710.png",
       "gene_image": "genes/IRN_018710.svg",
-      "review_order": 108
+      "review_order": 105
     },
     {
       "seq_id": "IRN_051549",
@@ -1743,7 +1695,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_051549.png",
       "gene_image": "genes/IRN_051549.svg",
-      "review_order": 109
+      "review_order": 106
     },
     {
       "seq_id": "IRN_018066",
@@ -1759,7 +1711,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018066.png",
       "gene_image": "genes/IRN_018066.svg",
-      "review_order": 110
+      "review_order": 107
     },
     {
       "seq_id": "IRN_018708",
@@ -1775,7 +1727,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018708.png",
       "gene_image": "genes/IRN_018708.svg",
-      "review_order": 111
+      "review_order": 108
     },
     {
       "seq_id": "IRN_018707",
@@ -1791,7 +1743,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018707.png",
       "gene_image": "genes/IRN_018707.svg",
-      "review_order": 112
+      "review_order": 109
     },
     {
       "seq_id": "IRN_035835",
@@ -1807,7 +1759,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_035835.png",
       "gene_image": "genes/IRN_035835.svg",
-      "review_order": 113
+      "review_order": 110
     },
     {
       "seq_id": "IRN_018068",
@@ -1823,7 +1775,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018068.png",
       "gene_image": "genes/IRN_018068.svg",
-      "review_order": 114
+      "review_order": 111
     },
     {
       "seq_id": "IRN_000215",
@@ -1839,7 +1791,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_000215.png",
       "gene_image": "genes/IRN_000215.svg",
-      "review_order": 115
+      "review_order": 112
     },
     {
       "seq_id": "IRN_018714",
@@ -1855,7 +1807,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018714.png",
       "gene_image": "genes/IRN_018714.svg",
-      "review_order": 116
+      "review_order": 113
     },
     {
       "seq_id": "IRN_051553",
@@ -1871,7 +1823,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_051553.png",
       "gene_image": "genes/IRN_051553.svg",
-      "review_order": 117
+      "review_order": 114
     },
     {
       "seq_id": "IRN_018713",
@@ -1887,7 +1839,7 @@
       "reason": "matches_relaxed_topology",
       "topology_image": "plots/IRN_018713.png",
       "gene_image": "genes/IRN_018713.svg",
-      "review_order": 118
+      "review_order": 115
     },
     {
       "seq_id": "IRN_023258",
@@ -1903,7 +1855,7 @@
       "reason": "matches_relaxed_topology",
       "topology_image": "plots/IRN_023258.png",
       "gene_image": "genes/IRN_023258.svg",
-      "review_order": 119
+      "review_order": 116
     },
     {
       "seq_id": "IRN_051554",
@@ -1919,7 +1871,7 @@
       "reason": "matches_relaxed_topology",
       "topology_image": "plots/IRN_051554.png",
       "gene_image": "genes/IRN_051554.svg",
-      "review_order": 120
+      "review_order": 117
     },
     {
       "seq_id": "IRN_000217",
@@ -1935,7 +1887,7 @@
       "reason": "matches_relaxed_topology",
       "topology_image": "plots/IRN_000217.png",
       "gene_image": "genes/IRN_000217.svg",
-      "review_order": 121
+      "review_order": 118
     },
     {
       "seq_id": "IRN_000218",
@@ -1951,7 +1903,7 @@
       "reason": "matches_relaxed_topology",
       "topology_image": "plots/IRN_000218.png",
       "gene_image": "genes/IRN_000218.svg",
-      "review_order": 122
+      "review_order": 119
     },
     {
       "seq_id": "IRN_000471",
@@ -1967,7 +1919,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_000471.png",
       "gene_image": "genes/IRN_000471.svg",
-      "review_order": 123
+      "review_order": 120
     },
     {
       "seq_id": "IRN_018715",
@@ -1983,7 +1935,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018715.png",
       "gene_image": "genes/IRN_018715.svg",
-      "review_order": 124
+      "review_order": 121
     },
     {
       "seq_id": "IRN_051555",
@@ -1999,7 +1951,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_051555.png",
       "gene_image": "genes/IRN_051555.svg",
-      "review_order": 125
+      "review_order": 122
     },
     {
       "seq_id": "IRN_001332",
@@ -2015,7 +1967,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_001332.png",
       "gene_image": "genes/IRN_001332.svg",
-      "review_order": 126
+      "review_order": 123
     },
     {
       "seq_id": "IRN_018719",
@@ -2031,7 +1983,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018719.png",
       "gene_image": "genes/IRN_018719.svg",
-      "review_order": 127
+      "review_order": 124
     },
     {
       "seq_id": "IRN_036948",
@@ -2047,7 +1999,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_036948.png",
       "gene_image": "genes/IRN_036948.svg",
-      "review_order": 128
+      "review_order": 125
     },
     {
       "seq_id": "IRN_002019",
@@ -2063,7 +2015,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_002019.png",
       "gene_image": "genes/IRN_002019.svg",
-      "review_order": 129
+      "review_order": 126
     },
     {
       "seq_id": "IRN_002020",
@@ -2079,7 +2031,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_002020.png",
       "gene_image": "genes/IRN_002020.svg",
-      "review_order": 130
+      "review_order": 127
     },
     {
       "seq_id": "IRN_018723",
@@ -2095,7 +2047,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018723.png",
       "gene_image": "genes/IRN_018723.svg",
-      "review_order": 131
+      "review_order": 128
     },
     {
       "seq_id": "IRN_051556",
@@ -2111,7 +2063,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_051556.png",
       "gene_image": "genes/IRN_051556.svg",
-      "review_order": 132
+      "review_order": 129
     },
     {
       "seq_id": "IRN_002072",
@@ -2127,7 +2079,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_002072.png",
       "gene_image": "genes/IRN_002072.svg",
-      "review_order": 133
+      "review_order": 130
     },
     {
       "seq_id": "IRN_018716",
@@ -2143,12 +2095,12 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018716.png",
       "gene_image": "genes/IRN_018716.svg",
-      "review_order": 134
+      "review_order": 131
     },
     {
       "seq_id": "IRN_002073",
-      "gene_id": "CM058177.1_4463741-4470559f",
-      "transcript_id": "CM058177.1_4463741-4470559f_X1-4463741-4465787-IRN_002073",
+      "gene_id": "CM058177.1_4463741-4465787f",
+      "transcript_id": "CM058177.1_4463741-4465787f-4463741-4465787-IRN_002073",
       "contig": "CM058177.1",
       "start": 4463741,
       "end": 4465787,
@@ -2159,28 +2111,12 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_002073.png",
       "gene_image": "genes/IRN_002073.svg",
-      "review_order": 135
-    },
-    {
-      "seq_id": "IRN_018717",
-      "gene_id": "CM058177.1_4463741-4470559f",
-      "transcript_id": "CM058177.1_4463741-4470559f_X2-4463741-4470559-IRN_018717",
-      "contig": "CM058177.1",
-      "start": 4463741,
-      "end": 4470559,
-      "strand": "+",
-      "seed": "reject",
-      "source_id": "maker-CM058177.1-exonerate_protein2genome-gene-0.12-mRNA-1",
-      "source_header": "maker-CM058177.1-exonerate_protein2genome-gene-0.12-mRNA-1",
-      "reason": "matches_strict_topology",
-      "topology_image": "plots/IRN_018717.png",
-      "gene_image": "genes/IRN_018717.svg",
-      "review_order": 136
+      "review_order": 132
     },
     {
       "seq_id": "IRN_002075",
-      "gene_id": "CM058177.1_4463741-4470559f",
-      "transcript_id": "CM058177.1_4463741-4470559f_X3-4468505-4470559-IRN_002075",
+      "gene_id": "CM058177.1_4468505-4470559f",
+      "transcript_id": "CM058177.1_4468505-4470559f-4468505-4470559-IRN_002075",
       "contig": "CM058177.1",
       "start": 4468505,
       "end": 4470559,
@@ -2191,7 +2127,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_002075.png",
       "gene_image": "genes/IRN_002075.svg",
-      "review_order": 137
+      "review_order": 133
     },
     {
       "seq_id": "IRN_002185",
@@ -2207,7 +2143,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_002185.png",
       "gene_image": "genes/IRN_002185.svg",
-      "review_order": 138
+      "review_order": 134
     },
     {
       "seq_id": "IRN_018718",
@@ -2223,7 +2159,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018718.png",
       "gene_image": "genes/IRN_018718.svg",
-      "review_order": 139
+      "review_order": 135
     },
     {
       "seq_id": "IRN_051557",
@@ -2239,7 +2175,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_051557.png",
       "gene_image": "genes/IRN_051557.svg",
-      "review_order": 140
+      "review_order": 136
     },
     {
       "seq_id": "IRN_002214",
@@ -2255,7 +2191,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_002214.png",
       "gene_image": "genes/IRN_002214.svg",
-      "review_order": 141
+      "review_order": 137
     },
     {
       "seq_id": "IRN_018720",
@@ -2271,7 +2207,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018720.png",
       "gene_image": "genes/IRN_018720.svg",
-      "review_order": 142
+      "review_order": 138
     },
     {
       "seq_id": "IRN_038405",
@@ -2287,7 +2223,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_038405.png",
       "gene_image": "genes/IRN_038405.svg",
-      "review_order": 143
+      "review_order": 139
     },
     {
       "seq_id": "IRN_002215",
@@ -2303,7 +2239,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_002215.png",
       "gene_image": "genes/IRN_002215.svg",
-      "review_order": 144
+      "review_order": 140
     },
     {
       "seq_id": "IRN_002216",
@@ -2319,7 +2255,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_002216.png",
       "gene_image": "genes/IRN_002216.svg",
-      "review_order": 145
+      "review_order": 141
     },
     {
       "seq_id": "IRN_018721",
@@ -2335,7 +2271,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018721.png",
       "gene_image": "genes/IRN_018721.svg",
-      "review_order": 146
+      "review_order": 142
     },
     {
       "seq_id": "IRN_002217",
@@ -2351,7 +2287,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_002217.png",
       "gene_image": "genes/IRN_002217.svg",
-      "review_order": 147
+      "review_order": 143
     },
     {
       "seq_id": "IRN_018722",
@@ -2367,7 +2303,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018722.png",
       "gene_image": "genes/IRN_018722.svg",
-      "review_order": 148
+      "review_order": 144
     },
     {
       "seq_id": "IRN_003466",
@@ -2383,7 +2319,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_003466.png",
       "gene_image": "genes/IRN_003466.svg",
-      "review_order": 149
+      "review_order": 145
     },
     {
       "seq_id": "IRN_003465",
@@ -2399,7 +2335,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_003465.png",
       "gene_image": "genes/IRN_003465.svg",
-      "review_order": 150
+      "review_order": 146
     },
     {
       "seq_id": "IRN_018724",
@@ -2415,7 +2351,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018724.png",
       "gene_image": "genes/IRN_018724.svg",
-      "review_order": 151
+      "review_order": 147
     },
     {
       "seq_id": "IRN_048920",
@@ -2431,7 +2367,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_048920.png",
       "gene_image": "genes/IRN_048920.svg",
-      "review_order": 152
+      "review_order": 148
     },
     {
       "seq_id": "IRN_051561",
@@ -2447,7 +2383,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_051561.png",
       "gene_image": "genes/IRN_051561.svg",
-      "review_order": 153
+      "review_order": 149
     },
     {
       "seq_id": "IRN_003685",
@@ -2463,7 +2399,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_003685.png",
       "gene_image": "genes/IRN_003685.svg",
-      "review_order": 154
+      "review_order": 150
     },
     {
       "seq_id": "IRN_049333",
@@ -2479,7 +2415,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_049333.png",
       "gene_image": "genes/IRN_049333.svg",
-      "review_order": 155
+      "review_order": 151
     },
     {
       "seq_id": "IRN_051562",
@@ -2495,7 +2431,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_051562.png",
       "gene_image": "genes/IRN_051562.svg",
-      "review_order": 156
+      "review_order": 152
     },
     {
       "seq_id": "IRN_018726",
@@ -2511,7 +2447,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018726.png",
       "gene_image": "genes/IRN_018726.svg",
-      "review_order": 157
+      "review_order": 153
     },
     {
       "seq_id": "IRN_003720",
@@ -2527,7 +2463,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_003720.png",
       "gene_image": "genes/IRN_003720.svg",
-      "review_order": 158
+      "review_order": 154
     },
     {
       "seq_id": "IRN_018725",
@@ -2543,7 +2479,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018725.png",
       "gene_image": "genes/IRN_018725.svg",
-      "review_order": 159
+      "review_order": 155
     },
     {
       "seq_id": "IRN_051564",
@@ -2559,7 +2495,7 @@
       "reason": "matches_relaxed_topology",
       "topology_image": "plots/IRN_051564.png",
       "gene_image": "genes/IRN_051564.svg",
-      "review_order": 160
+      "review_order": 156
     },
     {
       "seq_id": "IRN_018727",
@@ -2575,7 +2511,7 @@
       "reason": "matches_relaxed_topology",
       "topology_image": "plots/IRN_018727.png",
       "gene_image": "genes/IRN_018727.svg",
-      "review_order": 161
+      "review_order": 157
     },
     {
       "seq_id": "IRN_005737",
@@ -2591,7 +2527,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_005737.png",
       "gene_image": "genes/IRN_005737.svg",
-      "review_order": 162
+      "review_order": 158
     },
     {
       "seq_id": "IRN_018728",
@@ -2607,7 +2543,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018728.png",
       "gene_image": "genes/IRN_018728.svg",
-      "review_order": 163
+      "review_order": 159
     },
     {
       "seq_id": "IRN_045047",
@@ -2623,7 +2559,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_045047.png",
       "gene_image": "genes/IRN_045047.svg",
-      "review_order": 164
+      "review_order": 160
     },
     {
       "seq_id": "IRN_005738",
@@ -2639,7 +2575,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_005738.png",
       "gene_image": "genes/IRN_005738.svg",
-      "review_order": 165
+      "review_order": 161
     },
     {
       "seq_id": "IRN_018729",
@@ -2655,7 +2591,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018729.png",
       "gene_image": "genes/IRN_018729.svg",
-      "review_order": 166
+      "review_order": 162
     },
     {
       "seq_id": "IRN_045048",
@@ -2671,7 +2607,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_045048.png",
       "gene_image": "genes/IRN_045048.svg",
-      "review_order": 167
+      "review_order": 163
     },
     {
       "seq_id": "IRN_005750",
@@ -2687,7 +2623,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_005750.png",
       "gene_image": "genes/IRN_005750.svg",
-      "review_order": 168
+      "review_order": 164
     },
     {
       "seq_id": "IRN_018732",
@@ -2703,7 +2639,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018732.png",
       "gene_image": "genes/IRN_018732.svg",
-      "review_order": 169
+      "review_order": 165
     },
     {
       "seq_id": "IRN_051568",
@@ -2719,7 +2655,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_051568.png",
       "gene_image": "genes/IRN_051568.svg",
-      "review_order": 170
+      "review_order": 166
     },
     {
       "seq_id": "IRN_005768",
@@ -2735,7 +2671,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_005768.png",
       "gene_image": "genes/IRN_005768.svg",
-      "review_order": 171
+      "review_order": 167
     },
     {
       "seq_id": "IRN_005769",
@@ -2751,7 +2687,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_005769.png",
       "gene_image": "genes/IRN_005769.svg",
-      "review_order": 172
+      "review_order": 168
     },
     {
       "seq_id": "IRN_018733",
@@ -2767,7 +2703,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018733.png",
       "gene_image": "genes/IRN_018733.svg",
-      "review_order": 173
+      "review_order": 169
     },
     {
       "seq_id": "IRN_045100",
@@ -2783,7 +2719,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_045100.png",
       "gene_image": "genes/IRN_045100.svg",
-      "review_order": 174
+      "review_order": 170
     },
     {
       "seq_id": "IRN_051569",
@@ -2799,7 +2735,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_051569.png",
       "gene_image": "genes/IRN_051569.svg",
-      "review_order": 175
+      "review_order": 171
     },
     {
       "seq_id": "IRN_005773",
@@ -2815,7 +2751,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_005773.png",
       "gene_image": "genes/IRN_005773.svg",
-      "review_order": 176
+      "review_order": 172
     },
     {
       "seq_id": "IRN_018737",
@@ -2831,7 +2767,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018737.png",
       "gene_image": "genes/IRN_018737.svg",
-      "review_order": 177
+      "review_order": 173
     },
     {
       "seq_id": "IRN_051570",
@@ -2847,12 +2783,12 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_051570.png",
       "gene_image": "genes/IRN_051570.svg",
-      "review_order": 178
+      "review_order": 174
     },
     {
       "seq_id": "IRN_005774",
-      "gene_id": "CM058179.1_6228336-6232597f",
-      "transcript_id": "CM058179.1_6228336-6232597f_X1-6228336-6230204-IRN_005774",
+      "gene_id": "CM058179.1_6228336-6230527f",
+      "transcript_id": "CM058179.1_6228336-6230527f_X1-6228336-6230204-IRN_005774",
       "contig": "CM058179.1",
       "start": 6228336,
       "end": 6230204,
@@ -2863,12 +2799,12 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_005774.png",
       "gene_image": "genes/IRN_005774.svg",
-      "review_order": 179
+      "review_order": 175
     },
     {
       "seq_id": "IRN_045106",
-      "gene_id": "CM058179.1_6228336-6232597f",
-      "transcript_id": "CM058179.1_6228336-6232597f_X2-6228336-6230527-IRN_045106",
+      "gene_id": "CM058179.1_6228336-6230527f",
+      "transcript_id": "CM058179.1_6228336-6230527f_X2-6228336-6230527-IRN_045106",
       "contig": "CM058179.1",
       "start": 6228336,
       "end": 6230527,
@@ -2879,28 +2815,12 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_045106.png",
       "gene_image": "genes/IRN_045106.svg",
-      "review_order": 180
-    },
-    {
-      "seq_id": "IRN_018734",
-      "gene_id": "CM058179.1_6228336-6232597f",
-      "transcript_id": "CM058179.1_6228336-6232597f_X3-6228336-6232487-IRN_018734",
-      "contig": "CM058179.1",
-      "start": 6228336,
-      "end": 6232487,
-      "strand": "+",
-      "seed": "reject",
-      "source_id": "maker-CM058179.1-exonerate_protein2genome-gene-0.15-mRNA-1",
-      "source_header": "maker-CM058179.1-exonerate_protein2genome-gene-0.15-mRNA-1",
-      "reason": "matches_strict_topology",
-      "topology_image": "plots/IRN_018734.png",
-      "gene_image": "genes/IRN_018734.svg",
-      "review_order": 181
+      "review_order": 176
     },
     {
       "seq_id": "IRN_005775",
-      "gene_id": "CM058179.1_6228336-6232597f",
-      "transcript_id": "CM058179.1_6228336-6232597f_X4-6230682-6232487-IRN_005775",
+      "gene_id": "CM058179.1_6230682-6232597f",
+      "transcript_id": "CM058179.1_6230682-6232597f_X1-6230682-6232487-IRN_005775",
       "contig": "CM058179.1",
       "start": 6230682,
       "end": 6232487,
@@ -2911,12 +2831,12 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_005775.png",
       "gene_image": "genes/IRN_005775.svg",
-      "review_order": 182
+      "review_order": 177
     },
     {
       "seq_id": "IRN_045107",
-      "gene_id": "CM058179.1_6228336-6232597f",
-      "transcript_id": "CM058179.1_6228336-6232597f_X5-6230682-6232597-IRN_045107",
+      "gene_id": "CM058179.1_6230682-6232597f",
+      "transcript_id": "CM058179.1_6230682-6232597f_X2-6230682-6232597-IRN_045107",
       "contig": "CM058179.1",
       "start": 6230682,
       "end": 6232597,
@@ -2927,7 +2847,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_045107.png",
       "gene_image": "genes/IRN_045107.svg",
-      "review_order": 183
+      "review_order": 178
     },
     {
       "seq_id": "IRN_005803",
@@ -2943,7 +2863,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_005803.png",
       "gene_image": "genes/IRN_005803.svg",
-      "review_order": 184
+      "review_order": 179
     },
     {
       "seq_id": "IRN_045154",
@@ -2959,7 +2879,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_045154.png",
       "gene_image": "genes/IRN_045154.svg",
-      "review_order": 185
+      "review_order": 180
     },
     {
       "seq_id": "IRN_051515",
@@ -2975,7 +2895,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_051515.png",
       "gene_image": "genes/IRN_051515.svg",
-      "review_order": 186
+      "review_order": 181
     },
     {
       "seq_id": "IRN_051565",
@@ -2991,7 +2911,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_051565.png",
       "gene_image": "genes/IRN_051565.svg",
-      "review_order": 187
+      "review_order": 182
     },
     {
       "seq_id": "IRN_051566",
@@ -3007,7 +2927,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_051566.png",
       "gene_image": "genes/IRN_051566.svg",
-      "review_order": 188
+      "review_order": 183
     },
     {
       "seq_id": "IRN_006145",
@@ -3023,7 +2943,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_006145.png",
       "gene_image": "genes/IRN_006145.svg",
-      "review_order": 189
+      "review_order": 184
     },
     {
       "seq_id": "IRN_006146",
@@ -3039,7 +2959,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_006146.png",
       "gene_image": "genes/IRN_006146.svg",
-      "review_order": 190
+      "review_order": 185
     },
     {
       "seq_id": "IRN_006147",
@@ -3055,7 +2975,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_006147.png",
       "gene_image": "genes/IRN_006147.svg",
-      "review_order": 191
+      "review_order": 186
     },
     {
       "seq_id": "IRN_018730",
@@ -3071,7 +2991,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018730.png",
       "gene_image": "genes/IRN_018730.svg",
-      "review_order": 192
+      "review_order": 187
     },
     {
       "seq_id": "IRN_045650",
@@ -3087,7 +3007,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_045650.png",
       "gene_image": "genes/IRN_045650.svg",
-      "review_order": 193
+      "review_order": 188
     },
     {
       "seq_id": "IRN_006568",
@@ -3103,7 +3023,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_006568.png",
       "gene_image": "genes/IRN_006568.svg",
-      "review_order": 194
+      "review_order": 189
     },
     {
       "seq_id": "IRN_018739",
@@ -3119,7 +3039,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018739.png",
       "gene_image": "genes/IRN_018739.svg",
-      "review_order": 195
+      "review_order": 190
     },
     {
       "seq_id": "IRN_006569",
@@ -3135,12 +3055,12 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_006569.png",
       "gene_image": "genes/IRN_006569.svg",
-      "review_order": 196
+      "review_order": 191
     },
     {
       "seq_id": "IRN_006571",
-      "gene_id": "CM058180.1_192330-195798f",
-      "transcript_id": "CM058180.1_192330-195798f_X1-192330-194580-IRN_006571",
+      "gene_id": "CM058180.1_192330-194580f",
+      "transcript_id": "CM058180.1_192330-194580f_X1-192330-194580-IRN_006571",
       "contig": "CM058180.1",
       "start": 192330,
       "end": 194580,
@@ -3151,28 +3071,12 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_006571.png",
       "gene_image": "genes/IRN_006571.svg",
-      "review_order": 197
-    },
-    {
-      "seq_id": "IRN_046231",
-      "gene_id": "CM058180.1_192330-195798f",
-      "transcript_id": "CM058180.1_192330-195798f_X2-192330-195798-IRN_046231",
-      "contig": "CM058180.1",
-      "start": 192330,
-      "end": 195798,
-      "strand": "+",
-      "seed": "reject",
-      "source_id": "rna-Dmagna028605-T2",
-      "source_header": "rna-Dmagna028605-T2",
-      "reason": "matches_strict_topology",
-      "topology_image": "plots/IRN_046231.png",
-      "gene_image": "genes/IRN_046231.svg",
-      "review_order": 198
+      "review_order": 192
     },
     {
       "seq_id": "IRN_006572",
-      "gene_id": "CM058180.1_192330-195798f",
-      "transcript_id": "CM058180.1_192330-195798f_X3-192420-194580-IRN_006572",
+      "gene_id": "CM058180.1_192330-194580f",
+      "transcript_id": "CM058180.1_192330-194580f_X2-192420-194580-IRN_006572",
       "contig": "CM058180.1",
       "start": 192420,
       "end": 194580,
@@ -3183,12 +3087,12 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_006572.png",
       "gene_image": "genes/IRN_006572.svg",
-      "review_order": 199
+      "review_order": 193
     },
     {
       "seq_id": "IRN_018738",
-      "gene_id": "CM058180.1_192330-195798f",
-      "transcript_id": "CM058180.1_192330-195798f_X4-192420-194580-IRN_018738",
+      "gene_id": "CM058180.1_192330-194580f",
+      "transcript_id": "CM058180.1_192330-194580f_X3-192420-194580-IRN_018738",
       "contig": "CM058180.1",
       "start": 192420,
       "end": 194580,
@@ -3199,7 +3103,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018738.png",
       "gene_image": "genes/IRN_018738.svg",
-      "review_order": 200
+      "review_order": 194
     },
     {
       "seq_id": "IRN_006620",
@@ -3215,7 +3119,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_006620.png",
       "gene_image": "genes/IRN_006620.svg",
-      "review_order": 201
+      "review_order": 195
     },
     {
       "seq_id": "IRN_018740",
@@ -3231,7 +3135,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018740.png",
       "gene_image": "genes/IRN_018740.svg",
-      "review_order": 202
+      "review_order": 196
     },
     {
       "seq_id": "IRN_051573",
@@ -3247,7 +3151,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_051573.png",
       "gene_image": "genes/IRN_051573.svg",
-      "review_order": 203
+      "review_order": 197
     },
     {
       "seq_id": "IRN_006687",
@@ -3263,7 +3167,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_006687.png",
       "gene_image": "genes/IRN_006687.svg",
-      "review_order": 204
+      "review_order": 198
     },
     {
       "seq_id": "IRN_018745",
@@ -3279,7 +3183,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018745.png",
       "gene_image": "genes/IRN_018745.svg",
-      "review_order": 205
+      "review_order": 199
     },
     {
       "seq_id": "IRN_006691",
@@ -3295,7 +3199,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_006691.png",
       "gene_image": "genes/IRN_006691.svg",
-      "review_order": 206
+      "review_order": 200
     },
     {
       "seq_id": "IRN_018744",
@@ -3311,7 +3215,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018744.png",
       "gene_image": "genes/IRN_018744.svg",
-      "review_order": 207
+      "review_order": 201
     },
     {
       "seq_id": "IRN_006692",
@@ -3327,7 +3231,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_006692.png",
       "gene_image": "genes/IRN_006692.svg",
-      "review_order": 208
+      "review_order": 202
     },
     {
       "seq_id": "IRN_006693",
@@ -3343,7 +3247,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_006693.png",
       "gene_image": "genes/IRN_006693.svg",
-      "review_order": 209
+      "review_order": 203
     },
     {
       "seq_id": "IRN_018746",
@@ -3359,7 +3263,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018746.png",
       "gene_image": "genes/IRN_018746.svg",
-      "review_order": 210
+      "review_order": 204
     },
     {
       "seq_id": "IRN_006696",
@@ -3375,7 +3279,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_006696.png",
       "gene_image": "genes/IRN_006696.svg",
-      "review_order": 211
+      "review_order": 205
     },
     {
       "seq_id": "IRN_018747",
@@ -3391,7 +3295,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018747.png",
       "gene_image": "genes/IRN_018747.svg",
-      "review_order": 212
+      "review_order": 206
     },
     {
       "seq_id": "IRN_046438",
@@ -3407,7 +3311,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_046438.png",
       "gene_image": "genes/IRN_046438.svg",
-      "review_order": 213
+      "review_order": 207
     },
     {
       "seq_id": "IRN_006708",
@@ -3423,7 +3327,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_006708.png",
       "gene_image": "genes/IRN_006708.svg",
-      "review_order": 214
+      "review_order": 208
     },
     {
       "seq_id": "IRN_018748",
@@ -3439,7 +3343,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018748.png",
       "gene_image": "genes/IRN_018748.svg",
-      "review_order": 215
+      "review_order": 209
     },
     {
       "seq_id": "IRN_046456",
@@ -3455,7 +3359,7 @@
       "reason": "matches_relaxed_topology",
       "topology_image": "plots/IRN_046456.png",
       "gene_image": "genes/IRN_046456.svg",
-      "review_order": 216
+      "review_order": 210
     },
     {
       "seq_id": "IRN_006822",
@@ -3471,7 +3375,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_006822.png",
       "gene_image": "genes/IRN_006822.svg",
-      "review_order": 217
+      "review_order": 211
     },
     {
       "seq_id": "IRN_018741",
@@ -3487,7 +3391,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018741.png",
       "gene_image": "genes/IRN_018741.svg",
-      "review_order": 218
+      "review_order": 212
     },
     {
       "seq_id": "IRN_006823",
@@ -3503,7 +3407,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_006823.png",
       "gene_image": "genes/IRN_006823.svg",
-      "review_order": 219
+      "review_order": 213
     },
     {
       "seq_id": "IRN_018742",
@@ -3519,7 +3423,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018742.png",
       "gene_image": "genes/IRN_018742.svg",
-      "review_order": 220
+      "review_order": 214
     },
     {
       "seq_id": "IRN_018750",
@@ -3535,7 +3439,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018750.png",
       "gene_image": "genes/IRN_018750.svg",
-      "review_order": 221
+      "review_order": 215
     },
     {
       "seq_id": "IRN_051574",
@@ -3551,7 +3455,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_051574.png",
       "gene_image": "genes/IRN_051574.svg",
-      "review_order": 222
+      "review_order": 216
     },
     {
       "seq_id": "IRN_006834",
@@ -3567,7 +3471,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_006834.png",
       "gene_image": "genes/IRN_006834.svg",
-      "review_order": 223
+      "review_order": 217
     },
     {
       "seq_id": "IRN_006902",
@@ -3583,7 +3487,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_006902.png",
       "gene_image": "genes/IRN_006902.svg",
-      "review_order": 224
+      "review_order": 218
     },
     {
       "seq_id": "IRN_006903",
@@ -3599,7 +3503,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_006903.png",
       "gene_image": "genes/IRN_006903.svg",
-      "review_order": 225
+      "review_order": 219
     },
     {
       "seq_id": "IRN_018752",
@@ -3615,7 +3519,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018752.png",
       "gene_image": "genes/IRN_018752.svg",
-      "review_order": 226
+      "review_order": 220
     },
     {
       "seq_id": "IRN_046832",
@@ -3631,7 +3535,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_046832.png",
       "gene_image": "genes/IRN_046832.svg",
-      "review_order": 227
+      "review_order": 221
     },
     {
       "seq_id": "IRN_006904",
@@ -3647,7 +3551,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_006904.png",
       "gene_image": "genes/IRN_006904.svg",
-      "review_order": 228
+      "review_order": 222
     },
     {
       "seq_id": "IRN_018751",
@@ -3663,7 +3567,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_018751.png",
       "gene_image": "genes/IRN_018751.svg",
-      "review_order": 229
+      "review_order": 223
     },
     {
       "seq_id": "IRN_051577",
@@ -3679,7 +3583,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_051577.png",
       "gene_image": "genes/IRN_051577.svg",
-      "review_order": 230
+      "review_order": 224
     },
     {
       "seq_id": "IRN_007570",
@@ -3695,7 +3599,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_007570.png",
       "gene_image": "genes/IRN_007570.svg",
-      "review_order": 231
+      "review_order": 225
     },
     {
       "seq_id": "IRN_007815",
@@ -3711,7 +3615,7 @@
       "reason": "matches_strict_topology",
       "topology_image": "plots/IRN_007815.png",
       "gene_image": "genes/IRN_007815.svg",
-      "review_order": 232
+      "review_order": 226
     }
   ]
 }

@@ -8,13 +8,10 @@
     "run",
     "/home/primeline/Data/IRnotator/main.nf",
     "-profile",
-    "docker",
-    "--outdir",
-    "wrapper_test"
+    "docker"
   ],
-  "started_at": "2026-08-17T13:17:23.846759+00:00",
-  "rounds_completed": 1,
-  "current_reviewer_revision": 0,
-  "current_manifest": "/home/primeline/Data/IRnotator/wrapper_test/manual_review/review-manifest.json",
-  "last_round_completed_at": "2026-08-17T13:19:09.709222+00:00"
+  "started_at": "2026-08-17T13:57:42.731798+00:00",
+  "rounds_completed": 0,
+  "current_reviewer_revision": 1,
+  "current_manifest": "/home/primeline/Data/IRnotator/wrapper_test/manual_review/review-manifest.json"
 }

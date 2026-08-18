@@ -86,7 +86,7 @@ IRN_013061	accept	accept	strict
 IRN_013062	accept	accept	strict	
 IRN_013081	accept	accept	strict	
 IRN_013082	accept	accept	relaxed	
-IRN_013094	accept	reject	strict	
+IRN_013094	accept	accept	strict	
 IRN_013095	accept	accept	strict	
 IRN_013096	accept	accept	strict	
 IRN_013101	reject	reject	fail	
@@ -133,14 +133,14 @@ IRN_018694	reject	reject	fail
 IRN_018695	accept	accept	strict	
 IRN_018696	accept	accept	relaxed	
 IRN_018697	accept	accept	strict	
-IRN_018698	accept	reject	relaxed	
+IRN_018698	accept	accept	relaxed	
 IRN_018699	accept	accept	strict	
 IRN_018700	reject	reject	fail	
 IRN_018701	accept	accept	relaxed	
 IRN_018702	accept	accept	strict	
 IRN_018703	accept	accept	relaxed	
 IRN_018704	accept	accept	strict	
-IRN_018705	accept	reject	strict	
+IRN_018705	accept	accept	strict	
 IRN_018706	accept	accept	strict	
 IRN_018707	accept	accept	strict	
 IRN_018708	accept	accept	strict	
@@ -152,7 +152,7 @@ IRN_018713	accept	accept	relaxed
 IRN_018714	accept	accept	strict	
 IRN_018715	accept	accept	strict	
 IRN_018716	accept	accept	strict	
-IRN_018717	accept	reject	strict	
+IRN_018717	accept	accept	strict	
 IRN_018718	accept	accept	strict	
 IRN_018719	accept	accept	strict	
 IRN_018720	accept	accept	strict	
@@ -169,7 +169,7 @@ IRN_018730	accept	accept	strict
 IRN_018731	reject	reject	fail	
 IRN_018732	accept	accept	strict	
 IRN_018733	accept	accept	strict	
-IRN_018734	accept	reject	strict	
+IRN_018734	accept	accept	strict	
 IRN_018735	accept	accept	relaxed	
 IRN_018736	accept	accept	relaxed	
 IRN_018737	accept	accept	strict	
@@ -205,7 +205,7 @@ IRN_026722	reject	reject	fail
 IRN_028897	accept	accept	relaxed	
 IRN_028899	reject	reject	fail	
 IRN_029258	accept	accept	relaxed	
-IRN_030489	accept	reject	strict	
+IRN_030489	accept	accept	strict	
 IRN_030706	accept	accept	relaxed	
 IRN_030707	accept	accept	strict	
 IRN_030779	accept	accept	strict	
@@ -259,8 +259,8 @@ IRN_045534	accept	accept	relaxed
 IRN_045650	accept	accept	strict	
 IRN_045651	accept	accept	relaxed	
 IRN_046228	reject	reject	fail	
-IRN_046230	accept	reject	relaxed	
-IRN_046231	accept	reject	strict	
+IRN_046230	accept	accept	relaxed	
+IRN_046231	accept	accept	strict	
 IRN_046303	reject	reject	fail	
 IRN_046435	accept	accept	relaxed	
 IRN_046436	reject	reject	fail	

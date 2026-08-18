@@ -338,6 +338,6 @@ IRN_051516           -          Lig_chan             PF00060.29     5e-06   27.9
 # Query file:      PF00060.hmm
 # Target file:     normalized_proteins.faa
 # Option settings: hmmsearch --tblout PF00060.tbl -E 1e-5 PF00060.hmm normalized_proteins.faa 
-# Current dir:     /home/primeline/Data/IRnotator/work/8b/9be92400c7e15a6ef45c7cb33852de
-# Date:            Mon Aug 17 13:17:41 2026
+# Current dir:     /home/primeline/Data/IRnotator/work/1e/a2047469c30500e803f43eaf1550fe
+# Date:            Mon Aug 17 13:57:59 2026
 # [ok]
