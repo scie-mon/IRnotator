@@ -1,4 +1,4 @@
-test/multi_gff/annotations/*.gff
-test/multi_gff/genome/*.fna
+test/multi_gff_complete/annotations/*.gff
+test/multi_gff_complete/genome/*.fna
 *.bak
 *.bak[0-9]
