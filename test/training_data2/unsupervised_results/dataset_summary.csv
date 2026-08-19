@@ -1,2 +1,0 @@
-input_path,n_input_files,n_sequences,n_failed_overlay,fraction_failed_overlay,mean_raw_length,median_raw_length,mean_cropped_length,median_cropped_length,n_empty_after_crop,feature_count,umap_neighbors,umap_min_dist,k_values
-3line_target,2952,2952,19,0.006436314363143632,523.1094173441735,469.0,290.0182926829268,289.0,0,24,15,0.1,"2,3,4"

@@ -167,3 +167,12 @@
 2026-08-18 13:41:33	8.1s	trusting_pike	OK	90d2c3fe161c937410e95f606262bf22	f4db72b2-67e7-40bf-83ff-4ac0673ce913	nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker -resume
 2026-08-18 13:42:10	7.6s	tiny_spence	OK	90d2c3fe161c937410e95f606262bf22	f4db72b2-67e7-40bf-83ff-4ac0673ce913	nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker -resume
 2026-08-18 13:43:15	7.6s	boring_bohr	OK	90d2c3fe161c937410e95f606262bf22	f4db72b2-67e7-40bf-83ff-4ac0673ce913	nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker -resume
+2026-08-18 14:12:41	22.2s	romantic_kare	OK	90d2c3fe161c937410e95f606262bf22	9d3fc08e-ccf2-4109-81b3-4af45f031ec1	nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker
+2026-08-19 16:57:20	32.7s	crazy_maxwell	OK	90d2c3fe161c937410e95f606262bf22	bb7da40d-3aa1-4f29-8bde-d15e5af53f15	nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker
+2026-08-19 17:38:23	4.6s	tiny_mclean	OK	90d2c3fe161c937410e95f606262bf22	4cc77f16-a6ff-47c0-88bc-b91a7e14db25	nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker
+2026-08-19 17:39:03	3.5s	sharp_nobel	OK	90d2c3fe161c937410e95f606262bf22	4cc77f16-a6ff-47c0-88bc-b91a7e14db25	nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker -resume
+2026-08-19 17:39:27	3.3s	lethal_chandrasekhar	OK	90d2c3fe161c937410e95f606262bf22	4cc77f16-a6ff-47c0-88bc-b91a7e14db25	nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker -resume
+2026-08-19 17:42:05	33s	irreverent_kowalevski	OK	90d2c3fe161c937410e95f606262bf22	0918c3cf-1449-4e90-8a7d-2bae3c5bed3a	nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker
+2026-08-19 17:58:41	5.9s	deadly_mayer	OK	90d2c3fe161c937410e95f606262bf22	c5a864d3-b6b4-4a85-88e3-01956417680e	nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker
+2026-08-19 17:59:08	3.2s	jovial_neumann	OK	90d2c3fe161c937410e95f606262bf22	c5a864d3-b6b4-4a85-88e3-01956417680e	nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker -resume
+2026-08-19 17:59:53	3s	hopeful_solvay	OK	90d2c3fe161c937410e95f606262bf22	c5a864d3-b6b4-4a85-88e3-01956417680e	nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker -resume

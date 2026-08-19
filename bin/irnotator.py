@@ -314,10 +314,14 @@ def main() -> None:
         return
     if not any(argument == "-profile" or argument.startswith("-profile=") for argument in arguments):
         arguments = ["-profile", "docker", *arguments]
-    if any(argument == "-resume" or argument.startswith("-resume=") for argument in arguments):
-        fail("do not supply -resume; irnotator controls review-round resumption")
+    if any(argument.startswith("-resume=") for argument in arguments):
+        fail("-resume does not accept a value; use -resume")
     if not PIPELINE.is_file():
         fail(f"pipeline script not found: {PIPELINE}")
+
+    initial_resume = "-resume" in arguments
+    if initial_resume:
+        arguments.remove("-resume")
 
     launch_dir = Path.cwd().resolve()
     outdir = parse_path_option(arguments, "--outdir", launch_dir) or resolve_config_outdir(arguments, launch_dir)
@@ -341,7 +345,11 @@ def main() -> None:
     }
     write_session(session_path, session)
 
-    run_nextflow(command_base, launch_dir, log_path)
+    run_nextflow(
+        [*command_base, *(["-resume"] if initial_resume else [])],
+        launch_dir,
+        log_path,
+    )
     if not manifest_path.is_file() or not helper_path.is_file():
         fail(f"pipeline completed but no usable manual-review package was published in {review_dir}")
 

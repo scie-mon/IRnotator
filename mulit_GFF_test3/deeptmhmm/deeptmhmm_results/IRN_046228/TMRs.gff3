@@ -1,8 +1,0 @@
-##gff-version 3
-# KAK4012520.1 Length: 249
-# KAK4012520.1 Number of predicted TMRs: 2
-KAK4012520.1	outside	1	34				
-KAK4012520.1	TMhelix	35	57				
-KAK4012520.1	inside	58	124				
-KAK4012520.1	TMhelix	125	146				
-KAK4012520.1	outside	147	249				

@@ -1,8 +1,0 @@
-method,parameter,silhouette_cosine
-kmeans_k2,2,0.5136357598201791
-agglo_k2,2,0.9904322329061024
-kmeans_k3,3,0.5552457507983041
-agglo_k3,3,0.9828733597447796
-kmeans_k4,4,0.6147862443236803
-agglo_k4,4,0.9826497136689689
-dbscan,"eps=0.12,min_samples=10",
