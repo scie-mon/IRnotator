@@ -1,0 +1,5 @@
+# HMMER profile data; do not include in GitHub language statistics.
+*.hmm linguist-detectable=false
+
+# Nextflow execution cache, not project source.
+work/** linguist-detectable=false

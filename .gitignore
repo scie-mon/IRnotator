@@ -2,3 +2,6 @@ test/multi_gff_complete/annotations/*.gff
 test/multi_gff_complete/genome/*.fna
 *.bak
 *.bak[0-9]
+work/
+.nextflow/
+.nextflow.log*
