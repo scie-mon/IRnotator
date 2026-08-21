@@ -1,2 +1,0 @@
-#!/bin/bash -ue
-python multi_normalize.py         --genome-fasta CM058173.1_CM058175.1_GCA_030254905.1.fna         --annot-gff Dmagna_LRV_IRs_braker_fixed.gff Dmagna_LRV_rnd1.gff GCA_030254905.1_UOB_LRV0_1_genomic.gff Dmagna_LRV_snap-aug.gff         --normalizer normalize_input.py         --out-faa normalized_proteins.faa         --out-registry sequence_registry.tsv         --out-report translation_report.tsv         --out-duplicate-provenance duplicate_provenance.tsv         --gff-protein-attribute 'protein_id'         --translation-table 1

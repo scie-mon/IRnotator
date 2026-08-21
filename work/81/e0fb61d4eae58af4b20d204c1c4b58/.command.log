@@ -1,3 +1,0 @@
-WARNING: Canonical PF10613.hmm is absent from loaded HMMs: /home/primeline/Data/IRnotator/hmms
-WARNING: Canonical HMM directory is incomplete, modified, or contains unexpected entries: /home/primeline/Data/IRnotator/hmms
-NOTE: Default DeepTMHMM dump is not configured as a salvage path: /home/primeline/Data/IRnotator/deeptmhmm_dump

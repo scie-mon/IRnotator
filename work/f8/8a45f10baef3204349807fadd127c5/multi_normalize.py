@@ -1,1 +1,0 @@
-/home/primeline/Data/IRnotator/bin/multi_normalize.py
