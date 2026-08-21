@@ -77,6 +77,7 @@ workflow {
     multi_normalizer_script_ch = Channel.value(file("${projectDir}/bin/multi_normalize.py"))
     merger_script_ch = Channel.value(file("${projectDir}/bin/merge_ir_isoforms.py"))
     renderer_script_ch = Channel.value(file("${projectDir}/bin/render_gene_cds.py"))
+    unavailable_context_svg_ch = Channel.value(file("${projectDir}/assets/reviewer/genome-context-unavailable.svg"))
     biolib_runner_ch = Channel.value(file("${projectDir}/bin/deeptmhmm_runner.py"))
 
     annotation_gffs_ch = null
@@ -155,7 +156,7 @@ workflow {
         }
 
         def reviewer_revision = review_state.mode == 'bootstrap' ? -1 : review_state.existing_max_revision
-        def written_revision = (review_state.mode == 'bootstrap' ? 0 : (review_state.mode == 'advance' ? review_state.existing_max_revision + 1 : -1))
+        def written_revision = review_state.mode == 'bootstrap' ? 0 : (review_state.mode == 'advance' ? review_state.existing_max_revision + 1 : -1)
         PREPARE_MANUAL_REVIEW(
             final_deeptmhmm_dirs_ch.collect(),
             hardcoded_res.scores,
@@ -165,11 +166,32 @@ workflow {
             applied_review_tsv_ch,
             reviewer_gff_ch,
             file("${projectDir}/assets/reviewer/topology-reviewer.html"),
+            unavailable_context_svg_ch,
             renderer_script_ch,
             Channel.value(reviewer_revision),
             Channel.value(written_revision),
+            Channel.value(true)
         )
     } else {
-        log.info('Protein-only mode completed; genome-context manual review is unavailable.')
+        def protein_only_context = file("${params.outdir}/.protein-only-review-context.gff3")
+        def protein_only_context_parent = protein_only_context.getParent()
+        if (protein_only_context_parent != null) protein_only_context_parent.toFile().mkdirs()
+        protein_only_context.toFile().text = '## genome-context-unavailable: protein-only input\n'
+
+        PREPARE_MANUAL_REVIEW(
+            final_deeptmhmm_dirs_ch.collect(),
+            hardcoded_res.scores,
+            sequence_registry_ch,
+            parsed_res.features,
+            effective_decisions_ch,
+            applied_review_tsv_ch,
+            Channel.fromPath(protein_only_context, checkIfExists: true),
+            file("${projectDir}/assets/reviewer/topology-reviewer.html"),
+            unavailable_context_svg_ch,
+            renderer_script_ch,
+            Channel.value(-1),
+            Channel.value(0),
+            Channel.value(false)
+        )
     }
 }

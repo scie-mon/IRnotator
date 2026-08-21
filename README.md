@@ -107,6 +107,35 @@ docker pull interpro/deeptmhmm:1.0
 > [!IMPORTANT]
 > When using an HPC executor, `deeptmhmm_dir` must be readable from compute nodes. Use a shared filesystem path or configure the required filesystem bind mounts in your site-specific Nextflow configuration.
 
+### GPU support
+
+IRnotator can request GPU access for local container-mode DeepTMHMM with:
+
+```bash
+irnotator \
+  --deeptmhmm_mode container \
+  --deeptmhmm_gpu true \
+  ...
+```
+
+For Docker, `--deeptmhmm_gpu true` adds the container option `--gpus all`.
+The host must have a supported NVIDIA GPU setup, compatible drivers, and a
+container runtime configured for GPU access. On HPC systems, also request a GPU
+through the scheduler in the site-specific Nextflow configuration.
+
+> [!NOTE]
+> IRnotator runs DeepTMHMM independently for each candidate sequence. GPU
+> acceleration therefore does not necessarily improve total runtime: per-job
+> container startup, model loading, filesystem I/O, and scheduler overhead can
+> dominate for many short single-sequence tasks.
+
+A capable multicore CPU allocation can be as fast as, or faster than, GPU mode
+for this execution pattern.
+
+Use GPU mode when local benchmarks demonstrate a meaningful improvement for the
+target dataset, or when CPU capacity is constrained and compatible GPU
+resources are readily available.
+
 ### Run the bundled test dataset
 
 IRnotator includes a small genome-and-annotation test dataset in
