@@ -48,7 +48,7 @@ chmod +x bin/irnotator.py
 ln -sfn "$(pwd)/bin/irnotator.py" "$HOME/.local/bin/irnotator"
 ```
 
-Ensure that `$HOME/.local/bin` is on your `PATH`:
+Ensure that `$HOME/.local/bin` is on your `PATH`. If not:
 
 ```bash
 export PATH="$HOME/.local/bin:$PATH"
@@ -107,6 +107,86 @@ docker pull interpro/deeptmhmm:1.0
 > [!IMPORTANT]
 > When using an HPC executor, `deeptmhmm_dir` must be readable from compute nodes. Use a shared filesystem path or configure the required filesystem bind mounts in your site-specific Nextflow configuration.
 
+## Inputs
+
+IRnotator requires one protein-source input mode, an HMM profile directory, and
+optionally one or more directories containing reusable DeepTMHMM results.
+
+### Protein-source input modes
+
+Choose **exactly one** of the following modes.
+
+| Mode | Required parameters | Description |
+|---|---|---|
+| Genome + annotation | `--genome_fasta`, `--annot_gff` | Recommended mode. IRnotator derives and normalises protein sequences from a genome FASTA and one or more annotation GFF files. This mode supports downstream IR isoform merging. |
+| Protein FASTA | `--proteins_faa` | Alternative mode for an already available protein dataset. Genome/GFF-specific normalisation and final GFF merging are not available in this mode. |
+
+For genome + annotation mode, `--annot_gff` may specify one or more GFF files,
+for example:
+
+```bash
+--genome_fasta genome.fna \
+--annot_gff 'annotations/*.gff3'
+```
+
+The GFF protein identifier attribute is controlled by
+`--gff_protein_attribute` and defaults to `protein_id`.
+
+### IR HMM profiles
+
+IRnotator searches protein sequences with HMMER against all HMM profiles in
+`--hmm_dir`.
+
+The repository provides the canonical IR profile set in `IRnotator/hmms/` which are used by default:
+
+```text
+hmms/
+├── PF00060.hmm
+└── PF10613.hmm
+```
+
+Alternatively, provide a directory containing custom HMM profile files:
+
+```bash
+--hmm_dir /path/to/custom_hmms
+```
+
+Custom profiles replace the bundled profile directory for that run. Selection of
+custom profiles and the HMMER threshold (`--hmm_evalue`) is a scientific
+analysis decision and should be recorded with the run.
+
+### Reusing DeepTMHMM results
+
+IRnotator can reuse completed compatible DeepTMHMM result directories instead
+of calculating all topology predictions again. Supply one or more search
+locations with `deeptmhmm_salvage_paths` in a configuration file:
+
+```groovy
+params {
+    deeptmhmm_salvage_paths = [
+        '/path/to/previous_deeptmhmm_results',
+        '/path/to/additional_deeptmhmm_results'
+    ]
+}
+```
+
+Salvage paths are searched together with newly generated topology results.
+This is useful when a previous DeepTMHMM run was interrupted, was performed
+externally, or must be reused across IRnotator runs.
+
+To run without launching new DeepTMHMM tasks, set:
+
+```bash
+--run_deeptmhmm false
+```
+
+Ensure that the supplied salvage directories contain results compatible with
+the IRnotator input sequences. Any unresolved sequences are reported in:
+
+```text
+<outdir>/deeptmhmm/unresolved_deeptmhmm.faa
+```
+
 ## Quick start via the controller
 
 The `irnotator` controller is the recommended interface for genome-and-annotation runs. It forwards Nextflow options and IRnotator parameters to `main.nf`, selects the Docker profile unless another profile is specified, and manages pipeline resumption across manual-review rounds.
@@ -117,13 +197,12 @@ The `irnotator` controller is the recommended interface for genome-and-annotatio
 irnotator \
   --genome_fasta /path/to/genome.fna \
   --annot_gff '/path/to/annotations/*.gff3' \
-  --hmm_dir /path/to/ir_hmms \
   --deeptmhmm_mode container \
   --deeptmhmm_dir /path/to/DeepTMHMM \
   --outdir results
 ```
 
-Parameters supplied on the command line override values in `nextflow.config`. Always provide explicit `--genome_fasta`, `--annot_gff`, `--hmm_dir`, and `--outdir` values rather than relying on development defaults in the repository configuration.
+Parameters supplied on the command line override values in `nextflow.config`.
 
 ## Direct Nextflow usage
 
