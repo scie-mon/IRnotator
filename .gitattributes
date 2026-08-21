@@ -3,3 +3,9 @@
 
 # Nextflow execution cache, not project source.
 work/** linguist-detectable=false
+
+# Generated DeepTMHMM cache; exclude from Linguist statistics.
+deeptmhmm_dump/** linguist-detectable=false
+
+# DeepTMHMM topology output; avoid erroneous Roff detection.
+*.3line linguist-detectable=false

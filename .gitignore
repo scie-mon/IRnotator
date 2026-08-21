@@ -5,3 +5,4 @@ test/multi_gff_complete/genome/*.fna
 work/
 .nextflow/
 .nextflow.log*
+deeptmhmm_dump/
