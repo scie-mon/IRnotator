@@ -107,6 +107,49 @@ docker pull interpro/deeptmhmm:1.0
 > [!IMPORTANT]
 > When using an HPC executor, `deeptmhmm_dir` must be readable from compute nodes. Use a shared filesystem path or configure the required filesystem bind mounts in your site-specific Nextflow configuration.
 
+### Run the bundled test dataset
+
+IRnotator includes a small genome-and-annotation test dataset in
+`test/multi_gff/`. The repository's `nextflow.config` is pre-configured to use
+this dataset, allowing an installation test without providing external input
+files.
+
+Run the test through the controller:
+
+```bash
+irnotator --outdir test_out
+```
+
+Or run the workflow directly with Nextflow:
+
+```bash
+nextflow run main.nf -profile docker --outdir test_out
+```
+
+#### Run the test without DeepTMHMM
+
+The test dataset also includes precomputed topology predictions in:
+
+```text
+test/multi_gff/deeptmhmm_predicts/
+```
+
+These predictions are **not used automatically**. If no local DeepTMHMM
+installation or BioLib backend is available, configure this directory as a
+salvage location:
+
+```groovy
+params {
+    deeptmhmm_salvage_paths = [
+        "${projectDir}/test/multi_gff/deeptmhmm_predicts"
+    ]
+}
+```
+
+> [!NOTE]
+> `deeptmhmm_predicts/` must be supplied explicitly because it is not part of
+> the default salvage-path configuration.
+
 ## Inputs
 
 IRnotator requires one protein-source input mode, an HMM profile directory, and
@@ -145,51 +188,78 @@ hmms/
 └── PF10613.hmm
 ```
 
-Alternatively, provide a directory containing custom HMM profile files:
+Alternatively, provide a directory containing custom HMM profile files
 
 ```bash
 --hmm_dir /path/to/custom_hmms
 ```
 
-Custom profiles replace the bundled profile directory for that run. Selection of
-custom profiles and the HMMER threshold (`--hmm_evalue`) is a scientific
-analysis decision and should be recorded with the run.
+ or add custom HMMs to `hmms/`.
 
-### Reusing DeepTMHMM results
+### DeepTMHMM result cache and salvage paths
 
-IRnotator can reuse completed compatible DeepTMHMM result directories instead
-of calculating all topology predictions again. Supply one or more search
-locations with `deeptmhmm_salvage_paths` in a configuration file:
+IRnotator maintains `deeptmhmm_dump/` as its local DeepTMHMM result cache. At
+the start of each run, the pipeline sanitizes this directory and first attempts
+to reuse compatible cached results from it.
+
+All valid DeepTMHMM results—whether generated during the current run or
+salvaged from an external location—are added to `deeptmhmm_dump/`. This allows
+subsequent runs to reuse previously obtained predictions before submitting new
+DeepTMHMM jobs.
+
+Additional external result locations can be supplied with
+`deeptmhmm_salvage_paths`:
 
 ```groovy
 params {
     deeptmhmm_salvage_paths = [
-        '/path/to/previous_deeptmhmm_results',
-        '/path/to/additional_deeptmhmm_results'
+        "${projectDir}/deeptmhmm_dump",
+        "/path/to/previous_deeptmhmm_results",
+        "/path/to/additional_deeptmhmm_results"
     ]
 }
 ```
 
-Salvage paths are searched together with newly generated topology results.
-This is useful when a previous DeepTMHMM run was interrupted, was performed
-externally, or must be reused across IRnotator runs.
+Keep `${projectDir}/deeptmhmm_dump` as the first entry in
+`deeptmhmm_salvage_paths` to preserve the default cache-first behaviour. If
+`deeptmhmm_salvage_paths` is overridden without this entry, IRnotator will not
+search its local `deeptmhmm_dump/` cache before checking external salvage
+locations or running new DeepTMHMM jobs.
 
-To run without launching new DeepTMHMM tasks, set:
+Only sequences for which no compatible cached or salvaged result is found are
+submitted to DeepTMHMM when `--run_deeptmhmm true`. To prevent new topology
+runs entirely, set:
 
 ```bash
 --run_deeptmhmm false
 ```
 
-Ensure that the supplied salvage directories contain results compatible with
-the IRnotator input sequences. Any unresolved sequences are reported in:
+If no local DeepTMHMM installation, BioLib execution, or compatible salvaged
+result is available, IRnotator writes the affected candidate sequences to:
 
 ```text
 <outdir>/deeptmhmm/unresolved_deeptmhmm.faa
 ```
 
+Run DeepTMHMM externally on this FASTA file and add the resulting valid
+per-sequence result directories to `deeptmhmm_dump/` or another configured
+salvage path. Then rerun IRnotator with the same inputs and resume state. The
+pipeline will salvage the newly available results and continue from the
+topology-processing stage rather than reprocessing completed upstream tasks.
+
+
 ## Quick start via the controller
 
-The `irnotator` controller is the recommended interface for genome-and-annotation runs. It forwards Nextflow options and IRnotator parameters to `main.nf`, selects the Docker profile unless another profile is specified, and manages pipeline resumption across manual-review rounds.
+The `irnotator` controller is the recommended interface for
+genome-and-annotation runs. It forwards Nextflow options and IRnotator
+parameters to `main.nf`, selects the Docker profile unless another profile is
+specified, and manages pipeline resumption across manual-review rounds.
+
+After each workflow round that requires curation, the controller serves the
+local manual-review application from `<outdir>/manual_review/`. It manages the
+review session, accepts browser-submitted or externally exported `review.tsv`
+decisions, validates and records the review state, and launches subsequent
+Nextflow rounds until the review workflow is complete.
 
 ### Minimal genome-and-annotation run
 
@@ -241,7 +311,7 @@ Unlike the controller, direct Nextflow execution leaves `-resume` under user con
 3. Submit or export `review.tsv` as instructed by the controller.
 4. The controller applies decisions and resumes the workflow for the next review round.
 
-For direct Nextflow execution, use `--review_tsv /path/to/review.tsv` or place the completed file at `<outdir>/manual_review/review.tsv`.
+For direct Nextflow execution, use `--review_tsv /path/to/review.tsv` or place the completed file at `<outdir>/manual_review/review.tsv`. Then, re-run the pipeline with `-resume`.
 
 ## Parameters
 
@@ -258,22 +328,19 @@ CLI `--parameter value` settings override `nextflow.config` values.
 | `isoform_overlap_fraction` | `0.60` | Isoform-merge overlap fraction |
 | `hmm_dir` | `test/hmms` | IR HMM directory |
 | `hmm_evalue` | `1e-5` | HMMER E-value threshold |
-| `outdir` | `wrapper_test2` | Output directory |
+| `outdir` | `null` | Output directory |
 | `review_tsv` | `null` | Completed review TSV |
 | `run_deeptmhmm` | `true` | Run topology prediction |
 | `deeptmhmm_mode` | `container` | `container` or `biolib` |
-| `deeptmhmm_dir` | repository local path | Local DeepTMHMM distribution |
-| `deeptmhmm_model` | `DTU/DeepTMHMM:1.0.24` | BioLib model identifier |
-| `deeptmhmm_salvage_paths` | configured list | Reusable results directories |
+| `deeptmhmm_dir` | `null` | Local DeepTMHMM distribution |
+| `deeptmhmm_model` | `DTU/DeepTMHMM:1.0.24` | BioLib application identifier passed to the cloud runner; used only when `--deeptmhmm_mode biolib`. |
+| `deeptmhmm_salvage_paths` | `["${projectDir}/deeptmhmm_dump"]` | Reusable results directories |
 | `deeptmhmm_keep_going` | `false` | Continue after individual topology failures |
-| `deeptmhmm_gpu` | `false` | Request GPU support |
+| `deeptmhmm_gpu` | `false` | Request GPU support when `--deeptmhmm_mode container`  |
 | `normalizer_container` | `quay.io/biocontainers/biopython:1.84` | Normalisation image |
 | `hmmer_container` | `biocontainers/hmmer:v3.2.1dfsg-1-deb_cv1` | HMMER image |
 | `deeptmhmm_container` | `interpro/deeptmhmm:1.0` | DeepTMHMM image |
 | `deeptmhmm_biolib_container` | `null` | Optional BioLib container |
-
-> [!WARNING]
-> `hmm_evalue`, `translation_table`, `allow_internal_stops`, and `isoform_overlap_fraction` can affect biological results. Select and report values appropriate to the study.
 
 ## Outputs, reruns, and result salvage
 
