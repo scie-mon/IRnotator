@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+import ast
 import csv
 import io
 import json
@@ -33,7 +34,7 @@ def fail(message: str) -> None:
 
 def usage() -> str:
     return """Usage:
-  irnotator [NEXTFLOW_OPTIONS_AND_PARAMETERS]
+irnotator [NEXTFLOW_OPTIONS_AND_PARAMETERS]
 
 Runs main.nf once, serves the generated manual-review package locally, then
 runs successive review rounds after you export, copy, or submit review.tsv.
@@ -41,14 +42,18 @@ runs successive review rounds after you export, copy, or submit review.tsv.
 Docker is the default profile. Supply -profile explicitly to override it.
 
 Examples:
-  irnotator
-  irnotator --outdir results
-  irnotator -profile apptainer
-  irnotator -profile docker --proteins_faa candidates.faa
+irnotator
+irnotator --outdir results
+irnotator -profile apptainer
+irnotator -profile docker --proteins_faa candidates.faa
+irnotator --omit-warnings --outdir results
 
 All arguments are passed unchanged to `nextflow run main.nf`, except -resume,
 which is managed by this controller. When --outdir is omitted, the controller
 uses params.outdir resolved from `nextflow config -flat`.
+
+Use --omit-warnings to suppress the controller's reference-HMM and DeepTMHMM
+salvage-cache configuration diagnostics.
 """
 
 
@@ -70,40 +75,139 @@ def parse_path_option(arguments: list[str], option: str, cwd: Path) -> Path | No
     return None
 
 
-def nextflow_profile_options(arguments: list[str]) -> list[str]:
+def nextflow_config_options(arguments: list[str]) -> list[str]:
+    """Return only Nextflow options that affect configuration resolution."""
     options: list[str] = []
     index = 0
+    options_with_values = {"-profile", "-c", "-C", "-params-file"}
+
     while index < len(arguments):
         argument = arguments[index]
-        if argument == "-profile":
+        if argument in options_with_values:
             if index + 1 == len(arguments):
-                fail("-profile requires a value")
-            options.extend(["-profile", arguments[index + 1]])
+                fail(f"{argument} requires a value")
+            options.extend([argument, arguments[index + 1]])
             index += 2
             continue
-        if argument.startswith("-profile="):
-            profile = argument.removeprefix("-profile=")
-            if not profile:
-                fail("-profile requires a value")
-            options.extend(["-profile", profile])
+
+        matching_option = next(
+            (option for option in options_with_values if argument.startswith(f"{option}=")),
+            None,
+        )
+        if matching_option is not None:
+            value = argument[len(matching_option) + 1:]
+            if not value:
+                fail(f"{matching_option} requires a value")
+            options.extend([matching_option, value])
+
         index += 1
+
     return options
 
 
-def resolve_config_outdir(arguments: list[str], cwd: Path) -> Path:
-    command = ["nextflow", "config", "-flat", *nextflow_profile_options(arguments), str(PROJECT_DIR)]
-    result = subprocess.run(command, cwd=cwd, text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+def resolve_flat_config(arguments: list[str], cwd: Path) -> dict[str, str]:
+    command = [
+        "nextflow",
+        "config",
+        "-flat",
+        *nextflow_config_options(arguments),
+        str(PROJECT_DIR),
+    ]
+    result = subprocess.run(
+        command,
+        cwd=cwd,
+        text=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+    )
     if result.returncode != 0:
         detail = result.stderr.strip() or result.stdout.strip() or f"exit status {result.returncode}"
-        fail(f"could not resolve params.outdir with {' '.join(command)}: {detail}")
-    match = re.search(r"^params\.outdir\s*=\s*(.+?)\s*$", result.stdout, flags=re.MULTILINE)
-    if not match:
-        fail("--outdir was not supplied and `nextflow config -flat` did not resolve params.outdir; pass --outdir explicitly")
-    value = match.group(1).strip()
+        fail(f"could not resolve pipeline configuration with {' '.join(command)}: {detail}")
+
+    resolved: dict[str, str] = {}
+    for line in result.stdout.splitlines():
+        key, separator, value = line.partition("=")
+        if separator:
+            resolved[key.strip()] = value.strip()
+    return resolved
+
+
+def parse_value_option(arguments: list[str], option: str) -> str | None:
+    value: str | None = None
+    index = 0
+    while index < len(arguments):
+        argument = arguments[index]
+        if argument == option:
+            if index + 1 == len(arguments):
+                fail(f"{option} requires a value")
+            value = arguments[index + 1]
+            index += 2
+            continue
+
+        prefix = f"{option}="
+        if argument.startswith(prefix):
+            value = argument[len(prefix):]
+            if not value:
+                fail(f"{option} requires a value")
+
+        index += 1
+    return value
+
+
+def unquote_config_value(value: str | None) -> str | None:
+    if value is None:
+        return None
+    value = value.strip()
     if len(value) >= 2 and value[0] == value[-1] and value[0] in {"'", '"'}:
         value = value[1:-1]
-    if not value or value == "null":
-        fail("--outdir was not supplied and resolved params.outdir is empty or null; pass --outdir explicitly")
+    return None if not value or value == "null" else value
+
+
+def resolve_runtime_path(value: str, cwd: Path) -> Path:
+    path = Path(unquote_config_value(value) or "").expanduser()
+    return (cwd / path).resolve() if not path.is_absolute() else path.resolve()
+
+
+def parse_salvage_paths(value: str, cwd: Path) -> list[Path]:
+    value = (value or "").strip()
+    if not value or value == "[]" or value == "null":
+        return []
+
+    try:
+        parsed = ast.literal_eval(value)
+    except (SyntaxError, ValueError):
+        parsed = [
+            item.strip().strip("'\"")
+            for item in value.strip("[]").split(",")
+            if item.strip()
+        ]
+
+    if isinstance(parsed, str):
+        parsed = [parsed]
+    if not isinstance(parsed, (list, tuple)):
+        fail(f"could not parse deeptmhmm_salvage_paths: {value}")
+    return [resolve_runtime_path(str(path), cwd) for path in parsed]
+
+
+def run_reference_audit(hmm_dir: Path, salvage_paths: list[Path], cwd: Path) -> None:
+    command = [
+        sys.executable,
+        str(PROJECT_DIR / "bin" / "validate_reference_config.py"),
+        "--project-dir",
+        str(PROJECT_DIR),
+        "--hmm-dir",
+        str(hmm_dir),
+    ]
+    for path in salvage_paths:
+        command.extend(["--salvage-path", str(path)])
+    subprocess.run(command, cwd=cwd, check=False)
+
+
+def resolve_config_outdir(arguments: list[str], cwd: Path, resolved_config: dict[str, str] | None = None) -> Path:
+    resolved_config = resolved_config or resolve_flat_config(arguments, cwd)
+    value = unquote_config_value(resolved_config.get("params.outdir"))
+    if value is None:
+        fail("--outdir was not supplied and `nextflow config -flat` did not resolve params.outdir; pass --outdir explicitly")
     path = Path(value).expanduser()
     return (cwd / path).resolve() if not path.is_absolute() else path.resolve()
 
@@ -309,6 +413,9 @@ def prompt_for_review(review_path: Path, server: ReviewServer, port: int, revisi
 
 def main() -> None:
     arguments = sys.argv[1:]
+    omit_warnings = "--omit-warnings" in arguments
+    arguments = [argument for argument in arguments if argument != "--omit-warnings"]
+
     if arguments == ["--help"] or arguments == ["-h"]:
         print(usage())
         return
@@ -324,7 +431,25 @@ def main() -> None:
         arguments.remove("-resume")
 
     launch_dir = Path.cwd().resolve()
-    outdir = parse_path_option(arguments, "--outdir", launch_dir) or resolve_config_outdir(arguments, launch_dir)
+    resolved_config = resolve_flat_config(arguments, launch_dir)
+    hmm_value = (
+        parse_value_option(arguments, "--hmm_dir")
+        or unquote_config_value(resolved_config.get("params.hmm_dir"))
+        or "hmms"
+    )
+    salvage_value = (
+        parse_value_option(arguments, "--deeptmhmm_salvage_paths")
+        or resolved_config.get("params.deeptmhmm_salvage_paths")
+        or "[]"
+    )
+    hmm_dir = resolve_runtime_path(hmm_value, launch_dir)
+    salvage_paths = parse_salvage_paths(salvage_value, launch_dir)
+    if not omit_warnings:
+        run_reference_audit(hmm_dir, salvage_paths, launch_dir)
+
+    outdir = parse_path_option(arguments, "--outdir", launch_dir) or resolve_config_outdir(
+        arguments, launch_dir, resolved_config
+    )
     workdir = parse_path_option(arguments, "-work-dir", launch_dir) or (launch_dir / "work")
     review_dir = outdir / "manual_review"
     review_path = review_dir / "review.tsv"
@@ -337,12 +462,17 @@ def main() -> None:
         fail(f"existing review TSV found: {review_path}. Remove it or apply it manually before starting a new controller session.")
 
     outdir.mkdir(parents=True, exist_ok=True)
-    command_base = ["nextflow", "run", str(PIPELINE), *arguments]
+    command_base = ["nextflow", "run", str(PIPELINE), *arguments, "--omit_warnings", "true"]
     session = {
-        "project_dir": str(PROJECT_DIR), "launch_dir": str(launch_dir), "outdir": str(outdir),
-        "workdir": str(workdir), "nextflow_command": command_base,
-        "started_at": datetime.now(timezone.utc).isoformat(), "rounds_completed": 0,
+        "project_dir": str(PROJECT_DIR),
+        "launch_dir": str(launch_dir),
+        "outdir": str(outdir),
+        "workdir": str(workdir),
+        "nextflow_command": command_base,
+        "started_at": datetime.now(timezone.utc).isoformat(),
+        "rounds_completed": 0,
     }
+
     write_session(session_path, session)
 
     run_nextflow(
@@ -350,6 +480,7 @@ def main() -> None:
         launch_dir,
         log_path,
     )
+
     if not manifest_path.is_file() or not helper_path.is_file():
         fail(f"pipeline completed but no usable manual-review package was published in {review_dir}")
 

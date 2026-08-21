@@ -1,0 +1,196 @@
+Aug-20 13:29:46.958 [main] DEBUG nextflow.cli.Launcher - $> nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker -resume
+Aug-20 13:29:47.098 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 26.04.4
+Aug-20 13:29:47.113 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/primeline/.nextflow/plugins; core-plugins: nf-amazon@3.9.2,nf-azure@1.22.6,nf-cloudcache@0.6.0,nf-codecommit@0.5.3,nf-console@1.3.0,nf-google@1.27.3,nf-k8s@1.5.4,nf-seqera@0.21.0,nf-tower@1.28.1,nf-wave@1.21.0
+Aug-20 13:29:47.131 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Aug-20 13:29:47.132 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Aug-20 13:29:47.134 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.14.1 in 'deployment' mode
+Aug-20 13:29:47.144 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Aug-20 13:29:47.228 [main] DEBUG nextflow.plugin.PluginUpdater - Using plugin repository: HttpPluginRepository [registry]; url=https://registry.nextflow.io/api
+Aug-20 13:29:47.232 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Aug-20 13:29:47.256 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/primeline/Data/IRnotator/nextflow.config
+Aug-20 13:29:47.259 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/primeline/Data/IRnotator/nextflow.config
+Aug-20 13:29:47.262 [main] DEBUG nextflow.config.ConfigParserFactory - Using config parser v2
+Aug-20 13:29:47.277 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker`
+Aug-20 13:29:47.569 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [standard, docker, apptainer]
+Aug-20 13:29:47.588 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Aug-20 13:29:47.589 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Aug-20 13:29:47.600 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/primeline/.nextflow/secrets/store.json
+Aug-20 13:29:47.602 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@1df1ced0] - activable => nextflow.secret.LocalSecretsProvider@1df1ced0
+Aug-20 13:29:47.612 [main] DEBUG nextflow.cli.CmdRun - Launching `/home/primeline/Data/IRnotator/main.nf` [voluminous_goldstine] - revision: 47f04140e6
+Aug-20 13:29:47.667 [main] DEBUG nextflow.Session - Session UUID: 7e2fc67a-08a3-4062-878a-d92b6f6b3868
+Aug-20 13:29:47.667 [main] DEBUG nextflow.Session - Run name: voluminous_goldstine
+Aug-20 13:29:47.668 [main] DEBUG nextflow.Session - Executor pool size: 64
+Aug-20 13:29:47.673 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Aug-20 13:29:47.677 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=192; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Aug-20 13:29:47.691 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 26.04.4 build 12445
+  Created: 17-06-2026 16:30 UTC (18:30 CEST)
+  System: Linux 6.8.0-124-generic
+  Runtime: Groovy 4.0.31 on OpenJDK 64-Bit Server VM 21.0.11+10-1-24.04.2-Ubuntu
+  Encoding: UTF-8 (UTF-8)
+  Process: 559244@primelineMZ33 [127.0.1.1]
+  CPUs: 64 - Mem: 503.5 GB (158.2 GB) - Swap: 0 (0)
+Aug-20 13:29:47.724 [main] DEBUG nextflow.Session - Work-dir: /home/primeline/Data/IRnotator/work [zfs]
+Aug-20 13:29:47.752 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Aug-20 13:29:47.768 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Aug-20 13:29:47.770 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Aug-20 13:29:47.801 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Aug-20 13:29:47.809 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 65; maxThreads: 1000
+Aug-20 13:29:47.863 [main] DEBUG nextflow.Session - Session start
+Aug-20 13:29:47.867 [main] DEBUG nextflow.script.ScriptLoaderFactory - Using script parser v2
+Aug-20 13:29:48.438 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Aug-20 13:29:48.558 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `omit_warnings` -- Initialise it to a default value eg. `params.omit_warnings = some_value`
+Aug-20 13:29:48.587 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Aug-20 13:29:48.588 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-20 13:29:48.593 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Aug-20 13:29:48.598 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=64; memory=503.5 GB; capacity=64; pollInterval=100ms; dumpInterval=5m
+Aug-20 13:29:48.599 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Aug-20 13:29:48.638 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'VALIDATE_REFERENCE_CONFIG': maxForks=0; fair=false; array=0
+Aug-20 13:29:48.717 [main] INFO  nextflow.Nextflow - Review state: mode=advance; context=/home/primeline/Data/IRnotator/test_warning/merged_gff/merged.rev1.gff3; next=/home/primeline/Data/IRnotator/test_warning/merged_gff/merged.rev2.gff3
+Aug-20 13:29:48.731 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:NORMALIZE_MULTI_GENOME_GFF` matches process NORMALIZE_MULTI_GENOME_GFF
+Aug-20 13:29:48.732 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Aug-20 13:29:48.733 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-20 13:29:48.733 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NORMALIZE_MULTI_GENOME_GFF': maxForks=0; fair=false; array=0
+Aug-20 13:29:48.745 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:HMMSEARCH_IR` matches process HMMSEARCH_IR
+Aug-20 13:29:48.745 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Aug-20 13:29:48.745 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-20 13:29:48.746 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'HMMSEARCH_IR': maxForks=0; fair=false; array=0
+Aug-20 13:29:48.749 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Aug-20 13:29:48.749 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-20 13:29:48.750 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'COLLECT_HMM_HITS': maxForks=0; fair=false; array=0
+Aug-20 13:29:48.751 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Aug-20 13:29:48.751 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-20 13:29:48.752 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'EXTRACT_FASTA_BY_ID': maxForks=0; fair=false; array=0
+Aug-20 13:29:48.754 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Aug-20 13:29:48.754 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-20 13:29:48.754 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'INITIALIZE_DEEPTMHMM_RESULTS': maxForks=0; fair=false; array=0
+Aug-20 13:29:48.759 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:DEEPTMHMM_TOPOLOGY` matches process DEEPTMHMM_TOPOLOGY
+Aug-20 13:29:48.759 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Aug-20 13:29:48.759 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-20 13:29:48.761 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'DEEPTMHMM_TOPOLOGY': maxForks=1; fair=false; array=0
+Aug-20 13:29:48.765 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Aug-20 13:29:48.766 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-20 13:29:48.766 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'FINALIZE_DEEPTMHMM_RESULTS': maxForks=0; fair=false; array=0
+Aug-20 13:29:48.769 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Aug-20 13:29:48.769 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-20 13:29:48.769 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'COLLECT_DEEPTMHMM_SUMMARY': maxForks=0; fair=false; array=0
+Aug-20 13:29:48.771 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Aug-20 13:29:48.771 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-20 13:29:48.771 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'PARSE_DEEPTMHMM_FEATURES': maxForks=0; fair=false; array=0
+Aug-20 13:29:48.774 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Aug-20 13:29:48.774 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-20 13:29:48.774 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'HARDCODED_CLASSIFIER': maxForks=0; fair=false; array=0
+Aug-20 13:29:48.776 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Aug-20 13:29:48.777 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-20 13:29:48.777 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'SEED_DECISIONS': maxForks=0; fair=false; array=0
+Aug-20 13:29:48.779 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Aug-20 13:29:48.779 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-20 13:29:48.780 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'GATE_REVIEW_TSV': maxForks=0; fair=false; array=0
+Aug-20 13:29:48.782 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Aug-20 13:29:48.782 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-20 13:29:48.782 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'APPLY_MANUAL_DECISIONS': maxForks=0; fair=false; array=0
+Aug-20 13:29:48.784 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Aug-20 13:29:48.784 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-20 13:29:48.784 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'EXTRACT_PASSED_FASTA': maxForks=0; fair=false; array=0
+Aug-20 13:29:48.789 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:MERGE_FILTERED` matches process MERGE_FILTERED
+Aug-20 13:29:48.790 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:MERGE_FILTERED` matches process MERGE_FILTERED
+Aug-20 13:29:48.790 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Aug-20 13:29:48.790 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-20 13:29:48.791 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'MERGE_FILTERED': maxForks=0; fair=false; array=0
+Aug-20 13:29:48.797 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:PREPARE_MANUAL_REVIEW` matches process PREPARE_MANUAL_REVIEW
+Aug-20 13:29:48.797 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Aug-20 13:29:48.797 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-20 13:29:48.798 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'PREPARE_MANUAL_REVIEW': maxForks=0; fair=false; array=0
+Aug-20 13:29:48.801 [main] DEBUG nextflow.Session - Process names: PARSE_DEEPTMHMM_FEATURES, EXTRACT_PASSED_FASTA, GATE_REVIEW_TSV, MERGE_IR_ISOFORMS, FINALIZE_DEEPTMHMM_RESULTS, SEED_DECISIONS, COLLECT_DEEPTMHMM_SUMMARY, PREPARE_MANUAL_REVIEW, MERGE_FILTERED, NORMALIZE_MULTI_GENOME_GFF, DEEPTMHMM_TOPOLOGY, VALIDATE_REFERENCE_CONFIG, INITIALIZE_DEEPTMHMM_RESULTS, APPLY_MANUAL_DECISIONS, HMMSEARCH_IR, EXTRACT_FASTA_BY_ID, NORMALIZE_PROTEINS, HARDCODED_CLASSIFIER, COLLECT_HMM_HITS, DEEPTMHMM_TOPOLOGY_BIOLIB, MERGE_UNFILTERED
+Aug-20 13:29:48.803 [main] DEBUG nextflow.Session - Igniting dataflow network (33)
+Aug-20 13:29:48.804 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > VALIDATE_REFERENCE_CONFIG
+Aug-20 13:29:48.807 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: test/multi_gff/annotations/; pattern: *.gff; options: [checkIfExists:true]
+Aug-20 13:29:48.808 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NORMALIZE_MULTI_GENOME_GFF
+Aug-20 13:29:48.809 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > HMMSEARCH_IR
+Aug-20 13:29:48.809 [PathVisitor-3] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: hmms/; pattern: *.hmm; options: [checkIfExists:true]
+Aug-20 13:29:48.809 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > COLLECT_HMM_HITS
+Aug-20 13:29:48.809 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > EXTRACT_FASTA_BY_ID
+Aug-20 13:29:48.810 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > INITIALIZE_DEEPTMHMM_RESULTS
+Aug-20 13:29:48.810 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > DEEPTMHMM_TOPOLOGY
+Aug-20 13:29:48.810 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > FINALIZE_DEEPTMHMM_RESULTS
+Aug-20 13:29:48.810 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > COLLECT_DEEPTMHMM_SUMMARY
+Aug-20 13:29:48.810 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PARSE_DEEPTMHMM_FEATURES
+Aug-20 13:29:48.810 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > HARDCODED_CLASSIFIER
+Aug-20 13:29:48.811 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SEED_DECISIONS
+Aug-20 13:29:48.811 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > GATE_REVIEW_TSV
+Aug-20 13:29:48.811 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > APPLY_MANUAL_DECISIONS
+Aug-20 13:29:48.812 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > EXTRACT_PASSED_FASTA
+Aug-20 13:29:48.812 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MERGE_FILTERED
+Aug-20 13:29:48.812 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PREPARE_MANUAL_REVIEW
+Aug-20 13:29:48.812 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  _nf_script_8a2d39602ac06979: /home/primeline/Data/IRnotator/modules/local/apply_manual_decisions.nf
+  _nf_script_bbc955f4d71f1929: /home/primeline/Data/IRnotator/modules/local/initialize_deeptmhmm_results.nf
+  _nf_script_e335948e3e12825d: /home/primeline/Data/IRnotator/modules/local/collect_deeptmhmm_summary.nf
+  _nf_script_18cb5ac85a180cc0: /home/primeline/Data/IRnotator/modules/local/parse_deeptmhmm_features.nf
+  _nf_script_a1c101a7efdefd6d: /home/primeline/Data/IRnotator/modules/local/prepare_manual_review.nf
+  _nf_script_3144af718c03d3cd: /home/primeline/Data/IRnotator/modules/local/collect_hmm_hits.nf
+  _nf_script_eb1188984bf54213: /home/primeline/Data/IRnotator/modules/local/deeptmhmm_topology_biolib.nf
+  _nf_script_7d3a587c0e0d41cf: /home/primeline/Data/IRnotator/modules/local/extract_passed_fasta.nf
+  _nf_script_cb20fa0abf4675c8: /home/primeline/Data/IRnotator/modules/local/merge_ir_isoforms.nf
+  _nf_script_81abce799d5c1287: /home/primeline/Data/IRnotator/modules/local/gate_review_tsv.nf
+  _nf_script_dc7f7c7ca9572442: /home/primeline/Data/IRnotator/modules/local/hmmsearch_ir.nf
+  _nf_script_3f1a0fe8afc108f5: /home/primeline/Data/IRnotator/modules/local/validate_reference_config.nf
+  _nf_script_60af0500d3998999: /home/primeline/Data/IRnotator/modules/local/hardcoded_classifier.nf
+  _nf_script_4cb3096f8a60f286: /home/primeline/Data/IRnotator/modules/local/seed_decisions.nf
+  _nf_script_5437c8f09c83acd0: /home/primeline/Data/IRnotator/modules/local/extract_fasta_by_id.nf
+  _nf_script_64edfb82d69c20b8: /home/primeline/Data/IRnotator/modules/local/normalize_input.nf
+  Main: /home/primeline/Data/IRnotator/main.nf
+  _nf_script_33ab095388098854: /home/primeline/Data/IRnotator/modules/local/finalize_deeptmhmm_results.nf
+  _nf_script_e9cb6a7e08ebe322: /home/primeline/Data/IRnotator/modules/local/deeptmhmm_topology.nf
+Aug-20 13:29:48.813 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Aug-20 13:29:48.813 [main] DEBUG nextflow.Session - Session await
+Aug-20 13:29:48.904 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-20 13:29:48.907 [Task submitter] INFO  nextflow.Session - [78/6c0497] Submitted process > GATE_REVIEW_TSV (gate_review_tsv)
+Aug-20 13:29:48.910 [Actor Thread 39] INFO  nextflow.processor.TaskProcessor - [63/58c39a] Cached process > VALIDATE_REFERENCE_CONFIG (reference configuration)
+Aug-20 13:29:48.924 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: GATE_REVIEW_TSV (gate_review_tsv); status: COMPLETED; exit: 0; error: -; workDir: /home/primeline/Data/IRnotator/work/78/6c04978aaf24d17123ece5cce0c2c3]
+Aug-20 13:29:48.925 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=192; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Aug-20 13:29:48.979 [Actor Thread 47] INFO  nextflow.processor.TaskProcessor - [f8/8a45f1] Cached process > NORMALIZE_MULTI_GENOME_GFF (normalize-multi-genome-gff)
+Aug-20 13:29:48.989 [Actor Thread 47] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=192; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Aug-20 13:29:48.995 [Actor Thread 63] INFO  nextflow.processor.TaskProcessor - [83/2b47e1] Cached process > HMMSEARCH_IR (PF00060)
+Aug-20 13:29:49.002 [Actor Thread 65] INFO  nextflow.processor.TaskProcessor - [68/6c6c9c] Cached process > COLLECT_HMM_HITS (collect_hmm_hits)
+Aug-20 13:29:49.007 [Actor Thread 58] INFO  nextflow.processor.TaskProcessor - [01/efebe9] Cached process > EXTRACT_FASTA_BY_ID (normalized_proteins)
+Aug-20 13:29:49.017 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-20 13:29:49.018 [Task submitter] INFO  nextflow.Session - [88/89d583] Submitted process > INITIALIZE_DEEPTMHMM_RESULTS (initialize_deeptmhmm_results)
+Aug-20 13:29:49.213 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: INITIALIZE_DEEPTMHMM_RESULTS (initialize_deeptmhmm_results); status: COMPLETED; exit: 0; error: -; workDir: /home/primeline/Data/IRnotator/work/88/89d58361630bad7098fdd8e0dc0e52]
+Aug-20 13:29:49.260 [TaskFinalizer-2] DEBUG nextflow.processor.TaskProcessor - Process INITIALIZE_DEEPTMHMM_RESULTS > Skipping output binding because one or more optional files are missing: fileoutparam<2>
+Aug-20 13:29:49.290 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-20 13:29:49.291 [Task submitter] INFO  nextflow.Session - [40/c2305a] Submitted process > FINALIZE_DEEPTMHMM_RESULTS (finalize_deeptmhmm_results)
+Aug-20 13:29:49.403 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: FINALIZE_DEEPTMHMM_RESULTS (finalize_deeptmhmm_results); status: COMPLETED; exit: 0; error: -; workDir: /home/primeline/Data/IRnotator/work/40/c2305a750204abafdb007a3e05c717]
+Aug-20 13:29:49.418 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-20 13:29:49.419 [Task submitter] INFO  nextflow.Session - [13/512df1] Submitted process > COLLECT_DEEPTMHMM_SUMMARY (deeptmhmm_summary)
+Aug-20 13:29:49.458 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: COLLECT_DEEPTMHMM_SUMMARY (deeptmhmm_summary); status: COMPLETED; exit: 0; error: -; workDir: /home/primeline/Data/IRnotator/work/13/512df1e4cb26c1ef696fcbe298a935]
+Aug-20 13:29:49.470 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-20 13:29:49.470 [Task submitter] INFO  nextflow.Session - [dd/3ea548] Submitted process > PARSE_DEEPTMHMM_FEATURES (parse_deeptmhmm)
+Aug-20 13:29:49.506 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: PARSE_DEEPTMHMM_FEATURES (parse_deeptmhmm); status: COMPLETED; exit: 0; error: -; workDir: /home/primeline/Data/IRnotator/work/dd/3ea54839a3951f839bc4ca4c788e75]
+Aug-20 13:29:49.513 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-20 13:29:49.513 [Task submitter] INFO  nextflow.Session - [10/fa1055] Submitted process > HARDCODED_CLASSIFIER (hardcoded_classifier)
+Aug-20 13:29:49.546 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 11; name: HARDCODED_CLASSIFIER (hardcoded_classifier); status: COMPLETED; exit: 0; error: -; workDir: /home/primeline/Data/IRnotator/work/10/fa105519995c232a160f0df143d8ca]
+Aug-20 13:29:49.554 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-20 13:29:49.554 [Task submitter] INFO  nextflow.Session - [4a/487dff] Submitted process > SEED_DECISIONS (seed_decisions)
+Aug-20 13:29:49.589 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 12; name: SEED_DECISIONS (seed_decisions); status: COMPLETED; exit: 0; error: -; workDir: /home/primeline/Data/IRnotator/work/4a/487dff8379c997fcde73dfe2adc5c4]
+Aug-20 13:29:49.598 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-20 13:29:49.599 [Task submitter] INFO  nextflow.Session - [c3/5fe230] Submitted process > APPLY_MANUAL_DECISIONS (apply_manual_decisions)
+Aug-20 13:29:49.635 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 13; name: APPLY_MANUAL_DECISIONS (apply_manual_decisions); status: COMPLETED; exit: 0; error: -; workDir: /home/primeline/Data/IRnotator/work/c3/5fe230374aee1b3ed0572ebc3a69d2]
+Aug-20 13:29:49.645 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-20 13:29:49.646 [Task submitter] INFO  nextflow.Session - [a7/740e69] Submitted process > EXTRACT_PASSED_FASTA (extract_passed_fasta)
+Aug-20 13:29:49.672 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-20 13:29:49.672 [Task submitter] INFO  nextflow.Session - [5c/3440c6] Submitted process > MERGE_FILTERED (filtered:merged.rev2.gff3)
+Aug-20 13:29:49.678 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 16; name: EXTRACT_PASSED_FASTA (extract_passed_fasta); status: COMPLETED; exit: 0; error: -; workDir: /home/primeline/Data/IRnotator/work/a7/740e69dce4b32fd616f02096434c8f]
+Aug-20 13:29:49.681 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-20 13:29:49.682 [Task submitter] INFO  nextflow.Session - [6e/6f3c94] Submitted process > PREPARE_MANUAL_REVIEW (prepare_manual_review:1:2)
+Aug-20 13:29:50.035 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 15; name: MERGE_FILTERED (filtered:merged.rev2.gff3); status: COMPLETED; exit: 0; error: -; workDir: /home/primeline/Data/IRnotator/work/5c/3440c64e86d2df33cdc0e67fd5cf39]
+Aug-20 13:29:50.246 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 14; name: PREPARE_MANUAL_REVIEW (prepare_manual_review:1:2); status: COMPLETED; exit: 0; error: -; workDir: /home/primeline/Data/IRnotator/work/6e/6f3c94fe360d97c4b75b711b3270ca]
+Aug-20 13:29:50.250 [main] DEBUG nextflow.Session - Session await > all processes finished
+Aug-20 13:29:50.346 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Aug-20 13:29:50.347 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Aug-20 13:29:50.350 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Aug-20 13:29:50.351 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+Aug-20 13:29:50.359 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=11; failedCount=0; ignoredCount=0; cachedCount=5; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=9.9s; failedDuration=0ms; cachedDuration=14.7s;loadCpus=0; loadMemory=0; peakRunning=2; peakCpus=49; peakMemory=208 GB; ]
+Aug-20 13:29:50.550 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Aug-20 13:29:50.579 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Aug-20 13:29:50.580 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

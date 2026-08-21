@@ -176,3 +176,13 @@
 2026-08-19 17:58:41	5.9s	deadly_mayer	OK	90d2c3fe161c937410e95f606262bf22	c5a864d3-b6b4-4a85-88e3-01956417680e	nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker
 2026-08-19 17:59:08	3.2s	jovial_neumann	OK	90d2c3fe161c937410e95f606262bf22	c5a864d3-b6b4-4a85-88e3-01956417680e	nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker -resume
 2026-08-19 17:59:53	3s	hopeful_solvay	OK	90d2c3fe161c937410e95f606262bf22	c5a864d3-b6b4-4a85-88e3-01956417680e	nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker -resume
+2026-08-20 11:40:53	-	nasty_ritchie	-	889d95bd2cf049fb7773c9a00833cf1c	0f9ef1cb-97e3-435f-b3cc-4b1e68ffc165	nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker
+2026-08-20 12:47:48	-	modest_hugle	-	fa51695c56594f3f4c3572162a422b65	0e2d2e24-7add-4442-87c6-2bdf558d48a1	nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker
+2026-08-20 13:24:54	-	jolly_hilbert	-	47f04140e629e76b2cd3d3aff31f5a40	e4ad23de-17fe-4adf-b5cc-a2efdc671af4	nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker
+2026-08-20 13:27:55	5.5s	trusting_cori	OK	47f04140e629e76b2cd3d3aff31f5a40	7e2fc67a-08a3-4062-878a-d92b6f6b3868	nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker
+2026-08-20 13:29:19	3.7s	fervent_hilbert	OK	47f04140e629e76b2cd3d3aff31f5a40	7e2fc67a-08a3-4062-878a-d92b6f6b3868	nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker -resume
+2026-08-20 13:29:47	3.6s	voluminous_goldstine	OK	47f04140e629e76b2cd3d3aff31f5a40	7e2fc67a-08a3-4062-878a-d92b6f6b3868	nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker -resume
+2026-08-20 13:34:46	5.8s	modest_legentil	OK	47f04140e629e76b2cd3d3aff31f5a40	bab910ea-6905-4f49-bb48-7e7dc8b3045b	nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker
+2026-08-21 10:26:12	4.9s	suspicious_bartik	OK	47f04140e629e76b2cd3d3aff31f5a40	f0384116-b54b-473b-86be-0f1d171583a0	nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker --omit_warnings true
+2026-08-21 10:26:32	3.8s	voluminous_liskov	OK	47f04140e629e76b2cd3d3aff31f5a40	f0384116-b54b-473b-86be-0f1d171583a0	nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker --omit_warnings true -resume
+2026-08-21 10:26:51	3.1s	confident_sammet	OK	47f04140e629e76b2cd3d3aff31f5a40	f0384116-b54b-473b-86be-0f1d171583a0	nextflow run /home/primeline/Data/IRnotator/main.nf -profile docker --omit_warnings true -resume

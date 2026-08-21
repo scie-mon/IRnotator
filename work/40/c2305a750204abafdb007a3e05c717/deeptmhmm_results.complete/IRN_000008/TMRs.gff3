@@ -1,0 +1,10 @@
+##gff-version 3
+# maker-CM058173.1-exonerate_protein2genome-gene-0.53-mRNA-1 Length: 456
+# maker-CM058173.1-exonerate_protein2genome-gene-0.53-mRNA-1 Number of predicted TMRs: 3
+maker-CM058173.1-exonerate_protein2genome-gene-0.53-mRNA-1	outside	1	122				
+maker-CM058173.1-exonerate_protein2genome-gene-0.53-mRNA-1	TMhelix	123	143				
+maker-CM058173.1-exonerate_protein2genome-gene-0.53-mRNA-1	inside	144	211				
+maker-CM058173.1-exonerate_protein2genome-gene-0.53-mRNA-1	TMhelix	212	225				
+maker-CM058173.1-exonerate_protein2genome-gene-0.53-mRNA-1	outside	226	409				
+maker-CM058173.1-exonerate_protein2genome-gene-0.53-mRNA-1	TMhelix	410	433				
+maker-CM058173.1-exonerate_protein2genome-gene-0.53-mRNA-1	inside	434	456				

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>IRnotator Reviewer</title>
+<style>
+:root{--bg:#f7f6f2;--surface:#fff;--border:#d8d4cc;--text:#28251d;--muted:#6d6a64;--primary:#01696f;--accept:#437a22;--reject:#a13544;--undecided:#8a6200}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;min-height:100vh;display:grid;grid-template-rows:auto 1fr auto}.topbar{position:sticky;top:0;z-index:2;display:grid;grid-template-columns:1fr auto;gap:14px;align-items:center;padding:13px 20px;background:#fffffff2;border-bottom:1px solid var(--border)}h1{font-size:1.1rem;margin:0 0 3px}p{margin:0;color:var(--muted);font-size:.9rem}.meta,.actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.actions{justify-content:flex-end}.chip,button{border:1px solid var(--border);border-radius:9px;padding:8px 11px;background:var(--surface);color:var(--text);font-weight:600}.chip{font-size:.9rem}.status[data-status="accept"]{background:var(--accept);border-color:var(--accept);color:#fff}.status[data-status="reject"]{background:var(--reject);border-color:var(--reject);color:#fff}.status[data-status="undecided"]{background:#f1df9b;border-color:#d7ba49;color:#3d2f00}button{cursor:pointer}button.primary{background:var(--primary);border-color:var(--primary);color:#fff}button:disabled{cursor:wait;opacity:.65}.viewer{padding:18px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;min-height:0}.panel{display:grid;grid-template-rows:auto minmax(0,1fr);background:var(--surface);border:1px solid var(--border);border-radius:14px;overflow:hidden;min-height:410px}.panel h2{font-size:.94rem;margin:0;padding:11px 14px;border-bottom:1px solid var(--border)}.panel figure{margin:0;min-height:0;display:grid;place-items:center;padding:12px;overflow:auto}.panel img{width:100%;height:100%;max-height:calc(100vh - 230px);object-fit:contain}.empty{grid-column:1/-1;align-self:center;justify-self:center;max-width:60ch;text-align:center;color:var(--muted);line-height:1.6}.help{padding:11px 18px;border-top:1px solid var(--border);background:var(--surface);display:flex;gap:12px;justify-content:center;flex-wrap:wrap;color:var(--muted);font-size:.88rem}kbd{padding:2px 7px;border:1px solid var(--border);border-radius:5px;background:#fff;color:var(--text)}.modal{position:fixed;inset:0;z-index:10;display:grid;place-items:center;background:#1c1a1699;padding:18px}.modal[hidden]{display:none}.dialog{width:min(460px,100%);background:var(--surface);border-radius:14px;padding:22px;box-shadow:0 12px 45px #0005}.dialog h2{margin:0 0 10px;font-size:1.1rem}.dialog p{line-height:1.5}.dialog .actions{margin-top:18px}.submit-message{margin-top:10px;color:var(--reject);font-size:.88rem}.submit-message.ok{color:var(--accept)}@media(max-width:850px){.topbar{grid-template-columns:1fr}.actions{justify-content:flex-start}.viewer{grid-template-columns:1fr}.panel img{max-height:52vh}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <section>
+    <h1>IRnotator Reviewer</h1>
+    <p>Review isoforms consecutively by merged gene model.</p>
+  </section>
+  <section class="meta">
+    <span class="chip" id="seqId">No file loaded</span>
+    <span class="chip" id="progress">0 / 0</span>
+    <span class="chip status" id="status" data-status="undecided">undecided</span>
+  </section>
+  <section class="actions">
+    <button id="prev">Previous</button>
+    <button id="next">Next</button>
+    <button id="nextUndecided">Next undecided</button>
+    <button id="export">Export TSV</button>
+    <button class="primary" id="submit">Submit review</button>
+  </section>
+</header>
+<main class="viewer" id="viewer">
+  <div class="empty" id="empty"><strong>Loading review-manifest.json…</strong><br>Serve this directory locally, for example with <code>python3 -m http.server 8000</code>.</div>
+  <section class="panel" id="genePanel" hidden><h2>Gene model context</h2><figure><img id="geneImage" alt="Current merged gene model"></figure></section>
+  <section class="panel" id="topologyPanel" hidden><h2>DeepTMHMM topology</h2><figure><img id="topologyImage" alt="Current DeepTMHMM topology plot"></figure></section>
+</main>
+<footer class="help"><span><kbd>←</kbd><kbd>→</kbd> navigate</span><span><kbd>↑</kbd> accept</span><span><kbd>↓</kbd> reject</span><span><kbd>u</kbd> undecided</span><span><kbd>j</kbd> next undecided</span><span><kbd>e</kbd> export</span></footer>
+<div class="modal" id="submitModal" hidden>
+  <section class="dialog" role="dialog" aria-modal="true" aria-labelledby="submitTitle">
+    <h2 id="submitTitle">Submit review?</h2>
+    <p id="submitSummary"></p>
+    <p class="submit-message" id="submitMessage" hidden></p>
+    <section class="actions">
+      <button id="cancelSubmit">Cancel</button>
+      <button class="primary" id="confirmSubmit">Submit and start next round</button>
+    </section>
+  </section>
+</div>
+<script>
+const state={items:[],index:0,decisions:new Map(),autoAdvance:true,reviewerRevision:null,session:null};
+const el={seq:document.querySelector('#seqId'),progress:document.querySelector('#progress'),status:document.querySelector('#status'),empty:document.querySelector('#empty'),genePanel:document.querySelector('#genePanel'),topologyPanel:document.querySelector('#topologyPanel'),gene:document.querySelector('#geneImage'),topology:document.querySelector('#topologyImage'),submit:document.querySelector('#submit'),modal:document.querySelector('#submitModal'),summary:document.querySelector('#submitSummary'),message:document.querySelector('#submitMessage'),confirm:document.querySelector('#confirmSubmit')};
+function id(item){return String(item?.seq_id??item?.seqId??'').trim()}
+function seed(value){value=String(value??'undecided').toLowerCase();return ['accept','pass'].includes(value)?'accept':['reject','fail'].includes(value)?'reject':'undecided'}
+function current(){return state.items[state.index]??null}
+function decision(item){return state.decisions.get(id(item))??'undecided'}
+function validate(items){const seen=new Set();items.forEach((item,index)=>{const key=id(item);if(!key)throw Error(`Manifest item ${index+1} lacks seq_id`);if(!item.topology_image&&!item.image)throw Error(`Manifest item ${index+1} lacks topology_image`);if(!item.gene_image)throw Error(`Manifest item ${index+1} lacks gene_image`);if(seen.has(key))throw Error(`Duplicate seq_id: ${key}`);seen.add(key)})}
+function display(item){return item?(item.gene_id??'gene')+' · '+id(item):'No file loaded'}
+function render(){const item=current(),status=item?decision(item):'undecided';el.seq.textContent=display(item);el.seq.title=item?.source_header??'';el.progress.textContent=state.items.length?`${state.index+1} / ${state.items.length}`:'0 / 0';el.status.textContent=status;el.status.dataset.status=status;if(!item){el.empty.hidden=false;el.genePanel.hidden=true;el.topologyPanel.hidden=true;return}el.empty.hidden=true;el.genePanel.hidden=false;el.topologyPanel.hidden=false;el.gene.src=item.gene_image;el.gene.alt=`Merged gene model for ${display(item)}`;el.topology.src=item.topology_image??item.image;el.topology.alt=`DeepTMHMM topology for ${display(item)}`}
+function move(step){if(!state.items.length)return;state.index=Math.max(0,Math.min(state.items.length-1,state.index+step));render()}
+function setDecision(value){const item=current();if(!item)return;state.decisions.set(id(item),value);if(state.autoAdvance&&state.index<state.items.length-1)state.index++;render()}
+function nextUndecided(){for(let offset=1;offset<=state.items.length;offset++){const index=(state.index+offset)%state.items.length;if(decision(state.items[index])==='undecided'){state.index=index;render();return}}}
+function clean(value){return String(value??'').replace(/\t/g,' ').replace(/\r?\n/g,' ')}
+function reviewTsv(){const lines=['seq_id\tdecision'];state.items.forEach(item=>lines.push(`${clean(id(item))}\t${clean(decision(item))}`));return lines.join('\n')+'\n'}
+function exportTsv(){const blob=new Blob([reviewTsv()],{type:'text/tab-separated-values;charset=utf-8'});const url=URL.createObjectURL(blob),link=document.createElement('a');link.href=url;link.download='review.tsv';link.click();URL.revokeObjectURL(url)}
+async function reviewerSession(){if(state.session)return state.session;const response=await fetch('reviewer-session.json',{cache:'no-store'});if(!response.ok)throw Error('Automatic submission requires the irnotator controller. Use Export TSV for manual submission.');const session=await response.json();if(!session.token)throw Error('Controller reviewer session is unavailable.');state.session=session;return session}
+function showSubmit(){const accept=[...state.decisions.values()].filter(value=>value==='accept').length,reject=[...state.decisions.values()].filter(value=>value==='reject').length,undecided=state.items.length-accept-reject;el.summary.textContent=`Submit ${state.items.length} decisions: ${accept} accept, ${reject} reject, ${undecided} undecided. This will start the next pipeline round.`;el.message.hidden=true;el.confirm.disabled=false;el.modal.hidden=false}
+function hideSubmit(){el.modal.hidden=true}
+async function submitReview(){el.confirm.disabled=true;el.message.hidden=true;try{const session=await reviewerSession();if(session.reviewer_revision!==state.reviewerRevision)throw Error('This reviewer package is no longer the active revision. Reopen the reviewer.');const response=await fetch('submit-review',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({token:session.token,reviewer_revision:state.reviewerRevision,tsv:reviewTsv()})});const result=await response.json();if(!response.ok||!result.ok)throw Error(result.error??'Review submission failed.');el.message.textContent=result.message;el.message.className='submit-message ok';el.message.hidden=false;el.submit.disabled=true;setTimeout(hideSubmit,1200)}catch(error){el.message.textContent=error.message;el.message.className='submit-message';el.message.hidden=false;el.confirm.disabled=false}}
+async function load(){try{const response=await fetch('review-manifest.json',{cache:'no-store'});if(!response.ok)throw Error(`HTTP ${response.status}`);const data=await response.json();state.items=Array.isArray(data.items)?data.items:[];state.reviewerRevision=data.reviewer_revision;validate(state.items);state.decisions=new Map(state.items.map(item=>[id(item),seed(item.seed)]));render()}catch(error){console.error(error);el.empty.innerHTML=`<strong>Could not load the review manifest.</strong><br>${error.message}`;render()}}
+document.querySelector('#prev').onclick=()=>move(-1);document.querySelector('#next').onclick=()=>move(1);document.querySelector('#nextUndecided').onclick=nextUndecided;document.querySelector('#export').onclick=exportTsv;el.submit.onclick=showSubmit;document.querySelector('#cancelSubmit').onclick=hideSubmit;el.confirm.onclick=submitReview;document.addEventListener('keydown',event=>{if(['INPUT','TEXTAREA'].includes(document.activeElement?.tagName))return;if(event.key==='ArrowLeft'){event.preventDefault();move(-1)}else if(event.key==='ArrowRight'){event.preventDefault();move(1)}else if(event.key==='ArrowUp'){event.preventDefault();setDecision('accept')}else if(event.key==='ArrowDown'){event.preventDefault();setDecision('reject')}else if(event.key.toLowerCase()==='u'){event.preventDefault();setDecision('undecided')}else if(event.key.toLowerCase()==='j'){event.preventDefault();nextUndecided()}else if(event.key.toLowerCase()==='e'){event.preventDefault();exportTsv()}});load();
+</script>
+</body>
+</html>

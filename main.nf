@@ -19,6 +19,7 @@ include { APPLY_MANUAL_DECISIONS } from './modules/local/apply_manual_decisions'
 include { EXTRACT_PASSED_FASTA } from './modules/local/extract_passed_fasta'
 include { MERGE_IR_ISOFORMS as MERGE_UNFILTERED } from './modules/local/merge_ir_isoforms'
 include { MERGE_IR_ISOFORMS as MERGE_FILTERED } from './modules/local/merge_ir_isoforms'
+include { VALIDATE_REFERENCE_CONFIG } from './modules/local/validate_reference_config'
 
 params.proteins_faa = params.proteins_faa ?: null
 params.genome_fasta = params.genome_fasta ?: null
@@ -27,7 +28,7 @@ params.gff_protein_attribute = params.gff_protein_attribute ?: 'protein_id'
 params.translation_table = params.translation_table ?: 1
 params.allow_internal_stops = params.allow_internal_stops ?: false
 params.isoform_overlap_fraction = params.isoform_overlap_fraction ?: 0.60
-params.hmm_dir = params.hmm_dir ?: 'test/hmms'
+params.hmm_dir = params.hmm_dir ?: 'hmms'
 params.outdir = params.outdir ?: 'results'
 params.deeptmhmm_mode = params.deeptmhmm_mode ?: 'container'
 params.deeptmhmm_model = params.deeptmhmm_model ?: 'DTU/DeepTMHMM:1.0.24'
@@ -35,8 +36,15 @@ params.deeptmhmm_dir = params.deeptmhmm_dir ?: null
 params.run_deeptmhmm = params.run_deeptmhmm == null ? true : params.run_deeptmhmm
 params.deeptmhmm_salvage_paths = params.deeptmhmm_salvage_paths ?: []
 params.review_tsv = params.review_tsv ?: null
+params.omit_warnings = params.omit_warnings == null ? false : params.omit_warnings
 
 workflow {
+    def salvage_paths = (params.deeptmhmm_salvage_paths instanceof Collection ? params.deeptmhmm_salvage_paths.collect { it.toString() } : params.deeptmhmm_salvage_paths.toString().split(',').collect { it.trim() }.findAll { it })
+    if (!params.omit_warnings) {
+        def validation_res = VALIDATE_REFERENCE_CONFIG(params.hmm_dir, salvage_paths)
+        validation_res.audit.view { report -> report.trim() }
+    }
+
     def has_proteins = params.proteins_faa as boolean
     def has_genome = params.genome_fasta as boolean
     def has_gff = params.annot_gff as boolean
@@ -86,7 +94,6 @@ workflow {
     hmm_res = HMMSEARCH_IR(Channel.fromPath("${params.hmm_dir}/*.hmm", checkIfExists: true).combine(normalized_proteins_ch))
     hmm_ids_ch = COLLECT_HMM_HITS(hmm_res.tbl.collect())
     hmm_hit_faa_ch = EXTRACT_FASTA_BY_ID(hmm_ids_ch, normalized_proteins_ch)
-    def salvage_paths = (params.deeptmhmm_salvage_paths instanceof Collection ? params.deeptmhmm_salvage_paths.collect { it.toString() } : params.deeptmhmm_salvage_paths.toString().split(',').collect { it.trim() }.findAll { it })
     initial_deeptmhmm_res = INITIALIZE_DEEPTMHMM_RESULTS(hmm_hit_faa_ch, Channel.value(salvage_paths))
 
     def generated_results_ch
