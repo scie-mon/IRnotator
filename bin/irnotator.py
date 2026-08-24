@@ -260,6 +260,7 @@ class ReviewServer(ThreadingHTTPServer):
         self.reviewer_revision: object | None = None
         self.token = ""
         self.submitted = threading.Event()
+        self.quit_requested = threading.Event()
         self.lock = threading.Lock()
 
     def begin_round(self, revision: object) -> None:
@@ -267,6 +268,7 @@ class ReviewServer(ThreadingHTTPServer):
             self.reviewer_revision = revision
             self.token = secrets.token_urlsafe(32)
             self.submitted.clear()
+            self.quit_requested.clear()
 
 
 class ReviewHandler(SimpleHTTPRequestHandler):
@@ -302,47 +304,96 @@ class ReviewHandler(SimpleHTTPRequestHandler):
         super().do_GET()
 
     def do_POST(self) -> None:
-        if urlparse(self.path).path != "/submit-review":
+        endpoint = urlparse(self.path).path
+        if endpoint not in {"/submit-review", "/quit"}:
             self.send_error(HTTPStatus.NOT_FOUND)
             return
+
         try:
             content_length = int(self.headers.get("Content-Length", "0"))
             if content_length <= 0 or content_length > 20_000_000:
                 raise ValueError("invalid request size")
+
             payload = json.loads(self.rfile.read(content_length))
             if not isinstance(payload, dict):
                 raise ValueError("request must be a JSON object")
+
             token = payload.get("token")
             revision = payload.get("reviewer_revision")
-            tsv = payload.get("tsv")
-            if not isinstance(token, str) or not isinstance(tsv, str):
-                raise ValueError("request requires token and tsv strings")
+            if not isinstance(token, str):
+                raise ValueError("request requires a token string")
+
             with self.server.lock:
                 if token != self.server.token:
                     raise ValueError("invalid reviewer session token")
                 if revision != self.server.reviewer_revision:
-                    raise ValueError("reviewer revision does not match the active package")
-                if self.server.submitted.is_set() or self.server.review_path.exists():
-                    raise ValueError("a review TSV has already been submitted for this round")
-                validate_review_text(tsv, "submitted review TSV")
-                self.server.review_path.parent.mkdir(parents=True, exist_ok=True)
-                with tempfile.NamedTemporaryFile(
-                    mode="w",
-                    encoding="utf-8",
-                    newline="",
-                    dir=self.server.review_path.parent,
-                    prefix=".review.submit.",
-                    suffix=".tsv",
-                    delete=False,
-                ) as handle:
-                    handle.write(tsv)
-                    temp_path = Path(handle.name)
-                os.replace(temp_path, self.server.review_path)
-                self.server.submitted.set()
+                    raise ValueError(
+                        "reviewer revision does not match the active package"
+                    )
+
+                if endpoint == "/quit":
+                    self.server.quit_requested.set()
+                else:
+                    tsv = payload.get("tsv")
+                    if not isinstance(tsv, str):
+                        raise ValueError(
+                            "request requires token and tsv strings"
+                        )
+
+                    if (
+                        self.server.submitted.is_set()
+                        or self.server.review_path.exists()
+                    ):
+                        raise ValueError(
+                            "a review TSV has already been submitted for this round"
+                        )
+
+                    validate_review_text(tsv, "submitted review TSV")
+                    self.server.review_path.parent.mkdir(
+                        parents=True,
+                        exist_ok=True,
+                    )
+
+                    with tempfile.NamedTemporaryFile(
+                        mode="w",
+                        encoding="utf-8",
+                        newline="",
+                        dir=self.server.review_path.parent,
+                        prefix=".review.submit.",
+                        suffix=".tsv",
+                        delete=False,
+                    ) as handle:
+                        handle.write(tsv)
+                        temp_path = Path(handle.name)
+
+                    os.replace(temp_path, self.server.review_path)
+                    self.server.submitted.set()
+
         except (ValueError, json.JSONDecodeError, OSError, SystemExit) as exc:
-            self.send_json(HTTPStatus.BAD_REQUEST, {"ok": False, "error": str(exc)})
+            self.send_json(
+                HTTPStatus.BAD_REQUEST,
+                {"ok": False, "error": str(exc)},
+            )
             return
-        self.send_json(HTTPStatus.OK, {"ok": True, "message": "Review submitted. Starting the next pipeline round."})
+
+        if endpoint == "/quit":
+            self.send_json(
+                HTTPStatus.OK,
+                {
+                    "ok": True,
+                    "message": "Controller stop requested.",
+                },
+            )
+        else:
+            self.send_json(
+                HTTPStatus.OK,
+                {
+                    "ok": True,
+                    "message": (
+                        "Review submitted. Starting the next pipeline round."
+                    ),
+                },
+            )
 
 
 def start_server(directory: Path, review_path: Path, port: int) -> ReviewServer:
@@ -382,6 +433,9 @@ def prompt_for_review(review_path: Path, server: ReviewServer, port: int, revisi
     print(f"  {review_path}")
     print("Type 'continue' to apply a copied TSV, 'open' to reopen the reviewer, or 'quit' to stop.")
     while True:
+        if server.quit_requested.is_set():
+            raise KeyboardInterrupt
+
         if server.submitted.wait(timeout=0.25):
             print("Browser review submitted.")
             return
