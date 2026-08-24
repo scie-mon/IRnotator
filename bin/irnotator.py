@@ -153,6 +153,34 @@ def parse_value_option(arguments: list[str], option: str) -> str | None:
         index += 1
     return value
 
+def replace_value_option(
+    arguments: list[str],
+    option: str,
+    value: str,
+) -> list[str]:
+    """Replace all occurrences of an option with one normalized option value."""
+    result: list[str] = []
+    index = 0
+
+    while index < len(arguments):
+        argument = arguments[index]
+
+        if argument == option:
+            if index + 1 == len(arguments):
+                fail(f"{option} requires a value")
+            index += 2
+            continue
+
+        if argument.startswith(f"{option}="):
+            index += 1
+            continue
+
+        result.append(argument)
+        index += 1
+
+    result.extend([option, value])
+    return result
+
 
 def unquote_config_value(value: str | None) -> str | None:
     if value is None:
@@ -491,13 +519,27 @@ def main() -> None:
         or unquote_config_value(resolved_config.get("params.hmm_dir"))
         or "hmms"
     )
+    cli_salvage_value = parse_value_option(
+        arguments,
+        "--deeptmhmm_salvage_paths",
+    )
+
     salvage_value = (
-        parse_value_option(arguments, "--deeptmhmm_salvage_paths")
+        cli_salvage_value
         or resolved_config.get("params.deeptmhmm_salvage_paths")
         or "[]"
     )
+
     hmm_dir = resolve_runtime_path(hmm_value, launch_dir)
     salvage_paths = parse_salvage_paths(salvage_value, launch_dir)
+
+    if cli_salvage_value is not None:
+        arguments = replace_value_option(
+            arguments,
+            "--deeptmhmm_salvage_paths",
+            ",".join(str(path) for path in salvage_paths),
+        )
+
     if not omit_warnings:
         run_reference_audit(hmm_dir, salvage_paths, launch_dir)
 

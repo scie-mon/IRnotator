@@ -34,7 +34,7 @@ params.deeptmhmm_mode = params.deeptmhmm_mode ?: 'container'
 params.deeptmhmm_model = params.deeptmhmm_model ?: 'DTU/DeepTMHMM:1.0.24'
 params.deeptmhmm_dir = params.deeptmhmm_dir ?: null
 params.run_deeptmhmm = params.run_deeptmhmm == null ? true : params.run_deeptmhmm
-params.deeptmhmm_salvage_paths = params.deeptmhmm_salvage_paths ?: []
+params.deeptmhmm_salvage_paths = params.deeptmhmm_salvage_paths ?: ["${projectDir}/deeptmhmm_dump"]
 params.review_tsv = params.review_tsv ?: null
 params.omit_warnings = params.omit_warnings == null ? false : params.omit_warnings
 
