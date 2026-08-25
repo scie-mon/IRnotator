@@ -4,6 +4,8 @@ IRnotator is a Nextflow DSL2 workflow for the identification, topology-based cla
 
 The recommended workflow accepts a genome FASTA together with one or more GFF annotation files. It derives normalised protein sequences, detects candidate IR proteins with HMMER, obtains DeepTMHMM topology predictions, supports manual review, and produces curated candidate sets and merged IR isoform annotations.
 
+![alt text](assets/IRnotator_FlowChart.png)
+
 ## Contents
 
 - [Installation and prerequisites](#installation-and-prerequisites)
@@ -175,6 +177,12 @@ params {
 }
 ```
 
+or
+
+```bash
+irnotator --outdir test_out --deeptmhmm_salvage_paths path/to/IRnotator/test/multi_gff/deeptmhmm_predicts
+```
+
 > [!NOTE]
 > `deeptmhmm_predicts/` must be supplied explicitly because it is not part of
 > the default salvage-path configuration.
@@ -272,7 +280,7 @@ result is available, IRnotator writes the affected candidate sequences to:
 
 Run DeepTMHMM externally on this FASTA file and add the resulting valid
 per-sequence result directories to `deeptmhmm_dump/` or another configured
-salvage path. Then rerun IRnotator with the same inputs and resume state. The
+salvage path. Then rerun IRnotator with the same inputs and `-resume` state. The
 pipeline will salvage the newly available results and continue from the
 topology-processing stage rather than reprocessing completed upstream tasks.
 
