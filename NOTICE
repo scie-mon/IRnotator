@@ -1,0 +1,11 @@
+IRnotator
+Copyright 2026 Simon Alev
+
+IRnotator is distributed under the GNU General Public License,
+version 3.0 or later. See LICENSE.
+
+This product includes reference profile HMM data derived from Pfam.
+Pfam data are available under CC0 1.0.
+
+DeepTMHMM is an external dependency. Its software, models, and service
+are not distributed with IRnotator and remain subject to their own terms.
