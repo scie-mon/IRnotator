@@ -419,3 +419,14 @@ params {
 ```
 
 Adapt scheduler directives, container cache, filesystem binds, and resource limits to local policy. Inputs, work directory, output directory, HMM profiles, and `deeptmhmm_dir` must be readable from compute nodes.
+
+## License
+
+IRnotator is released under the GNU General Public License v3.0 or later
+(GPL-3.0-or-later). See [LICENSE](LICENSE) for the full license text.
+
+IRnotator orchestrates external software and may use external reference
+resources. Those dependencies and resources are not relicensed by
+IRnotator and remain subject to their respective licences and terms of use.
+Users are responsible for ensuring that their use of external dependencies,
+including DeepTMHMM, complies with the applicable terms.
