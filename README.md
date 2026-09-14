@@ -398,6 +398,12 @@ With the controller, rerun the same command as instructed by the controller. Wit
 
 ## HPC and container configuration
 
+> **Experimental HPC support:** IRnotator is developed and routinely tested
+> with the Docker execution profile. Apptainer/Singularity support is intended
+> for HPC use, but has not yet been systematically tested or validated on a
+> supported cluster configuration. Please treat this path as experimental and
+> validate it with the supplied test data before running production analyses.
+
 Configure cluster-specific executor settings in a site config rather than editing the repository configuration:
 
 ```groovy
