@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use IRnotator, please cite it as below."
+type: software
+title: "IRnotator"
+abstract: "A Nextflow workflow for ionotropic receptor gene identification and annotation."
+authors:
+  - family-names: "Alev"
+    given-names: "Simon"
+    orcid: "https://orcid.org/0009-0005-8959-9041"
+url: "https://github.com/scie-mon/IRnotator"
+version: 1.0.0
+date-released: 2026-09-09
+license: "GPL-3.0-or-later"
